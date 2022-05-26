@@ -7,6 +7,7 @@ import textdistance as td
 from itertools import chain
 from tqdm import tqdm
 from collections import defaultdict
+import os
 
 # download the html page containing the instrument list
 res = requests.get("https://musicbrainz.org/instruments")
@@ -24,7 +25,8 @@ instruments_names = set(instruments.keys())
 # by the annotator (ensemble, vocal)]
 instruments_names = instruments_names.union({"vocals male", "vocals female", "vocals", "drums"})
 # load each annotation
-annotations = glob("./data/chord_annotations/*.json")
+cur_dir = os.path.dirname(__file__)
+annotations = glob(os.path.join(cur_dir, "/chord_annotations/*.json"))
 
 # cache conversions
 conversions = dict()

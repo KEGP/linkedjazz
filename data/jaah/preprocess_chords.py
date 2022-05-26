@@ -6,8 +6,10 @@ from io import StringIO
 import textdistance as td
 from itertools import chain
 from tqdm import tqdm
+import os
 
-annotations = glob("data/chord_annotations/*.json")
+cur_dir = os.path.dirname(__file__)
+annotations = glob(os.path.join(cur_dir, "/chord_annotations/*.json"))
 
 for ann in (pbar := tqdm(annotations)):
   with open(ann) as fp:
