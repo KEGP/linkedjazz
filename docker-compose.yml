@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+    sparqlanything:
+        container_name: sparqlanything
+        image: sparqlanything
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.sparqlanything
+        restart: always
+        ports:
+            - "3000:3000" 
