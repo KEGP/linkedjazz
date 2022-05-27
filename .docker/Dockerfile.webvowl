@@ -1,0 +1,39 @@
+# We will build WebVOWL since the website containing binaries isnt working
+FROM node:alpine
+
+# Install git and java jdk
+RUN apk add git openjdk8 maven
+
+WORKDIR /VDW
+
+# download and build OWL2VOWL, required by WebVOWL
+RUN git clone https://github.com/VisualDataWeb/OWL2VOWL.git
+WORKDIR /VDW/OWL2VOWL
+RUN mvn package -Denv=standalone
+WORKDIR /VDW/
+
+# download and build WebVOWL
+RUN git clone https://github.com/VisualDataWeb/WebVOWL.git
+WORKDIR /VDW/WebVOWL
+RUN npm install
+WORKDIR /VDW/
+
+# copy ontologies
+RUN mkdir ontology
+COPY ontology/kejazz/kejazz.owl ontology/kejazz.owl
+
+# convert ontology to OWL2VOWL format
+RUN java -jar OWL2VOWL/target/OWL2VOWL-*-shaded.jar \
+  -output WebVOWL/src/app/data/kejazz.json \
+  -file ontology/kejazz.owl
+
+# set kejazz as default ontology
+RUN sed -i 's/var DEFAULT_JSON_NAME = "foaf";/var DEFAULT_JSON_NAME = "kejazz";/g' WebVOWL/src/app/js/loadingModule.js
+
+# build WebVOWL
+WORKDIR WebVOWL
+RUN npm run-script release
+
+# serve WebVOWL
+RUN npm install -g serve
+CMD serve -p 5000 ./deploy/

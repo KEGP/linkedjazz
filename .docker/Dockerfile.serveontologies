@@ -1,0 +1,9 @@
+FROM nginx
+
+RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+COPY .docker/nginx.serveontologies.conf /etc/nginx/nginx.conf
+
+WORKDIR ontology
+COPY ontology/kejazz/kejazz.owl .
+COPY ontology/chord-annotations/*.owl .
