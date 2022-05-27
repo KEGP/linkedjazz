@@ -1,0 +1,3261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localhost:8080/ontology/mto.owl#"
+     xml:base="http://localhost:8080/ontology/mto.owl"
+     xmlns:mo="http://purl.org/ontology/mo/"
+     xmlns:tl="http://purl.org/NET/c4dm/timeline.owl#"
+     xmlns:uo="http://purl.obolibrary.org/obo/UO_"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:mto="http://purl.org/ontology/mto/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:chord="http://purl.org/ontology/chord/"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:mto-kb="http://purl.org/ontology/mto/kb/">
+    <owl:Ontology rdf:about="http://localhost:8080/ontology/mto.owl#">
+        <owl:versionIRI rdf:resource="http://localhost:8080/ontology/mto.owl#"/>
+        <dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David C. De Roure</dct:contributor>
+        <dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deborah L. McGuinness</dct:contributor>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-15T12:00:00</dct:created>
+        <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sabbir M. Rashid</dct:creator>
+        <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Music Theory Ontology was designed to be able to formally represent rudimentary concepts used to describe music. Included are classes for musical notation, such as accidentals or time signatures; duration, describing how long a note is or is not played; intervals, representing tonal difference between pitches; and progressions, which involve the succession of notes or chords.</dct:description>
+        <dct:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-19T14:30:00</dct:modified>
+        <dct:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Music Theory Ontology</dct:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasDiatonicDegree -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the degree associated with a diatonic scale</rdfs:comment>
+        <rdfs:label>has diatonic degree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasDominant -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasDominant">
+        <rdfs:subPropertyOf rdf:resource="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the dominant note associated with a given diatonic scale</rdfs:comment>
+        <rdfs:label>has dominant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasMediant -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasMediant">
+        <rdfs:subPropertyOf rdf:resource="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the mediant note associated with a given diatonic scale</rdfs:comment>
+        <rdfs:label>has mediant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasNote -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasNote">
+        <rdfs:range rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign a note of arbitary degree to a chord or scale</rdfs:comment>
+        <rdfs:label>has note</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasRootNote -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasRootNote">
+        <owl:equivalentProperty rdf:resource="http://localhost:8080/ontology/mto.owl#hasTonic"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to the root note to a chord or scale</rdfs:comment>
+        <rdfs:label>has root note</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasSubdominant -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasSubdominant">
+        <rdfs:subPropertyOf rdf:resource="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the subdominant note associated with a given diatonic scale</rdfs:comment>
+        <rdfs:label>has subdominant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasSubmediant -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasSubmediant">
+        <rdfs:subPropertyOf rdf:resource="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the submediant note associated with a given diatonic scale</rdfs:comment>
+        <rdfs:label>has submediant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasSubtonic -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasSubtonic">
+        <rdfs:subPropertyOf rdf:resource="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the subtonic note associated with a given diatonic scale</rdfs:comment>
+        <rdfs:label>has subtonic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasSupertonic -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasSupertonic">
+        <rdfs:subPropertyOf rdf:resource="http://localhost:8080/ontology/mto.owl#hasDiatonicDegree"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the supertonic note associated with a given diatonic scale</rdfs:comment>
+        <rdfs:label>has supertonic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasTonic -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasTonic">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the tonic note associated with a given scale or chord</rdfs:comment>
+        <rdfs:label>has tonic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasComponentsList -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasComponentsList">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to represent components of a chord in terms of intervals from the root note</rdfs:comment>
+        <rdfs:label>has components list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasDegree -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasDegree">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign degree of a note in a scale or chord</rdfs:comment>
+        <rdfs:label>has degree</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasDurationLength -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasDurationLength">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#Duration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the length of a duration, where a single unit represents a sixteenth of a beat</rdfs:comment>
+        <rdfs:label>has duration length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasFlatCount -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasFlatCount">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#KeySignature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the number of flats associated with a given key</rdfs:comment>
+        <rdfs:label>has flat count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasIntervalPattern -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasIntervalPattern">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to represent pattern of intervals</rdfs:comment>
+        <rdfs:label>has interval pattern</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasLowerNumeral -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasLowerNumeral">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the number of beats associated with the lower numeral of a time signature, representing the time value of each beat</rdfs:comment>
+        <rdfs:label>has lower numeral</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasNoteCount -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasNoteCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the number of notes or pitches associated with a given chord or scale</rdfs:comment>
+        <rdfs:label>has note count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasSemitoneCount -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasSemitoneCount">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the number of half steps or semitones associated with a given interval</rdfs:comment>
+        <rdfs:label>has semitone count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasSharpCount -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasSharpCount">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#KeySignature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the number of sharps associated with a given key</rdfs:comment>
+        <rdfs:label>has sharp count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#hasUpperNumeral -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology/mto.owl#hasUpperNumeral">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property to assign the number of beats associated with the upper numeral of a time signature, representing the beats per measure</rdfs:comment>
+        <rdfs:label>has upper numeral</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Accidental -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Accidental">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MusicalNotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A notation symbol on a stave that represents a change in the pitch of a note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acidental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AdditiveMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AdditiveMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time signature where the beat is subdivided into smaller, irregular groups</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Additive Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedFifthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedFifthInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MinorSixthInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedFourthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedFourthInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedFifthInterval"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Tritone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval in which a major or perfect interval is widened by a chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedSecondInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSecondInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MinorThirdInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedSeventhInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSeventhInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectOctaveInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedSixthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSixthInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MinorSeventhInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedThirdInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedThirdInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectFourthInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedTriad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedTriad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedUnisonInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedUnisonInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#HalfStep"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MinorSecondInterval"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Semitone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#AugmentedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Bar -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Bar">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MusicalNotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A segment of time on a sheet of music corresponding to a specific number of beats</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bar</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#BluesProgression -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#BluesProgression">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HarmonicProgression"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A succession of musical chords in a Blues scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blues Progression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Breve -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Breve">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#BreveRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#BreveRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#CClef -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#CClef">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Clef"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clef with reference note C4</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-Clef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Chord -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Chord">
+        <owl:equivalentClass rdf:resource="http://purl.org/ontology/chord/Chord"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HarmonicInterval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any harmonic set of pitches consisting of two or more notes sounded simultaneously</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#ChromaticInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#ChromaticInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any interval where the first and last note are not part of the same major scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatic Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#ChromaticScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#ChromaticScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Clef -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Clef">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MusicalNotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical symbol used to indicate the pitch of notes on a stave</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#ComplexMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#ComplexMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time signature where the beat is irregular in the sense that it cannot be broken down into two- or three-part rhythms</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#CompoundMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#CompoundMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time signature where the beat can be broken down into three-part rhythms</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compound Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Crotchet -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Crotchet">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#CrotchetRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#CrotchetRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Decad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Decad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Degree -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Degree">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position of a particular note on a scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Demisemiquaver -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Demisemiquaver">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DemisemiquaverRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DemisemiquaverRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiatonicDegree -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiatonicDegree">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Degree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The position of a particular note on a diatonic scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diatonic Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiatonicInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiatonicInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any interval where the first and last note are part of the same major scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diatonic Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HeptatonicScale"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heptatonic scale consisting of five whole tones and two semitones</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diatonic Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedFifthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedFifthInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Tritone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedFourthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedFourthInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MajorThirdInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval in which a minor or perfect interval is narrowed by a chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedOctaveInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedOctaveInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MajorSeventhInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSecondInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSecondInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectUnisonInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSeventhInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSeventhInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MajorSixthInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SeventhTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSixthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSixthInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectFifthInterval"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedThirdInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedThirdInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MajorSecondInterval"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#WholeStep"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#WholeTone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiminishedInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedTriad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedTriad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DitonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DitonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Dominant -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Dominant">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fifth above the tonic</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominant</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DominantNinthPentad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DominantNinthPentad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NinthPentad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DominantSeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DominantSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SeventhTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DoubleFlat -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DoubleFlat">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Accidental"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An accidental which lowers the pitch of a note by a whole step</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double Flat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DoubleSharp -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#DoubleSharp">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Accidental"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An accidental which raises the pitch of a note by a whole step</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double Sharp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Duration -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Duration">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/TimeInterval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An amount of time in terms of beat length</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Dyad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Dyad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Ennead -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Ennead">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#FClef -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#FClef">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Clef"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clef with reference note F3</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F-Clef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Flat -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Flat">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Accidental"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An accidental which lowers the pitch of a note by a half step</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#FractionalMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#FractionalMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time signature that has an upper numeral that is a fraction</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fractional Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#GClef -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#GClef">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Clef"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clef with reference note G4</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-Clef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HalfDiminishedSeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HalfDiminishedSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SeventhTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HalfStep -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HalfStep">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#MinorSecondInterval"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Semitone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Step"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HarmonicInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HarmonicInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when multiple notes are played at the same time</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harmonic Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HarmonicMinorScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HarmonicMinorScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HeptatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HarmonicProgression -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HarmonicProgression">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Progression"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A succession of musical chords</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harmonic Progression</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chord Progression</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Hemidemisemiquaver -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Hemidemisemiquaver">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HemidemisemiquaverRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HemidemisemiquaverRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Heptad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Heptad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HeptatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HeptatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Hexad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Hexad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HexatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#HexatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Interval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Interval">
+        <owl:equivalentClass rdf:resource="http://purl.org/ontology/chord/Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difference between two pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#IrrationalMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#IrrationalMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time signature that has a lower numeral that is not a power of 2</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irrational Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Key -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Key">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group of pitches or scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Key</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#KeySignature -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#KeySignature">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Signature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of accidentals placed on a stave to determine which notes are flat, natural, or sharp</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Key Signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Longa -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Longa">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#LongaRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#LongaRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorBluesScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorBluesScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HexatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval corresponding to notes in a major scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorKey -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorKey">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Key"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A key where the third scale degree is major</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Key</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorNinthPentad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorNinthPentad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NinthPentad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorPentatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorPentatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#PentatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorProgression -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorProgression">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HarmonicProgression"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A succession of musical chords in a major scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Progression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSecondInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorSecondInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#WholeStep"/>
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#WholeTone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MajorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSeventhInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorSeventhInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MajorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SeventhTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSixthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorSixthInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MajorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSixthTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorSixthTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SixthTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorThirdInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorThirdInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MajorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorTriad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MajorTriad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Mediant -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Mediant">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Midway between tonic and dominant</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mediant</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iii</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MelodicInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MelodicInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurs when multiple notes are played in sequence</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melodic Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MelodicMinorScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MelodicMinorScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HeptatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MelodicProgression -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MelodicProgression">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Progression"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A succession of musical notes</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melodic Progression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Microtone -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Microtone">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Tone"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval smaller than a semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microtone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Minim -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Minim">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinimRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinimRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorBluesScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorBluesScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HexatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval in which the corresponding major interval is narrowed by a chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorKey -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorKey">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Key"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A key where the third scale degree is minor</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Key</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorMajorSeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorMajorSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SeventhTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorNinthPentad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorNinthPentad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NinthPentad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorPentatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorPentatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#PentatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorProgression -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorProgression">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#HarmonicProgression"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A succession of musical chords in a minor scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Progression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSecondInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorSecondInterval">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Semitone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MinorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSeventhInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorSeventhInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MinorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SeventhTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSixthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorSixthInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MinorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSixthTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorSixthTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SixthTetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorThirdInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorThirdInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MinorInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorTriad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MinorTriad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MixedMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MixedMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A notational convention representing multiple, often alternating time signatures</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Monad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Monad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MonotonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MonotonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MusicalNotation -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#MusicalNotation">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symbol used to represent a musical concept</rdfs:comment>
+        <rdfs:label>Musical Notation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Natural -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Natural">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Accidental"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An accidental which represents the unaltered pitch of a note by canceling previous accidentals</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#NaturalMinorScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#NaturalMinorScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#NinthPentad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#NinthPentad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Pentad"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord in which the seventh and ninth above the root are included</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ninth Pentad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Note -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Note">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation of sound in terms of a pitch and duration</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#NoteDuration -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#NoteDuration">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Duration"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of time a note is played</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note Duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Octad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Octad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#OctatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#OctatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Pentad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Pentad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PentatonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#PentatonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectFifthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#PerfectFifthInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectFourthInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#PerfectFourthInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#PerfectInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval with a high degree of consonance (traditionally considered perfectly consonant) that can be inverted to form other perfect intervals</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perfect Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectOctaveInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#PerfectOctaveInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectUnisonInterval -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#PerfectUnisonInterval">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#PerfectInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Pitch -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Pitch">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A perceptual property of sound as related to the frequency of a note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pitch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Progression -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Progression">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A succession or series</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Quaver -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Quaver">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#QuaverRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#QuaverRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Rest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Rest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Duration"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amount of time that no note is played</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Scale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Scale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MelodicProgression"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of musical notes ordered by fundamental frequency or pitch</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Semibreve -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Semibreve">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SemibreveRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SemibreveRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Semiquaver -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Semiquaver">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#NoteDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SemiquaverRest -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SemiquaverRest">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Rest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Semitone -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Semitone">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Tone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SeventhTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SeventhTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Tetrad"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord in which the seventh above the root is also included</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seventh Tetrad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Sharp -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Sharp">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Accidental"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An accidental which raises the pitch of a note by a half step</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sharp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Signature -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Signature">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MusicalNotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A notational convention</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SimpleMeter -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SimpleMeter">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time signature where the beat can be broken down into two-part rhythms</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simple Meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SixthTetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SixthTetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Tetrad"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord in which the sixth above the root is also included</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixth Tetrad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Stave -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Stave">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#MusicalNotation"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of five parallel, equally-spaced, lines and four spaces, each representing a different musical pitch</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stave</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Staff</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Step -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Step">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Tone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A categorization of an interval</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Step</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Subdominant -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Subdominant">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lower dominant</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subdominant</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Submediant -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Submediant">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lower mediant, midway between tonic and subdominant</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Submediant</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vi</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Subtonic -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Subtonic">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One half step below tonic</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subtonic</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bVII</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Supertonic -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Supertonic">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One whole step above the tonic</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supertonic</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ii</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SuspendedChord -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedChord">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord in which the third is replaced</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspended Chord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SuspendedFourthTriad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedFourthTriad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SuspendedChord"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SuspendedSecondTriad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedSecondTriad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#SuspendedChord"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Tetrad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Tetrad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#TetratonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#TetratonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#TimeSignature -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#TimeSignature">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Signature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A notational convention comprised of an upper and a lower numeral used to signify the number of beats per measure and time value of each beat, respectively</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Tone -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Tone">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Interval"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A categorization of an interval</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Tonic -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Tonic">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#DiatonicDegree"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tonal center, or root note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tonic</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Triad -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Triad">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Tritone -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Tritone">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Tone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#TritonicScale -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#TritonicScale">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Scale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Wavelength -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#Wavelength">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difference between to successive crests of a wave, mathematically the quotient of the wave velocity over frequency</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wavelength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#WholeStep -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#WholeStep">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#WholeTone"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Step"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#WholeTone -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/mto.owl#WholeTone">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/mto.owl#Tone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/chord/Chord -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/chord/Chord"/>
+    
+
+
+    <!-- http://purl.org/ontology/chord/Interval -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/chord/Interval"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/TimeInterval -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/TimeInterval"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AFlat -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AFlat">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/GSharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#ASharp -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#ASharp">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/BFlat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedFifthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedFifthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedFourthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedFourthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedSecondInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSecondInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedSeventhInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSeventhInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedSixthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSixthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedThirdInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedThirdInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedTriad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedTriad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,#5)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#AugmentedUnisonInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedUnisonInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#BFlat -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#BFlat">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/ASharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Breve -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Breve">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#BreveRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#BreveRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#CSharp -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#CSharp">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/DFlat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#ChromaticScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#ChromaticScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Crotchet -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Crotchet">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#CrotchetRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#CrotchetRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DFlat -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DFlat">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/CSharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DSharp -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DSharp">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/EFlat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Decad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Decad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Demisemiquaver -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Demisemiquaver">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DemisemiquaverRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DemisemiquaverRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedFifthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedFifthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedFourthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedFourthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedOctaveInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedOctaveInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSecondInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSecondInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSeventhInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSeventhInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSeventhTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSeventhTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,b5,bb7)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedSixthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSixthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedThirdInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedThirdInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DiminishedTriad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedTriad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,b5)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DitonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DitonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DominantNinthPentad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DominantNinthPentad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,5,b7,9)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#DominantSeventhTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#DominantSeventhTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,5,b7)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Dyad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Dyad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#EFlat -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#EFlat">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/DSharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Ennead -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Ennead">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#FSharp -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#FSharp">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/GFlat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#GFlat -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#GFlat">
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/FSharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HalfDiminishedSeventhTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#HalfDiminishedSeventhTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,b5,b7)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HalfStep -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#HalfStep">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HarmonicMinorScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#HarmonicMinorScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-S-T-T-S-[T+S]-S</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Hemidemisemiquaver -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Hemidemisemiquaver">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HemidemisemiquaverRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#HemidemisemiquaverRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Heptad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Heptad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HeptatonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#HeptatonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Hexad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Hexad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#HexatonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#HexatonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Longa -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Longa">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#LongaRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#LongaRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorBluesScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorBluesScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-S-S-[T+S]-T-[T+S]</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorNinthPentad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorNinthPentad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,5,7,9)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorPentatonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorPentatonicScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-T-[T+S]-T-[T+S]</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-T-S-T-T-T-S</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSecondInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorSecondInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSeventhInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorSeventhInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSeventhTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorSeventhTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,5,7)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSixthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorSixthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorSixthTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorSixthTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,5,6)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorThirdInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorThirdInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MajorTriad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MajorTriad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3,5)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MelodicMinorScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MelodicMinorScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-S-T-T-T-T-S</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Minim -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Minim">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinimRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinimRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorBluesScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorBluesScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[T+S]-T-S-S-[T+S]-T</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorMajorSeventhTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorMajorSeventhTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,5,7)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorNinthPentad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorNinthPentad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,5,b7,9)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorPentatonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorPentatonicScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[T+S]-T-T-[T+S]-T</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSecondInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorSecondInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSeventhInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorSeventhInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSeventhTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorSeventhTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,5,b7)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSixthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorSixthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorSixthTetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorSixthTetrad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,5,6)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorThirdInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorThirdInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MinorTriad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MinorTriad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(b3,5)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Monad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Monad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#MonotonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#MonotonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#NaturalMinorScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#NaturalMinorScale">
+        <hasIntervalPattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-S-T-T-S-T-T</hasIntervalPattern>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Octad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Octad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#OctatonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#OctatonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Pentad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Pentad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PentatonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#PentatonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectFifthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#PerfectFifthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectFourthInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#PerfectFourthInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectOctaveInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#PerfectOctaveInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#PerfectUnisonInterval -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#PerfectUnisonInterval">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Quaver -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Quaver">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#QuaverRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#QuaverRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Semibreve -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Semibreve">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SemibreveRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#SemibreveRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Semiquaver -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Semiquaver">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SemiquaverRest -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#SemiquaverRest">
+        <hasDurationLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasDurationLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Semitone -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Semitone">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SuspendedFourthTriad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedFourthTriad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4,5)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#SuspendedSecondTriad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedSecondTriad">
+        <hasComponentsList rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2,5)</hasComponentsList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Tetrad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Tetrad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#TetratonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#TetratonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Triad -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Triad">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#Tritone -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#Tritone">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#TritonicScale -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#TritonicScale">
+        <hasNoteCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasNoteCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#WholeStep -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#WholeStep">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/ontology/mto.owl#WholeTone -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology/mto.owl#WholeTone">
+        <hasSemitoneCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasSemitoneCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/A -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/A">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/AFlat -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/AFlat">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <owl:sameAs rdf:resource="http://purl.org/ontology/mto/kb/GSharp"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ab Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/ASharp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/ASharp">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A# Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A#</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/B -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/B">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/BFlat -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/BFlat">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bb Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/C -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/C">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/CSharp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/CSharp">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C# Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C#</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/D -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/D">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/DFlat -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/DFlat">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Db Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Db</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/DSharp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/DSharp">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D# Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D#</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/E -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/E">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/EFlat -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/EFlat">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eb Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/F -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/F">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/FSharp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/FSharp">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F# Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F#</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/G -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/G">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/GFlat -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/GFlat">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gb Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/mto/kb/GSharp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/mto/kb/GSharp">
+        <rdf:type rdf:resource="http://localhost:8080/ontology/mto.owl#Note"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G# Named Note</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G#</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedFifthInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Fifth</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A5</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a perfect fifth by one chromatic semitone</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedFourthInterval">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A4</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a perfect fourth by one chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Fourth</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSecondInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Second</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A2</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a major second by one chromatic semitone</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSeventhInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a major seventh by one chromatic semitone</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A7</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Seventh</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedSixthInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Sixth</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a major sixth by one chromatic semitone</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A6</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedThirdInterval">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Third</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a major third by one chromatic semitone</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedTriad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Triad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, and a note an augmented fifth above the root</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aug</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#AugmentedUnisonInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by augmenting a perfect unison by one chromatic semitone</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A1</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Augmented Unison</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Breve">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for eight times the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double Whole Note</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breve</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#BreveRest">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for eight times the length of a beat</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breve Rest</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double Whole Rest</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#ChromaticScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with twelve pitches each seperated by a semitone</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Crotchet">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crotchet</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quarter Note</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#CrotchetRest">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quarter Rest</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crotchet Rest</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for the length of a beat</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Decad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of ten notes or pitches</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decachord</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Demisemiquaver">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Demisemiquaver</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thirthy-Second Note</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for an eighth the length of a beat</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DemisemiquaverRest">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thirthy-Second Rest</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for an eight the length of a beat</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Demisemiquaver Rest</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedFifthInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a perfect fifth by one chromatic semitone</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d5</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Fifth</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedFourthInterval">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d4</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a perfect fourth by one chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Fourth</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedOctaveInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Seventh</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a perfect octave by one chromatic semitone</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d8</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSecondInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Second</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a minor second by one chromatic semitone, enharmonically equivalent to a perfect unison</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d2</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSeventhInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a minor seventh by one chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Seventh</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d7</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSeventhTetrad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Seventh Tetrad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dim7</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, a diminished fifth above the root, and a diminished minor 7th above the root</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedSixthInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a minor sixth by one chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Sixth</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d6</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedThirdInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval produced by diminishing a minor third by one chromatic semitone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Third</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d3</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DiminishedTriad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, and a diminished fifth above the root</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dim</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diminished Triad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DitonicScale">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with two pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ditonic Scale</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DominantNinthPentad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominant Ninth Pentad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, a perfect fifth above the root, and a minor 7th above the root, and a major 9th above the root</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#DominantSeventhTetrad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, a perfect fifth above the root, and a minor 7th above the root</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dominant Seventh Tetrad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Dyad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dyad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dichord</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of two notes or pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Ennead">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ennead</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of nine notes or pitches</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonachord</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#HalfDiminishedSeventhTetrad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dim7</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Half Diminished Seventh Tetrad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, a diminished fifth above the root, and a minor 7th above the root</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#HalfStep">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval between two adjacent notes on a 12-note scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Half Step</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#HarmonicMinorScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harmonic Minor Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heptatonic scale following a T-S-T-T-S-[T+S]-S interval pattern</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Hemidemisemiquaver">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemidemisemiquaver</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for a sixteenth the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixty-Fourth Note</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#HemidemisemiquaverRest">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemidemisemiquaver Rest</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixty-Fourth Rest</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for a sixteenth the length of a beat</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Heptad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of seven notes or pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heptad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heptachord</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#HeptatonicScale">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with seven pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heptatonic Scale</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Hexad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of six notes or pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexachord</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#HexatonicScale">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with six pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexatonic Scale</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Longa">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Longa</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for sixteen times the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quadruple Whole Note</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#LongaRest">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for sixteen times the length of a beat</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Longa Rest</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quadruple Whole Rest</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorBluesScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Blues Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hexatonic scale following a T-S-S-[T+S]-T-[T+S] interval pattern</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorNinthPentad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maj9</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, a perfect fifth above the root, a major 7th above the root, and a major 9th above the root</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Ninth Pentad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorPentatonicScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Pentatonic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pentatonic scale following a T-T-[T+S]-T-[T+S] interval pattern</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diatonic scale following a T-T-S-T-T-T-S interval pattern</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorSecondInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval of a single chromatic whole tone</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Second</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M2</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorSeventhInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Seventh</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M7</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval encompassing eleven semitones</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorSeventhTetrad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Seventh Chord</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, a perfect fifth above the root, and a major 7th above the root</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maj7</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorSixthInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval encompassing nine semitones</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Sixth</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M6</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorSixthTetrad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, a perfect fifth above the root, and a major 6th above the root</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Sixth Tetrad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maj6</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorThirdInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Third</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M3</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval encompassing four semitones</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MajorTriad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a major third above the root, and a perfect fifth above the root</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maj</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major Triad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MelodicMinorScale">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heptatonic scale following a T-S-T-T-T-T-S interval pattern</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melodic Minor Scale</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Minim">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minim</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Half Note</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for twice the length of a beat</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinimRest">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for twice the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Half Rest</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minim Rest</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorBluesScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Blues Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hexatonic scale following a [T+S]-T-S-S-[T+S]-T interval pattern</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorMajorSeventhTetrad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor (Major Seventh) Tetrad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, a perfect fifth above the root, and a major 7th above the root</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minmaj7</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorNinthPentad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Ninth Pentad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min9</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, a perfect fifth above the root, and a minor 7th above the root, and a major 9th above the root</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorPentatonicScale">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pentatonic scale following a [T+S]-T-T-[T+S]-T interval pattern</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Pentatonic Scale</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorSecondInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Second</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval of a single chromatic semitone</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m2</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorSeventhInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval encompassing ten semitones</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m7</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Seventh</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorSeventhTetrad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min7</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, a perfect fifth above the root, and a minor 7th above the root</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Seventh Tetrad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorSixthInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval encompassing eight semitones</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m6</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Sixth</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorSixthTetrad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min6</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Sixth Tetrad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, a perfect fifth above the root, and a major 6th above the root</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorThirdInterval">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m3</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Third</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval encompassing three semitones</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MinorTriad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord consisting of a root note, a minor third above the root, and a perfect fifth above the root</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minor Triad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Monad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monochord</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single note or pitch</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#MonotonicScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monotonic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with a single pitch</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#NaturalMinorScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Minor Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diatonic scale following a T-S-T-T-S-T-T interval pattern</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Octad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Octachord</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of eight notes or pitches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Octad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#OctatonicScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Octatonic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with eight pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Pentad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of five notes or pitches</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pentachord</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pentad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#PentatonicScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pentatonic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with five pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#PerfectFifthInterval">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P5</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perfect Fifth</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval where the pair of pitches follow a frequency ratio of 3:2, encompassing a difference of seven semitones</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#PerfectFourthInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval where the pair of pitches follow a frequency ratio of 4:3, encompassing a difference of five semitones</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perfect Fourth</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P4</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#PerfectOctaveInterval">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval where the starting (lower) note is half the frequency of the ending note</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P8</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perfect Octave</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#PerfectUnisonInterval">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perfect Unison</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P1</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval where two or more notes are playing the same pitch</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Quaver">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for half the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight Note</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quaver</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#QuaverRest">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quaver Rest</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for half the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight Rest</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Semibreve">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Note</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semibreve</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for four times the length of a beat</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#SemibreveRest">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semibreve Rest</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for four times the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Rest</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Semiquaver">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixteenth Note</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note played for a quarter the length of a beat</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semiquaver</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#SemiquaverRest">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semiquaver Rest</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rest for a quarter the length of a beat</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixteenth Rest</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Semitone">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The interval between two adjacent notes on a 12-note scale</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semitone</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedFourthTriad">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord in which the third is replaced by the perfect fourth</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sus4</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspended Fourth Triad</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#SuspendedSecondTriad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sus2</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspended Second Triad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chord in which the third is replaced by the major second</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Tetrad">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetrad</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetrachord</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of four notes or pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#TetratonicScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetratonic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with four pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Triad">
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trichord</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triad</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of three notes or pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#Tritone">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tritone</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TT</skos:altLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval of six semitones</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#TritonicScale">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tritonic Scale</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A musical scale with three pitches</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#WholeStep">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval of two half steps</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Step</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:8080/ontology/mto.owl#WholeTone">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval of two semitones</rdfs:comment>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</skos:altLabel>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Tone</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

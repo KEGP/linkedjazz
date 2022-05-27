@@ -1,0 +1,6 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix test: <.> .
+@prefix ca: <http://localhost:8080/ontology/chord-annotations.owl#> .
+
+test:av.ttl a owlunit:AnnotationVerification ;
+	owlunit:testsOntology ca: .

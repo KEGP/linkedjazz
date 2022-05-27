@@ -1,0 +1,12 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:cq_usedchords.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "Which is the first chord of the tune?" ;
+ 	owlunit:hasSPARQLUnitTest "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX : <https://example.org/ontology/chord-annotations#> SELECT ?chordType WHERE { ?section rdf:type :Section ; :isFirst true ; :hasName ?sectionName ; :hasProgression ?progression . ?progression :hasBar ?bar . ?bar :isFirst true ; :hasChord ?chord . ?chord :isFirst true ; rdf:type ?chordType . }";
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"chordType\": {\"type\": \"uri\", \"value\": \"http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)\"}}]}, \"head\": {\"vars\": [\"chordType\"]}}";
+  owlunit:testsOntology rdf: .

@@ -1,0 +1,598 @@
+@prefix :       <https://example.org/ontology/chord-annotations#> .
+@prefix chord:  <http://purl.org/ontology/chord/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix kejazz: <https://example.org/ontology/kejazz#> .
+@prefix mt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+@prefix mto:    <http://purl.org/ontology/mto/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/6> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/7> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/2> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/8> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC>
+        rdf:type         :Section ;
+        :hasInstrument   "percussion" ;
+        :hasName         "Ensemble, Percussion Solo - ABAC" ;
+        :hasPattern      <https://example.org/ontology/chord-annotations#Pattern/resource/ABAC> ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression> ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/5> .
+
+<https://example.org/ontology/kejazz#Recording/resource/8454b48d-cd0b-4114-b696-b5429443c597>
+        rdf:type   kejazz:Recording ;
+        :hasSheet  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/8> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro>
+        rdf:type         :Section ;
+        :hasName         "Intro" ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression> ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC>
+        rdf:type         :Section ;
+        :hasInstrument   "trumpet" ;
+        :hasName         "Trumpet Solo - ABAC" ;
+        :hasPattern      <https://example.org/ontology/chord-annotations#Pattern/resource/ABAC> ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression> ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/8> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC>
+        rdf:type         :Section ;
+        :hasInstrument   "trombone" ;
+        :hasName         "Trombone Solo - ABAC" ;
+        :hasPattern      <https://example.org/ontology/chord-annotations#Pattern/resource/ABAC> ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression> ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/9> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC>
+        rdf:type         :Section ;
+        :hasInstrument   "tenor saxophone" ;
+        :hasName         "Tenor Sax Solo - ABAC" ;
+        :hasPattern      <https://example.org/ontology/chord-annotations#Pattern/resource/ABAC> ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression> ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/8> .
+
+:4_4    rdf:type          mto:TimeSignature ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/7> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/2> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/8> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/5> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/9> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda>
+        rdf:type         :Section ;
+        :hasName         "Coda" ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression> ;
+        :isFirst         false .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC>
+        rdf:type         :Section ;
+        :hasName         "Head - ABAC" ;
+        :hasProgression  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression> ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/2> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/8> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/5> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/6> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/9> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5>
+        rdf:type     :Sheet ;
+        :hasKey      :Ab_major ;
+        :hasSection  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro> ;
+        :hasTuning   "439.23"^^xsd:double .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/8> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/9> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/4> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/6> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/9> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Coda/progression/bar/5> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/3> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/6> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/7> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/2> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/8> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/5> .
+
+:Ab_major  rdf:type     :Key ;
+        :hasKeyNote     mto:Ab ;
+        :hasKeyQuality  mto:MinorKey .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/8> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/2> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/8> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/5> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/6> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trombone_Solo_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Trumpet_Solo_-_ABAC/progression/bar/7> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Head_-_ABAC/progression/bar/9> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/8> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://purl.org/ontology/chord/symbol/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Intro/progression/bar/2> .
+
+<https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/1> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/7> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/2> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/8> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/3> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/4> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/5> , <https://example.org/ontology/chord-annotations#Sheet/resource/2be10932-e83d-4690-a4ad-79f6609bb0b5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/6> .

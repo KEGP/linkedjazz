@@ -1,0 +1,13 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:suite.ttl a owlunit:TestSuite ;
+    owlunit:hasTestCase ex:cq_mainarea.ttl;
+    owlunit:hasTestCase ex:cq_alias.ttl ;
+    owlunit:hasTestCase ex:cq_relationtypes.ttl .
+
+ex:cq_mainarea.ttl a owlunit:CompetencyQuestionVerification .
+ex:cq_alias.ttl a owlunit:CompetencyQuestionVerification .
+ex:cq_relationtypes.ttl  a owlunit:CompetencyQuestionVerification .

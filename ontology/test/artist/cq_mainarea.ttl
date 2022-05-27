@@ -1,0 +1,12 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:cq_mainarea.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "What is the name of the main area of the Artist?" ;
+ 	owlunit:hasSPARQLUnitTest "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX : <https://www.unibo.it/ontologies/metadata/> SELECT DISTINCT ?areaname WHERE {?artist :hasMainArea ?area . ?artist :hasMusicBrainzID \"209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee\". ?area rdf:type :Place . ?area :hasName ?areaname }" ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{  \"head\": {  \"vars\": [  \"areaname\" ] } ,  \"results\": {  \"bindings\": [ {  \"areaname\": {  \"type\":  \"literal\" ,  \"value\":  \"United States\" } } ] } }";
+  owlunit:testsOntology rdf: .
