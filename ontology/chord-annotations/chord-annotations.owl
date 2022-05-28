@@ -37,6 +37,8 @@
 
     <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasBar">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Progression"/>
         <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Bar"/>
         <rdfs:comment xml:lang="en">Bar of a progression.</rdfs:comment>
@@ -60,10 +62,13 @@
     <!-- http://localhost:8080/ontology/chord-annotations.owl#hasInstrument -->
 
     <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasInstrument">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Section"/>
         <rdfs:range rdf:resource="http://localhost:8080/ontology/kejazz.owl#MusicalInstrument"/>
         <rdfs:comment xml:lang="en">Main instrument used in a section</rdfs:comment>
-        <rdfs:label>has main musical instrument</rdfs:label>
+        <rdfs:comment xml:lang="it">Strumento musicale principale utilizzato in una sezione.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha come strumento principale</rdfs:label>
+        <rdfs:label xml:lang="en">has main musical instrument</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -72,6 +77,7 @@
 
     <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasKey">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Sheet"/>
         <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Key"/>
         <rdfs:comment xml:lang="en">Key of the section, as transcribed by the annotator.</rdfs:comment>
@@ -80,10 +86,11 @@
     
 
 
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasKeyNote -->
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasRoot -->
 
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasKeyNote">
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasRoot">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Key"/>
         <rdfs:range rdf:resource="http://localhost:8080/ontology/mto.owl#Key"/>
         <rdfs:comment>Defines the key note of a key (e.g. C is the key note in C major).</rdfs:comment>
@@ -92,10 +99,68 @@
     
 
 
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasKeyQuality -->
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasSection -->
 
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasKeyQuality">
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasSection">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Sheet"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Section"/>
+        <rdfs:comment xml:lang="en">Section of a sheet</rdfs:comment>
+        <rdfs:label xml:lang="en">has section</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasTimeSignature -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasTimeSignature">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Sheet"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
+        <rdfs:comment xml:lang="en">Time signature used by a sheet.</rdfs:comment>
+        <rdfs:label xml:lang="en">has time signature</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#madeOfProgression -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#madeOfProgression">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Section"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Progression"/>
+        <rdfs:comment xml:lang="en">Progression of a section</rdfs:comment>
+        <rdfs:label xml:lang="en">made of progression</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#nextAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#nextAnnotation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyFollows"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
+        <rdfs:comment xml:lang="en">Annotation following a previous annotation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Annotazione musicale seguente.</rdfs:comment>
+        <rdfs:label xml:lang="en">next annotation</rdfs:label>
+        <rdfs:label xml:lang="it">prossima annotazione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#ofHarmonicQuality -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#ofHarmonicQuality">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Key"/>
         <rdfs:range>
             <owl:Class>
@@ -111,62 +176,15 @@
     
 
 
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasProgression -->
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#tunedTo -->
 
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasProgression">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
-        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Section"/>
-        <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Progression"/>
-        <rdfs:comment xml:lang="en">Progression of a section</rdfs:comment>
-        <rdfs:label xml:lang="en">has progression</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasSection -->
-
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasSection">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
-        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Sheet"/>
-        <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Section"/>
-        <rdfs:comment xml:lang="en">Section of a sheet</rdfs:comment>
-        <rdfs:label xml:lang="en">has section</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasTimeSignature -->
-
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasTimeSignature">
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#tunedTo">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
-        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Sheet"/>
-        <rdfs:range rdf:resource="http://localhost:8080/ontology/mto.owl#TimeSignature"/>
-        <rdfs:comment xml:lang="en">Time signature used by a sheet.</rdfs:comment>
-        <rdfs:label xml:lang="en">has time signature</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#hasTuning -->
-
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#hasTuning">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
-        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Sheet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology/kejazz.owl#Recording"/>
         <rdfs:range rdf:resource="http://localhost:8080/ontology/mto.owl#Pitch"/>
         <rdfs:comment>Tuning of the A4 note. Conventionally 440 Hz.</rdfs:comment>
         <rdfs:label>has tuning</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ontology/chord-annotations.owl#nextAnnotation -->
-
-    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/chord-annotations.owl#nextAnnotation">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyFollows"/>
-        <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
-        <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
-        <rdfs:comment xml:lang="en">Annotation following a previous annotation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Next annotation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -221,8 +239,10 @@
 
     <owl:Class rdf:about="http://localhost:8080/ontology/chord-annotations.owl#Annotation">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <rdfs:comment xml:lang="it">Annotazione musicale, effettuata da un esperto o da un algoritmo.</rdfs:comment>
         <rdfs:comment xml:lang="en">Timed Annotation made by an annotator, either a human or algorithmically.</rdfs:comment>
-        <rdfs:label xml:lang="en">Timed Annotation</rdfs:label>
+        <rdfs:label xml:lang="it">Annotazione musicale</rdfs:label>
+        <rdfs:label xml:lang="en">Musical annotation</rdfs:label>
     </owl:Class>
     
 
@@ -233,7 +253,19 @@
         <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"/>
         <rdfs:comment xml:lang="en">Bar of a progression.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Misura di una progressione.</rdfs:comment>
+        <rdfs:label xml:lang="it">Misura</rdfs:label>
         <rdfs:label xml:lang="en">bar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/chord-annotations.owl#Chord -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/chord-annotations.owl#Chord">
+        <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto.owl#Chord"/>
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
     </owl:Class>
     
 
@@ -241,16 +273,16 @@
     <!-- http://localhost:8080/ontology/chord-annotations.owl#Key -->
 
     <owl:Class rdf:about="http://localhost:8080/ontology/chord-annotations.owl#Key">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#hasKeyNote"/>
+                        <owl:onProperty rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#hasRoot"/>
                         <owl:someValuesFrom rdf:resource="http://localhost:8080/ontology/mto.owl#Key"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#hasKeyQuality"/>
+                        <owl:onProperty rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#ofHarmonicQuality"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
@@ -264,7 +296,9 @@
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Key of a musical sheet (e.g. C major).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Tonalità dello spartito musicale di un brano.</rdfs:comment>
         <rdfs:label xml:lang="en">Key</rdfs:label>
+        <rdfs:label xml:lang="it">Tonalità</rdfs:label>
     </owl:Class>
     
 
@@ -273,7 +307,9 @@
 
     <owl:Class rdf:about="http://localhost:8080/ontology/chord-annotations.owl#Pattern">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:comment xml:lang="it">Forma di una sezione, ossia la metrica con cui la struttura armonica si ripete (es. AABA, AABB).</rdfs:comment>
         <rdfs:comment xml:lang="en">Pattern of a section, showing how chord structures repeats i.e. AABA, AABB.</rdfs:comment>
+        <rdfs:label xml:lang="it">Forma</rdfs:label>
         <rdfs:label xml:lang="en">Pattern</rdfs:label>
     </owl:Class>
     
@@ -286,7 +322,9 @@
         <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/chord-annotations.owl#Annotation"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"/>
         <rdfs:comment xml:lang="en">Harmonic progression of a section.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Progressione armonica di una sezione.</rdfs:comment>
         <rdfs:label xml:lang="en">Progression</rdfs:label>
+        <rdfs:label xml:lang="it">Progressione</rdfs:label>
     </owl:Class>
     
 
@@ -296,7 +334,9 @@
     <owl:Class rdf:about="http://localhost:8080/ontology/chord-annotations.owl#Section">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
         <rdfs:comment xml:lang="en">Section of a musical sheet such as intro, verse, refrain.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Sezione di un brano.</rdfs:comment>
         <rdfs:label xml:lang="en">Section</rdfs:label>
+        <rdfs:label xml:lang="it">Sezione</rdfs:label>
     </owl:Class>
     
 
@@ -306,7 +346,9 @@
     <owl:Class rdf:about="http://localhost:8080/ontology/chord-annotations.owl#Sheet">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"/>
         <rdfs:comment xml:lang="en">Musical sheet of a song. Contains informations on the musical structure, the sections, the chord progression along with metadata such as the song tuning, pitch.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Spartito musicale di un brano.</rdfs:comment>
         <rdfs:label xml:lang="en">Sheet</rdfs:label>
+        <rdfs:label xml:lang="it">Spartito</rdfs:label>
     </owl:Class>
     
 
