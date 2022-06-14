@@ -6,4 +6,4 @@ COPY .docker/nginx.serveontologies.conf /etc/nginx/nginx.conf
 
 WORKDIR ontology
 COPY ontology/kejazz/kejazz.owl .
-COPY ontology/chord-annotations/*.owl .
+COPY ontology/chord-annotations/*.owl ./

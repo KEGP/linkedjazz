@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 
 services:
     sparqlanything:
@@ -9,7 +9,7 @@ services:
             dockerfile: .docker/Dockerfile.sparqlanything
         restart: always
         ports:
-            - "3000:3000" 
+            - "3000:3000"
     serveontologies:
         container_name: serveontologies
         image: serveontologies
@@ -18,7 +18,7 @@ services:
             dockerfile: .docker/Dockerfile.serveontologies
         restart: always
         ports:
-            - "8080:8080" 
+            - "8080:8080"
     webvowl:
         container_name: webvowl
         image: webvowl
@@ -27,6 +27,6 @@ services:
             dockerfile: .docker/Dockerfile.webvowl
         restart: always
         ports:
-            - "5000:5000" 
+            - "5000:5000"
         depends_on:
             - serveontologies
