@@ -1,0 +1,54 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#PREFIX mo: <http://purl.org/ontology/mo/> # Music Ontology
+#PREFIX mto: <http://purl.org/ontology/mto/> # Music Theory Ontology
+#PREFIX chord: <http://purl.org/ontology/chord/> # Chord Ontology
+
+PREFIX : <https://www.unibo.it/ontologies/metadata/>
+
+CONSTRUCT {
+  ?release a :Release;
+             :hasMusicBrainzID ?mbID;
+    	     owl:sameAs ?mbURL;
+    		 #owl:sameAs ?asinURL;
+             :hasTitle ?title;
+             :hasStatus ?status;
+             :hasPackagingFormat ?packaging;
+             :hasASIN ?asin;
+             :hasBarcode ?barcode;
+             :hasArtistCreditsPhrase ?artistCreditsPhrase;
+             :releasedInDate ?releaseDate;
+             :releasedInCountry ?releaseCountry;
+             :creditedTo ?creditedArtist.
+
+}WHERE {
+  SERVICE<x-sparql-anything:>{
+    fx:properties fx:location "file:///sparql.anything/data/musicbrainz/release/release_fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4_8.json" ;
+                  fx:trim-strings "true"^^xsd:boolean .
+
+    ?root a fx:root;
+          xyz:release ?release_BN.
+    ?release_BN xyz:id ?mbID.
+
+    OPTIONAL {?release_BN xyz:title ?title.}
+    OPTIONAL {?release_BN xyz:status ?status.}
+    OPTIONAL {?release_BN xyz:packaging ?packaging.}
+    OPTIONAL {?release_BN xyz:date ?releaseDate.}
+    OPTIONAL {?release_BN xyz:country ?releaseCountry.}
+    OPTIONAL {?release_BN xyz:asin ?asin.}
+    OPTIONAL {?release_BN xyz:barcode ?barcode.}
+    OPTIONAL {?release_BN xyz:artist-credit-phrase ?artistCreditPhrase.}
+    OPTIONAL {?release_BN xyz:artist-credit/fx:anySlot/xyz:artist/xyz:id ?creditedArtistMbID.}
+
+    BIND(fx:entity(:, "resource/Release/", ?mbID) as ?release).
+    BIND(fx:entity(:, "resource/Artist/", ?creditedArtistMbID) as ?creditedArtist).
+    BIND(fx:entity("https://musicbrainz.org/release/", ?mbID) as ?mbURL).
+    #BIND(fx:entity("https://www.amazon.com/dp/", ?asin) as ?asinURL).
+  }
+}
