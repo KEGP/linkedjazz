@@ -1,32 +1,62 @@
 version: "3.3"
 
 services:
-    sparqlanything:
-        container_name: sparqlanything
-        image: sparqlanything
-        build:
-            context: .
-            dockerfile: .docker/Dockerfile.sparqlanything
-        restart: always
-        ports:
-            - "3000:3000"
     serveontologies:
         container_name: serveontologies
-        image: serveontologies
+        image: nginx
+        restart: always
+        networks:
+            - network
+        volumes:
+            - .docker/nginx.serveontologies.conf:/etc/nginx/nginx.conf
+            - ./ontology/kejazz/kejazz.owl:/kejazz.owl
+            - ./ontology/chord-annotations/chord-annotations.owl:/chord-annotations.owl
+            - ./ontology/chord-annotations/mto.owl:/mto.owl
+
+    lode:
+        container_name: lode
         build:
             context: .
-            dockerfile: .docker/Dockerfile.serveontologies
+            dockerfile: .docker/Dockerfile.lode
+            args:
+                LODE_EXTERNAL_URL: "http://localhost:8080/lode/"
+        restart: always
+        networks:
+            - network
+        ports:
+            - "8081:8080"
+
+#    sparqlanything:
+#        container_name: sparqlanything
+#        image: sparqlanything
+#        build:
+#            context: .
+#            dockerfile: .docker/Dockerfile.sparqlanything
+#        restart: always
+#    webvowl:
+#        container_name: webvowl
+#        image: webvowl
+#        build:
+#            context: .
+#            dockerfile: .docker/Dockerfile.webvowl
+#        restart: always
+#        depends_on:
+#            - serveontologies
+
+    proxy:
+        container_name: proxy
+        image: nginx
         restart: always
         ports:
-            - "8080:8080"
-    webvowl:
-        container_name: webvowl
-        image: webvowl
-        build:
-            context: .
-            dockerfile: .docker/Dockerfile.webvowl
-        restart: always
-        ports:
-            - "5000:5000"
+            - "8080:80"
         depends_on:
             - serveontologies
+            - lode
+        networks:
+            - network
+        volumes:
+            - .docker/nginx.proxy.conf:/etc/nginx/nginx.conf
+
+
+networks:
+  network:
