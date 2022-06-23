@@ -7,6 +7,7 @@ ARG LODE_EXTERNAL_URL
 RUN echo "externalURL=${LODE_EXTERNAL_URL}\nwebvowl=http://visualdataweb.de/webvowl/#iri=\nuseHTTPs=false" > src/main/webapp/config.properties
 
 COPY .docker/LodeServlet.java src/main/java/it/essepuntato/lode/LodeServlet.java
+COPY .docker/GetSource.java src/main/java/it/essepuntato/lode/GetSource.java
 
 EXPOSE 8080
 CMD ["mvn", "jetty:run"]
