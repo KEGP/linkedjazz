@@ -13,8 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:kejazz="http://localhost:8080/ontology/kejazz.owl#">
     <owl:Ontology rdf:about="http://localhost:8080/ontology/chord-annotations.owl#">
-        <owl:imports rdf:resource="http://localhost:8080/ontology/kejazz.owl"/>
-        <owl:imports rdf:resource="http://localhost:8080/ontology/mto.owl"/>
+        <owl:imports rdf:resource="http://localhost:8080/ontology/mto.owl#"/>
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:comment>The following ontology models the musical structure of a tune, by taking into account human made annotations of chords.</rdfs:comment>
         <rdfs:label>Chord Annotation ontology</rdfs:label>
@@ -350,6 +349,18 @@
         <rdfs:label xml:lang="en">Sheet</rdfs:label>
         <rdfs:label xml:lang="it">Spartito</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology/kejazz.owl#MusicalInstrument -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/kejazz.owl#MusicalInstrument"/>
+    
+
+
+    <!-- http://localhost:8080/ontology/kejazz.owl#Recording -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology/kejazz.owl#Recording"/>
     
 
 
