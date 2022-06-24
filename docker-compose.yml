@@ -13,14 +13,6 @@ services:
             - ./ontology/chord-annotations/chord-annotations.owl:/chord-annotations.owl
             - ./ontology/chord-annotations/mto.owl:/mto.owl
 
-#    sparqlanything:
-#        container_name: sparqlanything
-#        image: sparqlanything
-#        build:
-#            context: .
-#            dockerfile: .docker/Dockerfile.sparqlanything
-#        restart: always
-
     webvowl:
         container_name: webvowl
         image: webvowl
