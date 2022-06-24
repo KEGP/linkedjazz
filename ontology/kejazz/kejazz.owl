@@ -372,6 +372,22 @@
                                  "has interval start date"@en .
 
 
+###  http://localhost:8080/ontology/kejazz.owl#hasMusicBrainzID
+:hasMusicBrainzID rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf dul:hasDataValue ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Artist
+                                              :Recording
+                                              :Release
+                                              :Work
+                                            )
+                              ] ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Unique identifier of MusicBrainz entities."@en ;
+                  rdfs:label "ha ID in MusicBrainz"@it ,
+                             "has MusicBrainz ID"@en .
+
+
 ###  http://localhost:8080/ontology/kejazz.owl#hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf dul:hasDataValue ;
