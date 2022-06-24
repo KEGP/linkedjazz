@@ -48,6 +48,16 @@ services:
         depends_on:
             - webvowl
 
+    sparqlanything:
+        container_name: sparqlanything
+        image: sparqlanything
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.sparqlanything
+        restart: always
+        networks:
+            - network
+
     proxy:
         container_name: proxy
         image: nginx
@@ -58,6 +68,7 @@ services:
             - serveontologies
             - lode
             - webvowl
+            - sparqlanything
         networks:
             - network
         volumes:
