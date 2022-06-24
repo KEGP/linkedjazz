@@ -13,19 +13,6 @@ services:
             - ./ontology/chord-annotations/chord-annotations.owl:/chord-annotations.owl
             - ./ontology/chord-annotations/mto.owl:/mto.owl
 
-    lode:
-        container_name: lode
-        build:
-            context: .
-            dockerfile: .docker/Dockerfile.lode
-            args:
-                LODE_EXTERNAL_URL: "http://localhost:8080/lode/"
-        restart: always
-        networks:
-            - network
-        ports:
-            - "8081:8080"
-
 #    sparqlanything:
 #        container_name: sparqlanything
 #        image: sparqlanything
@@ -33,15 +20,33 @@ services:
 #            context: .
 #            dockerfile: .docker/Dockerfile.sparqlanything
 #        restart: always
-#    webvowl:
-#        container_name: webvowl
-#        image: webvowl
-#        build:
-#            context: .
-#            dockerfile: .docker/Dockerfile.webvowl
-#        restart: always
-#        depends_on:
-#            - serveontologies
+
+    webvowl:
+        container_name: webvowl
+        image: webvowl
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.webvowl
+        restart: always
+        networks:
+            - network
+        depends_on:
+            - serveontologies
+    
+    lode:
+        container_name: lode
+        image: lode
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.lode
+            args:
+                LODE_EXTERNAL_URL: "http://localhost:8080/lode/"
+                WEBVOWL_EXTERNAL_URL: "http://localhost:8080/webvowl#iri="
+        restart: always
+        networks:
+            - network
+        depends_on:
+            - webvowl
 
     proxy:
         container_name: proxy
@@ -52,6 +57,7 @@ services:
         depends_on:
             - serveontologies
             - lode
+            - webvowl
         networks:
             - network
         volumes:

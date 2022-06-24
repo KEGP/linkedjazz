@@ -4,7 +4,8 @@ RUN git clone https://github.com/essepuntato/LODE.git
 WORKDIR /LODE
 
 ARG LODE_EXTERNAL_URL
-RUN echo "externalURL=${LODE_EXTERNAL_URL}\nwebvowl=http://visualdataweb.de/webvowl/#iri=\nuseHTTPs=false" > src/main/webapp/config.properties
+ARG WEBVOWL_EXTERNAL_URL
+RUN echo "externalURL=${LODE_EXTERNAL_URL}\nwebvowl=${WEBVOWL_EXTERNAL_URL}\nuseHTTPs=false" > src/main/webapp/config.properties
 
 COPY .docker/LodeServlet.java src/main/java/it/essepuntato/lode/LodeServlet.java
 COPY .docker/GetSource.java src/main/java/it/essepuntato/lode/GetSource.java
