@@ -1,0 +1,134 @@
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX mto: <http://localhost:8080/ontology/mto> # Music Theory Ontology
+PREFIX : <http://localhost:8080/ontology/chord-annotations>
+PREFIX res: <http://localhost:8080/ontology/chord-annotations/resource/>
+PREFIX kejazz: <http://localhost:8080/ontology/kejazz>
+PREFIX kejazzres: <http://localhost:8080/ontology/kejazz/resource/>
+
+CONSTRUCT {
+  ?instrument_NS a kejazz:Instrument .
+  
+  ?recording_KEJ a kejazz:Recording ;
+                 :hasSheet ?sheet_NS ;
+	             :hasTuning ?tuning .
+  
+  ?sheetKey_NS a :Key ;
+               :hasRoot ?keyNote_MTO ;
+               :ofHarmonicQuality ?keyQuality_MTO .
+  ?sheetTS_NS a mto:TimeSignature ;
+              :hasUpperNumeral ?upperNumeralTS ;
+              :hasLowerNumeral ?lowerNumeralTS .				  
+      
+  ?sheet_NS a :Sheet ;
+            :hasKey ?sheetKey_NS ;
+            :hasSection ?section_NS .
+      
+  ?section_NS a :Section ;
+              rdfs:label ?partName ;
+              :characterizedBy ?pattern_NS ;
+              :hasMainInstrument ?instrument_NS ;
+              :nextAnnotation ?nextSection_NS ;
+              :isFirst ?isFirstSection ;
+              :madeOfProgression ?progression_NS .
+      
+  ?progression_NS a :Progression ;
+  			      :hasBar ?bar_NS .
+  
+  ?bar_NS a :Bar ;
+  	      :nextAnnotation ?nextBar_NS ;
+  	   	  :isFirst ?isFirstBar ;
+          :hasChord [
+            a ?chord_CO ;
+              :isFirst ?isFirstChord ;
+              :nextAnnotation ?nextChord
+          ] .
+    
+} WHERE {
+  SERVICE<x-sparql-anything:>{
+    fx:properties fx:location "/sparql.anything/data/jaah/chord_annotations/airegin.json"  ;
+                  fx:media-type "application/json" ;
+    			        fx:trim-strings "true"^^xsd:boolean .
+    
+    ?sheet a fx:root .
+    ?sheet xyz:mbid ?recordingMBID .
+    BIND(fx:entity(kejazzres:Recording, "/", ?recordingMBID) as ?recording_KEJ) .
+
+    # retrieve information on the sheet
+    ?sheet xyz:tuning ?tuning ;
+           xyz:metre ?timeSignature ;
+           xyz:key ?key ;
+           xyz:title ?title ;
+           xyz:parts ?partsContainer .
+    
+    ############################# Retrieve sheet-wise information ######################################
+    # bind lower and upper numeral of time signature
+    BIND(REPLACE(?timeSignature, "/(.*)", "") as ?upperNumeralTS) . 
+    BIND(REPLACE(?timeSignature, "(.*)/", "") as ?lowerNumeralTS) .
+    # bind key note and quality to mto entities
+    BIND(REPLACE(?key, " (.*)", "") as ?keyNote ) .
+    BIND(REPLACE(?key, "(.*) ", "") as ?keyQuality ) .
+	  BIND(fx:entity(mto:, ?keyNote) as ?keyNote_MTO) .
+    BIND(IF(?key = "major", mto:MajorKey, mto:MinorKey) as ?keyQuality_MTO) .
+    # bind IRI for sheet key and time signature
+    BIND(fx:entity(res:Key, "/", ?keyNote, "_", ?keyQuality) AS ?sheetKey_NS) .
+    BIND(fx:entity(res:TimeSignature, "/", ENCODE_FOR_URI(?lowerNumeralTS), "_", ENCODE_FOR_URI(?upperNumeralTS)) AS ?sheetTS_NS) .
+    # give IRI to sheet
+    BIND(fx:entity(res:Sheet, "/", STRUUID()) as ?sheet_NS) .
+    
+    ############################# Retrieve section-wise information #####################################
+    ?partsContainer ?currentPartPred ?part .
+    ?part xyz:name ?partName .
+    BIND(fx:entity(?sheet_NS, "/part/", ENCODE_FOR_URI(REPLACE(?partName, " ", "_"))) as ?section_NS) .
+    
+    # link section to next section
+    BIND((?currentPartPred = rdf:_1) AS ?isFirstSection) .
+    BIND (fx:next(?currentPartPred) AS ?nextPartPred) .
+    OPTIONAL {
+      ?partsContainer ?nextPartPred ?nextPart .
+	    ?nextPart xyz:name ?nextPartName .
+    }
+    BIND(fx:entity(?sheet_NS, "/part/", ENCODE_FOR_URI(REPLACE(?nextPartName, " ", "_"))) as ?nextSection_NS) .
+    
+    # extract information for each section
+  	OPTIONAL {
+      ?part xyz:pattern ?pattern ;
+      	    xyz:instruments/fx:anySlot ?instrument .
+      ?instrument xyz:name ?instrumentName ;
+      			  xyz:mbid ?instrumentMBID .
+	  
+      BIND(fx:entity("https://musicbrainz.org/instrument/", ?instrumentMBID) as ?instrument_NS).
+      BIND(fx:entity(res:Pattern, "/", ENCODE_FOR_URI(REPLACE(?pattern, " ", "_"))) as ?pattern_NS) . 
+    }
+    
+    ############################# Retrieve bar and chords information #####################################
+    ?part xyz:chords ?progression .
+    BIND(fx:entity(?section_NS, "/progression") as ?progression_NS) .
+    
+    ?progression ?currentBarPred ?bar .
+    BIND(fx:entity(?progression_NS, "/bar/", IRI(?currentBarPred)) as ?bar_NS) .
+    # link bar to next bar
+    BIND((?currentBarPred = rdf:_1) AS ?isFirstBar) .
+    BIND (fx:next(?currentBarPred) AS ?nextBarPred) .
+    OPTIONAL {
+      ?progression ?nextBarPred ?nextBar .
+    }
+    BIND(fx:entity(?progression_NS, "/bar/", IRI(?nextBarPred)) as ?nextBar_NS) .
+    
+    ?bar ?currentChordPred ?chordName .
+    BIND(fx:entity(res:Chord, "/", STR(?chordName)) as ?chord_CO) .
+    # link bar to next bar
+    BIND((?currentChordPred = rdf:_1) AS ?isFirstChord) .
+    BIND (fx:next(?currentChordPred) AS ?nextChordPred) .
+    OPTIONAL {
+      ?bar ?nextChordPred ?nextChordName .
+      BIND(fx:entity(res:Chord, "/", STR(?nextChordName)) as ?nextChord_CO) .
+    }
+    
+  }
+}
