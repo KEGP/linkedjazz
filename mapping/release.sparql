@@ -14,18 +14,21 @@ PREFIX : <https://www.unibo.it/ontologies/metadata/>
 
 CONSTRUCT {
   ?release a :Release;
-             :hasMusicBrainzID ?mbID;
-    	     owl:sameAs ?mbURL;
-    		 #owl:sameAs ?asinURL;
-             :hasTitle ?title;
-             :hasStatus ?status;
-             :hasPackagingFormat ?packaging;
-             :hasASIN ?asin;
-             :hasBarcode ?barcode;
-             :hasArtistCreditsPhrase ?artistCreditsPhrase;
-             :releasedInDate ?releaseDate;
-             :releasedInCountry ?releaseCountry;
-             :creditedTo ?creditedArtist.
+    :hasTitle ?title;
+    rdfs:label ?title;
+    :hasMusicBrainzID ?mbID;
+
+    :hasStatus ?status;
+    :hasPackagingFormat ?packaging;
+    :hasArtistCreditsPhrase ?artistCreditsPhrase;
+    :releasedInDate ?releaseDate;
+    :releasedInCountry ?releaseCountry;
+    :creditedTo ?creditedArtist;
+
+    :hasASIN ?asin;
+    :hasBarcode ?barcode;
+    owl:sameAs ?mbURL;
+    owl:sameAs ?url.
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
@@ -45,6 +48,8 @@ CONSTRUCT {
     OPTIONAL {?release_BN xyz:barcode ?barcode.}
     OPTIONAL {?release_BN xyz:artist-credit-phrase ?artistCreditPhrase.}
     OPTIONAL {?release_BN xyz:artist-credit/fx:anySlot/xyz:artist/xyz:id ?creditedArtistMbID.}
+    OPTIONAL {?release_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
+      BIND(fx:entity(?urlstr) as ?url)}
 
     BIND(fx:entity(:, "resource/Release/", ?mbID) as ?release).
     BIND(fx:entity(:, "resource/Artist/", ?creditedArtistMbID) as ?creditedArtist).
