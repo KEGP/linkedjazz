@@ -6,31 +6,31 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-#PREFIX mo: <http://purl.org/ontology/mo/> # Music Ontology
-#PREFIX mto: <http://purl.org/ontology/mto/> # Music Theory Ontology
-#PREFIX chord: <http://purl.org/ontology/chord/> # Chord Ontology
-
 PREFIX : <https://www.unibo.it/ontologies/metadata/>
 PREFIX informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#>
 PREFIX timeinterval: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 
 CONSTRUCT {
   ?recording a :Recording;
-             #:hasMusicBrainzID ?mbID;
-             :hasTitle ?title;
-             :hasAudioTrackLength ?trackLength;
-             #:hasDisambiguationComment ?disambiguation;
-             :hasISRC ?isrc;
-             :hasArtistCreditsPhrase ?artistCreditsPhrase;
-             informationrealization:realizes ?work;
-             :hasTimeInterval [
-                a timeinterval:TimeInterval;
-                timeinterval:hasIntervalStartDate ?performanceStartDate;
-                timeinterval:hasIntervalEndDate ?performanceEndDate
-             ];
-    #owl:sameAs ?recordingISRCurl;
+    :hasTitle ?title;
+    :rdfs:label ?title;
+
+    informationrealization:realizes ?work;
+    :hasAudioTrackLength ?trackLength;
+    :creditedTo ?creditedArtist;
+    :hasArtistCreditsPhrase ?artistCreditsPhrase;
+
+    :hasTimeInterval [
+      a timeinterval:TimeInterval;
+      timeinterval:hasIntervalStartDate ?performanceStartDate;
+      timeinterval:hasIntervalEndDate ?performanceEndDate
+  ];
+
+    # identification
+    :hasMusicBrainzID ?mbID;
+    :hasISRC ?isrc;
     owl:sameAs  ?url;
-    :creditedTo ?creditedArtist.
+    owl:sameAs  ?musicbrainzRecordingURL.
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
@@ -38,7 +38,7 @@ CONSTRUCT {
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
-          xyz:recording ?recording_BN.
+                  xyz:recording ?recording_BN.
     ?recording_BN xyz:id ?mbID.
 
     OPTIONAL {?recording_BN xyz:title ?title.}
@@ -50,7 +50,7 @@ CONSTRUCT {
       UNION
       {?recording_BN xyz:isrc-list/fx:anySlot ?isrc.}
     }
-    #OPTIONAL {?recording_BN xyz:disambiguation ?disambiguation.}
+
     OPTIONAL {
       ?recording_BN xyz:work-relation-list/fx:anySlot ?work_BN.
       ?work_BN xyz:type "performance";
@@ -67,7 +67,6 @@ CONSTRUCT {
     BIND(fx:entity(:, "resource/Recording/", ?mbID) as ?recording).
     BIND(fx:entity(:, "resource/Artist/", ?creditedArtistMbID) as ?creditedArtist).
     BIND(fx:entity("https://musicbrainz.org/recording/", ?mbID) as ?musicbrainzRecordingURL).
-    #BIND(fx:entity("https://isrcsearch.ifpi.org/#!/search?isrcCode=", ?isrc, "&tab=lookup&showReleases=0&start=0&number=10") as ?recordingISRCurl)
 
   }
 }

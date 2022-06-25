@@ -1,45 +1,43 @@
 PREFIX schema: <http://schema.org/>
-PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
-PREFIX owls: <http://www.daml.org/services/owl-s/1.2/Service.owl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX time: <http://www.w3.org/2006/time#>
-PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+#PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+#PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-#PREFIX mo: <http://purl.org/ontology/mo/> # Music Ontology
-#PREFIX mto: <http://purl.org/ontology/mto/> # Music Theory Ontology
-#PREFIX chord: <http://purl.org/ontology/chord/> # Chord Ontology
 
 PREFIX : <https://www.unibo.it/ontologies/metadata/>
 
 CONSTRUCT {
   ?artistMyNS a ?artist;
-    owl:sameAs ?mbIDurl;
-    owl:sameAs ?isniURL;
-    #:hasMusicBrainzID ?mbID;
+    rdfs:label ?name;
+    :hasName ?name; #subPropertyOf schema:name
+    :hasAlias ?alias; #subPropertyOf schema:alternateName
 
     #person only
     :hasGender ?gender;
-    :hasLifeSpan ?ls;
+    :hasLifeSpan ?lifespan;
+
     #group, choir, orchestra only
-    :hasActivityPeriod ?ap;
-    #in common
-    schema:name ?name;
-    #:hasSortName ?sortname;
-    :hasMusicBrainzAnnotation ?annotation;
-    :hasDisambiguationComment ?disambiguationComment;
-    :hasIPI ?ipi;
-    #:hasISNI ?isni;
-    #:hasCountry ?country;
+    :hasActivityPeriod ?activityPeriod;
+
+    #:hasMusicBrainzAnnotation ?annotation;
+    #:hasDisambiguationComment ?disambiguationComment;
+
+    #:hasCountry ?country; # bad docs on MB
     :hasMainArea ?mainareaMyNS;
     :hasBeginArea ?beginareaMyNS;
     :hasEndArea ?endareaMyNS;
-    schema:alternateName ?alias; #subPropertyOf rdfs:label
+
+	# identification
+    :hasMusicBrainzID ?mbID;
+    :hasIPI ?ipi;
+    :hasISNI ?isni;
+    owl:sameAs ?mbIDurl; # build url from string
+    owl:sameAs ?isniURL; # build url from string
     owl:sameAs ?url.
     #:hasURL ?url.
 
@@ -51,30 +49,23 @@ CONSTRUCT {
     :hasIntervalStartDate ?startDate;
     :hasIntervalEndDate ?endDate.
 
-  ?mainareaMyNS a :Place;
-    owl:sameAs ?mainAreaURL;
-    :hasName ?maName.
+  ?mainareaMyNS a :ArtistActivityArea;
+    rdfs:label ?maName;
+    schema:name ?maName;
+    owl:sameAs ?mainAreaURL.
     #:hasSortName ?maSname.
 
-  ?beginareaMyNS a :Place;
-    owl:sameAs ?beginAreaURL;
-    :hasName ?baName.
+  ?beginareaMyNS a :ArtistActivityArea;
+    rdfs:label ?baName;
+    schema:name ?baName;
+    owl:sameAs ?beginAreaURL.
     #:hasSortName ?baSname.
 
-  ?endareaMyNS a :Place;
-    owl:sameAs ?endAreaURL;
-    :hasName ?eaName.
+  ?endareaMyNS a :ArtistActivityArea;
+    rdfs:label ?eaName;
+    schema:name ?eaName;
+    owl:sameAs ?endAreaURL.
     #:hasSortName ?eaSname.
-
-  #https://musicbrainz.org/ws/2/artist/9ddd7abc-9e1b-471d-8031-583bc6bc8be9?inc=aliases&fmt=json
-  # Chaikovsky aliases
-  #?alias a :Alias;
-  #  :hasAliasText ?aliasText;
-  #  :hasAliasSortText ?aliasSortText;
-  #  :hasAliasLocale ?aliasLocale;
-  #  :isPrimaryAlias ?primaryAlias;
-  #  :hasAliasType ?aliasType.
-
 
 #artist_02ffe965-bd93-45bd-ae9f-5671261871ae_1.json #Person
 #artist_3d672385-79a6-4aa6-94b8-af59a0447db1_1.json #Group
@@ -85,13 +76,13 @@ CONSTRUCT {
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
-         xyz:artist ?artist_BN.
-         ?artist_BN xyz:id ?mbID.
+                  xyz:artist ?artist_BN.
+    ?artist_BN xyz:id ?mbID.
 
     #ArtistPerson has gender and hasLifeSpan while
     #ArtistGroup hasActivityPeriod and no gender
 
-    #matches either an ArtistPerson or(union) a union of Group, Choir, Orchestra.
+    #matches either an ArtistPerson or a union of Group, Choir, Orchestra.
     {?artist_BN xyz:type "Person".
       BIND(:ArtistPerson as ?artist).
 
@@ -109,12 +100,12 @@ CONSTRUCT {
       OPTIONAL {?artist_BN xyz:life-span ?activityPeriod.}
     }
     OPTIONAL {?artist_BN xyz:name ?name.}
-    #OPTIONAL {?artist_BN xyz:sort-name ?sortname.}
     #OPTIONAL {?artist_BN xyz:annotation/xyz:text ?annotation.}
     #OPTIONAL {?artist_BN xyz:disambiguation ?disambiguationComment.}
 
-    OPTIONAL {?artist_BN xyz:life-span/xyz:begin ?startDate.}
-    OPTIONAL {?artist_BN xyz:life-span/xyz:end ?endDate.}
+    OPTIONAL {?artist_BN xyz:life-span ?ls.
+      OPTIONAL {?ls xyz:begin ?startDate.}
+      OPTIONAL {?ls xyz:end ?endDate.}}
 
     OPTIONAL {
       {?artist_BN xyz:isni ?isni.}
@@ -128,30 +119,25 @@ CONSTRUCT {
       {?artist_BN xyz:ipi-list/fx:anySlot ?ipi.}
     }
 
-    OPTIONAL {?artist_BN xyz:country ?country.}
+    OPTIONAL {?artist_BN xyz:area ?mainArea.
+      OPTIONAL {?mainArea xyz:id ?mainAreaID.}
+      OPTIONAL {?mainArea xyz:name ?maName.}
+      OPTIONAL {?mainArea xyz:sort-name ?maSname.}}
 
-    OPTIONAL {?artist_BN xyz:area/xyz:id ?mainAreaID.}
-    OPTIONAL {?artist_BN xyz:area/xyz:name ?maName.}
-    #OPTIONAL {?artist_BN xyz:area/xyz:sort-name ?maSname.}
+    OPTIONAL {?artist_BN xyz:begin-area ?beginArea.
+      OPTIONAL {?beginArea xyz:id ?beginAreaID.}
+      OPTIONAL {?beginArea xyz:name ?baName.}
+      OPTIONAL {?beginArea xyz:sort-name ?baSname.}}
 
-    OPTIONAL {?artist_BN xyz:begin-area/xyz:id ?beginAreaID.}
-    OPTIONAL {?artist_BN xyz:begin-area/xyz:name ?baName.}
-    #OPTIONAL {?artist_BN xyz:begin-area/xyz:sort-name ?baSname.}
-
-    OPTIONAL {?artist_BN xyz:end-area/xyz:id ?endAreaID.}
-    OPTIONAL {?artist_BN xyz:end-area/xyz:name ?eaName.}
-    #OPTIONAL {?artist_BN xyz:end-area/xyz:sort-name ?eaSname.}
+    OPTIONAL {?artist_BN xyz:end-area ?endArea.
+      OPTIONAL {?endArea xyz:id ?endAreaID.}
+      OPTIONAL {?endArea xyz:name ?eaName.}
+      OPTIONAL {?endArea xyz:sort-name ?eaSname.}}
 
     OPTIONAL {?artist_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
       BIND(fx:entity(?urlstr) as ?url)}
 
-    OPTIONAL {?artist_BN xyz:alias-list/fx:anySlot ?aliasEntity.
-      OPTIONAL {?alias xyz:alias ?alias}.
-      #OPTIONAL {?alias xyz:sort-name ?aliasSortText}.
-      #OPTIONAL {?alias xyz:locale ?aliasLocale}.
-      #OPTIONAL {?alias xyz:type ?aliasType}.
-      #OPTIONAL {?alias xyz:primary ?primaryAlias}.
-    }
+    OPTIONAL {?artist_BN xyz:alias-list/fx:anySlot/xyz:alias ?alias}
 
     BIND(fx:entity(:, "resource/Artist/", ?mbID) as ?artistMyNS).
 
@@ -162,11 +148,9 @@ CONSTRUCT {
     BIND(fx:entity("https://musicbrainz.org/area/", ?beginAreaID) as ?beginAreaURL).
     BIND(fx:entity("https://musicbrainz.org/area/", ?endAreaID) as ?endAreaURL).
 
-    BIND(fx:entity(:, "resource/ArtistActivityArea/", ?maID) as ?mainareaMyNS).
-    BIND(fx:entity(:, "resource/ArtistActivityArea/", ?baID) as ?beginareaMyNS).
-   	BIND(fx:entity(:, "resource/ArtistActivityArea/", ?eaID) as ?endareaMyNS).
+    BIND(fx:entity(:, "resource/ArtistActivityArea/", ?mainAreaID) as ?mainareaMyNS).
+    BIND(fx:entity(:, "resource/ArtistActivityArea/", ?beginAreaID) as ?beginareaMyNS).
+   	BIND(fx:entity(:, "resource/ArtistActivityArea/", ?endAreaID) as ?endareaMyNS).
 
-    #BIND(fx:entity(:, "resource/TimeInterval/", ?startDateAP, "to", ?endDateAP) as ?activityPeriodMyNS).
-    #BIND(fx:entity(:, "resource/TimeInterval/", ?startDateLS, "to", ?endDateLS) as ?lifeSpanMyNS).
   }
 }
