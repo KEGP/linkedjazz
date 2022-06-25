@@ -57,7 +57,7 @@ CONSTRUCT {
                xyz:type-id "a3005666-a872-32c3-ad06-98af558e99b0";
                xyz:target ?workMbID.
     }
-    OPTIONAL{?recording_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
+    OPTIONAL {?recording_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
       BIND(fx:entity(?urlstr) as ?url)}
 
     OPTIONAL {FILTER(BOUND(?work_BN)). ?work_BN xyz:begin ?performanceStartDate.}

@@ -39,7 +39,7 @@ CONSTRUCT {
       UNION
       {?work_BN xyz:iswc-list/fx:anySlot ?iswc.}
     }
-    OPTIONAL{?recording_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
+    OPTIONAL {?work_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
       BIND(fx:entity(?urlstr) as ?url)}
 
     BIND(fx:entity(:, "resource/Work/", ?mbID) as ?workMyNS).
