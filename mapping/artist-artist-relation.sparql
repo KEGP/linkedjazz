@@ -51,7 +51,6 @@ CONSTRUCT {
       ?artist_BN xyz:artist-relation-list/fx:anySlot ?target.
         ?target xyz:direction "backward".}
 
-    OPTIONAL {?artist_BN
       OPTIONAL{?target xyz:type ?relationType.}
       OPTIONAL{?target xyz:type-id ?relationTypeID.
       	OPTIONAL{?target xyz:begin ?startDate.}
