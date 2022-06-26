@@ -1,16 +1,14 @@
-PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
-PREFIX schema: <http://schema.org/>
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-PREFIX : <https://www.unibo.it/ontologies/metadata/>
-PREFIX timeinterval: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
-PREFIX timeindexedsituation: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
+PREFIX : <localhost:8080/ontology/kejazz/>
 
 CONSTRUCT {
   [a :RelationBetweenArtists;
@@ -18,23 +16,23 @@ CONSTRUCT {
       :involvesTargetArtist ?targetArtistMyNS;]
 
     :atTime [
-      a :TimeInterval;
-      :hasIntervalStartDate ?startDate;
-      :hasIntervalStartDate ?intervalDate;
-      :hasIntervalEndDate ?endDate
+      a dul:TimeInterval;
+      dul:hasIntervalStartDate ?startDate;
+      dul:hasIntervalEndDate ?endDate
     ];
     :satisfies ?aaRelationMyNS.
 
   	?sourceArtistMyNS a :Artist.
-    #:hasMusicbrainzID ?sourceID.
+    #:hasMusicbrainzID ?sourceID. #already populated bt artist.sql
 
-    ?targetArtistMyNS a :Artist.
-    #:hasMusicbrainzID ?targetID.
+    ?targetArtistMyNS a :Artist;
+      :hasMusicbrainzID ?targetID.
+  ### populate here in case target artist is missing from artist files
 
     ?aaRelationMyNS a :RelationBetweenArtistsType;
     owl:sameAs ?musicbrainzRelationURL;
-    #:hasMusicBrainzID ?relationTypeID;
-    schema:name ?relationType.
+    rdfs:label ?relationType;
+    :hasMusicBrainzID ?relationTypeID.
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
@@ -53,6 +51,7 @@ CONSTRUCT {
       ?artist_BN xyz:artist-relation-list/fx:anySlot ?target.
         ?target xyz:direction "backward".}
 
+    OPTIONAL {?artist_BN
       OPTIONAL{?target xyz:type ?relationType.}
       OPTIONAL{?target xyz:type-id ?relationTypeID.
       	OPTIONAL{?target xyz:begin ?startDate.}
@@ -64,7 +63,8 @@ CONSTRUCT {
     BIND(fx:entity("https://musicbrainz.org/relationship/", ?relationTypeID) as ?musicbrainzRelationURL).
 
     #BIND(fx:entity(:, "resource/ArtistArtistrelation/", ?sourceID, "to", ?targetID) as ?aaRelationMyNS).
-    BIND(fx:entity(:, "resource/RelationBetweenArtistsType/", REPLACE(?relationType, " ","_")) as ?aaRelationMyNS).
-    #could use evocative relationType or more secure relationTypeID
+    #BIND(fx:entity(:, "resource/RelationBetweenArtistsType/", REPLACE(?relationType, " ","_")) as ?aaRelationMyNS).
+    BIND(fx:entity(:, "resource/RelationBetweenArtistsType/", ?relationTypeID) as ?aaRelationMyNS).
+
   }
 }
