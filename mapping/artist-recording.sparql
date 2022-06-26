@@ -1,4 +1,5 @@
-PREFIX schema: <http://schema.org/>
+
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
@@ -7,30 +8,30 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-#PREFIX mo: <http://purl.org/ontology/mo/> # Music Ontology
-#PREFIX mto: <http://purl.org/ontology/mto/> # Music Theory Ontology
-#PREFIX chord: <http://purl.org/ontology/chord/> # Chord Ontology
-
-PREFIX : <https://www.unibo.it/ontologies/metadata/>
-PREFIX timeinterval: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
-PREFIX timeindexedsituation: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
-PREFIX objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#>
+PREFIX : <localhost:8080/ontology/kejazz/>
 
 CONSTRUCT {
   [ a :ArtistRecordingPerformance;
       :forRecording ?recording;
       :includesArtist ?artist;
       :withInstrument ?instrument;
-    timeindexedsituation:atTime [
-      a timeinterval:TimeInterval;
-      timeinterval:hasIntervalStartDate ?artistRecordingStartDate;
-      timeinterval:hasIntervalEndDate ?artistRecordingEndDate
+    dul:atTime [
+      a dul:TimeInterval;
+      dul:hasIntervalStartDate ?artistRecordingStartDate;
+      dul:hasIntervalEndDate ?artistRecordingEndDate
     ];
   ].
   ?recording owl:sameAs ?musicbrainzRecordingURL.
 
-  ?instrument schema:name ?instrumentName.
-  ?instrument owl:sameAs ?MBinstrumentURL.
+  ?artist :hasName ?artistName;
+    rdfs:label ?artistName;
+  	owl:sameAs ?mbArtistURL;
+    :hasMusicBrainzID ?artistMbID.
+
+  ?instrument :hasName ?instrumentName;
+    rdfs:label ?instrumentName;
+    owl:sameAs ?MBinstrumentURL;
+    :hasMusicBrainzID ?instrumentMBID.
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
@@ -44,20 +45,20 @@ CONSTRUCT {
                   xyz:artist-relation-list/fx:anySlot ?artist_role_BN.
 
     ?artist_role_BN xyz:artist/xyz:id ?artistMbID.
+    OPTIONAL {?artist_role_BN xyz:artist/xyz:name ?artistName.}
+
     OPTIONAL {?artist_role_BN xyz:begin ?artistRecordingStartDate.}
     OPTIONAL {?artist_role_BN xyz:end ?artistRecordingEndDate.}
-    ########
     OPTIONAL {
       ?artist_role_BN xyz:attributes/rdf:_1 ?instrumentInstance.
       ?instrumentInstance xyz:type-id ?instrumentMBID.
       ?instrumentInstance xyz:attribute ?instrumentName}
-    ########
 
     BIND(fx:entity(:, "resource/Recording/", ?mbID) as ?recording).
     BIND(fx:entity(:, "resource/Artist/", ?artistMbID) as ?artist).
-    #BIND(fx:entity(:, "resource/ArtistRole/", ?artistRoleMbID) as ?artistRole).
     BIND(fx:entity(:, "resource/MusicalInstrument/", ?instrumentMBID) as ?instrument).########
     BIND(fx:entity("https://musicbrainz.org/instrument/", ?instrumentMBID) as ?MBinstrumentURL).
     BIND(fx:entity("https://musicbrainz.org/recording/", ?mbID) as ?musicbrainzRecordingURL).
+    BIND(fx:entity("https://musicbrainz.org/artist/", ?artistMbID) as ?mbArtistURL).
   }
 }
