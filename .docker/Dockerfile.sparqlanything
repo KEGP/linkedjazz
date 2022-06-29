@@ -3,9 +3,9 @@ LABEL maintainer="iosonopersia@gmail.com"
 RUN apk add openjdk17
 
 RUN mkdir /sparql.anything
-ADD https://github.com/SPARQL-Anything/sparql.anything/releases/download/v0.6.0/sparql-anything-server-0.6.0.jar /sparql.anything
+ADD https://github.com/SPARQL-Anything/sparql.anything/releases/download/v0.7.0/sparql-anything-server-0.7.0.jar /sparql.anything
 
 RUN mkdir /sparql.anything/data
 COPY ../data /sparql.anything/data
 
-CMD ["java", "-jar", "/sparql.anything/sparql-anything-server-0.6.0.jar"]
+CMD ["java", "-jar", "/sparql.anything/sparql-anything-server-0.7.0.jar"]
