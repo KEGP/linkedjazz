@@ -1,0 +1,18 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix test: <.> .
+@prefix caTest: <./chord-annotations/> .
+
+test:suite.ttl a owlunit:TestSuite ;
+	owlunit:hasTestCase caTest:cq_firstchord.ttl ;
+	owlunit:hasTestCase caTest:cq_key.ttl ;
+	owlunit:hasTestCase caTest:cq_sections.ttl ;
+	owlunit:hasTestCase caTest:cq_overallchords.ttl ;
+	owlunit:hasTestCase caTest:cq_maininstruments.ttl .
+#	owlunit:hasTestCase caTest:av.ttl .
+
+caTest:cq_key.ttl a owlunit:CompetencyQuestionVerification .
+caTest:cq_firstchord.ttl a owlunit:CompetencyQuestionVerification .
+caTest:cq_overallchords.ttl a owlunit:CompetencyQuestionVerification .
+caTest:cq_sections.ttl a owlunit:CompetencyQuestionVerification .
+caTest:cq_maininstruments.ttl a owlunit:CompetencyQuestionVerification .
+#caTest:av.ttl a owlunit:AnnotationVerification .

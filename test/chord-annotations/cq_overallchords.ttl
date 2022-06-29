@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ca: <http://localhost:8080/ontology/chord-annotations> .
+@prefix ex: <.> .
+
+ex:cq_overallchords.ttl a owlunit:CompetencyQuestionVerification ;
+	owlunit:hasCompetencyQuestion "Which are the chords that composes the track?" ;
+	owlunit:hasSPARQLUnitTest "PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX ca: <http://localhost:8080/ontology/chord-annotations>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT DISTINCT ?chordType WHERE { \n  ?section rdf:type ca:Section ; \n           ca:madeOfProgression ?p .\n  ?p ca:hasBar ?b .\n  ?b ca:hasChord ?chord .\n  ?chord rdf:type ?chordType .\n}" ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+	owlunit:testsOntology ca: ;
+	owlunit:hasExpectedResult "{\"head\":{\"vars\":[\"chordType\"]},\"results\":{\"bindings\":[{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min7\"}},{\"chordType\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(b3,5,b7,11)\"}}]}}" .

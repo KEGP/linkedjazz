@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ca: <http://localhost:8080/ontology/chord-annotations> .
+@prefix ex: <.> .
+
+ex:cq_timesignature.ttl a owlunit:CompetencyQuestionVerification ;
+	owlunit:hasCompetencyQuestion "Which is the time signature of the tune?" ;
+	owlunit:hasSPARQLUnitTest "PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX ca: <http://localhost:8080/ontology/chord-annotations>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT ?tm WHERE { \n  ?section rdf:type ca:Sheet ; \n           ca:hasTimeSignature ?tm .\n}" ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+	owlunit:testsOntology ca: ;
+	owlunit:hasExpectedResult "{\"head\":{\"vars\":[\"tm\"]},\"results\":{\"bindings\":[{\"tm\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/TimeSignature/4_4\"}}]}}" .

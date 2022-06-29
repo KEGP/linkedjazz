@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ca: <http://localhost:8080/ontology/chord-annotations> .
+@prefix ex: <.> .
+
+ex:cq_sections.ttl a owlunit:CompetencyQuestionVerification ;
+	owlunit:hasCompetencyQuestion "Which parts composes the track?" ;
+	owlunit:hasSPARQLUnitTest "PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX ca: <http://localhost:8080/ontology/chord-annotations>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT DISTINCT ?section WHERE { \n  ?section rdf:type ca:Section .\n}" ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+	owlunit:testsOntology ca: ;
+	owlunit:hasExpectedResult "{\"head\":{\"vars\":[\"section\"]},\"results\":{\"bindings\":[{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC\"}},{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC\"}},{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC\"}},{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC\"}},{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro\"}},{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda\"}},{\"section\":{\"type\":\"uri\",\"value\":\"http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC\"}}]}}" .

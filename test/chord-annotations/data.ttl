@@ -1,0 +1,612 @@
+@prefix :          <http://localhost:8080/ontology/chord-annotations> .
+@prefix fx:        <http://sparql.xyz/facade-x/ns/> .
+@prefix kejazz:    <http://localhost:8080/ontology/kejazz> .
+@prefix kejazzres: <http://localhost:8080/ontology/kejazz/resource/> .
+@prefix mto:       <http://localhost:8080/ontology/mto> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:       <http://localhost:8080/ontology/chord-annotations/resource/> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:       <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/9> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/9> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC>
+        rdf:type            :Section ;
+        rdfs:label          "Ensemble, Percussion Solo - ABAC" ;
+        :characterizedBy    <http://localhost:8080/ontology/chord-annotations/resource/Pattern/ABAC> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/8e9abdf1-0afc-4544-b201-c6fa768d01f4> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression> ;
+        :nextAnnotation     <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/3> .
+
+<http://localhost:8080/ontology/kejazz/resource/Recording/8454b48d-cd0b-4114-b696-b5429443c597>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5> ;
+        :hasTuning  "439.23"^^xsd:double .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/9> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/9> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/7> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/3> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/5> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/6> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/1> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/7> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Key/Ab_major>
+        rdf:type            :Key ;
+        :hasRoot            mto:Ab ;
+        :ofHarmonicQuality  mto:MinorKey .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC>
+        rdf:type            :Section ;
+        rdfs:label          "Head - ABAC" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression> ;
+        :nextAnnotation     <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/3> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/1> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/5> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/7> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/6> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/TimeSignature/4_4>
+        rdf:type          mto:TimeSignature ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/1> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/9> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/6> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/7> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/7> .
+
+<https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/8> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/3> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/5> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/6> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/1> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/7> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/7> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/8> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/3> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/5> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/6> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/1> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/1> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/7> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/8> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/3> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/5> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/6> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/7> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/8> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC>
+        rdf:type            :Section ;
+        rdfs:label          "Tenor Sax Solo - ABAC" ;
+        :characterizedBy    <http://localhost:8080/ontology/chord-annotations/resource/Pattern/ABAC> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression> ;
+        :nextAnnotation     <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/7> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC>
+        rdf:type            :Section ;
+        rdfs:label          "Trombone Solo - ABAC" ;
+        :characterizedBy    <http://localhost:8080/ontology/chord-annotations/resource/Pattern/ABAC> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression> ;
+        :nextAnnotation     <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/6> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/1>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression/bar/2> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/6> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Eb:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/6> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/6>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/7> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/6> .
+
+<https://musicbrainz.org/instrument/8e9abdf1-0afc-4544-b201-c6fa768d01f4>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro>
+        rdf:type            :Section ;
+        rdfs:label          "Intro" ;
+        :isFirst            true ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression> ;
+        :nextAnnotation     <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/8>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/9> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/5>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/6> .
+
+<https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda>
+        rdf:type            :Section ;
+        rdfs:label          "Coda" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda/progression> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/4>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC/progression/bar/5> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/2>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(3,5,b7,#9)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/3> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:min> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC>
+        rdf:type            :Section ;
+        rdfs:label          "Trumpet Solo - ABAC" ;
+        :characterizedBy    <http://localhost:8080/ontology/chord-annotations/resource/Pattern/ABAC> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC/progression> ;
+        :nextAnnotation     <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/7>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/Bb:min7> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC/progression/bar/8> .
+
+<https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5>
+        rdf:type           :Sheet ;
+        :hasKey            <http://localhost:8080/ontology/chord-annotations/resource/Key/Ab_major> ;
+        :hasSection        <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trumpet_Solo_-_ABAC> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Coda> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Ensemble%2C_Percussion_Solo_-_ABAC> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Head_-_ABAC> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Trombone_Solo_-_ABAC> ;
+        :hasTimeSignature  <http://localhost:8080/ontology/chord-annotations/resource/TimeSignature/4_4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/3>
+        rdf:type         :Bar ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/C:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  false
+                         ] ;
+        :hasChord        [ rdf:type  <http://localhost:8080/ontology/chord-annotations/resource/Chord/F:(b3,5,b7,11)> ;
+                           :isFirst  true
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Intro/progression/bar/4> .
+
+<http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression>
+        rdf:type  :Progression ;
+        :hasBar   <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/2> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/8> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/3> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/4> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/5> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/6> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/1> , <http://localhost:8080/ontology/chord-annotations/resource/Sheet/17b3ed06-c6ed-45bb-a99a-53ea89d67bf5/part/Tenor_Sax_Solo_-_ABAC/progression/bar/7> .
