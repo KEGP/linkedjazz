@@ -16,7 +16,7 @@ CONSTRUCT {
   
   ?recording_KEJ a kejazz:Recording ;
                  :hasSheet ?sheet_NS ;
-	             :hasTuning ?tuning .
+	               :hasTuning ?tuning .
   
   ?sheetKey_NS a :Key ;
                :hasRoot ?keyNote_MTO ;
@@ -27,7 +27,8 @@ CONSTRUCT {
       
   ?sheet_NS a :Sheet ;
             :hasKey ?sheetKey_NS ;
-            :hasSection ?section_NS .
+            :hasSection ?section_NS ;
+            :hasTimeSignature ?sheetTS_NS .
       
   ?section_NS a :Section ;
               rdfs:label ?partName ;
@@ -51,7 +52,7 @@ CONSTRUCT {
     
 } WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location "/sparql.anything/data/jaah/chord_annotations/airegin.json"  ;
+    fx:properties fx:location ?_name ;
                   fx:media-type "application/json" ;
     			        fx:trim-strings "true"^^xsd:boolean .
     
