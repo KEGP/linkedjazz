@@ -8,7 +8,4 @@ ADD https://github.com/SPARQL-Anything/sparql.anything/releases/download/v0.6.0/
 RUN mkdir /sparql.anything/data
 COPY ../data /sparql.anything/data
 
-RUN mkdir /sparql.anything/queries
-COPY ../sparqlanything/queries /sparql.anything/queries
-
 CMD ["java", "-jar", "/sparql.anything/sparql-anything-server-0.6.0.jar"]
