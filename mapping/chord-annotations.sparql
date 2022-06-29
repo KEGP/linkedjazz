@@ -5,11 +5,11 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-PREFIX mto: <http://localhost:8080/ontology/mto> # Music Theory Ontology
-PREFIX : <http://localhost:8080/ontology/chord-annotations>
-PREFIX res: <http://localhost:8080/ontology/chord-annotations/resource/>
-PREFIX kejazz: <http://localhost:8080/ontology/kejazz>
-PREFIX kejazzres: <http://localhost:8080/ontology/kejazz/resource/>
+PREFIX mto: <http://localhost:8080/ontology/mto#> # Music Theory Ontology
+PREFIX : <http://localhost:8080/ontology/chord-annotations/>
+PREFIX res: <http://localhost:8080/resource/chord-annotations/>
+PREFIX kejazz: <http://localhost:8080/ontology/kejazz/>
+PREFIX kejazzres: <http://localhost:8080/resource/kejazz/>
 
 CONSTRUCT {
   ?instrument_NS a kejazz:Instrument .
@@ -80,12 +80,12 @@ CONSTRUCT {
     BIND(fx:entity(res:Key, "/", ?keyNote, "_", ?keyQuality) AS ?sheetKey_NS) .
     BIND(fx:entity(res:TimeSignature, "/", ENCODE_FOR_URI(?lowerNumeralTS), "_", ENCODE_FOR_URI(?upperNumeralTS)) AS ?sheetTS_NS) .
     # give IRI to sheet
-    BIND(fx:entity(res:Sheet, "/", STRUUID()) as ?sheet_NS) .
+    BIND(fx:entity(?recording_KEJ, "/Sheet/", STRUUID()) as ?sheet_NS) .
     
     ############################# Retrieve section-wise information #####################################
     ?partsContainer ?currentPartPred ?part .
     ?part xyz:name ?partName .
-    BIND(fx:entity(?sheet_NS, "/part/", ENCODE_FOR_URI(REPLACE(?partName, " ", "_"))) as ?section_NS) .
+    BIND(fx:entity(?sheet_NS, "/Section/", ENCODE_FOR_URI(REPLACE(?partName, " ", "_"))) as ?section_NS) .
     
     # link section to next section
     BIND((?currentPartPred = rdf:_1) AS ?isFirstSection) .
@@ -94,7 +94,7 @@ CONSTRUCT {
       ?partsContainer ?nextPartPred ?nextPart .
 	    ?nextPart xyz:name ?nextPartName .
     }
-    BIND(fx:entity(?sheet_NS, "/part/", ENCODE_FOR_URI(REPLACE(?nextPartName, " ", "_"))) as ?nextSection_NS) .
+    BIND(fx:entity(?sheet_NS, "/Section/", ENCODE_FOR_URI(REPLACE(?nextPartName, " ", "_"))) as ?nextSection_NS) .
     
     # extract information for each section
   	OPTIONAL {
@@ -109,17 +109,17 @@ CONSTRUCT {
     
     ############################# Retrieve bar and chords information #####################################
     ?part xyz:chords ?progression .
-    BIND(fx:entity(?section_NS, "/progression") as ?progression_NS) .
+    BIND(fx:entity(?section_NS, "/Progression") as ?progression_NS) .
     
     ?progression ?currentBarPred ?bar .
-    BIND(fx:entity(?progression_NS, "/bar/", IRI(?currentBarPred)) as ?bar_NS) .
+    BIND(fx:entity(?progression_NS, "/Bar/", IRI(?currentBarPred)) as ?bar_NS) .
     # link bar to next bar
     BIND((?currentBarPred = rdf:_1) AS ?isFirstBar) .
     BIND (fx:next(?currentBarPred) AS ?nextBarPred) .
     OPTIONAL {
       ?progression ?nextBarPred ?nextBar .
     }
-    BIND(fx:entity(?progression_NS, "/bar/", IRI(?nextBarPred)) as ?nextBar_NS) .
+    BIND(fx:entity(?progression_NS, "/Bar/", IRI(?nextBarPred)) as ?nextBar_NS) .
     
     ?bar ?currentChordPred ?chordName .
     BIND(fx:entity(res:Chord, "/", STR(?chordName)) as ?chord_CO) .

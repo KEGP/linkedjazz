@@ -50,6 +50,31 @@ services:
         networks:
             - network
 
+    lodview:
+        container_name: lodview
+        image: lodview
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.lodview
+        restart: always
+        volumes:
+            - .docker/conf.lodview.ttl:/LodView/src/main/webapp/WEB-INF/conf.ttl
+        networks:
+            - network
+
+    virtuoso:
+        container_name: virtuoso
+        image: tenforce/virtuoso:1.3.1-virtuoso7.2.2
+        environment:
+            SPARQL_UPDATE: "true"
+            DEFAULT_GRAPH: "http://localhost:8080/resource"
+        volumes:
+            - ./ontology/kejazz/kejazz.owl:/data/toLoad/kejazz.owl
+            - ./ontology/chord-annotations/chord-annotations.owl:/data/toLoad/chord-annotations.owl
+            - ./ontology/chord-annotations/mto.owl:/data/toLoad/mto.owl
+            - ./resources/:/data/toLoad/
+        networks:
+            - network
     proxy:
         container_name: proxy
         image: nginx
@@ -61,6 +86,7 @@ services:
             - lode
             - webvowl
             - sparqlanything
+            - virtuoso
         networks:
             - network
         volumes:
