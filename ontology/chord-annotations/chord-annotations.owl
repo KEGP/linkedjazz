@@ -39,6 +39,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://localhost:8080/ontology/chord-annotations#Section"/>
         <rdfs:range rdf:resource="http://localhost:8080/ontology/chord-annotations#Pattern"/>
+        <rdfs:comment xml:lang="it">Forma che caratterizza la sezione di un brano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Pattern that characterizes a track section.</rdfs:comment>
+        <rdfs:label xml:lang="en">characterized by</rdfs:label>
+        <rdfs:label xml:lang="it">cratterizzata da</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -302,6 +306,10 @@
         <owl:equivalentClass rdf:resource="http://localhost:8080/ontology/mto#Chord"/>
         <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/chord-annotations#Annotation"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:comment xml:lang="it">Accordo musicale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Musical chord.</rdfs:comment>
+        <rdfs:label xml:lang="it">Accordo</rdfs:label>
+        <rdfs:label xml:lang="en">Chord</rdfs:label>
     </owl:Class>
     
 
