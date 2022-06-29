@@ -49,6 +49,8 @@ services:
         restart: always
         networks:
             - network
+        ports:
+            - 3000:3000
 
     proxy:
         container_name: proxy
