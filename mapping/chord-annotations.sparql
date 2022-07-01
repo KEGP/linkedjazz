@@ -16,19 +16,25 @@ CONSTRUCT {
   
   ?recording_KEJ a kejazz:Recording ;
                  :hasSheet ?sheet_NS ;
-	               :hasTuning ?tuning .
+	             :hasTuning ?tuning .
   
   ?sheetKey_NS a :Key ;
                :hasRoot ?keyNote_MTO ;
-               :ofHarmonicQuality ?keyQuality_MTO .
+               :ofHarmonicQuality ?keyQuality_MTO ;
+               rdf:label ?key .
   ?sheetTS_NS a mto:TimeSignature ;
               :hasUpperNumeral ?upperNumeralTS ;
-              :hasLowerNumeral ?lowerNumeralTS .				  
+              :hasLowerNumeral ?lowerNumeralTS ;
+    		  rdfs:label ?timeSignature .
       
   ?sheet_NS a :Sheet ;
             :hasKey ?sheetKey_NS ;
             :hasSection ?section_NS ;
-            :hasTimeSignature ?sheetTS_NS .
+            :hasTimeSignature ?sheetTS_NS ;
+    		rdfs:label ?sheetLabel .
+  
+  ?pattern_NS a :Pattern ;
+  			  rdfs:label ?pattern . 
       
   ?section_NS a :Section ;
               rdfs:label ?partName ;
@@ -39,20 +45,23 @@ CONSTRUCT {
               :madeOfProgression ?progression_NS .
       
   ?progression_NS a :Progression ;
+              	  rdfs:label ?progressionLabel ;
   			      :hasBar ?bar_NS .
+  
+  ?chord_NS a :Chord ;
+    		:isFirst ?isFirstChord ;
+    		:nextAnnotation ?nextChord_NS ;
+    		rdfs:label ?chordName .
   
   ?bar_NS a :Bar ;
   	      :nextAnnotation ?nextBar_NS ;
   	   	  :isFirst ?isFirstBar ;
-          :hasChord [
-            a ?chord_CO ;
-              :isFirst ?isFirstChord ;
-              :nextAnnotation ?nextChord
-          ] .
+    	  rdfs:label ?barLabel ;
+          :hasChord ?chord_NS .
     
 } WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location ?_name ;
+    fx:properties fx:location "/sparql.anything/data/jaah/chord_annotations/airegin.json" ;
                   fx:media-type "application/json" ;
     			        fx:trim-strings "true"^^xsd:boolean .
     
@@ -66,6 +75,7 @@ CONSTRUCT {
            xyz:key ?key ;
            xyz:title ?title ;
            xyz:parts ?partsContainer .
+    BIND(CONCAT(?title, " sheet") AS ?sheetLabel) .
     
     ############################# Retrieve sheet-wise information ######################################
     # bind lower and upper numeral of time signature
@@ -75,7 +85,7 @@ CONSTRUCT {
     BIND(REPLACE(?key, " (.*)", "") as ?keyNote ) .
     BIND(REPLACE(?key, "(.*) ", "") as ?keyQuality ) .
 	  BIND(fx:entity(mto:, ?keyNote) as ?keyNote_MTO) .
-    BIND(IF(?key = "major", mto:MajorKey, mto:MinorKey) as ?keyQuality_MTO) .
+    BIND(IF(?keyQuality = "major", mto:MajorKey, mto:MinorKey) as ?keyQuality_MTO) .
     # bind IRI for sheet key and time signature
     BIND(fx:entity(res:Key, "/", ?keyNote, "_", ?keyQuality) AS ?sheetKey_NS) .
     BIND(fx:entity(res:TimeSignature, "/", ENCODE_FOR_URI(?lowerNumeralTS), "_", ENCODE_FOR_URI(?upperNumeralTS)) AS ?sheetTS_NS) .
@@ -110,6 +120,7 @@ CONSTRUCT {
     ############################# Retrieve bar and chords information #####################################
     ?part xyz:chords ?progression .
     BIND(fx:entity(?section_NS, "/Progression") as ?progression_NS) .
+    BIND(CONCAT(?partName, " chord progression") AS ?progressionLabel) .
     
     ?progression ?currentBarPred ?bar .
     BIND(fx:entity(?progression_NS, "/Bar/", IRI(?currentBarPred)) as ?bar_NS) .
@@ -120,15 +131,16 @@ CONSTRUCT {
       ?progression ?nextBarPred ?nextBar .
     }
     BIND(fx:entity(?progression_NS, "/Bar/", IRI(?nextBarPred)) as ?nextBar_NS) .
+    BIND(CONCAT("Bar ", REPLACE(STR(IRI(?bar)), "^(.*_)", "", "i")) AS ?barLabel) .
     
     ?bar ?currentChordPred ?chordName .
-    BIND(fx:entity(res:Chord, "/", STR(?chordName)) as ?chord_CO) .
+    BIND(fx:entity(res:Chord, "/", STR(?chordName)) as ?chord_NS) .
     # link bar to next bar
     BIND((?currentChordPred = rdf:_1) AS ?isFirstChord) .
     BIND (fx:next(?currentChordPred) AS ?nextChordPred) .
     OPTIONAL {
       ?bar ?nextChordPred ?nextChordName .
-      BIND(fx:entity(res:Chord, "/", STR(?nextChordName)) as ?nextChord_CO) .
+      BIND(fx:entity(res:Chord, "/", STR(?nextChordName)) as ?nextChord_NS) .
     }
     
   }
