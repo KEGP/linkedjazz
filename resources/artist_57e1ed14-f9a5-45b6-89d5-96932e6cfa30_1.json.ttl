@@ -1,0 +1,23 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/5385b71f-4774-4772-8ca3-784054112401>
+        a                  :Band ;
+        rdfs:label         "Eddie Condon’s Hot Shots" ;
+        :hasAlias          "Eddie's Hot Shots" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "5385b71f-4774-4772-8ca3-784054112401" ;
+        :hasName           "Eddie Condon’s Hot Shots" ;
+        owl:sameAs         <https://www.discogs.com/artist/373806> , <https://musicbrainz.org/artist/5385b71f-4774-4772-8ca3-784054112401> .

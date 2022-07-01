@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/8454b48d-cd0b-4114-b696-b5429443c597>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+        :hasAudioTrackLength  "252000" ;
+        :hasISRC              "USBJN0920105" ;
+        :hasMusicBrainzID     "8454b48d-cd0b-4114-b696-b5429443c597" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1989-08-01" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1989-08-01"
+                              ] ;
+        :hasTitle             "Airegin" ;
+        :rdfs:label           "Airegin" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/e5413e11-6aec-3b13-8989-8a531202fbd4> ;
+        owl:sameAs            <https://musicbrainz.org/recording/8454b48d-cd0b-4114-b696-b5429443c597> .

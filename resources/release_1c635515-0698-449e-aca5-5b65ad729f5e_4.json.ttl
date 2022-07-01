@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/1c635515-0698-449e-aca5-5b65ad729f5e>
+        rdf:type             :Release ;
+        rdfs:label           "The Louis Armstrong Saga" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode          "" ;
+        :hasMusicBrainzID    "1c635515-0698-449e-aca5-5b65ad729f5e" ;
+        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "The Louis Armstrong Saga" ;
+        :releasedInCountry   "US" ;
+        :releasedInDate      "1972" ;
+        owl:sameAs           <https://musicbrainz.org/release/1c635515-0698-449e-aca5-5b65ad729f5e> , <https://www.discogs.com/release/4531851> .

@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74b24e62-d2fe-42d2-9d96-31f2da756c77>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Toronto" ;
+        schema:name  "Toronto" ;
+        owl:sameAs   <https://musicbrainz.org/area/74b24e62-d2fe-42d2-9d96-31f2da756c77> .
+
+<http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Gil Evans" ;
+        :hasAlias          "G. Evanss" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/74b24e62-d2fe-42d2-9d96-31f2da756c77> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/18267499-0eaa-44fb-9e06-94bd35edf10e> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00009590479" ;
+        :hasISNI           "0000000368575102" , "0000000110371460" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1988-03-20" ;
+                             :hasIntervalStartDate  "1912-05-13"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "83b1d510-c4ae-485b-91bf-c69b63044dd6" ;
+        :hasName           "Gil Evans" ;
+        owl:sameAs         <http://snaccooperative.org/ark:/99166/w6k07q2b> , <https://nla.gov.au/nla.party-817985> , <http://id.loc.gov/authorities/names/n82025116> , <https://www.imdb.com/name/nm0262789/> , <https://catalogue.bnf.fr/ark:/12148/cb13893740q> , <https://www.bbc.co.uk/music/artists/83b1d510-c4ae-485b-91bf-c69b63044dd6> , <https://www.allmusic.com/artist/mn0000551815> , <https://isni.org/isni/0000000368575102> , <http://viaf.org/viaf/7573806> , <https://www.discogs.com/artist/255137> , <https://isni.org/isni/0000000110371460> , <https://www.wikidata.org/wiki/Q348477> , <https://d-nb.info/gnd/120883678> , <https://www.worldcat.org/identities/lccn-n82025116> , <https://www.songkick.com/artists/436438> , <https://musicbrainz.org/artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/18267499-0eaa-44fb-9e06-94bd35edf10e>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Cuernavaca" ;
+        schema:name  "Cuernavaca" ;
+        owl:sameAs   <https://musicbrainz.org/area/18267499-0eaa-44fb-9e06-94bd35edf10e> .

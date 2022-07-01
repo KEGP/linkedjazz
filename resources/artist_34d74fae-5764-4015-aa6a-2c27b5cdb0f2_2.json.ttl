@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/00d07986-2f91-475f-a963-5544abfc8eef>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Englewood" ;
+        schema:name  "Englewood" ;
+        owl:sameAs   <https://musicbrainz.org/area/00d07986-2f91-475f-a963-5544abfc8eef> .
+
+<http://localhost:8080/resource/kejazz/Artist/d55d55df-1861-4bca-bf46-dc1af31c1c98>
+        a                  :ArtistPerson ;
+        rdfs:label         "Slam Stewart" ;
+        :hasAlias          "Leroy Stewart" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/00d07986-2f91-475f-a963-5544abfc8eef> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/fdeae765-7e08-4eae-b92c-c505d984a833> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00089252840" ;
+        :hasISNI           "0000000114370393" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1987-12-10" ;
+                             :hasIntervalStartDate  "1914-09-21"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "d55d55df-1861-4bca-bf46-dc1af31c1c98" ;
+        :hasName           "Slam Stewart" ;
+        owl:sameAs         <https://isni.org/isni/0000000114370393> , <http://viaf.org/viaf/5119118> , <https://d-nb.info/gnd/13464557X> , <https://en.wikipedia.org/wiki/Slam_Stewart> , <https://www.wikidata.org/wiki/Q1370114> , <https://catalogue.bnf.fr/ark:/12148/cb13900065q> , <http://id.loc.gov/authorities/names/n81072988> , <https://www.allmusic.com/artist/mn0000023290> , <https://www.discogs.com/artist/306395> , <https://www.worldcat.org/identities/lccn-n81072988> , <https://musicbrainz.org/artist/d55d55df-1861-4bca-bf46-dc1af31c1c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/fdeae765-7e08-4eae-b92c-c505d984a833>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Binghamton" ;
+        schema:name  "Binghamton" ;
+        owl:sameAs   <https://musicbrainz.org/area/fdeae765-7e08-4eae-b92c-c505d984a833> .

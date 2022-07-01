@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/66266f89-466a-4e78-8545-9a73364a1822>
+        rdf:type             :Release ;
+        rdfs:label           "Django" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+        :hasBarcode          "3218030984468" ;
+        :hasMusicBrainzID    "66266f89-466a-4e78-8545-9a73364a1822" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Django" ;
+        :releasedInDate      "1983" ;
+        owl:sameAs           <https://musicbrainz.org/release/66266f89-466a-4e78-8545-9a73364a1822> .

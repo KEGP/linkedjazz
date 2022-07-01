@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/a938db71-af38-4c0f-b804-d92362b8a932>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+        :hasAudioTrackLength  "169000" ;
+        :hasMusicBrainzID     "a938db71-af38-4c0f-b804-d92362b8a932" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1951" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1951"
+                              ] ;
+        :hasTitle             "Blues for Alice" ;
+        :rdfs:label           "Blues for Alice" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/1b2a870f-bbeb-449e-8847-4e30974f4840> ;
+        owl:sameAs            <https://musicbrainz.org/recording/a938db71-af38-4c0f-b804-d92362b8a932> .

@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/67a88bd6-864f-4ff7-9579-9d649887deb1>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/52e9e9d5-348e-4e25-a9ee-90daf87f9f1d> ;
+        :hasAudioTrackLength  "193840" ;
+        :hasISRC              "USBJN0920006" , "DEU240802952" ;
+        :hasMusicBrainzID     "67a88bd6-864f-4ff7-9579-9d649887deb1" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1926-09-15" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1926-09-15"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1926-09-15" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1926-09-15"
+                              ] ;
+        :hasTitle             "Black Bottom Stomp" ;
+        :rdfs:label           "Black Bottom Stomp" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/12ed6f48-fb2a-32a2-a625-f116d62cb188> ;
+        owl:sameAs            <https://musicbrainz.org/recording/67a88bd6-864f-4ff7-9579-9d649887deb1> .

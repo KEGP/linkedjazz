@@ -1,0 +1,36 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd>
+        a                  :ArtistPerson ;
+        rdfs:label         "Herbie Hancock" ;
+        :hasAlias          "Herbie Hancock" , "H. Hancock" , "\"Mwandishi\" Herbie Hancock" , "Herbert Jeffrey Hancock" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/29a709d8-0320-493e-8d0c-f2c386662b7f> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00013329908" , "00063609183" , "00013329810" ;
+        :hasISNI           "0000000108993797" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalStartDate  "1940-04-12"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "27613b78-1b9d-4ec3-9db5-fa0743465fdd" ;
+        :hasName           "Herbie Hancock" ;
+        owl:sameAs         <https://rateyourmusic.com/artist/herbie_hancock> , <https://www.facebook.com/herbiehancock> , <https://www.wikidata.org/wiki/Q105875> , <https://itunes.apple.com/us/artist/id51639> , <http://www.stamil.homepage.t-online.de/hhdisco.htm> , <https://www.songkick.com/artists/224916> , <https://www.whosampled.com/Herbie-Hancock/> , <https://www.deezer.com/artist/1406> , <https://musicbrainz.org/artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd> , <https://isni.org/isni/0000000108993797> , <http://id.loc.gov/authorities/names/n81014575> , <https://twitter.com/herbiehancock> , <https://listen.tidal.com/artist/209> , <https://open.spotify.com/artist/2ZvrvbQNrHKwjT7qfGFFUW> , <https://myspace.com/herbiehancock> , <https://secondhandsongs.com/artist/2296> , <http://www.herbiehancock.com/> , <https://imvdb.com/n/herbie-hancock> , <https://www.youtube.com/user/hancockmusic> , <https://www.allmusic.com/artist/mn0000957296> , <https://www.discogs.com/artist/3865> , <https://www.worldcat.org/identities/lccn-n81014575> , <https://www.bbc.co.uk/music/artists/27613b78-1b9d-4ec3-9db5-fa0743465fdd> , <https://catalogue.bnf.fr/ark:/12148/cb13894938z> , <https://commons.wikimedia.org/wiki/File:Herbie_Hancock_2013.jpg> , <http://viaf.org/viaf/49408202> , <https://d-nb.info/gnd/121542157> , <https://www.imdb.com/name/nm0359372/> , <http://snaccooperative.org/ark:/99166/w6rf5z7r> , <http://musicmoz.org/Bands_and_Artists/H/Hancock,_Herbie/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/29a709d8-0320-493e-8d0c-f2c386662b7f>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Chicago" ;
+        schema:name  "Chicago" ;
+        owl:sameAs   <https://musicbrainz.org/area/29a709d8-0320-493e-8d0c-f2c386662b7f> .

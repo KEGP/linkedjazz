@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/38fcd5b0-468a-4314-a662-ee326d657e84>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/bc090b7f-3a8c-432e-aecc-c34b4997bcba> ;
+        :hasAudioTrackLength  "245000" ;
+        :hasISRC              "USBJN0920055" ;
+        :hasMusicBrainzID     "38fcd5b0-468a-4314-a662-ee326d657e84" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1954-08-06" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1954-08-06"
+                              ] ;
+        :hasTitle             "Daahoud" ;
+        :rdfs:label           "Daahoud" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/0ff5e7aa-0472-3391-a5d0-828b3a0204cf> ;
+        owl:sameAs            <https://musicbrainz.org/recording/38fcd5b0-468a-4314-a662-ee326d657e84> .

@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/dc845bc2-4d82-4eae-ad27-62551b4c3010>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
+        :hasAudioTrackLength  "183622" ;
+        :hasISRC              "USGR10000907" ;
+        :hasMusicBrainzID     "dc845bc2-4d82-4eae-ad27-62551b4c3010" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1938-06-06" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1938-06-06"
+                              ] ;
+        :hasTitle             "Doggin' Around" ;
+        :rdfs:label           "Doggin' Around" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/87c19cf8-067c-3fb5-a66b-3a1e23f62153> ;
+        owl:sameAs            <https://musicbrainz.org/recording/dc845bc2-4d82-4eae-ad27-62551b4c3010> .

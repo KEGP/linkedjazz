@@ -1,0 +1,23 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920>
+        a                  :Band ;
+        rdfs:label         "Jimmie Lunceford and His Orchestra" ;
+        :hasAlias          "Jimmie Lunceford & His Orchestra" , "Jimmie Luncefor & His Orchestra" , "Jimmy Lunceford and his Orchestra" , "Trummy Young With Jimmie Lunceford and His Orchestra" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "1f814c85-9602-4235-946b-ea1b2d1f3920" ;
+        :hasName           "Jimmie Lunceford and His Orchestra" ;
+        owl:sameAs         <https://www.wikidata.org/wiki/Q96151192> , <https://musicbrainz.org/artist/1f814c85-9602-4235-946b-ea1b2d1f3920> , <https://www.discogs.com/artist/317906> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

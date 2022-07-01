@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/b3132030-3c55-48e4-bf9b-a9d28d24cdd4>
+        rdf:type             :Release ;
+        rdfs:label           "Giant Steps" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasASIN             "B000003489" ;
+        :hasBarcode          "081227520328" ;
+        :hasMusicBrainzID    "b3132030-3c55-48e4-bf9b-a9d28d24cdd4" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Giant Steps" ;
+        :releasedInCountry   "US" ;
+        :releasedInDate      "1998-03-03" ;
+        owl:sameAs           <https://www.discogs.com/release/1468729> , <https://www.amazon.com/gp/product/B000003489> , <https://musicbrainz.org/release/b3132030-3c55-48e4-bf9b-a9d28d24cdd4> , <https://www.discogs.com/release/5599728> .

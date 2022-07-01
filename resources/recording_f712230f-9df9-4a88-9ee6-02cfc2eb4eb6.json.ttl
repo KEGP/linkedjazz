@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/f712230f-9df9-4a88-9ee6-02cfc2eb4eb6>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
+        :hasAudioTrackLength  "183893" ;
+        :hasISRC              "USBJN0920024" ;
+        :hasMusicBrainzID     "f712230f-9df9-4a88-9ee6-02cfc2eb4eb6" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-07-07" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-07-07"
+                              ] ;
+        :hasTitle             "One O'Clock Jump" ;
+        :rdfs:label           "One O'Clock Jump" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/54642bfe-8ec3-348c-90a1-05c0c3765d9b> ;
+        owl:sameAs            <https://musicbrainz.org/recording/f712230f-9df9-4a88-9ee6-02cfc2eb4eb6> .

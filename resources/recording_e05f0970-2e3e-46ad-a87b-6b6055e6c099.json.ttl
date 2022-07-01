@@ -1,0 +1,24 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/e05f0970-2e3e-46ad-a87b-6b6055e6c099>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/03ade0b4-4d20-40d5-a2ac-71c832ec5c39> , <http://localhost:8080/resource/kejazz/Artist/32286190-da0f-4a85-b3d6-09a84d7e2bbc> ;
+        :hasAudioTrackLength  "183000" ;
+        :hasISRC              "USBJN0920010" ;
+        :hasMusicBrainzID     "e05f0970-2e3e-46ad-a87b-6b6055e6c099" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ] ;
+        :hasTitle             "From Monday On" ;
+        :rdfs:label           "From Monday On" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/42f22d70-f906-4fdf-9174-fe63df89ad59> ;
+        owl:sameAs            <https://musicbrainz.org/recording/e05f0970-2e3e-46ad-a87b-6b6055e6c099> .

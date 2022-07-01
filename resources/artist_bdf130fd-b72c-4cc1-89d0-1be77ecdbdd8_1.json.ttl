@@ -1,0 +1,43 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/82a4e867-19e7-4968-9031-10aaf1c6895b>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Clarksdale" ;
+        schema:name  "Clarksdale" ;
+        owl:sameAs   <https://musicbrainz.org/area/82a4e867-19e7-4968-9031-10aaf1c6895b> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bessie Smith" ;
+        :hasAlias          "The Empress of the Blues" , "Smith, Bessie" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/1916ac12-64b4-41c5-9f1d-e2912888ed8e> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/82a4e867-19e7-4968-9031-10aaf1c6895b> ;
+        :hasGender         "Female" ;
+        :hasISNI           "0000000120225643" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1937-09-26" ;
+                             :hasIntervalStartDate  "1894-04-15"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
+        :hasName           "Bessie Smith" ;
+        owl:sameAs         <https://www.bbc.co.uk/music/artists/ffa28768-ecda-42c6-ac49-6ce5c7d33043> , <http://www.redhotjazz.com/bessie.html> , <http://rockhall.com/inductees/bessie-smith/bio/> , <http://snaccooperative.org/ark:/99166/w6z03rhg> , <https://www.songkick.com/artists/503593> , <https://en.wikipedia.org/wiki/Bessie_Smith> , <https://openlibrary.org/works/OL6406569A> , <https://www.allmusic.com/artist/mn0000054707> , <http://viaf.org/viaf/24788472> , <https://rateyourmusic.com/artist/bessie_smith> , <http://muzikum.eu/en/122-7421/bessie-smith/lyrics.html> , <http://www.blues.org/halloffame/inductees.php?ArtistId=133&YearId=25#ref=halloffame_inductees> , <http://id.loc.gov/authorities/names/n83071529> , <https://www.imdb.com/name/nm0807439/> , <https://www.wikidata.org/wiki/Q93349> , <https://www.facebook.com/pages/Bessie-Smith/112325122116167> , <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> , <https://www.discogs.com/artist/288268> , <https://commons.wikimedia.org/wiki/File:Bessiesmith.jpg> , <https://ibdb.com/person.php?id=60344> , <https://catalogue.bnf.fr/ark:/12148/cb13899855g> , <https://www.worldcat.org/identities/lccn-n83071529> , <https://d-nb.info/gnd/118748548> , <https://isni.org/isni/0000000120225643> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/1916ac12-64b4-41c5-9f1d-e2912888ed8e>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Chattanooga" ;
+        schema:name  "Chattanooga" ;
+        owl:sameAs   <https://musicbrainz.org/area/1916ac12-64b4-41c5-9f1d-e2912888ed8e> .

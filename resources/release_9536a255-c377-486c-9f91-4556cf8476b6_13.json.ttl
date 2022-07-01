@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/9536a255-c377-486c-9f91-4556cf8476b6>
+        rdf:type             :Release ;
+        rdfs:label           "The Chronological Classics: Thelonious Monk 1947-1948" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasASIN             "B00007GWYZ" ;
+        :hasBarcode          "3307517111821" ;
+        :hasMusicBrainzID    "9536a255-c377-486c-9f91-4556cf8476b6" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "The Chronological Classics: Thelonious Monk 1947-1948" ;
+        :releasedInCountry   "FR" ;
+        :releasedInDate      "2000" ;
+        owl:sameAs           <https://www.amazon.fr/gp/product/B00007GWYZ> , <https://musicbrainz.org/release/9536a255-c377-486c-9f91-4556cf8476b6> .

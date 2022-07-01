@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/4aefac09-8aad-46f4-bb62-a9b0878666f9>
+        rdf:type            :Release ;
+        rdfs:label          "Creole Jazz" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasMusicBrainzID   "4aefac09-8aad-46f4-bb62-a9b0878666f9" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Creole Jazz" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1998" ;
+        owl:sameAs          <https://musicbrainz.org/release/4aefac09-8aad-46f4-bb62-a9b0878666f9> .

@@ -1,0 +1,35 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a43270af-bc4a-4552-847e-617b11f38d7b>
+        a                   :Band ;
+        rdfs:label          "John Coltrane Quartet" ;
+        :hasActivityPeriod  [ a                      :TimeInterval ;
+                              :hasIntervalEndDate    "1965" ;
+                              :hasIntervalStartDate  "1959"
+                            ] ;
+        :hasAlias           "The John Coltrane Quartet" ;
+        :hasBeginArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasISNI            "0000000109399036" ;
+        :hasMainArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID   "a43270af-bc4a-4552-847e-617b11f38d7b" ;
+        :hasName            "John Coltrane Quartet" ;
+        owl:sameAs          <https://www.wikidata.org/wiki/Q1699646> , <http://viaf.org/viaf/121288136> , <http://id.loc.gov/authorities/names/n90016531> , <http://www.45cat.com/artist/the-john-coltrane-quartet> , <http://www.45cat.com/artist/john-coltrane-quartet> , <https://www.last.fm/music/John+Coltrane+Quartet> , <https://www.bbc.co.uk/music/artists/a43270af-bc4a-4552-847e-617b11f38d7b> , <https://www.discogs.com/artist/255386> , <https://www.worldcat.org/identities/lccn-n90016531> , <https://www.deezer.com/artist/75111> , <https://isni.org/isni/0000000109399036> , <https://musicbrainz.org/artist/a43270af-bc4a-4552-847e-617b11f38d7b> , <https://www.imdb.com/name/nm6339631/> , <https://catalogue.bnf.fr/ark:/12148/cb13904275j> , <https://d-nb.info/gnd/5201754-0> , <https://listen.tidal.com/artist/4263320> , <https://www.allmusic.com/artist/mn0000216294> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a            :ArtistActivityArea ;
+        rdfs:label   "New York" ;
+        schema:name  "New York" ;
+        owl:sameAs   <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

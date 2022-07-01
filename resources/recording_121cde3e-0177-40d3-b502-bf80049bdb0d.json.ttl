@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd> ;
+        :hasAudioTrackLength  "389000" ;
+        :hasISRC              "USBJN0920092" ;
+        :hasMusicBrainzID     "121cde3e-0177-40d3-b502-bf80049bdb0d" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1973-09" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1973-09"
+                              ] ;
+        :hasTitle             "Watermelon Man" ;
+        :rdfs:label           "Watermelon Man" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/d3e95fd3-8cbf-3e85-abe2-fe0d9469525c> ;
+        owl:sameAs            <https://musicbrainz.org/recording/121cde3e-0177-40d3-b502-bf80049bdb0d> .

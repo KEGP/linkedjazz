@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/fa59384d-eed0-405e-88b4-b10a21df0bdf>
+        rdf:type             :Release ;
+        rdfs:label           "Portrait" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN             "B000057R5K" ;
+        :hasBarcode          "4011222042941" ;
+        :hasMusicBrainzID    "fa59384d-eed0-405e-88b4-b10a21df0bdf" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Portrait" ;
+        :releasedInCountry   "DE" ;
+        :releasedInDate      "2000" ;
+        owl:sameAs           <https://musicbrainz.org/release/fa59384d-eed0-405e-88b4-b10a21df0bdf> , <https://www.amazon.de/gp/product/B000057R5K> .

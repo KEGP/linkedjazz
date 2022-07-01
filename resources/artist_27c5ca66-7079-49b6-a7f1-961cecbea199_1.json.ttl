@@ -1,0 +1,35 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/7e037c94-d999-4611-a8fd-56e8770f2e3c>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Harlem" ;
+        schema:name  "Harlem" ;
+        owl:sameAs   <https://musicbrainz.org/area/7e037c94-d999-4611-a8fd-56e8770f2e3c> .
+
+<http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sonny Rollins" ;
+        :hasAlias          "Sonny Rollins & Co." , "Sony Rollins & Co." , "Sonny Rolllins" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/7e037c94-d999-4611-a8fd-56e8770f2e3c> ;
+        :hasGender         "Male" ;
+        :hasISNI           "0000000110367920" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalStartDate  "1930-09-07"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "3b47247e-5b57-49b6-a0ed-bad80243802a" ;
+        :hasName           "Sonny Rollins" ;
+        owl:sameAs         <https://www.wikidata.org/wiki/Q299208> , <https://www.worldcat.org/identities/lccn-n82-144213> , <https://catalogue.bnf.fr/ark:/12148/cb138991337> , <https://open.spotify.com/artist/1VEzN9lxvG6KPR3QQGsebR> , <https://rateyourmusic.com/artist/sonny_rollins> , <https://www.musik-sammler.de/artist/sonny-rollins/> , <http://snaccooperative.org/ark:/99166/w6bg2vq8> , <http://sonnyrollins.com/> , <https://www.last.fm/music/Sonny%20Rollins> , <http://viaf.org/viaf/7368226> , <http://d-nb.info/gnd/118749552> , <https://commons.wikimedia.org/wiki/File:Sonny_Rollins.jpg> , <https://www.imdb.com/name/nm0738456/> , <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> , <https://isni.org/isni/0000000110367920> , <https://www.bbc.co.uk/music/artists/3b47247e-5b57-49b6-a0ed-bad80243802a> , <http://id.loc.gov/authorities/names/n82144213> , <https://twitter.com/sonnyrollins> , <https://www.allmusic.com/artist/mn0000039656> , <https://secondhandsongs.com/artist/6614> , <https://www.discogs.com/artist/145264> , <https://www.songkick.com/artists/443088> .

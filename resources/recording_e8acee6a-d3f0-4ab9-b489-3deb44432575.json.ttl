@@ -1,0 +1,39 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/e8acee6a-d3f0-4ab9-b489-3deb44432575>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> , <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> , <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasAudioTrackLength  "156213" ;
+        :hasMusicBrainzID     "e8acee6a-d3f0-4ab9-b489-3deb44432575" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1934-12-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1934-12-28"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1934-12-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1934-12-28"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1934-12-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1934-12-28"
+                              ] ;
+        :hasTitle             "Dinah" ;
+        :rdfs:label           "Dinah" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
+        owl:sameAs            <https://musicbrainz.org/recording/e8acee6a-d3f0-4ab9-b489-3deb44432575> .

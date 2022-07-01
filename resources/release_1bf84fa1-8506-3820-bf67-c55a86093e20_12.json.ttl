@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/1bf84fa1-8506-3820-bf67-c55a86093e20>
+        rdf:type            :Release ;
+        rdfs:label          "Django" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+        :hasASIN            "B000000Y3K" ;
+        :hasMusicBrainzID   "1bf84fa1-8506-3820-bf67-c55a86093e20" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Django" ;
+        :releasedInCountry  "JP" ;
+        :releasedInDate     "2006-08-23" ;
+        owl:sameAs          <https://musicbrainz.org/release/1bf84fa1-8506-3820-bf67-c55a86093e20> , <https://www.amazon.com/gp/product/B000000Y3K> .

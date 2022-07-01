@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/75711684-1e71-4c0f-8070-89a82520552e>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/16d2b8e6-8930-4c9e-856f-e6d096479350> ;
+        :hasAudioTrackLength  "183000" ;
+        :hasISRC              "USBJN0920050" ;
+        :hasMusicBrainzID     "75711684-1e71-4c0f-8070-89a82520552e" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1949-04-22" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1949-04-22"
+                              ] ;
+        :hasTitle             "Boplicity" ;
+        :rdfs:label           "Boplicity" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/09a5aad2-2c02-4315-8bfb-29351cdde2e3> ;
+        owl:sameAs            <https://musicbrainz.org/recording/75711684-1e71-4c0f-8070-89a82520552e> .

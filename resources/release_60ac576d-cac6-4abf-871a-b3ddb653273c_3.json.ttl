@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/60ac576d-cac6-4abf-871a-b3ddb653273c>
+        rdf:type            :Release ;
+        rdfs:label          "The Quintessence: New York - Chicago 1933-1950" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a> ;
+        :hasMusicBrainzID   "60ac576d-cac6-4abf-871a-b3ddb653273c" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Quintessence: New York - Chicago 1933-1950" ;
+        :releasedInCountry  "FR" ;
+        :releasedInDate     "2003" ;
+        owl:sameAs          <https://musicbrainz.org/release/60ac576d-cac6-4abf-871a-b3ddb653273c> , <https://www.discogs.com/release/850449> .

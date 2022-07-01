@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> ;
+        :hasAudioTrackLength  "217800" ;
+        :hasMusicBrainzID     "b5c9ca7e-ba9f-4ebf-8609-f4dc24339594" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1947-06-12" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1947-06-12"
+                              ] ;
+        :hasTitle             "Bikini" ;
+        :rdfs:label           "Bikini" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/a030da9f-1ec7-4776-a6cf-b43f978a7e8f> ;
+        owl:sameAs            <https://musicbrainz.org/recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594> .

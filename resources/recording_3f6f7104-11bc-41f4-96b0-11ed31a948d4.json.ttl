@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        :hasAudioTrackLength  "177000" ;
+        :hasMusicBrainzID     "3f6f7104-11bc-41f4-96b0-11ed31a948d4" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1923-07-17" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1923-07-17"
+                              ] ;
+        :hasTitle             "King Porter Stomp" ;
+        :rdfs:label           "King Porter Stomp" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/028fce1d-d787-3501-a6ad-cc572786abe1> ;
+        owl:sameAs            <https://musicbrainz.org/recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4> .

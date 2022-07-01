@@ -1,0 +1,18 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/641dd2b9-be9a-45a7-83ea-9116c3746283>
+        rdf:type            :Release ;
+        rdfs:label          "New Orleans 1918-29, Where Jazz Was Born" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID   "641dd2b9-be9a-45a7-83ea-9116c3746283" ;
+        :hasTitle           "New Orleans 1918-29, Where Jazz Was Born" ;
+        :releasedInCountry  "PT" ;
+        :releasedInDate     "1995" ;
+        owl:sameAs          <https://www.discogs.com/release/13123641> , <https://musicbrainz.org/release/641dd2b9-be9a-45a7-83ea-9116c3746283> .

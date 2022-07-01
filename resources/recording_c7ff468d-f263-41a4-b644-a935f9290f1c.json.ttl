@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/c7ff468d-f263-41a4-b644-a935f9290f1c>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> , <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :hasAudioTrackLength  "258066" ;
+        :hasISRC              "USBJN0920057" ;
+        :hasMusicBrainzID     "c7ff468d-f263-41a4-b644-a935f9290f1c" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1955-02-06" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1955-02-06"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1955-02-06" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1955-02-06"
+                              ] ;
+        :hasTitle             "The Preacher" ;
+        :rdfs:label           "The Preacher" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/5dbea680-ae2f-30ad-bcb0-178270584d23> ;
+        owl:sameAs            <https://musicbrainz.org/recording/c7ff468d-f263-41a4-b644-a935f9290f1c> .

@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/002cfc0f-213f-48c8-9633-3df4713f729c>
+        rdf:type             :Release ;
+        rdfs:label           "Work Song" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+        :hasMusicBrainzID    "002cfc0f-213f-48c8-9633-3df4713f729c" ;
+        :hasPackagingFormat  "None" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Work Song" ;
+        :releasedInCountry   "US" ;
+        owl:sameAs           <https://itunes.apple.com/us/album/id569487591> , <https://musicbrainz.org/release/002cfc0f-213f-48c8-9633-3df4713f729c> .

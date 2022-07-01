@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/308348c2-9951-4192-92c8-489ffcf9d1e0>
+        rdf:type           :Release ;
+        rdfs:label         "Love for Sale" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :hasBarcode        "5032044433136" ;
+        :hasMusicBrainzID  "308348c2-9951-4192-92c8-489ffcf9d1e0" ;
+        :hasStatus         "Official" ;
+        :hasTitle          "Love for Sale" ;
+        :releasedInDate    "1997" ;
+        owl:sameAs         <https://musicbrainz.org/release/308348c2-9951-4192-92c8-489ffcf9d1e0> , <https://www.discogs.com/release/3787146> .

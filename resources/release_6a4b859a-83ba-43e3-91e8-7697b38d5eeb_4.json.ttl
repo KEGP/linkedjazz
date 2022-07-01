@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/6a4b859a-83ba-43e3-91e8-7697b38d5eeb>
+        rdf:type             :Release ;
+        rdfs:label           "Portrait" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a> ;
+        :hasASIN             "B000092R5L" ;
+        :hasBarcode          "4011222206060" ;
+        :hasMusicBrainzID    "6a4b859a-83ba-43e3-91e8-7697b38d5eeb" ;
+        :hasPackagingFormat  "Other" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Portrait" ;
+        :releasedInCountry   "DE" ;
+        :releasedInDate      "2003" ;
+        owl:sameAs           <https://www.amazon.com/gp/product/B000092R5L> , <https://www.allmusic.com/album/release/mr0001514864> , <https://musicbrainz.org/release/6a4b859a-83ba-43e3-91e8-7697b38d5eeb> , <https://www.discogs.com/release/6266887> .

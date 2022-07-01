@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/75490d38-1275-4794-a765-8f0f9aa9b111>
+        rdf:type            :Release ;
+        rdfs:label          "I Got a Guy / Harlem Congo" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/2a5ad80d-59a7-401c-842b-60567e6a06c2> ;
+        :hasMusicBrainzID   "75490d38-1275-4794-a765-8f0f9aa9b111" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "I Got a Guy / Harlem Congo" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1938" ;
+        owl:sameAs          <https://musicbrainz.org/release/75490d38-1275-4794-a765-8f0f9aa9b111> , <https://www.discogs.com/release/7819822> , <https://rateyourmusic.com/release/single/chick_webb/i-got-a-guy-_-harlem-congo/> .

@@ -1,0 +1,70 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/3297d9ea-dc5c-4349-b2c2-1fe3c4fd7a0c>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasAudioTrackLength  "315000" ;
+        :hasISRC              "USBJN0920064" , "USPR35712070" ;
+        :hasMusicBrainzID     "3297d9ea-dc5c-4349-b2c2-1fe3c4fd7a0c" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-07-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-07-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-08-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-08-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-08-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-08-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-07-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-07-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-07-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-07-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-08-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-08-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-08-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-08-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-07-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-07-23"
+                              ] ;
+        :hasTitle             "Stompin' at the Savoy" ;
+        :rdfs:label           "Stompin' at the Savoy" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/98d6dbeb-8672-39ef-a10f-eae069a2075c> ;
+        owl:sameAs            <https://musicbrainz.org/recording/3297d9ea-dc5c-4349-b2c2-1fe3c4fd7a0c> .

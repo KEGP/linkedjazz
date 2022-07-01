@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/5c4703c2-dcb3-4019-b8d2-53e95a313db7>
+        rdf:type            :Release ;
+        rdfs:label          "The Very Best of 1934-1939" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN            "B00004YLD1" ;
+        :hasBarcode         "741157094428" ;
+        :hasMusicBrainzID   "5c4703c2-dcb3-4019-b8d2-53e95a313db7" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Very Best of 1934-1939" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "2000" ;
+        owl:sameAs          <https://www.amazon.com/gp/product/B00004YLD1> , <https://musicbrainz.org/release/5c4703c2-dcb3-4019-b8d2-53e95a313db7> , <https://www.discogs.com/release/2505788> .

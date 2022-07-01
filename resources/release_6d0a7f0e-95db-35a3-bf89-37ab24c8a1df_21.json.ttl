@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/6d0a7f0e-95db-35a3-bf89-37ab24c8a1df>
+        rdf:type             :Release ;
+        rdfs:label           "Giant Steps" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasBarcode          "0081227361020" ;
+        :hasMusicBrainzID    "6d0a7f0e-95db-35a3-bf89-37ab24c8a1df" ;
+        :hasPackagingFormat  "Digipak" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Giant Steps" ;
+        :releasedInCountry   "AU" ;
+        :releasedInDate      "2003-02-21" ;
+        owl:sameAs           <https://musicbrainz.org/release/6d0a7f0e-95db-35a3-bf89-37ab24c8a1df> , <https://www.discogs.com/release/501519> .

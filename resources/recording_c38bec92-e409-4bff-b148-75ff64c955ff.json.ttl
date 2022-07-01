@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/c38bec92-e409-4bff-b148-75ff64c955ff>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/52e9e9d5-348e-4e25-a9ee-90daf87f9f1d> ;
+        :hasAudioTrackLength  "192000" ;
+        :hasMusicBrainzID     "c38bec92-e409-4bff-b148-75ff64c955ff" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1926-09-21" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1926-09-21"
+                              ] ;
+        :hasTitle             "Dead Man Blues" ;
+        :rdfs:label           "Dead Man Blues" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/7cfc78fc-a6c7-3772-a8d6-09aa2d86da59> ;
+        owl:sameAs            <https://musicbrainz.org/recording/c38bec92-e409-4bff-b148-75ff64c955ff> .

@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/184d63e4-2630-4ddd-988a-841430f5f3dc>
+        rdf:type            :Release ;
+        rdfs:label          "Ella & Louis: The Complete Norman Granz Sessions" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode         "8436563180590" ;
+        :hasMusicBrainzID   "184d63e4-2630-4ddd-988a-841430f5f3dc" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Ella & Louis: The Complete Norman Granz Sessions" ;
+        :releasedInCountry  "XE" ;
+        :releasedInDate     "2016" ;
+        owl:sameAs          <https://www.discogs.com/release/10211979> , <https://musicbrainz.org/release/184d63e4-2630-4ddd-988a-841430f5f3dc> .

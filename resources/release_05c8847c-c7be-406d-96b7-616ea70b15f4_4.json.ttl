@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/05c8847c-c7be-406d-96b7-616ea70b15f4>
+        rdf:type             :Release ;
+        rdfs:label           "Ugetsu" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> , <http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> ;
+        :hasBarcode          "025218609029" ;
+        :hasMusicBrainzID    "05c8847c-c7be-406d-96b7-616ea70b15f4" ;
+        :hasPackagingFormat  "None" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Ugetsu" ;
+        :releasedInCountry   "XW" ;
+        :releasedInDate      "2006-06-06" ;
+        owl:sameAs           <https://www.deezer.com/album/104398> , <https://musicbrainz.org/release/05c8847c-c7be-406d-96b7-616ea70b15f4> .

@@ -1,0 +1,23 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/03ade0b4-4d20-40d5-a2ac-71c832ec5c39>
+        a                  :Band ;
+        rdfs:label         "Paul Whiteman & His Orchestra" ;
+        :hasAlias          "Paul Whitman & His Orchestra" , "Paul Whiteman and his Orchestra" , "P. Whiteman Orchestra" , "Paul Whiteman and His Concert Orchestra" , "Paul Whiteman Orchestra" , "Bing Crosby With Paul Whiteman and His Orchestra" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "03ade0b4-4d20-40d5-a2ac-71c832ec5c39" ;
+        :hasName           "Paul Whiteman & His Orchestra" ;
+        owl:sameAs         <http://sar-cdn.com/sites/default/files/imagecache/superphoto/12440945.jpg> , <https://www.discogs.com/artist/341395> , <http://www.redhotjazz.com/pwo.html> , <https://musicbrainz.org/artist/03ade0b4-4d20-40d5-a2ac-71c832ec5c39> .

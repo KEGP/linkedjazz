@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/24fe0c12-91a4-435b-9282-634526e562c7>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/17df697d-197e-4a20-85a1-e09438305f5c> ;
+        :hasAudioTrackLength  "188133" ;
+        :hasMusicBrainzID     "24fe0c12-91a4-435b-9282-634526e562c7" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1945-06-09" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1945-06-09"
+                              ] ;
+        :hasTitle             "I Can't Get Started" ;
+        :rdfs:label           "I Can't Get Started" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/fc4b0fb3-8b63-3d8c-a61c-a43e1c427d73> ;
+        owl:sameAs            <https://musicbrainz.org/recording/24fe0c12-91a4-435b-9282-634526e562c7> .

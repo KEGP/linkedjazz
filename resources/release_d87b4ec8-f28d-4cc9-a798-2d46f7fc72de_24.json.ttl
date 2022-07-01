@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/d87b4ec8-f28d-4cc9-a798-2d46f7fc72de>
+        rdf:type            :Release ;
+        rdfs:label          "Prestige Profiles: Sonny Rollins" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasASIN            "B000ECXX7Q" ;
+        :hasBarcode         "602498770504" ;
+        :hasMusicBrainzID   "d87b4ec8-f28d-4cc9-a798-2d46f7fc72de" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Prestige Profiles: Sonny Rollins" ;
+        :releasedInCountry  "XE" ;
+        :releasedInDate     "2006" ;
+        owl:sameAs          <https://musicbrainz.org/release/d87b4ec8-f28d-4cc9-a798-2d46f7fc72de> , <https://www.amazon.de/gp/product/B000ECXX7Q> .

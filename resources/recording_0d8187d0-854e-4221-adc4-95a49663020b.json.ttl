@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/0d8187d0-854e-4221-adc4-95a49663020b>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasAudioTrackLength  "199400" ;
+        :hasMusicBrainzID     "0d8187d0-854e-4221-adc4-95a49663020b" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1940-09-05" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1940-09-05"
+                              ] ;
+        :hasTitle             "In a Mellotone" ;
+        :rdfs:label           "In a Mellotone" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/50c2c0d9-a1c3-3fa5-8738-65d3b35a1994> ;
+        owl:sameAs            <https://musicbrainz.org/recording/0d8187d0-854e-4221-adc4-95a49663020b> .

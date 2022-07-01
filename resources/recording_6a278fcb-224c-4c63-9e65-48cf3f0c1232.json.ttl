@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/7e7a3dbd-7aeb-4d23-a648-e302afd4bb10> ;
+        :hasAudioTrackLength  "269000" ;
+        :hasMusicBrainzID     "6a278fcb-224c-4c63-9e65-48cf3f0c1232" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1944-12-20" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1944-12-20"
+                              ] ;
+        :hasTitle             "Blue Horizon" ;
+        :rdfs:label           "Blue Horizon" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/c5805cf1-6fe7-4f61-ab88-3d7085c324d3> ;
+        owl:sameAs            <https://musicbrainz.org/recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232> .

@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/c24bd7bd-aeef-42d1-9445-9ecea0eb0827>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/e651adec-e027-42ee-89fa-9970c6f60fe7> ;
+        :hasAudioTrackLength  "180400" ;
+        :hasMusicBrainzID     "c24bd7bd-aeef-42d1-9445-9ecea0eb0827" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1941-07-02" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1941-07-02"
+                              ] ;
+        :hasTitle             "Rockin' Chair" ;
+        :rdfs:label           "Rockin' Chair" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/daf67eab-2ae6-39e4-93be-eb91b4ce6890> ;
+        owl:sameAs            <https://musicbrainz.org/recording/c24bd7bd-aeef-42d1-9445-9ecea0eb0827> .

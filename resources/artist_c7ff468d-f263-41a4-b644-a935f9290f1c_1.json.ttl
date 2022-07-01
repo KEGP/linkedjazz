@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/bed193ed-f886-4041-877a-2c9e64f9ab88>
+        a            :ArtistActivityArea ;
+        rdfs:label   "New Rochelle" ;
+        schema:name  "New Rochelle" ;
+        owl:sameAs   <https://musicbrainz.org/area/bed193ed-f886-4041-877a-2c9e64f9ab88> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Horace Silver" ;
+        :hasAlias          "Horance Silver" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/dc723efa-f949-4f26-b3d6-85aebd45fefc> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/bed193ed-f886-4041-877a-2c9e64f9ab88> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00028730093" ;
+        :hasISNI           "0000000108681996" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "2014-06-18" ;
+                             :hasIntervalStartDate  "1928-09-02"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "d185d986-ee96-4fd3-bd61-8c848a4765b6" ;
+        :hasName           "Horace Silver" ;
+        owl:sameAs         <http://snaccooperative.org/ark:/99166/w6p015gr> , <https://www.worldcat.org/identities/lccn-n82003124> , <https://d-nb.info/gnd/132099594> , <https://isni.org/isni/0000000108681996> , <http://horacesilver.com/home.php> , <https://musicbrainz.org/artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> , <https://www.imdb.com/name/nm0798701/> , <https://secondhandsongs.com/artist/2698> , <https://open.spotify.com/artist/5ZATfKurLqflrBhv2FLht5> , <https://www.wikidata.org/wiki/Q365560> , <https://www.songkick.com/artists/470934> , <http://catalogue.bnf.fr/ark:/12148/cb13899777h> , <https://rateyourmusic.com/artist/horace_silver> , <https://www.allmusic.com/artist/mn0000267354> , <https://www.discogs.com/artist/29973> , <http://viaf.org/viaf/8537804> , <https://www.musik-sammler.de/artist/horace-silver/> , <http://horacesilver.com/silverpages/inside.php?mod=bio> , <https://catalogue.bnf.fr/ark:/12148/cb13899777h> , <http://www.horacesilver.com/> , <http://id.loc.gov/authorities/names/n82003124> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/dc723efa-f949-4f26-b3d6-85aebd45fefc>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Norwalk" ;
+        schema:name  "Norwalk" ;
+        owl:sameAs   <https://musicbrainz.org/area/dc723efa-f949-4f26-b3d6-85aebd45fefc> .

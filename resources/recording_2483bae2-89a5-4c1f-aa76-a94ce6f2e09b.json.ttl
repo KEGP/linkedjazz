@@ -1,0 +1,33 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/338e7812-4f75-4996-b99d-b26683f16748>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/7adbb16a-841c-499f-9a97-461f9db02aa1> ;
+        :hasAudioTrackLength  "194000" ;
+        :hasMusicBrainzID     "338e7812-4f75-4996-b99d-b26683f16748" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1929-05-16" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1929-05-16"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1928-05-16" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1928-05-16"
+                              ] ;
+        :hasTitle             "Four or Five Times" ;
+        :rdfs:label           "Four or Five Times" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/cf7f7acd-386f-4c13-8f17-a3b5156043a1> ;
+        owl:sameAs            <https://musicbrainz.org/recording/338e7812-4f75-4996-b99d-b26683f16748> .

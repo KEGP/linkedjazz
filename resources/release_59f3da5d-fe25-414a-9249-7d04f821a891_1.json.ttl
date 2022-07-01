@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/59f3da5d-fe25-414a-9249-7d04f821a891>
+        rdf:type             :Release ;
+        rdfs:label           "22 top tracks" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0> ;
+        :hasBarcode          "8003278440259" ;
+        :hasMusicBrainzID    "59f3da5d-fe25-414a-9249-7d04f821a891" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "22 top tracks" ;
+        :releasedInDate      "1990" ;
+        owl:sameAs           <https://musicbrainz.org/release/59f3da5d-fe25-414a-9249-7d04f821a891> .

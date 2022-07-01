@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/2eae1e3d-5ca7-4d7f-9490-8383ce71ecd3>
+        rdf:type            :Release ;
+        rdfs:label          "The Best of Art Blakey and the Jazz Messengers" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :hasMusicBrainzID   "2eae1e3d-5ca7-4d7f-9490-8383ce71ecd3" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Best of Art Blakey and the Jazz Messengers" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1989" ;
+        owl:sameAs          <https://www.discogs.com/release/4087687> , <https://musicbrainz.org/release/2eae1e3d-5ca7-4d7f-9490-8383ce71ecd3> .

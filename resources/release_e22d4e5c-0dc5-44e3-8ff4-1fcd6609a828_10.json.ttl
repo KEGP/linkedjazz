@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/e22d4e5c-0dc5-44e3-8ff4-1fcd6609a828>
+        rdf:type            :Release ;
+        rdfs:label          "Nuages, Volume 2" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> , <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN            "B000001HI0" ;
+        :hasMusicBrainzID   "e22d4e5c-0dc5-44e3-8ff4-1fcd6609a828" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Nuages, Volume 2" ;
+        :releasedInCountry  "DE" ;
+        :releasedInDate     "1995-03-30" ;
+        owl:sameAs          <https://musicbrainz.org/release/e22d4e5c-0dc5-44e3-8ff4-1fcd6609a828> , <https://www.amazon.de/gp/product/B000001HI0> .

@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/007d1465-1c49-4b57-bd8f-28dbc947e523>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Tijuca" ;
+        schema:name  "Tijuca" ;
+        owl:sameAs   <https://musicbrainz.org/area/007d1465-1c49-4b57-bd8f-28dbc947e523> .
+
+<http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Antônio Carlos Jobim" ;
+        :hasAlias          "Tom Jobim" , "Antonio Carlos Jobim" , "Antônio Carlos Brasileiro de Almeida Jobim" , "A. C. Jobim" , "AC Jobim" , "Antônio Jobim" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/007d1465-1c49-4b57-bd8f-28dbc947e523> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00039686047" , "00070899540" ;
+        :hasISNI           "0000000122798998" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1994-12-08" ;
+                             :hasIntervalStartDate  "1927-01-25"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/f45b47f8-5796-386e-b172-6c31b009a5d8> ;
+        :hasMusicBrainzID  "7a8dbe84-f4c0-4457-bfa3-edced1f8cde0" ;
+        :hasName           "Antônio Carlos Jobim" ;
+        owl:sameAs         <https://www.allmusic.com/artist/mn0000781837> , <https://www.last.fm/music/Ant%C3%B4nio+Carlos+Jobim> , <https://www.songkick.com/artists/15356> , <https://rateyourmusic.com/artist/antonio_carlos_jobim> , <http://viaf.org/viaf/51875584> , <https://www.wikidata.org/wiki/Q200131> , <https://d-nb.info/gnd/119525615> , <https://musicbrainz.org/artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <https://www.worldcat.org/identities/lccn-n81055554> , <http://www.bjbear71.com/Jobim/tom.html> , <https://commons.wikimedia.org/wiki/File:Tomjobim.jpg> , <https://www.discogs.com/artist/27991> , <http://id.loc.gov/authorities/names/n81055554> , <http://snaccooperative.org/ark:/99166/w6rj59g2> , <https://catalogue.bnf.fr/ark:/12148/cb13895655z> , <https://www.musik-sammler.de/artist/antonio-carlos-jobim/> , <https://www.bbc.co.uk/music/artists/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <https://isni.org/isni/0000000122798998> , <https://www.imdb.com/name/nm0423388/> , <https://open.spotify.com/artist/3pO5VjZ4wOHCMBXOvbMISG> , <https://secondhandsongs.com/artist/2280> , <http://www2.uol.com.br/tomjobim/index_flash.htm> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/f45b47f8-5796-386e-b172-6c31b009a5d8>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Brazil" ;
+        schema:name  "Brazil" ;
+        owl:sameAs   <https://musicbrainz.org/area/f45b47f8-5796-386e-b172-6c31b009a5d8> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a            :ArtistActivityArea ;
+        rdfs:label   "New York" ;
+        schema:name  "New York" ;
+        owl:sameAs   <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

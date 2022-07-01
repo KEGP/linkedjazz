@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/b0e36ae6-05c5-4246-99a4-fca6f6681fc1>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892> ;
+        :hasAudioTrackLength  "197000" ;
+        :hasISRC              "USBJN0920005" ;
+        :hasMusicBrainzID     "b0e36ae6-05c5-4246-99a4-fca6f6681fc1" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1926-05-14" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1926-05-14"
+                              ] ;
+        :hasTitle             "The Stampede" ;
+        :rdfs:label           "The Stampede" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/c5018e3e-36f3-337d-802f-cee5b47e0a36> ;
+        owl:sameAs            <https://musicbrainz.org/recording/b0e36ae6-05c5-4246-99a4-fca6f6681fc1> .

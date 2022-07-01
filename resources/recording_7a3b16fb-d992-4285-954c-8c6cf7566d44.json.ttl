@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/7a3b16fb-d992-4285-954c-8c6cf7566d44>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
+        :hasAudioTrackLength  "172160" ;
+        :hasISRC              "USBJN0920020" ;
+        :hasMusicBrainzID     "7a3b16fb-d992-4285-954c-8c6cf7566d44" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1936-05-18" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1936-05-18"
+                              ] ;
+        :hasTitle             "Swing That Music" ;
+        :rdfs:label           "Swing That Music" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/ab31be36-18a0-48fc-9592-4784ec6c7da8> ;
+        owl:sameAs            <https://musicbrainz.org/recording/7a3b16fb-d992-4285-954c-8c6cf7566d44> .

@@ -1,0 +1,40 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/ac7f831e-1699-4899-b069-28df45218cd0>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasAudioTrackLength  "154733" ;
+        :hasISRC              "DEU241093249" , "DEU240780196" , "USBN29900184" ;
+        :hasMusicBrainzID     "ac7f831e-1699-4899-b069-28df45218cd0" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1948-07-02" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1948-07-02"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1948-07-02" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1948-07-02"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1948-07-02" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1948-07-02"
+                              ] ;
+        :hasTitle             "Evidence" ;
+        :rdfs:label           "Evidence" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/f1875b4c-ac07-3614-9bd2-4259e1865f07> ;
+        owl:sameAs            <https://musicbrainz.org/recording/ac7f831e-1699-4899-b069-28df45218cd0> .

@@ -1,0 +1,46 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/18912187-b35f-4bce-b248-e30205a45875>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+        :hasAudioTrackLength  "198000" ;
+        :hasISRC              "USSM12800001" , "USBJN0920011" , "USSM12800057" , "DEU240800892" ;
+        :hasMusicBrainzID     "18912187-b35f-4bce-b248-e30205a45875" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1928-06-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1928-06-28"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1928-06-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1928-06-28"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1928-06-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1928-06-28"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1928-06-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1928-06-28"
+                              ] ;
+        :hasTitle             "West End Blues" ;
+        :rdfs:label           "West End Blues" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/a97c426c-c138-4531-9d4a-e2eb0bca7961> ;
+        owl:sameAs            <https://musicbrainz.org/recording/18912187-b35f-4bce-b248-e30205a45875> .

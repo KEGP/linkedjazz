@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/df6b42e7-dcb1-3851-9cd8-b79a71f105e3>
+        rdf:type            :Release ;
+        rdfs:label          "The Best Blue Note Album in the World... Ever!" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN            "B00000JB1W" ;
+        :hasBarcode         "724352007028" ;
+        :hasMusicBrainzID   "df6b42e7-dcb1-3851-9cd8-b79a71f105e3" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Best Blue Note Album in the World... Ever!" ;
+        :releasedInCountry  "GB" ;
+        :releasedInDate     "1999-05-03" ;
+        owl:sameAs          <https://www.discogs.com/release/749646> , <https://www.amazon.co.uk/gp/product/B00000JB1W> , <https://musicbrainz.org/release/df6b42e7-dcb1-3851-9cd8-b79a71f105e3> .

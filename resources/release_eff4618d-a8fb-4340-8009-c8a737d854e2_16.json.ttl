@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/eff4618d-a8fb-4340-8009-c8a737d854e2>
+        rdf:type            :Release ;
+        rdfs:label          "At His Best" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode         "5030073091129" ;
+        :hasMusicBrainzID   "eff4618d-a8fb-4340-8009-c8a737d854e2" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "At His Best" ;
+        :releasedInCountry  "GB" ;
+        :releasedInDate     "1998" ;
+        owl:sameAs          <https://www.discogs.com/release/6388072> , <https://musicbrainz.org/release/eff4618d-a8fb-4340-8009-c8a737d854e2> .

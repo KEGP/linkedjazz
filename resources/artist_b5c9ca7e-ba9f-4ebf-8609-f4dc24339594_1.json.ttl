@@ -1,0 +1,23 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197>
+        a                  :Band ;
+        rdfs:label         "Dexter Gordon Quartet" ;
+        :hasAlias          "The Dexter Gordon Quartet" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "ce822195-459f-4d74-a4ae-d9e0ceacc197" ;
+        :hasName           "Dexter Gordon Quartet" ;
+        owl:sameAs         <https://www.setlist.fm/setlists/dexter-gordon-quartet-1bd2d554.html> , <https://www.discogs.com/artist/1697106> , <https://musicbrainz.org/artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

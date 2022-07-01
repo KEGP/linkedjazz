@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/9c624f74-67d7-4f4f-b218-2e390418315d>
+        rdf:type            :Release ;
+        rdfs:label          "Compact Jazz: Ella Fitzgerald & Louis Armstrong" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :hasASIN            "B00000477B" ;
+        :hasBarcode         "042283531321" ;
+        :hasMusicBrainzID   "9c624f74-67d7-4f4f-b218-2e390418315d" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Compact Jazz: Ella Fitzgerald & Louis Armstrong" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1988-06-20" ;
+        owl:sameAs          <https://musicbrainz.org/release/9c624f74-67d7-4f4f-b218-2e390418315d> , <https://www.allmusic.com/album/release/mr0000290119> , <https://www.amazon.com/gp/product/B00000477B> .

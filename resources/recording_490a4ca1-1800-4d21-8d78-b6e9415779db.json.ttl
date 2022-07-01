@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> ;
+        :hasAudioTrackLength  "196000" ;
+        :hasISRC              "USBJN0920026" , "DEU240520285" ;
+        :hasMusicBrainzID     "490a4ca1-1800-4d21-8d78-b6e9415779db" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-11-25" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-11-25"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-11-25" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-11-25"
+                              ] ;
+        :hasTitle             "Minor Swing" ;
+        :rdfs:label           "Minor Swing" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/0d7ed7d2-d879-3536-a866-85f7b2c871f2> ;
+        owl:sameAs            <https://musicbrainz.org/recording/490a4ca1-1800-4d21-8d78-b6e9415779db> .

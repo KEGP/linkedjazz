@@ -1,0 +1,17 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/93618e9e-4bf8-3cd9-8b72-258750d4222c>
+        rdf:type            :Work ;
+        rdfs:label          "Parker's Mood" ;
+        :hasISWC            "T-070.939.820-8" ;
+        :hasLyricsLanguage  "zxx" ;
+        :hasMusicBrainzID   "93618e9e-4bf8-3cd9-8b72-258750d4222c" ;
+        :hasTitle           "Parker's Mood" ;
+        owl:sameAs          <https://musicbrainz.org/work/93618e9e-4bf8-3cd9-8b72-258750d4222c> .

@@ -1,0 +1,16 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/2b991c03-2419-4bc5-a861-ee548725e881>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins Quartet" ;
+        :hasAlias          "Coleman Hawkins & His Quartet" ;
+        :hasMusicBrainzID  "2b991c03-2419-4bc5-a861-ee548725e881" ;
+        :hasName           "Coleman Hawkins Quartet" ;
+        owl:sameAs         <https://www.discogs.com/artist/251786> , <https://musicbrainz.org/artist/2b991c03-2419-4bc5-a861-ee548725e881> .

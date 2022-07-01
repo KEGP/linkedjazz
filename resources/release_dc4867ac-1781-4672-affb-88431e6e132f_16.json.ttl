@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/dc4867ac-1781-4672-affb-88431e6e132f>
+        rdf:type           :Release ;
+        rdfs:label         "Jazz Café: 40 Smooth Jazz Favourites" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN           "B000065TJP" ;
+        :hasBarcode        "5014293222921" ;
+        :hasMusicBrainzID  "dc4867ac-1781-4672-affb-88431e6e132f" ;
+        :hasStatus         "Official" ;
+        :hasTitle          "Jazz Café: 40 Smooth Jazz Favourites" ;
+        :releasedInDate    "2002" ;
+        owl:sameAs         <https://www.amazon.co.uk/gp/product/B000065TJP> , <https://musicbrainz.org/release/dc4867ac-1781-4672-affb-88431e6e132f> .

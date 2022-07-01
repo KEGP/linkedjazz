@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/3e76b73e-8c62-31c5-b59c-c0d201fe8bfb>
+        rdf:type            :Release ;
+        rdfs:label          "Plus 4" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasASIN            "B000KP62UC" ;
+        :hasMusicBrainzID   "3e76b73e-8c62-31c5-b59c-c0d201fe8bfb" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Plus 4" ;
+        :releasedInCountry  "JP" ;
+        :releasedInDate     "1996-05-29" ;
+        owl:sameAs          <https://www.amazon.com/gp/product/B000KP62UC> , <https://musicbrainz.org/release/3e76b73e-8c62-31c5-b59c-c0d201fe8bfb> .

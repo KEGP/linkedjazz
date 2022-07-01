@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/9fba2bb8-2ee9-4c24-976c-8fa9ea43625f>
+        rdf:type            :Release ;
+        rdfs:label          "The Best of Ella Fitzgerald & Louis Armstrong on Verve" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :hasASIN            "B0000047FO" ;
+        :hasBarcode         "731453790926" ;
+        :hasMusicBrainzID   "9fba2bb8-2ee9-4c24-976c-8fa9ea43625f" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Best of Ella Fitzgerald & Louis Armstrong on Verve" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1997-08-26" ;
+        owl:sameAs          <https://www.discogs.com/release/3206067> , <https://www.allmusic.com/album/release/mr0000072700> , <https://musicbrainz.org/release/9fba2bb8-2ee9-4c24-976c-8fa9ea43625f> , <https://www.amazon.com/gp/product/B0000047FO> .

@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/e3d72af4-c47b-422f-87b6-4218b68d2b7c>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
+        :hasAudioTrackLength  "181000" ;
+        :hasMusicBrainzID     "e3d72af4-c47b-422f-87b6-4218b68d2b7c" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1926-11-16" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1926-11-16"
+                              ] ;
+        :hasTitle             "Big Butter and Egg Man From the West" ;
+        :rdfs:label           "Big Butter and Egg Man From the West" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003> ;
+        owl:sameAs            <https://musicbrainz.org/recording/e3d72af4-c47b-422f-87b6-4218b68d2b7c> .

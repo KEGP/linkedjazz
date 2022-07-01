@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/b890d832-b54d-4b61-b30f-36f53df79b3b>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> ;
+        :hasAudioTrackLength  "166000" ;
+        :hasISRC              "USBJN0920042" ;
+        :hasMusicBrainzID     "b890d832-b54d-4b61-b30f-36f53df79b3b" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1947-01-10" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1947-01-10"
+                              ] ;
+        :hasTitle             "Indiana" ;
+        :rdfs:label           "Indiana" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/291f1eeb-030e-35f4-bd70-9206eb9dc752> ;
+        owl:sameAs            <https://musicbrainz.org/recording/b890d832-b54d-4b61-b30f-36f53df79b3b> .

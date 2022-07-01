@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/97e6c363-1eab-406c-8f09-e30ec3dc465a>
+        rdf:type            :Release ;
+        rdfs:label          "The Last Giant: The John Coltrane Anthology" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasASIN            "B000003310" ;
+        :hasBarcode         "081227125523" ;
+        :hasMusicBrainzID   "97e6c363-1eab-406c-8f09-e30ec3dc465a" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Last Giant: The John Coltrane Anthology" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1993-06-15" ;
+        owl:sameAs          <https://www.amazon.com/gp/product/B000003310> , <https://www.discogs.com/release/2215757> , <https://musicbrainz.org/release/97e6c363-1eab-406c-8f09-e30ec3dc465a> .

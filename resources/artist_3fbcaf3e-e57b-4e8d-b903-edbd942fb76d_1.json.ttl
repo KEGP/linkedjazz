@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/1462269e-911b-4db3-be41-434393484e34>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Missouri" ;
+        schema:name  "Missouri" ;
+        owl:sameAs   <https://musicbrainz.org/area/1462269e-911b-4db3-be41-434393484e34> .
+
+<http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Coleman Hawkins" ;
+        :hasAlias          "C . Hawkins" , "Coleman Hawkings" , "Coleman Randolph Hawkins" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/1462269e-911b-4db3-be41-434393484e34> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00013615713" ;
+        :hasISNI           "0000000080869929" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1969-05-19" ;
+                             :hasIntervalStartDate  "1904-11-21"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "5c8cb181-38fe-4300-8153-650b2ed0258f" ;
+        :hasName           "Coleman Hawkins" ;
+        owl:sameAs         <https://www.imdb.com/name/nm0370098/> , <https://www.bbc.co.uk/music/artists/5c8cb181-38fe-4300-8153-650b2ed0258f> , <https://rateyourmusic.com/artist/coleman-hawkins> , <https://www.discogs.com/artist/251769> , <http://snaccooperative.org/ark:/99166/w6xh06s5> , <http://id.loc.gov/authorities/names/n81150284> , <https://openlibrary.org/works/OL5932997A> , <https://www.wikidata.org/wiki/Q217812> , <https://isni.org/isni/0000000080869929> , <https://commons.wikimedia.org/wiki/File:Coleman_Hawkins_(Gottlieb_03991).jpg> , <http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=9374241> , <https://www.musik-sammler.de/artist/coleman-hawkins/> , <https://www.worldcat.org/identities/lccn-n81150284> , <http://viaf.org/viaf/7574109> , <https://d-nb.info/gnd/12305835X> , <https://nla.gov.au/nla.party-1047357> , <https://musicbrainz.org/artist/5c8cb181-38fe-4300-8153-650b2ed0258f> , <https://www.allmusic.com/artist/mn0000776363> , <https://catalogue.bnf.fr/ark:/12148/cb13895041m> , <https://open.spotify.com/artist/0JM134st8VY7Ld9T2wQiH0> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a            :ArtistActivityArea ;
+        rdfs:label   "New York" ;
+        schema:name  "New York" ;
+        owl:sameAs   <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

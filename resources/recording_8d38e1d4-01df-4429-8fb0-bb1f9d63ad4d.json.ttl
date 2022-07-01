@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/8d38e1d4-01df-4429-8fb0-bb1f9d63ad4d>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasAudioTrackLength  "181066" ;
+        :hasMusicBrainzID     "8d38e1d4-01df-4429-8fb0-bb1f9d63ad4d" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-03-05" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-03-05"
+                              ] ;
+        :hasTitle             "The New East St. Louis Toodle-Oo" ;
+        :rdfs:label           "The New East St. Louis Toodle-Oo" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/60dc20df-e9e8-3f95-801a-058c41c4dd3f> ;
+        owl:sameAs            <https://musicbrainz.org/recording/8d38e1d4-01df-4429-8fb0-bb1f9d63ad4d> .

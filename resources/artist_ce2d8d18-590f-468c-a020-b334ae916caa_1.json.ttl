@@ -1,0 +1,15 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/b442f74f-26e1-414f-9a13-3be629efa9de>
+        a                  :Band ;
+        rdfs:label         "Tadd Dameron Sextet" ;
+        :hasMusicBrainzID  "b442f74f-26e1-414f-9a13-3be629efa9de" ;
+        :hasName           "Tadd Dameron Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b442f74f-26e1-414f-9a13-3be629efa9de> .

@@ -1,0 +1,23 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/270deb49-6650-4f3e-b1fb-1e8274ec5687>
+        a                  :Band ;
+        rdfs:label         "Bennie Moten’s Kansas City Orchestra" ;
+        :hasAlias          "Bennie Moten and his Kansas City Orchestra" , "Benny Morton's Kansas City Orchestra" , "Benny Moten's Kansas City Orchestra" , "Bennie Moten & the Kansas City Orchestra" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "270deb49-6650-4f3e-b1fb-1e8274ec5687" ;
+        :hasName           "Bennie Moten’s Kansas City Orchestra" ;
+        owl:sameAs         <https://www.discogs.com/artist/317903> , <https://www.wikidata.org/wiki/Q96158589> , <http://www.redhotjazz.com/bmkc.html> , <https://musicbrainz.org/artist/270deb49-6650-4f3e-b1fb-1e8274ec5687> .

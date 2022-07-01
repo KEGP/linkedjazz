@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/7708cf3c-d785-4d59-b868-2f93ac1decd3>
+        rdf:type             :Release ;
+        rdfs:label           "Louis Armstrong" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN             "B000056Z5O" ;
+        :hasBarcode          "4011222045133" ;
+        :hasMusicBrainzID    "7708cf3c-d785-4d59-b868-2f93ac1decd3" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Louis Armstrong" ;
+        :releasedInCountry   "DE" ;
+        :releasedInDate      "2000" ;
+        owl:sameAs           <https://www.discogs.com/release/5545783> , <https://www.amazon.de/gp/product/B000056Z5O> , <https://musicbrainz.org/release/7708cf3c-d785-4d59-b868-2f93ac1decd3> .

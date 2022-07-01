@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/0e9806c6-1342-432b-87b7-11e5e2217311>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> , <http://localhost:8080/resource/kejazz/Artist/3cd95572-1af4-466f-a7f2-a65f15c934b3> ;
+        :hasAudioTrackLength  "188133" ;
+        :hasISRC              "USBJN0920022" ;
+        :hasMusicBrainzID     "0e9806c6-1342-432b-87b7-11e5e2217311" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-05-11" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-05-11"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-05-11" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-05-11"
+                              ] ;
+        :hasTitle             "Mean to Me" ;
+        :rdfs:label           "Mean to Me" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
+        owl:sameAs            <https://musicbrainz.org/recording/0e9806c6-1342-432b-87b7-11e5e2217311> .

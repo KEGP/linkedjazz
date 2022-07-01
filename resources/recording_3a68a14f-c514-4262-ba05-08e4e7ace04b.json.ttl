@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/3a68a14f-c514-4262-ba05-08e4e7ace04b>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasAudioTrackLength  "189466" ;
+        :hasISRC              "USBJN0920009" ;
+        :hasMusicBrainzID     "3a68a14f-c514-4262-ba05-08e4e7ace04b" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1927-10-26" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1927-10-26"
+                              ] ;
+        :hasTitle             "Black and Tan Fantasy" ;
+        :rdfs:label           "Black and Tan Fantasy" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/e14041fb-98da-36a6-b08f-ef6491b9a40b> ;
+        owl:sameAs            <https://musicbrainz.org/recording/3a68a14f-c514-4262-ba05-08e4e7ace04b> .

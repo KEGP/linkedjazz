@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/98735b08-414c-48f5-b2d5-d169ceedd2e8> ;
+        :hasAudioTrackLength  "256760" ;
+        :hasMusicBrainzID     "a0acca3d-7d17-4ee8-8087-e5d4b46fa047" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1951-05-01" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1951-05-01"
+                              ] ;
+        :hasTitle             "Night in Tunisia" ;
+        :rdfs:label           "Night in Tunisia" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
+        owl:sameAs            <https://musicbrainz.org/recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> .

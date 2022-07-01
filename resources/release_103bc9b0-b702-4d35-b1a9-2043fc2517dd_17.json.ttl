@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/103bc9b0-b702-4d35-b1a9-2043fc2517dd>
+        rdf:type            :Release ;
+        rdfs:label          "Ken Burns Jazz: Definitive Sonny Rollins" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasASIN            "B000050I3T" ;
+        :hasBarcode         "731454909129" ;
+        :hasMusicBrainzID   "103bc9b0-b702-4d35-b1a9-2043fc2517dd" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Ken Burns Jazz: Definitive Sonny Rollins" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "2000-11-07" ;
+        owl:sameAs          <https://www.amazon.com/gp/product/B000050I3T> , <https://musicbrainz.org/release/103bc9b0-b702-4d35-b1a9-2043fc2517dd> .

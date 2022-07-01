@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/5f08d6f0-73a2-41db-a06b-ab5db714bc3e>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/9d67b4ef-cd78-4202-a379-78324d66c4bc> ;
+        :hasAudioTrackLength  "191000" ;
+        :hasMusicBrainzID     "5f08d6f0-73a2-41db-a06b-ab5db714bc3e" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1927-05-09" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1927-05-09"
+                              ] ;
+        :hasTitle             "Riverboat Shuffle" ;
+        :rdfs:label           "Riverboat Shuffle" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/a7c44ae4-f9b9-449e-82f1-9eec98f3101c> ;
+        owl:sameAs            <https://musicbrainz.org/recording/5f08d6f0-73a2-41db-a06b-ab5db714bc3e> .

@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/26b7dfde-974d-4c4e-9220-f6afc5ab7044>
+        rdf:type            :Release ;
+        rdfs:label          "Jazz Masters: From Original Recordings" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasASIN            "B000024QSZ" ;
+        :hasBarcode         "724385572029" ;
+        :hasMusicBrainzID   "26b7dfde-974d-4c4e-9220-f6afc5ab7044" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Jazz Masters: From Original Recordings" ;
+        :releasedInCountry  "GB" ;
+        :releasedInDate     "1992" ;
+        owl:sameAs          <https://www.amazon.co.uk/gp/product/B000024QSZ> , <https://musicbrainz.org/release/26b7dfde-974d-4c4e-9220-f6afc5ab7044> .

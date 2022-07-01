@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/d1cf931d-463d-4c51-be65-44b0c1ef25f0>
+        rdf:type            :Release ;
+        rdfs:label          "The Wonderful World of Ella Fitzgerald & Louis Armstrong" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :hasASIN            "B005ZBCUWK" ;
+        :hasBarcode         "8712177006298" ;
+        :hasMusicBrainzID   "d1cf931d-463d-4c51-be65-44b0c1ef25f0" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Wonderful World of Ella Fitzgerald & Louis Armstrong" ;
+        :releasedInCountry  "XE" ;
+        :releasedInDate     "1988" ;
+        owl:sameAs          <https://musicbrainz.org/release/d1cf931d-463d-4c51-be65-44b0c1ef25f0> , <https://www.amazon.co.uk/gp/product/B005ZBCUWK> .

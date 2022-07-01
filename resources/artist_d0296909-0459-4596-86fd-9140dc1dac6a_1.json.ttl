@@ -1,0 +1,15 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/78b711d1-43d7-464c-a110-490a8041fcf7>
+        a                  :Band ;
+        rdfs:label         "Gerry Mulligan Quartet" ;
+        :hasMusicBrainzID  "78b711d1-43d7-464c-a110-490a8041fcf7" ;
+        :hasName           "Gerry Mulligan Quartet" ;
+        owl:sameAs         <https://www.discogs.com/artist/375978> , <https://musicbrainz.org/artist/78b711d1-43d7-464c-a110-490a8041fcf7> .

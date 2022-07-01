@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/263ed899-6cd5-472c-bf42-a662268713bc>
+        rdf:type            :Release ;
+        rdfs:label          "The Complete Django Reinhardt and Quintet of the Hot Club of France Swing/HMV Sessions 1936-1948" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> ;
+        :hasASIN            "B001COM2VI" ;
+        :hasMusicBrainzID   "263ed899-6cd5-472c-bf42-a662268713bc" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Complete Django Reinhardt and Quintet of the Hot Club of France Swing/HMV Sessions 1936-1948" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1999" ;
+        owl:sameAs          <https://www.amazon.com/gp/product/B001COM2VI> , <https://musicbrainz.org/release/263ed899-6cd5-472c-bf42-a662268713bc> , <https://www.discogs.com/release/3104814> .

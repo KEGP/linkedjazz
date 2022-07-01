@@ -1,0 +1,33 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/cb202ce1-d335-428f-942f-0f92ee1a6077>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> , <http://localhost:8080/resource/kejazz/Artist/be47775f-57c4-44b2-bbbd-7dd62e245623> ;
+        :hasAudioTrackLength  "186040" ;
+        :hasMusicBrainzID     "cb202ce1-d335-428f-942f-0f92ee1a6077" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1946-01-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1946-01-28"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1946-01-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1946-01-28"
+                              ] ;
+        :hasTitle             "Oh, Lady Be Good" ;
+        :rdfs:label           "Oh, Lady Be Good" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/f8987074-fb0d-32e9-b68e-50931959f2bf> ;
+        owl:sameAs            <https://musicbrainz.org/recording/cb202ce1-d335-428f-942f-0f92ee1a6077> .

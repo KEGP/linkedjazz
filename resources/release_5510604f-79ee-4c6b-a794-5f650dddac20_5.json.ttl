@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/5510604f-79ee-4c6b-a794-5f650dddac20>
+        rdf:type             :Release ;
+        rdfs:label           "The Hot Fives & Hot Sevens, Volume III" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode          "5099746518929" ;
+        :hasMusicBrainzID    "5510604f-79ee-4c6b-a794-5f650dddac20" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "The Hot Fives & Hot Sevens, Volume III" ;
+        :releasedInCountry   "XE" ;
+        :releasedInDate      "1989" ;
+        owl:sameAs           <https://musicbrainz.org/release/5510604f-79ee-4c6b-a794-5f650dddac20> , <https://www.discogs.com/release/6813274> .

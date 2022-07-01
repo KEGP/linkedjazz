@@ -1,0 +1,21 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/adbe683d-eb90-4a6c-97dc-5024028d6ce6>
+        rdf:type            :Release ;
+        rdfs:label          "The Complete Blue Note Recordings" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasASIN            "B000005GYH" ;
+        :hasBarcode         "724383036325" ;
+        :hasMusicBrainzID   "adbe683d-eb90-4a6c-97dc-5024028d6ce6" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Complete Blue Note Recordings" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1994-10-18" ;
+        owl:sameAs          <https://www.discogs.com/release/4892644> , <https://www.amazon.com/gp/product/B000005GYH> , <https://musicbrainz.org/release/adbe683d-eb90-4a6c-97dc-5024028d6ce6> .

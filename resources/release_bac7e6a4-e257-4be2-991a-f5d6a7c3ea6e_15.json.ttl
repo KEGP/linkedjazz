@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/bac7e6a4-e257-4be2-991a-f5d6a7c3ea6e>
+        rdf:type             :Release ;
+        rdfs:label           "Essential Collection" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN             "B004IWP6KU" ;
+        :hasBarcode          "5060143490514" ;
+        :hasMusicBrainzID    "bac7e6a4-e257-4be2-991a-f5d6a7c3ea6e" ;
+        :hasPackagingFormat  "Digipak" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Essential Collection" ;
+        :releasedInCountry   "GB" ;
+        :releasedInDate      "2011-01-03" ;
+        owl:sameAs           <https://musicbrainz.org/release/bac7e6a4-e257-4be2-991a-f5d6a7c3ea6e> , <https://www.amazon.co.uk/gp/product/B004IWP6KU> .

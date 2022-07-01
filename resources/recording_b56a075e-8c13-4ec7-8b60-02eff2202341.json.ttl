@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/b56a075e-8c13-4ec7-8b60-02eff2202341>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/270deb49-6650-4f3e-b1fb-1e8274ec5687> ;
+        :hasAudioTrackLength  "206000" ;
+        :hasISRC              "USBJN0920016" ;
+        :hasMusicBrainzID     "b56a075e-8c13-4ec7-8b60-02eff2202341" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1932-12-13" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1932-12-13"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1932-12-13" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1932-12-13"
+                              ] ;
+        :hasTitle             "Moten Swing" ;
+        :rdfs:label           "Moten Swing" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/8933f057-99f8-4aa9-9f2d-3872ac54a37e> , <http://localhost:8080/resource/kejazz/Work/f49832c3-aa3f-329b-a195-f09c10f2fb99> ;
+        owl:sameAs            <https://musicbrainz.org/recording/b56a075e-8c13-4ec7-8b60-02eff2202341> .

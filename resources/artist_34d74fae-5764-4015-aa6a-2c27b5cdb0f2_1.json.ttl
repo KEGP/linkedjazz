@@ -1,0 +1,43 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/e8e317a1-268c-4e46-9db1-f10af959ffca>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Amsterdam" ;
+        schema:name  "Amsterdam" ;
+        owl:sameAs   <https://musicbrainz.org/area/e8e317a1-268c-4e46-9db1-f10af959ffca> .
+
+<http://localhost:8080/resource/kejazz/Artist/4554ec28-0e97-45f1-ad3d-696a48326f1c>
+        a                  :ArtistPerson ;
+        rdfs:label         "Don Byas" ;
+        :hasAlias          "Byas Don" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/d2083d84-09e2-4d45-8fc0-45eed33748b5> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/e8e317a1-268c-4e46-9db1-f10af959ffca> ;
+        :hasGender         "Male" ;
+        :hasISNI           "0000000059511439" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1972-08-24" ;
+                             :hasIntervalStartDate  "1912-10-21"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "4554ec28-0e97-45f1-ad3d-696a48326f1c" ;
+        :hasName           "Don Byas" ;
+        owl:sameAs         <http://id.loc.gov/authorities/names/n81146627> , <https://catalogue.bnf.fr/ark:/12148/cb13892034m> , <https://en.wikipedia.org/wiki/Don_Byas> , <https://www.wikidata.org/wiki/Q1239006> , <https://www.discogs.com/artist/255563> , <https://isni.org/isni/0000000059511439> , <https://www.allmusic.com/artist/mn0000172350> , <https://musicbrainz.org/artist/4554ec28-0e97-45f1-ad3d-696a48326f1c> , <http://viaf.org/viaf/74036913> , <https://www.worldcat.org/identities/lccn-n81146627> , <http://snaccooperative.org/ark:/99166/w61v61w3> , <https://d-nb.info/gnd/134341651> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/d2083d84-09e2-4d45-8fc0-45eed33748b5>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Oklahoma" ;
+        schema:name  "Oklahoma" ;
+        owl:sameAs   <https://musicbrainz.org/area/d2083d84-09e2-4d45-8fc0-45eed33748b5> .

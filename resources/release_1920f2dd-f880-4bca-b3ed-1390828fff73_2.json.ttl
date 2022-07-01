@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/1920f2dd-f880-4bca-b3ed-1390828fff73>
+        rdf:type             :Release ;
+        rdfs:label           "Jazz, Volume 8: Big Bands Before 1935" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode          "" ;
+        :hasMusicBrainzID    "1920f2dd-f880-4bca-b3ed-1390828fff73" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Jazz, Volume 8: Big Bands Before 1935" ;
+        :releasedInCountry   "US" ;
+        owl:sameAs           <http://www.folkways.si.edu/jazz-vol-8-big-bands-before-1935/ragtime/music/album/smithsonian> , <https://musicbrainz.org/release/1920f2dd-f880-4bca-b3ed-1390828fff73> .

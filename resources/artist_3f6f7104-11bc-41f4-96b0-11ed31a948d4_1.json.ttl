@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/3c5a0506-d852-4e96-8d1e-d8126328f3be>
+        a            :ArtistActivityArea ;
+        rdfs:label   "New Orleans" ;
+        schema:name  "New Orleans" ;
+        owl:sameAs   <https://musicbrainz.org/area/3c5a0506-d852-4e96-8d1e-d8126328f3be> .
+
+<http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jelly Roll Morton" ;
+        :hasAlias          "Morton" , "Jellyroll Morton" , "Ferdinand Joseph LaMotte" , "Ferdinand Joseph LaMothe" , "Jelly-Roll Morton" , "Ferd (Jelly Roll) Morton" , "Ferdinand Joseph Morton" , "Ferdinand Joseph Lemott" , "Morton, Jelly Roll" , "Frank Morton" , "Ferdinand \"Jelly Roll\" Morton" , "Ferdinand Joseph LaMenthe" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/3c5a0506-d852-4e96-8d1e-d8126328f3be> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/1f40c6e1-47ba-4e35-996f-fe6ee5840e62> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00021585796" ;
+        :hasISNI           "0000000385651146" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1941-07-10" ;
+                             :hasIntervalStartDate  "1885-10-20"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "3d094919-071f-4070-95dc-e1f350e4a5f3" ;
+        :hasName           "Jelly Roll Morton" ;
+        owl:sameAs         <http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=2691> , <https://www.discogs.com/artist/309976> , <https://www.imdb.com/name/nm0607974/> , <http://d-nb.info/gnd/118737031> , <https://www.allmusic.com/artist/mn0000317290> , <https://musicbrainz.org/artist/3d094919-071f-4070-95dc-e1f350e4a5f3> , <https://openlibrary.org/works/OL4890004A> , <https://commons.wikimedia.org/wiki/File:MortonBricktopRowCropMortonFace.jpg> , <https://catalogue.bnf.fr/ark:/12148/cb124041142> , <https://isni.org/isni/0000000385651146> , <https://www.bbc.co.uk/music/artists/3d094919-071f-4070-95dc-e1f350e4a5f3> , <https://www.wikidata.org/wiki/Q317128> , <https://www.worldcat.org/identities/lccn-n50007929> , <https://imslp.org/wiki/Category:Morton,_Jelly_Roll> , <http://www.doctorjazz.co.uk/page10.html> , <http://id.loc.gov/authorities/names/n50007929> , <http://rockhall.com/inductees/jelly-roll-morton/bio/> , <http://www.rockabilly.nl/references/messages/jelly_roll_morton.htm> , <http://viaf.org/viaf/5017174> , <http://snaccooperative.org/ark:/99166/w6cz3gd6> , <https://rateyourmusic.com/artist/jelly_roll_morton> , <https://ibdb.com/person.php?id=12166> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/1f40c6e1-47ba-4e35-996f-fe6ee5840e62>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Los Angeles" ;
+        schema:name  "Los Angeles" ;
+        owl:sameAs   <https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

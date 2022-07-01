@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Cannonball Adderley" ;
+        :hasAlias          "Дж. К. Адърли" , "Cannonball Adderly" , "Julian Adderley" , "Julian Cannonball Adderly" , "Julian ‘Cannonball’ Adderley" , "Julian Cannonball Adderley" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/ff21865c-ce46-4417-967c-a3d2d02d29bf> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/34357067-8f7f-4c7a-8d5e-99b6e60f7891> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00000179139" ;
+        :hasISNI           "000000011566991X" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1975-08-08" ;
+                             :hasIntervalStartDate  "1928-09-15"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8" ;
+        :hasName           "Cannonball Adderley" ;
+        owl:sameAs         <https://secondhandsongs.com/artist/5854> , <http://jazzdisco.org/adderley/> , <https://www.worldcat.org/identities/lccn-n84163049> , <http://id.loc.gov/authorities/names/n84163049> , <http://www.cannonball-adderley.com/> , <https://www.deezer.com/artist/5622> , <http://snaccooperative.org/ark:/99166/w65q52jh> , <https://listen.tidal.com/artist/10442> , <https://rateyourmusic.com/artist/cannonball_adderley> , <https://www.allmusic.com/artist/mn0000548338> , <https://d-nb.info/gnd/122466616> , <http://viaf.org/viaf/36906016> , <https://www.discogs.com/artist/61585> , <https://musicbrainz.org/artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> , <https://www.wikidata.org/wiki/Q110477> , <https://www.imdb.com/name/nm0011645/> , <https://www.songkick.com/artists/184857> , <https://open.spotify.com/artist/5v74mT11KGJqadf9sLw4dA> , <https://catalogue.bnf.fr/ark:/12148/cb138905900> , <https://isni.org/isni/000000011566991X> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/ff21865c-ce46-4417-967c-a3d2d02d29bf>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Tampa" ;
+        schema:name  "Tampa" ;
+        owl:sameAs   <https://musicbrainz.org/area/ff21865c-ce46-4417-967c-a3d2d02d29bf> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/34357067-8f7f-4c7a-8d5e-99b6e60f7891>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Gary" ;
+        schema:name  "Gary" ;
+        owl:sameAs   <https://musicbrainz.org/area/34357067-8f7f-4c7a-8d5e-99b6e60f7891> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

@@ -1,0 +1,43 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060>
+        a                  :ArtistPerson ;
+        rdfs:label         "Meade Lux Lewis" ;
+        :hasAlias          "Maede Lux Lewis" , "Meade \"Lux\" Lewis" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/29a709d8-0320-493e-8d0c-f2c386662b7f> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/3e80aaa7-9b71-450f-8147-0ecf101d8f1a> ;
+        :hasGender         "Male" ;
+        :hasISNI           "0000000063024932" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1964-06-07" ;
+                             :hasIntervalStartDate  "1905-09-04"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "abb415f3-a991-4fa7-b47a-674ab86fe060" ;
+        :hasName           "Meade Lux Lewis" ;
+        owl:sameAs         <https://www.worldcat.org/identities/lccn-n87812952> , <https://isni.org/isni/0000000063024932> , <https://d-nb.info/gnd/134609867> , <https://musicbrainz.org/artist/abb415f3-a991-4fa7-b47a-674ab86fe060> , <http://snaccooperative.org/ark:/99166/w6m91mt3> , <https://www.allmusic.com/artist/mn0000338411> , <https://en.wikipedia.org/wiki/Meade_Lux_Lewis> , <https://www.wikidata.org/wiki/Q1399605> , <https://commons.wikimedia.org/wiki/File:Meade_Lux_Lewis.jpg> , <https://www.discogs.com/artist/317893> , <http://viaf.org/viaf/59270180> , <https://catalogue.bnf.fr/ark:/12148/cb138966289> , <https://www.imdb.com/name/nm0507540/> , <http://id.loc.gov/authorities/names/n87812952> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/29a709d8-0320-493e-8d0c-f2c386662b7f>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Chicago" ;
+        schema:name  "Chicago" ;
+        owl:sameAs   <https://musicbrainz.org/area/29a709d8-0320-493e-8d0c-f2c386662b7f> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/3e80aaa7-9b71-450f-8147-0ecf101d8f1a>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Minneapolis" ;
+        schema:name  "Minneapolis" ;
+        owl:sameAs   <https://musicbrainz.org/area/3e80aaa7-9b71-450f-8147-0ecf101d8f1a> .

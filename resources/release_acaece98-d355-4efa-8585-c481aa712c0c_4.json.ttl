@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/acaece98-d355-4efa-8585-c481aa712c0c>
+        rdf:type             :Release ;
+        rdfs:label           "Beyond Category" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasMusicBrainzID    "acaece98-d355-4efa-8585-c481aa712c0c" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Beyond Category" ;
+        :releasedInCountry   "US" ;
+        :releasedInDate      "1994" ;
+        owl:sameAs           <https://musicbrainz.org/release/acaece98-d355-4efa-8585-c481aa712c0c> , <https://www.discogs.com/release/10676695> .

@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/e8b03d4f-ed81-4f87-9a4d-93c361df2baf>
+        rdf:type            :Release ;
+        rdfs:label          "Laughin' Louie" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasMusicBrainzID   "e8b03d4f-ed81-4f87-9a4d-93c361df2baf" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "Laughin' Louie" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "1989-09-12" ;
+        owl:sameAs          <https://musicbrainz.org/release/e8b03d4f-ed81-4f87-9a4d-93c361df2baf> .

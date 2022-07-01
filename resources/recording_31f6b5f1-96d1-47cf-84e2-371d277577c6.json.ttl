@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/5339f1ae-4254-460e-848e-23566ddd175f>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasAudioTrackLength  "407960" ;
+        :hasISRC              "DEU241093337" , "USBJN0920061" ;
+        :hasMusicBrainzID     "5339f1ae-4254-460e-848e-23566ddd175f" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1956-06-22" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1956-06-22"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1956-06-22" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1956-06-22"
+                              ] ;
+        :hasTitle             "St. Thomas" ;
+        :rdfs:label           "St. Thomas" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/0abe6ce7-802a-3746-802a-55af2c96908a> ;
+        owl:sameAs            <https://musicbrainz.org/recording/5339f1ae-4254-460e-848e-23566ddd175f> .

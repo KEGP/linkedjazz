@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/00d07986-2f91-475f-a963-5544abfc8eef>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Englewood" ;
+        schema:name  "Englewood" ;
+        owl:sameAs   <https://musicbrainz.org/area/00d07986-2f91-475f-a963-5544abfc8eef> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/baa075b0-2e38-4a29-877e-a74d42dcf246>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Rocky Mount" ;
+        schema:name  "Rocky Mount" ;
+        owl:sameAs   <https://musicbrainz.org/area/baa075b0-2e38-4a29-877e-a74d42dcf246> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasAlias          "Monk Thelonious" , "Thelonius Monk" , "セロニアス・モンク" , "Th. Monk" , "Monk, Thelonious" , "Телониус Монк" , "Thelonios Monk" , "Theolonius Monk" , "Thelenious Monk" , "Т. Монк" , "Monk, Thelonius" , "Thelonious Sphere Monk" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/baa075b0-2e38-4a29-877e-a74d42dcf246> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/00d07986-2f91-475f-a963-5544abfc8eef> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00040726600" , "00021226535" ;
+        :hasISNI           "0000000120249127" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1982-02-17" ;
+                             :hasIntervalStartDate  "1917-10-10"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://rateyourmusic.com/artist/thelonious_monk> , <https://www.worldcat.org/identities/lccn-n82218969> , <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> , <http://www.monkzone.com/> , <http://muzikum.eu/en/122-12000/thelonious-monk/lyrics.html> , <https://commons.wikimedia.org/wiki/File:Thelonious_Monk,_Minton's_Playhouse,_New_York,_N.Y.,_ca._Sept._1947_(William_P._Gottlieb_06191).jpg> , <http://snaccooperative.org/ark:/99166/w6j38zvn> , <http://id.loc.gov/authorities/names/n82218969> , <https://www.allmusic.com/artist/mn0000490416> , <https://www.youtube.com/channel/UCHiOp5Z2ECvD00UChyfM5Xw> , <http://www.jazzdisco.org/monk/> , <https://www.wikidata.org/wiki/Q109612> , <https://www.discogs.com/artist/145256> , <https://d-nb.info/gnd/118826158> , <http://viaf.org/viaf/44485892> , <https://isni.org/isni/0000000120249127> , <https://www.deezer.com/artist/5136> , <https://www.imdb.com/name/nm0598243/> , <http://www.howardm.net/tsmonk/tsmonk.php> , <https://catalogue.bnf.fr/ark:/12148/cb13897622g> , <https://www.bbc.co.uk/music/artists/8e8c7417-c905-46b1-b42a-5260b4274ed4> , <https://secondhandsongs.com/artist/2288> , <https://www.facebook.com/theloniousmonk> , <https://open.spotify.com/artist/4PDpGtF16XpqvXxsrFwQnN> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

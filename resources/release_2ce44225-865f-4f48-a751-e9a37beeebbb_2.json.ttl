@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/2ce44225-865f-4f48-a751-e9a37beeebbb>
+        rdf:type             :Release ;
+        rdfs:label           "Basie's Best" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317> ;
+        :hasASIN             "B000006LKR" ;
+        :hasBarcode          "082333162228" ;
+        :hasMusicBrainzID    "2ce44225-865f-4f48-a751-e9a37beeebbb" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Basie's Best" ;
+        :releasedInCountry   "PT" ;
+        :releasedInDate      "1992" ;
+        owl:sameAs           <https://www.amazon.com/gp/product/B000006LKR> , <https://www.discogs.com/release/3302287> , <https://musicbrainz.org/release/2ce44225-865f-4f48-a751-e9a37beeebbb> .

@@ -1,0 +1,20 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/0280c3ab-0000-4cb2-a16d-07228f77dad2>
+        rdf:type            :Release ;
+        rdfs:label          "The Complete Modern Jazz Quartet Prestige & Pablo Recordings" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+        :hasASIN            "B0000DIJPJ" ;
+        :hasMusicBrainzID   "0280c3ab-0000-4cb2-a16d-07228f77dad2" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "The Complete Modern Jazz Quartet Prestige & Pablo Recordings" ;
+        :releasedInCountry  "US" ;
+        :releasedInDate     "2003-10-21" ;
+        owl:sameAs          <https://musicbrainz.org/release/0280c3ab-0000-4cb2-a16d-07228f77dad2> , <https://www.amazon.com/gp/product/B0000DIJPJ> .

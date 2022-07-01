@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/de6cd145-7a74-4e4b-86ac-4094433b849f>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :hasAudioTrackLength  "168840" ;
+        :hasMusicBrainzID     "de6cd145-7a74-4e4b-86ac-4094433b849f" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1964-07-28" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1964-07-28"
+                              ] ;
+        :hasTitle             "You'd Be So Nice to Come Home To" ;
+        :rdfs:label           "You'd Be So Nice to Come Home To" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/dca3d1eb-0365-37fd-97de-6126d682fab2> ;
+        owl:sameAs            <https://musicbrainz.org/recording/de6cd145-7a74-4e4b-86ac-4094433b849f> .

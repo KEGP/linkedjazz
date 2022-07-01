@@ -1,0 +1,17 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d>
+        rdf:type            :Work ;
+        rdfs:label          "The Girl From Ipanema" ;
+        :hasISWC            "T-041.996.292-7" , "T-039.003.492-0" ;
+        :hasLyricsLanguage  "eng" ;
+        :hasMusicBrainzID   "69f81329-a815-3ec2-aaee-1f781a1e026d" ;
+        :hasTitle           "The Girl From Ipanema" ;
+        owl:sameAs          <https://musicbrainz.org/work/69f81329-a815-3ec2-aaee-1f781a1e026d> , <https://secondhandsongs.com/work/4652> , <https://www.wikidata.org/wiki/Q105367398> .

@@ -1,0 +1,16 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/104cee99-0fbd-4e09-97c0-80798c87c94c>
+        rdf:type           :Release ;
+        rdfs:label         "Nobody Knows When You're Down and Out" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+        :hasMusicBrainzID  "104cee99-0fbd-4e09-97c0-80798c87c94c" ;
+        :hasTitle          "Nobody Knows When You're Down and Out" ;
+        owl:sameAs         <https://musicbrainz.org/release/104cee99-0fbd-4e09-97c0-80798c87c94c> .

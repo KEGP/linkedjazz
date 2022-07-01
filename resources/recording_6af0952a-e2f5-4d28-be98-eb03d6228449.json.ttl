@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/6af0952a-e2f5-4d28-be98-eb03d6228449>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> ;
+        :hasAudioTrackLength  "154000" ;
+        :hasISRC              "USBJN0920076" ;
+        :hasMusicBrainzID     "6af0952a-e2f5-4d28-be98-eb03d6228449" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1960-10-19" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1960-10-19"
+                              ] ;
+        :hasTitle             "Wrap Your Troubles in Dreams" ;
+        :rdfs:label           "Wrap Your Troubles in Dreams" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/177be3d6-14bf-3e12-87af-c1d7457b5c59> ;
+        owl:sameAs            <https://musicbrainz.org/recording/6af0952a-e2f5-4d28-be98-eb03d6228449> .

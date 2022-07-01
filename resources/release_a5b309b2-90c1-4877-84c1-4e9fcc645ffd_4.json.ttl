@@ -1,0 +1,22 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/a5b309b2-90c1-4877-84c1-4e9fcc645ffd>
+        rdf:type             :Release ;
+        rdfs:label           "Birth of the Hot" ;
+        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        :hasASIN             "B000002WTZ" ;
+        :hasBarcode          "078636664125" ;
+        :hasMusicBrainzID    "a5b309b2-90c1-4877-84c1-4e9fcc645ffd" ;
+        :hasPackagingFormat  "Jewel Case" ;
+        :hasStatus           "Official" ;
+        :hasTitle            "Birth of the Hot" ;
+        :releasedInCountry   "US" ;
+        :releasedInDate      "1995" ;
+        owl:sameAs           <https://musicbrainz.org/release/a5b309b2-90c1-4877-84c1-4e9fcc645ffd> , <https://www.amazon.com/gp/product/B000002WTZ> .

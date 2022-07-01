@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/9d67b4ef-cd78-4202-a379-78324d66c4bc> ;
+        :hasAudioTrackLength  "185000" ;
+        :hasISRC              "USBJN0920007" ;
+        :hasMusicBrainzID     "168ea61b-9fdd-4d7f-908a-2970073becd1" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1927-02-04" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1927-02-04"
+                              ] ;
+        :hasTitle             "Singin' the Blues (Til My Daddy Comes Home)" ;
+        :rdfs:label           "Singin' the Blues (Til My Daddy Comes Home)" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
+        owl:sameAs            <https://musicbrainz.org/recording/168ea61b-9fdd-4d7f-908a-2970073becd1> .

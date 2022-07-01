@@ -1,0 +1,28 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a>
+        a                   :Band ;
+        rdfs:label          "Original Dixieland Jazz Band" ;
+        :hasActivityPeriod  [ a                      :TimeInterval ;
+                              :hasIntervalEndDate    "1925" ;
+                              :hasIntervalStartDate  "1916"
+                            ] ;
+        :hasAlias           "The Orginal Dixieland Jazz Band" , "The Original Dixieland Jazz Band" , "Original dixieland jass band" , "The Original Dixieland Jass Band" , "The Original Dixieland \"Jass\" Band" ;
+        :hasISNI            "000000010296977X" ;
+        :hasMainArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID   "6e3d6e70-2f11-4732-a789-4a9d608ef24a" ;
+        :hasName            "Original Dixieland Jazz Band" ;
+        owl:sameAs          <https://catalogue.bnf.fr/ark:/12148/cb13905554n> , <https://www.worldcat.org/identities/lccn-n86145401> , <https://www.songkick.com/artists/146354> , <https://musicbrainz.org/artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> , <https://isni.org/isni/000000010296977X> , <https://www.allmusic.com/artist/mn0000401971> , <http://id.loc.gov/authorities/names/n86145401> , <https://www.discogs.com/artist/309962> , <http://viaf.org/viaf/153738813> , <https://www.wikidata.org/wiki/Q933710> .

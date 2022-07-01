@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/0cd67ec0-b480-4d82-b38d-be022b71dd12>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/a2019e51-9ce1-4c14-98d0-25428761e9f0> ;
+        :hasAudioTrackLength  "186000" ;
+        :hasISRC              "USBJN0920030" ;
+        :hasMusicBrainzID     "0cd67ec0-b480-4d82-b38d-be022b71dd12" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1939-11-29" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1939-11-29"
+                              ] ;
+        :hasTitle             "Honeysuckle Rose" ;
+        :rdfs:label           "Honeysuckle Rose" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/8cb1dec5-951d-3ade-9466-29e3269b0dec> ;
+        owl:sameAs            <https://musicbrainz.org/recording/0cd67ec0-b480-4d82-b38d-be022b71dd12> .

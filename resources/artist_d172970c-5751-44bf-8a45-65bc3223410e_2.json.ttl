@@ -1,0 +1,44 @@
+@prefix :       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:    <http://localhost:8080/resource/kejazz/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/6195f381-5711-4655-bf7c-75918c04b201>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Oakland" ;
+        schema:name  "Oakland" ;
+        owl:sameAs   <https://musicbrainz.org/area/6195f381-5711-4655-bf7c-75918c04b201> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/c78e4214-ade5-4f87-b1fe-a606529e8f8f>
+        a            :ArtistActivityArea ;
+        rdfs:label   "Duquesne" ;
+        schema:name  "Duquesne" ;
+        owl:sameAs   <https://musicbrainz.org/area/c78e4214-ade5-4f87-b1fe-a606529e8f8f> .
+
+<http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052>
+        a                  :ArtistPerson ;
+        rdfs:label         "Earl Hines" ;
+        :hasAlias          "Earl Fatha Hines" , "Hines, Earl 'Fatha'" , "Earl \"Fatha\" Hines" , "Earl 'Fatha' Hines" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/c78e4214-ade5-4f87-b1fe-a606529e8f8f> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/6195f381-5711-4655-bf7c-75918c04b201> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00014142631" ;
+        :hasISNI           "0000000115736772" ;
+        :hasLifeSpan       [ a                      :TimeInterval ;
+                             :hasIntervalEndDate    "1983-04-22" ;
+                             :hasIntervalStartDate  "1903-12-28"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "5d7df598-bb80-4d73-a6f8-9ed1a4374052" ;
+        :hasName           "Earl Hines" ;
+        owl:sameAs         <https://www.imdb.com/name/nm0385662/> , <https://commons.wikimedia.org/wiki/File:Earl_Hines_1947.jpg> , <https://d-nb.info/gnd/133599345> , <https://www.allmusic.com/artist/mn0000455522> , <http://snaccooperative.org/ark:/99166/w6n87s5w> , <https://www.discogs.com/artist/257353> , <https://catalogue.bnf.fr/ark:/12148/cb13895231v> , <http://viaf.org/viaf/69115732> , <https://en.wikipedia.org/wiki/Earl_Hines> , <https://isni.org/isni/0000000115736772> , <https://www.worldcat.org/identities/lccn-n81020082> , <https://musicbrainz.org/artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> , <http://id.loc.gov/authorities/names/n81020082> , <https://nla.gov.au/nla.party-1089660> , <https://secondhandsongs.com/artist/8216> , <https://www.wikidata.org/wiki/Q354883> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a            :ArtistActivityArea ;
+        rdfs:label   "United States" ;
+        schema:name  "United States" ;
+        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

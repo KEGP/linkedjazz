@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/3a312349-bfa1-4e8d-bef3-3e151cb7b967>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+        :hasAudioTrackLength  "268000" ;
+        :hasISRC              "USBJN0920085" ;
+        :hasMusicBrainzID     "3a312349-bfa1-4e8d-bef3-3e151cb7b967" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1966" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1966"
+                              ] ;
+        :hasTitle             "Haig & Haig" ;
+        :rdfs:label           "Haig & Haig" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/c55a5415-157d-4b13-8ecb-69f7cf5b3e22> ;
+        owl:sameAs            <https://musicbrainz.org/recording/3a312349-bfa1-4e8d-bef3-3e151cb7b967> .

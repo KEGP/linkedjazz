@@ -1,0 +1,27 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :hasAudioTrackLength  "162066" ;
+        :hasMusicBrainzID     "6d6020a9-3816-4bd1-8a2f-8672b0ea2921" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1937-09-13" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1937-09-13"
+                              ] ;
+        :hasTitle             "He's Funny That Way" ;
+        :rdfs:label           "He's Funny That Way" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/16834f90-0256-30bb-a5ab-6bdc9237cd13> ;
+        owl:sameAs            <https://musicbrainz.org/recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921> .

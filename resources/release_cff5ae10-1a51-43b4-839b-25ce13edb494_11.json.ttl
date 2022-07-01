@@ -1,0 +1,19 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/cff5ae10-1a51-43b4-839b-25ce13edb494>
+        rdf:type            :Release ;
+        rdfs:label          "RCA Victor 80th Anniversary, Collectors Edition Bonus Tracks" ;
+        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID   "cff5ae10-1a51-43b4-839b-25ce13edb494" ;
+        :hasStatus          "Official" ;
+        :hasTitle           "RCA Victor 80th Anniversary, Collectors Edition Bonus Tracks" ;
+        :releasedInCountry  "XW" ;
+        :releasedInDate     "1997" ;
+        owl:sameAs          <https://musicbrainz.org/release/cff5ae10-1a51-43b4-839b-25ce13edb494> .

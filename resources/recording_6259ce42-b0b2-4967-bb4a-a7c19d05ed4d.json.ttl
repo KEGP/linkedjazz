@@ -1,0 +1,34 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/ed5453e8-2013-49c2-a427-c9eb96bc0730>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+        :hasAudioTrackLength  "183000" ;
+        :hasISRC              "DEU240800882" , "USSM10003893" ;
+        :hasMusicBrainzID     "ed5453e8-2013-49c2-a427-c9eb96bc0730" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1927-12-09" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1927-12-09"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1927-12-09" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1927-12-09"
+                              ] ;
+        :hasTitle             "Struttin’ With Some Barbecue" ;
+        :rdfs:label           "Struttin’ With Some Barbecue" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/a3679100-2906-3ac2-8d08-7b73424d5083> ;
+        owl:sameAs            <https://musicbrainz.org/recording/ed5453e8-2013-49c2-a427-c9eb96bc0730> .

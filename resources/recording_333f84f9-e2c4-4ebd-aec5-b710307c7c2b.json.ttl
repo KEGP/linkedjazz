@@ -1,0 +1,28 @@
+@prefix :                       <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
+@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:                    <http://localhost:8080/resource/kejazz/> .
+@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b>
+        rdf:type              :Recording ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/61947bfa-5e34-44e9-b2fa-845fc082a367> ;
+        :hasAudioTrackLength  "197000" ;
+        :hasISRC              "USBJN0920048" ;
+        :hasMusicBrainzID     "333f84f9-e2c4-4ebd-aec5-b710307c7c2b" ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1949-02-17" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1949-02-17"
+                              ] ;
+        :hasTitle             "September in the Rain" ;
+        :rdfs:label           "September in the Rain" ;
+        informationrealization:realizes
+                <http://localhost:8080/resource/kejazz/Work/9b7ce169-00d4-3864-a6ec-08aa3f77a5e7> ;
+        owl:sameAs            <https://musicbrainz.org/recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> .
