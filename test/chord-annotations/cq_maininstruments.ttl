@@ -1,10 +1,10 @@
 @prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
-@prefix ca: <http://localhost:8080/ontology/chord-annotations> .
+@prefix ca: <http://localhost:8080/ontology/chord-annotations/> .
 @prefix ex: <.> .
 
 ex:cq_maininstruments.ttl a owlunit:CompetencyQuestionVerification ;
 	owlunit:hasCompetencyQuestion "Which are the main instruments of the track?" ;
-	owlunit:hasSPARQLUnitTest "PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX ca: <http://localhost:8080/ontology/chord-annotations>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT ?i WHERE { \n  ?section rdf:type ca:Section ;\n           ca:hasMainInstrument ?i .\n}" ;
+	owlunit:hasSPARQLUnitTest "PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX ca: <http://localhost:8080/ontology/chord-annotations/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT ?i WHERE { \n  ?section rdf:type ca:Section ;\n           ca:hasMainInstrument ?i .\n}" ;
 	owlunit:hasInputData ex:data.ttl ;
 	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
 	owlunit:testsOntology ca: ;
