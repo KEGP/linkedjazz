@@ -8,7 +8,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-PREFIX : <localhost:8080/ontology/kejazz/>
+PREFIX : <http://localhost:8080/ontology/kejazz/>
+PREFIX res: <http://localhost:8080/resource/kejazz/>
 
 CONSTRUCT {
   [a :RelationBetweenArtists;
@@ -36,7 +37,8 @@ CONSTRUCT {
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location "file:///sparql.anything/data/musicbrainz/artist/artist_0e9806c6-1342-432b-87b7-11e5e2217311_1.json" ;
+    # launch on musicbrainz/artist/
+    fx:properties fx:location ?_name ;
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
@@ -57,13 +59,12 @@ CONSTRUCT {
       	OPTIONAL{?target xyz:end ?endDate.}
     }
 
-    BIND(fx:entity(:, "resource/Artist/", ?sourceID) as ?sourceArtistMyNS).
-    BIND(fx:entity(:, "resource/Artist/", ?targetID) as ?targetArtistMyNS).
+    BIND(fx:entity(res:Artist, "/", ?sourceID) as ?sourceArtistMyNS).
+    BIND(fx:entity(res:Artist, "/", ?targetID) as ?targetArtistMyNS).
     BIND(fx:entity("https://musicbrainz.org/relationship/", ?relationTypeID) as ?musicbrainzRelationURL).
 
-    #BIND(fx:entity(:, "resource/ArtistArtistrelation/", ?sourceID, "to", ?targetID) as ?aaRelationMyNS).
-    #BIND(fx:entity(:, "resource/RelationBetweenArtistsType/", REPLACE(?relationType, " ","_")) as ?aaRelationMyNS).
-    BIND(fx:entity(:, "resource/RelationBetweenArtistsType/", ?relationTypeID) as ?aaRelationMyNS).
-
+    #BIND(fx:entity(res:ArtistArtistrelation, "/", ?sourceID, "to", ?targetID) as ?aaRelationMyNS).
+    #BIND(fx:entity(res:RelationBetweenArtistsType, "/", REPLACE(?relationType, " ","_")) as ?aaRelationMyNS).
+    BIND(fx:entity(res:RelationBetweenArtistsType, "/", ?relationTypeID) as ?aaRelationMyNS).
   }
 }

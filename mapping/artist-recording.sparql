@@ -8,7 +8,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-PREFIX : <localhost:8080/ontology/kejazz/>
+PREFIX : <http://localhost:8080/ontology/kejazz/>
+PREFIX res: <http://localhost:8080/resource/kejazz/>
 
 CONSTRUCT {
   [ a :ArtistRecordingPerformance;
@@ -35,7 +36,8 @@ CONSTRUCT {
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location "file:///sparql.anything/data/musicbrainz/recording/recording_8a9dc1eb-b86c-402c-9e7a-116ee9c06eaf.json" ;
+    # launch on musicbrainz/recording/
+    fx:properties fx:location ?_name ;
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
@@ -54,9 +56,9 @@ CONSTRUCT {
       ?instrumentInstance xyz:type-id ?instrumentMBID.
       ?instrumentInstance xyz:attribute ?instrumentName}
 
-    BIND(fx:entity(:, "resource/Recording/", ?mbID) as ?recording).
-    BIND(fx:entity(:, "resource/Artist/", ?artistMbID) as ?artist).
-    BIND(fx:entity(:, "resource/MusicalInstrument/", ?instrumentMBID) as ?instrument).########
+    BIND(fx:entity(res:Recording, "/", ?mbID) as ?recording).
+    BIND(fx:entity(res:Artist, "/", ?artistMbID) as ?artist).
+    BIND(fx:entity(res:MusicalInstrument, "/", ?instrumentMBID) as ?instrument).########
     BIND(fx:entity("https://musicbrainz.org/instrument/", ?instrumentMBID) as ?MBinstrumentURL).
     BIND(fx:entity("https://musicbrainz.org/recording/", ?mbID) as ?musicbrainzRecordingURL).
     BIND(fx:entity("https://musicbrainz.org/artist/", ?artistMbID) as ?mbArtistURL).

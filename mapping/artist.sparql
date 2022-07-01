@@ -8,8 +8,8 @@ PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-PREFIX : <localhost:8080/ontology/kejazz/>
+PREFIX : <http://localhost:8080/ontology/kejazz/>
+PREFIX res: <http://localhost:8080/resource/kejazz/>
 
 CONSTRUCT {
   ?artistMyNS a ?artist;
@@ -72,7 +72,8 @@ CONSTRUCT {
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location "file:///sparql.anything/data/musicbrainz/artist/artist_02ffe965-bd93-45bd-ae9f-5671261871ae_1.json" ;
+    # launch on musicbrainz/artist
+    fx:properties fx:location ?_name ;
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
@@ -139,7 +140,7 @@ CONSTRUCT {
 
     OPTIONAL {?artist_BN xyz:alias-list/fx:anySlot/xyz:alias ?alias}
 
-    BIND(fx:entity(:, "resource/Artist/", ?mbID) as ?artistMyNS).
+    BIND(fx:entity(res:Artist, "/", ?mbID) as ?artistMyNS).
 
     BIND(fx:entity("https://musicbrainz.org/artist/", ?mbID) as ?mbIDurl).
     BIND(fx:entity("https://isni.org/isni/", ?isni) as ?isniURL).
@@ -148,9 +149,9 @@ CONSTRUCT {
     BIND(fx:entity("https://musicbrainz.org/area/", ?beginAreaID) as ?beginAreaURL).
     BIND(fx:entity("https://musicbrainz.org/area/", ?endAreaID) as ?endAreaURL).
 
-    BIND(fx:entity(:, "resource/ArtistActivityArea/", ?mainAreaID) as ?mainareaMyNS).
-    BIND(fx:entity(:, "resource/ArtistActivityArea/", ?beginAreaID) as ?beginareaMyNS).
-   	BIND(fx:entity(:, "resource/ArtistActivityArea/", ?endAreaID) as ?endareaMyNS).
+    BIND(fx:entity(res:ArtistActivityArea, "/", ?mainAreaID) as ?mainareaMyNS).
+    BIND(fx:entity(res:ArtistActivityArea, "/", ?beginAreaID) as ?beginareaMyNS).
+   	BIND(fx:entity(res:ArtistActivityArea, "/", ?endAreaID) as ?endareaMyNS).
 
   }
 }

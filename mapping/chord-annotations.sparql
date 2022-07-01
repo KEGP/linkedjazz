@@ -61,7 +61,7 @@ CONSTRUCT {
     
 } WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location "/sparql.anything/data/jaah/chord_annotations/airegin.json" ;
+    fx:properties fx:location ?_name ;
                   fx:media-type "application/json" ;
     			        fx:trim-strings "true"^^xsd:boolean .
     

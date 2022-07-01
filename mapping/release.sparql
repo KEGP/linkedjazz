@@ -10,7 +10,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 #PREFIX mto: <http://purl.org/ontology/mto/> # Music Theory Ontology
 #PREFIX chord: <http://purl.org/ontology/chord/> # Chord Ontology
 
-PREFIX : <localhost:8080/ontology/kejazz/>
+PREFIX : <http://localhost:8080/ontology/kejazz/>
+PREFIX res: <http://localhost:8080/resource/kejazz/>
 
 CONSTRUCT {
   ?release a :Release;
@@ -32,7 +33,8 @@ CONSTRUCT {
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
-    fx:properties fx:location "file:///sparql.anything/data/musicbrainz/release/release_fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4_8.json" ;
+    # launch on musicbrainz/release
+    fx:properties fx:location ?_name ;
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
@@ -51,8 +53,8 @@ CONSTRUCT {
     OPTIONAL {?release_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
       BIND(fx:entity(?urlstr) as ?url)}
 
-    BIND(fx:entity(:, "resource/Release/", ?mbID) as ?release).
-    BIND(fx:entity(:, "resource/Artist/", ?creditedArtistMbID) as ?creditedArtist).
+    BIND(fx:entity(res:Release, "/", ?mbID) as ?release).
+    BIND(fx:entity(res:Artist, "/", ?creditedArtistMbID) as ?creditedArtist).
     BIND(fx:entity("https://musicbrainz.org/release/", ?mbID) as ?mbURL).
     #BIND(fx:entity("https://www.amazon.com/dp/", ?asin) as ?asinURL).
   }
