@@ -1,0 +1,757 @@
+@prefix :          <http://localhost:8080/ontology/chord-annotations/> .
+@prefix fx:        <http://sparql.xyz/facade-x/ns/> .
+@prefix kejazz:    <http://localhost:8080/ontology/kejazz/> .
+@prefix kejazzres: <http://localhost:8080/resource/kejazz/> .
+@prefix mto:       <http://localhost:8080/ontology/mto#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:       <http://localhost:8080/resource/chord-annotations/> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:       <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)>
+        rdf:type         :Chord ;
+        rdfs:label       "F:(3,5,b7,b9)" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/Bb:min> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3>
+        rdf:type            :Section ;
+        rdfs:label          "C3" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "A4 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> , <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/C:aug> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab> , <http://localhost:8080/resource/chord-annotations/Chord/Eb:(3,5,b7,#9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min> , <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro>
+        rdf:type            :Section ;
+        rdfs:label          "Intro" ;
+        :isFirst            true ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min> , <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
+        rdf:type          mto:TimeSignature ;
+        rdfs:label        "4/4" ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/G:aug> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/3> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Bb:min>
+        rdf:type    :Chord ;
+        rdfs:label  "Bb:min" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1>
+        rdf:type            :Section ;
+        rdfs:label          "A1" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/2> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Db:7>
+        rdf:type    :Chord ;
+        rdfs:label  "Db:7" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4>
+        rdf:type            :Section ;
+        rdfs:label          "B4" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro>
+        rdf:type            :Section ;
+        rdfs:label          "Outro" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/5> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Eb:(3,5,b7,#9)>
+        rdf:type         :Chord ;
+        rdfs:label       "Eb:(3,5,b7,#9)" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/Ab> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/F:min>
+        rdf:type         :Chord ;
+        rdfs:label       "F:min" ;
+        :isFirst         true , false ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/F:min> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:7> , <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "C0 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/1> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1>
+        rdf:type            :Section ;
+        rdfs:label          "C1" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec> ;
+        :hasTuning  "434.62"^^xsd:double .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21>
+        rdf:type            :Section ;
+        rdfs:label          "Extra measure!" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/G:7>
+        rdf:type         :Chord ;
+        rdfs:label       "G:7" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/C:7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21/Progression/Bar/2> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/F:7>
+        rdf:type    :Chord ;
+        rdfs:label  "F:7" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "C1 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Intro chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:7> , <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/5> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Bb:7>
+        rdf:type         :Chord ;
+        rdfs:label       "Bb:7" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/2> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/C:7>
+        rdf:type         :Chord ;
+        rdfs:label       "C:7" ;
+        :isFirst         true , false ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/F:min> , <http://localhost:8080/resource/chord-annotations/Chord/F:7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/Key/F_minor>
+        rdf:type            :Key ;
+        rdf:label           "F minor" ;
+        :hasRoot            mto:F ;
+        :ofHarmonicQuality  mto:MinorKey .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0>
+        rdf:type            :Section ;
+        rdfs:label          "C0" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab> , <http://localhost:8080/resource/chord-annotations/Chord/Eb:(3,5,b7,#9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "C3 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "B0 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/2> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/C:aug>
+        rdf:type         :Chord ;
+        rdfs:label       "C:aug" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Ab>
+        rdf:type    :Chord ;
+        rdfs:label  "Ab" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/2> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Ab:7>
+        rdf:type         :Chord ;
+        rdfs:label       "Ab:7" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/Db:7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone>
+        rdf:type            :Section ;
+        rdfs:label          "A0-vibraphone" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "B1 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Outro chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/G:aug>
+        rdf:type         :Chord ;
+        rdfs:label       "G:aug" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/C:7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2>
+        rdf:type            :Section ;
+        rdfs:label          "B2" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "B2 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> , <http://localhost:8080/resource/chord-annotations/Chord/C:aug> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min> , <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5>
+        rdf:type    :Chord ;
+        rdfs:label  "Bb:min6/5" ;
+        :isFirst    true .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4>
+        rdf:type            :Section ;
+        rdfs:label          "A4" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab> , <http://localhost:8080/resource/chord-annotations/Chord/Eb:(3,5,b7,#9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/5> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Bb:min7>
+        rdf:type         :Chord ;
+        rdfs:label       "Bb:min7" ;
+        :isFirst         false , true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/G:hdim7> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Extra measure! chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21/Progression/Bar/1> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "A0-vibraphone chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/1> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Eb:min7>
+        rdf:type    :Chord ;
+        rdfs:label  "Eb:min7" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,b7,b9)>
+        rdf:type    :Chord ;
+        rdfs:label  "C:(3,5,b7,b9)" ;
+        :isFirst    true .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:7> , <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1>
+        rdf:type            :Section ;
+        rdfs:label          "B1" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "B4 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "A1 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4>
+        rdf:type            :Section ;
+        rdfs:label          "C4" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "A2-piano chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/2> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/D:hdim7>
+        rdf:type    :Chord ;
+        rdfs:label  "D:hdim7" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:hdim7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Interlude chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/F:min> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "C4 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/G:hdim7>
+        rdf:type    :Chord ;
+        rdfs:label  "G:hdim7" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min6/5> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude>
+        rdf:type            :Section ;
+        rdfs:label          "Interlude" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab> , <http://localhost:8080/resource/chord-annotations/Chord/Eb:(3,5,b7,#9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:min> , <http://localhost:8080/resource/chord-annotations/Chord/F:(3,5,b7,b9)> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:7> , <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano>
+        rdf:type            :Section ;
+        rdfs:label          "A2-piano" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec>
+        rdf:type           :Sheet ;
+        rdfs:label         "Django sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/F_minor> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A2-piano> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Outro> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B2> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A4> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C1> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Interlude> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/Extra_measure%21> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/A0-vibraphone> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C3> , <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0>
+        rdf:type            :Section ;
+        rdfs:label          "B0" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/B0/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/c3141ac9-74aa-439e-b9bc-16aae9c4d683/Sheet/5dc412c4-03fe-4bc4-a44f-7d87511fc6ec/Section/C0> .

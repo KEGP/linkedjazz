@@ -1,0 +1,261 @@
+@prefix :          <http://localhost:8080/ontology/chord-annotations/> .
+@prefix fx:        <http://sparql.xyz/facade-x/ns/> .
+@prefix kejazz:    <http://localhost:8080/ontology/kejazz/> .
+@prefix kejazzres: <http://localhost:8080/resource/kejazz/> .
+@prefix mto:       <http://localhost:8080/ontology/mto#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:       <http://localhost:8080/resource/chord-annotations/> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:       <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/chord-annotations/Pattern/Blues%2A4>
+        rdf:type    :Pattern ;
+        rdfs:label  "Blues*4" .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/9>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/10> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/12>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 12" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/13> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Eb:7>
+        rdf:type    :Chord ;
+        rdfs:label  "Eb:7" ;
+        :isFirst    false .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6> ;
+        :hasTuning  "434.84"^^xsd:double .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4>
+        rdf:type            :Section ;
+        rdfs:label          "Soprano Sax Solo - Blues*4" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues%2A4> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/4a32d2f2-2ac7-423d-9820-2c0b7ff37f60> ;
+        :isFirst            true ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6>
+        rdf:type           :Sheet ;
+        rdfs:label         "Blue Horizon sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Eb_major> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
+
+<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
+        rdf:type          mto:TimeSignature ;
+        rdfs:label        "4/4" ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/12> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> , <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/5> .
+
+<http://localhost:8080/resource/chord-annotations/Pattern/Blues%2A2>
+        rdf:type    :Pattern ;
+        rdfs:label  "Blues*2" .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Soprano Sax Solo - Blues*2 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/7> .
+
+<http://localhost:8080/resource/chord-annotations/Key/Eb_major>
+        rdf:type            :Key ;
+        rdf:label           "Eb major" ;
+        :hasRoot            mto:Eb ;
+        :ofHarmonicQuality  mto:MajorKey .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/12>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 12" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/13> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/9>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/10> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/11> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/4> .
+
+<https://musicbrainz.org/instrument/4a32d2f2-2ac7-423d-9820-2c0b7ff37f60>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Bb:7>
+        rdf:type    :Chord ;
+        rdfs:label  "Bb:7" ;
+        :isFirst    true .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Soprano Sax Solo - Blues*4 chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2>
+        rdf:type            :Section ;
+        rdfs:label          "Soprano Sax Solo - Blues*2" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues%2A2> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/4a32d2f2-2ac7-423d-9820-2c0b7ff37f60> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/12> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/7> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Ab:7>
+        rdf:type    :Chord ;
+        rdfs:label  "Ab:7" ;
+        :isFirst    true .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/11> .
+
+<http://localhost:8080/resource/chord-annotations/Chord/Eb>
+        rdf:type         :Chord ;
+        rdfs:label       "Eb" ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:7> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A2/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> , <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6a278fcb-224c-4c63-9e65-48cf3f0c1232/Sheet/ab0a0e49-9595-48e6-9228-0c8c8a24d6b6/Section/Soprano_Sax_Solo_-_Blues%2A4/Progression/Bar/5> .
