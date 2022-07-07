@@ -1,11 +1,11 @@
 @prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
 @prefix ca: <http://localhost:8080/ontology/chord-annotations/> .
-@prefix ex: <.> .
+@prefix test: <.> .
 
-ex:cq_maininstruments.ttl a owlunit:CompetencyQuestionVerification ;
+test:cq_maininstruments.ttl a owlunit:CompetencyQuestionVerification ;
 	owlunit:hasCompetencyQuestion "Which are the main instruments of the track?" ;
 	owlunit:hasSPARQLUnitTest "PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX ca: <http://localhost:8080/ontology/chord-annotations/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\nSELECT ?i WHERE { \n  ?section rdf:type ca:Section ;\n           ca:hasMainInstrument ?i .\n}" ;
-	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputData test:data.ttl ;
 	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
 	owlunit:testsOntology ca: ;
 	owlunit:hasExpectedResult "{\"head\":{\"vars\":[\"i\"]},\"results\":{\"bindings\":[{\"i\":{\"type\":\"uri\",\"value\":\"https://musicbrainz.org/instrument/8e9abdf1-0afc-4544-b201-c6fa768d01f4\"}},{\"i\":{\"type\":\"uri\",\"value\":\"https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e\"}},{\"i\":{\"type\":\"uri\",\"value\":\"https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761\"}},{\"i\":{\"type\":\"uri\",\"value\":\"https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd\"}}]}}" .
