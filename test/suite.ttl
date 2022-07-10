@@ -1,6 +1,7 @@
 @prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
 @prefix test: <.> .
 @prefix caTest: <./chord-annotations/> .
+@prefix artistTest: <./artist/> .
 
 test:suite.ttl a owlunit:TestSuite ;
 	owlunit:hasTestCase caTest:cq_firstchord.ttl ;
@@ -10,9 +11,14 @@ test:suite.ttl a owlunit:TestSuite ;
 	owlunit:hasTestCase caTest:cq_maininstruments.ttl ;
 	owlunit:hasTestCase caTest:av.ttl .
 
+#	owlunit:hasTestCase artistTest:cq_name.ttl .
+
+
 caTest:cq_key.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_firstchord.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_overallchords.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_sections.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_maininstruments.ttl a owlunit:CompetencyQuestionVerification .
 caTest:av.ttl a owlunit:AnnotationVerification .
+
+#artistTest:cq_name.ttl a owlunit:CompetencyQuestionVerification .
