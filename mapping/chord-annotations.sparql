@@ -16,7 +16,7 @@ CONSTRUCT {
   
   ?recording_KEJ a kejazz:Recording ;
                  :hasSheet ?sheet_NS ;
-	             :hasTuning ?tuning .
+	               :hasTuning ?tuning .
   
   ?sheetKey_NS a :Key ;
                :hasRoot ?keyNote_MTO ;
@@ -48,16 +48,18 @@ CONSTRUCT {
               	  rdfs:label ?progressionLabel ;
   			      :hasBar ?bar_NS .
   
-  ?chord_NS a :Chord ;
-    		:isFirst ?isFirstChord ;
-    		:nextAnnotation ?nextChord_NS ;
-    		rdfs:label ?chordName .
-  
   ?bar_NS a :Bar ;
   	      :nextAnnotation ?nextBar_NS ;
   	   	  :isFirst ?isFirstBar ;
     	  rdfs:label ?barLabel ;
-          :hasChord ?chord_NS .
+          :hasChord [
+  		  	a ?chord_NS ;
+      		:isFirst ?isFirstChord ;
+      		:nextAnnotation [
+    			a ?nextChord_NS
+    		]  ;
+    		rdfs:label ?chordName
+          ].
     
 } WHERE {
   SERVICE<x-sparql-anything:>{

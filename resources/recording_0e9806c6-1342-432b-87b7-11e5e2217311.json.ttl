@@ -11,7 +11,8 @@
 
 <http://localhost:8080/resource/kejazz/Recording/0e9806c6-1342-432b-87b7-11e5e2217311>
         rdf:type              :Recording ;
-        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> , <http://localhost:8080/resource/kejazz/Artist/3cd95572-1af4-466f-a7f2-a65f15c934b3> ;
+        rdfs:label            "Mean to Me" ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/3cd95572-1af4-466f-a7f2-a65f15c934b3> , <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
         :hasAudioTrackLength  "188133" ;
         :hasISRC              "USBJN0920022" ;
         :hasMusicBrainzID     "0e9806c6-1342-432b-87b7-11e5e2217311" ;
@@ -28,7 +29,6 @@
                                         "1937-05-11"
                               ] ;
         :hasTitle             "Mean to Me" ;
-        :rdfs:label           "Mean to Me" ;
         informationrealization:realizes
                 <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
         owl:sameAs            <https://musicbrainz.org/recording/0e9806c6-1342-432b-87b7-11e5e2217311> .

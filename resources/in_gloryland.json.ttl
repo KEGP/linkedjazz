@@ -9,64 +9,144 @@
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:       <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/3>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/3> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9>
-        rdf:type    :Chord ;
-        rdfs:label  "Ab:maj9" ;
-        :isFirst    true .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Db:maj9>
-        rdf:type    :Chord ;
-        rdfs:label  "Db:maj9" ;
-        :isFirst    true .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B>
-        rdf:type            :Section ;
-        rdfs:label          "Collective Improvisation - B" ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A> .
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/7>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/7>
         rdf:type         :Bar ;
         rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/8> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/2> .
 
 <http://localhost:8080/resource/chord-annotations/Key/Ab_major>
         rdf:type            :Key ;
@@ -74,99 +154,214 @@
         :hasRoot            mto:Ab ;
         :ofHarmonicQuality  mto:MajorKey .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A>
-        rdf:type            :Section ;
-        rdfs:label          "Collective Improvisation - A" ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/6>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/6>
         rdf:type         :Bar ;
         rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/7> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/4> .
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80>
+        rdf:type           :Sheet ;
+        rdfs:label         "In Gloryland sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Ab_major> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_2> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/8>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/8>
         rdf:type         :Bar ;
         rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/3> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/N>
-        rdf:type    :Chord ;
-        rdfs:label  "N" ;
-        :isFirst    true .
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Intro chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/5>
         rdf:type         :Bar ;
         rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Intro chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/7>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro>
+        rdf:type            :Section ;
+        rdfs:label          "Intro" ;
+        :isFirst            true ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/5> .
 
 <http://localhost:8080/resource/chord-annotations/TimeSignature/4_2>
         rdf:type          mto:TimeSignature ;
@@ -174,119 +369,181 @@
         :hasLowerNumeral  "4" ;
         :hasUpperNumeral  "2" .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro>
-        rdf:type            :Section ;
-        rdfs:label          "Intro" ;
-        :isFirst            true ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression>
         rdf:type    :Progression ;
         rdfs:label  "Outro chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/3> .
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/8>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/5>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression/Bar/2> .
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B>
+        rdf:type            :Section ;
+        rdfs:label          "Collective Improvisation - B" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Collective Improvisation - A chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194>
-        rdf:type    kejazz:Recording ;
-        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3> ;
-        :hasTuning  "451.69"^^xsd:double .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro>
         rdf:type            :Section ;
         rdfs:label          "Outro" ;
         :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro/Progression> .
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Collective Improvisation - B chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3>
-        rdf:type           :Sheet ;
-        rdfs:label         "In Gloryland sheet" ;
-        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Ab_major> ;
-        :hasSection        <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Outro> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_B> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Collective_Improvisation_-_A> ;
-        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_2> .
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80> ;
+        :hasTuning  "451.69"^^xsd:double .
 
-<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Collective Improvisation - A chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/N> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/0f3cf031-e5a1-4fe6-bff1-f42f00bf4bd3/Section/Intro/Progression/Bar/2> .
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Ab:maj9> ;
+                           rdfs:label       "Ab:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Db:maj9> ;
+                           rdfs:label       "Db:maj9" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A>
+        rdf:type            :Section ;
+        rdfs:label          "Collective Improvisation - A" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Outro> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_A> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Collective Improvisation - B chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Collective_Improvisation_-_B/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/N> ;
+                           rdfs:label       "N" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/043694ff-e370-43f2-a68b-84a476f96194/Sheet/b35661e0-d3db-47ba-915e-b6c16036cf80/Section/Intro/Progression/Bar/3> .

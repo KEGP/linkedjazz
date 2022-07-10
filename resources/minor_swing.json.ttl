@@ -9,132 +9,116 @@
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:       <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Violin Solo - AB chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Head chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/3> .
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52> ;
+        :hasTuning  "TODO" .
 
-<https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head>
-        rdf:type            :Section ;
-        rdfs:label          "Head" ;
-        :isFirst            false , true ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB> .
-
-<https://musicbrainz.org/instrument/089f123c-0f7d-4105-a64e-49de81ca8fa4>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+                           rdfs:label       "A:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/5> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/D:min6>
-        rdf:type    :Chord ;
-        rdfs:label  "D:min6" ;
-        :isFirst    true .
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52>
+        rdf:type           :Sheet ;
+        rdfs:label         "Minor Swing sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/A_minor> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/A:min6>
-        rdf:type    :Chord ;
-        rdfs:label  "A:min6" ;
-        :isFirst    true .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB>
-        rdf:type            :Section ;
-        rdfs:label          "Guitar Solo - AB" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AB> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/2> .
-
-<http://localhost:8080/resource/chord-annotations/Pattern/AB>
-        rdf:type    :Pattern ;
-        rdfs:label  "AB" .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/A:min> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/2> .
-
-<http://localhost:8080/resource/chord-annotations/Key/A_minor>
-        rdf:type            :Key ;
-        rdf:label           "A minor" ;
-        :hasRoot            mto:A ;
-        :ofHarmonicQuality  mto:MinorKey .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB>
-        rdf:type            :Section ;
-        rdfs:label          "Violin Solo - AB" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AB> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/089f123c-0f7d-4105-a64e-49de81ca8fa4> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression>
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression>
         rdf:type    :Progression ;
         rdfs:label  "Guitar Solo - AB chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/4> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/A:min>
-        rdf:type    :Chord ;
-        rdfs:label  "A:min" ;
-        :isFirst    true .
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/4> .
 
 <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
         rdf:type          mto:TimeSignature ;
@@ -142,42 +126,231 @@
         :hasLowerNumeral  "4" ;
         :hasUpperNumeral  "4" .
 
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db>
-        rdf:type    kejazz:Recording ;
-        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e> ;
-        :hasTuning  "TODO" .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e>
-        rdf:type           :Sheet ;
-        rdfs:label         "Minor Swing sheet" ;
-        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/A_minor> ;
-        :hasSection        <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head> ;
-        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Head/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Violin_Solo_-_AB/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/4>
+<http://localhost:8080/resource/chord-annotations/Pattern/AB>
+        rdf:type    :Pattern ;
+        rdfs:label  "AB" .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Violin Solo - AB chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/2d9e017a-e3bd-48fa-8399-5cb69e008d8e/Section/Guitar_Solo_-_AB/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB>
+        rdf:type            :Section ;
+        rdfs:label          "Violin Solo - AB" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AB> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/089f123c-0f7d-4105-a64e-49de81ca8fa4> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB> .
+
+<https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978>
+        rdf:type  kejazz:Instrument .
+
+<https://musicbrainz.org/instrument/089f123c-0f7d-4105-a64e-49de81ca8fa4>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/A:min6> ;
+                           rdfs:label       "A:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head>
+        rdf:type            :Section ;
+        rdfs:label          "Head" ;
+        :isFirst            false , true ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB> .
+
+<http://localhost:8080/resource/chord-annotations/Key/A_minor>
+        rdf:type            :Key ;
+        rdf:label           "A minor" ;
+        :hasRoot            mto:A ;
+        :ofHarmonicQuality  mto:MinorKey .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:min6> ;
+                           rdfs:label       "D:min6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB>
+        rdf:type            :Section ;
+        rdfs:label          "Guitar Solo - AB" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AB> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Violin_Solo_-_AB> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Guitar_Solo_-_AB> .
+
+<http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Head chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/490a4ca1-1800-4d21-8d78-b6e9415779db/Sheet/d3efceb2-ee1d-4464-86e0-0501ffe70c52/Section/Head/Progression/Bar/3> .

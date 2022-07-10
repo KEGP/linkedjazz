@@ -9,83 +9,150 @@
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:       <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/7>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> ;
+                           rdfs:label       "D:hdim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> ;
+                           rdfs:label       "D:hdim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/8> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA>
-        rdf:type            :Section ;
-        rdfs:label          "Vocals Female - AABA" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/F:min7>
-        rdf:type    :Chord ;
-        rdfs:label  "F:min7" ;
-        :isFirst    false .
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ;
+                           rdfs:label       "F:min7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/5> .
 
 <https://musicbrainz.org/instrument/>
         rdf:type  kejazz:Instrument .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/6>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/8>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ;
+                           rdfs:label       "F:min7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/7> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/9> .
 
 <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921>
         rdf:type    kejazz:Recording ;
-        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb> ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a> ;
         :hasTuning  "444.66"^^xsd:double .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Intro chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/C:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/4> .
 
 <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
         rdf:type          mto:TimeSignature ;
@@ -93,43 +160,128 @@
         :hasLowerNumeral  "4" ;
         :hasUpperNumeral  "4" .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Vocals Female - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro>
         rdf:type            :Section ;
         rdfs:label          "Intro" ;
         :isFirst            true ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA> .
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/8>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ;
+                           rdfs:label       "F:min7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ;
+                           rdfs:label       "F:min7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:min7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/9> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/G:7>
-        rdf:type    :Chord ;
-        rdfs:label  "G:7" ;
-        :isFirst    false .
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/C:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/8> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA>
+        rdf:type            :Section ;
+        rdfs:label          "Vocals Female - AABA" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Vocals Female - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
+                           rdfs:label       "Eb:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a>
+        rdf:type           :Sheet ;
+        rdfs:label         "He's Funny That Way sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Bb_major> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
 
 <http://localhost:8080/resource/chord-annotations/Key/Bb_major>
         rdf:type            :Key ;
@@ -137,135 +289,155 @@
         :hasRoot            mto:Bb ;
         :ofHarmonicQuality  mto:MajorKey .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb>
-        rdf:type           :Sheet ;
-        rdfs:label         "He's Funny That Way sheet" ;
-        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Bb_major> ;
-        :hasSection        <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA> ;
-        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/C:7>
-        rdf:type    :Chord ;
-        rdfs:label  "C:7" ;
-        :isFirst    false .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/7>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:7> , <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/C:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/C:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/8> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/6>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:7> , <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
+                           rdfs:label       "Eb:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Sax Solo, Vocals Female - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/1>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/4> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Eb:min7>
-        rdf:type    :Chord ;
-        rdfs:label  "Eb:min7" ;
-        :isFirst    true .
-
-<http://localhost:8080/resource/chord-annotations/Pattern/AABA>
-        rdf:type    :Pattern ;
-        rdfs:label  "AABA" .
-
-<https://musicbrainz.org/instrument/a9ed16cd-b8cb-4256-9c41-93f5f0458c49>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min7> , <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/9> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/D:hdim7>
-        rdf:type         :Chord ;
-        rdfs:label       "D:hdim7" ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ;
+                           rdfs:label       "F:(3,#5,b7)" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
+                           rdfs:label       "Bb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> ]
+                         ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/G:7> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/8>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/1>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min7> , <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/9> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7>
-        rdf:type         :Chord ;
-        rdfs:label       "Bb:maj7" ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
+                           rdfs:label       "Eb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/C:7> , <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Intro/Progression/Bar/2> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)>
-        rdf:type    :Chord ;
-        rdfs:label  "F:(3,#5,b7)" ;
-        :isFirst    false .
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
+                           rdfs:label       "Eb:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:min7> ;
+                           rdfs:label       "Eb:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
+                           rdfs:label       "Eb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA>
         rdf:type            :Section ;
         rdfs:label          "Sax Solo, Vocals Female - AABA" ;
         :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
         :hasMainInstrument  <https://musicbrainz.org/instrument/> , <https://musicbrainz.org/instrument/a9ed16cd-b8cb-4256-9c41-93f5f0458c49> ;
         :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression> .
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression> .
 
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/4>
+<https://musicbrainz.org/instrument/a9ed16cd-b8cb-4256-9c41-93f5f0458c49>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/chord-annotations/Pattern/AABA>
+        rdf:type    :Pattern ;
+        rdfs:label  "AABA" .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
+                           rdfs:label       "Eb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7> ;
+                           rdfs:label       "Eb:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:min7> , <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/D:hdim7> ;
+                           rdfs:label       "D:hdim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Vocals_Female_-_AABA/Progression/Bar/5> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/Eb:maj7>
-        rdf:type    :Chord ;
-        rdfs:label  "Eb:maj7" ;
-        :isFirst    true .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Vocals_Female_-_AABA/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression>
+<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression>
         rdf:type    :Progression ;
-        rdfs:label  "Intro chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Intro/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:(3,#5,b7)> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/e010a1ee-85e8-4707-a6be-4822df5548cb/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/3> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/C:min7>
-        rdf:type         :Chord ;
-        rdfs:label       "C:min7" ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/F:min7> .
+        rdfs:label  "Sax Solo, Vocals Female - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/6d6020a9-3816-4bd1-8a2f-8672b0ea2921/Sheet/972d7c05-1616-44dd-81f0-c21737e2630a/Section/Sax_Solo%2C_Vocals_Female_-_AABA/Progression/Bar/5> .

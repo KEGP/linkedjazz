@@ -9,117 +9,596 @@
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:       <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6>
-        rdf:type         :Chord ;
-        rdfs:label       "Bb:maj6" ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/F:7> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/8> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Bb>
-        rdf:type         :Chord ;
-        rdfs:label       "Bb" ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> , <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/12>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/12>
         rdf:type         :Bar ;
         rdfs:label       "Bar 12" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/C:min> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min> ;
+                           rdfs:label       "C:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min> ;
+                           rdfs:label       "C:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min> ;
+                           rdfs:label       "C:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min> ;
+                           rdfs:label       "C:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min> ;
+                           rdfs:label       "C:min" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/13> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/13> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/Eb:7>
-        rdf:type         :Chord ;
-        rdfs:label       "Eb:7" ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> .
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/9>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
+                           rdfs:label       "C:min7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/10> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/5>
         rdf:type         :Bar ;
         rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major>
-        rdf:type            :Section ;
-        rdfs:label          "Guitar Solo - Blues Major" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues_Major> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major> .
-
-<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
-        rdf:type          mto:TimeSignature ;
-        rdfs:label        "4/4" ;
-        :hasLowerNumeral  "4" ;
-        :hasUpperNumeral  "4" .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> , <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/11>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 11" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/12> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/E:dim7>
-        rdf:type    :Chord ;
-        rdfs:label  "E:dim7" ;
-        :isFirst    false .
-
-<http://localhost:8080/resource/chord-annotations/Chord/C:min>
-        rdf:type         :Chord ;
-        rdfs:label       "C:min" ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/F:7> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/5> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/F:7>
-        rdf:type    :Chord ;
-        rdfs:label  "F:7" ;
-        :isFirst    false , true .
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/11> .
 
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Ensemble - Blues Major chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89> ;
+        :hasTuning  "446.82"^^xsd:double .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/12>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 12" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/13> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/8> .
+
+<http://localhost:8080/resource/chord-annotations/Pattern/Blues_Major>
+        rdf:type    :Pattern ;
+        rdfs:label  "Blues Major" .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+                           rdfs:label       "Eb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+                           rdfs:label       "Eb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+                           rdfs:label       "Eb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+                           rdfs:label       "Eb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+                           rdfs:label       "Eb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89>
+        rdf:type           :Sheet ;
+        rdfs:label         "Breakfast Feud (composite) (feat. Charlie Christian) sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Bb_major> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Guitar Solo - Blues Major chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/11> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/5>
         rdf:type         :Bar ;
         rdfs:label       "Bar 5" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/6> .
 
 <http://localhost:8080/resource/chord-annotations/Key/Bb_major>
         rdf:type            :Key ;
@@ -127,164 +606,381 @@
         :hasRoot            mto:Bb ;
         :ofHarmonicQuality  mto:MajorKey .
 
-<http://localhost:8080/resource/chord-annotations/Chord/G:dim7>
-        rdf:type    :Chord ;
-        rdfs:label  "G:dim7" ;
-        :isFirst    false .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Bb:7>
-        rdf:type    :Chord ;
-        rdfs:label  "Bb:7" ;
-        :isFirst    true , false .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/10>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 10" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/11> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/9>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 9" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/10> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/12>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 12" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/13> .
-
-<http://localhost:8080/resource/chord-annotations/Pattern/Blues_Major>
-        rdf:type    :Pattern ;
-        rdfs:label  "Blues Major" .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Guitar Solo - Blues Major chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1>
-        rdf:type    kejazz:Recording ;
-        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f> ;
-        :hasTuning  "446.82"^^xsd:double .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/11>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/11>
         rdf:type         :Bar ;
         rdfs:label       "Bar 11" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:maj6> ;
+                           rdfs:label       "Bb:maj6" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/12> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/12> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/9>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/10> .
 
 <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978>
         rdf:type  kejazz:Instrument .
 
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/9>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 9" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/C:min7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/10> .
-
-<http://localhost:8080/resource/chord-annotations/Chord/Eb>
-        rdf:type         :Chord ;
-        rdfs:label       "Eb" ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Ensemble - Blues Major chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/10>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 10" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/11> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f>
-        rdf:type           :Sheet ;
-        rdfs:label         "Breakfast Feud (composite) (feat. Charlie Christian) sheet" ;
-        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Bb_major> ;
-        :hasSection        <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major> , <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major> ;
-        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/8>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/8>
         rdf:type         :Bar ;
         rdfs:label       "Bar 8" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> , <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ;
+                           rdfs:label       "G:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ;
+                           rdfs:label       "G:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ;
+                           rdfs:label       "G:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ;
+                           rdfs:label       "G:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:dim7> ;
+                           rdfs:label       "G:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major>
         rdf:type            :Section ;
         rdfs:label          "Ensemble - Blues Major" ;
         :isFirst            true , false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Ensemble_-_Blues_Major/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major> .
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major> .
 
-<http://localhost:8080/resource/chord-annotations/Chord/C:min7>
-        rdf:type    :Chord ;
-        rdfs:label  "C:min7" ;
-        :isFirst    true .
-
-<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> , <http://localhost:8080/resource/chord-annotations/Chord/Eb> ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/e8a91283-bb7e-4be9-9808-65f9c9f5446f/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major>
+        rdf:type            :Section ;
+        rdfs:label          "Guitar Solo - Blues Major" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues_Major> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/8> .
+
+<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
+        rdf:type          mto:TimeSignature ;
+        rdfs:label        "4/4" ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Ensemble_-_Blues_Major/Progression/Bar/12> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1/Sheet/a97a21c5-151c-4f8a-a92e-a578209b8b89/Section/Guitar_Solo_-_Blues_Major/Progression/Bar/7> .

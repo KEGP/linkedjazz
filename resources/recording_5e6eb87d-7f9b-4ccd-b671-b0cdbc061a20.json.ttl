@@ -11,18 +11,13 @@
 
 <http://localhost:8080/resource/kejazz/Recording/3297d9ea-dc5c-4349-b2c2-1fe3c4fd7a0c>
         rdf:type              :Recording ;
+        rdfs:label            "Stompin' at the Savoy" ;
         :creditedTo           <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
         :hasAudioTrackLength  "315000" ;
         :hasISRC              "USBJN0920064" , "USPR35712070" ;
         :hasMusicBrainzID     "3297d9ea-dc5c-4349-b2c2-1fe3c4fd7a0c" ;
         :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
                                 timeinterval:hasIntervalEndDate
-                                        "1957-07-23" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1957-07-23"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
                                         "1957-08-23" ;
                                 timeinterval:hasIntervalStartDate
                                         "1957-08-23"
@@ -56,6 +51,12 @@
                                         "1957-08-23" ;
                                 timeinterval:hasIntervalStartDate
                                         "1957-08-23"
+                              ] ;
+        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
+                                timeinterval:hasIntervalEndDate
+                                        "1957-07-23" ;
+                                timeinterval:hasIntervalStartDate
+                                        "1957-07-23"
                               ] ;
         :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
                                 timeinterval:hasIntervalEndDate
@@ -64,7 +65,6 @@
                                         "1957-07-23"
                               ] ;
         :hasTitle             "Stompin' at the Savoy" ;
-        :rdfs:label           "Stompin' at the Savoy" ;
         informationrealization:realizes
                 <http://localhost:8080/resource/kejazz/Work/98d6dbeb-8672-39ef-a10f-eae069a2075c> ;
         owl:sameAs            <https://musicbrainz.org/recording/3297d9ea-dc5c-4349-b2c2-1fe3c4fd7a0c> .
