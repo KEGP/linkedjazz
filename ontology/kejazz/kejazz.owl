@@ -84,7 +84,6 @@
     <owl:ObjectProperty rdf:about="http://localhost:8080/ontology/kejazz#hasActivityPeriod">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObservableAt"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://localhost:8080/ontology/kejazz#ArtistGroup"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
         <rdfs:comment xml:lang="en">Identifies the activity period TimeInterval of an artist group.</rdfs:comment>
         <rdfs:label xml:lang="it">ha periodo di attività</rdfs:label>
@@ -625,14 +624,6 @@
     <!-- http://localhost:8080/ontology/kejazz#Artist -->
 
     <owl:Class rdf:about="http://localhost:8080/ontology/kejazz#Artist">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://localhost:8080/ontology/kejazz#ArtistGroup"/>
-                    <rdf:Description rdf:about="http://localhost:8080/ontology/kejazz#ArtistPerson"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -741,7 +732,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://localhost:8080/ontology/kejazz#ArtistPerson"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
             <rdf:Description rdf:about="http://localhost:8080/ontology/kejazz#Band"/>
             <rdf:Description rdf:about="http://localhost:8080/ontology/kejazz#Choir"/>
@@ -876,7 +866,6 @@
     <!-- http://localhost:8080/ontology/kejazz#Band -->
 
     <owl:Class rdf:about="http://localhost:8080/ontology/kejazz#Band">
-        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/kejazz#ArtistGroup"/>
         <rdfs:comment xml:lang="en">A collective of artists performing as a Group. e.g. Miles Davis All Stars.</rdfs:comment>
         <rdfs:label xml:lang="en">Band</rdfs:label>
         <rdfs:label xml:lang="it">Banda</rdfs:label>
@@ -887,7 +876,6 @@
     <!-- http://localhost:8080/ontology/kejazz#Choir -->
 
     <owl:Class rdf:about="http://localhost:8080/ontology/kejazz#Choir">
-        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/kejazz#ArtistGroup"/>
         <rdfs:comment xml:lang="en">A collective of artists performing as a choir. e.g. L.A. Jazz Choir.</rdfs:comment>
         <rdfs:label xml:lang="en">Choir</rdfs:label>
         <rdfs:label xml:lang="it">Coro</rdfs:label>
@@ -909,7 +897,6 @@
     <!-- http://localhost:8080/ontology/kejazz#Orchestra -->
 
     <owl:Class rdf:about="http://localhost:8080/ontology/kejazz#Orchestra">
-        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology/kejazz#ArtistGroup"/>
         <rdfs:comment xml:lang="en">A collective of artists performing as an orchestra. e.g. Duke Ellington and His Orchestra.</rdfs:comment>
         <rdfs:label xml:lang="en">Orchestra</rdfs:label>
         <rdfs:label xml:lang="it">Orchestra</rdfs:label>

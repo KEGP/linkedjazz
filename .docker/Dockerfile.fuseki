@@ -1,0 +1,11 @@
+FROM stain/jena-fuseki
+
+ENV ADMIN_PASSWORD "admin"
+
+COPY ./ontology/kejazz/kejazz.ttl /staging/kejazz.ttl
+COPY ./ontology/chord-annotations/chord-annotations.ttl /staging/chord-annotations.ttl
+COPY ./ontology/chord-annotations/mto.ttl /staging/mto.ttl
+COPY ./resources/ /staging/
+COPY ./.docker/db.ttl /fuseki/configuration/db.ttl
+
+RUN /jena-fuseki/tdbloader --desc /fuseki/configuration/db.ttl /staging/*

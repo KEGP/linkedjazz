@@ -1,0 +1,355 @@
+@prefix : <http://localhost:8080/ontology/chord-annotations#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix mto: <http://localhost:8080/ontology/mto.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz#> .
+@base <http://localhost:8080/ontology/chord-annotations#> .
+
+<http://localhost:8080/ontology/chord-annotations#> rdf:type owl:Ontology ;
+                                                     owl:imports <http://localhost:8080/ontology/mto#> ,
+                                                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
+                                                     rdfs:comment "The following ontology models the musical structure of a tune, by taking into account human made annotations of chords." ;
+                                                     rdfs:label "Chord Annotation ontology" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://localhost:8080/ontology/chord-annotations#characterizedBy
+:characterizedBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dul:hasQuality ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Section ;
+                 rdfs:range :Pattern ;
+                 rdfs:comment "Forma che caratterizza la sezione di un brano."@it ,
+                              "Pattern that characterizes a track section."@en ;
+                 rdfs:label "characterized by"@en ,
+                            "cratterizzata da"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasBar
+:hasBar rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf dul:hasMember ;
+        rdf:type owl:FunctionalProperty ,
+                 owl:InverseFunctionalProperty ;
+        rdfs:domain :Progression ;
+        rdfs:range :Bar ;
+        rdfs:comment "Bar of a progression."@en ,
+                     "Battuta di un brano."@it ;
+        rdfs:label "composto dalla battuta"@it ,
+                   "has bar"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasChord
+:hasChord rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf dul:hasMember ;
+          rdfs:domain :Bar ;
+          rdfs:range <http://localhost:8080/ontology/mto#Chord> ;
+          rdfs:comment "Accordo che compone una sequenza armonica."@it ,
+                       "Chord of a beat"@en ;
+          rdfs:label "contiene accordo"@it ,
+                     "has chord"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasInstrument
+:hasInstrument rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Section ;
+               rdfs:range kejazz:MusicalInstrument ;
+               rdfs:comment "Main instrument used in a section"@en ,
+                            "Strumento musicale principale utilizzato in una sezione."@it ;
+               rdfs:label "ha come strumento principale"@it ,
+                          "has main musical instrument"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasKey
+:hasKey rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf dul:hasQuality ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Sheet ;
+        rdfs:range :Key ;
+        rdfs:comment "Key of the section, as transcribed by the annotator."@en ,
+                     "Tonalità di un brano."@it ;
+        rdfs:label "ha tonalità"@it ,
+                   "has key"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasRoot
+:hasRoot rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf dul:hasQuality ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain :Key ;
+         rdfs:range <http://localhost:8080/ontology/mto#Key> ;
+         rdfs:comment "Defines the key note of a key (e.g. C is the key note in C major)." ,
+                      "Tonica di una tonalità, es. in Do maggiore la tonica è Do."@it ;
+         rdfs:label "ha tonica"@it ,
+                    "has key note"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasSection
+:hasSection rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf dul:hasMember ;
+            rdf:type owl:InverseFunctionalProperty ;
+            rdfs:domain :Sheet ;
+            rdfs:range :Section ;
+            rdfs:comment "Section of a sheet"@en ,
+                         "Sezione di uno spartito."@it ;
+            rdfs:label "ha sezione"@it ,
+                       "has section"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#hasTimeSignature
+:hasTimeSignature rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dul:hasQuality ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :Sheet ;
+                  rdfs:range <http://localhost:8080/ontology/mto#TimeSignature> ;
+                  rdfs:comment "Metrica utilizzata in uno spartito."@it ,
+                               "Time signature used by a sheet."@en ;
+                  rdfs:label "ha metrica"@it ,
+                             "has time signature"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#madeOfProgression
+:madeOfProgression rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dul:hasMember ;
+                   rdf:type owl:FunctionalProperty ,
+                            owl:InverseFunctionalProperty ;
+                   rdfs:domain :Section ;
+                   rdfs:range :Progression ;
+                   rdfs:comment "Progression of a section"@en ,
+                                "Progressione armonica di una sezione dello spartito di un brano."@it ;
+                   rdfs:label "composto dalla progressione"@it ,
+                              "made of progression"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#nextAnnotation
+:nextAnnotation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:directlyFollows ;
+                rdf:type owl:FunctionalProperty ,
+                         owl:InverseFunctionalProperty ,
+                         owl:AsymmetricProperty ;
+                rdfs:domain :Annotation ;
+                rdfs:range :Annotation ;
+                rdfs:comment "Annotation following a previous annotation."@en ,
+                             "Annotazione musicale seguente."@it ;
+                rdfs:label "next annotation"@en ,
+                           "prossima annotazione"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#ofHarmonicQuality
+:ofHarmonicQuality rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dul:hasQuality ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Key ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( <http://localhost:8080/ontology/mto#MajorKey>
+                                              <http://localhost:8080/ontology/mto#MinorKey>
+                                            )
+                              ] ;
+                   rdfs:comment "Defines the key quality of a key, it can only be major or minor."@en ,
+                                "Qualità armonica di una tonalità, può solamente essere maggiore o minore."@it ;
+                   rdfs:label "ha qualità armonica"@it ,
+                              "has key quality"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#tunedTo
+:tunedTo rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf dul:hasQuality ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain kejazz:Recording ;
+         rdfs:range <http://localhost:8080/ontology/mto#Pitch> ;
+         rdfs:comment "Accordatura utilizzata per LA4. Solitamente 440 Hz."@it ,
+                      "Tuning of the A4 note. Conventionally 440 Hz." ;
+         rdfs:label "ha tonalità"@it ,
+                    "has tuning" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://localhost:8080/ontology/chord-annotations#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdfs:domain :Section ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Name of a section."@en ;
+         rdfs:label "has name"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#isFirst
+:isFirst rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdfs:domain :Annotation ;
+         rdfs:range xsd:boolean ;
+         rdfs:comment "Classifies an annotation as first of the sequence."@en ;
+         rdfs:label "is first"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://localhost:8080/ontology/chord-annotations#Annotation
+:Annotation rdf:type owl:Class ;
+            rdfs:subClassOf dul:Description ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :nextAnnotation ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Annotation
+                            ] ;
+            rdfs:comment "Annotazione musicale, effettuata da un esperto o da un algoritmo."@it ,
+                         "Timed Annotation made by an annotator, either a human or algorithmically."@en ;
+            rdfs:label "Annotazione musicale"@it ,
+                       "Musical annotation"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Bar
+:Bar rdf:type owl:Class ;
+     rdfs:subClassOf :Annotation ,
+                     dul:Collection ;
+     rdfs:comment "Bar of a progression."@en ,
+                  "Misura di una progressione."@it ;
+     rdfs:label "Bar"@en ,
+                "Battua"@it ,
+                "Misura"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Chord
+:Chord rdf:type owl:Class ;
+       owl:equivalentClass <http://localhost:8080/ontology/mto#Chord> ;
+       rdfs:subClassOf :Annotation ,
+                       dul:Region ;
+       rdfs:comment "Accordo musicale."@it ,
+                    "Musical chord."@en ;
+       rdfs:label "Accordo"@it ,
+                  "Chord"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Key
+:Key rdf:type owl:Class ;
+     rdfs:subClassOf dul:Region ,
+                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasRoot ;
+                                              owl:someValuesFrom <http://localhost:8080/ontology/mto#Key>
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :ofHarmonicQuality ;
+                                              owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://localhost:8080/ontology/mto#MajorKey>
+                                                                                 <http://localhost:8080/ontology/mto#MinorKey>
+                                                                               )
+                                                                 ]
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
+                     ] ;
+     rdfs:comment "Key of a musical sheet (e.g. C major)."@en ,
+                  "Tonalità dello spartito musicale di un brano, es. Do maggiore."@it ;
+     rdfs:label "Key"@en ,
+                "Tonalità"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Pattern
+:Pattern rdf:type owl:Class ;
+         rdfs:subClassOf dul:InformationObject ;
+         rdfs:comment "Forma di una sezione, ossia la metrica con cui la struttura armonica si ripete (es. AABA, AABB)."@it ,
+                      "Pattern of a section, showing how chord structures repeats i.e. AABA, AABB."@en ;
+         rdfs:label "Forma"@it ,
+                    "Pattern"@en .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Progression
+:Progression rdf:type owl:Class ;
+             owl:equivalentClass <http://localhost:8080/ontology/mto#HarmonicProgression> ;
+             rdfs:subClassOf :Annotation ,
+                             dul:Collection ;
+             rdfs:comment "Harmonic progression of a section."@en ,
+                          "Progressione armonica di una sezione."@it ;
+             rdfs:label "Progression"@en ,
+                        "Progressione"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Section
+:Section rdf:type owl:Class ;
+         rdfs:subClassOf dul:InformationRealization ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :characterizedBy ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Pattern
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasInstrument ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass kejazz:MusicalInstrument
+                         ] ;
+         rdfs:comment "Section of a musical sheet such as intro, verse, refrain."@en ,
+                      "Sezione di un brano, ad es. ritornello, verso, inciso."@it ;
+         rdfs:label "Section"@en ,
+                    "Sezione"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Sheet
+:Sheet rdf:type owl:Class ;
+       rdfs:subClassOf dul:Collection ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasKey ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Key
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasTimeSignature ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://localhost:8080/ontology/mto#TimeSignature>
+                       ] ;
+       rdfs:comment "Musical sheet of a song. Contains informations on the musical structure, the sections, the chord progression along with metadata such as the song tuning or its key."@en ,
+                    "Spartito musicale di un brano. Contiene informazioni sulla struttura musicale del brano, le sezioni e gli accordi che lo compongono e metadati come l'accordatura del pezzo e la sua tonalità."@it ;
+       rdfs:label "Sheet"@en ,
+                  "Spartito"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#MusicalInstrument
+kejazz:MusicalInstrument rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/kejazz#Recording
+kejazz:Recording rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#Chord
+<http://localhost:8080/ontology/mto#Chord> rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#HarmonicProgression
+<http://localhost:8080/ontology/mto#HarmonicProgression> rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#Key
+<http://localhost:8080/ontology/mto#Key> rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#MajorKey
+<http://localhost:8080/ontology/mto#MajorKey> rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#MinorKey
+<http://localhost:8080/ontology/mto#MinorKey> rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#Pitch
+<http://localhost:8080/ontology/mto#Pitch> rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/mto#TimeSignature
+<http://localhost:8080/ontology/mto#TimeSignature> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

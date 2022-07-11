@@ -1,0 +1,836 @@
+@prefix : <http://localhost:8080/ontology/kejazz#> .
+@prefix ca: <http://localhost:8080/ontology/chord-annotations#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <http://localhost:8080/ontology/kejazz> .
+
+<http://localhost:8080/ontology/kejazz> rdf:type owl:Ontology ;
+                                         owl:imports ca: ,
+                                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://localhost:8080/ontology/kejazz#atTime
+:atTime rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf dul:includesTime ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :ArtistContributionToWork
+                                    :ArtistPerformanceInRecording
+                                    :RelationBetweenArtists
+                                  )
+                    ] ;
+        rdfs:range dul:TimeInterval ;
+        rdfs:comment "Identifies the TimeInterval at which an Event (either an ArtistContributionToWork, an ArtistPerformanceInRecording or a RelationBetweenArtists) occurred."@en ;
+        rdfs:label "avvenuto nel momento"@it ,
+                   "occurred at time"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#forRecording
+:forRecording rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf dul:includesObject ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :ArtistPerformanceInRecording ;
+              rdfs:range :Recording ;
+              rdfs:comment "Identifies the Recording associated to an ArtistPerformanceInRecording instance."@en ;
+              rdfs:label "for recording"@en ,
+                         "per la registrazione"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#forWork
+:forWork rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf dul:includesObject ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain :ArtistContributionToWork ;
+         rdfs:range :Work ;
+         rdfs:comment "Identifies the Work associated to an ArtistConstributionToWork instance."@en ;
+         rdfs:label "for work"@en ,
+                    "per l'opera"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasActivityPeriod
+:hasActivityPeriod rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dul:isObservableAt ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:range dul:TimeInterval ;
+                   rdfs:comment "Identifies the activity period TimeInterval of an artist group."@en ;
+                   rdfs:label "ha periodo di attività"@it ,
+                              "has activity period"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasBeginArea
+:hasBeginArea rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf dul:hasLocation ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Artist ;
+              rdfs:range dul:Place ;
+              rdfs:comment "The Place where the artist has their origin. It is the birthplace for artist individuals and the formation place for artist groups."@en ;
+              rdfs:label "ha luogo d'origine"@it ,
+                         "has begin area"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasEndArea
+:hasEndArea rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf dul:hasLocation ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Artist ;
+            rdfs:range dul:Place ;
+            rdfs:comment "The Place where the artist has their end. It is the deathplace for artist individuals and the dissolution place for artist groups."@en ;
+            rdfs:label "ha luogo finale"@it ,
+                       "has end area"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasLifeSpan
+:hasLifeSpan rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dul:isObservableAt ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :ArtistPerson ;
+             rdfs:range dul:TimeInterval ;
+             rdfs:comment "identifies the TimeInterval that represents the period of time in which an ArtistPerson lived or is living."@en ;
+             rdfs:label "has lifespan"@en ,
+                        "vive nel periodo"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasMainArea
+:hasMainArea rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dul:hasLocation ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Artist ;
+             rdfs:range dul:Place ;
+             rdfs:comment "The Place where the artist is, or has been, mostly active."@en ;
+             rdfs:label "ha luogo principale"@it ,
+                        "has main area"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasRoleInWork
+:hasRoleInWork rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dul:coparticipatesWith ,
+                                  dul:hasRole ;
+               rdfs:domain :ArtistPerson ;
+               rdfs:range :RoleInWork ;
+               rdfs:comment "Identifies the role that an ArtistPerson had while contributing to a Work."@en ;
+               rdfs:label "ha ruolo in un'opera"@it ,
+                          "has role in work"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasSheet
+:hasSheet rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :Recording ;
+          rdfs:range ca:Sheet ;
+          rdfs:comment "Identifies the music sheet that describes the underlying structure of a recording."@en ;
+          rdfs:label "ha spartito musicale"@it ,
+                     "has sheet music"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#inRelationWith
+:inRelationWith rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:coparticipatesWith ;
+                rdf:type owl:SymmetricProperty ;
+                rdfs:domain :Artist ;
+                rdfs:range :Artist ;
+                rdfs:comment "Symmetric relation that exists between two artists."@en ;
+                rdfs:label "in relation with"@en ,
+                           "in relazione con"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#includedInRelease
+:includedInRelease rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :Recording ;
+                   rdfs:range :Release ;
+                   rdfs:comment "Identifies the Release in which a Recording is included."@en ;
+                   rdfs:label "included in release"@en ,
+                              "incluso nel rilascio"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#includesArtist
+:includesArtist rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:includesAgent ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :ArtistContributionToWork
+                                            :ArtistPerformanceInRecording
+                                          )
+                            ] ;
+                rdfs:range :ArtistPerson ;
+                rdfs:comment "Identifies the ArtistPerson that either contributed to a Work or performed for a Recording."@en ;
+                rdfs:label "include artista"@it ,
+                           "includes artist"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#includesSourceArtist
+:includesSourceArtist rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dul:includesAgent ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :RelationBetweenArtists ;
+                      rdfs:range :Artist ;
+                      rdfs:comment "Identifies the source artist for a RelationBetweenArtists instance."@en ;
+                      rdfs:label "include artista sorgente"@en ,
+                                 "includes source artist"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#includesTargetArtist
+:includesTargetArtist rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dul:includesAgent ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :RelationBetweenArtists ;
+                      rdfs:range :Artist ;
+                      rdfs:comment "Identifies the target artist for a RelationBetweenArtists instance."@en ;
+                      rdfs:label "include artista target"@it ,
+                                 "includes target artist"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#involvesRole
+:involvesRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf dul:isSettingFor ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :ArtistContributionToWork ;
+              rdfs:range :RoleInWork ;
+              rdfs:comment "Identifies the RoleInWork involved in an ArtistContributionToWork."@en ;
+              rdfs:label "coinvolge un ruolo"@it ,
+                         "involves role"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#isCreditedTo
+:isCreditedTo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Recording
+                                          :Release
+                                        )
+                          ] ;
+              rdfs:range :Artist ;
+              rdfs:comment "Identifies the artist(s) that a release or a recording is credited to."@en ;
+              rdfs:label "is credited to"@en ,
+                         "è attribuito a"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#playsInstrument
+:playsInstrument rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dul:coparticipatesWith ;
+                 rdfs:domain :ArtistPerson ;
+                 rdfs:range :MusicalInstrument ;
+                 rdfs:comment "Identifies the MusicalInstrument that an ArtistPerson played while performing for a Recording."@en ;
+                 rdfs:label "plays instrument"@en ,
+                            "suona lo strumento"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#releasedInPlace
+:releasedInPlace rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Release ;
+                 rdfs:range dul:Place ;
+                 rdfs:comment "Identifies the place in which a Release was published."@en ;
+                 rdfs:label "released in place"@en ,
+                            "rilasciato in luogo"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#withInstrument
+:withInstrument rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :ArtistPerformanceInRecording ;
+                rdfs:range :MusicalInstrument ;
+                rdfs:comment "Identifies the MusicalInstrument used by an ArtistPerson in the context of a Recording."@en ;
+                rdfs:label "con lo strumento"@it ,
+                           "with instrument"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://localhost:8080/ontology/kejazz#hasASIN
+:hasASIN rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain :Release ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Identifies the Amazon Standard Identification Number (ASIN) code associated to the release. ASIN is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization."@en ;
+         rdfs:label "ha Amazon Standard Identification Number"@it ,
+                    "has Amazon Standard Identification Number"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasAlias
+:hasAlias rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf dul:hasDataValue ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Artist
+                                      :Work
+                                    )
+                      ] ;
+          rdfs:range xsd:string ;
+          rdfs:comment "An alternative name for an entity (either a Work or an Artist)."@it ;
+          rdfs:label "ha un alias"@it ,
+                     "has alias"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasBarcode
+:hasBarcode rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf dul:hasDataValue ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Release ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Identifies the barcode of a release, if one is present. The most common types found on releases are 12-digit UPCs and 13-digit EANs."@en ;
+            rdfs:label "ha codice a barre"@it ,
+                       "has barcode"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasDurationInMilliseconds
+:hasDurationInMilliseconds rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf dul:hasDataValue ;
+                           rdf:type owl:FunctionalProperty ;
+                           rdfs:domain :Recording ;
+                           rdfs:range xsd:positiveInteger ;
+                           rdfs:comment "The duration in milliseconds of a Recording."@en ;
+                           rdfs:label "ha durata in millisecondi"@it ,
+                                      "has duration in milliseconds"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasGender
+:hasGender rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf dul:hasDataValue ;
+           rdfs:domain :ArtistPerson ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The gender expression of the artist person as reported on Musicbrainz."@en ;
+           rdfs:label "ha identità di genere"@it ,
+                      "has gender"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasIPI
+:hasIPI rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf dul:hasDataValue ;
+        rdfs:domain :Artist ;
+        rdfs:range xsd:string ;
+        rdfs:comment "IPIs are assigned to songwriters, composers and music publishers that own the rights to music."@en ;
+        rdfs:label "ha numero Iteresterd Party Information"@it ,
+                   "has Interested Party Information number"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasISNI
+:hasISNI rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdfs:domain :Artist ;
+         rdfs:range xsd:string ;
+         rdfs:comment "ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution."@en ;
+         rdfs:label "ha International Standard Name Identifier"@it ,
+                    "has International Standard Name Identifier"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasISRC
+:hasISRC rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdfs:domain :Recording ;
+         rdfs:range xsd:string ;
+         rdfs:comment "ISRC is a code that provides the way to ensure the uniqueness of audio and video music carriers by identifying them internationally."@en ;
+         rdfs:label "ha Codice Standard Internazionale di Registrazione"@it ,
+                    "has International Standard Recording Code"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasISWC
+:hasISWC rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdfs:domain :Work ;
+         rdfs:range xsd:string ;
+         rdfs:comment "ISWC is a unique, permanent and internationally recognized reference number for the identification of musical works."@en ;
+         rdfs:label "ha Codice Standard Internazionale di Opera musicale"@it ,
+                    "has International Standard musical Work Code"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasIntervalEndDate
+:hasIntervalEndDate rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf dul:hasIntervalDate ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain dul:TimeInterval ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "Identifies the end date of a TimeInterval."@en ;
+                    rdfs:label "ha data di fine intervallo"@it ,
+                               "has interval end date"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasIntervalStartDate
+:hasIntervalStartDate rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dul:hasIntervalDate ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain dul:TimeInterval ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Identifies the starting date of a TimeInterval."@en ;
+                      rdfs:label "ha data di inizio intervallo"@it ,
+                                 "has interval start date"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf dul:hasDataValue ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Artist
+                                     :MusicalInstrument
+                                     :RoleInWork
+                                   )
+                     ] ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The name associated to an entity (either an Artist, a MusicalInstrument or a RoleInWork)."@en ;
+         rdfs:label "ha nome"@it ,
+                    "has name"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasOfficialityStatus
+:hasOfficialityStatus rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dul:hasDataValue ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Release ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first "bootleg" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "cancelled" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "official" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "promotion" ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "pseudo-release" ;
+                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                      rdf:first "withdrawn" ;
+                                                                                                      rdf:rest rdf:nil
+                                                                                                    ]
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                 ] ;
+                      rdfs:comment "Identifies the status of the release, which describes how \"official\" it is. Possible values are: official, promotion, bootleg, pseudo-release, withdrawn, cancelled."@en ;
+                      rdfs:label "ha status"@it ,
+                                 "has status"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf dul:hasDataValue ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Recording
+                                      :Release
+                                      :Work
+                                    )
+                      ] ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Identifies the title of either a Work, a Release or a Recording."@en ;
+          rdfs:label "ha titolo"@it ,
+                     "has title"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#releasedInDate
+:releasedInDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf dul:hasDataValue ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :Release ;
+                rdfs:comment "Identifies the date in which the release was issued. The release date is the date in which a release was made available through some sort of distribution mechanism."@en ;
+                rdfs:label "released in date"@en ,
+                           "rilasciato in data"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://localhost:8080/ontology/ArtistGroup
+:ArtistGroup rdf:type owl:Class ;
+                                         rdfs:subClassOf :Artist ,
+                                                         dul:Group ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :hasActivityPeriod ;
+                                                           owl:allValuesFrom dul:TimeInterval
+                                                         ] ;
+                                         owl:disjointUnionOf ( :Band
+                                                               :Choir
+                                                               :Orchestra
+                                                             ) ;
+                                         rdfs:comment "A group of musical artists performing together as a unit."@en ;
+                                         rdfs:label "Artist group"@en ,
+                                                    "Gruppo di artisti"@it .
+
+
+###  http://localhost:8080/ontology/chord-annotations#Sheet
+ca:Sheet rdf:type owl:Class .
+
+
+###  http://localhost:8080/ontology/kejazz#Artist
+:Artist rdf:type owl:Class ;
+        rdfs:subClassOf dul:SocialAgent ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :inRelationWith ;
+                          owl:allValuesFrom :Artist
+                        ] ;
+        rdfs:comment "Any agent in the musical artistic field: either an individual person or a group of musical artists."@en ;
+        rdfs:label "Artist"@en ,
+                   "Artista"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#ArtistContributionToWork
+:ArtistContributionToWork rdf:type owl:Class ;
+                          rdfs:subClassOf dul:Classification ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :atTime ;
+                                            owl:someValuesFrom dul:TimeInterval
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :forWork ;
+                                            owl:someValuesFrom :Work
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :includesArtist ;
+                                            owl:someValuesFrom :ArtistPerson
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :involvesRole ;
+                                            owl:someValuesFrom :RoleInWork
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :atTime ;
+                                            owl:allValuesFrom dul:TimeInterval
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :forWork ;
+                                            owl:allValuesFrom :Work
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :includesArtist ;
+                                            owl:allValuesFrom :ArtistPerson
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :involvesRole ;
+                                            owl:allValuesFrom :RoleInWork
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :atTime ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :forWork ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :includesArtist ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :involvesRole ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ;
+                          rdfs:comment "A TimeIndexedRelation that represents the contribution that an ArtistPerson gave to a Work during a particular TimeInterval under a certain RoleInWork."@en ;
+                          rdfs:label "Artist contribution to work"@en ,
+                                     "Contributo di un artista ad un'opera"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#ArtistPerformanceInRecording
+:ArtistPerformanceInRecording rdf:type owl:Class ;
+                              rdfs:subClassOf dul:Classification ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :atTime ;
+                                                owl:someValuesFrom dul:TimeInterval
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :forRecording ;
+                                                owl:someValuesFrom :Recording
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :includesArtist ;
+                                                owl:someValuesFrom :ArtistPerson
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :withInstrument ;
+                                                owl:someValuesFrom :MusicalInstrument
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :atTime ;
+                                                owl:allValuesFrom dul:TimeInterval
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :forRecording ;
+                                                owl:allValuesFrom :Recording
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :includesArtist ;
+                                                owl:allValuesFrom :ArtistPerson
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :withInstrument ;
+                                                owl:allValuesFrom :MusicalInstrument
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :atTime ;
+                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :forRecording ;
+                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :includesArtist ;
+                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :withInstrument ;
+                                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                              ] ;
+                              rdfs:comment "A TimeIndexedRelation that represents the involvement of an ArtistPerson in a Recording held during a particular TimeInterval with the use of a MusicalInstrument."@en ;
+                              rdfs:label "Artist performance in recording"@en ,
+                                         "Performance di un artista in una registrazione"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#ArtistPerson
+:ArtistPerson rdf:type owl:Class ;
+              rdfs:subClassOf :Artist ,
+                              dul:Person ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLifeSpan ;
+                                owl:allValuesFrom dul:TimeInterval
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRoleInWork ;
+                                owl:allValuesFrom :RoleInWork
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :playsInstrument ;
+                                owl:allValuesFrom :MusicalInstrument
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLifeSpan ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:comment "Any individual person that is a musical artist."@en ;
+              rdfs:label "Artist person"@en ,
+                         "Persona artista"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#Band
+:Band rdf:type owl:Class ;
+      rdfs:comment "A collective of artists performing as a Group. e.g. Miles Davis All Stars."@en ;
+      rdfs:label "Band"@en ,
+                 "Banda"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#Choir
+:Choir rdf:type owl:Class ;
+       rdfs:comment "A collective of artists performing as a choir. e.g. L.A. Jazz Choir."@en ;
+       rdfs:label "Choir"@en ,
+                  "Coro"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#MusicalInstrument
+:MusicalInstrument rdf:type owl:Class ;
+                   rdfs:subClassOf dul:PhysicalObject ;
+                   rdfs:comment "A musical instrument in the most general sense. Voice is a considered as an instance of this class."@en ;
+                   rdfs:label "Musical instrument"@en ,
+                              "Strumento musicale"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#Orchestra
+:Orchestra rdf:type owl:Class ;
+           rdfs:comment "A collective of artists performing as an orchestra. e.g. Duke Ellington and His Orchestra."@en ;
+           rdfs:label "Orchestra"@en ,
+                      "Orchestra"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#Recording
+:Recording rdf:type owl:Class ;
+           rdfs:subClassOf [ owl:intersectionOf ( dul:Event
+                                                  dul:InformationRealization
+                                                  dul:Situation
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSheet ;
+                             owl:allValuesFrom ca:Sheet
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :includedInRelease ;
+                             owl:allValuesFrom :Release
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isCreditedTo ;
+                             owl:allValuesFrom :Artist
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dul:hasTimeInterval ;
+                             owl:allValuesFrom dul:TimeInterval
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dul:realizes ;
+                             owl:allValuesFrom :Work
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSheet ;
+                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dul:hasTimeInterval ;
+                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dul:realizes ;
+                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTitle ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTitle ;
+                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                           ] ;
+           rdfs:comment "A Situation that represents the act of recording a live musical performance into a digital or analogic medium."@en ;
+           rdfs:label "Recording"@en ,
+                      "Registrazione"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#RelationBetweenArtists
+:RelationBetweenArtists rdf:type owl:Class ;
+                        rdfs:subClassOf dul:TimeIndexedRelation ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :atTime ;
+                                          owl:someValuesFrom dul:TimeInterval
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :includesSourceArtist ;
+                                          owl:someValuesFrom :Artist
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :includesTargetArtist ;
+                                          owl:someValuesFrom :Artist
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty dul:satisfies ;
+                                          owl:someValuesFrom :RelationBetweenArtistsType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :atTime ;
+                                          owl:allValuesFrom dul:TimeInterval
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :includesSourceArtist ;
+                                          owl:allValuesFrom :Artist
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :includesTargetArtist ;
+                                          owl:allValuesFrom :Artist
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty dul:satisfies ;
+                                          owl:allValuesFrom :RelationBetweenArtistsType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :atTime ;
+                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :includesSourceArtist ;
+                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :includesTargetArtist ;
+                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty dul:satisfies ;
+                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                        ] ;
+                        owl:disjointWith :RelationBetweenArtistsType ;
+                        rdfs:comment "An Situation that relates two Artists through time, satisfies some RelationBetweenArtists Description."@en ;
+                        rdfs:label "Relation between artists"@en ,
+                                   "Relazione tra artisti"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#RelationBetweenArtistsType
+:RelationBetweenArtistsType rdf:type owl:Class ;
+                            rdfs:subClassOf dul:SocialRelation ;
+                            rdfs:comment "The type of a social relation that involves two artists, which can be either an  artistic or a personal relation (e.g. member of band, collaboration, siblings, married, etc.)."@en ;
+                            rdfs:label "Tipo di relazione tra artisti"@it ,
+                                       "Type of relation between artists"@en .
+
+
+###  http://localhost:8080/ontology/kejazz#Release
+:Release rdf:type owl:Class ;
+         rdfs:subClassOf dul:SocialObject ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isCreditedTo ;
+                           owl:allValuesFrom :Artist
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :releasedInPlace ;
+                           owl:allValuesFrom dul:Place
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasOfficialityStatus ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasTitle ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :releasedInDate ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasOfficialityStatus ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasTitle ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :releasedInDate ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "A SocialObject that represents the unique issuing of a musical product on a specific date with specific release information such as the country, label, barcode and packaging."@en ;
+         rdfs:label "Release"@en ,
+                    "Rilascio"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#RoleInWork
+:RoleInWork rdf:type owl:Class ;
+            rdfs:subClassOf dul:Role ;
+            rdfs:comment "The role that an ArtistPerson can have while contributing to a Work."@en ;
+            rdfs:label "Role in work"@en ,
+                       "Ruolo in un'opera"@it .
+
+
+###  http://localhost:8080/ontology/kejazz#Work
+:Work rdf:type owl:Class ;
+      rdfs:subClassOf dul:InformationObject ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty dul:isRealizedBy ;
+                        owl:allValuesFrom :Recording
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasTitle ;
+                        owl:allValuesFrom xsd:string
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasTitle ;
+                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                      ] ;
+      rdfs:comment "An InformationObject that represents a particular musical idea produce by one or more artists."@en ;
+      rdfs:label "Opera"@it ,
+                 "Work"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

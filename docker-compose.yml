@@ -62,19 +62,16 @@ services:
         networks:
             - network
 
-    virtuoso:
-        container_name: virtuoso
-        image: tenforce/virtuoso:1.3.1-virtuoso7.2.2
-        environment:
-            SPARQL_UPDATE: "true"
-            DEFAULT_GRAPH: "http://localhost:8080/resource"
-        volumes:
-            - ./ontology/kejazz/kejazz.owl:/data/toLoad/kejazz.owl
-            - ./ontology/chord-annotations/chord-annotations.owl:/data/toLoad/chord-annotations.owl
-            - ./ontology/chord-annotations/mto.owl:/data/toLoad/mto.owl
-            - ./resources/:/data/toLoad/
+    fuseki:
+        container_name: fuseki
+        image: fuseki
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.fuseki
+        restart: always
         networks:
             - network
+    
     proxy:
         container_name: proxy
         image: nginx
