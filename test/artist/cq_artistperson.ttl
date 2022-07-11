@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_artistperson.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "Is the artist a Person?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK { [] rdf:type kejazz:ArtistPerson } " ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"head\": {}, \"boolean\": true}";
+  owlunit:testsOntology kejazz: .

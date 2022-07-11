@@ -1,0 +1,12 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+@prefix test: <.> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+test:cq_name.ttl a owlunit:CompetencyQuestionVerification ;
+	owlunit:hasCompetencyQuestion "What is the name of the artist?" ;
+	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?name WHERE { ?artist kejazz:hasName ?name . } " ;
+	owlunit:hasInputData test:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+	owlunit:testsOntology kejazz: ;
+	owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"name\": {\"type\": \"literal\", \"value\": \"Thelonious Monk\"}}]}, \"head\": {\"vars\": [\"name\"]}}" .

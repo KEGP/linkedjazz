@@ -4,15 +4,19 @@
 @prefix artistTest: <./artist/> .
 
 test:suite.ttl a owlunit:TestSuite ;
+	# chords
 	owlunit:hasTestCase caTest:cq_firstchord.ttl ;
 	owlunit:hasTestCase caTest:cq_key.ttl ;
 	owlunit:hasTestCase caTest:cq_sections.ttl ;
 	owlunit:hasTestCase caTest:cq_overallchords.ttl ;
 	owlunit:hasTestCase caTest:cq_maininstruments.ttl ;
-	owlunit:hasTestCase caTest:av.ttl .
-
-#	owlunit:hasTestCase artistTest:cq_name.ttl .
-
+	owlunit:hasTestCase caTest:av.ttl ;
+	# artist
+	owlunit:hasTestCase artistTest:cq_alias.ttl ;
+	owlunit:hasTestCase artistTest:cq_area.ttl ;
+	owlunit:hasTestCase artistTest:cq_artistperson.ttl ;
+	owlunit:hasTestCase artistTest:cq_lifespan.ttl ;
+	owlunit:hasTestCase artistTest:cq_name.ttl .
 
 caTest:cq_key.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_firstchord.ttl a owlunit:CompetencyQuestionVerification .
@@ -21,4 +25,8 @@ caTest:cq_sections.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_maininstruments.ttl a owlunit:CompetencyQuestionVerification .
 caTest:av.ttl a owlunit:AnnotationVerification .
 
-#artistTest:cq_name.ttl a owlunit:CompetencyQuestionVerification .
+artistTest:cq_alias.ttl a owlunit:CompetencyQuestionVerification .
+artistTest:cq_area.ttl a owlunit:CompetencyQuestionVerification .
+artistTest:cq_artistperson.ttl a owlunit:CompetencyQuestionVerification .
+artistTest:cq_lifespan.ttl a owlunit:CompetencyQuestionVerification .
+artistTest:cq_name.ttl a owlunit:CompetencyQuestionVerification .

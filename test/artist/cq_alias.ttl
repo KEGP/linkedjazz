@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_alias.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "By which aliases is the Artist known?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?alias WHERE { ?artist kejazz:hasAlias ?alias . } " ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"alias\": {\"type\": \"literal\", \"value\": \"Monk Thelonious\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Thelonius Monk\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"セロニアス・モンク\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Th. Monk\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Monk, Thelonious\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Телониус Монк\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Thelonios Monk\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Theolonius Monk\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Thelenious Monk\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Т. Монк\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Monk, Thelonius\"}}, {\"alias\": {\"type\": \"literal\", \"value\": \"Thelonious Sphere Monk\"}}]}, \"head\": {\"vars\": [\"alias\"]}}";
+  owlunit:testsOntology kejazz: .

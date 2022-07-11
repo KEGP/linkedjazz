@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_lifespan.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "When is the artist person born, or the group formed?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?start WHERE { ?artist kejazz:hasLifeSpan ?ls . ?ls kejazz:hasIntervalStartDate ?start . } " ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"start\": {\"type\": \"literal\", \"value\": \"1917-10-10\"}}]}, \"head\": {\"vars\": [\"start\"]}}";
+  owlunit:testsOntology kejazz: .

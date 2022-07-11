@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_area.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "What is the main, begin, end area of the artist" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?beginArea ?mainArea ?endArea WHERE { ?artist kejazz:hasBeginArea ?beginArea ; kejazz:hasEndArea ?endArea ; kejazz:hasMainArea ?mainArea . } " ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"beginArea\": {\"type\": \"uri\", \"value\": \"http://localhost:8080/resource/kejazz/ArtistActivityArea/baa075b0-2e38-4a29-877e-a74d42dcf246\"}, \"endArea\": {\"type\": \"uri\", \"value\": \"http://localhost:8080/resource/kejazz/ArtistActivityArea/00d07986-2f91-475f-a963-5544abfc8eef\"}, \"mainArea\": {\"type\": \"uri\", \"value\": \"http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98\"}}]}, \"head\": {\"vars\": [\"beginArea\", \"mainArea\", \"endArea\"]}}";
+  owlunit:testsOntology kejazz: .
