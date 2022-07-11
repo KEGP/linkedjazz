@@ -1,0 +1,122 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/9fb7145f-492a-4797-b716-8121e486f01b> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1949-02-17" ;
+                     dul:hasIntervalStartDate  "1949-02-17"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b464909b-e539-4f30-994a-dc0b59653970> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1949-02-17" ;
+                     dul:hasIntervalStartDate  "1949-02-17"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978>
+        rdfs:label         "guitar" ;
+        :hasMusicBrainzID  "63021302-86cd-4aee-80df-2270d54f4978" ;
+        :hasName           "guitar" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> .
+
+<http://localhost:8080/resource/kejazz/Artist/b464909b-e539-4f30-994a-dc0b59653970>
+        rdfs:label         "John Levy" ;
+        :hasMusicBrainzID  "b464909b-e539-4f30-994a-dc0b59653970" ;
+        :hasName           "John Levy" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b464909b-e539-4f30-994a-dc0b59653970> .
+
+<http://localhost:8080/resource/kejazz/Artist/ef83af4c-4da9-47d1-b9bd-df9db18b28e9>
+        rdfs:label         "George Shearing" ;
+        :hasMusicBrainzID  "ef83af4c-4da9-47d1-b9bd-df9db18b28e9" ;
+        :hasName           "George Shearing" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ef83af4c-4da9-47d1-b9bd-df9db18b28e9> .
+
+<http://localhost:8080/resource/kejazz/Artist/733f3f0c-dde8-45e7-a725-173c16a9a591>
+        rdfs:label         "Denzil Best" ;
+        :hasMusicBrainzID  "733f3f0c-dde8-45e7-a725-173c16a9a591" ;
+        :hasName           "Denzil Best" ;
+        owl:sameAs         <https://musicbrainz.org/artist/733f3f0c-dde8-45e7-a725-173c16a9a591> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ef83af4c-4da9-47d1-b9bd-df9db18b28e9> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1949-02-17" ;
+                     dul:hasIntervalStartDate  "1949-02-17"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/9fb7145f-492a-4797-b716-8121e486f01b>
+        rdfs:label         "Chuck Wayne" ;
+        :hasMusicBrainzID  "9fb7145f-492a-4797-b716-8121e486f01b" ;
+        :hasName           "Chuck Wayne" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9fb7145f-492a-4797-b716-8121e486f01b> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787>
+        rdfs:label         "vibraphone" ;
+        :hasMusicBrainzID  "799af440-c0e7-4d8f-83d5-ecfee8b25787" ;
+        :hasName           "vibraphone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/799af440-c0e7-4d8f-83d5-ecfee8b25787> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/733f3f0c-dde8-45e7-a725-173c16a9a591> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1949-02-17" ;
+                     dul:hasIntervalStartDate  "1949-02-17"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b>
+        owl:sameAs  <https://musicbrainz.org/recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> .
+
+<http://localhost:8080/resource/kejazz/Artist/0296aafa-86d3-4371-8874-caa8601c3c2c>
+        rdfs:label         "Marjorie Hyams" ;
+        :hasMusicBrainzID  "0296aafa-86d3-4371-8874-caa8601c3c2c" ;
+        :hasName           "Marjorie Hyams" ;
+        owl:sameAs         <https://musicbrainz.org/artist/0296aafa-86d3-4371-8874-caa8601c3c2c> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/333f84f9-e2c4-4ebd-aec5-b710307c7c2b> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0296aafa-86d3-4371-8874-caa8601c3c2c> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1949-02-17" ;
+                     dul:hasIntervalStartDate  "1949-02-17"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+        rdfs:label         "double bass" ;
+        :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
+        :hasName           "double bass" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .

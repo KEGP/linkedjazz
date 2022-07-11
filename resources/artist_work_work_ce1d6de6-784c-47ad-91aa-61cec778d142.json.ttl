@@ -1,0 +1,45 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/ce1d6de6-784c-47ad-91aa-61cec778d142> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/54f89033-3ccf-4712-b4e9-bff8bf50502f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317>
+        rdfs:label         "Count Basie" ;
+        :hasMusicBrainzID  "0dbd6300-efdc-420b-857e-895e18fad317" ;
+        :hasName           "Count Basie" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/0dbd6300-efdc-420b-857e-895e18fad317> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/54f89033-3ccf-4712-b4e9-bff8bf50502f>
+        rdfs:label         "Bernie Ebbins" ;
+        :hasMusicBrainzID  "54f89033-3ccf-4712-b4e9-bff8bf50502f" ;
+        :hasName           "Bernie Ebbins" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/54f89033-3ccf-4712-b4e9-bff8bf50502f> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/ce1d6de6-784c-47ad-91aa-61cec778d142> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

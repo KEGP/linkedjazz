@@ -1,0 +1,144 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1963-06-16" ;
+                     dul:hasIntervalStartDate  "1963-06-16"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Artist/59ae7a1a-f454-435b-8a5a-e327e692bb5a>
+        rdfs:label         "Freddie Hubbard" ;
+        :hasMusicBrainzID  "59ae7a1a-f454-435b-8a5a-e327e692bb5a" ;
+        :hasName           "Freddie Hubbard" ;
+        owl:sameAs         <https://musicbrainz.org/artist/59ae7a1a-f454-435b-8a5a-e327e692bb5a> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+        rdfs:label         "trombone" ;
+        :hasMusicBrainzID  "f6100277-c7b8-4c8d-aa26-d8cd014b6761" ;
+        :hasName           "trombone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/59ae7a1a-f454-435b-8a5a-e327e692bb5a> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1963-06-16" ;
+                     dul:hasIntervalStartDate  "1963-06-16"
+                   ]
+] .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2379937f-6e0d-46a2-b8ff-633fafd72002> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1963-06-16" ;
+                     dul:hasIntervalStartDate  "1963-06-16"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+        rdfs:label         "trumpet" ;
+        :hasMusicBrainzID  "1c8f9780-2f16-4891-b66d-bb7aa0820dbd" ;
+        :hasName           "trumpet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> .
+
+<http://localhost:8080/resource/kejazz/Artist/115474d3-9d44-4c96-b5d0-00891187c6e8>
+        rdfs:label         "Cedar Walton" ;
+        :hasMusicBrainzID  "115474d3-9d44-4c96-b5d0-00891187c6e8" ;
+        :hasName           "Cedar Walton" ;
+        owl:sameAs         <https://musicbrainz.org/artist/115474d3-9d44-4c96-b5d0-00891187c6e8> .
+
+<http://localhost:8080/resource/kejazz/Artist/2379937f-6e0d-46a2-b8ff-633fafd72002>
+        rdfs:label         "Wayne Shorter" ;
+        :hasMusicBrainzID  "2379937f-6e0d-46a2-b8ff-633fafd72002" ;
+        :hasName           "Wayne Shorter" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2379937f-6e0d-46a2-b8ff-633fafd72002> .
+
+<http://localhost:8080/resource/kejazz/Artist/006307bc-af41-4da1-aa11-b35a9c6f0316>
+        rdfs:label         "Curtis Fuller" ;
+        :hasMusicBrainzID  "006307bc-af41-4da1-aa11-b35a9c6f0316" ;
+        :hasName           "Curtis Fuller" ;
+        owl:sameAs         <https://musicbrainz.org/artist/006307bc-af41-4da1-aa11-b35a9c6f0316> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/006307bc-af41-4da1-aa11-b35a9c6f0316> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1963-06-16" ;
+                     dul:hasIntervalStartDate  "1963-06-16"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95>
+        owl:sameAs  <https://musicbrainz.org/recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> .
+
+<http://localhost:8080/resource/kejazz/Artist/ca0e5f9d-838a-4685-9b82-e30e35ff4bf1>
+        rdfs:label         "Reggie Workman" ;
+        :hasMusicBrainzID  "ca0e5f9d-838a-4685-9b82-e30e35ff4bf1" ;
+        :hasName           "Reggie Workman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ca0e5f9d-838a-4685-9b82-e30e35ff4bf1> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+        rdfs:label         "tenor saxophone" ;
+        :hasMusicBrainzID  "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e" ;
+        :hasName           "tenor saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/115474d3-9d44-4c96-b5d0-00891187c6e8> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1963-06-16" ;
+                     dul:hasIntervalStartDate  "1963-06-16"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+        rdfs:label         "double bass" ;
+        :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
+        :hasName           "double bass" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/3bdc8595-62e3-480f-8096-eb862cd6ba95> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ca0e5f9d-838a-4685-9b82-e30e35ff4bf1> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1963-06-16" ;
+                     dul:hasIntervalStartDate  "1963-06-16"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a>
+        rdfs:label         "Art Blakey" ;
+        :hasMusicBrainzID  "601e7466-eaf5-4a91-9909-ffd770b7e04a" ;
+        :hasName           "Art Blakey" ;
+        owl:sameAs         <https://musicbrainz.org/artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> .

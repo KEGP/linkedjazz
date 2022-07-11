@@ -1,0 +1,91 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1930" ;
+                     dul:hasIntervalStartDate  "1930"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8ba56dd4-a9e1-410f-9b1e-91000e35bc46> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f84eb94a-1953-4955-94bc-e9385c4e43f8>
+        rdfs:label         "Johnny Green" ;
+        :hasMusicBrainzID  "f84eb94a-1953-4955-94bc-e9385c4e43f8" ;
+        :hasName           "Johnny Green" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/f84eb94a-1953-4955-94bc-e9385c4e43f8> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1930" ;
+                     dul:hasIntervalStartDate  "1930"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2d4bc2de-8c9b-4006-945b-4508a4b0db32> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1930" ;
+                     dul:hasIntervalStartDate  "1930"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7f56e48d-50d8-441d-a346-22ada2e4e284> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/8ba56dd4-a9e1-410f-9b1e-91000e35bc46>
+        rdfs:label         "Edward Heyman" ;
+        :hasMusicBrainzID  "8ba56dd4-a9e1-410f-9b1e-91000e35bc46" ;
+        :hasName           "Edward Heyman" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/8ba56dd4-a9e1-410f-9b1e-91000e35bc46> .
+
+<http://localhost:8080/resource/kejazz/Artist/2d4bc2de-8c9b-4006-945b-4508a4b0db32>
+        rdfs:label         "Frank Eyton" ;
+        :hasMusicBrainzID  "2d4bc2de-8c9b-4006-945b-4508a4b0db32" ;
+        :hasName           "Frank Eyton" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/2d4bc2de-8c9b-4006-945b-4508a4b0db32> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1930" ;
+                     dul:hasIntervalStartDate  "1930"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f84eb94a-1953-4955-94bc-e9385c4e43f8> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+<http://localhost:8080/resource/kejazz/Artist/7f56e48d-50d8-441d-a346-22ada2e4e284>
+        rdfs:label         "Robert Sour" ;
+        :hasMusicBrainzID  "7f56e48d-50d8-441d-a346-22ada2e4e284" ;
+        :hasName           "Robert Sour" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/7f56e48d-50d8-441d-a346-22ada2e4e284> .

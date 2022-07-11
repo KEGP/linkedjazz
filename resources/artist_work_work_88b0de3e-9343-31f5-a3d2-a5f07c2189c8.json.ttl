@@ -1,0 +1,45 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/88b0de3e-9343-31f5-a3d2-a5f07c2189c8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bb0be352-b641-4b99-9817-be91d198bec1> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/88b0de3e-9343-31f5-a3d2-a5f07c2189c8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d>
+        rdfs:label         "Spencer Williams" ;
+        :hasMusicBrainzID  "3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d" ;
+        :hasName           "Spencer Williams" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
+        owl:sameAs         <https://musicbrainz.org/artist/3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d> .
+
+<http://localhost:8080/resource/kejazz/Artist/bb0be352-b641-4b99-9817-be91d198bec1>
+        rdfs:label         "Jack Palmer" ;
+        :hasMusicBrainzID  "bb0be352-b641-4b99-9817-be91d198bec1" ;
+        :hasName           "Jack Palmer" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
+        owl:sameAs         <https://musicbrainz.org/artist/bb0be352-b641-4b99-9817-be91d198bec1> .

@@ -1,0 +1,45 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/67ec74fe-0e96-4e3d-96a7-66f3736e0ac5>
+        rdfs:label         "Frank Paparelli" ;
+        :hasMusicBrainzID  "67ec74fe-0e96-4e3d-96a7-66f3736e0ac5" ;
+        :hasName           "Frank Paparelli" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/67ec74fe-0e96-4e3d-96a7-66f3736e0ac5> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/67ec74fe-0e96-4e3d-96a7-66f3736e0ac5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5>
+        rdfs:label         "Dizzy Gillespie" ;
+        :hasMusicBrainzID  "e9ba8ccb-505f-4e5c-b909-65998d0d35b5" ;
+        :hasName           "Dizzy Gillespie" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> .

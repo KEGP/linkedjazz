@@ -1,0 +1,47 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1924" ;
+                     dul:hasIntervalStartDate  "1924"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/5168781f-9979-495a-85ea-f1bf511de240> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158>
+        rdfs:label         "George Gershwin" ;
+        :hasMusicBrainzID  "65744963-191a-44ef-a3c7-b693a808a158" ;
+        :hasName           "George Gershwin" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> , <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> ;
+        owl:sameAs         <https://musicbrainz.org/artist/65744963-191a-44ef-a3c7-b693a808a158> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/5168781f-9979-495a-85ea-f1bf511de240> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
+        rdfs:label         "arranger" ;
+        :hasMusicBrainzID  "d3fd781c-5894-47e2-8c12-86cc0e2c8d08" ;
+        :hasName           "arranger" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> .

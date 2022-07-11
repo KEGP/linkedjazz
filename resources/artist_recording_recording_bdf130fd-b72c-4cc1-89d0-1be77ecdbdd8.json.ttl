@@ -1,0 +1,71 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+        rdfs:label         "cornet" ;
+        :hasMusicBrainzID  "257dad59-02e6-47d9-958a-659843737827" ;
+        :hasName           "cornet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/257dad59-02e6-47d9-958a-659843737827> .
+
+<http://localhost:8080/resource/kejazz/Recording/bdf130fd-b72c-4cc1-89d0-1be77ecdbdd8>
+        owl:sameAs  <https://musicbrainz.org/recording/bdf130fd-b72c-4cc1-89d0-1be77ecdbdd8> .
+
+<http://localhost:8080/resource/kejazz/Artist/85e93c46-e990-48bc-90e7-ddf6ce6524fe>
+        rdfs:label         "Joe Smith" ;
+        :hasMusicBrainzID  "85e93c46-e990-48bc-90e7-ddf6ce6524fe" ;
+        :hasName           "Joe Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/85e93c46-e990-48bc-90e7-ddf6ce6524fe> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/bdf130fd-b72c-4cc1-89d0-1be77ecdbdd8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1926-05-04" ;
+                     dul:hasIntervalStartDate  "1926-05-04"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/bdf130fd-b72c-4cc1-89d0-1be77ecdbdd8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1926-05-04" ;
+                     dul:hasIntervalStartDate  "1926-05-04"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
+        rdfs:label         "Bessie Smith" ;
+        :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
+        :hasName           "Bessie Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/bdf130fd-b72c-4cc1-89d0-1be77ecdbdd8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/85e93c46-e990-48bc-90e7-ddf6ce6524fe> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1926-05-04" ;
+                     dul:hasIntervalStartDate  "1926-05-04"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839>
+        rdfs:label         "Fletcher Henderson" ;
+        :hasMusicBrainzID  "f47d1c94-c3e3-4c84-a42a-6c33e0032839" ;
+        :hasName           "Fletcher Henderson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> .

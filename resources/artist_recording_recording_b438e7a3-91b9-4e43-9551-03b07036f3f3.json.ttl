@@ -1,0 +1,100 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+        rdfs:label         "double bass" ;
+        :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
+        :hasName           "double bass" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787>
+        rdfs:label         "vibraphone" ;
+        :hasMusicBrainzID  "799af440-c0e7-4d8f-83d5-ecfee8b25787" ;
+        :hasName           "vibraphone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/799af440-c0e7-4d8f-83d5-ecfee8b25787> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ac7f831e-1699-4899-b069-28df45218cd0> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-07-02" ;
+                     dul:hasIntervalStartDate  "1948-07-02"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/61d00986-5d2f-4c8b-ad32-14c7253487cf>
+        rdfs:label         "Shadow Wilson" ;
+        :hasMusicBrainzID  "61d00986-5d2f-4c8b-ad32-14c7253487cf" ;
+        :hasName           "Shadow Wilson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/61d00986-5d2f-4c8b-ad32-14c7253487cf> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ac7f831e-1699-4899-b069-28df45218cd0> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/61d00986-5d2f-4c8b-ad32-14c7253487cf> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-07-02" ;
+                     dul:hasIntervalStartDate  "1948-07-02"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Recording/ac7f831e-1699-4899-b069-28df45218cd0>
+        owl:sameAs  <https://musicbrainz.org/recording/ac7f831e-1699-4899-b069-28df45218cd0> .
+
+<http://localhost:8080/resource/kejazz/Artist/16f2846f-3afd-41fc-aaf7-49edc26beadc>
+        rdfs:label         "John Simmons" ;
+        :hasMusicBrainzID  "16f2846f-3afd-41fc-aaf7-49edc26beadc" ;
+        :hasName           "John Simmons" ;
+        owl:sameAs         <https://musicbrainz.org/artist/16f2846f-3afd-41fc-aaf7-49edc26beadc> .
+
+<http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9>
+        rdfs:label         "Milt Jackson" ;
+        :hasMusicBrainzID  "2e38e1de-2890-4620-8467-5b0bb4641cb9" ;
+        :hasName           "Milt Jackson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ac7f831e-1699-4899-b069-28df45218cd0> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-07-02" ;
+                     dul:hasIntervalStartDate  "1948-07-02"
+                   ]
+] .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ac7f831e-1699-4899-b069-28df45218cd0> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/16f2846f-3afd-41fc-aaf7-49edc26beadc> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-07-02" ;
+                     dul:hasIntervalStartDate  "1948-07-02"
+                   ]
+] .

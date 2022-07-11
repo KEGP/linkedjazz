@@ -1,0 +1,122 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1e15c55f-e661-4910-9c0c-49a7b77b4d55> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-03-29" ;
+                     dul:hasIntervalStartDate  "1960-03-29"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8>
+        rdfs:label         "Cannonball Adderley" ;
+        :hasMusicBrainzID  "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8" ;
+        :hasName           "Cannonball Adderley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> .
+
+<http://localhost:8080/resource/kejazz/Artist/413ad03f-d419-43f8-90e2-c24306b965fe>
+        rdfs:label         "Barry Harris" ;
+        :hasMusicBrainzID  "413ad03f-d419-43f8-90e2-c24306b965fe" ;
+        :hasName           "Barry Harris" ;
+        owl:sameAs         <https://musicbrainz.org/artist/413ad03f-d419-43f8-90e2-c24306b965fe> .
+
+<http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259>
+        owl:sameAs  <https://musicbrainz.org/recording/1510f5f6-fd52-4676-a279-270c40bb4259> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+        rdfs:label         "cornet" ;
+        :hasMusicBrainzID  "257dad59-02e6-47d9-958a-659843737827" ;
+        :hasName           "cornet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/257dad59-02e6-47d9-958a-659843737827> .
+
+<http://localhost:8080/resource/kejazz/Artist/a9e79d89-f90b-4cef-943e-68151336a430>
+        rdfs:label         "Nat Adderley" ;
+        :hasMusicBrainzID  "a9e79d89-f90b-4cef-943e-68151336a430" ;
+        :hasName           "Nat Adderley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a9e79d89-f90b-4cef-943e-68151336a430> .
+
+<http://localhost:8080/resource/kejazz/Artist/1789de4d-0f0c-4db9-b850-a823b945c883>
+        rdfs:label         "Sam Jones" ;
+        :hasMusicBrainzID  "1789de4d-0f0c-4db9-b850-a823b945c883" ;
+        :hasName           "Sam Jones" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1789de4d-0f0c-4db9-b850-a823b945c883> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/413ad03f-d419-43f8-90e2-c24306b965fe> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-03-29" ;
+                     dul:hasIntervalStartDate  "1960-03-29"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/1e15c55f-e661-4910-9c0c-49a7b77b4d55>
+        rdfs:label         "Louis Hayes" ;
+        :hasMusicBrainzID  "1e15c55f-e661-4910-9c0c-49a7b77b4d55" ;
+        :hasName           "Louis Hayes" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1e15c55f-e661-4910-9c0c-49a7b77b4d55> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+        rdfs:label         "alto saxophone" ;
+        :hasMusicBrainzID  "9c977091-b27a-4a0e-b54e-b5ab89420e22" ;
+        :hasName           "alto saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1789de4d-0f0c-4db9-b850-a823b945c883> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-03-29" ;
+                     dul:hasIntervalStartDate  "1960-03-29"
+                   ]
+] .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a9e79d89-f90b-4cef-943e-68151336a430> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-03-29" ;
+                     dul:hasIntervalStartDate  "1960-03-29"
+                   ]
+] .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-03-29" ;
+                     dul:hasIntervalStartDate  "1960-03-29"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+        rdfs:label         "double bass" ;
+        :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
+        :hasName           "double bass" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .

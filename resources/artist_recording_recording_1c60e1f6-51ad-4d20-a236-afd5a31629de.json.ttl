@@ -1,0 +1,34 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Recording/1c60e1f6-51ad-4d20-a236-afd5a31629de>
+        owl:sameAs  <https://musicbrainz.org/recording/1c60e1f6-51ad-4d20-a236-afd5a31629de> .
+
+<http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4>
+        rdfs:label         "Dick Hyman" ;
+        :hasMusicBrainzID  "dab1ad75-3ea3-4071-91c4-7a66475599d4" ;
+        :hasName           "Dick Hyman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/1c60e1f6-51ad-4d20-a236-afd5a31629de> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1975" ;
+                     dul:hasIntervalStartDate  "1975"
+                   ]
+] .

@@ -1,0 +1,57 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1928" ;
+                     dul:hasIntervalStartDate  "1928"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/16834f90-0256-30bb-a5ab-6bdc9237cd13> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0987c822-8789-4198-8666-8ccb530ca0be> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1928" ;
+                     dul:hasIntervalStartDate  "1928"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/16834f90-0256-30bb-a5ab-6bdc9237cd13> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3310977b-ff65-4e3e-a74c-3919e35ea370> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/3310977b-ff65-4e3e-a74c-3919e35ea370>
+        rdfs:label         "Richard A. Whiting" ;
+        :hasMusicBrainzID  "3310977b-ff65-4e3e-a74c-3919e35ea370" ;
+        :hasName           "Richard A. Whiting" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/3310977b-ff65-4e3e-a74c-3919e35ea370> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+<http://localhost:8080/resource/kejazz/Artist/0987c822-8789-4198-8666-8ccb530ca0be>
+        rdfs:label         "Neil Moret" ;
+        :hasMusicBrainzID  "0987c822-8789-4198-8666-8ccb530ca0be" ;
+        :hasName           "Neil Moret" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/0987c822-8789-4198-8666-8ccb530ca0be> .

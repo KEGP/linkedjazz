@@ -1,0 +1,59 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/0923216a-e435-44be-8403-f7a462d72f22> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/9a45bf2f-66aa-4151-893f-d18a91986677> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/0923216a-e435-44be-8403-f7a462d72f22> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/96ae8237-7675-4d69-b357-c5d6969cef65> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/0923216a-e435-44be-8403-f7a462d72f22> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5b99fa9e-4190-4172-abc0-220f895dab9e> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/96ae8237-7675-4d69-b357-c5d6969cef65>
+        rdfs:label         "Don Raye" ;
+        :hasMusicBrainzID  "96ae8237-7675-4d69-b357-c5d6969cef65" ;
+        :hasName           "Don Raye" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
+        owl:sameAs         <https://musicbrainz.org/artist/96ae8237-7675-4d69-b357-c5d6969cef65> .
+
+<http://localhost:8080/resource/kejazz/Artist/9a45bf2f-66aa-4151-893f-d18a91986677>
+        rdfs:label         "Vic Schoen" ;
+        :hasMusicBrainzID  "9a45bf2f-66aa-4151-893f-d18a91986677" ;
+        :hasName           "Vic Schoen" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
+        owl:sameAs         <https://musicbrainz.org/artist/9a45bf2f-66aa-4151-893f-d18a91986677> .
+
+<http://localhost:8080/resource/kejazz/Artist/5b99fa9e-4190-4172-abc0-220f895dab9e>
+        rdfs:label         "Sy Oliver" ;
+        :hasMusicBrainzID  "5b99fa9e-4190-4172-abc0-220f895dab9e" ;
+        :hasName           "Sy Oliver" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
+        owl:sameAs         <https://musicbrainz.org/artist/5b99fa9e-4190-4172-abc0-220f895dab9e> .

@@ -1,0 +1,34 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060>
+        rdfs:label         "Meade Lux Lewis" ;
+        :hasMusicBrainzID  "abb415f3-a991-4fa7-b47a-674ab86fe060" ;
+        :hasName           "Meade Lux Lewis" ;
+        owl:sameAs         <https://musicbrainz.org/artist/abb415f3-a991-4fa7-b47a-674ab86fe060> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/4b8f321c-8a2d-43ac-858f-096df5dcfa88> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1936-05-07" ;
+                     dul:hasIntervalStartDate  "1936-05-07"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Recording/4b8f321c-8a2d-43ac-858f-096df5dcfa88>
+        owl:sameAs  <https://musicbrainz.org/recording/4b8f321c-8a2d-43ac-858f-096df5dcfa88> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .

@@ -1,0 +1,71 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1935" ;
+                     dul:hasIntervalStartDate  "1935"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a13ede92-5e64-43ac-a5a6-5bf00afc3eaf> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/7c0e243d-30e5-472f-b5db-afa0632abd19>
+        rdfs:label         "Harry Link" ;
+        :hasMusicBrainzID  "7c0e243d-30e5-472f-b5db-afa0632abd19" ;
+        :hasName           "Harry Link" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/7c0e243d-30e5-472f-b5db-afa0632abd19> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/a13ede92-5e64-43ac-a5a6-5bf00afc3eaf>
+        rdfs:label         "Eric Maschwitz" ;
+        :hasMusicBrainzID  "a13ede92-5e64-43ac-a5a6-5bf00afc3eaf" ;
+        :hasName           "Eric Maschwitz" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/a13ede92-5e64-43ac-a5a6-5bf00afc3eaf> .
+
+<http://localhost:8080/resource/kejazz/Artist/1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a>
+        rdfs:label         "Jack Strachey" ;
+        :hasMusicBrainzID  "1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a" ;
+        :hasName           "Jack Strachey" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7c0e243d-30e5-472f-b5db-afa0632abd19> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1935" ;
+                     dul:hasIntervalStartDate  "1935"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .

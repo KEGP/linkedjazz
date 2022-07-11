@@ -1,0 +1,138 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/d2a135f4-bb6b-4fb6-a09b-115e740b7fe0>
+        rdfs:label         "Fats Navarro" ;
+        :hasMusicBrainzID  "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0" ;
+        :hasName           "Fats Navarro" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d2a135f4-bb6b-4fb6-a09b-115e740b7fe0> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/6bdcb689-46ac-47c6-8539-7970e2a6ec13> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-09-13" ;
+                     dul:hasIntervalStartDate  "1948-09-13"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/48eaf8a1-6e44-488c-a91a-736867f1ba50>
+        rdfs:label         "Kenny Clarke" ;
+        :hasMusicBrainzID  "48eaf8a1-6e44-488c-a91a-736867f1ba50" ;
+        :hasName           "Kenny Clarke" ;
+        owl:sameAs         <https://musicbrainz.org/artist/48eaf8a1-6e44-488c-a91a-736867f1ba50> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-09-13" ;
+                     dul:hasIntervalStartDate  "1948-09-13"
+                   ]
+] .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d2a135f4-bb6b-4fb6-a09b-115e740b7fe0> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-09-13" ;
+                     dul:hasIntervalStartDate  "1948-09-13"
+                   ]
+] .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/48eaf8a1-6e44-488c-a91a-736867f1ba50> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-09-13" ;
+                     dul:hasIntervalStartDate  "1948-09-13"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+        rdfs:label         "trumpet" ;
+        :hasMusicBrainzID  "1c8f9780-2f16-4891-b66d-bb7aa0820dbd" ;
+        :hasName           "trumpet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/52763c17-465b-48e9-9e2b-3345ea8ba761> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-09-13" ;
+                     dul:hasIntervalStartDate  "1948-09-13"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+        rdfs:label         "tenor saxophone" ;
+        :hasMusicBrainzID  "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e" ;
+        :hasName           "tenor saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> .
+
+<http://localhost:8080/resource/kejazz/Artist/52763c17-465b-48e9-9e2b-3345ea8ba761>
+        rdfs:label         "Tadd Dameron" ;
+        :hasMusicBrainzID  "52763c17-465b-48e9-9e2b-3345ea8ba761" ;
+        :hasName           "Tadd Dameron" ;
+        owl:sameAs         <https://musicbrainz.org/artist/52763c17-465b-48e9-9e2b-3345ea8ba761> .
+
+<http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa>
+        owl:sameAs  <https://musicbrainz.org/recording/ce2d8d18-590f-468c-a020-b334ae916caa> .
+
+<http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169>
+        rdfs:label         "Curley Russell" ;
+        :hasMusicBrainzID  "c898870b-b704-4c52-99d5-1899e0d44169" ;
+        :hasName           "Curley Russell" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c898870b-b704-4c52-99d5-1899e0d44169> .
+
+<http://localhost:8080/resource/kejazz/Artist/ab2f2944-545f-4ea5-8ff0-31a5723ff5f3>
+        rdfs:label         "Wardell Gray" ;
+        :hasMusicBrainzID  "ab2f2944-545f-4ea5-8ff0-31a5723ff5f3" ;
+        :hasName           "Wardell Gray" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ab2f2944-545f-4ea5-8ff0-31a5723ff5f3> .
+
+<http://localhost:8080/resource/kejazz/Artist/6bdcb689-46ac-47c6-8539-7970e2a6ec13>
+        rdfs:label         "Allen Eager" ;
+        :hasMusicBrainzID  "6bdcb689-46ac-47c6-8539-7970e2a6ec13" ;
+        :hasName           "Allen Eager" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6bdcb689-46ac-47c6-8539-7970e2a6ec13> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+        rdfs:label         "double bass" ;
+        :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
+        :hasName           "double bass" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
+
+[ rdf:type         :ArtistRecordingPerformance ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ce2d8d18-590f-468c-a020-b334ae916caa> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ab2f2944-545f-4ea5-8ff0-31a5723ff5f3> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1948-09-13" ;
+                     dul:hasIntervalStartDate  "1948-09-13"
+                   ]
+] .

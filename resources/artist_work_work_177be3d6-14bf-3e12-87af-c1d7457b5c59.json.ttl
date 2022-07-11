@@ -1,0 +1,74 @@
+@prefix :           <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:         <http://sparql.xyz/facade-x/ns/> .
+@prefix objectrole: <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:        <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
+@prefix xyz:        <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/5fc368f4-d528-48d7-a8d4-5c657b29beff>
+        rdfs:label         "Ted Koehler" ;
+        :hasMusicBrainzID  "5fc368f4-d528-48d7-a8d4-5c657b29beff" ;
+        :hasName           "Ted Koehler" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/5fc368f4-d528-48d7-a8d4-5c657b29beff> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1931" ;
+                     dul:hasIntervalStartDate  "1931"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/177be3d6-14bf-3e12-87af-c1d7457b5c59> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/97864c47-cdfe-4d97-a118-d5d51d5353d4> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/97864c47-cdfe-4d97-a118-d5d51d5353d4>
+        rdfs:label         "Harry Barris" ;
+        :hasMusicBrainzID  "97864c47-cdfe-4d97-a118-d5d51d5353d4" ;
+        :hasName           "Harry Barris" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/97864c47-cdfe-4d97-a118-d5d51d5353d4> .
+
+<http://localhost:8080/resource/kejazz/Artist/174d998c-9049-4413-afbc-c5293f0081f2>
+        rdfs:label         "Billy Moll" ;
+        :hasMusicBrainzID  "174d998c-9049-4413-afbc-c5293f0081f2" ;
+        :hasName           "Billy Moll" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
+        owl:sameAs         <https://musicbrainz.org/artist/174d998c-9049-4413-afbc-c5293f0081f2> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1931" ;
+                     dul:hasIntervalStartDate  "1931"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/177be3d6-14bf-3e12-87af-c1d7457b5c59> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/174d998c-9049-4413-afbc-c5293f0081f2> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1931" ;
+                     dul:hasIntervalStartDate  "1931"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/177be3d6-14bf-3e12-87af-c1d7457b5c59> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5fc368f4-d528-48d7-a8d4-5c657b29beff> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
