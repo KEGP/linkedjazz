@@ -1,0 +1,24 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/09620053-4631-4c90-8050-326761f0168f>
+        rdf:type              :Recording ;
+        rdfs:label            "My Favorite Things, Part 1 (Single Version)" ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/a43270af-bc4a-4552-847e-617b11f38d7b> ;
+        :hasAudioTrackLength  "166000" ;
+        :hasISRC              "USBJN0920077" ;
+        :hasMusicBrainzID     "09620053-4631-4c90-8050-326761f0168f" ;
+        :hasTitle             "My Favorite Things, Part 1 (Single Version)" ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-10-21" ;
+                                :hasIntervalStartDate  "1960-10-21"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/edf0bfbc-c9e4-3b7d-9765-e8b86d9febbc> ;
+        owl:sameAs            <https://musicbrainz.org/recording/09620053-4631-4c90-8050-326761f0168f> .

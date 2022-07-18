@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_metadata.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "What's the title, status, barcode, asin, date and country?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?title ?status ?barcode ?asin ?date ?country WHERE { ?release rdf:type kejazz:Release ; kejazz:hasTitle ?title ; kejazz:hasOfficialityStatus ?status ; kejazz:hasASIN ?asin ; kejazz:hasBarcode ?barcode ; kejazz:releasedInDate ?date ; kejazz:releasedInPlace ?country . } " ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"asin\": {\"type\": \"literal\", \"value\": \"B00007GX41\"}, \"barcode\": {\"type\": \"literal\", \"value\": \"3307517051028\"}, \"status\": {\"type\": \"literal\", \"value\": \"Official\"}, \"title\": {\"type\": \"literal\", \"value\": \"The Chronological Classics: Jimmie Lunceford and His Orchestra 1935-1937\"}, \"date\": {\"type\": \"literal\", \"value\": \"1990\"}, \"country\": {\"type\": \"uri\", \"value\": \"http://localhost:8080/resource/kejazz/Place/FR\"}}]}, \"head\": {\"vars\": [\"title\", \"status\", \"barcode\", \"asin\", \"date\", \"country\"]}}";
+  owlunit:testsOntology kejazz: .

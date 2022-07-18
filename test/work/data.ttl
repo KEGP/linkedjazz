@@ -1,0 +1,38 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+
+<http://localhost:8080/resource/kejazz/Work/028fce1d-d787-3501-a6ad-cc572786abe1>
+        rdf:type            :Work ;
+        rdfs:label          "King Porter Stomp" ;
+        :hasISWC            "T-070.092.517-2" ;
+        :hasLyricsLanguage  "zxx" ;
+        :hasMusicBrainzID   "028fce1d-d787-3501-a6ad-cc572786abe1" ;
+        :hasTitle           "King Porter Stomp" ;
+        owl:sameAs          <https://www.wikidata.org/wiki/Q1742066> , <https://musicbrainz.org/work/028fce1d-d787-3501-a6ad-cc572786abe1> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3>
+        rdfs:label         "Jelly Roll Morton" ;
+        :hasMusicBrainzID  "3d094919-071f-4070-95dc-e1f350e4a5f3" ;
+        :hasName           "Jelly Roll Morton" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/3d094919-071f-4070-95dc-e1f350e4a5f3> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/028fce1d-d787-3501-a6ad-cc572786abe1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

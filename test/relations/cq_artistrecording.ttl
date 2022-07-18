@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_artistrecording.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "In what recording did this artist participate and playing what?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> SELECT DISTINCT ?title ?instrument WHERE { BIND (<http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> as ?artist) . ?recPerf rdf:type kejazz:ArtistPerformanceInRecording ; kejazz:includesArtist ?artist ; kejazz:forRecording [ kejazz:hasTitle ?title ] ; kejazz:withInstrument [ kejazz:hasName ?instrument ] . } " ;
+	owlunit:hasInputData <http://localhost:8080/sparql/db/query> ;
+	owlunit:hasInputTestDataCategory owlunit:SPARQLendpoint ;
+  owlunit:hasExpectedResult "{\"head\": {\"vars\": [\"title\", \"instrument\"]}, \"results\": {\"bindings\": [{\"title\": {\"type\": \"literal\", \"value\": \"Embraceable You\"}, \"instrument\": {\"type\": \"literal\", \"value\": \"alto saxophone\"}}, {\"title\": {\"type\": \"literal\", \"value\": \"Crazeology (take 4)\"}, \"instrument\": {\"type\": \"literal\", \"value\": \"alto saxophone\"}}, {\"title\": {\"type\": \"literal\", \"value\": \"Parker's Mood\"}, \"instrument\": {\"type\": \"literal\", \"value\": \"alto saxophone\"}}, {\"title\": {\"type\": \"literal\", \"value\": \"Shaw \u2019Nuff\"}, \"instrument\": {\"type\": \"literal\", \"value\": \"alto saxophone\"}}, {\"title\": {\"type\": \"literal\", \"value\": \"Oh, Lady Be Good\"}, \"instrument\": {\"type\": \"literal\", \"value\": \"alto saxophone\"}}]}}";
+  owlunit:testsOntology kejazz: .

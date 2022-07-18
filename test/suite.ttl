@@ -2,6 +2,8 @@
 @prefix test: <.> .
 @prefix caTest: <./chord-annotations/> .
 @prefix artistTest: <./artist/> .
+@prefix workTest: <./work/> .
+@prefix recordingTest: <./recording/> .
 
 test:suite.ttl a owlunit:TestSuite ;
 	# chords
@@ -16,7 +18,18 @@ test:suite.ttl a owlunit:TestSuite ;
 	owlunit:hasTestCase artistTest:cq_area.ttl ;
 	owlunit:hasTestCase artistTest:cq_artistperson.ttl ;
 	owlunit:hasTestCase artistTest:cq_lifespan.ttl ;
-	owlunit:hasTestCase artistTest:cq_name.ttl .
+	owlunit:hasTestCase artistTest:cq_name.ttl ;
+	# work
+	owlunit:hasTestCase workTest:cq_recording.ttl ;
+	owlunit:hasTestCase workTest:cq_alias.ttl ;
+	owlunit:hasTestCase workTest:cq_metadata.ttl ;
+	owlunit:hasTestCase workTest:cq_relatedartists.ttl ;
+	# recording
+	owlunit:hasTestCase recordingTest:cq_creditedto.ttl ;
+	owlunit:hasTestCase recordingTest:cq_howmanyrelease.ttl ;
+	owlunit:hasTestCase recordingTest:cq_metadata.ttl ;
+	owlunit:hasTestCase recordingTest:cq_relatedworks.ttl .
+
 
 caTest:cq_key.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_firstchord.ttl a owlunit:CompetencyQuestionVerification .
@@ -30,3 +43,14 @@ artistTest:cq_area.ttl a owlunit:CompetencyQuestionVerification .
 artistTest:cq_artistperson.ttl a owlunit:CompetencyQuestionVerification .
 artistTest:cq_lifespan.ttl a owlunit:CompetencyQuestionVerification .
 artistTest:cq_name.ttl a owlunit:CompetencyQuestionVerification .
+
+workTest:cq_recording.ttl a owlunit:CompetencyQuestionVerification .
+workTest:cq_alias.ttl a owlunit:CompetencyQuestionVerification .
+workTest:cq_metadata.ttl a owlunit:CompetencyQuestionVerification .
+workTest:cq_relatedartists.ttl a owlunit:CompetencyQuestionVerification .
+
+recordingTest:cq_creditedto.ttl a owlunit:CompetencyQuestionVerification .
+recordingTest:cq_howmanyrelease.ttl a owlunit:CompetencyQuestionVerification .
+recordingTest:cq_metadata.ttl a owlunit:CompetencyQuestionVerification .
+recordingTest:cq_relatedworks.ttl a owlunit:CompetencyQuestionVerification .
+

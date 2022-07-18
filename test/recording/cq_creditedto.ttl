@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_creditedto.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "Is the work known by some alias?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?name WHERE { BIND(<http://localhost:8080/resource/kejazz/Recording/09620053-4631-4c90-8050-326761f0168f> AS ?recording) . ?recording kejazz:creditedTo ?artist . ?artist kejazz:hasName ?name . } " ;
+	owlunit:hasInputData <http://localhost:8080/sparql/db/query> ;
+	owlunit:hasInputTestDataCategory owlunit:SPARQLendpoint ;
+  owlunit:hasExpectedResult "{\"head\": {\"vars\": [\"name\"]}, \"results\": {\"bindings\": [{\"name\": {\"type\": \"literal\", \"value\": \"John Coltrane Quartet\"}}]}}";
+  owlunit:testsOntology kejazz: .

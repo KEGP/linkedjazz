@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_howmanyrelease.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "How many releases contains a track from a particular recording?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT (COUNT(*)AS ?howMany) WHERE { BIND(<http://localhost:8080/resource/kejazz/Recording/09620053-4631-4c90-8050-326761f0168f> AS ?recording) . ?recording kejazz:includedInRelease ?release . } " ;
+	owlunit:hasInputData <http://localhost:8080/sparql/db/query> ;
+	owlunit:hasInputTestDataCategory owlunit:SPARQLendpoint ;
+  owlunit:hasExpectedResult "{\"head\": {\"vars\": [\"howMany\"]}, \"results\": {\"bindings\": [{\"howMany\": {\"type\": \"literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"1\"}}]}}";
+  owlunit:testsOntology kejazz: .

@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ex: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+ex:cq_metadata.ttl a owlunit:CompetencyQuestionVerification ;
+ 	owlunit:hasCompetencyQuestion "What's the title, length and ISRC code of a recording?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?title ?isrc WHERE { ?recording rdf:type kejazz:Recording ; kejazz:hasTitle ?title ; kejazz:hasISRC ?isrc ; kejazz:hasAudioTrackLength ?length . } " ;
+	owlunit:hasInputData ex:data.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"isrc\": {\"type\": \"literal\", \"value\": \"USBJN0920077\"}, \"title\": {\"type\": \"literal\", \"value\": \"My Favorite Things, Part 1 (Single Version)\"}}]}, \"head\": {\"vars\": [\"title\", \"isrc\"]}}";
+  owlunit:testsOntology kejazz: .
