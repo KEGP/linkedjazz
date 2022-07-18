@@ -61,6 +61,7 @@
 :hasActivityPeriod rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf dul:isObservableAt ;
                    rdf:type owl:FunctionalProperty ;
+                   rdf:domain :ArtistGroup ;
                    rdfs:range dul:TimeInterval ;
                    rdfs:comment "Identifies the activity period TimeInterval of an artist group."@en ;
                    rdfs:label "ha periodo di attività"@it ,
@@ -613,6 +614,7 @@ ca:Sheet rdf:type owl:Class .
                                 owl:onProperty :hasLifeSpan ;
                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
                               ] ;
+              owl:disjointWith :ArtistGroup ;
               rdfs:comment "Any individual person that is a musical artist."@en ;
               rdfs:label "Artist person"@en ,
                          "Persona artista"@it .
@@ -620,6 +622,7 @@ ca:Sheet rdf:type owl:Class .
 
 ###  http://localhost:8080/ontology/kejazz#Band
 :Band rdf:type owl:Class ;
+      rdfs:subClassOf :ArtistGroup ;
       rdfs:comment "A collective of artists performing as a Group. e.g. Miles Davis All Stars."@en ;
       rdfs:label "Band"@en ,
                  "Banda"@it .
@@ -627,6 +630,7 @@ ca:Sheet rdf:type owl:Class .
 
 ###  http://localhost:8080/ontology/kejazz#Choir
 :Choir rdf:type owl:Class ;
+       rdfs:subClassOf :ArtistGroup ;
        rdfs:comment "A collective of artists performing as a choir. e.g. L.A. Jazz Choir."@en ;
        rdfs:label "Choir"@en ,
                   "Coro"@it .
@@ -642,6 +646,7 @@ ca:Sheet rdf:type owl:Class .
 
 ###  http://localhost:8080/ontology/kejazz#Orchestra
 :Orchestra rdf:type owl:Class ;
+           rdfs:subClassOf :ArtistGroup ;
            rdfs:comment "A collective of artists performing as an orchestra. e.g. Duke Ellington and His Orchestra."@en ;
            rdfs:label "Orchestra"@en ,
                       "Orchestra"@it .
