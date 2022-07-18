@@ -19,8 +19,18 @@ files = os.listdir(args.input_directory)
 sparqlanything_path = os.path.abspath(args.sparqlanything)
 format = args.format
 
+already_processed_release_files = set()
 for file in tqdm(files):
   filepath = os.path.join(args.input_directory, file)
+
+  if (file.startswith("release_")):  # checks whether 'file' is a release file or not
+    unique_release_file = file.rsplit("_", maxsplit=1)[0]  # removes the "_<NUM>.json" part of the filename
+    if (unique_release_file not in already_processed_release_files):
+      already_processed_release_files.add(unique_release_file)
+    else:
+      # We want to skip this release file because it's a duplicate!
+      continue
+
   outpath = os.path.join(args.output_directory, f"{args.outprefix}_{file}.ttl")
 
   with open(outpath, "w") as outfile:
