@@ -16,13 +16,25 @@ CONSTRUCT {
     :atTime [
       a dul:TimeInterval;
       :hasIntervalStartDate ?artistWorkStartDate;
-      :hasIntervalEndDate ?artistWorkEndDate.
+      :hasIntervalEndDate ?artistWorkEndDate
     ];
     :includesArtist ?artistMyNS;
-    :involvesRole ?artistRoleMyNS.
+    :involvesRole ?artistRoleMyNS
   ].
 
   # RELATED ENTITIES
+
+  # It may happen that the contributing artist isn't generated
+  # by the artist.sparql query! That's why we need to create
+  # again its triples here, using the limited amount of
+  # information given inside the RecordingArtist relation data-structure
+  # exposed by the MusicBrainz API.
+  ?artistMyNS a ?artistClass;
+    :hasName ?artistName;
+    rdfs:label ?artistName;
+    owl:sameAs ?mbArtistURL;
+    :hasMusicBrainzID ?artistMbID.
+
   ?artistRoleMyNS a :RoleInWork;
     owl:sameAs ?mbRoleURL;
     :hasMusicBrainzID ?artistRoleMbID;
@@ -37,11 +49,24 @@ CONSTRUCT {
     ?root a fx:root;
           xyz:work ?work_BN.
 
-    ?work_BN xyz:id ?mbID ;
+    ?work_BN xyz:id ?mbID;
              xyz:artist-relation-list/fx:anySlot ?artist_role_BN.
 
     ?artist_role_BN xyz:type-id ?artistRoleMbID;
-                    xyz:artist/xyz:id ?artistMbID.
+                    xyz:artist ?artist_BN.
+    
+    ?artist_BN xyz:id ?artistMbID.
+    OPTIONAL {?artist_BN xyz:name ?artistName.}
+    
+    {?artist_BN xyz:type "Person". BIND(:ArtistPerson as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type "Group". BIND(:Band as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type "Choir". BIND(:Choir as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type "Orchestra". BIND(:Orchestra as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type ?mbArtistType. FILTER(?mbArtistType NOT IN ("Person", "Group", "Choir", "Orchestra")). BIND(:ArtistGroup as ?artistClass).}
 
     OPTIONAL {?artist_role_BN xyz:artist/xyz:name ?artistName.}
     OPTIONAL {?artist_role_BN xyz:type ?roleName.}

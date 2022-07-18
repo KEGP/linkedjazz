@@ -23,6 +23,19 @@ CONSTRUCT {
     owl:sameAs ?url;
     owl:sameAs ?asinURL.
 
+  # RELATED ENTITIES
+
+  # It may happen that the credited artist isn't generated
+  # by the artist.sparql query! That's why we need to create
+  # again its triples here, using the limited amount of
+  # information given inside the artist-credit data-structure
+  # exposed by the MusicBrainz API.
+  ?creditedArtistMyNS a ?artistClass;
+    :hasName ?artistName;
+    rdfs:label ?artistName;
+    owl:sameAs ?mbArtistURL;
+    :hasMusicBrainzID ?creditedArtistMbID.
+
 } WHERE {
   SERVICE<x-sparql-anything:>{
     # launch on musicbrainz/release
@@ -38,7 +51,23 @@ CONSTRUCT {
     OPTIONAL {?release_BN xyz:date ?releaseDate.}
     OPTIONAL {?release_BN xyz:asin ?asin.}
     OPTIONAL {?release_BN xyz:barcode ?barcode.}
-    OPTIONAL {?release_BN xyz:artist-credit/fx:anySlot/xyz:artist/xyz:id ?creditedArtistMbID.}
+    OPTIONAL {
+      ?release_BN xyz:artist-credit/fx:anySlot/xyz:artist ?artist_BN.
+      ?artist_BN xyz:id ?creditedArtistMbID.
+      
+      OPTIONAL {?artist_BN xyz:name ?artistName.}
+
+      {?artist_BN xyz:type "Person". BIND(:ArtistPerson as ?artistClass).}
+      UNION
+      {?artist_BN xyz:type "Group". BIND(:Band as ?artistClass).}
+      UNION
+      {?artist_BN xyz:type "Choir". BIND(:Choir as ?artistClass).}
+      UNION
+      {?artist_BN xyz:type "Orchestra". BIND(:Orchestra as ?artistClass).}
+      UNION
+      {?artist_BN xyz:type ?mbArtistType. FILTER(?mbArtistType NOT IN ("Person", "Group", "Choir", "Orchestra")). BIND(:ArtistGroup as ?artistClass).}
+
+    }
     OPTIONAL {
       ?release_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
       BIND(fx:entity(?urlstr) as ?url).
@@ -48,6 +77,7 @@ CONSTRUCT {
     BIND(fx:entity(res:Artist, "/", ?creditedArtistMbID) as ?creditedArtistMyNS).
 
     BIND(fx:entity("https://musicbrainz.org/release/", ?mbID) as ?mbURL).
+    BIND(fx:entity("https://musicbrainz.org/artist/", ?creditedArtistMbID) as ?mbArtistURL).
     BIND(fx:entity("https://www.amazon.com/dp/", ?asin) as ?asinURL).
   }
 }

@@ -2,6 +2,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -17,18 +18,21 @@ CONSTRUCT {
     :atTime [
       a dul:TimeInterval;
       :hasIntervalStartDate ?artistRecordingStartDate;
-      :hasIntervalEndDate ?artistRecordingEndDate.
-    ].
+      :hasIntervalEndDate ?artistRecordingEndDate
+    ]
   ].
 
   # RELATED ENTITIES
-  ?recordingMyNS a :Recording;
-    owl:sameAs ?musicbrainzRecordingURL.
 
-  ?artistMyNS a :Artist;
+  # It may happen that the performing artist isn't generated
+  # by the artist.sparql query! That's why we need to create
+  # again its triples here, using the limited amount of
+  # information given inside the RecordingArtist relation data-structure
+  # exposed by the MusicBrainz API.
+  ?artistMyNS a ?artistClass;
     :hasName ?artistName;
     rdfs:label ?artistName;
-  	owl:sameAs ?mbArtistURL;
+    owl:sameAs ?mbArtistURL;
     :hasMusicBrainzID ?artistMbID.
 
   ?instrumentMyNS a :MusicalInstrument;
@@ -46,15 +50,27 @@ CONSTRUCT {
     ?root a fx:root;
           xyz:recording ?recording_BN.
 
-    ?recording_BN xyz:id ?mbID ;
-                  xyz:artist-relation-list/fx:anySlot ?artist_role_BN.
+    ?recording_BN xyz:id ?mbID;
+                  xyz:artist-relation-list/fx:anySlot ?performance_BN.
 
-    ?artist_role_BN xyz:artist/xyz:id ?artistMbID.
-    OPTIONAL {?artist_role_BN xyz:artist/xyz:name ?artistName.}
-    OPTIONAL {?artist_role_BN xyz:begin ?artistRecordingStartDate.}
-    OPTIONAL {?artist_role_BN xyz:end ?artistRecordingEndDate.}
+    ?performance_BN xyz:artist ?artist_BN.
+    ?artist_BN xyz:id ?artistMbID.
+    OPTIONAL {?artist_BN xyz:name ?artistName.}
+    
+    {?artist_BN xyz:type "Person". BIND(:ArtistPerson as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type "Group". BIND(:Band as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type "Choir". BIND(:Choir as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type "Orchestra". BIND(:Orchestra as ?artistClass).}
+    UNION
+    {?artist_BN xyz:type ?mbArtistType. FILTER(?mbArtistType NOT IN ("Person", "Group", "Choir", "Orchestra")). BIND(:ArtistGroup as ?artistClass).}
+    
+    OPTIONAL {?performance_BN xyz:begin ?artistRecordingStartDate.}
+    OPTIONAL {?performance_BN xyz:end ?artistRecordingEndDate.}
     OPTIONAL {
-      ?artist_role_BN xyz:attributes/rdf:_1 ?instrumentInstance_BN.
+      ?performance_BN xyz:attributes/rdf:_1 ?instrumentInstance_BN.
       ?instrumentInstance_BN xyz:type-id ?instrumentMBID.
       OPTIONAL {?instrumentInstance_BN xyz:attribute ?instrumentName.}
     }
