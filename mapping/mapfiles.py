@@ -9,7 +9,7 @@ parser.add_argument("query", help="Path to the sparql query where files will be 
 parser.add_argument("input_directory", help="Input directory containing the file that will be mapped to a query.")
 parser.add_argument("output_directory", help="Output directory where content will be generated.")
 
-parser.add_argument('--sparqlanything', help="Path to the sparql anything jar. If none will try the current directory.", default="./sparql-anything-0.6.0.jar")
+parser.add_argument('--sparqlanything', help="Path to the sparql anything jar. If none will try the current directory.", default="./sparql-anything-0.7.0.jar")
 parser.add_argument('--template-name', help="Name used in the SPARQL query for the naming template, which will be used by sparqlanything. Defaults to name.", default="name")
 parser.add_argument('--format', help="Serialization format used by SPARQLAnything. Defaults to turtle.", default="ttl")
 parser.add_argument('--outprefix', help="Prefix added to the outfile. Defaults to empty string.", default="")

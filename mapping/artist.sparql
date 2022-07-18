@@ -1,112 +1,108 @@
-PREFIX schema: <http://schema.org/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-#PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 
-#PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 PREFIX : <http://localhost:8080/ontology/kejazz/>
 PREFIX res: <http://localhost:8080/resource/kejazz/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 
 CONSTRUCT {
-  ?artistMyNS a ?artist;
+  ?artistMyNS a ?artistClass;
     rdfs:label ?name;
-    :hasName ?name; #subPropertyOf schema:name
-    :hasAlias ?alias; #subPropertyOf schema:alternateName
+    :hasName ?name;
+    :hasAlias ?alias;
 
-    #person only
-    :hasGender ?gender;
-    :hasLifeSpan ?lifespan;
-
-    #group, choir, orchestra only
-    :hasActivityPeriod ?activityPeriod;
-
-    #:hasMusicBrainzAnnotation ?annotation;
-    #:hasDisambiguationComment ?disambiguationComment;
-
-    #:hasCountry ?country; # bad docs on MB
-    :hasMainArea ?mainareaMyNS;
-    :hasBeginArea ?beginareaMyNS;
-    :hasEndArea ?endareaMyNS;
-
-	# identification
+    # IDENTIFICATION
     :hasMusicBrainzID ?mbID;
     :hasIPI ?ipi;
     :hasISNI ?isni;
     owl:sameAs ?mbIDurl; # build url from string
     owl:sameAs ?isniURL; # build url from string
-    owl:sameAs ?url.
-    #:hasURL ?url.
+    owl:sameAs ?url;
 
-  ?lifespan a :TimeInterval;
-    :hasIntervalStartDate ?startDate;
-    :hasIntervalEndDate ?endDate.
+    :hasMainArea ?mainareaMyNS;
+    :hasBeginArea ?beginareaMyNS;
+    :hasEndArea ?endareaMyNS;
 
-  ?activityPeriod a :TimeInterval;
-    :hasIntervalStartDate ?startDate;
-    :hasIntervalEndDate ?endDate.
+    # PERSON ONLY
+    :hasGender ?gender;
+    :hasLifeSpan [
+      a dul:TimeInterval;
+      :hasIntervalStartDate ?startDate;
+      :hasIntervalEndDate ?endDate.
+    ];
 
+    # GROUP/CHOIR/ORCHESTRA ONLY
+    :hasActivityPeriod [
+      a dul:TimeInterval;
+      :hasIntervalStartDate ?startDate;
+      :hasIntervalEndDate ?endDate.
+    ].
+
+	# RELATED ENTITIES
   ?mainareaMyNS a :ArtistActivityArea;
     rdfs:label ?maName;
-    schema:name ?maName;
+    :hasName ?maName;
+    :hasMusicBrainzID ?mainAreaID;
     owl:sameAs ?mainAreaURL.
-    #:hasSortName ?maSname.
 
   ?beginareaMyNS a :ArtistActivityArea;
     rdfs:label ?baName;
-    schema:name ?baName;
+    :hasName ?baName;
+    :hasMusicBrainzID ?beginAreaID;
     owl:sameAs ?beginAreaURL.
-    #:hasSortName ?baSname.
 
   ?endareaMyNS a :ArtistActivityArea;
     rdfs:label ?eaName;
-    schema:name ?eaName;
+    :hasName ?eaName;
+    :hasMusicBrainzID ?endAreaID;
     owl:sameAs ?endAreaURL.
-    #:hasSortName ?eaSname.
 
-#artist_02ffe965-bd93-45bd-ae9f-5671261871ae_1.json #Person
-#artist_3d672385-79a6-4aa6-94b8-af59a0447db1_1.json #Group
+#artist_02ffe965-bd93-45bd-ae9f-5671261871ae_1.json # Example of ArtistPerson
+#artist_3d672385-79a6-4aa6-94b8-af59a0447db1_1.json # Example of ArtistGroup
 
-}WHERE {
+} WHERE {
   SERVICE<x-sparql-anything:>{
     # launch on musicbrainz/artist
     fx:properties fx:location ?_name ;
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
-                  xyz:artist ?artist_BN.
+          xyz:artist ?artist_BN.
     ?artist_BN xyz:id ?mbID.
 
-    #ArtistPerson has gender and hasLifeSpan while
-    #ArtistGroup hasActivityPeriod and no gender
+    OPTIONAL {?artist_BN xyz:name ?name.}
 
-    #matches either an ArtistPerson or a union of Group, Choir, Orchestra.
-    {?artist_BN xyz:type "Person".
-      BIND(:ArtistPerson as ?artist).
+    {
+      ?artist_BN xyz:type "Person".
+      BIND(:ArtistPerson as ?artistClass).
 
       OPTIONAL {?artist_BN xyz:gender ?gender.}
-      OPTIONAL {?artist_BN xyz:life-span ?lifespan.}
+      OPTIONAL {
+        ?artist_BN xyz:life-span ?lifespan_BN.
+        OPTIONAL {?lifespan_BN xyz:begin ?startDate.}
+        OPTIONAL {?lifespan_BN xyz:end ?endDate.}
+      }
     }
     UNION
     {
-      {?artist_BN xyz:type "Group". BIND(:Band as ?artist).}
+      {?artist_BN xyz:type "Group". BIND(:Band as ?artistClass).}
       UNION
-      {?artist_BN xyz:type "Choir". BIND(:Choir as ?artist).}
+      {?artist_BN xyz:type "Choir". BIND(:Choir as ?artistClass).}
       UNION
-      {?artist_BN xyz:type "Orchestra". BIND(:Orchestra as ?artist).}
+      {?artist_BN xyz:type "Orchestra". BIND(:Orchestra as ?artistClass).}
+      UNION
+      {?artist_BN xyz:type ?mbArtistType. FILTER(?mbArtistType NOT IN ("Group", "Choir", "Orchestra")). BIND(:ArtistGroup as ?artistClass).}
 
-      OPTIONAL {?artist_BN xyz:life-span ?activityPeriod.}
+      OPTIONAL {
+        ?artist_BN xyz:life-span ?activityPeriod_BN.
+        OPTIONAL {?activityPeriod_BN xyz:begin ?startDate.}
+        OPTIONAL {?activityPeriod_BN xyz:end ?endDate.}
+      }
     }
-    OPTIONAL {?artist_BN xyz:name ?name.}
-    #OPTIONAL {?artist_BN xyz:annotation/xyz:text ?annotation.}
-    #OPTIONAL {?artist_BN xyz:disambiguation ?disambiguationComment.}
-
-    OPTIONAL {?artist_BN xyz:life-span ?ls.
-      OPTIONAL {?ls xyz:begin ?startDate.}
-      OPTIONAL {?ls xyz:end ?endDate.}}
 
     OPTIONAL {
       {?artist_BN xyz:isni ?isni.}
@@ -120,38 +116,40 @@ CONSTRUCT {
       {?artist_BN xyz:ipi-list/fx:anySlot ?ipi.}
     }
 
-    OPTIONAL {?artist_BN xyz:area ?mainArea.
-      OPTIONAL {?mainArea xyz:id ?mainAreaID.}
-      OPTIONAL {?mainArea xyz:name ?maName.}
-      OPTIONAL {?mainArea xyz:sort-name ?maSname.}}
+    OPTIONAL {
+      ?artist_BN xyz:area ?mainArea_BN.
+      OPTIONAL {?mainArea_BN xyz:id ?mainAreaID.}
+      OPTIONAL {?mainArea_BN xyz:name ?maName.}
+    }
 
-    OPTIONAL {?artist_BN xyz:begin-area ?beginArea.
-      OPTIONAL {?beginArea xyz:id ?beginAreaID.}
-      OPTIONAL {?beginArea xyz:name ?baName.}
-      OPTIONAL {?beginArea xyz:sort-name ?baSname.}}
+    OPTIONAL {
+      ?artist_BN xyz:begin-area ?beginArea_BN.
+      OPTIONAL {?beginArea_BN xyz:id ?beginAreaID.}
+      OPTIONAL {?beginArea_BN xyz:name ?baName.}
+    }
 
-    OPTIONAL {?artist_BN xyz:end-area ?endArea.
-      OPTIONAL {?endArea xyz:id ?endAreaID.}
-      OPTIONAL {?endArea xyz:name ?eaName.}
-      OPTIONAL {?endArea xyz:sort-name ?eaSname.}}
+    OPTIONAL {
+      ?artist_BN xyz:end-area ?endArea_BN.
+      OPTIONAL {?endArea_BN xyz:id ?endAreaID.}
+      OPTIONAL {?endArea_BN xyz:name ?eaName.}
+    }
 
-    OPTIONAL {?artist_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
-      BIND(fx:entity(?urlstr) as ?url)}
+    OPTIONAL {
+      ?artist_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
+      BIND(fx:entity(?urlstr) as ?url).
+    }
 
-    OPTIONAL {?artist_BN xyz:alias-list/fx:anySlot/xyz:alias ?alias}
+    OPTIONAL {?artist_BN xyz:alias-list/fx:anySlot/xyz:alias ?alias.}
 
     BIND(fx:entity(res:Artist, "/", ?mbID) as ?artistMyNS).
-
-    BIND(fx:entity("https://musicbrainz.org/artist/", ?mbID) as ?mbIDurl).
-    BIND(fx:entity("https://isni.org/isni/", ?isni) as ?isniURL).
-
-    BIND(fx:entity("https://musicbrainz.org/area/", ?mainAreaID) as ?mainAreaURL).
-    BIND(fx:entity("https://musicbrainz.org/area/", ?beginAreaID) as ?beginAreaURL).
-    BIND(fx:entity("https://musicbrainz.org/area/", ?endAreaID) as ?endAreaURL).
-
     BIND(fx:entity(res:ArtistActivityArea, "/", ?mainAreaID) as ?mainareaMyNS).
     BIND(fx:entity(res:ArtistActivityArea, "/", ?beginAreaID) as ?beginareaMyNS).
    	BIND(fx:entity(res:ArtistActivityArea, "/", ?endAreaID) as ?endareaMyNS).
 
+    BIND(fx:entity("https://musicbrainz.org/artist/", ?mbID) as ?mbIDurl).
+    BIND(fx:entity("https://isni.org/isni/", ?isni) as ?isniURL).
+    BIND(fx:entity("https://musicbrainz.org/area/", ?mainAreaID) as ?mainAreaURL).
+    BIND(fx:entity("https://musicbrainz.org/area/", ?beginAreaID) as ?beginAreaURL).
+    BIND(fx:entity("https://musicbrainz.org/area/", ?endAreaID) as ?endAreaURL).
   }
 }

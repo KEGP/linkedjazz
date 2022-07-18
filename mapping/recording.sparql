@@ -2,7 +2,6 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xyz: <http://sparql.xyz/facade-x/data/>
 PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -11,41 +10,39 @@ PREFIX res: <http://localhost:8080/resource/kejazz/>
 PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 
 CONSTRUCT {
-  ?recording a :Recording;
+  ?recordingMyNS a :Recording;
     :hasTitle ?title;
     rdfs:label ?title;
 
-    dul:realizes ?work;
-    :hasAudioTrackLength ?trackLength;
-    :creditedTo ?creditedArtist;
-    :hasArtistCreditsPhrase ?artistCreditsPhrase;
-    :includedInRelease ?release ;
+    dul:realizes ?workMyNS;
+    :hasDurationInMilliseconds ?trackLength;
+    :isCreditedTo ?creditedArtistMyNS;
+    :includedInRelease ?releaseMyNS;
 
     dul:hasTimeInterval [
       a dul:TimeInterval;
       :hasIntervalStartDate ?performanceStartDate;
-      :hasIntervalEndDate ?performanceEndDate
+      :hasIntervalEndDate ?performanceEndDate.
     ];
 
-    # identification
+    # IDENTIFICATION
     :hasMusicBrainzID ?mbID;
     :hasISRC ?isrc;
-    owl:sameAs  ?url;
-    owl:sameAs  ?musicbrainzRecordingURL .
+    owl:sameAs ?url;
+    owl:sameAs ?musicbrainzRecordingURL.
 
-}WHERE {
+} WHERE {
   SERVICE<x-sparql-anything:>{
     # launch on musicbrainz/recording
     fx:properties fx:location ?_name ;
                   fx:trim-strings "true"^^xsd:boolean .
 
     ?root a fx:root;
-                  xyz:recording ?recording_BN.
+          xyz:recording ?recording_BN.
     ?recording_BN xyz:id ?mbID.
 
     OPTIONAL {?recording_BN xyz:title ?title.}
     OPTIONAL {?recording_BN xyz:length ?trackLength.}
-    OPTIONAL {?recording_BN xyz:artist-credit-phrase ?artistCreditPhrase.}
     OPTIONAL {?recording_BN xyz:artist-credit/fx:anySlot/xyz:artist/xyz:id ?creditedArtistMbID.}
     OPTIONAL {
       {?recording_BN xyz:isrc ?isrc.}
@@ -58,23 +55,24 @@ CONSTRUCT {
       ?work_BN xyz:type "performance";
                xyz:type-id "a3005666-a872-32c3-ad06-98af558e99b0";
                xyz:target ?workMbID.
+      OPTIONAL {?work_BN xyz:begin ?performanceStartDate.}
+      OPTIONAL {?work_BN xyz:end ?performanceEndDate.}
     }
-    OPTIONAL {?recording_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
-      BIND(fx:entity(?urlstr) as ?url)}
-
-    OPTIONAL {FILTER(BOUND(?work_BN)). ?work_BN xyz:begin ?performanceStartDate.}
-    OPTIONAL {FILTER(BOUND(?work_BN)). ?work_BN xyz:end ?performanceEndDate.}
+    OPTIONAL {
+      ?recording_BN xyz:url-relation-list/fx:anySlot/xyz:target ?urlstr.
+      BIND(fx:entity(?urlstr) as ?url).
+    }
     
     OPTIONAL {
       ?recording_BN xyz:release-list/fx:anySlot ?release_BN.
-      ?release_BN xyz:id ?releaseMbID .
+      ?release_BN xyz:id ?releaseMbID.
     }
 
-    BIND(fx:entity(res:Release, "/", ?releaseMbID) as ?release).
-    BIND(fx:entity(res:Work, "/", ?workMbID) as ?work).
-    BIND(fx:entity(res:Recording, "/", ?mbID) as ?recording).
-    BIND(fx:entity(res:Artist, "/", ?creditedArtistMbID) as ?creditedArtist).
-    BIND(fx:entity("https://musicbrainz.org/recording/", ?mbID) as ?musicbrainzRecordingURL).
+    BIND(fx:entity(res:Release, "/", ?releaseMbID) as ?releaseMyNS).
+    BIND(fx:entity(res:Work, "/", ?workMbID) as ?workMyNS).
+    BIND(fx:entity(res:Recording, "/", ?mbID) as ?recordingMyNS).
+    BIND(fx:entity(res:Artist, "/", ?creditedArtistMbID) as ?creditedArtistMyNS).
 
+    BIND(fx:entity("https://musicbrainz.org/recording/", ?mbID) as ?musicbrainzRecordingURL).
   }
 }
