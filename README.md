@@ -20,7 +20,7 @@
      | Endpoint | Description | Link |
      | ------------- | ------------- | --- |
      | [LODE](https://github.com/essepuntato/LODE) | _human readable version of our ontology_ | <http://localhost:8080/ontology> |
-     | [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) | _graphical visualisation of our ontology_ | <http://localhost:8080/webvowl> |
+     | [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) | _graphical visualisation of our ontology_ | <http://localhost:8080/webvowl/> |
      | [LodView](https://github.com/LodLive/LodView) | _human readable representation of the entities in our dataset_ | `http://localhost:8080/lodview/kejazz/<CLASSNAME>/<ID>` (ex. <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14>) |
      | [SPARQL.Anything](https://github.com/SPARQL-Anything/sparql.anything) | _human readable representation of the entities in our dataset_ | <http://localhost:8080/sparqlanything/sparql> (remember to replace `/sparql.anything` with `sparql.anything` in the text field placed at the top of the page) |
 
