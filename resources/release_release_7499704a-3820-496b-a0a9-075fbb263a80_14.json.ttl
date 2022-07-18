@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/7499704a-3820-496b-a0a9-075fbb263a80>
-        rdf:type            :Release ;
-        rdfs:label          "Ella & Louis: Together" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
-        :hasASIN            "B002LZFPUC" ;
-        :hasBarcode         "5060143493171" ;
-        :hasMusicBrainzID   "7499704a-3820-496b-a0a9-075fbb263a80" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Ella & Louis: Together" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "2009-08-17" ;
-        owl:sameAs          <https://www.discogs.com/release/2352737> , <https://musicbrainz.org/release/7499704a-3820-496b-a0a9-075fbb263a80> , <https://www.amazon.co.uk/gp/product/B002LZFPUC> .
+        rdf:type               :Release ;
+        rdfs:label             "Ella & Louis: Together" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :hasASIN               "B002LZFPUC" ;
+        :hasBarcode            "5060143493171" ;
+        :hasMusicBrainzID      "7499704a-3820-496b-a0a9-075fbb263a80" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ella & Louis: Together" ;
+        :releasedInDate        "2009-08-17" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B002LZFPUC> , <https://www.discogs.com/release/2352737> , <https://musicbrainz.org/release/7499704a-3820-496b-a0a9-075fbb263a80> , <https://www.amazon.co.uk/gp/product/B002LZFPUC> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

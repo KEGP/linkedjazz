@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/00c5532d-9d84-4b1d-b3ff-b4c340cc56f2>
-        rdf:type             :Release ;
-        rdfs:label           "Rock Times, Volume 5: 1963-1964" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "4010427000251" ;
-        :hasMusicBrainzID    "00c5532d-9d84-4b1d-b3ff-b4c340cc56f2" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Rock Times, Volume 5: 1963-1964" ;
-        :releasedInCountry   "DE" ;
-        :releasedInDate      "1991" ;
-        owl:sameAs           <https://musicbrainz.org/release/00c5532d-9d84-4b1d-b3ff-b4c340cc56f2> .
+        rdf:type               :Release ;
+        rdfs:label             "Rock Times, Volume 5: 1963-1964" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "4010427000251" ;
+        :hasMusicBrainzID      "00c5532d-9d84-4b1d-b3ff-b4c340cc56f2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Rock Times, Volume 5: 1963-1964" ;
+        :releasedInDate        "1991" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://musicbrainz.org/release/00c5532d-9d84-4b1d-b3ff-b4c340cc56f2> .
+
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .

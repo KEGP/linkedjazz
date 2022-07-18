@@ -10,16 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1930" ;
-                     dul:hasIntervalStartDate  "1930"
-                   ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8ba56dd4-a9e1-410f-9b1e-91000e35bc46> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/f84eb94a-1953-4955-94bc-e9385c4e43f8>
         rdfs:label         "Johnny Green" ;
         :hasMusicBrainzID  "f84eb94a-1953-4955-94bc-e9385c4e43f8" ;
@@ -35,6 +25,16 @@
   :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2d4bc2de-8c9b-4006-945b-4508a4b0db32> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1930" ;
+                     dul:hasIntervalStartDate  "1930"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f84eb94a-1953-4955-94bc-e9385c4e43f8> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
 [ rdf:type         :ArtistContributionToWork ;
@@ -73,8 +73,8 @@
                      dul:hasIntervalStartDate  "1930"
                    ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f84eb94a-1953-4955-94bc-e9385c4e43f8> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8ba56dd4-a9e1-410f-9b1e-91000e35bc46> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>

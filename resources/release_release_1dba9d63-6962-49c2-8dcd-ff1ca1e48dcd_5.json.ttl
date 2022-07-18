@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/AU>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd>
-        rdf:type             :Release ;
-        rdfs:label           "Zoot Suit Riot" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/e23612fb-6dd6-4d5c-b638-2611bfc8c48a> ;
-        :hasBarcode          "0601215325621" ;
-        :hasMusicBrainzID    "1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Zoot Suit Riot" ;
-        :releasedInCountry   "AU" ;
-        :releasedInDate      "1997" ;
-        owl:sameAs           <https://www.discogs.com/release/742456> , <https://musicbrainz.org/release/1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd> .
+        rdf:type               :Release ;
+        rdfs:label             "Zoot Suit Riot" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/e23612fb-6dd6-4d5c-b638-2611bfc8c48a> ;
+        :hasBarcode            "0601215325621" ;
+        :hasMusicBrainzID      "1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Zoot Suit Riot" ;
+        :releasedInDate        "1997" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/AU> ;
+        owl:sameAs             <https://www.discogs.com/release/742456> , <https://musicbrainz.org/release/1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd> .

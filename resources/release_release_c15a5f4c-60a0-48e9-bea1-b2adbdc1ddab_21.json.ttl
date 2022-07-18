@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/CA>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/c15a5f4c-60a0-48e9-bea1-b2adbdc1ddab>
-        rdf:type             :Release ;
-        rdfs:label           "The Verve Story: 1944-1994" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "73145217372097" ;
-        :hasMusicBrainzID    "c15a5f4c-60a0-48e9-bea1-b2adbdc1ddab" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Verve Story: 1944-1994" ;
-        :releasedInCountry   "CA" ;
-        :releasedInDate      "1994" ;
-        owl:sameAs           <https://musicbrainz.org/release/c15a5f4c-60a0-48e9-bea1-b2adbdc1ddab> .
+        rdf:type               :Release ;
+        rdfs:label             "The Verve Story: 1944-1994" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "73145217372097" ;
+        :hasMusicBrainzID      "c15a5f4c-60a0-48e9-bea1-b2adbdc1ddab" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Verve Story: 1944-1994" ;
+        :releasedInDate        "1994" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/CA> ;
+        owl:sameAs             <https://musicbrainz.org/release/c15a5f4c-60a0-48e9-bea1-b2adbdc1ddab> .

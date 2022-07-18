@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/a4f1b14a-b262-446a-a27d-4cce1f40b9b2>
-        rdf:type             :Release ;
-        rdfs:label           "Plus 4" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
-        :hasASIN             "B00006SFBH" ;
-        :hasBarcode          "821797200660" ;
-        :hasMusicBrainzID    "a4f1b14a-b262-446a-a27d-4cce1f40b9b2" ;
-        :hasPackagingFormat  "Super Jewel Box" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Plus 4" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "2003" ;
-        owl:sameAs           <https://www.musik-sammler.de/media/687003/> , <https://musicbrainz.org/release/a4f1b14a-b262-446a-a27d-4cce1f40b9b2> , <https://www.discogs.com/release/1528735> , <https://www.amazon.com/gp/product/B00006SFBH> .
+        rdf:type               :Release ;
+        rdfs:label             "Plus 4" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasASIN               "B00006SFBH" ;
+        :hasBarcode            "821797200660" ;
+        :hasMusicBrainzID      "a4f1b14a-b262-446a-a27d-4cce1f40b9b2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Plus 4" ;
+        :releasedInDate        "2003" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.musik-sammler.de/media/687003/> , <https://musicbrainz.org/release/a4f1b14a-b262-446a-a27d-4cce1f40b9b2> , <https://www.discogs.com/release/1528735> , <https://www.amazon.com/dp/B00006SFBH> , <https://www.amazon.com/gp/product/B00006SFBH> .

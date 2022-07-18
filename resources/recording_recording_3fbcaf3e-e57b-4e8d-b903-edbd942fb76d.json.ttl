@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/677eae4f-50da-4ffa-b361-973a80e64680>
         rdf:type              :Recording ;
@@ -16,19 +15,55 @@
         :hasAudioTrackLength  "255000" ;
         :hasISRC              "USBJN0920034" ;
         :hasMusicBrainzID     "677eae4f-50da-4ffa-b361-973a80e64680" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1940-05-25" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1940-05-25"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1940-05-25" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1940-05-25"
-                              ] ;
         :hasTitle             "I Can't Believe That You're in Love With Me" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/c950d847-df02-4b0c-a512-74fd8e17a015> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/07cf5691-d05e-4cf3-9e83-a010f8f55f68> , <http://localhost:8080/resource/kejazz/Release/97dfcafb-be05-4d3c-ac91-3648cca79dc2> , <http://localhost:8080/resource/kejazz/Release/ea7d6819-cf39-46b9-8358-579903294ae4> , <http://localhost:8080/resource/kejazz/Release/53f2f69a-51f2-4e4b-8169-9dcb23911a0b> , <http://localhost:8080/resource/kejazz/Release/1bd81943-6a3c-4f6a-91eb-df83c2cce2a9> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1940-05-25" ;
+                                :hasIntervalStartDate  "1940-05-25"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/c950d847-df02-4b0c-a512-74fd8e17a015> ;
         owl:sameAs            <https://musicbrainz.org/recording/677eae4f-50da-4ffa-b361-973a80e64680> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/2534f5c4-ce0e-4fbd-b199-f43a0e798d5c>
-        rdf:type            :Release ;
-        rdfs:label          "The Best of the Duke Ellington Centennial Edition: The Complete RcaVictor Recordings (1927-1973)" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
-        :hasASIN            "B00000IIRI" ;
-        :hasBarcode         "090266345922" ;
-        :hasMusicBrainzID   "2534f5c4-ce0e-4fbd-b199-f43a0e798d5c" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Best of the Duke Ellington Centennial Edition: The Complete RcaVictor Recordings (1927-1973)" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1999-04-27" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B00000IIRI> , <https://musicbrainz.org/release/2534f5c4-ce0e-4fbd-b199-f43a0e798d5c> .
+        rdf:type               :Release ;
+        rdfs:label             "The Best of the Duke Ellington Centennial Edition: The Complete RcaVictor Recordings (1927-1973)" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasASIN               "B00000IIRI" ;
+        :hasBarcode            "090266345922" ;
+        :hasMusicBrainzID      "2534f5c4-ce0e-4fbd-b199-f43a0e798d5c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Best of the Duke Ellington Centennial Edition: The Complete RcaVictor Recordings (1927-1973)" ;
+        :releasedInDate        "1999-04-27" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B00000IIRI> , <https://musicbrainz.org/release/2534f5c4-ce0e-4fbd-b199-f43a0e798d5c> , <https://www.amazon.com/dp/B00000IIRI> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

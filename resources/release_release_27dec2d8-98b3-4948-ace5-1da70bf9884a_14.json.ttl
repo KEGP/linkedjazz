@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/27dec2d8-98b3-4948-ace5-1da70bf9884a>
-        rdf:type             :Release ;
-        rdfs:label           "Bar Jazz 2" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B001OUITJO" ;
-        :hasBarcode          "4043002057357" ;
-        :hasMusicBrainzID    "27dec2d8-98b3-4948-ace5-1da70bf9884a" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Bar Jazz 2" ;
-        :releasedInCountry   "DE" ;
-        :releasedInDate      "2002" ;
-        owl:sameAs           <https://www.amazon.de/gp/product/B001OUITJO> , <https://musicbrainz.org/release/27dec2d8-98b3-4948-ace5-1da70bf9884a> , <https://www.discogs.com/release/3233980> .
+        rdf:type               :Release ;
+        rdfs:label             "Bar Jazz 2" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B001OUITJO" ;
+        :hasBarcode            "4043002057357" ;
+        :hasMusicBrainzID      "27dec2d8-98b3-4948-ace5-1da70bf9884a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Bar Jazz 2" ;
+        :releasedInDate        "2002" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://www.amazon.de/gp/product/B001OUITJO> , <https://www.amazon.com/dp/B001OUITJO> , <https://musicbrainz.org/release/27dec2d8-98b3-4948-ace5-1da70bf9884a> , <https://www.discogs.com/release/3233980> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/98b8bbed-a133-45fd-a8f2-48529690a4bb>
-        rdf:type             :Release ;
-        rdfs:label           "Seven Classic Albums" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
-        :hasBarcode          "5036408138323" ;
-        :hasMusicBrainzID    "98b8bbed-a133-45fd-a8f2-48529690a4bb" ;
-        :hasPackagingFormat  "Fatbox" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Seven Classic Albums" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "2013" ;
-        owl:sameAs           <https://musicbrainz.org/release/98b8bbed-a133-45fd-a8f2-48529690a4bb> .
+        rdf:type               :Release ;
+        rdfs:label             "Seven Classic Albums" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+        :hasBarcode            "5036408138323" ;
+        :hasMusicBrainzID      "98b8bbed-a133-45fd-a8f2-48529690a4bb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Seven Classic Albums" ;
+        :releasedInDate        "2013" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://musicbrainz.org/release/98b8bbed-a133-45fd-a8f2-48529690a4bb> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

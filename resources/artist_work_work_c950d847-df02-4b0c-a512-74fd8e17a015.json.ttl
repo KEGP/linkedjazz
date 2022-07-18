@@ -27,8 +27,8 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/c950d847-df02-4b0c-a512-74fd8e17a015> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b95753f5-ffab-4171-ba67-b4e08ea7bbdb> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c414371b-3377-43b5-9dc2-2a20254ed520> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
@@ -37,15 +37,15 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/c950d847-df02-4b0c-a512-74fd8e17a015> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c414371b-3377-43b5-9dc2-2a20254ed520> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
         rdfs:label         "lyricist" ;
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
         :hasName           "lyricist" ;
         owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/c950d847-df02-4b0c-a512-74fd8e17a015> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b95753f5-ffab-4171-ba67-b4e08ea7bbdb> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .

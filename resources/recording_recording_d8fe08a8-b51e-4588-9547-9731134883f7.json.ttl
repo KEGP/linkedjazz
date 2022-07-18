@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/d8fe08a8-b51e-4588-9547-9731134883f7>
         rdf:type              :Recording ;
@@ -16,19 +15,23 @@
         :hasAudioTrackLength  "186693" ;
         :hasISRC              "USBJN0920014" ;
         :hasMusicBrainzID     "d8fe08a8-b51e-4588-9547-9731134883f7" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1929-05-09" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1929-05-09"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1929-05-09" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1929-05-09"
-                              ] ;
         :hasTitle             "A Handful of Riffs" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/5ea5b4bd-81fe-480f-881e-ecc22bf00c15> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/44ace3c5-fadf-4502-9d9a-19e4d197675c> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1929-05-09" ;
+                                :hasIntervalStartDate  "1929-05-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1929-05-09" ;
+                                :hasIntervalStartDate  "1929-05-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1929-05-09" ;
+                                :hasIntervalStartDate  "1929-05-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1929-05-09" ;
+                                :hasIntervalStartDate  "1929-05-09"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/5ea5b4bd-81fe-480f-881e-ecc22bf00c15> ;
         owl:sameAs            <https://musicbrainz.org/recording/d8fe08a8-b51e-4588-9547-9731134883f7> .

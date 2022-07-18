@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/411478ab-a323-47d7-81f0-5a30cbbfc46b>
-        rdf:type            :Release ;
-        rdfs:label          "Greatest Hits" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
-        :hasASIN            "B000003G33" ;
-        :hasBarcode         "090266850020" ;
-        :hasMusicBrainzID   "411478ab-a323-47d7-81f0-5a30cbbfc46b" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Greatest Hits" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1996" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B000003G33> , <https://musicbrainz.org/release/411478ab-a323-47d7-81f0-5a30cbbfc46b> .
+        rdf:type               :Release ;
+        rdfs:label             "Greatest Hits" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        :hasASIN               "B000003G33" ;
+        :hasBarcode            "090266850020" ;
+        :hasMusicBrainzID      "411478ab-a323-47d7-81f0-5a30cbbfc46b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Greatest Hits" ;
+        :releasedInDate        "1996" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000003G33> , <https://www.amazon.com/gp/product/B000003G33> , <https://musicbrainz.org/release/411478ab-a323-47d7-81f0-5a30cbbfc46b> .

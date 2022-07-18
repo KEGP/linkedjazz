@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/7bad6ab9-c187-48bd-91f5-9c40ce1b8445>
-        rdf:type             :Release ;
-        rdfs:label           "Horatio’s Drive" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "827969065921" ;
-        :hasMusicBrainzID    "7bad6ab9-c187-48bd-91f5-9c40ce1b8445" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Horatio’s Drive" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "2003" ;
-        owl:sameAs           <https://musicbrainz.org/release/7bad6ab9-c187-48bd-91f5-9c40ce1b8445> .
+        rdf:type               :Release ;
+        rdfs:label             "Horatio’s Drive" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "827969065921" ;
+        :hasMusicBrainzID      "7bad6ab9-c187-48bd-91f5-9c40ce1b8445" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Horatio’s Drive" ;
+        :releasedInDate        "2003" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/7bad6ab9-c187-48bd-91f5-9c40ce1b8445> .

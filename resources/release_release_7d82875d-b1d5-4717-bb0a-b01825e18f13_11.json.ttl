@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,12 +8,15 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/ES>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/7d82875d-b1d5-4717-bb0a-b01825e18f13>
-        rdf:type            :Release ;
-        rdfs:label          "Billie's Blues" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
-        :hasMusicBrainzID   "7d82875d-b1d5-4717-bb0a-b01825e18f13" ;
-        :hasTitle           "Billie's Blues" ;
-        :releasedInCountry  "ES" ;
-        :releasedInDate     "1995" ;
-        owl:sameAs          <https://www.discogs.com/release/3032755> , <https://musicbrainz.org/release/7d82875d-b1d5-4717-bb0a-b01825e18f13> .
+        rdf:type           :Release ;
+        rdfs:label         "Billie's Blues" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :hasMusicBrainzID  "7d82875d-b1d5-4717-bb0a-b01825e18f13" ;
+        :hasTitle          "Billie's Blues" ;
+        :releasedInDate    "1995" ;
+        :releasedInPlace   <http://localhost:8080/resource/kejazz/Place/ES> ;
+        owl:sameAs         <https://www.discogs.com/release/3032755> , <https://musicbrainz.org/release/7d82875d-b1d5-4717-bb0a-b01825e18f13> .

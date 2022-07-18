@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/1b5b0b25-6196-429b-ac02-a54a11f64ba6>
         rdf:type              :Recording ;
@@ -16,31 +15,247 @@
         :hasAudioTrackLength  "183000" ;
         :hasISRC              "USBJN0920029" , "USBB19101438" ;
         :hasMusicBrainzID     "1b5b0b25-6196-429b-ac02-a54a11f64ba6" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1939-10-11" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1939-10-11"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1939-10-11" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1939-10-11"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1939-10-11" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1939-10-11"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1939-10-11" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1939-10-11"
-                              ] ;
         :hasTitle             "Body and Soul" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/97dfcafb-be05-4d3c-ac91-3648cca79dc2> , <http://localhost:8080/resource/kejazz/Release/55f43e4b-536e-4d38-aa06-993520cada93> , <http://localhost:8080/resource/kejazz/Release/833b5f07-69e3-4f3b-9cd3-3e26945ef4f1> , <http://localhost:8080/resource/kejazz/Release/ed379a99-bbc5-4cdf-bc56-8988a75bfb37> , <http://localhost:8080/resource/kejazz/Release/398a36c5-edfb-4fed-83e9-013ee2543350> , <http://localhost:8080/resource/kejazz/Release/9cf8402c-2158-4a2c-84b9-e34a2b504595> , <http://localhost:8080/resource/kejazz/Release/1c862351-2c63-435d-9a35-aed9dc1563df> , <http://localhost:8080/resource/kejazz/Release/53f2f69a-51f2-4e4b-8169-9dcb23911a0b> , <http://localhost:8080/resource/kejazz/Release/cce45bf1-333d-467f-a3d3-0b173c67e3e9> , <http://localhost:8080/resource/kejazz/Release/a8f4e847-2509-48ec-b670-4011a34ce16b> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/a8e7debf-b9e1-4818-888e-c2e4ca025829> , <http://localhost:8080/resource/kejazz/Release/27dec2d8-98b3-4948-ace5-1da70bf9884a> , <http://localhost:8080/resource/kejazz/Release/b99335e1-b6d5-4bde-bae7-7f6dc24d7082> , <http://localhost:8080/resource/kejazz/Release/1bd81943-6a3c-4f6a-91eb-df83c2cce2a9> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-10-11" ;
+                                :hasIntervalStartDate  "1939-10-11"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/98fb7d1f-12f5-3878-9fad-73266fedbec8> ;
         owl:sameAs            <https://musicbrainz.org/recording/1b5b0b25-6196-429b-ac02-a54a11f64ba6> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,15 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/c60d285a-5de7-497a-aaee-2ae4caf866b5>
-        rdf:type            :Release ;
-        rdfs:label          "The World of Louis Armstrong: St. Louis Blues" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasMusicBrainzID   "c60d285a-5de7-497a-aaee-2ae4caf866b5" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The World of Louis Armstrong: St. Louis Blues" ;
-        :releasedInCountry  "NL" ;
-        :releasedInDate     "1992" ;
-        owl:sameAs          <https://musicbrainz.org/release/c60d285a-5de7-497a-aaee-2ae4caf866b5> .
+        rdf:type               :Release ;
+        rdfs:label             "The World of Louis Armstrong: St. Louis Blues" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasMusicBrainzID      "c60d285a-5de7-497a-aaee-2ae4caf866b5" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The World of Louis Armstrong: St. Louis Blues" ;
+        :releasedInDate        "1992" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/NL> ;
+        owl:sameAs             <https://musicbrainz.org/release/c60d285a-5de7-497a-aaee-2ae4caf866b5> .
+
+<http://localhost:8080/resource/kejazz/Place/NL>
+        rdf:type  dul:Place .

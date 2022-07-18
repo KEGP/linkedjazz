@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/6442b92c-6e15-4418-af89-8d94875e53ee>
         rdf:type              :Recording ;
@@ -16,55 +15,807 @@
         :hasAudioTrackLength  "164906" ;
         :hasISRC              "FRZ022870050" , "USSM19927800" , "USBJN0920012" , "DEU240800904" ;
         :hasMusicBrainzID     "6442b92c-6e15-4418-af89-8d94875e53ee" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1928-12-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1928-12-05"
-                              ] ;
         :hasTitle             "Weather Bird" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/311ba91c-6dbf-4cf0-b854-5a4d129c777c> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/850a6189-0b80-4749-a230-db11c2270f57> , <http://localhost:8080/resource/kejazz/Release/ef49a738-323e-410d-9c4b-32f326e09661> , <http://localhost:8080/resource/kejazz/Release/0671ecb8-e8a5-4ee2-a933-f73fc1c93a4a> , <http://localhost:8080/resource/kejazz/Release/68f2622a-58e3-4a28-8f96-2cf49aec209c> , <http://localhost:8080/resource/kejazz/Release/7837365e-862a-4d0f-a7d8-785e59c648ac> , <http://localhost:8080/resource/kejazz/Release/201e5319-dd14-463d-8ebe-8155ac6ae7b8> , <http://localhost:8080/resource/kejazz/Release/00210ce8-2f59-4a9e-ab97-30c7334e67e7> , <http://localhost:8080/resource/kejazz/Release/2d23fa8e-9643-4e06-8547-72a0dc46b798> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> , <http://localhost:8080/resource/kejazz/Release/ca435ba1-755d-4c3e-9ecf-4194d9aa0a18> , <http://localhost:8080/resource/kejazz/Release/ff07c93e-8a77-493d-845a-6f33665020a6> , <http://localhost:8080/resource/kejazz/Release/9c4a0c32-31ec-4c0c-bd05-85e53c1d5344> , <http://localhost:8080/resource/kejazz/Release/0b255446-20d8-3a8a-86ac-e8df5678b72e> , <http://localhost:8080/resource/kejazz/Release/e704cd36-ac92-4025-8c52-eaf57665a7b4> , <http://localhost:8080/resource/kejazz/Release/f5ee8c3c-e083-4a8a-aa29-b10189c863a0> , <http://localhost:8080/resource/kejazz/Release/f96c12fe-ae9e-42a2-bf76-739944a62e50> , <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/3b6ae231-2505-420b-a035-8b2a97d9746c> , <http://localhost:8080/resource/kejazz/Release/d2d4aa50-6d65-4382-9798-f9b1b319048f> , <http://localhost:8080/resource/kejazz/Release/c7385d87-a21a-4443-9413-acc5e967a822> , <http://localhost:8080/resource/kejazz/Release/1bdbfd9c-5d06-4663-9419-8f47cb9daad7> , <http://localhost:8080/resource/kejazz/Release/641dd2b9-be9a-45a7-83ea-9116c3746283> , <http://localhost:8080/resource/kejazz/Release/2b591282-848d-4564-8772-8d6820e9b6da> , <http://localhost:8080/resource/kejazz/Release/61384ea0-8ea4-4055-b489-3bc4578d81dd> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1928-12-05" ;
+                                :hasIntervalStartDate  "1928-12-05"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/311ba91c-6dbf-4cf0-b854-5a4d129c777c> ;
         owl:sameAs            <https://musicbrainz.org/recording/6442b92c-6e15-4418-af89-8d94875e53ee> .

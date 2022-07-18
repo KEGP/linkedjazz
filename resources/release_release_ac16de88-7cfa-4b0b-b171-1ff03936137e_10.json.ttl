@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,14 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/ac16de88-7cfa-4b0b-b171-1ff03936137e>
-        rdf:type             :Release ;
-        rdfs:label           "The Complete Joseph \"King\" Oliver 1923/31 Vol. 1 1923" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
-        :hasMusicBrainzID    "ac16de88-7cfa-4b0b-b171-1ff03936137e" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Complete Joseph \"King\" Oliver 1923/31 Vol. 1 1923" ;
-        :releasedInCountry   "IT" ;
-        owl:sameAs           <https://musicbrainz.org/release/ac16de88-7cfa-4b0b-b171-1ff03936137e> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete Joseph \"King\" Oliver 1923/31 Vol. 1 1923" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
+        :hasMusicBrainzID      "ac16de88-7cfa-4b0b-b171-1ff03936137e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Joseph \"King\" Oliver 1923/31 Vol. 1 1923" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/IT> ;
+        owl:sameAs             <https://musicbrainz.org/release/ac16de88-7cfa-4b0b-b171-1ff03936137e> .
+
+<http://localhost:8080/resource/kejazz/Place/IT>
+        rdf:type  dul:Place .

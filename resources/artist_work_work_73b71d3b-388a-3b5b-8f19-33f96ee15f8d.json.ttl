@@ -13,7 +13,7 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/73b71d3b-388a-3b5b-8f19-33f96ee15f8d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
@@ -30,16 +30,16 @@
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/73b71d3b-388a-3b5b-8f19-33f96ee15f8d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5>
         rdfs:label         "Dizzy Gillespie" ;
         :hasMusicBrainzID  "e9ba8ccb-505f-4e5c-b909-65998d0d35b5" ;
         :hasName           "Dizzy Gillespie" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/73b71d3b-388a-3b5b-8f19-33f96ee15f8d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

@@ -1,16 +1,49 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089>
-        a                  :Band ;
-        rdfs:label         "Fats Waller and His Rhythm" ;
-        :hasAlias          "Fats Waller & His Rhythm" ;
-        :hasMusicBrainzID  "dee95bdd-55a3-48af-8735-1c61baee5089" ;
-        :hasName           "Fats Waller and His Rhythm" ;
-        owl:sameAs         <https://www.discogs.com/artist/314843> , <https://www.allmusic.com/artist/mn0000165359> , <https://musicbrainz.org/artist/dee95bdd-55a3-48af-8735-1c61baee5089> .
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "dee95bdd-55a3-48af-8735-1c61baee5089" .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/IT>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/4ceb336d-308c-4af3-8e4b-2c35fcc91eb7>
-        rdf:type            :Release ;
-        rdfs:label          "The Prestige Albums" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
-        :hasBarcode         "600753232606" ;
-        :hasMusicBrainzID   "4ceb336d-308c-4af3-8e4b-2c35fcc91eb7" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Prestige Albums" ;
-        :releasedInCountry  "IT" ;
-        :releasedInDate     "2009" ;
-        owl:sameAs          <https://www.discogs.com/release/10528042> , <https://musicbrainz.org/release/4ceb336d-308c-4af3-8e4b-2c35fcc91eb7> .
+        rdf:type               :Release ;
+        rdfs:label             "The Prestige Albums" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasBarcode            "600753232606" ;
+        :hasMusicBrainzID      "4ceb336d-308c-4af3-8e4b-2c35fcc91eb7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Prestige Albums" ;
+        :releasedInDate        "2009" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/IT> ;
+        owl:sameAs             <https://www.discogs.com/release/10528042> , <https://musicbrainz.org/release/4ceb336d-308c-4af3-8e4b-2c35fcc91eb7> .

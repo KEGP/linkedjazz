@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/833b5f07-69e3-4f3b-9cd3-3e26945ef4f1>
-        rdf:type             :Release ;
-        rdfs:label           "Body and Soul: 1933-1949" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
-        :hasBarcode          "636943253229" ;
-        :hasMusicBrainzID    "833b5f07-69e3-4f3b-9cd3-3e26945ef4f1" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Body and Soul: 1933-1949" ;
-        :releasedInCountry   "XE" ;
-        :releasedInDate      "2001" ;
-        owl:sameAs           <https://www.discogs.com/release/5648154> , <https://musicbrainz.org/release/833b5f07-69e3-4f3b-9cd3-3e26945ef4f1> .
+        rdf:type               :Release ;
+        rdfs:label             "Body and Soul: 1933-1949" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+        :hasBarcode            "636943253229" ;
+        :hasMusicBrainzID      "833b5f07-69e3-4f3b-9cd3-3e26945ef4f1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Body and Soul: 1933-1949" ;
+        :releasedInDate        "2001" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://www.discogs.com/release/5648154> , <https://musicbrainz.org/release/833b5f07-69e3-4f3b-9cd3-3e26945ef4f1> .

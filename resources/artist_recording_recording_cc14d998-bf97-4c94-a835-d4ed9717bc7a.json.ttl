@@ -8,17 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b677b2ba-41bc-4aaa-91b4-5665b27af445> ;
+  dul:atTime       [ rdf:type  dul:TimeInterval ]
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/b6ff4fd0-03ae-41a6-942e-7de13124b970>
         rdfs:label         "Paul Chambers" ;
         :hasMusicBrainzID  "b6ff4fd0-03ae-41a6-942e-7de13124b970" ;
         :hasName           "Paul Chambers" ;
         owl:sameAs         <https://musicbrainz.org/artist/b6ff4fd0-03ae-41a6-942e-7de13124b970> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/70d5a20f-2e49-4d92-999f-99bdc3a4a908> ;
-  dul:atTime       [ rdf:type  dul:TimeInterval ]
-] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
         rdfs:label         "drums (drum set)" ;
@@ -32,22 +32,6 @@
         :hasName           "John Coltrane" ;
         owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b677b2ba-41bc-4aaa-91b4-5665b27af445> ;
-  dul:atTime       [ rdf:type  dul:TimeInterval ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/35a92228-a559-4235-99ee-bb92bb970e3e> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1959-05-05" ;
-                     dul:hasIntervalStartDate  "1959-05-05"
-                   ]
-] .
-
 <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
         rdfs:label         "piano" ;
         :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
@@ -60,17 +44,19 @@
         :hasName           "Nesuhi Ertegun" ;
         owl:sameAs         <https://musicbrainz.org/artist/b677b2ba-41bc-4aaa-91b4-5665b27af445> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b6ff4fd0-03ae-41a6-942e-7de13124b970> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1959-05-05" ;
-                     dul:hasIntervalStartDate  "1959-05-05"
-                   ]
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/44823452-ad02-4854-8929-7753f71e1c09> ;
+  dul:atTime       [ rdf:type  dul:TimeInterval ]
 ] .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+<http://localhost:8080/resource/kejazz/Artist/70d5a20f-2e49-4d92-999f-99bdc3a4a908>
+        rdfs:label         "Phil Iehle" ;
+        :hasMusicBrainzID  "70d5a20f-2e49-4d92-999f-99bdc3a4a908" ;
+        :hasName           "Phil Iehle" ;
+        owl:sameAs         <https://musicbrainz.org/artist/70d5a20f-2e49-4d92-999f-99bdc3a4a908> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c39a1eeb-e646-43e9-b984-4ffdc92b0241> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
@@ -80,14 +66,18 @@
                    ]
 ] .
 
-<http://localhost:8080/resource/kejazz/Artist/70d5a20f-2e49-4d92-999f-99bdc3a4a908>
-        rdfs:label         "Phil Iehle" ;
-        :hasMusicBrainzID  "70d5a20f-2e49-4d92-999f-99bdc3a4a908" ;
-        :hasName           "Phil Iehle" ;
-        owl:sameAs         <https://musicbrainz.org/artist/70d5a20f-2e49-4d92-999f-99bdc3a4a908> .
-
 <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff>
         owl:sameAs  <https://musicbrainz.org/recording/87065f6a-9292-40cf-bfef-552a0282d3ff> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/35a92228-a559-4235-99ee-bb92bb970e3e> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1959-05-05" ;
+                     dul:hasIntervalStartDate  "1959-05-05"
+                   ]
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/44823452-ad02-4854-8929-7753f71e1c09>
         rdfs:label         "Tom Dowd" ;
@@ -95,13 +85,7 @@
         :hasName           "Tom Dowd" ;
         owl:sameAs         <https://musicbrainz.org/artist/44823452-ad02-4854-8929-7753f71e1c09> .
 
-<http://localhost:8080/resource/kejazz/Artist/35a92228-a559-4235-99ee-bb92bb970e3e>
-        rdfs:label         "Art Taylor" ;
-        :hasMusicBrainzID  "35a92228-a559-4235-99ee-bb92bb970e3e" ;
-        :hasName           "Art Taylor" ;
-        owl:sameAs         <https://musicbrainz.org/artist/35a92228-a559-4235-99ee-bb92bb970e3e> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
@@ -109,6 +93,18 @@
                      dul:hasIntervalEndDate    "1959-05-05" ;
                      dul:hasIntervalStartDate  "1959-05-05"
                    ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/35a92228-a559-4235-99ee-bb92bb970e3e>
+        rdfs:label         "Art Taylor" ;
+        :hasMusicBrainzID  "35a92228-a559-4235-99ee-bb92bb970e3e" ;
+        :hasName           "Art Taylor" ;
+        owl:sameAs         <https://musicbrainz.org/artist/35a92228-a559-4235-99ee-bb92bb970e3e> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/70d5a20f-2e49-4d92-999f-99bdc3a4a908> ;
+  dul:atTime       [ rdf:type  dul:TimeInterval ]
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/c39a1eeb-e646-43e9-b984-4ffdc92b0241>
@@ -123,14 +119,18 @@
         :hasName           "tenor saxophone" ;
         owl:sameAs         <https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b6ff4fd0-03ae-41a6-942e-7de13124b970> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1959-05-05" ;
+                     dul:hasIntervalStartDate  "1959-05-05"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
         rdfs:label         "double bass" ;
         :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
         :hasName           "double bass" ;
         owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/44823452-ad02-4854-8929-7753f71e1c09> ;
-  dul:atTime       [ rdf:type  dul:TimeInterval ]
-] .

@@ -8,17 +8,27 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052>
+        rdfs:label         "Earl Hines" ;
+        :hasMusicBrainzID  "5d7df598-bb80-4d73-a6f8-9ed1a4374052" ;
+        :hasName           "Earl Hines" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> .
+
 <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
         rdfs:label         "trumpet" ;
         :hasMusicBrainzID  "1c8f9780-2f16-4891-b66d-bb7aa0820dbd" ;
         :hasName           "trumpet" ;
         owl:sameAs         <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> .
 
-<http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052>
-        rdfs:label         "Earl Hines" ;
-        :hasMusicBrainzID  "5d7df598-bb80-4d73-a6f8-9ed1a4374052" ;
-        :hasName           "Earl Hines" ;
-        owl:sameAs         <https://musicbrainz.org/artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> .
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6442b92c-6e15-4418-af89-8d94875e53ee> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1928-12-05" ;
+                     dul:hasIntervalStartDate  "1928-12-05"
+                   ]
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
         rdfs:label         "Louis Armstrong" ;
@@ -26,16 +36,7 @@
         :hasName           "Louis Armstrong" ;
         owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
 
-<http://localhost:8080/resource/kejazz/Recording/6442b92c-6e15-4418-af89-8d94875e53ee>
-        owl:sameAs  <https://musicbrainz.org/recording/6442b92c-6e15-4418-af89-8d94875e53ee> .
-
-<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
-        rdfs:label         "piano" ;
-        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
-        :hasName           "piano" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/6442b92c-6e15-4418-af89-8d94875e53ee> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
@@ -45,12 +46,11 @@
                    ]
 ] .
 
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6442b92c-6e15-4418-af89-8d94875e53ee> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1928-12-05" ;
-                     dul:hasIntervalStartDate  "1928-12-05"
-                   ]
-] .
+<http://localhost:8080/resource/kejazz/Recording/6442b92c-6e15-4418-af89-8d94875e53ee>
+        owl:sameAs  <https://musicbrainz.org/recording/6442b92c-6e15-4418-af89-8d94875e53ee> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .

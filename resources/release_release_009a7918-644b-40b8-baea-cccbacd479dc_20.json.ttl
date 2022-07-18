@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,13 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/009a7918-644b-40b8-baea-cccbacd479dc>
-        rdf:type             :Release ;
-        rdfs:label           "Nuages - Tears" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
-        :hasASIN             "B00008SH7D" ;
-        :hasBarcode          "4011222208934" ;
-        :hasMusicBrainzID    "009a7918-644b-40b8-baea-cccbacd479dc" ;
-        :hasPackagingFormat  "Digipak" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Nuages - Tears" ;
-        :releasedInDate      "2003" ;
-        owl:sameAs           <https://www.discogs.com/release/4823695> , <https://www.amazon.de/gp/product/B00008SH7D> , <https://musicbrainz.org/release/009a7918-644b-40b8-baea-cccbacd479dc> .
+        rdf:type               :Release ;
+        rdfs:label             "Nuages - Tears" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN               "B00008SH7D" ;
+        :hasBarcode            "4011222208934" ;
+        :hasMusicBrainzID      "009a7918-644b-40b8-baea-cccbacd479dc" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Nuages - Tears" ;
+        :releasedInDate        "2003" ;
+        owl:sameAs             <https://www.discogs.com/release/4823695> , <https://www.amazon.com/dp/B00008SH7D> , <https://www.amazon.de/gp/product/B00008SH7D> , <https://musicbrainz.org/release/009a7918-644b-40b8-baea-cccbacd479dc> .

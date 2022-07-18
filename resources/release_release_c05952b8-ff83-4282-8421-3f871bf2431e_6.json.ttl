@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/c05952b8-ff83-4282-8421-3f871bf2431e>
-        rdf:type            :Release ;
-        rdfs:label          "Swingsation: Sampler" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN            "B000007Q69" ;
-        :hasMusicBrainzID   "c05952b8-ff83-4282-8421-3f871bf2431e" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Swingsation: Sampler" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1998" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B000007Q69> , <https://musicbrainz.org/release/c05952b8-ff83-4282-8421-3f871bf2431e> .
+        rdf:type               :Release ;
+        rdfs:label             "Swingsation: Sampler" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000007Q69" ;
+        :hasMusicBrainzID      "c05952b8-ff83-4282-8421-3f871bf2431e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Swingsation: Sampler" ;
+        :releasedInDate        "1998" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000007Q69> , <https://musicbrainz.org/release/c05952b8-ff83-4282-8421-3f871bf2431e> , <https://www.amazon.com/dp/B000007Q69> .

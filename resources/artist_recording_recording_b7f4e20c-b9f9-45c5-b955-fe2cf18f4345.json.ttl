@@ -20,7 +20,13 @@
         :hasName           "drums (drum set)" ;
         owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+<http://localhost:8080/resource/kejazz/Artist/fb23b49b-f964-46d0-a089-ae5e39956321>
+        rdfs:label         "Gene Krupa" ;
+        :hasMusicBrainzID  "fb23b49b-f964-46d0-a089-ae5e39956321" ;
+        :hasName           "Gene Krupa" ;
+        owl:sameAs         <https://musicbrainz.org/artist/fb23b49b-f964-46d0-a089-ae5e39956321> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
@@ -29,32 +35,6 @@
                      dul:hasIntervalStartDate  "1935-07-13"
                    ]
 ] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fb23b49b-f964-46d0-a089-ae5e39956321> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1935-07-13" ;
-                     dul:hasIntervalStartDate  "1935-07-13"
-                   ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1935-07-13" ;
-                     dul:hasIntervalStartDate  "1935-07-13"
-                   ]
-] .
-
-<http://localhost:8080/resource/kejazz/Artist/fb23b49b-f964-46d0-a089-ae5e39956321>
-        rdfs:label         "Gene Krupa" ;
-        :hasMusicBrainzID  "fb23b49b-f964-46d0-a089-ae5e39956321" ;
-        :hasName           "Gene Krupa" ;
-        owl:sameAs         <https://musicbrainz.org/artist/fb23b49b-f964-46d0-a089-ae5e39956321> .
 
 <http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e>
         rdfs:label         "Benny Goodman" ;
@@ -68,6 +48,16 @@
         :hasName           "piano" ;
         owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fb23b49b-f964-46d0-a089-ae5e39956321> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1935-07-13" ;
+                     dul:hasIntervalStartDate  "1935-07-13"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/Recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345>
         owl:sameAs  <https://musicbrainz.org/recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345> .
 
@@ -76,3 +66,13 @@
         :hasMusicBrainzID  "08028095-6dae-4fe0-9f34-284fde19f29b" ;
         :hasName           "clarinet" ;
         owl:sameAs         <https://musicbrainz.org/instrument/08028095-6dae-4fe0-9f34-284fde19f29b> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b7f4e20c-b9f9-45c5-b955-fe2cf18f4345> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1935-07-13" ;
+                     dul:hasIntervalStartDate  "1935-07-13"
+                   ]
+] .

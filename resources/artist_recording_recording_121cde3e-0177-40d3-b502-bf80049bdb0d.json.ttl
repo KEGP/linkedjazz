@@ -26,16 +26,26 @@
         :hasName           "drums (drum set)" ;
         owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/85c62467-5f87-4f81-aeae-f02f7a67ee71> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f3bd3292-1a33-4259-974d-b7375158d95d> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1973-09" ;
+                     dul:hasIntervalStartDate  "1973-09"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/85c62467-5f87-4f81-aeae-f02f7a67ee71>
         rdfs:label         "Bill Summers" ;
         :hasMusicBrainzID  "85c62467-5f87-4f81-aeae-f02f7a67ee71" ;
         :hasName           "Bill Summers" ;
         owl:sameAs         <https://musicbrainz.org/artist/85c62467-5f87-4f81-aeae-f02f7a67ee71> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/563a9f16-e84b-409a-bda5-2e4ce09d5573> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1081d9bb-17fa-43cf-8b2e-05f7e6029f70> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1973-09" ;
                      dul:hasIntervalStartDate  "1973-09"
@@ -60,6 +70,16 @@
         :hasName           "congas" ;
         owl:sameAs         <https://musicbrainz.org/instrument/f3bd3292-1a33-4259-974d-b7375158d95d> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c0050289-6969-437d-be83-0fcb608ead5c> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/4a32d2f2-2ac7-423d-9820-2c0b7ff37f60> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1973-09" ;
+                     dul:hasIntervalStartDate  "1973-09"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/1081d9bb-17fa-43cf-8b2e-05f7e6029f70>
         rdfs:label         "Harvey Mason" ;
         :hasMusicBrainzID  "1081d9bb-17fa-43cf-8b2e-05f7e6029f70" ;
@@ -78,20 +98,10 @@
         :hasName           "Bennie Maupin" ;
         owl:sameAs         <https://musicbrainz.org/artist/c0050289-6969-437d-be83-0fcb608ead5c> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/43eea62e-6972-46d0-b750-ade06ea4b06f> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/0b9d87fa-93fa-4956-8b6a-a419566cc915> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1973-09" ;
-                     dul:hasIntervalStartDate  "1973-09"
-                   ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/85c62467-5f87-4f81-aeae-f02f7a67ee71> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f3bd3292-1a33-4259-974d-b7375158d95d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/563a9f16-e84b-409a-bda5-2e4ce09d5573> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1973-09" ;
                      dul:hasIntervalStartDate  "1973-09"
@@ -101,20 +111,10 @@
 <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d>
         owl:sameAs  <https://musicbrainz.org/recording/121cde3e-0177-40d3-b502-bf80049bdb0d> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1081d9bb-17fa-43cf-8b2e-05f7e6029f70> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1973-09" ;
-                     dul:hasIntervalStartDate  "1973-09"
-                   ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/121cde3e-0177-40d3-b502-bf80049bdb0d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c0050289-6969-437d-be83-0fcb608ead5c> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/4a32d2f2-2ac7-423d-9820-2c0b7ff37f60> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/43eea62e-6972-46d0-b750-ade06ea4b06f> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/0b9d87fa-93fa-4956-8b6a-a419566cc915> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1973-09" ;
                      dul:hasIntervalStartDate  "1973-09"

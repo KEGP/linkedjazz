@@ -10,6 +10,20 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/406a8439-131f-4f28-b471-561cdababf6e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/406a8439-131f-4f28-b471-561cdababf6e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5123e60d-2ce4-45d1-8ad2-46c176108274> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/2344f604-7b3e-4e45-a770-1226521487b7>
         rdfs:label         "Will Hudson" ;
         :hasMusicBrainzID  "2344f604-7b3e-4e45-a770-1226521487b7" ;
@@ -26,8 +40,8 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/406a8439-131f-4f28-b471-561cdababf6e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5123e60d-2ce4-45d1-8ad2-46c176108274> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2344f604-7b3e-4e45-a770-1226521487b7> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce>
@@ -36,20 +50,6 @@
         :hasName           "Irving Mills" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
         owl:sameAs         <https://musicbrainz.org/artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce> .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/406a8439-131f-4f28-b471-561cdababf6e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/406a8439-131f-4f28-b471-561cdababf6e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2344f604-7b3e-4e45-a770-1226521487b7> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/5123e60d-2ce4-45d1-8ad2-46c176108274>
         rdfs:label         "Mitchell Parish" ;

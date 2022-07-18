@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/6f4aaccf-87df-4265-a3af-9c06742ea102>
         rdf:type              :Recording ;
@@ -15,13 +14,15 @@
         :creditedTo           <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> ;
         :hasAudioTrackLength  "142493" ;
         :hasMusicBrainzID     "6f4aaccf-87df-4265-a3af-9c06742ea102" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1967-01-23" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1967-01-23"
-                              ] ;
         :hasTitle             "All Alone" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/250f292b-dbd2-36b5-91f4-7ae195edc00c> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/9129c7c7-ff50-44e4-8a23-7ca9123ccfce> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1967-01-23" ;
+                                :hasIntervalStartDate  "1967-01-23"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1967-01-23" ;
+                                :hasIntervalStartDate  "1967-01-23"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/250f292b-dbd2-36b5-91f4-7ae195edc00c> ;
         owl:sameAs            <https://musicbrainz.org/recording/6f4aaccf-87df-4265-a3af-9c06742ea102> .

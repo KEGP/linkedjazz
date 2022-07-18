@@ -1,24 +1,109 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996>
-        a                  :Orchestra ;
-        rdfs:label         "Woody Herman and His Orchestra" ;
-        :hasAlias          "Woody Herman Orchestra" , "Woody Hermann & His Orchestra" , "Woody Herman & Orchestra" , "Woody Herman & His Orchestra; Woody Herman, Vocal" , "Wood Herman and His Orchestra" , "Woody Hermann" , "Woody Herman & His Orchestra" , "The Woody Herman Orchestra" , "Woody Herman and His Orchestra" ;
-        :hasISNI           "0000000084165419" ;
-        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
-        :hasMusicBrainzID  "be78d7d5-e137-42e1-a698-f4365c04b996" ;
-        :hasName           "Woody Herman and His Orchestra" ;
-        owl:sameAs         <https://commons.wikimedia.org/wiki/File:Bill_Harris,_Denzil_Best,_Flip_Phillips,_Billy_Bauer,_Lennie_Tristano,_Chubby_Jackson,_1947.jpg> , <https://musicbrainz.org/artist/be78d7d5-e137-42e1-a698-f4365c04b996> , <https://www.wikidata.org/wiki/Q2593249> , <https://isni.org/isni/0000000084165419> , <https://www.allmusic.com/artist/mn0000958445> , <https://www.discogs.com/artist/284746> .
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "be78d7d5-e137-42e1-a698-f4365c04b996" .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
-        a            :ArtistActivityArea ;
-        rdfs:label   "United States" ;
-        schema:name  "United States" ;
-        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/be78d7d5-e137-42e1-a698-f4365c04b996> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

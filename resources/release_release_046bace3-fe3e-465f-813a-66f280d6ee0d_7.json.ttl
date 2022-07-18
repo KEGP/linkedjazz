@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/046bace3-fe3e-465f-813a-66f280d6ee0d>
-        rdf:type            :Release ;
-        rdfs:label          "The Very Best of Duke Ellington" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
-        :hasASIN            "B000050G83" ;
-        :hasMusicBrainzID   "046bace3-fe3e-465f-813a-66f280d6ee0d" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Very Best of Duke Ellington" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "2000-11-07" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B000050G83> , <https://musicbrainz.org/release/046bace3-fe3e-465f-813a-66f280d6ee0d> .
+        rdf:type               :Release ;
+        rdfs:label             "The Very Best of Duke Ellington" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasASIN               "B000050G83" ;
+        :hasMusicBrainzID      "046bace3-fe3e-465f-813a-66f280d6ee0d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Very Best of Duke Ellington" ;
+        :releasedInDate        "2000-11-07" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000050G83> , <https://www.amazon.com/dp/B000050G83> , <https://musicbrainz.org/release/046bace3-fe3e-465f-813a-66f280d6ee0d> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

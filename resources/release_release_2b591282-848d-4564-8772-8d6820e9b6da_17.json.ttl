@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/2b591282-848d-4564-8772-8d6820e9b6da>
-        rdf:type            :Release ;
-        rdfs:label          "The 25 Greatest: Hot Fives & Hot Sevens" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasBarcode         "743625517125" ;
-        :hasMusicBrainzID   "2b591282-848d-4564-8772-8d6820e9b6da" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The 25 Greatest: Hot Fives & Hot Sevens" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "1995" ;
-        owl:sameAs          <https://www.discogs.com/release/11009873> , <https://musicbrainz.org/release/2b591282-848d-4564-8772-8d6820e9b6da> .
+        rdf:type               :Release ;
+        rdfs:label             "The 25 Greatest: Hot Fives & Hot Sevens" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode            "743625517125" ;
+        :hasMusicBrainzID      "2b591282-848d-4564-8772-8d6820e9b6da" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The 25 Greatest: Hot Fives & Hot Sevens" ;
+        :releasedInDate        "1995" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.discogs.com/release/11009873> , <https://musicbrainz.org/release/2b591282-848d-4564-8772-8d6820e9b6da> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

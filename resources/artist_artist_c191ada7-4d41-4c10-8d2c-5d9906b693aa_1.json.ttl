@@ -1,27 +1,37 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
-        a            :ArtistActivityArea ;
-        rdfs:label   "United States" ;
-        schema:name  "United States" ;
-        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca>
-        a                   :Band ;
-        rdfs:label          "The Boswell Sisters" ;
-        :hasActivityPeriod  [ a                      :TimeInterval ;
-                              :hasIntervalEndDate    "1935" ;
-                              :hasIntervalStartDate  "1925"
-                            ] ;
-        :hasISNI            "0000000107241091" ;
-        :hasMainArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
-        :hasMusicBrainzID   "41e2d679-43a3-4b9b-8469-ce748ad7b1ca" ;
-        :hasName            "The Boswell Sisters" ;
-        owl:sameAs          <https://www.last.fm/music/The+Boswell+Sisters> , <https://open.spotify.com/artist/2mflSlnegn3rBmzsh08OcN> , <https://rateyourmusic.com/artist/the_boswell_sisters> , <https://www.imdb.com/name/nm1270195/> , <https://www.amazon.com/-/e/B000APWQ66> , <https://www.deezer.com/artist/77506> , <https://www.wikidata.org/wiki/Q894612> , <https://catalogue.bnf.fr/ark:/12148/cb13941642s> , <http://www.vocalhalloffame.com/inductees/boswell_sisters.html> , <https://isni.org/isni/0000000107241091> , <https://itunes.apple.com/us/artist/id858682> , <https://en.wikipedia.org/wiki/The_Boswell_Sisters> , <https://www.discogs.com/artist/307205> , <https://www.allmusic.com/artist/mn0000521942> , <https://musicbrainz.org/artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> , <http://viaf.org/viaf/137149338> , <https://www.bbc.co.uk/music/artists/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> , <http://louisianamusichalloffame.org/content/view/57/95> , <https://www.storyvillerecords.com/artists/boswell-sisters> .
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "41e2d679-43a3-4b9b-8469-ce748ad7b1ca" .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

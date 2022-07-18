@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/efb307e0-8e2c-4dfe-a5a9-0efe6365ac15>
-        rdf:type            :Release ;
-        rdfs:label          "The Complete RCA Victor Recordings" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasASIN            "B00005O6KK" ;
-        :hasBarcode         "090266868223" ;
-        :hasMusicBrainzID   "efb307e0-8e2c-4dfe-a5a9-0efe6365ac15" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Complete RCA Victor Recordings" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "2001-09-25" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B00005O6KK> , <https://musicbrainz.org/release/efb307e0-8e2c-4dfe-a5a9-0efe6365ac15> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete RCA Victor Recordings" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN               "B00005O6KK" ;
+        :hasBarcode            "090266868223" ;
+        :hasMusicBrainzID      "efb307e0-8e2c-4dfe-a5a9-0efe6365ac15" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete RCA Victor Recordings" ;
+        :releasedInDate        "2001-09-25" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00005O6KK> , <https://www.amazon.com/gp/product/B00005O6KK> , <https://musicbrainz.org/release/efb307e0-8e2c-4dfe-a5a9-0efe6365ac15> .

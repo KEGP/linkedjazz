@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d6396c41-859e-4007-9918-3d6120e71c34>
-        rdf:type             :Release ;
-        rdfs:label           "The Complete Original Dixieland Jazz Band (1917–1936)" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
-        :hasASIN             "B000002WTQ" ;
-        :hasBarcode          "078636660820" ;
-        :hasMusicBrainzID    "d6396c41-859e-4007-9918-3d6120e71c34" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Complete Original Dixieland Jazz Band (1917–1936)" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "1992" ;
-        owl:sameAs           <https://musicbrainz.org/release/d6396c41-859e-4007-9918-3d6120e71c34> , <https://www.cduniverse.com/productinfo.asp?pid=1111630&style=music> , <https://www.amazon.com/gp/product/B000002WTQ> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete Original Dixieland Jazz Band (1917–1936)" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
+        :hasASIN               "B000002WTQ" ;
+        :hasBarcode            "078636660820" ;
+        :hasMusicBrainzID      "d6396c41-859e-4007-9918-3d6120e71c34" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Original Dixieland Jazz Band (1917–1936)" ;
+        :releasedInDate        "1992" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000002WTQ> , <https://musicbrainz.org/release/d6396c41-859e-4007-9918-3d6120e71c34> , <https://www.cduniverse.com/productinfo.asp?pid=1111630&style=music> , <https://www.amazon.com/gp/product/B000002WTQ> .

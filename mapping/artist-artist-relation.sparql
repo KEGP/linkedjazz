@@ -10,31 +10,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 PREFIX : <http://localhost:8080/ontology/kejazz/>
 PREFIX res: <http://localhost:8080/resource/kejazz/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 
 CONSTRUCT {
   [a :RelationBetweenArtists;
-      :involvesSourceArtist ?sourceArtistMyNS;
-      :involvesTargetArtist ?targetArtistMyNS;]
+     :involvesSourceArtist ?sourceArtistMyNS;
+     :involvesTargetArtist ?targetArtistMyNS;]
 
     :atTime [
       a dul:TimeInterval;
-      dul:hasIntervalStartDate ?startDate;
-      dul:hasIntervalEndDate ?endDate
+      :hasIntervalStartDate ?startDate;
+      :hasIntervalEndDate ?endDate
     ];
-    :satisfies ?aaRelationMyNS.
-
-  	?sourceArtistMyNS a :Artist.
-    #:hasMusicbrainzID ?sourceID. #already populated bt artist.sql
+  
+    dul:satisfies ?aaRelationMyNS.
+  	?sourceArtistMyNS a :Artist .
 
     ?targetArtistMyNS a :Artist;
-      :hasMusicbrainzID ?targetID.
-  ### populate here in case target artist is missing from artist files
+                      :hasMusicbrainzID ?targetID.
 
     ?aaRelationMyNS a :RelationBetweenArtistsType;
-    owl:sameAs ?musicbrainzRelationURL;
-    rdfs:label ?relationType;
-    :hasMusicBrainzID ?relationTypeID.
-
+                    owl:sameAs ?musicbrainzRelationURL;
+                    rdfs:label ?relationType;
+                    :hasMusicBrainzID ?relationTypeID.
 }WHERE {
   SERVICE<x-sparql-anything:>{
     # launch on musicbrainz/artist/

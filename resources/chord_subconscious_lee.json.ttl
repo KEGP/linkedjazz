@@ -9,51 +9,29 @@
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:       <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/6>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/4>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
+        rdfs:label       "Bar 4" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
                            rdfs:label       "F:minmaj7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -62,9 +40,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/5>
         rdf:type         :Bar ;
         rdfs:label       "Bar 5" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
@@ -73,42 +51,16 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/3> .
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA>
+        rdf:type            :Section ;
+        rdfs:label          "Head - AABA" ;
+        :isFirst            true ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/7>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/7>
         rdf:type         :Bar ;
         rdfs:label       "Bar 7" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
@@ -117,16 +69,279 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/8> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/8> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968>
+        rdf:type           :Sheet ;
+        rdfs:label         "Subconscious Lee sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/C_major> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Head - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Head - A chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Piano Solo - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/7> .
+
+<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
+        rdf:type          mto:TimeSignature ;
+        rdfs:label        "4/4" ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A>
         rdf:type            :Section ;
-        rdfs:label          "Head - AABA" ;
-        :isFirst            true ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA> .
+        rdfs:label          "Head - A" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/10>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA>
+        rdf:type            :Section ;
+        rdfs:label          "Trade-off - AABA" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/9> .
+
+<http://localhost:8080/resource/chord-annotations/Key/C_major>
+        rdf:type            :Key ;
+        rdf:label           "C major" ;
+        :hasRoot            mto:C ;
+        :ofHarmonicQuality  mto:MajorKey .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/10>
         rdf:type         :Bar ;
         rdfs:label       "Bar 10" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,7,b9,#11)> ;
@@ -135,16 +350,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/11> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/11> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA>
-        rdf:type            :Section ;
-        rdfs:label          "Trade-off - AABA" ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -153,9 +361,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -164,56 +372,18 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/7> .
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA>
+        rdf:type            :Section ;
+        rdfs:label          "Guitar Solo - AABA" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Head - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/8> .
-
-<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
-        rdf:type          mto:TimeSignature ;
-        rdfs:label        "4/4" ;
-        :hasLowerNumeral  "4" ;
-        :hasUpperNumeral  "4" .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/9> .
-
-<https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
@@ -222,113 +392,45 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
+                           rdfs:label       "F:minmaj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression>
         rdf:type    :Progression ;
-        rdfs:label  "Head - A chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/5> .
+        rdfs:label  "Trade-off - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Piano Solo - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/1> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA>
         rdf:type            :Section ;
-        rdfs:label          "Head - A" ;
+        rdfs:label          "Alto Sax Solo - AABA" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
         :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression> .
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
@@ -337,36 +439,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Alto Sax Solo - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/6>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/6>
         rdf:type         :Bar ;
         rdfs:label       "Bar 6" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
@@ -375,68 +450,20 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/7> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/7> .
 
-<http://localhost:8080/resource/chord-annotations/Key/C_major>
-        rdf:type            :Key ;
-        rdf:label           "C major" ;
-        :hasRoot            mto:C ;
-        :ofHarmonicQuality  mto:MajorKey .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/7>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA>
-        rdf:type            :Section ;
-        rdfs:label          "Guitar Solo - AABA" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
+        rdfs:label       "Bar 7" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
                            rdfs:label       "C:maj7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/8> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -445,20 +472,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/9>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/9>
         rdf:type         :Bar ;
         rdfs:label       "Bar 9" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,7,b9,#11)> ;
@@ -467,90 +483,12 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/10> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Trade-off - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/10> .
 
 <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978>
         rdf:type  kejazz:Instrument .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Guitar Solo - AABA chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/1> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
-                           rdfs:label       "C:maj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/5> .
-
-<http://localhost:8080/resource/chord-annotations/Pattern/AABA>
-        rdf:type    :Pattern ;
-        rdfs:label  "AABA" .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA>
-        rdf:type            :Section ;
-        rdfs:label          "Alto Sax Solo - AABA" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -559,12 +497,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/2> .
 
-<https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
@@ -573,74 +508,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,7,b9,#11)> ;
-                           rdfs:label       "C:(3,5,7,b9,#11)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA>
-        rdf:type            :Section ;
-        rdfs:label          "Piano Solo - AABA" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b>
-        rdf:type           :Sheet ;
-        rdfs:label         "Subconscious Lee sheet" ;
-        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/C_major> ;
-        :hasSection        <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Guitar_Solo_-_AABA> ;
-        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_A/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
-                           rdfs:label       "G:(3,5,b7,b9)" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84>
-        rdf:type    kejazz:Recording ;
-        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b> ;
-        :hasTuning  "444.67"^^xsd:double .
-
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
@@ -649,9 +519,13 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Piano_Solo_-_AABA/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/8>
+<http://localhost:8080/resource/chord-annotations/Pattern/AABA>
+        rdf:type    :Pattern ;
+        rdfs:label  "AABA" .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/8>
         rdf:type         :Bar ;
         rdfs:label       "Bar 8" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
@@ -660,15 +534,141 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Head_-_AABA/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/7>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:minmaj7> ;
-                           rdfs:label       "F:minmaj7" ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/b621c8c4-e496-4344-955b-c8a81e34fb0b/Section/Trade-off_-_AABA/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/8> .
+
+<https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Trade-off_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:(3,5,b7,b9)> ;
+                           rdfs:label       "G:(3,5,b7,b9)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:(3,5,7,b9,#11)> ;
+                           rdfs:label       "C:(3,5,7,b9,#11)" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA>
+        rdf:type            :Section ;
+        rdfs:label          "Piano Solo - AABA" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/AABA> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Piano_Solo_-_AABA/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Alto Sax Solo - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Alto_Sax_Solo_-_AABA/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968> ;
+        :hasTuning  "444.67"^^xsd:double .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_A/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Guitar Solo - AABA chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Guitar_Solo_-_AABA/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:maj7> ;
+                           rdfs:label       "C:maj7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/aa95b666-fbf4-4854-bcd5-b1e9900cba84/Sheet/66b0f751-29da-43c5-a99f-fe319ab46968/Section/Head_-_AABA/Progression/Bar/8> .

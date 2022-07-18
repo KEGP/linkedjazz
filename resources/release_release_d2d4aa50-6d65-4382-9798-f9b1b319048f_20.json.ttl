@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d2d4aa50-6d65-4382-9798-f9b1b319048f>
-        rdf:type             :Release ;
-        rdfs:label           "Hot Fives & Sevens, Volume 3" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasASIN             "B00001ZWLP" ;
-        :hasBarcode          "788065301422" ;
-        :hasMusicBrainzID    "d2d4aa50-6d65-4382-9798-f9b1b319048f" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Hot Fives & Sevens, Volume 3" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "1998" ;
-        owl:sameAs           <https://musicbrainz.org/release/d2d4aa50-6d65-4382-9798-f9b1b319048f> , <https://www.amazon.com/gp/product/B00001ZWLP> .
+        rdf:type               :Release ;
+        rdfs:label             "Hot Fives & Sevens, Volume 3" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN               "B00001ZWLP" ;
+        :hasBarcode            "788065301422" ;
+        :hasMusicBrainzID      "d2d4aa50-6d65-4382-9798-f9b1b319048f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Hot Fives & Sevens, Volume 3" ;
+        :releasedInDate        "1998" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://musicbrainz.org/release/d2d4aa50-6d65-4382-9798-f9b1b319048f> , <https://www.amazon.com/dp/B00001ZWLP> , <https://www.amazon.com/gp/product/B00001ZWLP> .

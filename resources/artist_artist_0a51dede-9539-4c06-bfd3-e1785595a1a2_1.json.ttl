@@ -1,16 +1,9 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
-
-<http://localhost:8080/resource/kejazz/Artist/4d618227-66bd-41cf-925a-b8b8464d90bc>
-        a                  :Band ;
-        rdfs:label         "Coleman Hawkins and His Orchestra" ;
-        :hasAlias          "Coleman Hawkins & His Orchestra" ;
-        :hasMusicBrainzID  "4d618227-66bd-41cf-925a-b8b8464d90bc" ;
-        :hasName           "Coleman Hawkins and His Orchestra" ;
-        owl:sameAs         <https://www.discogs.com/artist/373805> , <https://musicbrainz.org/artist/4d618227-66bd-41cf-925a-b8b8464d90bc> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/f49aceaa-1ecc-34c6-bd3b-1ea777d094a3>
-        rdf:type            :Release ;
-        rdfs:label          "Metroland" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5> ;
-        :hasASIN            "B000026OZ0" ;
-        :hasBarcode         "731453691223" ;
-        :hasMusicBrainzID   "f49aceaa-1ecc-34c6-bd3b-1ea777d094a3" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Metroland" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "1998" ;
-        owl:sameAs          <https://musicbrainz.org/release/f49aceaa-1ecc-34c6-bd3b-1ea777d094a3> , <https://www.amazon.co.uk/gp/product/B000026OZ0> .
+        rdf:type               :Release ;
+        rdfs:label             "Metroland" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5> ;
+        :hasASIN               "B000026OZ0" ;
+        :hasBarcode            "731453691223" ;
+        :hasMusicBrainzID      "f49aceaa-1ecc-34c6-bd3b-1ea777d094a3" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Metroland" ;
+        :releasedInDate        "1998" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000026OZ0> , <https://musicbrainz.org/release/f49aceaa-1ecc-34c6-bd3b-1ea777d094a3> , <https://www.amazon.co.uk/gp/product/B000026OZ0> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

@@ -10,6 +10,12 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
 <http://localhost:8080/resource/kejazz/Artist/a86ce05d-ba80-4e65-8091-12835bad02d3>
         rdfs:label         "Mercer Ellington" ;
         :hasMusicBrainzID  "a86ce05d-ba80-4e65-8091-12835bad02d3" ;
@@ -23,9 +29,3 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a86ce05d-ba80-4e65-8091-12835bad02d3> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .

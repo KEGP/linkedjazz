@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,11 +9,11 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/4a90b0ab-34f0-489e-95f8-abc46347e66b>
-        rdf:type           :Release ;
-        rdfs:label         "Jazz History, Volume 2: Modern Jazz 1956-1965" ;
-        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasMusicBrainzID  "4a90b0ab-34f0-489e-95f8-abc46347e66b" ;
-        :hasStatus         "Official" ;
-        :hasTitle          "Jazz History, Volume 2: Modern Jazz 1956-1965" ;
-        :releasedInDate    "2003" ;
-        owl:sameAs         <https://musicbrainz.org/release/4a90b0ab-34f0-489e-95f8-abc46347e66b> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz History, Volume 2: Modern Jazz 1956-1965" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID      "4a90b0ab-34f0-489e-95f8-abc46347e66b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz History, Volume 2: Modern Jazz 1956-1965" ;
+        :releasedInDate        "2003" ;
+        owl:sameAs             <https://musicbrainz.org/release/4a90b0ab-34f0-489e-95f8-abc46347e66b> .

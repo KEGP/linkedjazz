@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,12 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/8c1db79f-518d-46c1-9804-b3bd93601959>
-        rdf:type             :Release ;
-        rdfs:label           "Plus Four + At Basin Street" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> , <http://localhost:8080/resource/kejazz/Artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> ;
-        :hasBarcode          "8436539312109" ;
-        :hasMusicBrainzID    "8c1db79f-518d-46c1-9804-b3bd93601959" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Plus Four + At Basin Street" ;
-        :releasedInDate      "2014" ;
-        owl:sameAs           <https://www.discogs.com/release/6482065> , <https://www.allmusic.com/album/release/mr0004227671> , <https://musicbrainz.org/release/8c1db79f-518d-46c1-9804-b3bd93601959> .
+        rdf:type               :Release ;
+        rdfs:label             "Plus Four + At Basin Street" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> , <http://localhost:8080/resource/kejazz/Artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> ;
+        :hasBarcode            "8436539312109" ;
+        :hasMusicBrainzID      "8c1db79f-518d-46c1-9804-b3bd93601959" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Plus Four + At Basin Street" ;
+        :releasedInDate        "2014" ;
+        owl:sameAs             <https://www.discogs.com/release/6482065> , <https://www.allmusic.com/album/release/mr0004227671> , <https://musicbrainz.org/release/8c1db79f-518d-46c1-9804-b3bd93601959> .

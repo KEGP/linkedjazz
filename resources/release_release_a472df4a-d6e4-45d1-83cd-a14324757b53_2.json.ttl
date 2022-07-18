@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/a472df4a-d6e4-45d1-83cd-a14324757b53>
-        rdf:type             :Release ;
-        rdfs:label           "The Best of Jelly Roll Morton" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
-        :hasBarcode          "3540131580127" ;
-        :hasMusicBrainzID    "a472df4a-d6e4-45d1-83cd-a14324757b53" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Best of Jelly Roll Morton" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "1993" ;
-        owl:sameAs           <https://www.discogs.com/release/5798999> , <https://musicbrainz.org/release/a472df4a-d6e4-45d1-83cd-a14324757b53> .
+        rdf:type               :Release ;
+        rdfs:label             "The Best of Jelly Roll Morton" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        :hasBarcode            "3540131580127" ;
+        :hasMusicBrainzID      "a472df4a-d6e4-45d1-83cd-a14324757b53" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Best of Jelly Roll Morton" ;
+        :releasedInDate        "1993" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.discogs.com/release/5798999> , <https://musicbrainz.org/release/a472df4a-d6e4-45d1-83cd-a14324757b53> .

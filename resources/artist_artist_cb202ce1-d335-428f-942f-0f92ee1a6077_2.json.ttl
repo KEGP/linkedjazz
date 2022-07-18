@@ -1,26 +1,9 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
-
-<http://localhost:8080/resource/kejazz/Artist/be47775f-57c4-44b2-bbbd-7dd62e245623>
-        a                   :Band ;
-        rdfs:label          "Jazz at the Philharmonic All-Stars" ;
-        :hasActivityPeriod  [ a                      :TimeInterval ;
-                              :hasIntervalStartDate  "1944-07"
-                            ] ;
-        :hasAlias           "JATP" , "Jazz at The Philharmonic" ;
-        :hasBeginArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/1f40c6e1-47ba-4e35-996f-fe6ee5840e62> ;
-        :hasMusicBrainzID   "be47775f-57c4-44b2-bbbd-7dd62e245623" ;
-        :hasName            "Jazz at the Philharmonic All-Stars" ;
-        owl:sameAs          <https://musicbrainz.org/artist/be47775f-57c4-44b2-bbbd-7dd62e245623> , <https://www.discogs.com/artist/311723> , <https://rateyourmusic.com/artist/jazz_at_the_philharmonic> .
-
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/1f40c6e1-47ba-4e35-996f-fe6ee5840e62>
-        a            :ArtistActivityArea ;
-        rdfs:label   "Los Angeles" ;
-        schema:name  "Los Angeles" ;
-        owl:sameAs   <https://musicbrainz.org/area/1f40c6e1-47ba-4e35-996f-fe6ee5840e62> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .

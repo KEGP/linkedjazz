@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,12 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/e07496cf-b5a6-4f30-bd17-aa2bbb348872>
-        rdf:type           :Release ;
-        rdfs:label         "The History of Jazz: Dixieland to Swing" ;
-        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN           "B000005S8D" ;
-        :hasMusicBrainzID  "e07496cf-b5a6-4f30-bd17-aa2bbb348872" ;
-        :hasStatus         "Official" ;
-        :hasTitle          "The History of Jazz: Dixieland to Swing" ;
-        :releasedInDate    "1997-10-08" ;
-        owl:sameAs         <https://www.discogs.com/release/369851> , <https://musicbrainz.org/release/e07496cf-b5a6-4f30-bd17-aa2bbb348872> , <https://www.amazon.com/gp/product/B000005S8D> .
+        rdf:type               :Release ;
+        rdfs:label             "The History of Jazz: Dixieland to Swing" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000005S8D" ;
+        :hasMusicBrainzID      "e07496cf-b5a6-4f30-bd17-aa2bbb348872" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The History of Jazz: Dixieland to Swing" ;
+        :releasedInDate        "1997-10-08" ;
+        owl:sameAs             <https://www.discogs.com/release/369851> , <https://musicbrainz.org/release/e07496cf-b5a6-4f30-bd17-aa2bbb348872> , <https://www.amazon.com/gp/product/B000005S8D> , <https://www.amazon.com/dp/B000005S8D> .

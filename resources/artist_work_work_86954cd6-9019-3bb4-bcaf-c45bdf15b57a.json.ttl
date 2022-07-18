@@ -10,20 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/30305a68-ba45-42b6-8f25-f0917b4fc06d> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/15e3114e-19f8-4222-a585-0229920db798> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/15e3114e-19f8-4222-a585-0229920db798>
         rdfs:label         "Fred E. Ahlert" ;
         :hasMusicBrainzID  "15e3114e-19f8-4222-a585-0229920db798" ;
@@ -38,6 +24,13 @@
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> , <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/30305a68-ba45-42b6-8f25-f0917b4fc06d> .
 
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/30305a68-ba45-42b6-8f25-f0917b4fc06d> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
         rdfs:label         "composer" ;
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
@@ -49,6 +42,13 @@
   :forWork         <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/30305a68-ba45-42b6-8f25-f0917b4fc06d> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/86954cd6-9019-3bb4-bcaf-c45bdf15b57a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/15e3114e-19f8-4222-a585-0229920db798> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>

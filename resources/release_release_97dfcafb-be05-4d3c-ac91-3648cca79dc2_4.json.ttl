@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/97dfcafb-be05-4d3c-ac91-3648cca79dc2>
-        rdf:type            :Release ;
-        rdfs:label          "Picasso" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
-        :hasBarcode         "8004883531172" ;
-        :hasMusicBrainzID   "97dfcafb-be05-4d3c-ac91-3648cca79dc2" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Picasso" ;
-        :releasedInCountry  "XE" ;
-        :releasedInDate     "1992" ;
-        owl:sameAs          <https://musicbrainz.org/release/97dfcafb-be05-4d3c-ac91-3648cca79dc2> , <https://www.discogs.com/release/2182954> .
+        rdf:type               :Release ;
+        rdfs:label             "Picasso" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+        :hasBarcode            "8004883531172" ;
+        :hasMusicBrainzID      "97dfcafb-be05-4d3c-ac91-3648cca79dc2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Picasso" ;
+        :releasedInDate        "1992" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://musicbrainz.org/release/97dfcafb-be05-4d3c-ac91-3648cca79dc2> , <https://www.discogs.com/release/2182954> .
+
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .

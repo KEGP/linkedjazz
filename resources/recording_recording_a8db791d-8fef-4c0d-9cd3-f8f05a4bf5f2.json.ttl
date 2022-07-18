@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/a8db791d-8fef-4c0d-9cd3-f8f05a4bf5f2>
         rdf:type              :Recording ;
@@ -16,13 +15,11 @@
         :hasAudioTrackLength  "251000" ;
         :hasISRC              "USBJN0920087" ;
         :hasMusicBrainzID     "a8db791d-8fef-4c0d-9cd3-f8f05a4bf5f2" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1966-12-20" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1966-12-20"
-                              ] ;
         :hasTitle             "Isfahan" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/f1c9f9ca-d2a3-44a7-b57d-b3111a8d057f> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1966-12-20" ;
+                                :hasIntervalStartDate  "1966-12-20"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/f1c9f9ca-d2a3-44a7-b57d-b3111a8d057f> ;
         owl:sameAs            <https://musicbrainz.org/recording/a8db791d-8fef-4c0d-9cd3-f8f05a4bf5f2> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/39e42e08-b7b7-42fd-8f6a-e7539f6e2ecc>
-        rdf:type             :Release ;
-        rdfs:label           "Giant Steps" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
-        :hasBarcode          "075678133725" ;
-        :hasMusicBrainzID    "39e42e08-b7b7-42fd-8f6a-e7539f6e2ecc" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Giant Steps" ;
-        :releasedInCountry   "XE" ;
-        :releasedInDate      "1990" ;
-        owl:sameAs           <https://musicbrainz.org/release/39e42e08-b7b7-42fd-8f6a-e7539f6e2ecc> .
+        rdf:type               :Release ;
+        rdfs:label             "Giant Steps" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasBarcode            "075678133725" ;
+        :hasMusicBrainzID      "39e42e08-b7b7-42fd-8f6a-e7539f6e2ecc" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Giant Steps" ;
+        :releasedInDate        "1990" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://musicbrainz.org/release/39e42e08-b7b7-42fd-8f6a-e7539f6e2ecc> .

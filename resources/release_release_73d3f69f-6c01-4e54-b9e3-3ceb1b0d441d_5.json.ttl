@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/73d3f69f-6c01-4e54-b9e3-3ceb1b0d441d>
-        rdf:type             :Release ;
-        rdfs:label           "BD Jazz, Volume 3: Sidney Bechet / Julie Faulques" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
-        :hasASIN             "2849070033" ;
-        :hasBarcode          "9782849070031" ;
-        :hasMusicBrainzID    "73d3f69f-6c01-4e54-b9e3-3ceb1b0d441d" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "BD Jazz, Volume 3: Sidney Bechet / Julie Faulques" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "2003-04" ;
-        owl:sameAs           <https://musicbrainz.org/release/73d3f69f-6c01-4e54-b9e3-3ceb1b0d441d> , <https://www.amazon.fr/gp/product/2849070033> .
+        rdf:type               :Release ;
+        rdfs:label             "BD Jazz, Volume 3: Sidney Bechet / Julie Faulques" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :hasASIN               "2849070033" ;
+        :hasBarcode            "9782849070031" ;
+        :hasMusicBrainzID      "73d3f69f-6c01-4e54-b9e3-3ceb1b0d441d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "BD Jazz, Volume 3: Sidney Bechet / Julie Faulques" ;
+        :releasedInDate        "2003-04" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.amazon.com/dp/2849070033> , <https://musicbrainz.org/release/73d3f69f-6c01-4e54-b9e3-3ceb1b0d441d> , <https://www.amazon.fr/gp/product/2849070033> .

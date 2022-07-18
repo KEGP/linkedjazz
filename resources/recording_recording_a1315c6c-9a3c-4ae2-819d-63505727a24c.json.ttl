@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/a1315c6c-9a3c-4ae2-819d-63505727a24c>
         rdf:type              :Recording ;
@@ -16,19 +15,159 @@
         :hasAudioTrackLength  "175640" ;
         :hasISRC              "USBB10000282" , "USBJN0920018" ;
         :hasMusicBrainzID     "a1315c6c-9a3c-4ae2-819d-63505727a24c" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1932-09-15" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1932-09-15"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1932-09-15" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1932-09-15"
-                              ] ;
         :hasTitle             "Maple Leaf Rag" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/a28705df-3bfa-3888-b3e9-cc707bda74dc> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/2faf6f08-01eb-4c95-8a45-62c332139d77> , <http://localhost:8080/resource/kejazz/Release/0671ecb8-e8a5-4ee2-a933-f73fc1c93a4a> , <http://localhost:8080/resource/kejazz/Release/ba4befe1-c5e0-4b68-a308-ca553ebdf5a5> , <http://localhost:8080/resource/kejazz/Release/1d7abf66-8579-49cd-b454-00aaad34b153> , <http://localhost:8080/resource/kejazz/Release/d35ff2f5-cf28-43b8-8275-9c069d2ef27d> , <http://localhost:8080/resource/kejazz/Release/261a409c-7d3c-45e9-904c-067e0960f514> , <http://localhost:8080/resource/kejazz/Release/a99af9e8-a165-4420-9c04-e5cd828e4bcc> , <http://localhost:8080/resource/kejazz/Release/a13a970e-e51f-4f7d-8d7c-757ce782f420> , <http://localhost:8080/resource/kejazz/Release/02d19dd7-45db-44bc-9eee-235b75db72a1> , <http://localhost:8080/resource/kejazz/Release/19af4fa3-ce3d-48f1-b81f-fd12b7405f1f> , <http://localhost:8080/resource/kejazz/Release/69b696d5-b85e-4ac5-8230-e12b79a77f72> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/f2ec369f-ee55-464f-b5ef-f8abdb69cce8> , <http://localhost:8080/resource/kejazz/Release/b476852c-a999-415a-82a8-4df34747e041> , <http://localhost:8080/resource/kejazz/Release/eea9f32b-7d78-4565-aea2-10855472b998> , <http://localhost:8080/resource/kejazz/Release/6588e8dc-7213-4c92-8d7e-2cdf7715ccb4> , <http://localhost:8080/resource/kejazz/Release/3b698204-6d4b-4dd1-b0a7-1cd0c0b1f08f> , <http://localhost:8080/resource/kejazz/Release/24e0963d-0714-4bca-91b1-8b1aa4946ece> , <http://localhost:8080/resource/kejazz/Release/dc928be6-a7e9-4390-b2d9-e20f1deff60f> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1932-09-15" ;
+                                :hasIntervalStartDate  "1932-09-15"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/a28705df-3bfa-3888-b3e9-cc707bda74dc> ;
         owl:sameAs            <https://musicbrainz.org/recording/a1315c6c-9a3c-4ae2-819d-63505727a24c> .

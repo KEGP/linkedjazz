@@ -20,8 +20,15 @@
         :hasName           "drums (drum set)" ;
         owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
 
-<http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae>
-        owl:sameAs  <https://musicbrainz.org/recording/02ffe965-bd93-45bd-ae9f-5671261871ae> .
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-01-28" ;
+                     dul:hasIntervalStartDate  "1960-01-26"
+                   ]
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14>
         rdfs:label         "Wes Montgomery" ;
@@ -29,7 +36,10 @@
         :hasName           "Wes Montgomery" ;
         owl:sameAs         <https://musicbrainz.org/artist/663f8232-8c46-4851-803f-a91d31593b14> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+<http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae>
+        owl:sameAs  <https://musicbrainz.org/recording/02ffe965-bd93-45bd-ae9f-5671261871ae> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
@@ -45,6 +55,26 @@
         :hasName           "Albert “Tootie” Heath" ;
         owl:sameAs         <https://musicbrainz.org/artist/93bedd5b-d3b6-4d3c-9b07-c74989e410dc> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/93bedd5b-d3b6-4d3c-9b07-c74989e410dc> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-01-28" ;
+                     dul:hasIntervalStartDate  "1960-01-26"
+                   ]
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c39a1eeb-e646-43e9-b984-4ffdc92b0241> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1960-01-28" ;
+                     dul:hasIntervalStartDate  "1960-01-26"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/c39a1eeb-e646-43e9-b984-4ffdc92b0241>
         rdfs:label         "Tommy Flanagan" ;
         :hasMusicBrainzID  "c39a1eeb-e646-43e9-b984-4ffdc92b0241" ;
@@ -57,16 +87,6 @@
         :hasName           "piano" ;
         owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c39a1eeb-e646-43e9-b984-4ffdc92b0241> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1960-01-28" ;
-                     dul:hasIntervalStartDate  "1960-01-26"
-                   ]
-] .
-
 <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978>
         rdfs:label         "guitar" ;
         :hasMusicBrainzID  "63021302-86cd-4aee-80df-2270d54f4978" ;
@@ -78,23 +98,3 @@
         :hasMusicBrainzID  "534362cd-66ed-45a8-9cba-b847dbf75b6f" ;
         :hasName           "Percy Heath" ;
         owl:sameAs         <https://musicbrainz.org/artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1960-01-28" ;
-                     dul:hasIntervalStartDate  "1960-01-26"
-                   ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/02ffe965-bd93-45bd-ae9f-5671261871ae> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/93bedd5b-d3b6-4d3c-9b07-c74989e410dc> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1960-01-28" ;
-                     dul:hasIntervalStartDate  "1960-01-26"
-                   ]
-] .

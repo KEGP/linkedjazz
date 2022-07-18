@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/37dae923-ad17-4b34-b09c-0b409dde8302>
         rdf:type              :Recording ;
@@ -15,13 +14,27 @@
         :creditedTo           <http://localhost:8080/resource/kejazz/Artist/265af63b-5913-42ea-80be-850993f21859> ;
         :hasAudioTrackLength  "196560" ;
         :hasMusicBrainzID     "37dae923-ad17-4b34-b09c-0b409dde8302" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1939-09-05" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1939-09-05"
-                              ] ;
         :hasTitle             "Lester Leaps In" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/755f81d2-007a-49cf-9e54-cdc262bbd884> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> , <http://localhost:8080/resource/kejazz/Release/6ef4a4d8-8f9b-440c-9960-3093cfcadf50> , <http://localhost:8080/resource/kejazz/Release/ba8457b8-24fe-428f-a65c-18b26a49bcab> , <http://localhost:8080/resource/kejazz/Release/e5967932-7e67-499f-bb6f-b161f5fcda14> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-09-05" ;
+                                :hasIntervalStartDate  "1939-09-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-09-05" ;
+                                :hasIntervalStartDate  "1939-09-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-09-05" ;
+                                :hasIntervalStartDate  "1939-09-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-09-05" ;
+                                :hasIntervalStartDate  "1939-09-05"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1939-09-05" ;
+                                :hasIntervalStartDate  "1939-09-05"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/755f81d2-007a-49cf-9e54-cdc262bbd884> ;
         owl:sameAs            <https://musicbrainz.org/recording/37dae923-ad17-4b34-b09c-0b409dde8302> .

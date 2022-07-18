@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/3c74294a-cfd1-4ba2-9e12-b7f3986fead1>
-        rdf:type             :Release ;
-        rdfs:label           "Ken Burns Jazz: Duke Ellington" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
-        :hasASIN             "B000055WWN" ;
-        :hasBarcode          "9399700084641" ;
-        :hasMusicBrainzID    "3c74294a-cfd1-4ba2-9e12-b7f3986fead1" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Ken Burns Jazz: Duke Ellington" ;
-        :releasedInCountry   "AU" ;
-        :releasedInDate      "2000" ;
-        owl:sameAs           <https://www.amazon.co.uk/gp/product/B000055WWN> , <https://musicbrainz.org/release/3c74294a-cfd1-4ba2-9e12-b7f3986fead1> .
+        rdf:type               :Release ;
+        rdfs:label             "Ken Burns Jazz: Duke Ellington" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasASIN               "B000055WWN" ;
+        :hasBarcode            "9399700084641" ;
+        :hasMusicBrainzID      "3c74294a-cfd1-4ba2-9e12-b7f3986fead1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ken Burns Jazz: Duke Ellington" ;
+        :releasedInDate        "2000" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/AU> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000055WWN> , <https://www.amazon.co.uk/gp/product/B000055WWN> , <https://musicbrainz.org/release/3c74294a-cfd1-4ba2-9e12-b7f3986fead1> .
+
+<http://localhost:8080/resource/kejazz/Place/AU>
+        rdf:type  dul:Place .

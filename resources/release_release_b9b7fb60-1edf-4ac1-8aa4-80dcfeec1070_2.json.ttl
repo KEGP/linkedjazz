@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/b9b7fb60-1edf-4ac1-8aa4-80dcfeec1070>
-        rdf:type            :Release ;
-        rdfs:label          "The Ultimate Jazz Archive, Set 38: Vocalists" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/fb1080d4-aaf7-430e-b588-6a6ce79e2eb3> , <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> , <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> , <http://localhost:8080/resource/kejazz/Artist/e079ff65-ad41-48e9-b6ce-8cdb0db64802> ;
-        :hasASIN            "B000B7I3W4" ;
-        :hasBarcode         "4011222228000" ;
-        :hasMusicBrainzID   "b9b7fb60-1edf-4ac1-8aa4-80dcfeec1070" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Ultimate Jazz Archive, Set 38: Vocalists" ;
-        :releasedInCountry  "DE" ;
-        :releasedInDate     "2005-08-29" ;
-        owl:sameAs          <https://www.amazon.de/gp/product/B000B7I3W4> , <https://musicbrainz.org/release/b9b7fb60-1edf-4ac1-8aa4-80dcfeec1070> , <https://www.discogs.com/release/533649> .
+        rdf:type               :Release ;
+        rdfs:label             "The Ultimate Jazz Archive, Set 38: Vocalists" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/fb1080d4-aaf7-430e-b588-6a6ce79e2eb3> , <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> , <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> , <http://localhost:8080/resource/kejazz/Artist/e079ff65-ad41-48e9-b6ce-8cdb0db64802> ;
+        :hasASIN               "B000B7I3W4" ;
+        :hasBarcode            "4011222228000" ;
+        :hasMusicBrainzID      "b9b7fb60-1edf-4ac1-8aa4-80dcfeec1070" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Ultimate Jazz Archive, Set 38: Vocalists" ;
+        :releasedInDate        "2005-08-29" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://www.amazon.de/gp/product/B000B7I3W4> , <https://www.amazon.com/dp/B000B7I3W4> , <https://musicbrainz.org/release/b9b7fb60-1edf-4ac1-8aa4-80dcfeec1070> , <https://www.discogs.com/release/533649> .
+
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .

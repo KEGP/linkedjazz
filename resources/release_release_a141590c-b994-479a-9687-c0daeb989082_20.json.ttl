@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/a141590c-b994-479a-9687-c0daeb989082>
-        rdf:type            :Release ;
-        rdfs:label          "BD Jazz: Thelonious Monk" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
-        :hasBarcode         "0826596070216" ;
-        :hasMusicBrainzID   "a141590c-b994-479a-9687-c0daeb989082" ;
-        :hasTitle           "BD Jazz: Thelonious Monk" ;
-        :releasedInCountry  "FR" ;
-        :releasedInDate     "2004" ;
-        owl:sameAs          <https://musicbrainz.org/release/a141590c-b994-479a-9687-c0daeb989082> .
+        rdf:type           :Release ;
+        rdfs:label         "BD Jazz: Thelonious Monk" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasBarcode        "0826596070216" ;
+        :hasMusicBrainzID  "a141590c-b994-479a-9687-c0daeb989082" ;
+        :hasTitle          "BD Jazz: Thelonious Monk" ;
+        :releasedInDate    "2004" ;
+        :releasedInPlace   <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs         <https://musicbrainz.org/release/a141590c-b994-479a-9687-c0daeb989082> .

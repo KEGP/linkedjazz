@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/0de2c94c-7e31-4df6-9911-0ae4e4c6cb73>
-        rdf:type            :Release ;
-        rdfs:label          "Intégrale, Vol. 2 : “I Saw Stars” 1934‐1938" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
-        :hasASIN            "B000027Y4U" ;
-        :hasBarcode         "3448960230223" ;
-        :hasMusicBrainzID   "0de2c94c-7e31-4df6-9911-0ae4e4c6cb73" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Intégrale, Vol. 2 : “I Saw Stars” 1934‐1938" ;
-        :releasedInCountry  "FR" ;
-        :releasedInDate     "1996" ;
-        owl:sameAs          <https://musicbrainz.org/release/0de2c94c-7e31-4df6-9911-0ae4e4c6cb73> , <https://www.amazon.fr/gp/product/B000027Y4U> , <https://www.discogs.com/release/1722960> , <https://www.fremeaux.com/index.php?page=shop.product_details&flypage=shop.flypage&product_id=296&category_id=57&manufacturer_id=0&option=com_virtuemart&Itemid=321> .
+        rdf:type               :Release ;
+        rdfs:label             "Intégrale, Vol. 2 : “I Saw Stars” 1934‐1938" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN               "B000027Y4U" ;
+        :hasBarcode            "3448960230223" ;
+        :hasMusicBrainzID      "0de2c94c-7e31-4df6-9911-0ae4e4c6cb73" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Intégrale, Vol. 2 : “I Saw Stars” 1934‐1938" ;
+        :releasedInDate        "1996" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/0de2c94c-7e31-4df6-9911-0ae4e4c6cb73> , <https://www.amazon.fr/gp/product/B000027Y4U> , <https://www.discogs.com/release/1722960> , <https://www.amazon.com/dp/B000027Y4U> , <https://www.fremeaux.com/index.php?page=shop.product_details&flypage=shop.flypage&product_id=296&category_id=57&manufacturer_id=0&option=com_virtuemart&Itemid=321> .

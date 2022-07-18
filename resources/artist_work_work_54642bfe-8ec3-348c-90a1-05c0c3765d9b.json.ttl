@@ -16,6 +16,13 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
+<http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317>
+        rdfs:label         "Count Basie" ;
+        :hasMusicBrainzID  "0dbd6300-efdc-420b-857e-895e18fad317" ;
+        :hasName           "Count Basie" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/0dbd6300-efdc-420b-857e-895e18fad317> .
+
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1937" ;
@@ -25,10 +32,3 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317>
-        rdfs:label         "Count Basie" ;
-        :hasMusicBrainzID  "0dbd6300-efdc-420b-857e-895e18fad317" ;
-        :hasName           "Count Basie" ;
-        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
-        owl:sameAs         <https://musicbrainz.org/artist/0dbd6300-efdc-420b-857e-895e18fad317> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/02d19dd7-45db-44bc-9eee-235b75db72a1>
-        rdf:type            :Release ;
-        rdfs:label          "When the Sun Sets Down South" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
-        :hasBarcode         "4029758936122" ;
-        :hasMusicBrainzID   "02d19dd7-45db-44bc-9eee-235b75db72a1" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "When the Sun Sets Down South" ;
-        :releasedInCountry  "DE" ;
-        owl:sameAs          <https://musicbrainz.org/release/02d19dd7-45db-44bc-9eee-235b75db72a1> .
+        rdf:type               :Release ;
+        rdfs:label             "When the Sun Sets Down South" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :hasBarcode            "4029758936122" ;
+        :hasMusicBrainzID      "02d19dd7-45db-44bc-9eee-235b75db72a1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "When the Sun Sets Down South" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://musicbrainz.org/release/02d19dd7-45db-44bc-9eee-235b75db72a1> .

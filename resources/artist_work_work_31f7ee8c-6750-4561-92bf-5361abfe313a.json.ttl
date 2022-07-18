@@ -10,12 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/31f7ee8c-6750-4561-92bf-5361abfe313a> ;
@@ -29,3 +23,9 @@
         :hasName           "Sonny Rollins" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/2ef70cc2-9f31-435d-8e2e-6df08608469e>
-        rdf:type             :Release ;
-        rdfs:label           "New Orleans" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a> ;
-        :hasBarcode          "731383562723" ;
-        :hasMusicBrainzID    "2ef70cc2-9f31-435d-8e2e-6df08608469e" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "New Orleans" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1992-09-29" ;
-        owl:sameAs           <https://www.discogs.com/release/11354053> , <https://musicbrainz.org/release/2ef70cc2-9f31-435d-8e2e-6df08608469e> .
+        rdf:type               :Release ;
+        rdfs:label             "New Orleans" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a> ;
+        :hasBarcode            "731383562723" ;
+        :hasMusicBrainzID      "2ef70cc2-9f31-435d-8e2e-6df08608469e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "New Orleans" ;
+        :releasedInDate        "1992-09-29" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.discogs.com/release/11354053> , <https://musicbrainz.org/release/2ef70cc2-9f31-435d-8e2e-6df08608469e> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

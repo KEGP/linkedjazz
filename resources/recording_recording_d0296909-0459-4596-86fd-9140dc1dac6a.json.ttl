@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a>
         rdf:type              :Recording ;
@@ -16,31 +15,87 @@
         :hasAudioTrackLength  "192733" ;
         :hasISRC              "USBJN0920053" ;
         :hasMusicBrainzID     "d0296909-0459-4596-86fd-9140dc1dac6a" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1952-10-16" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1952-10-15"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1952-10-16" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1952-10-15"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1952-10-16" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1952-10-15"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1952-10-16" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1952-10-15"
-                              ] ;
         :hasTitle             "Walkin' Shoes" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/d0887fa2-320d-44f8-aa9a-d6e07e638b4d> , <http://localhost:8080/resource/kejazz/Work/4ca6cedc-6a1e-4d6d-bd45-2b0d48a1d21e> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/7a90e7c4-f9f9-4187-8266-c12ef7c87d2e> , <http://localhost:8080/resource/kejazz/Release/3469ab53-28c0-49cd-bc52-1ef8f427f8c6> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/726166a8-4d79-4ee8-b0d7-8dcd5a35867d> , <http://localhost:8080/resource/kejazz/Release/026943cc-72a5-43d8-b373-dec4bf37adfa> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1952-10-16" ;
+                                :hasIntervalStartDate  "1952-10-15"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/d0887fa2-320d-44f8-aa9a-d6e07e638b4d> , <http://localhost:8080/resource/kejazz/Work/4ca6cedc-6a1e-4d6d-bd45-2b0d48a1d21e> ;
         owl:sameAs            <https://musicbrainz.org/recording/d0296909-0459-4596-86fd-9140dc1dac6a> .

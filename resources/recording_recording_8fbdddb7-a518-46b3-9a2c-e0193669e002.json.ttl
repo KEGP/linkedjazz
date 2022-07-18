@@ -1,34 +1,221 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/4a4d92b7-7b0b-4f3c-9ab2-771889c5aa8e>
         rdf:type              :Recording ;
         rdfs:label            "Hotter Than That" ;
         :creditedTo           <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
         :hasAudioTrackLength  "183000" ;
-        :hasISRC              "USSM10003868" , "DEU240800886" ;
+        :hasISRC              "DEU240800886" , "USSM10003868" ;
         :hasMusicBrainzID     "4a4d92b7-7b0b-4f3c-9ab2-771889c5aa8e" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1927-12-13" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1927-12-13"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1927-12-13" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1927-12-13"
-                              ] ;
         :hasTitle             "Hotter Than That" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/2e05ed29-b112-45d9-bad0-afee117b9817> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/1a0edc9a-e79f-4531-a99b-621f53d60d82> , <http://localhost:8080/resource/kejazz/Release/85acac08-ae7a-4046-aa3a-a0dbd87b7152> , <http://localhost:8080/resource/kejazz/Release/61384ea0-8ea4-4055-b489-3bc4578d81dd> , <http://localhost:8080/resource/kejazz/Release/0671ecb8-e8a5-4ee2-a933-f73fc1c93a4a> , <http://localhost:8080/resource/kejazz/Release/1bdbfd9c-5d06-4663-9419-8f47cb9daad7> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/edc57142-2da0-43d6-b956-62837063be84> , <http://localhost:8080/resource/kejazz/Release/a1578342-e118-4101-b9b7-8cc2b34da091> , <http://localhost:8080/resource/kejazz/Release/a09e0b6b-4700-4746-a61d-b45760471c60> , <http://localhost:8080/resource/kejazz/Release/0b255446-20d8-3a8a-86ac-e8df5678b72e> , <http://localhost:8080/resource/kejazz/Release/850a6189-0b80-4749-a230-db11c2270f57> , <http://localhost:8080/resource/kejazz/Release/ef49a738-323e-410d-9c4b-32f326e09661> , <http://localhost:8080/resource/kejazz/Release/00210ce8-2f59-4a9e-ab97-30c7334e67e7> , <http://localhost:8080/resource/kejazz/Release/f9408104-0cf7-43f0-87a5-b7dbf16b7e00> , <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> , <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/cb32e157-8577-442a-9741-0c105f33d30c> , <http://localhost:8080/resource/kejazz/Release/a958b769-8fab-4645-8e2e-ebadfa5c7a12> , <http://localhost:8080/resource/kejazz/Release/9c4a0c32-31ec-4c0c-bd05-85e53c1d5344> , <http://localhost:8080/resource/kejazz/Release/f9071962-73e7-4662-9a32-3a36d2fb454c> , <http://localhost:8080/resource/kejazz/Release/2b591282-848d-4564-8772-8d6820e9b6da> , <http://localhost:8080/resource/kejazz/Release/1d9a41a1-a7c3-447b-9932-cdf0d5cac253> , <http://localhost:8080/resource/kejazz/Release/564bc94a-3ba1-42cc-8054-d32ae6139ce0> , <http://localhost:8080/resource/kejazz/Release/3fb232f2-8443-4aee-afde-01df326a53dc> , <http://localhost:8080/resource/kejazz/Release/5510604f-79ee-4c6b-a794-5f650dddac20> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1927-12-13" ;
+                                :hasIntervalStartDate  "1927-12-13"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/2e05ed29-b112-45d9-bad0-afee117b9817> ;
         owl:sameAs            <https://musicbrainz.org/recording/4a4d92b7-7b0b-4f3c-9ab2-771889c5aa8e> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,13 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/85bdc09e-d145-4508-928b-8981f589d2bb>
-        rdf:type           :Release ;
-        rdfs:label         "Satchmo's Greatest" ;
-        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasASIN           "B000006LKF" ;
-        :hasBarcode        "082333100824" ;
-        :hasMusicBrainzID  "85bdc09e-d145-4508-928b-8981f589d2bb" ;
-        :hasStatus         "Official" ;
-        :hasTitle          "Satchmo's Greatest" ;
-        :releasedInDate    "1992-08-15" ;
-        owl:sameAs         <https://www.amazon.de/gp/product/B000006LKF> , <https://musicbrainz.org/release/85bdc09e-d145-4508-928b-8981f589d2bb> .
+        rdf:type               :Release ;
+        rdfs:label             "Satchmo's Greatest" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN               "B000006LKF" ;
+        :hasBarcode            "082333100824" ;
+        :hasMusicBrainzID      "85bdc09e-d145-4508-928b-8981f589d2bb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Satchmo's Greatest" ;
+        :releasedInDate        "1992-08-15" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000006LKF> , <https://www.amazon.de/gp/product/B000006LKF> , <https://musicbrainz.org/release/85bdc09e-d145-4508-928b-8981f589d2bb> .

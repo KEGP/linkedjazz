@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/43a3eca7-2c21-4ef8-83a6-a1411fda2a08>
-        rdf:type            :Release ;
-        rdfs:label          "The Lionel Hampton Story" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/17cf2413-99c1-441d-ba92-700e811daf56> ;
-        :hasASIN            "B000051TPB" ;
-        :hasBarcode         "604988991222" ;
-        :hasMusicBrainzID   "43a3eca7-2c21-4ef8-83a6-a1411fda2a08" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Lionel Hampton Story" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "2000-10-16" ;
-        owl:sameAs          <https://www.amazon.co.uk/gp/product/B000051TPB> , <https://www.discogs.com/release/4669239> , <https://musicbrainz.org/release/43a3eca7-2c21-4ef8-83a6-a1411fda2a08> .
+        rdf:type               :Release ;
+        rdfs:label             "The Lionel Hampton Story" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/17cf2413-99c1-441d-ba92-700e811daf56> ;
+        :hasASIN               "B000051TPB" ;
+        :hasBarcode            "604988991222" ;
+        :hasMusicBrainzID      "43a3eca7-2c21-4ef8-83a6-a1411fda2a08" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Lionel Hampton Story" ;
+        :releasedInDate        "2000-10-16" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B000051TPB> , <https://www.discogs.com/release/4669239> , <https://www.amazon.com/dp/B000051TPB> , <https://musicbrainz.org/release/43a3eca7-2c21-4ef8-83a6-a1411fda2a08> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

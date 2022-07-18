@@ -1,44 +1,80 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/9443d4f5-668c-4f30-96bd-6caf831de30f>
-        a            :ArtistActivityArea ;
-        rdfs:label   "Rio de Janeiro" ;
-        schema:name  "Rio de Janeiro" ;
-        owl:sameAs   <https://musicbrainz.org/area/9443d4f5-668c-4f30-96bd-6caf831de30f> .
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1732933d-b55f-4acd-9e5a-cf15b6522240> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/75c09861-6857-4ec0-9729-84eefde7fc86>
+] .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/f45b47f8-5796-386e-b172-6c31b009a5d8>
-        a            :ArtistActivityArea ;
-        rdfs:label   "Brazil" ;
-        schema:name  "Brazil" ;
-        owl:sameAs   <https://musicbrainz.org/area/f45b47f8-5796-386e-b172-6c31b009a5d8> .
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/75c09861-6857-4ec0-9729-84eefde7fc86>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "collaboration" ;
+        :hasMusicBrainzID  "75c09861-6857-4ec0-9729-84eefde7fc86" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/75c09861-6857-4ec0-9729-84eefde7fc86> .
+
+<http://localhost:8080/resource/kejazz/Artist/8777a849-fb4e-4430-9918-170f619c5286>
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "8777a849-fb4e-4430-9918-170f619c5286" .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1971" ;
+                           :hasIntervalStartDate  "1965-04"
+                         ] ;
+  :involvesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b72a2a9b-e783-473d-9d80-403876c685cd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/1732933d-b55f-4acd-9e5a-cf15b6522240>
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "1732933d-b55f-4acd-9e5a-cf15b6522240" .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+<http://localhost:8080/resource/kejazz/Artist/b72a2a9b-e783-473d-9d80-403876c685cd>
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "b72a2a9b-e783-473d-9d80-403876c685cd" .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "married" ;
+        :hasMusicBrainzID  "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1964" ;
+                           :hasIntervalStartDate  "1959"
+                         ] ;
+  :involvesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19>
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "8d08cabf-03a3-4f38-a815-8197a0984f19" .
 
 <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14>
-        a                  :ArtistPerson ;
-        rdfs:label         "João Gilberto" ;
-        :hasAlias          "Joao Gilberto" , "Joao Gilbert" , "João Gilberto Prado Pereira de Oliveira" , "João Gilberto" ;
-        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/77ef4aff-d5bb-47f1-8f3f-657210f790d5> ;
-        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/9443d4f5-668c-4f30-96bd-6caf831de30f> ;
-        :hasGender         "Male" ;
-        :hasIPI            "00011871213" ;
-        :hasISNI           "0000000114766128" ;
-        :hasLifeSpan       [ a                      :TimeInterval ;
-                             :hasIntervalEndDate    "2019-07-06" ;
-                             :hasIntervalStartDate  "1931-06-10"
-                           ] ;
-        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/f45b47f8-5796-386e-b172-6c31b009a5d8> ;
-        :hasMusicBrainzID  "286ec4c2-b5ca-4f85-b331-280a6d73dd14" ;
-        :hasName           "João Gilberto" ;
-        owl:sameAs         <https://www.wikidata.org/wiki/Q192359> , <https://musicbrainz.org/artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> , <https://www.discogs.com/artist/346760> , <http://viaf.org/viaf/85530975> , <https://itunes.apple.com/us/artist/id43976> , <https://twitter.com/Joao_Gilberto> , <http://www.showbras.com.br/joaogilberto/> , <https://d-nb.info/gnd/134385098> , <https://genius.com/artists/Joao-gilberto> , <https://www.imdb.com/name/nm0318291/> , <https://isni.org/isni/0000000114766128> , <https://www.bbc.co.uk/music/artists/286ec4c2-b5ca-4f85-b331-280a6d73dd14> , <https://www.allmusic.com/artist/mn0000785283> , <https://rateyourmusic.com/artist/joao_gilberto> , <https://open.spotify.com/artist/77ZUbcdoU5KCPHNUl8bgQy> , <https://www.songkick.com/artists/447544> , <https://www.last.fm/music/Jo%C3%A3o+Gilberto> , <https://catalogue.bnf.fr/ark:/12148/cb138944675> , <https://www.worldcat.org/identities/lccn-n83139578> , <https://secondhandsongs.com/artist/3058> , <http://id.loc.gov/authorities/names/n83139578> , <https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_Gilberto.jpg> .
+        rdf:type  :Artist .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/77ef4aff-d5bb-47f1-8f3f-657210f790d5>
-        a            :ArtistActivityArea ;
-        rdfs:label   "Juazeiro" ;
-        schema:name  "Juazeiro" ;
-        owl:sameAs   <https://musicbrainz.org/area/77ef4aff-d5bb-47f1-8f3f-657210f790d5> .
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8777a849-fb4e-4430-9918-170f619c5286> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .

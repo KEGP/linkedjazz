@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/1dd96446-9f54-428a-9939-e9c33208e754>
-        rdf:type             :Release ;
-        rdfs:label           "Genius of Modern Music" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
-        :hasBarcode          "" ;
-        :hasMusicBrainzID    "1dd96446-9f54-428a-9939-e9c33208e754" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Genius of Modern Music" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1951" ;
-        owl:sameAs           <https://musicbrainz.org/release/1dd96446-9f54-428a-9939-e9c33208e754> , <https://www.discogs.com/release/7628430> .
+        rdf:type               :Release ;
+        rdfs:label             "Genius of Modern Music" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "1dd96446-9f54-428a-9939-e9c33208e754" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Genius of Modern Music" ;
+        :releasedInDate        "1951" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/1dd96446-9f54-428a-9939-e9c33208e754> , <https://www.discogs.com/release/7628430> .

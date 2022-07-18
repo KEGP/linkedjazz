@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/93a316ba-ace9-4190-8451-64e21f9f359e>
-        rdf:type             :Release ;
-        rdfs:label           "Plus 4" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
-        :hasBarcode          "888072301597" ;
-        :hasMusicBrainzID    "93a316ba-ace9-4190-8451-64e21f9f359e" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Plus 4" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "2007" ;
-        owl:sameAs           <https://www.discogs.com/release/1440071> , <https://musicbrainz.org/release/93a316ba-ace9-4190-8451-64e21f9f359e> .
+        rdf:type               :Release ;
+        rdfs:label             "Plus 4" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasBarcode            "888072301597" ;
+        :hasMusicBrainzID      "93a316ba-ace9-4190-8451-64e21f9f359e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Plus 4" ;
+        :releasedInDate        "2007" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.discogs.com/release/1440071> , <https://musicbrainz.org/release/93a316ba-ace9-4190-8451-64e21f9f359e> .

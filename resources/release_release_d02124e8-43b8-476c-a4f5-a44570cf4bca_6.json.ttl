@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d02124e8-43b8-476c-a4f5-a44570cf4bca>
-        rdf:type            :Release ;
-        rdfs:label          "100ᵉ Anniversaire" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
-        :hasASIN            "B00004S764" ;
-        :hasBarcode         "3540131594322" ;
-        :hasMusicBrainzID   "d02124e8-43b8-476c-a4f5-a44570cf4bca" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "100ᵉ Anniversaire" ;
-        :releasedInCountry  "FR" ;
-        :releasedInDate     "1999-08-10" ;
-        owl:sameAs          <https://musicbrainz.org/release/d02124e8-43b8-476c-a4f5-a44570cf4bca> , <https://www.amazon.fr/gp/product/B00004S764> .
+        rdf:type               :Release ;
+        rdfs:label             "100ᵉ Anniversaire" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
+        :hasASIN               "B00004S764" ;
+        :hasBarcode            "3540131594322" ;
+        :hasMusicBrainzID      "d02124e8-43b8-476c-a4f5-a44570cf4bca" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "100ᵉ Anniversaire" ;
+        :releasedInDate        "1999-08-10" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/d02124e8-43b8-476c-a4f5-a44570cf4bca> , <https://www.amazon.fr/gp/product/B00004S764> , <https://www.amazon.com/dp/B00004S764> .

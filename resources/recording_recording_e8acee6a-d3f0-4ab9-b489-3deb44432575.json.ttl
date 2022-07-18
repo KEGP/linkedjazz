@@ -1,39 +1,320 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/e8acee6a-d3f0-4ab9-b489-3deb44432575>
         rdf:type              :Recording ;
         rdfs:label            "Dinah" ;
-        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> , <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> , <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> , <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> , <http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> ;
         :hasAudioTrackLength  "156213" ;
         :hasMusicBrainzID     "e8acee6a-d3f0-4ab9-b489-3deb44432575" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1934-12-28" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1934-12-28"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1934-12-28" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1934-12-28"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1934-12-28" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1934-12-28"
-                              ] ;
         :hasTitle             "Dinah" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/396174ab-7e15-4b8b-b720-dc849f9e3ce2> , <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> , <http://localhost:8080/resource/kejazz/Release/f7eef32e-b4d6-4cb0-a109-3158d7e07d3f> , <http://localhost:8080/resource/kejazz/Release/03dce973-53cc-4464-b834-26c3116bca8d> , <http://localhost:8080/resource/kejazz/Release/beb356f6-b8df-4e6b-b6eb-2da67a2de99e> , <http://localhost:8080/resource/kejazz/Release/33684296-8d44-4969-9064-5fad2902aa28> , <http://localhost:8080/resource/kejazz/Release/d6ec0c27-0f10-4119-a608-26d4dbceb55f> , <http://localhost:8080/resource/kejazz/Release/6291901a-3109-4cf1-b35b-5718f64ca12d> , <http://localhost:8080/resource/kejazz/Release/d28c7e47-6947-4853-9fed-bb99bfb5ca79> , <http://localhost:8080/resource/kejazz/Release/e22d4e5c-0dc5-44e3-8ff4-1fcd6609a828> , <http://localhost:8080/resource/kejazz/Release/fcf9e8d3-3f58-4d55-b0a2-294f30e3ddea> , <http://localhost:8080/resource/kejazz/Release/1fc92df8-51f0-41bb-95c3-17c9c9ed5946> , <http://localhost:8080/resource/kejazz/Release/3daded3c-4de2-4083-a360-481610f1b437> , <http://localhost:8080/resource/kejazz/Release/67968ef0-a134-4e05-8137-a8bf18a78a20> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/87a980f2-38ef-4643-985c-a9a260a5060e> , <http://localhost:8080/resource/kejazz/Release/0de2c94c-7e31-4df6-9911-0ae4e4c6cb73> , <http://localhost:8080/resource/kejazz/Release/b42cee20-c85d-40b6-9fea-246b128a4f7b> , <http://localhost:8080/resource/kejazz/Release/6d6563c8-0618-4faf-9207-b6a37091f06a> , <http://localhost:8080/resource/kejazz/Release/0671ecb8-e8a5-4ee2-a933-f73fc1c93a4a> , <http://localhost:8080/resource/kejazz/Release/12805a2d-810f-4c92-8c13-3dcd7dd2e92f> , <http://localhost:8080/resource/kejazz/Release/bbd08497-8ae8-4188-8ec4-0711764a2287> , <http://localhost:8080/resource/kejazz/Release/5c4703c2-dcb3-4019-b8d2-53e95a313db7> , <http://localhost:8080/resource/kejazz/Release/b0b3a447-35e0-469d-abca-f97f32a1feec> , <http://localhost:8080/resource/kejazz/Release/11dc47c6-bb86-4582-a1e1-cbcdbba64f4c> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1934-12-28" ;
+                                :hasIntervalStartDate  "1934-12-28"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
         owl:sameAs            <https://musicbrainz.org/recording/e8acee6a-d3f0-4ab9-b489-3deb44432575> .

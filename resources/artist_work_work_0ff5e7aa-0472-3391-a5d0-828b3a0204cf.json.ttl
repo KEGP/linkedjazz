@@ -10,13 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/0ff5e7aa-0472-3391-a5d0-828b3a0204cf> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
         rdfs:label         "composer" ;
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
@@ -29,3 +22,10 @@
         :hasName           "Clifford Brown" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/0ff5e7aa-0472-3391-a5d0-828b3a0204cf> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

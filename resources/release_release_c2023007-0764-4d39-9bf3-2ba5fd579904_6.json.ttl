@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/c2023007-0764-4d39-9bf3-2ba5fd579904>
-        rdf:type             :Release ;
-        rdfs:label           "Simply Swing" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B01K8KH4RI" ;
-        :hasBarcode          "698458020420" ;
-        :hasMusicBrainzID    "c2023007-0764-4d39-9bf3-2ba5fd579904" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Simply Swing" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "2009" ;
-        owl:sameAs           <https://musicbrainz.org/release/c2023007-0764-4d39-9bf3-2ba5fd579904> , <https://www.amazon.de/gp/product/B01K8KH4RI> .
+        rdf:type               :Release ;
+        rdfs:label             "Simply Swing" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B01K8KH4RI" ;
+        :hasBarcode            "698458020420" ;
+        :hasMusicBrainzID      "c2023007-0764-4d39-9bf3-2ba5fd579904" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Simply Swing" ;
+        :releasedInDate        "2009" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B01K8KH4RI> , <https://musicbrainz.org/release/c2023007-0764-4d39-9bf3-2ba5fd579904> , <https://www.amazon.de/gp/product/B01K8KH4RI> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

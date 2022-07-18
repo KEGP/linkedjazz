@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d35ff2f5-cf28-43b8-8275-9c069d2ef27d>
-        rdf:type             :Release ;
-        rdfs:label           "The Complete American Masters 1931-1953" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
-        :hasBarcode          "600753361672" ;
-        :hasMusicBrainzID    "d35ff2f5-cf28-43b8-8275-9c069d2ef27d" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Complete American Masters 1931-1953" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "2011-11-21" ;
-        owl:sameAs           <http://www.jazzmasters.fr/en/album/sidney-2/> , <https://musicbrainz.org/release/d35ff2f5-cf28-43b8-8275-9c069d2ef27d> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete American Masters 1931-1953" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :hasBarcode            "600753361672" ;
+        :hasMusicBrainzID      "d35ff2f5-cf28-43b8-8275-9c069d2ef27d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete American Masters 1931-1953" ;
+        :releasedInDate        "2011-11-21" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <http://www.jazzmasters.fr/en/album/sidney-2/> , <https://musicbrainz.org/release/d35ff2f5-cf28-43b8-8275-9c069d2ef27d> .

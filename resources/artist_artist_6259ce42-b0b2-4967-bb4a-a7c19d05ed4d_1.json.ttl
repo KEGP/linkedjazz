@@ -1,35 +1,88 @@
-@prefix :       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:    <http://localhost:8080/resource/kejazz/> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1927" ;
+                           :hasIntervalStartDate  "1925-11-12"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1927" ;
+                           :hasIntervalStartDate  "1925"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        rdf:type           :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
 
 <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194>
-        a                   :Band ;
-        rdfs:label          "Louis Armstrong and His Hot Five" ;
-        :hasActivityPeriod  [ a                      :TimeInterval ;
-                              :hasIntervalEndDate    "1928-12-04" ;
-                              :hasIntervalStartDate  "1925-11-12"
-                            ] ;
-        :hasAlias           "Louis Armstrong's Hot 5" , "Louis Armstrong & The Hot Five" , "Louis Armstrong & His Hot Five" , "Louis Armstrong Hot Five" , "Louis Armstrong's Hot Five" ;
-        :hasBeginArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/3c5a0506-d852-4e96-8d1e-d8126328f3be> ;
-        :hasISNI            "0000000119544858" ;
-        :hasMainArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
-        :hasMusicBrainzID   "cfedde14-91c5-46cb-b087-9f2da9bec194" ;
-        :hasName            "Louis Armstrong and His Hot Five" ;
-        owl:sameAs          <https://www.discogs.com/artist/253858> , <https://isni.org/isni/0000000119544858> , <https://www.wikidata.org/wiki/Q487027> , <http://www.redhotjazz.com/hot5.html> , <https://www.worldcat.org/identities/lccn-n88613399> , <https://www.allmusic.com/artist/mn0000281119> , <http://viaf.org/viaf/121301244> , <https://catalogue.bnf.fr/ark:/12148/cb139046869> , <http://id.loc.gov/authorities/names/n88613399> , <https://www.last.fm/music/Louis%20Armstrong%20and%20His%20Hot%20Five> , <https://musicbrainz.org/artist/cfedde14-91c5-46cb-b087-9f2da9bec194> .
+        rdf:type           :Artist ;
+        :hasMusicbrainzID  "cfedde14-91c5-46cb-b087-9f2da9bec194" .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
-        a            :ArtistActivityArea ;
-        rdfs:label   "United States" ;
-        schema:name  "United States" ;
-        owl:sameAs   <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1927" ;
+                           :hasIntervalStartDate  "1925-11-12"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
-<http://localhost:8080/resource/kejazz/ArtistActivityArea/3c5a0506-d852-4e96-8d1e-d8126328f3be>
-        a            :ArtistActivityArea ;
-        rdfs:label   "New Orleans" ;
-        schema:name  "New Orleans" ;
-        owl:sameAs   <https://musicbrainz.org/area/3c5a0506-d852-4e96-8d1e-d8126328f3be> .
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928-12-04" ;
+                           :hasIntervalStartDate  "1925-11-12"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1927" ;
+                           :hasIntervalStartDate  "1925-11-12"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1927-12-13" ;
+                           :hasIntervalStartDate  "1927-12-10"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type               dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928" ;
+                           :hasIntervalStartDate  "1928"
+                         ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ rdf:type               :RelationBetweenArtists ;
+  :atTime                [ rdf:type  dul:TimeInterval ] ;
+  :involvesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

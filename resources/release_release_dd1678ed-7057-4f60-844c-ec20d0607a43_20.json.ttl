@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/dd1678ed-7057-4f60-844c-ec20d0607a43>
-        rdf:type            :Release ;
-        rdfs:label          "Jazz Ballads 12: Billie Holiday" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
-        :hasASIN            "B00068WIX8" ;
-        :hasBarcode         "4011222225429" ;
-        :hasMusicBrainzID   "dd1678ed-7057-4f60-844c-ec20d0607a43" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Jazz Ballads 12: Billie Holiday" ;
-        :releasedInCountry  "DE" ;
-        :releasedInDate     "2004-10-11" ;
-        owl:sameAs          <https://musicbrainz.org/release/dd1678ed-7057-4f60-844c-ec20d0607a43> , <https://www.amazon.de/gp/product/B00068WIX8> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz Ballads 12: Billie Holiday" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :hasASIN               "B00068WIX8" ;
+        :hasBarcode            "4011222225429" ;
+        :hasMusicBrainzID      "dd1678ed-7057-4f60-844c-ec20d0607a43" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Ballads 12: Billie Holiday" ;
+        :releasedInDate        "2004-10-11" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00068WIX8> , <https://musicbrainz.org/release/dd1678ed-7057-4f60-844c-ec20d0607a43> , <https://www.amazon.de/gp/product/B00068WIX8> .

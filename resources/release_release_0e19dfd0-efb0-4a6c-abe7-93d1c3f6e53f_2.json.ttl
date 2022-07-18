@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/0e19dfd0-efb0-4a6c-abe7-93d1c3f6e53f>
-        rdf:type            :Release ;
-        rdfs:label          "Small Groups, Volume 3: 1939" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/17cf2413-99c1-441d-ba92-700e811daf56> ;
-        :hasBarcode         "3268440304172" ;
-        :hasMusicBrainzID   "0e19dfd0-efb0-4a6c-abe7-93d1c3f6e53f" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Small Groups, Volume 3: 1939" ;
-        :releasedInCountry  "FR" ;
-        :releasedInDate     "1991" ;
-        owl:sameAs          <https://musicbrainz.org/release/0e19dfd0-efb0-4a6c-abe7-93d1c3f6e53f> .
+        rdf:type               :Release ;
+        rdfs:label             "Small Groups, Volume 3: 1939" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/17cf2413-99c1-441d-ba92-700e811daf56> ;
+        :hasBarcode            "3268440304172" ;
+        :hasMusicBrainzID      "0e19dfd0-efb0-4a6c-abe7-93d1c3f6e53f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Small Groups, Volume 3: 1939" ;
+        :releasedInDate        "1991" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/0e19dfd0-efb0-4a6c-abe7-93d1c3f6e53f> .

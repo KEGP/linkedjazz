@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/6e18438e-6518-4bc0-a4dd-b7abd007d1d7>
-        rdf:type             :Release ;
-        rdfs:label           "Compact Jazz: The Sampler" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B000004735" ;
-        :hasBarcode          "042283137622" ;
-        :hasMusicBrainzID    "6e18438e-6518-4bc0-a4dd-b7abd007d1d7" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Compact Jazz: The Sampler" ;
-        :releasedInCountry   "DE" ;
-        :releasedInDate      "1987-05-18" ;
-        owl:sameAs           <https://www.amazon.com/gp/product/B000004735> , <https://musicbrainz.org/release/6e18438e-6518-4bc0-a4dd-b7abd007d1d7> .
+        rdf:type               :Release ;
+        rdfs:label             "Compact Jazz: The Sampler" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000004735" ;
+        :hasBarcode            "042283137622" ;
+        :hasMusicBrainzID      "6e18438e-6518-4bc0-a4dd-b7abd007d1d7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Compact Jazz: The Sampler" ;
+        :releasedInDate        "1987-05-18" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000004735> , <https://www.amazon.com/dp/B000004735> , <https://musicbrainz.org/release/6e18438e-6518-4bc0-a4dd-b7abd007d1d7> .

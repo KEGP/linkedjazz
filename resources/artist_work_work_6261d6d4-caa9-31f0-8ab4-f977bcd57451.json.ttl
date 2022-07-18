@@ -16,8 +16,15 @@
                      dul:hasIntervalStartDate  "1935"
                    ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a13ede92-5e64-43ac-a5a6-5bf00afc3eaf> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7c0e243d-30e5-472f-b5db-afa0632abd19> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/7c0e243d-30e5-472f-b5db-afa0632abd19>
@@ -48,20 +55,13 @@
         owl:sameAs         <https://musicbrainz.org/artist/1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a> .
 
 [ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7c0e243d-30e5-472f-b5db-afa0632abd19> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
-[ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1935" ;
                      dul:hasIntervalStartDate  "1935"
                    ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/6261d6d4-caa9-31f0-8ab4-f977bcd57451> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1c8a91b9-5e5d-472a-bbc0-d5ce334cef0a> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a13ede92-5e64-43ac-a5a6-5bf00afc3eaf> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>

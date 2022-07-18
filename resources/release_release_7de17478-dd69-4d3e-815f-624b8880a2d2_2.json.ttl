@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/7de17478-dd69-4d3e-815f-624b8880a2d2>
-        rdf:type             :Release ;
-        rdfs:label           "The King & Mister Jelly Lord" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> , <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
-        :hasASIN             "B000057HJY" ;
-        :hasBarcode          "5013116230327" ;
-        :hasMusicBrainzID    "7de17478-dd69-4d3e-815f-624b8880a2d2" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The King & Mister Jelly Lord" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "1989" ;
-        owl:sameAs           <https://www.amazon.co.uk/gp/product/B000057HJY> , <https://musicbrainz.org/release/7de17478-dd69-4d3e-815f-624b8880a2d2> .
+        rdf:type               :Release ;
+        rdfs:label             "The King & Mister Jelly Lord" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> , <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        :hasASIN               "B000057HJY" ;
+        :hasBarcode            "5013116230327" ;
+        :hasMusicBrainzID      "7de17478-dd69-4d3e-815f-624b8880a2d2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The King & Mister Jelly Lord" ;
+        :releasedInDate        "1989" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B000057HJY> , <https://musicbrainz.org/release/7de17478-dd69-4d3e-815f-624b8880a2d2> , <https://www.amazon.com/dp/B000057HJY> .

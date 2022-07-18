@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,12 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/d4618586-9749-4a37-8011-25c9481cd1c8>
-        rdf:type             :Release ;
-        rdfs:label           "Django" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
-        :hasBarcode          "0025218811026" ;
-        :hasMusicBrainzID    "d4618586-9749-4a37-8011-25c9481cd1c8" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Django" ;
-        :releasedInDate      "2006" ;
-        owl:sameAs           <https://musicbrainz.org/release/d4618586-9749-4a37-8011-25c9481cd1c8> , <https://www.discogs.com/release/1291541> .
+        rdf:type               :Release ;
+        rdfs:label             "Django" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+        :hasBarcode            "0025218811026" ;
+        :hasMusicBrainzID      "d4618586-9749-4a37-8011-25c9481cd1c8" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Django" ;
+        :releasedInDate        "2006" ;
+        owl:sameAs             <https://musicbrainz.org/release/d4618586-9749-4a37-8011-25c9481cd1c8> , <https://www.discogs.com/release/1291541> .

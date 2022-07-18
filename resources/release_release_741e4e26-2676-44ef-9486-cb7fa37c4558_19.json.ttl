@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,12 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/741e4e26-2676-44ef-9486-cb7fa37c4558>
-        rdf:type           :Release ;
-        rdfs:label         "Play: Jazz Pioneers" ;
-        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode        "" ;
-        :hasMusicBrainzID  "741e4e26-2676-44ef-9486-cb7fa37c4558" ;
-        :hasStatus         "Promotion" ;
-        :hasTitle          "Play: Jazz Pioneers" ;
-        :releasedInDate    "2014-09-14" ;
-        owl:sameAs         <https://play.google.com/store/music/album?id=B2c2rslxlvv2fq3d2lgyw3q6g74> , <https://musicbrainz.org/release/741e4e26-2676-44ef-9486-cb7fa37c4558> .
+        rdf:type               :Release ;
+        rdfs:label             "Play: Jazz Pioneers" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "741e4e26-2676-44ef-9486-cb7fa37c4558" ;
+        :hasOfficialityStatus  "Promotion" ;
+        :hasTitle              "Play: Jazz Pioneers" ;
+        :releasedInDate        "2014-09-14" ;
+        owl:sameAs             <https://play.google.com/store/music/album?id=B2c2rslxlvv2fq3d2lgyw3q6g74> , <https://musicbrainz.org/release/741e4e26-2676-44ef-9486-cb7fa37c4558> .

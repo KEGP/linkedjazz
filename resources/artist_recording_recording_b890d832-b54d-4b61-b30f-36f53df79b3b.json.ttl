@@ -8,10 +8,10 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b890d832-b54d-4b61-b30f-36f53df79b3b> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0b6aea55-d855-4a33-ae08-b0280dd28684> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1947-01-10" ;
                      dul:hasIntervalStartDate  "1947-01-10"
@@ -45,26 +45,26 @@
         :hasName           "piano" ;
         owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
 
-<http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c>
-        rdfs:label         "Bud Powell" ;
-        :hasMusicBrainzID  "dbc5809c-7837-4b6f-961e-340d64fbb41c" ;
-        :hasName           "Bud Powell" ;
-        owl:sameAs         <https://musicbrainz.org/artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b890d832-b54d-4b61-b30f-36f53df79b3b> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0b6aea55-d855-4a33-ae08-b0280dd28684> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1947-01-10" ;
                      dul:hasIntervalStartDate  "1947-01-10"
                    ]
 ] .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+<http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c>
+        rdfs:label         "Bud Powell" ;
+        :hasMusicBrainzID  "dbc5809c-7837-4b6f-961e-340d64fbb41c" ;
+        :hasName           "Bud Powell" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b890d832-b54d-4b61-b30f-36f53df79b3b> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1947-01-10" ;
                      dul:hasIntervalStartDate  "1947-01-10"

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/318b44ae-57a5-4ffa-bd2c-90c066e84b2d>
-        rdf:type            :Release ;
-        rdfs:label          "Stompin' at the Savoy" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8ecae52e-9c89-4b61-99d8-ac11abc26771> ;
-        :hasASIN            "B000068PXR" ;
-        :hasBarcode         "824046011925" ;
-        :hasMusicBrainzID   "318b44ae-57a5-4ffa-bd2c-90c066e84b2d" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Stompin' at the Savoy" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "2002" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B000068PXR> , <https://musicbrainz.org/release/318b44ae-57a5-4ffa-bd2c-90c066e84b2d> .
+        rdf:type               :Release ;
+        rdfs:label             "Stompin' at the Savoy" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8ecae52e-9c89-4b61-99d8-ac11abc26771> ;
+        :hasASIN               "B000068PXR" ;
+        :hasBarcode            "824046011925" ;
+        :hasMusicBrainzID      "318b44ae-57a5-4ffa-bd2c-90c066e84b2d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Stompin' at the Savoy" ;
+        :releasedInDate        "2002" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000068PXR> , <https://musicbrainz.org/release/318b44ae-57a5-4ffa-bd2c-90c066e84b2d> , <https://www.amazon.com/dp/B000068PXR> .

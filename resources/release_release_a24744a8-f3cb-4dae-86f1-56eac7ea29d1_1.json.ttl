@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/a24744a8-f3cb-4dae-86f1-56eac7ea29d1>
-        rdf:type             :Release ;
-        rdfs:label           "Solo Flight: The Genius of Charlie Christian" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> ;
-        :hasBarcode          "" ;
-        :hasMusicBrainzID    "a24744a8-f3cb-4dae-86f1-56eac7ea29d1" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Solo Flight: The Genius of Charlie Christian" ;
-        :releasedInCountry   "NL" ;
-        :releasedInDate      "1972" ;
-        owl:sameAs           <https://musicbrainz.org/release/a24744a8-f3cb-4dae-86f1-56eac7ea29d1> , <https://www.discogs.com/release/2180442> .
+        rdf:type               :Release ;
+        rdfs:label             "Solo Flight: The Genius of Charlie Christian" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "a24744a8-f3cb-4dae-86f1-56eac7ea29d1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Solo Flight: The Genius of Charlie Christian" ;
+        :releasedInDate        "1972" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/NL> ;
+        owl:sameAs             <https://musicbrainz.org/release/a24744a8-f3cb-4dae-86f1-56eac7ea29d1> , <https://www.discogs.com/release/2180442> .
+
+<http://localhost:8080/resource/kejazz/Place/NL>
+        rdf:type  dul:Place .

@@ -14,6 +14,26 @@
         :hasName           "double bass" ;
         owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0b6aea55-d855-4a33-ae08-b0280dd28684> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1951-05-01" ;
+                     dul:hasIntervalStartDate  "1951-05-01"
+                   ]
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1951-05-01" ;
+                     dul:hasIntervalStartDate  "1951-05-01"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
         rdfs:label         "drums (drum set)" ;
         :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
@@ -26,26 +46,6 @@
         :hasName           "Max Roach" ;
         owl:sameAs         <https://musicbrainz.org/artist/0b6aea55-d855-4a33-ae08-b0280dd28684> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0b6aea55-d855-4a33-ae08-b0280dd28684> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1951-05-01" ;
-                     dul:hasIntervalStartDate  "1951-05-01"
-                   ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1951-05-01" ;
-                     dul:hasIntervalStartDate  "1951-05-01"
-                   ]
-] .
-
 <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
         rdfs:label         "piano" ;
         :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
@@ -55,7 +55,13 @@
 <http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047>
         owl:sameAs  <https://musicbrainz.org/recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+<http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c>
+        rdfs:label         "Bud Powell" ;
+        :hasMusicBrainzID  "dbc5809c-7837-4b6f-961e-340d64fbb41c" ;
+        :hasName           "Bud Powell" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
@@ -64,12 +70,6 @@
                      dul:hasIntervalStartDate  "1951-05-01"
                    ]
 ] .
-
-<http://localhost:8080/resource/kejazz/Artist/dbc5809c-7837-4b6f-961e-340d64fbb41c>
-        rdfs:label         "Bud Powell" ;
-        :hasMusicBrainzID  "dbc5809c-7837-4b6f-961e-340d64fbb41c" ;
-        :hasName           "Bud Powell" ;
-        owl:sameAs         <https://musicbrainz.org/artist/dbc5809c-7837-4b6f-961e-340d64fbb41c> .
 
 <http://localhost:8080/resource/kejazz/Artist/c898870b-b704-4c52-99d5-1899e0d44169>
         rdfs:label         "Curley Russell" ;

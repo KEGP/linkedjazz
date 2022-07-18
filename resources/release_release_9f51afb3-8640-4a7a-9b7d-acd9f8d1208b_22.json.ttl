@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/XW>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/9f51afb3-8640-4a7a-9b7d-acd9f8d1208b>
-        rdf:type             :Release ;
-        rdfs:label           "Down Hearted Blues" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
-        :hasMusicBrainzID    "9f51afb3-8640-4a7a-9b7d-acd9f8d1208b" ;
-        :hasPackagingFormat  "None" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Down Hearted Blues" ;
-        :releasedInCountry   "XW" ;
-        :releasedInDate      "2018-09-07" ;
-        owl:sameAs           <https://nightrecords.bandcamp.com/album/down-hearted-blues> , <https://musicbrainz.org/release/9f51afb3-8640-4a7a-9b7d-acd9f8d1208b> .
+        rdf:type               :Release ;
+        rdfs:label             "Down Hearted Blues" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+        :hasMusicBrainzID      "9f51afb3-8640-4a7a-9b7d-acd9f8d1208b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Down Hearted Blues" ;
+        :releasedInDate        "2018-09-07" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XW> ;
+        owl:sameAs             <https://nightrecords.bandcamp.com/album/down-hearted-blues> , <https://musicbrainz.org/release/9f51afb3-8640-4a7a-9b7d-acd9f8d1208b> .

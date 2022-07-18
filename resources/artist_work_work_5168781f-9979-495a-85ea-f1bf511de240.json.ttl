@@ -11,13 +11,10 @@
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
 [ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1924" ;
-                     dul:hasIntervalStartDate  "1924"
-                   ] ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/5168781f-9979-495a-85ea-f1bf511de240> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
@@ -34,10 +31,13 @@
         owl:sameAs         <https://musicbrainz.org/artist/65744963-191a-44ef-a3c7-b693a808a158> .
 
 [ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1924" ;
+                     dul:hasIntervalStartDate  "1924"
+                   ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/5168781f-9979-495a-85ea-f1bf511de240> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>

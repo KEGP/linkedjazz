@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,15 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/11dc47c6-bb86-4582-a1e1-cbcdbba64f4c>
-        rdf:type            :Release ;
-        rdfs:label          "Prime All-Time-Hits: Jazz and Blues Club, Volume 6" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasMusicBrainzID   "11dc47c6-bb86-4582-a1e1-cbcdbba64f4c" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Prime All-Time-Hits: Jazz and Blues Club, Volume 6" ;
-        :releasedInCountry  "XE" ;
-        :releasedInDate     "1989" ;
-        owl:sameAs          <https://musicbrainz.org/release/11dc47c6-bb86-4582-a1e1-cbcdbba64f4c> .
+        rdf:type               :Release ;
+        rdfs:label             "Prime All-Time-Hits: Jazz and Blues Club, Volume 6" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID      "11dc47c6-bb86-4582-a1e1-cbcdbba64f4c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Prime All-Time-Hits: Jazz and Blues Club, Volume 6" ;
+        :releasedInDate        "1989" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://musicbrainz.org/release/11dc47c6-bb86-4582-a1e1-cbcdbba64f4c> .
+
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .

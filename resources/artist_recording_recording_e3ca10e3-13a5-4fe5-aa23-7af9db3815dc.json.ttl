@@ -17,6 +17,16 @@
         :hasName           "drums (drum set)" ;
         owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1957-10-19" ;
+                     dul:hasIntervalStartDate  "1957-10-19"
+                   ]
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
         rdfs:label         "Stan Getz" ;
         :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
@@ -28,16 +38,6 @@
         :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
         :hasName           "piano" ;
         owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/33ddc4a0-2d48-4da5-91f4-180c3283d2f9> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1957-10-19" ;
-                     dul:hasIntervalStartDate  "1957-10-19"
-                   ]
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/4f1dc71a-d679-4d5d-b590-a38456b1b48e>
         rdfs:label         "Connie Kay" ;
@@ -57,23 +57,7 @@
         :hasName           "trombone" ;
         owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
 
-<http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07>
-        rdfs:label         "J.J. Johnson" ;
-        :hasMusicBrainzID  "33e50556-d4be-421b-a5d1-644bd536ec07" ;
-        :hasName           "J.J. Johnson" ;
-        owl:sameAs         <https://musicbrainz.org/artist/33e50556-d4be-421b-a5d1-644bd536ec07> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1957-10-19" ;
-                     dul:hasIntervalStartDate  "1957-10-19"
-                   ]
-] .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/4f1dc71a-d679-4d5d-b590-a38456b1b48e> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
@@ -83,16 +67,42 @@
                    ]
 ] .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1957-10-19" ;
+                     dul:hasIntervalStartDate  "1957-10-19"
+                   ]
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07>
+        rdfs:label         "J.J. Johnson" ;
+        :hasMusicBrainzID  "33e50556-d4be-421b-a5d1-644bd536ec07" ;
+        :hasName           "J.J. Johnson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/33e50556-d4be-421b-a5d1-644bd536ec07> .
+
 <http://localhost:8080/resource/kejazz/Artist/33ddc4a0-2d48-4da5-91f4-180c3283d2f9>
         rdfs:label         "Herb Ellis" ;
         :hasMusicBrainzID  "33ddc4a0-2d48-4da5-91f4-180c3283d2f9" ;
         :hasName           "Herb Ellis" ;
         owl:sameAs         <https://musicbrainz.org/artist/33ddc4a0-2d48-4da5-91f4-180c3283d2f9> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/33ddc4a0-2d48-4da5-91f4-180c3283d2f9> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1957-10-19" ;
+                     dul:hasIntervalStartDate  "1957-10-19"
+                   ]
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ed801bdd-f057-41c0-94fb-76cb5676cd59> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1957-10-19" ;
                      dul:hasIntervalStartDate  "1957-10-19"
@@ -117,10 +127,10 @@
         :hasName           "Oscar Peterson" ;
         owl:sameAs         <https://musicbrainz.org/artist/ed801bdd-f057-41c0-94fb-76cb5676cd59> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ed801bdd-f057-41c0-94fb-76cb5676cd59> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1957-10-19" ;
                      dul:hasIntervalStartDate  "1957-10-19"
@@ -132,13 +142,3 @@
         :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
         :hasName           "double bass" ;
         owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1957-10-19" ;
-                     dul:hasIntervalStartDate  "1957-10-19"
-                   ]
-] .

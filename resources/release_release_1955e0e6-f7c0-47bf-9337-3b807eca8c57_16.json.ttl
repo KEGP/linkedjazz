@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,15 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/1955e0e6-f7c0-47bf-9337-3b807eca8c57>
-        rdf:type            :Release ;
-        rdfs:label          "The Instrumental History of Jazz" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasMusicBrainzID   "1955e0e6-f7c0-47bf-9337-3b807eca8c57" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Instrumental History of Jazz" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1997" ;
-        owl:sameAs          <https://musicbrainz.org/release/1955e0e6-f7c0-47bf-9337-3b807eca8c57> , <https://www.discogs.com/release/1457723> .
+        rdf:type               :Release ;
+        rdfs:label             "The Instrumental History of Jazz" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID      "1955e0e6-f7c0-47bf-9337-3b807eca8c57" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Instrumental History of Jazz" ;
+        :releasedInDate        "1997" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/1955e0e6-f7c0-47bf-9337-3b807eca8c57> , <https://www.discogs.com/release/1457723> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

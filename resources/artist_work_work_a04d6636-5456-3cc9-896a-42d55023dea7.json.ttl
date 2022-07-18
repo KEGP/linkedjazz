@@ -17,10 +17,17 @@
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/505047e5-0398-426e-b22a-fb68a00bad70> .
 
+<http://localhost:8080/resource/kejazz/Artist/d686b5cb-e00a-45c6-91c0-488eae967a08>
+        rdfs:label         "Walter “Gil” Fuller" ;
+        :hasMusicBrainzID  "d686b5cb-e00a-45c6-91c0-488eae967a08" ;
+        :hasName           "Walter “Gil” Fuller" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/d686b5cb-e00a-45c6-91c0-488eae967a08> .
+
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/a04d6636-5456-3cc9-896a-42d55023dea7> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d686b5cb-e00a-45c6-91c0-488eae967a08> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/505047e5-0398-426e-b22a-fb68a00bad70> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
@@ -31,25 +38,11 @@
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 
-<http://localhost:8080/resource/kejazz/Artist/d686b5cb-e00a-45c6-91c0-488eae967a08>
-        rdfs:label         "Walter “Gil” Fuller" ;
-        :hasMusicBrainzID  "d686b5cb-e00a-45c6-91c0-488eae967a08" ;
-        :hasName           "Walter “Gil” Fuller" ;
-        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
-        owl:sameAs         <https://musicbrainz.org/artist/d686b5cb-e00a-45c6-91c0-488eae967a08> .
-
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
         rdfs:label         "composer" ;
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/a04d6636-5456-3cc9-896a-42d55023dea7> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/505047e5-0398-426e-b22a-fb68a00bad70> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5>
         rdfs:label         "Dizzy Gillespie" ;
@@ -57,3 +50,10 @@
         :hasName           "Dizzy Gillespie" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/a04d6636-5456-3cc9-896a-42d55023dea7> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d686b5cb-e00a-45c6-91c0-488eae967a08> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

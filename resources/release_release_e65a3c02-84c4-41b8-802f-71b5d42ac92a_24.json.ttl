@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/BR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/e65a3c02-84c4-41b8-802f-71b5d42ac92a>
-        rdf:type             :Release ;
-        rdfs:label           "Coleção Folha clássicos do jazz, Volume 8" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
-        :hasBarcode          "9788599896242" ;
-        :hasMusicBrainzID    "e65a3c02-84c4-41b8-802f-71b5d42ac92a" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Coleção Folha clássicos do jazz, Volume 8" ;
-        :releasedInCountry   "BR" ;
-        :releasedInDate      "2007-11-11" ;
-        owl:sameAs           <https://musicbrainz.org/release/e65a3c02-84c4-41b8-802f-71b5d42ac92a> .
+        rdf:type               :Release ;
+        rdfs:label             "Coleção Folha clássicos do jazz, Volume 8" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasBarcode            "9788599896242" ;
+        :hasMusicBrainzID      "e65a3c02-84c4-41b8-802f-71b5d42ac92a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Coleção Folha clássicos do jazz, Volume 8" ;
+        :releasedInDate        "2007-11-11" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/BR> ;
+        owl:sameAs             <https://musicbrainz.org/release/e65a3c02-84c4-41b8-802f-71b5d42ac92a> .

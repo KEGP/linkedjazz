@@ -8,30 +8,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 PREFIX : <http://localhost:8080/ontology/kejazz/>
 PREFIX res: <http://localhost:8080/resource/kejazz/>
-PREFIX informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#>
-PREFIX timeinterval: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 
 CONSTRUCT {
   ?recording a :Recording;
     :hasTitle ?title;
-    :rdfs:label ?title;
+    rdfs:label ?title;
 
-    informationrealization:realizes ?work;
+    dul:realizes ?work;
     :hasAudioTrackLength ?trackLength;
     :creditedTo ?creditedArtist;
     :hasArtistCreditsPhrase ?artistCreditsPhrase;
+    :includedInRelease ?release ;
 
-    :hasTimeInterval [
-      a timeinterval:TimeInterval;
-      timeinterval:hasIntervalStartDate ?performanceStartDate;
-      timeinterval:hasIntervalEndDate ?performanceEndDate
-  ];
+    dul:hasTimeInterval [
+      a dul:TimeInterval;
+      :hasIntervalStartDate ?performanceStartDate;
+      :hasIntervalEndDate ?performanceEndDate
+    ];
 
     # identification
     :hasMusicBrainzID ?mbID;
     :hasISRC ?isrc;
     owl:sameAs  ?url;
-    owl:sameAs  ?musicbrainzRecordingURL.
+    owl:sameAs  ?musicbrainzRecordingURL .
 
 }WHERE {
   SERVICE<x-sparql-anything:>{
@@ -64,7 +64,13 @@ CONSTRUCT {
 
     OPTIONAL {FILTER(BOUND(?work_BN)). ?work_BN xyz:begin ?performanceStartDate.}
     OPTIONAL {FILTER(BOUND(?work_BN)). ?work_BN xyz:end ?performanceEndDate.}
+    
+    OPTIONAL {
+      ?recording_BN xyz:release-list/fx:anySlot ?release_BN.
+      ?release_BN xyz:id ?releaseMbID .
+    }
 
+    BIND(fx:entity(res:Release, "/", ?releaseMbID) as ?release).
     BIND(fx:entity(res:Work, "/", ?workMbID) as ?work).
     BIND(fx:entity(res:Recording, "/", ?mbID) as ?recording).
     BIND(fx:entity(res:Artist, "/", ?creditedArtistMbID) as ?creditedArtist).

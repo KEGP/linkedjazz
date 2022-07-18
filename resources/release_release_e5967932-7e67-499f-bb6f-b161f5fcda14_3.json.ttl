@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/e5967932-7e67-499f-bb6f-b161f5fcda14>
-        rdf:type             :Release ;
-        rdfs:label           "Ken Burns Jazz: Definitive Lester Young" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/d613e4ae-093a-49a1-b06a-579480f7f7e8> ;
-        :hasASIN             "B000050I3V" ;
-        :hasBarcode          "731454908221" ;
-        :hasMusicBrainzID    "e5967932-7e67-499f-bb6f-b161f5fcda14" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Ken Burns Jazz: Definitive Lester Young" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "2000-11-07" ;
-        owl:sameAs           <https://www.amazon.com/gp/product/B000050I3V> , <https://musicbrainz.org/release/e5967932-7e67-499f-bb6f-b161f5fcda14> .
+        rdf:type               :Release ;
+        rdfs:label             "Ken Burns Jazz: Definitive Lester Young" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/d613e4ae-093a-49a1-b06a-579480f7f7e8> ;
+        :hasASIN               "B000050I3V" ;
+        :hasBarcode            "731454908221" ;
+        :hasMusicBrainzID      "e5967932-7e67-499f-bb6f-b161f5fcda14" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ken Burns Jazz: Definitive Lester Young" ;
+        :releasedInDate        "2000-11-07" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000050I3V> , <https://musicbrainz.org/release/e5967932-7e67-499f-bb6f-b161f5fcda14> , <https://www.amazon.com/dp/B000050I3V> .

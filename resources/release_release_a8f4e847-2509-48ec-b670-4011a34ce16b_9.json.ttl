@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/a8f4e847-2509-48ec-b670-4011a34ce16b>
-        rdf:type            :Release ;
-        rdfs:label          "Jazz Greatest Hits" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN            "B000003G3C" ;
-        :hasBarcode         "090266850822" ;
-        :hasMusicBrainzID   "a8f4e847-2509-48ec-b670-4011a34ce16b" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Jazz Greatest Hits" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1996" ;
-        owl:sameAs          <https://musicbrainz.org/release/a8f4e847-2509-48ec-b670-4011a34ce16b> , <https://www.amazon.com/gp/product/B000003G3C> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz Greatest Hits" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000003G3C" ;
+        :hasBarcode            "090266850822" ;
+        :hasMusicBrainzID      "a8f4e847-2509-48ec-b670-4011a34ce16b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Greatest Hits" ;
+        :releasedInDate        "1996" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/a8f4e847-2509-48ec-b670-4011a34ce16b> , <https://www.amazon.com/dp/B000003G3C> , <https://www.amazon.com/gp/product/B000003G3C> .

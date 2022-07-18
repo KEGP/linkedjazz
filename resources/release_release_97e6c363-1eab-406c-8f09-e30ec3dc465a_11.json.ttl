@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/97e6c363-1eab-406c-8f09-e30ec3dc465a>
-        rdf:type            :Release ;
-        rdfs:label          "The Last Giant: The John Coltrane Anthology" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
-        :hasASIN            "B000003310" ;
-        :hasBarcode         "081227125523" ;
-        :hasMusicBrainzID   "97e6c363-1eab-406c-8f09-e30ec3dc465a" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Last Giant: The John Coltrane Anthology" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1993-06-15" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B000003310> , <https://www.discogs.com/release/2215757> , <https://musicbrainz.org/release/97e6c363-1eab-406c-8f09-e30ec3dc465a> .
+        rdf:type               :Release ;
+        rdfs:label             "The Last Giant: The John Coltrane Anthology" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasASIN               "B000003310" ;
+        :hasBarcode            "081227125523" ;
+        :hasMusicBrainzID      "97e6c363-1eab-406c-8f09-e30ec3dc465a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Last Giant: The John Coltrane Anthology" ;
+        :releasedInDate        "1993-06-15" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000003310> , <https://www.discogs.com/release/2215757> , <https://musicbrainz.org/release/97e6c363-1eab-406c-8f09-e30ec3dc465a> , <https://www.amazon.com/dp/B000003310> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

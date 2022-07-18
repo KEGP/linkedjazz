@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/0280c3ab-0000-4cb2-a16d-07228f77dad2>
-        rdf:type            :Release ;
-        rdfs:label          "The Complete Modern Jazz Quartet Prestige & Pablo Recordings" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
-        :hasASIN            "B0000DIJPJ" ;
-        :hasMusicBrainzID   "0280c3ab-0000-4cb2-a16d-07228f77dad2" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Complete Modern Jazz Quartet Prestige & Pablo Recordings" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "2003-10-21" ;
-        owl:sameAs          <https://musicbrainz.org/release/0280c3ab-0000-4cb2-a16d-07228f77dad2> , <https://www.amazon.com/gp/product/B0000DIJPJ> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete Modern Jazz Quartet Prestige & Pablo Recordings" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+        :hasASIN               "B0000DIJPJ" ;
+        :hasMusicBrainzID      "0280c3ab-0000-4cb2-a16d-07228f77dad2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Modern Jazz Quartet Prestige & Pablo Recordings" ;
+        :releasedInDate        "2003-10-21" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/0280c3ab-0000-4cb2-a16d-07228f77dad2> , <https://www.amazon.com/dp/B0000DIJPJ> , <https://www.amazon.com/gp/product/B0000DIJPJ> .

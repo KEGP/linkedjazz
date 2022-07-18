@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/66787546-ae42-4ac2-9f14-6fe358a7a466>
-        rdf:type             :Release ;
-        rdfs:label           "All Time Jazz Classics" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "5060146919517" ;
-        :hasMusicBrainzID    "66787546-ae42-4ac2-9f14-6fe358a7a466" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "All Time Jazz Classics" ;
-        :releasedInCountry   "XE" ;
-        :releasedInDate      "2007" ;
-        owl:sameAs           <https://musicbrainz.org/release/66787546-ae42-4ac2-9f14-6fe358a7a466> .
+        rdf:type               :Release ;
+        rdfs:label             "All Time Jazz Classics" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "5060146919517" ;
+        :hasMusicBrainzID      "66787546-ae42-4ac2-9f14-6fe358a7a466" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "All Time Jazz Classics" ;
+        :releasedInDate        "2007" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://musicbrainz.org/release/66787546-ae42-4ac2-9f14-6fe358a7a466> .
+
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .

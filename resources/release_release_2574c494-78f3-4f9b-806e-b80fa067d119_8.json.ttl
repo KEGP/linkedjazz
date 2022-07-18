@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/2574c494-78f3-4f9b-806e-b80fa067d119>
-        rdf:type             :Release ;
-        rdfs:label           "Martin Scorsese Presents the Blues: Bessie Smith" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
-        :hasASIN             "B00012ML7M" ;
-        :hasBarcode          "5099751257226" ;
-        :hasMusicBrainzID    "2574c494-78f3-4f9b-806e-b80fa067d119" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Martin Scorsese Presents the Blues: Bessie Smith" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "2004-03-29" ;
-        owl:sameAs           <https://musicbrainz.org/release/2574c494-78f3-4f9b-806e-b80fa067d119> , <https://www.amazon.co.uk/gp/product/B00012ML7M> .
+        rdf:type               :Release ;
+        rdfs:label             "Martin Scorsese Presents the Blues: Bessie Smith" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+        :hasASIN               "B00012ML7M" ;
+        :hasBarcode            "5099751257226" ;
+        :hasMusicBrainzID      "2574c494-78f3-4f9b-806e-b80fa067d119" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Martin Scorsese Presents the Blues: Bessie Smith" ;
+        :releasedInDate        "2004-03-29" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00012ML7M> , <https://musicbrainz.org/release/2574c494-78f3-4f9b-806e-b80fa067d119> , <https://www.amazon.co.uk/gp/product/B00012ML7M> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

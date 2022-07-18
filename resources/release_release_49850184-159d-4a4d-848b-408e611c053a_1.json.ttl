@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/49850184-159d-4a4d-848b-408e611c053a>
-        rdf:type             :Release ;
-        rdfs:label           "Columbia Basic Library of Great Jazz" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "" ;
-        :hasMusicBrainzID    "49850184-159d-4a4d-848b-408e611c053a" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Columbia Basic Library of Great Jazz" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1956" ;
-        owl:sameAs           <https://musicbrainz.org/release/49850184-159d-4a4d-848b-408e611c053a> .
+        rdf:type               :Release ;
+        rdfs:label             "Columbia Basic Library of Great Jazz" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "49850184-159d-4a4d-848b-408e611c053a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Columbia Basic Library of Great Jazz" ;
+        :releasedInDate        "1956" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/49850184-159d-4a4d-848b-408e611c053a> .

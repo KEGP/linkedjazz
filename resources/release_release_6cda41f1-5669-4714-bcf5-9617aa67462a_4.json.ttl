@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/6cda41f1-5669-4714-bcf5-9617aa67462a>
-        rdf:type             :Release ;
-        rdfs:label           "Pure… Classical" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B0051BNXN4" ;
-        :hasBarcode          "886979150225" ;
-        :hasMusicBrainzID    "6cda41f1-5669-4714-bcf5-9617aa67462a" ;
-        :hasPackagingFormat  "Digipak" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Pure… Classical" ;
-        :releasedInCountry   "XE" ;
-        :releasedInDate      "2011-06-17" ;
-        owl:sameAs           <https://musicbrainz.org/release/6cda41f1-5669-4714-bcf5-9617aa67462a> , <https://www.amazon.co.uk/gp/product/B0051BNXN4> .
+        rdf:type               :Release ;
+        rdfs:label             "Pure… Classical" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B0051BNXN4" ;
+        :hasBarcode            "886979150225" ;
+        :hasMusicBrainzID      "6cda41f1-5669-4714-bcf5-9617aa67462a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Pure… Classical" ;
+        :releasedInDate        "2011-06-17" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://musicbrainz.org/release/6cda41f1-5669-4714-bcf5-9617aa67462a> , <https://www.amazon.com/dp/B0051BNXN4> , <https://www.amazon.co.uk/gp/product/B0051BNXN4> .
+
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .

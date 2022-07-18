@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/bbd08497-8ae8-4188-8ec4-0711764a2287>
-        rdf:type            :Release ;
-        rdfs:label          "Djangology" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
-        :hasASIN            "B00004WMYI" ;
-        :hasBarcode         "636551430722" ;
-        :hasMusicBrainzID   "bbd08497-8ae8-4188-8ec4-0711764a2287" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Djangology" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "2000-08-29" ;
-        owl:sameAs          <https://www.amazon.co.uk/gp/product/B00004WMYI> , <https://www.discogs.com/release/1473535> , <https://musicbrainz.org/release/bbd08497-8ae8-4188-8ec4-0711764a2287> .
+        rdf:type               :Release ;
+        rdfs:label             "Djangology" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN               "B00004WMYI" ;
+        :hasBarcode            "636551430722" ;
+        :hasMusicBrainzID      "bbd08497-8ae8-4188-8ec4-0711764a2287" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Djangology" ;
+        :releasedInDate        "2000-08-29" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00004WMYI> , <https://www.amazon.co.uk/gp/product/B00004WMYI> , <https://www.discogs.com/release/1473535> , <https://musicbrainz.org/release/bbd08497-8ae8-4188-8ec4-0711764a2287> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

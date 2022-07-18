@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/b7b8d5f9-a08c-43d9-ac09-de9ca6befd8d>
-        rdf:type             :Release ;
-        rdfs:label           "Classic Jazz: The Thirties" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B000EOEVSY" ;
-        :hasBarcode          "610583046526" ;
-        :hasMusicBrainzID    "b7b8d5f9-a08c-43d9-ac09-de9ca6befd8d" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Classic Jazz: The Thirties" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "2002" ;
-        owl:sameAs           <https://musicbrainz.org/release/b7b8d5f9-a08c-43d9-ac09-de9ca6befd8d> , <https://www.amazon.com/gp/product/B000EOEVSY> .
+        rdf:type               :Release ;
+        rdfs:label             "Classic Jazz: The Thirties" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000EOEVSY" ;
+        :hasBarcode            "610583046526" ;
+        :hasMusicBrainzID      "b7b8d5f9-a08c-43d9-ac09-de9ca6befd8d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Classic Jazz: The Thirties" ;
+        :releasedInDate        "2002" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/b7b8d5f9-a08c-43d9-ac09-de9ca6befd8d> , <https://www.amazon.com/gp/product/B000EOEVSY> , <https://www.amazon.com/dp/B000EOEVSY> .

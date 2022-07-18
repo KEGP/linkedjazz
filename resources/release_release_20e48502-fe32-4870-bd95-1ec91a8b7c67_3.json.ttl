@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/20e48502-fe32-4870-bd95-1ec91a8b7c67>
-        rdf:type             :Release ;
-        rdfs:label           "The Chronological Classics: Jimmie Lunceford and His Orchestra 1935-1937" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
-        :hasASIN             "B00007GX41" ;
-        :hasBarcode          "3307517051028" ;
-        :hasMusicBrainzID    "20e48502-fe32-4870-bd95-1ec91a8b7c67" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Chronological Classics: Jimmie Lunceford and His Orchestra 1935-1937" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "1990" ;
-        owl:sameAs           <https://musicbrainz.org/release/20e48502-fe32-4870-bd95-1ec91a8b7c67> , <https://www.amazon.fr/gp/product/B00007GX41> .
+        rdf:type               :Release ;
+        rdfs:label             "The Chronological Classics: Jimmie Lunceford and His Orchestra 1935-1937" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
+        :hasASIN               "B00007GX41" ;
+        :hasBarcode            "3307517051028" ;
+        :hasMusicBrainzID      "20e48502-fe32-4870-bd95-1ec91a8b7c67" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Jimmie Lunceford and His Orchestra 1935-1937" ;
+        :releasedInDate        "1990" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/20e48502-fe32-4870-bd95-1ec91a8b7c67> , <https://www.amazon.fr/gp/product/B00007GX41> , <https://www.amazon.com/dp/B00007GX41> .

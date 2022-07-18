@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594>
         rdf:type              :Recording ;
@@ -15,13 +14,15 @@
         :creditedTo           <http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> ;
         :hasAudioTrackLength  "217800" ;
         :hasMusicBrainzID     "b5c9ca7e-ba9f-4ebf-8609-f4dc24339594" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1947-06-12" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1947-06-12"
-                              ] ;
         :hasTitle             "Bikini" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/a030da9f-1ec7-4776-a6cf-b43f978a7e8f> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/b281c80d-8f7b-46f1-81d1-94fd1c51818c> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1947-06-12" ;
+                                :hasIntervalStartDate  "1947-06-12"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1947-06-12" ;
+                                :hasIntervalStartDate  "1947-06-12"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/a030da9f-1ec7-4776-a6cf-b43f978a7e8f> ;
         owl:sameAs            <https://musicbrainz.org/recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/19af4fa3-ce3d-48f1-b81f-fd12b7405f1f>
-        rdf:type             :Release ;
-        rdfs:label           "The Chronological Classics: Sidney Bechet 1923-1936" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
-        :hasASIN             "B00007GX5U" ;
-        :hasBarcode          "3307517058324" ;
-        :hasMusicBrainzID    "19af4fa3-ce3d-48f1-b81f-fd12b7405f1f" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Chronological Classics: Sidney Bechet 1923-1936" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "1991" ;
-        owl:sameAs           <https://www.amazon.fr/gp/product/B00007GX5U> , <https://musicbrainz.org/release/19af4fa3-ce3d-48f1-b81f-fd12b7405f1f> .
+        rdf:type               :Release ;
+        rdfs:label             "The Chronological Classics: Sidney Bechet 1923-1936" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :hasASIN               "B00007GX5U" ;
+        :hasBarcode            "3307517058324" ;
+        :hasMusicBrainzID      "19af4fa3-ce3d-48f1-b81f-fd12b7405f1f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Sidney Bechet 1923-1936" ;
+        :releasedInDate        "1991" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.amazon.fr/gp/product/B00007GX5U> , <https://www.amazon.com/dp/B00007GX5U> , <https://musicbrainz.org/release/19af4fa3-ce3d-48f1-b81f-fd12b7405f1f> .

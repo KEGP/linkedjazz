@@ -10,13 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/42f22d70-f906-4fdf-9174-fe63df89ad59> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/97864c47-cdfe-4d97-a118-d5d51d5353d4> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/2437980f-513a-44fc-80f1-b90d9d7fcf8f>
         rdfs:label         "Bing Crosby" ;
         :hasMusicBrainzID  "2437980f-513a-44fc-80f1-b90d9d7fcf8f" ;
@@ -41,5 +34,12 @@
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/42f22d70-f906-4fdf-9174-fe63df89ad59> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2437980f-513a-44fc-80f1-b90d9d7fcf8f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/42f22d70-f906-4fdf-9174-fe63df89ad59> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/97864c47-cdfe-4d97-a118-d5d51d5353d4> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
 ] .

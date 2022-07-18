@@ -10,6 +10,16 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1928" ;
+                     dul:hasIntervalStartDate  "1928"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/a97c426c-c138-4531-9d4a-e2eb0bca7961> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f>
         rdfs:label         "King Oliver" ;
         :hasMusicBrainzID  "744fa1ae-051c-463c-957a-25a4ddc01c2f" ;
@@ -24,21 +34,17 @@
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> ;
         owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1928" ;
-                     dul:hasIntervalStartDate  "1928"
-                   ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/a97c426c-c138-4531-9d4a-e2eb0bca7961> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
-] .
-
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
         rdfs:label         "composer" ;
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
+        rdfs:label         "arranger" ;
+        :hasMusicBrainzID  "d3fd781c-5894-47e2-8c12-86cc0e2c8d08" ;
+        :hasName           "arranger" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> .
 
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type                  dul:TimeInterval ;
@@ -49,9 +55,3 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/ArtistRole/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
-        rdfs:label         "arranger" ;
-        :hasMusicBrainzID  "d3fd781c-5894-47e2-8c12-86cc0e2c8d08" ;
-        :hasName           "arranger" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> .

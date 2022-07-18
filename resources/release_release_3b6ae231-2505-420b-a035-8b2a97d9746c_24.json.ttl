@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/3b6ae231-2505-420b-a035-8b2a97d9746c>
-        rdf:type            :Release ;
-        rdfs:label          "Fireworks" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasASIN            "B00004YML3" ;
-        :hasBarcode         "3460503671027" ;
-        :hasMusicBrainzID   "3b6ae231-2505-420b-a035-8b2a97d9746c" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Fireworks" ;
-        :releasedInCountry  "FR" ;
-        :releasedInDate     "2000" ;
-        owl:sameAs          <https://musicbrainz.org/release/3b6ae231-2505-420b-a035-8b2a97d9746c> , <https://www.amazon.de/gp/product/B00004YML3> .
+        rdf:type               :Release ;
+        rdfs:label             "Fireworks" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN               "B00004YML3" ;
+        :hasBarcode            "3460503671027" ;
+        :hasMusicBrainzID      "3b6ae231-2505-420b-a035-8b2a97d9746c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Fireworks" ;
+        :releasedInDate        "2000" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/3b6ae231-2505-420b-a035-8b2a97d9746c> , <https://www.amazon.de/gp/product/B00004YML3> , <https://www.amazon.com/dp/B00004YML3> .

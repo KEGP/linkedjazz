@@ -1,76 +1,921 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/fd889e33-a067-498f-bbf8-9ffe305bde16>
         rdf:type              :Recording ;
         rdfs:label            "The Girl From Ipanema (Garota de Ipanema)" ;
-        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> , <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+        :creditedTo           <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> , <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
         :hasAudioTrackLength  "323000" ;
-        :hasISRC              "USGR10201067" , "USPR36301961" , "USBJN0920082" ;
+        :hasISRC              "USGR10201067" , "USBJN0920082" , "USPR36301961" ;
         :hasMusicBrainzID     "fd889e33-a067-498f-bbf8-9ffe305bde16" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1963-03-19" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1963-03-18"
-                              ] ;
         :hasTitle             "The Girl From Ipanema (Garota de Ipanema)" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/55244717-976e-4aab-b1ed-5282bd0ab304> , <http://localhost:8080/resource/kejazz/Release/bf84be73-7a07-4e16-8b07-92d0889cfbba> , <http://localhost:8080/resource/kejazz/Release/cc329387-6f27-40a2-b7ac-f8349f6b5971> , <http://localhost:8080/resource/kejazz/Release/b36a7186-8a86-47b1-ad97-f2278ef0da5f> , <http://localhost:8080/resource/kejazz/Release/90b52c22-7a46-4832-9f70-4db2e9e85529> , <http://localhost:8080/resource/kejazz/Release/00c5532d-9d84-4b1d-b3ff-b4c340cc56f2> , <http://localhost:8080/resource/kejazz/Release/9b9cbb73-0d08-4c1b-9595-708b178c0be4> , <http://localhost:8080/resource/kejazz/Release/d9341be9-b999-4d3e-8249-070bc0e1a8dd> , <http://localhost:8080/resource/kejazz/Release/c15a5f4c-60a0-48e9-bea1-b2adbdc1ddab> , <http://localhost:8080/resource/kejazz/Release/31cecd99-f608-4bbb-a3f9-622f9f057e04> , <http://localhost:8080/resource/kejazz/Release/fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4> , <http://localhost:8080/resource/kejazz/Release/1fc4e773-f202-4ea7-812c-f31344598169> , <http://localhost:8080/resource/kejazz/Release/a98737df-b536-496a-93b3-b3eaecf9ad49> , <http://localhost:8080/resource/kejazz/Release/fa5f843f-3871-40f5-be9c-7103f83c82dd> , <http://localhost:8080/resource/kejazz/Release/673a155b-9d95-4dd2-81f7-1b947d2182ce> , <http://localhost:8080/resource/kejazz/Release/9641b096-dd93-4fa2-a9da-e760621d2383> , <http://localhost:8080/resource/kejazz/Release/b03d2a8b-0720-4000-b65d-6fa8fee707e0> , <http://localhost:8080/resource/kejazz/Release/b86bd910-ef90-4e59-b217-50a02e31e9ac> , <http://localhost:8080/resource/kejazz/Release/a6a06799-9bfa-4cce-8fa8-fbed9f445724> , <http://localhost:8080/resource/kejazz/Release/94174d58-192e-422c-a89f-13a5c30b89c5> , <http://localhost:8080/resource/kejazz/Release/f1a704e5-8e9e-45c2-8e28-521092dae3ad> , <http://localhost:8080/resource/kejazz/Release/3dbe8250-a4e4-4bc4-a32c-db0e3a88375d> , <http://localhost:8080/resource/kejazz/Release/6e18438e-6518-4bc0-a4dd-b7abd007d1d7> , <http://localhost:8080/resource/kejazz/Release/f0557206-6f78-40e8-a4f4-44af4caa1dc6> , <http://localhost:8080/resource/kejazz/Release/6e0353e3-6169-4dda-9bd9-4b1a54da6c34> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1963-03-19" ;
+                                :hasIntervalStartDate  "1963-03-18"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
         owl:sameAs            <https://musicbrainz.org/recording/fd889e33-a067-498f-bbf8-9ffe305bde16> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,11 +9,11 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/47d3ed3c-d222-46d2-9615-c7feae1574e2>
-        rdf:type           :Release ;
-        rdfs:label         "Original Dixieland Jazz Band" ;
-        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
-        :hasMusicBrainzID  "47d3ed3c-d222-46d2-9615-c7feae1574e2" ;
-        :hasStatus         "Official" ;
-        :hasTitle          "Original Dixieland Jazz Band" ;
-        :releasedInDate    "1970" ;
-        owl:sameAs         <https://www.discogs.com/release/4623803> , <https://musicbrainz.org/release/47d3ed3c-d222-46d2-9615-c7feae1574e2> .
+        rdf:type               :Release ;
+        rdfs:label             "Original Dixieland Jazz Band" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
+        :hasMusicBrainzID      "47d3ed3c-d222-46d2-9615-c7feae1574e2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Original Dixieland Jazz Band" ;
+        :releasedInDate        "1970" ;
+        owl:sameAs             <https://www.discogs.com/release/4623803> , <https://musicbrainz.org/release/47d3ed3c-d222-46d2-9615-c7feae1574e2> .

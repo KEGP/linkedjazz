@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/22689758-ffc1-450f-bb48-52b577077dba>
-        rdf:type             :Release ;
-        rdfs:label           "Giant Steps" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
-        :hasBarcode          "" ;
-        :hasMusicBrainzID    "22689758-ffc1-450f-bb48-52b577077dba" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Giant Steps" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1960-01" ;
-        owl:sameAs           <https://musicbrainz.org/release/22689758-ffc1-450f-bb48-52b577077dba> , <https://www.discogs.com/release/2155244> .
+        rdf:type               :Release ;
+        rdfs:label             "Giant Steps" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "22689758-ffc1-450f-bb48-52b577077dba" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Giant Steps" ;
+        :releasedInDate        "1960-01" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/22689758-ffc1-450f-bb48-52b577077dba> , <https://www.discogs.com/release/2155244> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

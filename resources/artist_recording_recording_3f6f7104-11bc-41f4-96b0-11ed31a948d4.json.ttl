@@ -14,16 +14,7 @@
         :hasName           "Jelly Roll Morton" ;
         owl:sameAs         <https://musicbrainz.org/artist/3d094919-071f-4070-95dc-e1f350e4a5f3> .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
-        rdfs:label         "piano" ;
-        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
-        :hasName           "piano" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
-
-<http://localhost:8080/resource/kejazz/Recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4>
-        owl:sameAs  <https://musicbrainz.org/recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
@@ -32,3 +23,12 @@
                      dul:hasIntervalStartDate  "1923-07-17"
                    ]
 ] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4>
+        owl:sameAs  <https://musicbrainz.org/recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4> .

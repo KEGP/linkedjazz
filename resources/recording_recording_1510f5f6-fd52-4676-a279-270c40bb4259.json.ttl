@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/1510f5f6-fd52-4676-a279-270c40bb4259>
         rdf:type              :Recording ;
@@ -16,19 +15,79 @@
         :hasAudioTrackLength  "307627" ;
         :hasISRC              "USBJN0920075" , "DERG11300430" ;
         :hasMusicBrainzID     "1510f5f6-fd52-4676-a279-270c40bb4259" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1960-03-29" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1960-03-29"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1960-03-29" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1960-03-29"
-                              ] ;
         :hasTitle             "Work Song" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/fd0d4e90-95d1-4293-a80b-410a95477f6f> , <http://localhost:8080/resource/kejazz/Release/400b30f5-c419-42ec-9ded-a48584c02335> , <http://localhost:8080/resource/kejazz/Release/002cfc0f-213f-48c8-9633-3df4713f729c> , <http://localhost:8080/resource/kejazz/Release/8505afcc-0ec6-49cb-a339-27865ca572f0> , <http://localhost:8080/resource/kejazz/Release/cd535102-eb6d-4211-b655-abeb2f754364> , <http://localhost:8080/resource/kejazz/Release/435e10bd-e47a-47c3-a566-d0c9d3c501d8> , <http://localhost:8080/resource/kejazz/Release/0ab0c183-6972-4fbb-8456-b01e49a3208f> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/4ce484f1-a56b-45aa-8b3b-7e07c096e2b4> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1960-03-29" ;
+                                :hasIntervalStartDate  "1960-03-29"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188> ;
         owl:sameAs            <https://musicbrainz.org/recording/1510f5f6-fd52-4676-a279-270c40bb4259> .

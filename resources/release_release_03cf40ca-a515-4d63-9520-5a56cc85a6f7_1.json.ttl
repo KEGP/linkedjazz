@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/03cf40ca-a515-4d63-9520-5a56cc85a6f7>
-        rdf:type            :Release ;
-        rdfs:label          "Blue and Sentimental / Doggin' Around" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
-        :hasMusicBrainzID   "03cf40ca-a515-4d63-9520-5a56cc85a6f7" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Blue and Sentimental / Doggin' Around" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1938-08" ;
-        owl:sameAs          <https://musicbrainz.org/release/03cf40ca-a515-4d63-9520-5a56cc85a6f7> .
+        rdf:type               :Release ;
+        rdfs:label             "Blue and Sentimental / Doggin' Around" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
+        :hasMusicBrainzID      "03cf40ca-a515-4d63-9520-5a56cc85a6f7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Blue and Sentimental / Doggin' Around" ;
+        :releasedInDate        "1938-08" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/03cf40ca-a515-4d63-9520-5a56cc85a6f7> .

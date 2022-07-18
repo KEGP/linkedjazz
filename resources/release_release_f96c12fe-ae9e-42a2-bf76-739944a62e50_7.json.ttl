@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/f96c12fe-ae9e-42a2-bf76-739944a62e50>
-        rdf:type             :Release ;
-        rdfs:label           "The Chronological Classics: Louis Armstrong and His Orchestra 1928-1929" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
-        :hasASIN             "B00007GX5I" ;
-        :hasBarcode          "3307517057020" ;
-        :hasMusicBrainzID    "f96c12fe-ae9e-42a2-bf76-739944a62e50" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Chronological Classics: Louis Armstrong and His Orchestra 1928-1929" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "1991" ;
-        owl:sameAs           <https://www.amazon.fr/gp/product/B00007GX5I> , <https://musicbrainz.org/release/f96c12fe-ae9e-42a2-bf76-739944a62e50> .
+        rdf:type               :Release ;
+        rdfs:label             "The Chronological Classics: Louis Armstrong and His Orchestra 1928-1929" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
+        :hasASIN               "B00007GX5I" ;
+        :hasBarcode            "3307517057020" ;
+        :hasMusicBrainzID      "f96c12fe-ae9e-42a2-bf76-739944a62e50" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Louis Armstrong and His Orchestra 1928-1929" ;
+        :releasedInDate        "1991" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.amazon.fr/gp/product/B00007GX5I> , <https://musicbrainz.org/release/f96c12fe-ae9e-42a2-bf76-739944a62e50> , <https://www.amazon.com/dp/B00007GX5I> .

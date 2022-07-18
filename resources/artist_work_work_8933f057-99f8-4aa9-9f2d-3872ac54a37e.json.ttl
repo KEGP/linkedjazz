@@ -10,13 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/8933f057-99f8-4aa9-9f2d-3872ac54a37e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/6d2a6a98-cddf-489a-80dc-b03b873368b8> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/6d2a6a98-cddf-489a-80dc-b03b873368b8>
         rdfs:label         "Bennie Moten" ;
         :hasMusicBrainzID  "6d2a6a98-cddf-489a-80dc-b03b873368b8" ;
@@ -43,3 +36,10 @@
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/8933f057-99f8-4aa9-9f2d-3872ac54a37e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/6d2a6a98-cddf-489a-80dc-b03b873368b8> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

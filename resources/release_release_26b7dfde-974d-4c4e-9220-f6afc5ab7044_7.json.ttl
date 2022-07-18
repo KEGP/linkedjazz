@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/26b7dfde-974d-4c4e-9220-f6afc5ab7044>
-        rdf:type            :Release ;
-        rdfs:label          "Jazz Masters: From Original Recordings" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
-        :hasASIN            "B000024QSZ" ;
-        :hasBarcode         "724385572029" ;
-        :hasMusicBrainzID   "26b7dfde-974d-4c4e-9220-f6afc5ab7044" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Jazz Masters: From Original Recordings" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "1992" ;
-        owl:sameAs          <https://www.amazon.co.uk/gp/product/B000024QSZ> , <https://musicbrainz.org/release/26b7dfde-974d-4c4e-9220-f6afc5ab7044> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz Masters: From Original Recordings" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasASIN               "B000024QSZ" ;
+        :hasBarcode            "724385572029" ;
+        :hasMusicBrainzID      "26b7dfde-974d-4c4e-9220-f6afc5ab7044" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Masters: From Original Recordings" ;
+        :releasedInDate        "1992" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B000024QSZ> , <https://www.amazon.com/dp/B000024QSZ> , <https://musicbrainz.org/release/26b7dfde-974d-4c4e-9220-f6afc5ab7044> .

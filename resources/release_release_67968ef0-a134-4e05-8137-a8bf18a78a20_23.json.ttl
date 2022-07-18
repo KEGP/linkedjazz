@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/67968ef0-a134-4e05-8137-a8bf18a78a20>
-        rdf:type             :Release ;
-        rdfs:label           "Djangology" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
-        :hasASIN             "B00004WMYI" ;
-        :hasBarcode          "636551430722" ;
-        :hasMusicBrainzID    "67968ef0-a134-4e05-8137-a8bf18a78a20" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Djangology" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "2000" ;
-        owl:sameAs           <https://musicbrainz.org/release/67968ef0-a134-4e05-8137-a8bf18a78a20> , <https://www.musik-sammler.de/media/974608/> , <https://www.amazon.de/gp/product/B00004WMYI> , <https://www.discogs.com/release/1473535> .
+        rdf:type               :Release ;
+        rdfs:label             "Djangology" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN               "B00004WMYI" ;
+        :hasBarcode            "636551430722" ;
+        :hasMusicBrainzID      "67968ef0-a134-4e05-8137-a8bf18a78a20" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Djangology" ;
+        :releasedInDate        "2000" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://musicbrainz.org/release/67968ef0-a134-4e05-8137-a8bf18a78a20> , <https://www.musik-sammler.de/media/974608/> , <https://www.amazon.com/dp/B00004WMYI> , <https://www.amazon.de/gp/product/B00004WMYI> , <https://www.discogs.com/release/1473535> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

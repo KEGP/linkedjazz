@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,14 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/8c15709b-e72a-4347-b870-2385a7f1c334>
-        rdf:type             :Release ;
-        rdfs:label           "The Complete Masters 1925–1945" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasMusicBrainzID    "8c15709b-e72a-4347-b870-2385a7f1c334" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Complete Masters 1925–1945" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "2011-11-21" ;
-        owl:sameAs           <https://musicbrainz.org/release/8c15709b-e72a-4347-b870-2385a7f1c334> , <http://www.jazzmasters.fr/album/louis/> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete Masters 1925–1945" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasMusicBrainzID      "8c15709b-e72a-4347-b870-2385a7f1c334" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Masters 1925–1945" ;
+        :releasedInDate        "2011-11-21" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/8c15709b-e72a-4347-b870-2385a7f1c334> , <http://www.jazzmasters.fr/album/louis/> .

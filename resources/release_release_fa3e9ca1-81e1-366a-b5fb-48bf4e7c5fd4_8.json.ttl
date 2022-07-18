@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4>
-        rdf:type            :Release ;
-        rdfs:label          "Getz/Gilberto" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
-        :hasASIN            "B00006L6YG" ;
-        :hasBarcode         "042281004827" ;
-        :hasMusicBrainzID   "fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Getz/Gilberto" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1989-04" ;
-        owl:sameAs          <https://musicbrainz.org/release/fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4> , <https://www.amazon.com/gp/product/B00006L6YG> .
+        rdf:type               :Release ;
+        rdfs:label             "Getz/Gilberto" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+        :hasASIN               "B00006L6YG" ;
+        :hasBarcode            "042281004827" ;
+        :hasMusicBrainzID      "fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Getz/Gilberto" ;
+        :releasedInDate        "1989-04" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/fa3e9ca1-81e1-366a-b5fb-48bf4e7c5fd4> , <https://www.amazon.com/gp/product/B00006L6YG> , <https://www.amazon.com/dp/B00006L6YG> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

@@ -9,81 +9,44 @@
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:       <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/6> .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Trumbone Solo - Blues chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/8> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/9>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/12>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 9" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/10> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/10>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 10" ;
+        rdfs:label       "Bar 12" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
                            rdfs:label       "F:7" ;
-                           :isFirst         true ;
+                           :isFirst         false ;
                            :nextAnnotation  [] 
                          ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/11> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/13> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Collective Improvisation - Blues chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/7>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
-                           rdfs:label       "Bb:7" ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/8> .
 
-<https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
@@ -92,192 +55,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Trumpet Solo - Blues chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/11>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 11" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/12> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Intro chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
-                           rdfs:label       "Bb:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/5> .
-
-<https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/10>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 10" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/11> .
-
-<http://localhost:8080/resource/chord-annotations/Pattern/Blues>
-        rdf:type    :Pattern ;
-        rdfs:label  "Blues" .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues>
-        rdf:type            :Section ;
-        rdfs:label          "Vocals - Blues" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
-                           rdfs:label       "G:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
-                           rdfs:label       "E:dim7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
-                           rdfs:label       "E:dim7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Piano Solo- Blues chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Trumbone Solo - Blues chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/3> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
-                           rdfs:label       "G:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/11>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 11" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/12> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/11>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 11" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/12> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/3>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/4> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/8> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
@@ -291,29 +71,23 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues>
-        rdf:type            :Section ;
-        rdfs:label          "Trumpet Solo - Blues" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues> .
+<https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+        rdf:type  kejazz:Instrument .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/5>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
+        rdfs:label       "Bar 5" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
                            rdfs:label       "Eb:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
@@ -322,9 +96,106 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Intro chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues>
+        rdf:type            :Section ;
+        rdfs:label          "Collective Improvisation - Blues" ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/9>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/10> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Piano Solo- Blues chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/11> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/11> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Alto Sax Solo- Blues chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/1> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/11> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues>
+        rdf:type            :Section ;
+        rdfs:label          "Trumbone Solo - Blues" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues> .
+
+<https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/3> .
+
+<http://localhost:8080/resource/chord-annotations/Pattern/Blues>
+        rdf:type    :Pattern ;
+        rdfs:label  "Blues" .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
@@ -348,87 +219,20 @@
                            :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ]
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/9>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/5>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 9" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/10> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/12>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 12" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/13> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
-                           rdfs:label       "G:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/2>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
+        rdfs:label       "Bar 5" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
                            rdfs:label       "Eb:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/6> .
 
-<https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
-                           rdfs:label       "E:dim7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
@@ -442,36 +246,18 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/11>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 11" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/12> .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues>
+        rdf:type            :Section ;
+        rdfs:label          "Trumpet Solo - Blues" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/5>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 5" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/6> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/6>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/6>
         rdf:type         :Bar ;
         rdfs:label       "Bar 6" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
@@ -480,20 +266,31 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/7> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/8>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/12>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/12>
         rdf:type         :Bar ;
         rdfs:label       "Bar 12" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
@@ -507,20 +304,20 @@
                            :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/13> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/13> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/10>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/2> .
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/11> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/5>
         rdf:type         :Bar ;
         rdfs:label       "Bar 5" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
@@ -529,35 +326,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/11>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 11" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
-                           rdfs:label       "Eb:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/12> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec>
-        rdf:type           :Sheet ;
-        rdfs:label         "That's a Serious Thing sheet" ;
-        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Bb_major> ;
-        :hasSection        <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues> ;
-        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
-
-<https://musicbrainz.org/instrument/>
-        rdf:type  kejazz:Instrument .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
@@ -566,14 +337,70 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30>
-        rdf:type    kejazz:Recording ;
-        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec> ;
-        :hasTuning  "440.57"^^xsd:double .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Trumpet Solo - Blues chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/11> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/9>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/8>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/9> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro>
+        rdf:type            :Section ;
+        rdfs:label          "Intro" ;
+        :isFirst            true ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/9>
         rdf:type         :Bar ;
         rdfs:label       "Bar 9" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -582,9 +409,62 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/10> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/10> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/12>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 12" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/13> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression>
+        rdf:type    :Progression ;
+        rdfs:label  "Vocals - Blues chord progression" ;
+        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/10>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 10" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/11> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/9>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/10> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
@@ -608,25 +488,12 @@
                            :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Bb:7/7> ]
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/7>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/8> .
+<https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+        rdf:type  kejazz:Instrument .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/8>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/8>
         rdf:type         :Bar ;
         rdfs:label       "Bar 8" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
@@ -635,91 +502,20 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/10>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/3>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 10" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/11> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/9>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 9" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/10> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
-                           rdfs:label       "E:dim7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/7> .
-
-<http://localhost:8080/resource/chord-annotations/Key/Bb_major>
-        rdf:type            :Key ;
-        rdf:label           "Bb major" ;
-        :hasRoot            mto:Bb ;
-        :ofHarmonicQuality  mto:MajorKey .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/12>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 12" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
+        rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
                            rdfs:label       "Bb" ;
                            :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/13> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
-                           rdfs:label       "Bb:7" ;
-                           :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/8>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 8" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
-                           rdfs:label       "G:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/9> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
@@ -733,20 +529,20 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/6>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 3" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
@@ -755,41 +551,36 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/1>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/2> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro>
-        rdf:type            :Section ;
-        rdfs:label          "Intro" ;
-        :isFirst            true ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/4>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/4>
         rdf:type         :Bar ;
         rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/5> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/5> .
 
-<https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
-        rdf:type  kejazz:Instrument .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/12> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/10>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/10>
         rdf:type         :Bar ;
         rdfs:label       "Bar 10" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
@@ -798,20 +589,25 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/11> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/11> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/9>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/11>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 9" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
-                           rdfs:label       "C:7" ;
-                           :isFirst         true ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         false ;
                            :nextAnnotation  [] 
                          ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/10> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/12> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/3>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/3>
         rdf:type         :Bar ;
         rdfs:label       "Bar 3" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
@@ -820,38 +616,50 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/4> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/4> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues>
-        rdf:type            :Section ;
-        rdfs:label          "Alto Sax Solo- Blues" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues>
-        rdf:type            :Section ;
-        rdfs:label          "Piano Solo- Blues" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/7>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/1>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/2> .
+
+<https://musicbrainz.org/instrument/>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
                            rdfs:label       "Bb" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/8> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/5>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30>
+        rdf:type    kejazz:Recording ;
+        :hasSheet   <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5> ;
+        :hasTuning  "440.57"^^xsd:double .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/5>
         rdf:type         :Bar ;
         rdfs:label       "Bar 5" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
@@ -865,45 +673,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/6> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/6> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/12>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 12" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/13> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/6>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 6" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
-                           rdfs:label       "E:dim7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/7> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues>
-        rdf:type            :Section ;
-        rdfs:label          "Trumbone Solo - Blues" ;
-        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
-        :hasMainInstrument  <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression> ;
-        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/7>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/7>
         rdf:type         :Bar ;
         rdfs:label       "Bar 7" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
@@ -912,20 +684,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/8> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/8> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/4>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 4" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
-                           rdfs:label       "Bb:7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/5> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/10>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/10>
         rdf:type         :Bar ;
         rdfs:label       "Bar 10" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
@@ -933,38 +694,59 @@
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/11> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues>
-        rdf:type            :Section ;
-        rdfs:label          "Collective Improvisation - Blues" ;
-        :isFirst            false ;
-        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/10>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 10" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
                            rdfs:label       "F:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/11> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/11> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/9>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/10> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/8> .
+
+<http://localhost:8080/resource/chord-annotations/Key/Bb_major>
+        rdf:type            :Key ;
+        rdf:label           "Bb major" ;
+        :hasRoot            mto:Bb ;
+        :ofHarmonicQuality  mto:MajorKey .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
                            rdfs:label       "Eb:7" ;
-                           :isFirst         true ;
+                           :isFirst         false ;
                            :nextAnnotation  [] 
                          ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
+                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Piano_Solo-_Blues/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/12> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/6>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/6>
         rdf:type         :Bar ;
         rdfs:label       "Bar 6" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
@@ -973,25 +755,9 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/7> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/7> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/12>
-        rdf:type         :Bar ;
-        rdfs:label       "Bar 12" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         false ;
-                           :nextAnnotation  [] 
-                         ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
-                         ] ;
-        :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/13> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/1>
         rdf:type         :Bar ;
         rdfs:label       "Bar 1" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
@@ -1000,19 +766,20 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/2> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/2> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Vocals - Blues chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/4> .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Alto Sax Solo- Blues chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/7> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/12> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/11> .
-
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/2>
         rdf:type         :Bar ;
         rdfs:label       "Bar 2" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
@@ -1021,25 +788,39 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumbone_Solo_-_Blues/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/2>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues>
+        rdf:type            :Section ;
+        rdfs:label          "Alto Sax Solo- Blues" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5>
+        rdf:type           :Sheet ;
+        rdfs:label         "That's a Serious Thing sheet" ;
+        :hasKey            <http://localhost:8080/resource/chord-annotations/Key/Bb_major> ;
+        :hasSection        <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues> ;
+        :hasTimeSignature  <http://localhost:8080/resource/chord-annotations/TimeSignature/4_4> .
+
+<https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdf:type  kejazz:Instrument .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/9>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 2" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
-                           rdfs:label       "F:7" ;
-                           :isFirst         false ;
+        rdfs:label       "Bar 9" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
+                           rdfs:label       "C:7" ;
+                           :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
-                           rdfs:label       "E:dim7" ;
-                           :isFirst         true ;
-                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
-                         ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Intro/Progression/Bar/3> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/10> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/8>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/8>
         rdf:type         :Bar ;
         rdfs:label       "Bar 8" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
@@ -1053,14 +834,67 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/9> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression>
-        rdf:type    :Progression ;
-        rdfs:label  "Collective Improvisation - Blues chord progression" ;
-        :hasBar     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/2> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/6> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/1> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/11> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/9> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/3> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/8> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/10> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/5> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/4> , <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/7> .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/3> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/9>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues>
+        rdf:type            :Section ;
+        rdfs:label          "Piano Solo- Blues" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/12> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/1>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 1" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         true ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/2> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Intro/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/9>
         rdf:type         :Bar ;
         rdfs:label       "Bar 9" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/C:7> ;
@@ -1069,15 +903,175 @@
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Vocals_-_Blues/Progression/Bar/10> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/10> .
 
-<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
-        rdf:type          mto:TimeSignature ;
-        rdfs:label        "4/4" ;
-        :hasLowerNumeral  "4" ;
-        :hasUpperNumeral  "4" .
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/5> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/11>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/3>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 3" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/4> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/5>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 5" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/6> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/12>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 12" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/13> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/11>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 11" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/12> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/12>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 12" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/F:7> ;
+                           rdfs:label       "F:7" ;
+                           :isFirst         false ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/F:7> ]
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/13> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/4>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 4" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb:7> ;
+                           rdfs:label       "Bb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Alto_Sax_Solo-_Blues/Progression/Bar/5> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/2>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 2" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
+                           rdfs:label       "Eb:7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumbone_Solo_-_Blues/Progression/Bar/3> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues>
+        rdf:type            :Section ;
+        rdfs:label          "Vocals - Blues" ;
+        :characterizedBy    <http://localhost:8080/resource/chord-annotations/Pattern/Blues> ;
+        :hasMainInstrument  <https://musicbrainz.org/instrument/> ;
+        :isFirst            false ;
+        :madeOfProgression  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression> ;
+        :nextAnnotation     <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/7>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 7" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
+                           rdfs:label       "Bb" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Vocals_-_Blues/Progression/Bar/8> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/6>
+        rdf:type         :Bar ;
+        rdfs:label       "Bar 6" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/E:dim7> ;
+                           rdfs:label       "E:dim7" ;
+                           :isFirst         true ;
+                           :nextAnnotation  [] 
+                         ] ;
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/7> .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/11>
         rdf:type         :Bar ;
         rdfs:label       "Bar 11" ;
         :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ;
@@ -1101,26 +1095,32 @@
                            :nextAnnotation  [ rdf:type  <http://localhost:8080/resource/chord-annotations/Chord/Eb:7> ]
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Trumpet_Solo_-_Blues/Progression/Bar/12> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Trumpet_Solo_-_Blues/Progression/Bar/12> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/7>
+<http://localhost:8080/resource/chord-annotations/TimeSignature/4_4>
+        rdf:type          mto:TimeSignature ;
+        rdfs:label        "4/4" ;
+        :hasLowerNumeral  "4" ;
+        :hasUpperNumeral  "4" .
+
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/8>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 7" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
         :isFirst         false ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Collective_Improvisation_-_Blues/Progression/Bar/8> .
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Collective_Improvisation_-_Blues/Progression/Bar/9> .
 
-<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/1>
+<http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/8>
         rdf:type         :Bar ;
-        rdfs:label       "Bar 1" ;
-        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/Bb> ;
-                           rdfs:label       "Bb" ;
+        rdfs:label       "Bar 8" ;
+        :hasChord        [ rdf:type         <http://localhost:8080/resource/chord-annotations/Chord/G:7> ;
+                           rdfs:label       "G:7" ;
                            :isFirst         true ;
                            :nextAnnotation  [] 
                          ] ;
-        :isFirst         true ;
-        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/15ad1b3f-94e0-4dff-b3f2-e281acc68fec/Section/Alto_Sax_Solo-_Blues/Progression/Bar/2> .
+        :isFirst         false ;
+        :nextAnnotation  <http://localhost:8080/resource/kejazz/Recording/57e1ed14-f9a5-45b6-89d5-96932e6cfa30/Sheet/d74396aa-8f99-4b50-bccd-986a424724a5/Section/Piano_Solo-_Blues/Progression/Bar/9> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/00210ce8-2f59-4a9e-ab97-30c7334e67e7>
-        rdf:type             :Release ;
-        rdfs:label           "Portrait of the Artist as a Young Man" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasASIN             "B000002984" ;
-        :hasBarcode          "074645717623" ;
-        :hasMusicBrainzID    "00210ce8-2f59-4a9e-ab97-30c7334e67e7" ;
-        :hasPackagingFormat  "Other" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Portrait of the Artist as a Young Man" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1994" ;
-        owl:sameAs           <https://www.amazon.com/gp/product/B000002984> , <https://musicbrainz.org/release/00210ce8-2f59-4a9e-ab97-30c7334e67e7> .
+        rdf:type               :Release ;
+        rdfs:label             "Portrait of the Artist as a Young Man" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN               "B000002984" ;
+        :hasBarcode            "074645717623" ;
+        :hasMusicBrainzID      "00210ce8-2f59-4a9e-ab97-30c7334e67e7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Portrait of the Artist as a Young Man" ;
+        :releasedInDate        "1994" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000002984> , <https://www.amazon.com/gp/product/B000002984> , <https://musicbrainz.org/release/00210ce8-2f59-4a9e-ab97-30c7334e67e7> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

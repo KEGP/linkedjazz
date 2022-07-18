@@ -11,26 +11,26 @@
 <http://localhost:8080/resource/kejazz/Recording/90521ab0-9419-45bc-9576-18a5332aa409>
         owl:sameAs  <https://musicbrainz.org/recording/90521ab0-9419-45bc-9576-18a5332aa409> .
 
-<http://localhost:8080/resource/kejazz/Artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7>
-        rdfs:label         "Muhal Richard Abrams" ;
-        :hasMusicBrainzID  "ecf3392e-bd72-46a8-ac59-2bf7b774c7a7" ;
-        :hasName           "Muhal Richard Abrams" ;
-        owl:sameAs         <https://musicbrainz.org/artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/90521ab0-9419-45bc-9576-18a5332aa409> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/4e5f99db-d181-4317-9124-602b776f5306> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1976-08-02" ;
                      dul:hasIntervalStartDate  "1976-08-01"
                    ]
 ] .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+<http://localhost:8080/resource/kejazz/Artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7>
+        rdfs:label         "Muhal Richard Abrams" ;
+        :hasMusicBrainzID  "ecf3392e-bd72-46a8-ac59-2bf7b774c7a7" ;
+        :hasName           "Muhal Richard Abrams" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/90521ab0-9419-45bc-9576-18a5332aa409> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/4e5f99db-d181-4317-9124-602b776f5306> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1976-08-02" ;
                      dul:hasIntervalStartDate  "1976-08-01"

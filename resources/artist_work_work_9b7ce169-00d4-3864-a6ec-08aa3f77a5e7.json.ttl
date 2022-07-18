@@ -20,6 +20,13 @@
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
+<http://localhost:8080/resource/kejazz/Artist/7a9390eb-76ea-4d3a-a786-7fd09c8ae291>
+        rdfs:label         "Harry Warren" ;
+        :hasMusicBrainzID  "7a9390eb-76ea-4d3a-a786-7fd09c8ae291" ;
+        :hasName           "Harry Warren" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/7a9390eb-76ea-4d3a-a786-7fd09c8ae291> .
+
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1937" ;
@@ -29,13 +36,6 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a9390eb-76ea-4d3a-a786-7fd09c8ae291> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/Artist/7a9390eb-76ea-4d3a-a786-7fd09c8ae291>
-        rdfs:label         "Harry Warren" ;
-        :hasMusicBrainzID  "7a9390eb-76ea-4d3a-a786-7fd09c8ae291" ;
-        :hasName           "Harry Warren" ;
-        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
-        owl:sameAs         <https://musicbrainz.org/artist/7a9390eb-76ea-4d3a-a786-7fd09c8ae291> .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
         rdfs:label         "composer" ;

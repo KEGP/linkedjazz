@@ -16,16 +16,16 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/c0487132-4850-44c7-aa69-e0240248e40e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1>
         rdfs:label         "Oscar Pettiford" ;
         :hasMusicBrainzID  "28f6d494-d44b-4bd3-aed9-1d4909875ca1" ;
         :hasName           "Oscar Pettiford" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
         owl:sameAs         <https://musicbrainz.org/artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/c0487132-4850-44c7-aa69-e0240248e40e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

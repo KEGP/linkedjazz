@@ -13,7 +13,7 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bce1a608-9541-4392-9837-23f972013343> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
 ] .
 
@@ -33,14 +33,14 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/79dcf09e-2290-4740-9edc-907f82420160> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2382bcb9-0f05-492e-b10c-2d6067a1955c> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
 ] .
 
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2382bcb9-0f05-492e-b10c-2d6067a1955c> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
 ] .
 
@@ -50,6 +50,13 @@
         :hasName           "Eddie Condon" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
         owl:sameAs         <https://musicbrainz.org/artist/2382bcb9-0f05-492e-b10c-2d6067a1955c> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/79dcf09e-2290-4740-9edc-907f82420160> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/bce1a608-9541-4392-9837-23f972013343>
         rdfs:label         "Joe Sullivan" ;
@@ -64,10 +71,3 @@
         :hasName           "Jack Teagarden" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
         owl:sameAs         <https://musicbrainz.org/artist/79dcf09e-2290-4740-9edc-907f82420160> .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bce1a608-9541-4392-9837-23f972013343> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
-] .

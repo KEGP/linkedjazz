@@ -10,13 +10,6 @@
 @prefix xt:         <http://purl.org/twc/vocab/cross-topix#> .
 @prefix xyz:        <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/09a5aad2-2c02-4315-8bfb-29351cdde2e3> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/8dddb806-0971-4968-ac1d-68340402cd94>
         rdfs:label         "Cleo Henry" ;
         :hasMusicBrainzID  "8dddb806-0971-4968-ac1d-68340402cd94" ;
@@ -36,6 +29,13 @@
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/09a5aad2-2c02-4315-8bfb-29351cdde2e3> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
 
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;

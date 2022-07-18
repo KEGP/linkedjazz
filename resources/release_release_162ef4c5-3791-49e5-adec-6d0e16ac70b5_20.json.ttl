@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/162ef4c5-3791-49e5-adec-6d0e16ac70b5>
-        rdf:type             :Release ;
-        rdfs:label           "Doxy" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
-        :hasBarcode          "885150333419" ;
-        :hasMusicBrainzID    "162ef4c5-3791-49e5-adec-6d0e16ac70b5" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Doxy" ;
-        :releasedInCountry   "XE" ;
-        :releasedInDate      "2011" ;
-        owl:sameAs           <https://www.discogs.com/release/5726890> , <https://musicbrainz.org/release/162ef4c5-3791-49e5-adec-6d0e16ac70b5> .
+        rdf:type               :Release ;
+        rdfs:label             "Doxy" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasBarcode            "885150333419" ;
+        :hasMusicBrainzID      "162ef4c5-3791-49e5-adec-6d0e16ac70b5" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Doxy" ;
+        :releasedInDate        "2011" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://www.discogs.com/release/5726890> , <https://musicbrainz.org/release/162ef4c5-3791-49e5-adec-6d0e16ac70b5> .

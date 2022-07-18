@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/83970851-bbac-42df-8bd3-2a4491b1beb4>
-        rdf:type             :Release ;
-        rdfs:label           "Swingsation: Ella Fitzgerald With Chick Webb" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/8ecae52e-9c89-4b61-99d8-ac11abc26771> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
-        :hasASIN             "B000007Q66" ;
-        :hasBarcode          "0011105992121" ;
-        :hasMusicBrainzID    "83970851-bbac-42df-8bd3-2a4491b1beb4" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Swingsation: Ella Fitzgerald With Chick Webb" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1998-06-16" ;
-        owl:sameAs           <https://www.amazon.com/gp/product/B000007Q66> , <https://musicbrainz.org/release/83970851-bbac-42df-8bd3-2a4491b1beb4> .
+        rdf:type               :Release ;
+        rdfs:label             "Swingsation: Ella Fitzgerald With Chick Webb" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8ecae52e-9c89-4b61-99d8-ac11abc26771> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :hasASIN               "B000007Q66" ;
+        :hasBarcode            "0011105992121" ;
+        :hasMusicBrainzID      "83970851-bbac-42df-8bd3-2a4491b1beb4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Swingsation: Ella Fitzgerald With Chick Webb" ;
+        :releasedInDate        "1998-06-16" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000007Q66> , <https://musicbrainz.org/release/83970851-bbac-42df-8bd3-2a4491b1beb4> , <https://www.amazon.com/dp/B000007Q66> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

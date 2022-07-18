@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/1404372b-c181-49b9-aaa2-963210f78f7c>
-        rdf:type            :Release ;
-        rdfs:label          "The Great Satchmo" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasBarcode         "5014293221627" ;
-        :hasMusicBrainzID   "1404372b-c181-49b9-aaa2-963210f78f7c" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Great Satchmo" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "2001" ;
-        owl:sameAs          <https://musicbrainz.org/release/1404372b-c181-49b9-aaa2-963210f78f7c> .
+        rdf:type               :Release ;
+        rdfs:label             "The Great Satchmo" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode            "5014293221627" ;
+        :hasMusicBrainzID      "1404372b-c181-49b9-aaa2-963210f78f7c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Great Satchmo" ;
+        :releasedInDate        "2001" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://musicbrainz.org/release/1404372b-c181-49b9-aaa2-963210f78f7c> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

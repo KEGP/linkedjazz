@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/8d65da28-93d6-4619-afd5-81474d632d74>
-        rdf:type            :Release ;
-        rdfs:label          "The Hot Five and Hot Sevens, Volume II" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasMusicBrainzID   "8d65da28-93d6-4619-afd5-81474d632d74" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Hot Five and Hot Sevens, Volume II" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "1988" ;
-        owl:sameAs          <https://www.amazon.com/gp/product/B0000026JY> , <https://musicbrainz.org/release/8d65da28-93d6-4619-afd5-81474d632d74> , <https://www.discogs.com/release/1364117> .
+        rdf:type               :Release ;
+        rdfs:label             "The Hot Five and Hot Sevens, Volume II" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasMusicBrainzID      "8d65da28-93d6-4619-afd5-81474d632d74" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Hot Five and Hot Sevens, Volume II" ;
+        :releasedInDate        "1988" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B0000026JY> , <https://musicbrainz.org/release/8d65da28-93d6-4619-afd5-81474d632d74> , <https://www.discogs.com/release/1364117> .

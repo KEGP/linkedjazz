@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/a1a36435-e68b-47ed-9f4b-82d7f11f9a08>
-        rdf:type             :Release ;
-        rdfs:label           "The Rough Guide To Classic Jazz" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "9781858283586" ;
-        :hasMusicBrainzID    "a1a36435-e68b-47ed-9f4b-82d7f11f9a08" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Rough Guide To Classic Jazz" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "1997" ;
-        owl:sameAs           <https://www.discogs.com/release/1093683> , <https://musicbrainz.org/release/a1a36435-e68b-47ed-9f4b-82d7f11f9a08> .
+        rdf:type               :Release ;
+        rdfs:label             "The Rough Guide To Classic Jazz" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "9781858283586" ;
+        :hasMusicBrainzID      "a1a36435-e68b-47ed-9f4b-82d7f11f9a08" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Rough Guide To Classic Jazz" ;
+        :releasedInDate        "1997" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.discogs.com/release/1093683> , <https://musicbrainz.org/release/a1a36435-e68b-47ed-9f4b-82d7f11f9a08> .

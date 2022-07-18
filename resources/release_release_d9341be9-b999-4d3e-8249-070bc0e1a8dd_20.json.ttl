@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d9341be9-b999-4d3e-8249-070bc0e1a8dd>
-        rdf:type            :Release ;
-        rdfs:label          "Jazz Samba" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
-        :hasMusicBrainzID   "d9341be9-b999-4d3e-8249-070bc0e1a8dd" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Jazz Samba" ;
-        :releasedInCountry  "FR" ;
-        :releasedInDate     "1994" ;
-        owl:sameAs          <https://www.discogs.com/release/1480893> , <https://musicbrainz.org/release/d9341be9-b999-4d3e-8249-070bc0e1a8dd> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz Samba" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+        :hasMusicBrainzID      "d9341be9-b999-4d3e-8249-070bc0e1a8dd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Samba" ;
+        :releasedInDate        "1994" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.discogs.com/release/1480893> , <https://musicbrainz.org/release/d9341be9-b999-4d3e-8249-070bc0e1a8dd> .

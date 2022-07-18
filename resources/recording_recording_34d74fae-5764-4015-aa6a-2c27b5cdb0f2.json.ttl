@@ -1,13 +1,12 @@
-@prefix :                       <http://localhost:8080/ontology/kejazz/> .
-@prefix fx:                     <http://sparql.xyz/facade-x/ns/> .
-@prefix informationrealization: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix owl:                    <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix res:                    <http://localhost:8080/resource/kejazz/> .
-@prefix timeinterval:           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
-@prefix xyz:                    <http://sparql.xyz/facade-x/data/> .
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Recording/34d74fae-5764-4015-aa6a-2c27b5cdb0f2>
         rdf:type              :Recording ;
@@ -15,19 +14,31 @@
         :creditedTo           <http://localhost:8080/resource/kejazz/Artist/4554ec28-0e97-45f1-ad3d-696a48326f1c> , <http://localhost:8080/resource/kejazz/Artist/d55d55df-1861-4bca-bf46-dc1af31c1c98> ;
         :hasAudioTrackLength  "299840" ;
         :hasMusicBrainzID     "34d74fae-5764-4015-aa6a-2c27b5cdb0f2" ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1945-06-09" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1945-06-09"
-                              ] ;
-        :hasTimeInterval      [ rdf:type  timeinterval:TimeInterval ;
-                                timeinterval:hasIntervalEndDate
-                                        "1945-06-09" ;
-                                timeinterval:hasIntervalStartDate
-                                        "1945-06-09"
-                              ] ;
         :hasTitle             "I Got Rhythm" ;
-        informationrealization:realizes
-                <http://localhost:8080/resource/kejazz/Work/e0898f8d-77ff-314e-9888-1bfdc73dc2d8> ;
+        :includedInRelease    <http://localhost:8080/resource/kejazz/Release/032a7395-7ab4-4831-98e8-ee45b9d60839> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/b281c80d-8f7b-46f1-81d1-94fd1c51818c> ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1945-06-09" ;
+                                :hasIntervalStartDate  "1945-06-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1945-06-09" ;
+                                :hasIntervalStartDate  "1945-06-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1945-06-09" ;
+                                :hasIntervalStartDate  "1945-06-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1945-06-09" ;
+                                :hasIntervalStartDate  "1945-06-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1945-06-09" ;
+                                :hasIntervalStartDate  "1945-06-09"
+                              ] ;
+        dul:hasTimeInterval   [ rdf:type               dul:TimeInterval ;
+                                :hasIntervalEndDate    "1945-06-09" ;
+                                :hasIntervalStartDate  "1945-06-09"
+                              ] ;
+        dul:realizes          <http://localhost:8080/resource/kejazz/Work/e0898f8d-77ff-314e-9888-1bfdc73dc2d8> ;
         owl:sameAs            <https://musicbrainz.org/recording/34d74fae-5764-4015-aa6a-2c27b5cdb0f2> .

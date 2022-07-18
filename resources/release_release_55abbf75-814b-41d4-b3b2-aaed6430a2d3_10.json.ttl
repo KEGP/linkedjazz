@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/55abbf75-814b-41d4-b3b2-aaed6430a2d3>
-        rdf:type            :Release ;
-        rdfs:label          "Take the \"A\" Train" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
-        :hasBarcode         "4988017097205" ;
-        :hasMusicBrainzID   "55abbf75-814b-41d4-b3b2-aaed6430a2d3" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Take the \"A\" Train" ;
-        :releasedInCountry  "JP" ;
-        :releasedInDate     "2000-09-20" ;
-        owl:sameAs          <https://musicbrainz.org/release/55abbf75-814b-41d4-b3b2-aaed6430a2d3> .
+        rdf:type               :Release ;
+        rdfs:label             "Take the \"A\" Train" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
+        :hasBarcode            "4988017097205" ;
+        :hasMusicBrainzID      "55abbf75-814b-41d4-b3b2-aaed6430a2d3" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Take the \"A\" Train" ;
+        :releasedInDate        "2000-09-20" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/JP> ;
+        owl:sameAs             <https://musicbrainz.org/release/55abbf75-814b-41d4-b3b2-aaed6430a2d3> .
+
+<http://localhost:8080/resource/kejazz/Place/JP>
+        rdf:type  dul:Place .

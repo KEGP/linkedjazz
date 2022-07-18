@@ -12,7 +12,7 @@ PREFIX : <http://localhost:8080/ontology/kejazz/>
 PREFIX res: <http://localhost:8080/resource/kejazz/>
 
 CONSTRUCT {
-  [ a :ArtistRecordingPerformance;
+  [ a :ArtistPerformanceInRecording;
       :forRecording ?recording;
       :includesArtist ?artist;
       :withInstrument ?instrument;

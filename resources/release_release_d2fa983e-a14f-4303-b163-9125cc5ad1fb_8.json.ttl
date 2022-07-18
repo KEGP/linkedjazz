@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/d2fa983e-a14f-4303-b163-9125cc5ad1fb>
-        rdf:type             :Release ;
-        rdfs:label           "Jazz Greats, Volume 42: Jimmie Lunceford: Rhythm Is Our Business" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/bea5831a-fa7f-4316-9d71-754e390556b8> ;
-        :hasASIN             "B001A8W7TS" ;
-        :hasMusicBrainzID    "d2fa983e-a14f-4303-b163-9125cc5ad1fb" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Jazz Greats, Volume 42: Jimmie Lunceford: Rhythm Is Our Business" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "1997" ;
-        owl:sameAs           <https://musicbrainz.org/release/d2fa983e-a14f-4303-b163-9125cc5ad1fb> , <https://www.amazon.co.uk/gp/product/B001A8W7TS> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz Greats, Volume 42: Jimmie Lunceford: Rhythm Is Our Business" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/bea5831a-fa7f-4316-9d71-754e390556b8> ;
+        :hasASIN               "B001A8W7TS" ;
+        :hasMusicBrainzID      "d2fa983e-a14f-4303-b163-9125cc5ad1fb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Greats, Volume 42: Jimmie Lunceford: Rhythm Is Our Business" ;
+        :releasedInDate        "1997" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B001A8W7TS> , <https://musicbrainz.org/release/d2fa983e-a14f-4303-b163-9125cc5ad1fb> , <https://www.amazon.co.uk/gp/product/B001A8W7TS> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

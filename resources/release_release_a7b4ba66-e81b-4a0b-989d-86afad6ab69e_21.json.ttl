@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/a7b4ba66-e81b-4a0b-989d-86afad6ab69e>
-        rdf:type            :Release ;
-        rdfs:label          "Django Reinhardt, Volume 4: 1937 Swingin' with Django" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
-        :hasASIN            "B000111BWE" ;
-        :hasBarcode         "636943269824" ;
-        :hasMusicBrainzID   "a7b4ba66-e81b-4a0b-989d-86afad6ab69e" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Django Reinhardt, Volume 4: 1937 Swingin' with Django" ;
-        :releasedInCountry  "HK" ;
-        :releasedInDate     "2004" ;
-        owl:sameAs          <https://musicbrainz.org/release/a7b4ba66-e81b-4a0b-989d-86afad6ab69e> , <https://www.amazon.com/gp/product/B000111BWE> .
+        rdf:type               :Release ;
+        rdfs:label             "Django Reinhardt, Volume 4: 1937 Swingin' with Django" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN               "B000111BWE" ;
+        :hasBarcode            "636943269824" ;
+        :hasMusicBrainzID      "a7b4ba66-e81b-4a0b-989d-86afad6ab69e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Django Reinhardt, Volume 4: 1937 Swingin' with Django" ;
+        :releasedInDate        "2004" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/HK> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000111BWE> , <https://musicbrainz.org/release/a7b4ba66-e81b-4a0b-989d-86afad6ab69e> , <https://www.amazon.com/gp/product/B000111BWE> .
+
+<http://localhost:8080/resource/kejazz/Place/HK>
+        rdf:type  dul:Place .

@@ -8,10 +8,10 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/63a32643-8362-48c2-93c8-596117ea0a0a> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e6eb2fc1-9594-4ac6-873c-c709bc1f0882> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1917-02-26" ;
                      dul:hasIntervalStartDate  "1917-02-26"
@@ -24,21 +24,21 @@
         :hasName           "drums (drum set)" ;
         owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
-        rdfs:label         "piano" ;
-        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
-        :hasName           "piano" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e6eb2fc1-9594-4ac6-873c-c709bc1f0882> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b9325922-f0cc-4d14-8c82-dd4e985b667e> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1917-02-26" ;
                      dul:hasIntervalStartDate  "1917-02-26"
                    ]
 ] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
 
 <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce>
         owl:sameAs  <https://musicbrainz.org/recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> .
@@ -48,16 +48,6 @@
         :hasMusicBrainzID  "63a32643-8362-48c2-93c8-596117ea0a0a" ;
         :hasName           "Eddie Edwards" ;
         owl:sameAs         <https://musicbrainz.org/artist/63a32643-8362-48c2-93c8-596117ea0a0a> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/56ccb1ca-96b4-4314-a167-944e7c01bec8> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1917-02-26" ;
-                     dul:hasIntervalStartDate  "1917-02-26"
-                   ]
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/56ccb1ca-96b4-4314-a167-944e7c01bec8>
         rdfs:label         "Nick LaRocca" ;
@@ -70,6 +60,26 @@
         :hasMusicBrainzID  "f6100277-c7b8-4c8d-aa26-d8cd014b6761" ;
         :hasName           "trombone" ;
         owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/56ccb1ca-96b4-4314-a167-944e7c01bec8> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1917-02-26" ;
+                     dul:hasIntervalStartDate  "1917-02-26"
+                   ]
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/56faa95d-72ae-464f-b82b-9fd89e1dd928> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  dul:atTime       [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1917-02-26" ;
+                     dul:hasIntervalStartDate  "1917-02-26"
+                   ]
+] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
         rdfs:label         "clarinet" ;
@@ -95,10 +105,10 @@
         :hasName           "Tony Sbarbaro" ;
         owl:sameAs         <https://musicbrainz.org/artist/56faa95d-72ae-464f-b82b-9fd89e1dd928> .
 
-[ rdf:type         :ArtistRecordingPerformance ;
+[ rdf:type         :ArtistPerformanceInRecording ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/56faa95d-72ae-464f-b82b-9fd89e1dd928> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/63a32643-8362-48c2-93c8-596117ea0a0a> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> ;
   dul:atTime       [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1917-02-26" ;
                      dul:hasIntervalStartDate  "1917-02-26"
@@ -110,13 +120,3 @@
         :hasMusicBrainzID  "b9325922-f0cc-4d14-8c82-dd4e985b667e" ;
         :hasName           "Larry Shields" ;
         owl:sameAs         <https://musicbrainz.org/artist/b9325922-f0cc-4d14-8c82-dd4e985b667e> .
-
-[ rdf:type         :ArtistRecordingPerformance ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b50d0f09-c2e1-4962-ac1a-9484ab6f58ce> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b9325922-f0cc-4d14-8c82-dd4e985b667e> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b> ;
-  dul:atTime       [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1917-02-26" ;
-                     dul:hasIntervalStartDate  "1917-02-26"
-                   ]
-] .

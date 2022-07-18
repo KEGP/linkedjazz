@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/91eea031-3e50-4dcf-8d83-cc46721879e1>
-        rdf:type             :Release ;
-        rdfs:label           "Summertime" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasBarcode          "5060143492334" ;
-        :hasMusicBrainzID    "91eea031-3e50-4dcf-8d83-cc46721879e1" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Summertime" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "2007" ;
-        owl:sameAs           <https://musicbrainz.org/release/91eea031-3e50-4dcf-8d83-cc46721879e1> .
+        rdf:type               :Release ;
+        rdfs:label             "Summertime" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasBarcode            "5060143492334" ;
+        :hasMusicBrainzID      "91eea031-3e50-4dcf-8d83-cc46721879e1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Summertime" ;
+        :releasedInDate        "2007" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://musicbrainz.org/release/91eea031-3e50-4dcf-8d83-cc46721879e1> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

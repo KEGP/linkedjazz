@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,12 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/f2ec369f-ee55-464f-b5ef-f8abdb69cce8>
-        rdf:type             :Release ;
-        rdfs:label           "Sidney Bechet, Volume 3: 1931-1937" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
-        :hasBarcode          "3356571002729" ;
-        :hasMusicBrainzID    "f2ec369f-ee55-464f-b5ef-f8abdb69cce8" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Sidney Bechet, Volume 3: 1931-1937" ;
-        :releasedInDate      "1992" ;
-        owl:sameAs           <https://musicbrainz.org/release/f2ec369f-ee55-464f-b5ef-f8abdb69cce8> .
+        rdf:type               :Release ;
+        rdfs:label             "Sidney Bechet, Volume 3: 1931-1937" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :hasBarcode            "3356571002729" ;
+        :hasMusicBrainzID      "f2ec369f-ee55-464f-b5ef-f8abdb69cce8" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Sidney Bechet, Volume 3: 1931-1937" ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://musicbrainz.org/release/f2ec369f-ee55-464f-b5ef-f8abdb69cce8> .

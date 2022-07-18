@@ -13,15 +13,8 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a1fc8ae-c8a3-4750-a26e-8faeed80140c> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7eb43192-26a3-475b-9cf8-5244b3c600e7> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
@@ -51,6 +44,13 @@
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
         owl:sameAs         <https://musicbrainz.org/artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff> .
 
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7eb43192-26a3-475b-9cf8-5244b3c600e7> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
 <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
         rdfs:label         "lyricist" ;
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
@@ -60,6 +60,6 @@
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a1fc8ae-c8a3-4750-a26e-8faeed80140c> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .

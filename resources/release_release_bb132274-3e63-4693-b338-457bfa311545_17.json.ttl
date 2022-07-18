@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,15 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/bb132274-3e63-4693-b338-457bfa311545>
-        rdf:type            :Release ;
-        rdfs:label          "Monk's Mood" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
-        :hasBarcode         "822829101221" ;
-        :hasMusicBrainzID   "bb132274-3e63-4693-b338-457bfa311545" ;
-        :hasTitle           "Monk's Mood" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "2002" ;
-        owl:sameAs          <https://www.discogs.com/release/10395206> , <https://musicbrainz.org/release/bb132274-3e63-4693-b338-457bfa311545> .
+        rdf:type           :Release ;
+        rdfs:label         "Monk's Mood" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :hasBarcode        "822829101221" ;
+        :hasMusicBrainzID  "bb132274-3e63-4693-b338-457bfa311545" ;
+        :hasTitle          "Monk's Mood" ;
+        :releasedInDate    "2002" ;
+        :releasedInPlace   <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs         <https://www.discogs.com/release/10395206> , <https://musicbrainz.org/release/bb132274-3e63-4693-b338-457bfa311545> .
+
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .

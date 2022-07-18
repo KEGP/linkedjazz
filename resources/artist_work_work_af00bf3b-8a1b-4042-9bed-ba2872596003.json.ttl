@@ -24,6 +24,16 @@
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68> ;
         owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
 
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1926" ;
+                     dul:hasIntervalStartDate  "1926"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/112c4e28-1a83-4687-8462-545a6a7204ba> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
 <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
         rdfs:label         "writer" ;
         :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
@@ -34,15 +44,5 @@
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
-] .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1926" ;
-                     dul:hasIntervalStartDate  "1926"
-                   ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/112c4e28-1a83-4687-8462-545a6a7204ba> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/a255bca1-b157-4518-9108-7b147dc3fc68>
 ] .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,13 +8,16 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/4247f0a7-259a-4e72-aacc-75a794da4d90>
-        rdf:type            :Release ;
-        rdfs:label          "Blue Note 50th Anniversary Collection, Volume 3: 1956-1967 Funk and Blues" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasMusicBrainzID   "4247f0a7-259a-4e72-aacc-75a794da4d90" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Blue Note 50th Anniversary Collection, Volume 3: 1956-1967 Funk and Blues" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "1989" ;
-        owl:sameAs          <https://www.discogs.com/release/6504587> , <https://musicbrainz.org/release/4247f0a7-259a-4e72-aacc-75a794da4d90> .
+        rdf:type               :Release ;
+        rdfs:label             "Blue Note 50th Anniversary Collection, Volume 3: 1956-1967 Funk and Blues" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID      "4247f0a7-259a-4e72-aacc-75a794da4d90" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Blue Note 50th Anniversary Collection, Volume 3: 1956-1967 Funk and Blues" ;
+        :releasedInDate        "1989" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.discogs.com/release/6504587> , <https://musicbrainz.org/release/4247f0a7-259a-4e72-aacc-75a794da4d90> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/aa3577c7-ad1a-4b6e-844a-3c089e88f39b>
-        rdf:type             :Release ;
-        rdfs:label           "In a Mellotone" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
-        :hasBarcode          "" ;
-        :hasMusicBrainzID    "aa3577c7-ad1a-4b6e-844a-3c089e88f39b" ;
-        :hasPackagingFormat  "Cardboard/Paper Sleeve" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "In a Mellotone" ;
-        :releasedInCountry   "DE" ;
-        :releasedInDate      "1956" ;
-        owl:sameAs           <https://www.discogs.com/release/4133609> , <https://musicbrainz.org/release/aa3577c7-ad1a-4b6e-844a-3c089e88f39b> .
+        rdf:type               :Release ;
+        rdfs:label             "In a Mellotone" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "aa3577c7-ad1a-4b6e-844a-3c089e88f39b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "In a Mellotone" ;
+        :releasedInDate        "1956" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://www.discogs.com/release/4133609> , <https://musicbrainz.org/release/aa3577c7-ad1a-4b6e-844a-3c089e88f39b> .

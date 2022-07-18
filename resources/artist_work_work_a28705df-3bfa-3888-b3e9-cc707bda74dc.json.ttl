@@ -16,6 +16,13 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
+<http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75>
+        rdfs:label         "Scott Joplin" ;
+        :hasMusicBrainzID  "aec8a328-d2e8-4780-b2ea-318c7f8d6f75" ;
+        :hasName           "Scott Joplin" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> .
+
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type                  dul:TimeInterval ;
                      dul:hasIntervalEndDate    "1899" ;
@@ -25,10 +32,3 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75>
-        rdfs:label         "Scott Joplin" ;
-        :hasMusicBrainzID  "aec8a328-d2e8-4780-b2ea-318c7f8d6f75" ;
-        :hasName           "Scott Joplin" ;
-        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
-        owl:sameAs         <https://musicbrainz.org/artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> .

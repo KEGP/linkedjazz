@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,12 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/d28ea258-c8e6-41e6-b5b5-b5f902746dfb>
-        rdf:type           :Release ;
-        rdfs:label         "Crooners & Divas" ;
-        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN           "B0000B00J6" ;
-        :hasMusicBrainzID  "d28ea258-c8e6-41e6-b5b5-b5f902746dfb" ;
-        :hasStatus         "Official" ;
-        :hasTitle          "Crooners & Divas" ;
-        :releasedInDate    "2003-12-09" ;
-        owl:sameAs         <https://musicbrainz.org/release/d28ea258-c8e6-41e6-b5b5-b5f902746dfb> , <https://www.amazon.com/gp/product/B0000B00J6> .
+        rdf:type               :Release ;
+        rdfs:label             "Crooners & Divas" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B0000B00J6" ;
+        :hasMusicBrainzID      "d28ea258-c8e6-41e6-b5b5-b5f902746dfb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Crooners & Divas" ;
+        :releasedInDate        "2003-12-09" ;
+        owl:sameAs             <https://musicbrainz.org/release/d28ea258-c8e6-41e6-b5b5-b5f902746dfb> , <https://www.amazon.com/gp/product/B0000B00J6> , <https://www.amazon.com/dp/B0000B00J6> .

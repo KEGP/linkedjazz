@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/0b255446-20d8-3a8a-86ac-e8df5678b72e>
-        rdf:type            :Release ;
-        rdfs:label          "The Complete Hot Five and Hot Seven Recordings" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-        :hasASIN            "B00004WK37" ;
-        :hasBarcode         "074646352724" ;
-        :hasMusicBrainzID   "0b255446-20d8-3a8a-86ac-e8df5678b72e" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Complete Hot Five and Hot Seven Recordings" ;
-        :releasedInCountry  "US" ;
-        :releasedInDate     "2000-08-22" ;
-        owl:sameAs          <https://musicbrainz.org/release/0b255446-20d8-3a8a-86ac-e8df5678b72e> , <https://www.amazon.com/gp/product/B00004WK37> , <https://www.discogs.com/release/4076956> .
+        rdf:type               :Release ;
+        rdfs:label             "The Complete Hot Five and Hot Seven Recordings" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :hasASIN               "B00004WK37" ;
+        :hasBarcode            "074646352724" ;
+        :hasMusicBrainzID      "0b255446-20d8-3a8a-86ac-e8df5678b72e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Hot Five and Hot Seven Recordings" ;
+        :releasedInDate        "2000-08-22" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00004WK37> , <https://musicbrainz.org/release/0b255446-20d8-3a8a-86ac-e8df5678b72e> , <https://www.amazon.com/gp/product/B00004WK37> , <https://www.discogs.com/release/4076956> .

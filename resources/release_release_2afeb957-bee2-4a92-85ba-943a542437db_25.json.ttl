@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,12 +9,15 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/2afeb957-bee2-4a92-85ba-943a542437db>
-        rdf:type            :Release ;
-        rdfs:label          "The Encyclopedia of Jazz, Part 4/5: Bebop Story – A Musical Revolution That Radically Changed the Road of Jazz" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasMusicBrainzID   "2afeb957-bee2-4a92-85ba-943a542437db" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Encyclopedia of Jazz, Part 4/5: Bebop Story – A Musical Revolution That Radically Changed the Road of Jazz" ;
-        :releasedInCountry  "DE" ;
-        :releasedInDate     "2008-10-24" ;
-        owl:sameAs          <https://musicbrainz.org/release/2afeb957-bee2-4a92-85ba-943a542437db> .
+        rdf:type               :Release ;
+        rdfs:label             "The Encyclopedia of Jazz, Part 4/5: Bebop Story – A Musical Revolution That Radically Changed the Road of Jazz" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasMusicBrainzID      "2afeb957-bee2-4a92-85ba-943a542437db" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Encyclopedia of Jazz, Part 4/5: Bebop Story – A Musical Revolution That Radically Changed the Road of Jazz" ;
+        :releasedInDate        "2008-10-24" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://musicbrainz.org/release/2afeb957-bee2-4a92-85ba-943a542437db> .
+
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .

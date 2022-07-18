@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d75eff8b-94d9-42da-8e55-fec6a27b1b36>
-        rdf:type             :Release ;
-        rdfs:label           "The Quintessence: New York - Paris - Los Angeles, 1953-1956" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> ;
-        :hasASIN             "B001BEX5CY" ;
-        :hasBarcode          "3448960224727" ;
-        :hasMusicBrainzID    "d75eff8b-94d9-42da-8e55-fec6a27b1b36" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Quintessence: New York - Paris - Los Angeles, 1953-1956" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "2009-02-17" ;
-        owl:sameAs           <https://musicbrainz.org/release/d75eff8b-94d9-42da-8e55-fec6a27b1b36> , <https://www.amazon.fr/gp/product/B001BEX5CY> , <http://www.fremeaux.com/index.php?option=com_virtuemart&page=shop.livrets&content_id=4127&product_id=1051&category_id=35> .
+        rdf:type               :Release ;
+        rdfs:label             "The Quintessence: New York - Paris - Los Angeles, 1953-1956" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/2a291f34-73cb-40c5-b721-eab1269c7ba8> ;
+        :hasASIN               "B001BEX5CY" ;
+        :hasBarcode            "3448960224727" ;
+        :hasMusicBrainzID      "d75eff8b-94d9-42da-8e55-fec6a27b1b36" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Quintessence: New York - Paris - Los Angeles, 1953-1956" ;
+        :releasedInDate        "2009-02-17" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://musicbrainz.org/release/d75eff8b-94d9-42da-8e55-fec6a27b1b36> , <https://www.amazon.com/dp/B001BEX5CY> , <https://www.amazon.fr/gp/product/B001BEX5CY> , <http://www.fremeaux.com/index.php?option=com_virtuemart&page=shop.livrets&content_id=4127&product_id=1051&category_id=35> .

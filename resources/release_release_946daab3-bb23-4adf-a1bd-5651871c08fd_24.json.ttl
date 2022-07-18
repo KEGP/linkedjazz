@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/946daab3-bb23-4adf-a1bd-5651871c08fd>
-        rdf:type             :Release ;
-        rdfs:label           "Jazz in the Charts 001 (1917–1921)" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B000JBXNA4" ;
-        :hasBarcode          "4011222237002" ;
-        :hasMusicBrainzID    "946daab3-bb23-4adf-a1bd-5651871c08fd" ;
-        :hasPackagingFormat  "Book" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Jazz in the Charts 001 (1917–1921)" ;
-        :releasedInCountry   "DE" ;
-        :releasedInDate      "2006" ;
-        owl:sameAs           <https://musicbrainz.org/release/946daab3-bb23-4adf-a1bd-5651871c08fd> , <https://www.amazon.de/gp/product/B000JBXNA4> .
+        rdf:type               :Release ;
+        rdfs:label             "Jazz in the Charts 001 (1917–1921)" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000JBXNA4" ;
+        :hasBarcode            "4011222237002" ;
+        :hasMusicBrainzID      "946daab3-bb23-4adf-a1bd-5651871c08fd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz in the Charts 001 (1917–1921)" ;
+        :releasedInDate        "2006" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/DE> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000JBXNA4> , <https://musicbrainz.org/release/946daab3-bb23-4adf-a1bd-5651871c08fd> , <https://www.amazon.de/gp/product/B000JBXNA4> .
+
+<http://localhost:8080/resource/kejazz/Place/DE>
+        rdf:type  dul:Place .

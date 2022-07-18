@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/50daba83-0e63-4b93-ada1-af876b4c0e17>
-        rdf:type             :Release ;
-        rdfs:label           "The Chronological Classics: Count Basie and His Orchestra 1936-1938" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
-        :hasASIN             "B00007GX3T" ;
-        :hasBarcode          "3307517050328" ;
-        :hasMusicBrainzID    "50daba83-0e63-4b93-ada1-af876b4c0e17" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Chronological Classics: Count Basie and His Orchestra 1936-1938" ;
-        :releasedInCountry   "FR" ;
-        :releasedInDate      "1990" ;
-        owl:sameAs           <https://www.amazon.fr/gp/product/B00007GX3T> , <https://musicbrainz.org/release/50daba83-0e63-4b93-ada1-af876b4c0e17> .
+        rdf:type               :Release ;
+        rdfs:label             "The Chronological Classics: Count Basie and His Orchestra 1936-1938" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
+        :hasASIN               "B00007GX3T" ;
+        :hasBarcode            "3307517050328" ;
+        :hasMusicBrainzID      "50daba83-0e63-4b93-ada1-af876b4c0e17" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Count Basie and His Orchestra 1936-1938" ;
+        :releasedInDate        "1990" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/FR> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00007GX3T> , <https://www.amazon.fr/gp/product/B00007GX3T> , <https://musicbrainz.org/release/50daba83-0e63-4b93-ada1-af876b4c0e17> .
+
+<http://localhost:8080/resource/kejazz/Place/FR>
+        rdf:type  dul:Place .

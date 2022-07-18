@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/20e1663e-a7b8-454f-ab65-26a41c369e75>
-        rdf:type             :Release ;
-        rdfs:label           "Black Giants" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasBarcode          "" ;
-        :hasMusicBrainzID    "20e1663e-a7b8-454f-ab65-26a41c369e75" ;
-        :hasPackagingFormat  "Gatefold Cover" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Black Giants" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1975" ;
-        owl:sameAs           <https://musicbrainz.org/release/20e1663e-a7b8-454f-ab65-26a41c369e75> , <https://www.discogs.com/release/3432616> .
+        rdf:type               :Release ;
+        rdfs:label             "Black Giants" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "20e1663e-a7b8-454f-ab65-26a41c369e75" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Black Giants" ;
+        :releasedInDate        "1975" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/20e1663e-a7b8-454f-ab65-26a41c369e75> , <https://www.discogs.com/release/3432616> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

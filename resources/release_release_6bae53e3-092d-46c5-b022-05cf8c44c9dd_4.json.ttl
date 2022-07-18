@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,17 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/6bae53e3-092d-46c5-b022-05cf8c44c9dd>
-        rdf:type             :Release ;
-        rdfs:label           "Saxophone Colossus" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
-        :hasBarcode          "025218629126" ;
-        :hasMusicBrainzID    "6bae53e3-092d-46c5-b022-05cf8c44c9dd" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Saxophone Colossus" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1987" ;
-        owl:sameAs           <https://musicbrainz.org/release/6bae53e3-092d-46c5-b022-05cf8c44c9dd> .
+        rdf:type               :Release ;
+        rdfs:label             "Saxophone Colossus" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :hasBarcode            "025218629126" ;
+        :hasMusicBrainzID      "6bae53e3-092d-46c5-b022-05cf8c44c9dd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Saxophone Colossus" ;
+        :releasedInDate        "1987" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://musicbrainz.org/release/6bae53e3-092d-46c5-b022-05cf8c44c9dd> .

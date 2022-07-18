@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,16 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/a6a06799-9bfa-4cce-8fa8-fbed9f445724>
-        rdf:type             :Release ;
-        rdfs:label           "Verve Jazz Masters 8" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
-        :hasBarcode          "731451982323" ;
-        :hasMusicBrainzID    "a6a06799-9bfa-4cce-8fa8-fbed9f445724" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Verve Jazz Masters 8" ;
-        :releasedInCountry   "XE" ;
-        :releasedInDate      "1994" ;
-        owl:sameAs           <https://musicbrainz.org/release/a6a06799-9bfa-4cce-8fa8-fbed9f445724> , <https://www.discogs.com/release/6718034> .
+        rdf:type               :Release ;
+        rdfs:label             "Verve Jazz Masters 8" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+        :hasBarcode            "731451982323" ;
+        :hasMusicBrainzID      "a6a06799-9bfa-4cce-8fa8-fbed9f445724" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Verve Jazz Masters 8" ;
+        :releasedInDate        "1994" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/XE> ;
+        owl:sameAs             <https://musicbrainz.org/release/a6a06799-9bfa-4cce-8fa8-fbed9f445724> , <https://www.discogs.com/release/6718034> .
+
+<http://localhost:8080/resource/kejazz/Place/XE>
+        rdf:type  dul:Place .

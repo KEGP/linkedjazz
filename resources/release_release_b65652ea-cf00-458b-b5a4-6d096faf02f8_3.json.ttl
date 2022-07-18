@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,13 +9,15 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/b65652ea-cf00-458b-b5a4-6d096faf02f8>
-        rdf:type             :Release ;
-        rdfs:label           "Moanin'" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
-        :hasBarcode          "4988006602991" ;
-        :hasMusicBrainzID    "b65652ea-cf00-458b-b5a4-6d096faf02f8" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasTitle            "Moanin'" ;
-        :releasedInCountry   "JP" ;
-        :releasedInDate      "1986" ;
-        owl:sameAs           <https://musicbrainz.org/release/b65652ea-cf00-458b-b5a4-6d096faf02f8> .
+        rdf:type           :Release ;
+        rdfs:label         "Moanin'" ;
+        :creditedTo        <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :hasBarcode        "4988006602991" ;
+        :hasMusicBrainzID  "b65652ea-cf00-458b-b5a4-6d096faf02f8" ;
+        :hasTitle          "Moanin'" ;
+        :releasedInDate    "1986" ;
+        :releasedInPlace   <http://localhost:8080/resource/kejazz/Place/JP> ;
+        owl:sameAs         <https://musicbrainz.org/release/b65652ea-cf00-458b-b5a4-6d096faf02f8> .
+
+<http://localhost:8080/resource/kejazz/Place/JP>
+        rdf:type  dul:Place .

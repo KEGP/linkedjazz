@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,14 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/d10394d4-e645-3896-8396-412ba59be618>
-        rdf:type            :Release ;
-        rdfs:label          "Giant Steps" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
-        :hasASIN            "B000IJ7IVC" ;
-        :hasBarcode         "4943674067060" ;
-        :hasMusicBrainzID   "d10394d4-e645-3896-8396-412ba59be618" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Giant Steps" ;
-        :releasedInCountry  "JP" ;
-        :releasedInDate     "2006-12-04" ;
-        owl:sameAs          <https://www.amazon.co.jp/gp/product/B000IJ7IVC> , <https://musicbrainz.org/release/d10394d4-e645-3896-8396-412ba59be618> , <https://www.discogs.com/release/889334> .
+        rdf:type               :Release ;
+        rdfs:label             "Giant Steps" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :hasASIN               "B000IJ7IVC" ;
+        :hasBarcode            "4943674067060" ;
+        :hasMusicBrainzID      "d10394d4-e645-3896-8396-412ba59be618" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Giant Steps" ;
+        :releasedInDate        "2006-12-04" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/JP> ;
+        owl:sameAs             <https://www.amazon.co.jp/gp/product/B000IJ7IVC> , <https://www.amazon.com/dp/B000IJ7IVC> , <https://musicbrainz.org/release/d10394d4-e645-3896-8396-412ba59be618> , <https://www.discogs.com/release/889334> .
+
+<http://localhost:8080/resource/kejazz/Place/JP>
+        rdf:type  dul:Place .

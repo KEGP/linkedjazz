@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/b84c26b6-1a59-438b-9701-fdcfaf62bdf2>
-        rdf:type             :Release ;
-        rdfs:label           "Metroland" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5> ;
-        :hasASIN             "B00000I8TS" ;
-        :hasBarcode          "093624700623" ;
-        :hasMusicBrainzID    "b84c26b6-1a59-438b-9701-fdcfaf62bdf2" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Metroland" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1999-03-23" ;
-        owl:sameAs           <https://www.amazon.com/gp/product/B00000I8TS> , <https://musicbrainz.org/release/b84c26b6-1a59-438b-9701-fdcfaf62bdf2> .
+        rdf:type               :Release ;
+        rdfs:label             "Metroland" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5> ;
+        :hasASIN               "B00000I8TS" ;
+        :hasBarcode            "093624700623" ;
+        :hasMusicBrainzID      "b84c26b6-1a59-438b-9701-fdcfaf62bdf2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Metroland" ;
+        :releasedInDate        "1999-03-23" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/dp/B00000I8TS> , <https://www.amazon.com/gp/product/B00000I8TS> , <https://musicbrainz.org/release/b84c26b6-1a59-438b-9701-fdcfaf62bdf2> .

@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/ES>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/a8def4bd-4ba0-42dd-b34f-ed7544058070>
-        rdf:type            :Release ;
-        rdfs:label          "Tenderly" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
-        :hasASIN            "B00002801U" ;
-        :hasBarcode         "8427328030304" ;
-        :hasMusicBrainzID   "a8def4bd-4ba0-42dd-b34f-ed7544058070" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "Tenderly" ;
-        :releasedInCountry  "ES" ;
-        :releasedInDate     "2004-10-12" ;
-        owl:sameAs          <https://www.amazon.es/gp/product/B00002801U> , <https://musicbrainz.org/release/a8def4bd-4ba0-42dd-b34f-ed7544058070> .
+        rdf:type               :Release ;
+        rdfs:label             "Tenderly" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :hasASIN               "B00002801U" ;
+        :hasBarcode            "8427328030304" ;
+        :hasMusicBrainzID      "a8def4bd-4ba0-42dd-b34f-ed7544058070" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Tenderly" ;
+        :releasedInDate        "2004-10-12" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/ES> ;
+        owl:sameAs             <https://www.amazon.es/gp/product/B00002801U> , <https://www.amazon.com/dp/B00002801U> , <https://musicbrainz.org/release/a8def4bd-4ba0-42dd-b34f-ed7544058070> .

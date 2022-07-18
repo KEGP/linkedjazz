@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,15 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/32f14e27-38ac-4b2a-9baf-0fb7404407ca>
-        rdf:type            :Release ;
-        rdfs:label          "The Rough Guide to Classic Jazz" ;
-        :creditedTo         <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN            "B000001I1G" ;
-        :hasBarcode         "605633101225" ;
-        :hasMusicBrainzID   "32f14e27-38ac-4b2a-9baf-0fb7404407ca" ;
-        :hasStatus          "Official" ;
-        :hasTitle           "The Rough Guide to Classic Jazz" ;
-        :releasedInCountry  "GB" ;
-        :releasedInDate     "1997-06-24" ;
-        owl:sameAs          <https://www.amazon.co.uk/gp/product/B000001I1G> , <https://musicbrainz.org/release/32f14e27-38ac-4b2a-9baf-0fb7404407ca> .
+        rdf:type               :Release ;
+        rdfs:label             "The Rough Guide to Classic Jazz" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B000001I1G" ;
+        :hasBarcode            "605633101225" ;
+        :hasMusicBrainzID      "32f14e27-38ac-4b2a-9baf-0fb7404407ca" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Rough Guide to Classic Jazz" ;
+        :releasedInDate        "1997-06-24" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000001I1G> , <https://www.amazon.co.uk/gp/product/B000001I1G> , <https://musicbrainz.org/release/32f14e27-38ac-4b2a-9baf-0fb7404407ca> .

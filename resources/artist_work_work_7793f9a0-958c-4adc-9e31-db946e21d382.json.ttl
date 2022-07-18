@@ -16,16 +16,16 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
-<http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e>
-        rdfs:label         "Benny Goodman" ;
-        :hasMusicBrainzID  "b09ae88f-4156-4caa-b129-1cacb5e1632e" ;
-        :hasName           "Benny Goodman" ;
-        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
-        owl:sameAs         <https://musicbrainz.org/artist/b09ae88f-4156-4caa-b129-1cacb5e1632e> .
-
 [ rdf:type         :ArtistContributionToWork ;
   :atTime          [ rdf:type  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/7793f9a0-958c-4adc-9e31-db946e21d382> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
+
+<http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e>
+        rdfs:label         "Benny Goodman" ;
+        :hasMusicBrainzID  "b09ae88f-4156-4caa-b129-1cacb5e1632e" ;
+        :hasName           "Benny Goodman" ;
+        :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f> ;
+        owl:sameAs         <https://musicbrainz.org/artist/b09ae88f-4156-4caa-b129-1cacb5e1632e> .

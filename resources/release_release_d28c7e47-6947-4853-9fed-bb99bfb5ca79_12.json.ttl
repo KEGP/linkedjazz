@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,16 +8,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Place/GB>
+        rdf:type  dul:Place .
+
 <http://localhost:8080/resource/kejazz/Release/d28c7e47-6947-4853-9fed-bb99bfb5ca79>
-        rdf:type             :Release ;
-        rdfs:label           "Crazy Rhythm: The Genius of Gipsy Guitar" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
-        :hasASIN             "B000024OAJ" ;
-        :hasBarcode          "4006408060482" ;
-        :hasMusicBrainzID    "d28c7e47-6947-4853-9fed-bb99bfb5ca79" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "Crazy Rhythm: The Genius of Gipsy Guitar" ;
-        :releasedInCountry   "GB" ;
-        :releasedInDate      "1996" ;
-        owl:sameAs           <https://musicbrainz.org/release/d28c7e47-6947-4853-9fed-bb99bfb5ca79> , <https://www.amazon.co.uk/gp/product/B000024OAJ> .
+        rdf:type               :Release ;
+        rdfs:label             "Crazy Rhythm: The Genius of Gipsy Guitar" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :hasASIN               "B000024OAJ" ;
+        :hasBarcode            "4006408060482" ;
+        :hasMusicBrainzID      "d28c7e47-6947-4853-9fed-bb99bfb5ca79" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Crazy Rhythm: The Genius of Gipsy Guitar" ;
+        :releasedInDate        "1996" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/GB> ;
+        owl:sameAs             <https://www.amazon.com/dp/B000024OAJ> , <https://musicbrainz.org/release/d28c7e47-6947-4853-9fed-bb99bfb5ca79> , <https://www.amazon.co.uk/gp/product/B000024OAJ> .

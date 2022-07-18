@@ -1,4 +1,5 @@
 @prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix fx:   <http://sparql.xyz/facade-x/ns/> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,15 +9,17 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 <http://localhost:8080/resource/kejazz/Release/7c03ba0c-a1ce-4f00-affb-824877a6da56>
-        rdf:type             :Release ;
-        rdfs:label           "The Smithsonian Collection of Classic Jazz, Volume 5" ;
-        :creditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
-        :hasASIN             "B0000017T0" ;
-        :hasBarcode          "033251033626" ;
-        :hasMusicBrainzID    "7c03ba0c-a1ce-4f00-affb-824877a6da56" ;
-        :hasPackagingFormat  "Jewel Case" ;
-        :hasStatus           "Official" ;
-        :hasTitle            "The Smithsonian Collection of Classic Jazz, Volume 5" ;
-        :releasedInCountry   "US" ;
-        :releasedInDate      "1987" ;
-        owl:sameAs           <https://musicbrainz.org/release/7c03ba0c-a1ce-4f00-affb-824877a6da56> , <https://www.amazon.com/gp/product/B0000017T0> , <https://www.discogs.com/release/457754> .
+        rdf:type               :Release ;
+        rdfs:label             "The Smithsonian Collection of Classic Jazz, Volume 5" ;
+        :creditedTo            <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :hasASIN               "B0000017T0" ;
+        :hasBarcode            "033251033626" ;
+        :hasMusicBrainzID      "7c03ba0c-a1ce-4f00-affb-824877a6da56" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Smithsonian Collection of Classic Jazz, Volume 5" ;
+        :releasedInDate        "1987" ;
+        :releasedInPlace       <http://localhost:8080/resource/kejazz/Place/US> ;
+        owl:sameAs             <https://www.amazon.com/dp/B0000017T0> , <https://musicbrainz.org/release/7c03ba0c-a1ce-4f00-affb-824877a6da56> , <https://www.amazon.com/gp/product/B0000017T0> , <https://www.discogs.com/release/457754> .
+
+<http://localhost:8080/resource/kejazz/Place/US>
+        rdf:type  dul:Place .

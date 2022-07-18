@@ -16,16 +16,6 @@
                      dul:hasIntervalStartDate  "1928"
                    ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/16834f90-0256-30bb-a5ab-6bdc9237cd13> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0987c822-8789-4198-8666-8ccb530ca0be> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
-[ rdf:type         :ArtistContributionToWork ;
-  :atTime          [ rdf:type                  dul:TimeInterval ;
-                     dul:hasIntervalEndDate    "1928" ;
-                     dul:hasIntervalStartDate  "1928"
-                   ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/16834f90-0256-30bb-a5ab-6bdc9237cd13> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3310977b-ff65-4e3e-a74c-3919e35ea370> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
@@ -36,6 +26,16 @@
         :hasName           "Richard A. Whiting" ;
         :hasRoleInWork     <http://localhost:8080/resource/kejazz/ArtistRole/3e48faba-ec01-47fd-8e89-30e81161661c> ;
         owl:sameAs         <https://musicbrainz.org/artist/3310977b-ff65-4e3e-a74c-3919e35ea370> .
+
+[ rdf:type         :ArtistContributionToWork ;
+  :atTime          [ rdf:type                  dul:TimeInterval ;
+                     dul:hasIntervalEndDate    "1928" ;
+                     dul:hasIntervalStartDate  "1928"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/16834f90-0256-30bb-a5ab-6bdc9237cd13> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0987c822-8789-4198-8666-8ccb530ca0be> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
 
 <http://localhost:8080/resource/kejazz/ArtistRole/d59d99ea-23d4-4a80-b066-edca32ee158f>
         rdfs:label         "composer" ;
