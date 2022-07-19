@@ -39,6 +39,7 @@ test:suite.ttl a owlunit:TestSuite ;
 	owlunit:hasTestCase releaseTest:cq_metadata.ttl ;
 	# relations
 	owlunit:hasTestCase relationsTest:cq_artistplayedwith.ttl ;
+	owlunit:hasTestCase relationsTest:cq_relationtype.ttl ;
 	owlunit:hasTestCase relationsTest:cq_artistrecording.ttl .
 
 
@@ -72,3 +73,4 @@ releaseTest:cq_metadata.ttl a owlunit:CompetencyQuestionVerification .
 
 relationsTest:cq_artistplayedwith.ttl a owlunit:CompetencyQuestionVerification .
 relationsTest:cq_artistrecording.ttl a owlunit:CompetencyQuestionVerification .
+relationsTest:cq_relationtype.ttl a owlunit:CompetencyQuestionVerification .
