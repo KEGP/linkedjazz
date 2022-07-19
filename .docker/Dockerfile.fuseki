@@ -8,4 +8,4 @@ COPY ./ontology/chord-annotations/mto.ttl /staging/mto.ttl
 COPY ./resources/ /staging/
 COPY ./.docker/db.ttl /fuseki/configuration/db.ttl
 
-RUN /jena-fuseki/tdbloader --desc /fuseki/configuration/db.ttl /staging/*
+RUN /jena-fuseki/tdbloader --desc /fuseki/configuration/db.ttl $(find /staging/ -regex ".*ttl")
