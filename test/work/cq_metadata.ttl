@@ -3,9 +3,9 @@
 @prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
 
 ex:cq_metadata.ttl a owlunit:CompetencyQuestionVerification ;
- 	owlunit:hasCompetencyQuestion "What’s the title, lyrics language and ISWC code of the work?" ;
- 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?title ?iswc ?lang WHERE { ?work rdf:type kejazz:Work ; kejazz:hasTitle ?title ; kejazz:hasISWC ?iswc ; kejazz:hasLyricsLanguage ?lang . } " ;
+ 	owlunit:hasCompetencyQuestion "What’s the title and ISWC code of the work?" ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?title ?iswc WHERE { ?work rdf:type kejazz:Work ; kejazz:hasTitle ?title ; kejazz:hasISWC ?iswc . } " ;
 	owlunit:hasInputData ex:data.ttl ;
 	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
-  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"iswc\": {\"type\": \"literal\", \"value\": \"T-070.092.517-2\"}, \"lang\": {\"type\": \"literal\", \"value\": \"zxx\"}, \"title\": {\"type\": \"literal\", \"value\": \"King Porter Stomp\"}}]}, \"head\": {\"vars\": [\"title\", \"iswc\", \"lang\"]}}";
+  owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"iswc\": {\"type\": \"literal\", \"value\": \"T-070.092.517-2\"}, \"title\": {\"type\": \"literal\", \"value\": \"King Porter Stomp\"}}]}, \"head\": {\"vars\": [\"title\", \"iswc\"]}}";
   owlunit:testsOntology kejazz: .

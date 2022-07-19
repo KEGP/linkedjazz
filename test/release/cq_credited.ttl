@@ -4,7 +4,7 @@
 
 ex:cq_credited.ttl a owlunit:CompetencyQuestionVerification ;
  	owlunit:hasCompetencyQuestion "Who are the accredited artists?" ;
- 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?credited WHERE { ?release rdf:type kejazz:Release ; kejazz:creditedTo ?credited . } " ;
+ 	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?credited WHERE { ?release rdf:type kejazz:Release ; kejazz:isCreditedTo ?credited . } " ;
 	owlunit:hasInputData ex:data.ttl ;
 	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
   owlunit:hasExpectedResult "{\"results\": {\"bindings\": [{\"credited\": {\"type\": \"uri\", \"value\": \"http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920\"}}]}, \"head\": {\"vars\": [\"credited\"]}}";
