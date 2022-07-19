@@ -1,0 +1,6 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix test: <.> .
+@prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
+
+test:av_kejazz.ttl a owlunit:AnnotationVerification ;
+	owlunit:testsOntology kejazz: .

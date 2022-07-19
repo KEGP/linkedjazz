@@ -1,11 +1,16 @@
 @prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
 @prefix test: <.> .
+@prefix kejazzTest: <./kejazz/> .
 @prefix caTest: <./chord-annotations/> .
 @prefix artistTest: <./artist/> .
 @prefix workTest: <./work/> .
 @prefix recordingTest: <./recording/> .
+@prefix releaseTest: <./release/> .
+@prefix relationsTest: <./relations/> .
 
 test:suite.ttl a owlunit:TestSuite ;
+	# kejazz
+	owlunit:hasTestCase kejazzTest:av.ttl ;
 	# chords
 	owlunit:hasTestCase caTest:cq_firstchord.ttl ;
 	owlunit:hasTestCase caTest:cq_key.ttl ;
@@ -28,8 +33,16 @@ test:suite.ttl a owlunit:TestSuite ;
 	owlunit:hasTestCase recordingTest:cq_creditedto.ttl ;
 	owlunit:hasTestCase recordingTest:cq_howmanyrelease.ttl ;
 	owlunit:hasTestCase recordingTest:cq_metadata.ttl ;
-	owlunit:hasTestCase recordingTest:cq_relatedworks.ttl .
+	owlunit:hasTestCase recordingTest:cq_relatedworks.ttl ;
+	# release
+	owlunit:hasTestCase releaseTest:cq_credited.ttl ;
+	owlunit:hasTestCase releaseTest:cq_metadata.ttl ;
+	# relations
+	owlunit:hasTestCase relationsTest:cq_artistplayedwith.ttl ;
+	owlunit:hasTestCase relationsTest:cq_artistrecording.ttl .
 
+
+kejazzTest:av.ttl a owlunit:AnnotationVerification .
 
 caTest:cq_key.ttl a owlunit:CompetencyQuestionVerification .
 caTest:cq_firstchord.ttl a owlunit:CompetencyQuestionVerification .
@@ -54,3 +67,8 @@ recordingTest:cq_howmanyrelease.ttl a owlunit:CompetencyQuestionVerification .
 recordingTest:cq_metadata.ttl a owlunit:CompetencyQuestionVerification .
 recordingTest:cq_relatedworks.ttl a owlunit:CompetencyQuestionVerification .
 
+releaseTest:cq_credited.ttl a owlunit:CompetencyQuestionVerification .
+releaseTest:cq_metadata.ttl a owlunit:CompetencyQuestionVerification .
+
+relationsTest:cq_artistplayedwith.ttl a owlunit:CompetencyQuestionVerification .
+relationsTest:cq_artistrecording.ttl a owlunit:CompetencyQuestionVerification .
