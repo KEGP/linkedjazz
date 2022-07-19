@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Coltrane" ;
+        :hasMusicBrainzID  "b625448e-bf4a-41c3-a421-72ad46cdb831" ;
+        :hasName           "John Coltrane" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .
+
+<http://localhost:8080/resource/kejazz/Recording/87065f6a-9292-40cf-bfef-552a0282d3ff>
+        a                           :Recording ;
+        rdfs:label                  "Giant Steps" ;
+        :hasDurationInMilliseconds  "287000" ;
+        :hasISRC                    "USBJN0920071" ;
+        :hasMusicBrainzID           "87065f6a-9292-40cf-bfef-552a0282d3ff" ;
+        :hasTitle                   "Giant Steps" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/9c5a6b2c-b786-3ca4-a373-7ccd30712f13> , <http://localhost:8080/resource/kejazz/Release/b3132030-3c55-48e4-bf9b-a9d28d24cdd4> , <http://localhost:8080/resource/kejazz/Release/54cb151e-0cb3-430c-a075-40732d6c8bdb> , <http://localhost:8080/resource/kejazz/Release/903f25f4-c1d5-4606-a183-d9eb04ae780e> , <http://localhost:8080/resource/kejazz/Release/855ee3ca-f8c9-40de-a2c0-f094bd647597> , <http://localhost:8080/resource/kejazz/Release/97e6c363-1eab-406c-8f09-e30ec3dc465a> , <http://localhost:8080/resource/kejazz/Release/eadadd16-3098-4703-92cb-31c441352b66> , <http://localhost:8080/resource/kejazz/Release/22689758-ffc1-450f-bb48-52b577077dba> , <http://localhost:8080/resource/kejazz/Release/937d7e00-00b3-4e8d-8e74-d9cba4d2e017> , <http://localhost:8080/resource/kejazz/Release/39e42e08-b7b7-42fd-8f6a-e7539f6e2ecc> , <http://localhost:8080/resource/kejazz/Release/5c501883-817c-45aa-88a4-10f7d0a31ea9> , <http://localhost:8080/resource/kejazz/Release/9c2c7adf-e818-34e6-b410-095019b6c1fe> , <http://localhost:8080/resource/kejazz/Release/b1cf4cea-24bd-3d51-b689-5addfb82f914> , <http://localhost:8080/resource/kejazz/Release/6d0a7f0e-95db-35a3-bf89-37ab24c8a1df> , <http://localhost:8080/resource/kejazz/Release/4961e853-eb2c-4358-8e0c-436ab3b01e5b> , <http://localhost:8080/resource/kejazz/Release/fcfc015d-2f60-4aff-aae2-ef06eedb99ed> , <http://localhost:8080/resource/kejazz/Release/b1214263-1d92-4e77-b24c-18fe260d7a2d> , <http://localhost:8080/resource/kejazz/Release/d10394d4-e645-3896-8396-412ba59be618> , <http://localhost:8080/resource/kejazz/Release/b3383b1b-7f58-4e21-a6d9-ab189b2443cd> , <http://localhost:8080/resource/kejazz/Release/aa804223-236b-435d-b91f-5d236df663a1> , <http://localhost:8080/resource/kejazz/Release/4b9ce99c-3f37-3437-86f9-5eb08cb76277> , <http://localhost:8080/resource/kejazz/Release/a408efbd-0c90-4ae8-b5b7-fc69e7d6cf98> , <http://localhost:8080/resource/kejazz/Release/a35ac094-7462-42d0-8fe5-b68441e7920b> , <http://localhost:8080/resource/kejazz/Release/58e5f80d-a7ca-4c70-a66b-806c23444ca7> , <http://localhost:8080/resource/kejazz/Release/830ba33a-c6f9-4107-a618-ad8102f633bd> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1959-05-05" ;
+                                      :hasIntervalStartDate  "1959-05-05"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/c53130a9-3173-37d2-bedd-f7b6a2e17b89> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/87065f6a-9292-40cf-bfef-552a0282d3ff> .

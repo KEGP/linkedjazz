@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Coleman Hawkins" ;
+        :hasMusicBrainzID  "5c8cb181-38fe-4300-8153-650b2ed0258f" ;
+        :hasName           "Coleman Hawkins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5c8cb181-38fe-4300-8153-650b2ed0258f> .
+
+<http://localhost:8080/resource/kejazz/Release/1c862351-2c63-435d-9a35-aed9dc1563df>
+        a                      :Release ;
+        rdfs:label             "A Retrospective: 1929-1963" ;
+        :hasASIN               "B000002WTW" ;
+        :hasBarcode            "078636661728" ;
+        :hasMusicBrainzID      "1c862351-2c63-435d-9a35-aed9dc1563df" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "A Retrospective: 1929-1963" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+        :releasedInDate        "1995" ;
+        owl:sameAs             <https://www.allmusic.com/album/release/mr0000351639> , <https://www.amazon.com/dp/B000002WTW> , <https://www.discogs.com/release/1755286> , <https://musicbrainz.org/release/1c862351-2c63-435d-9a35-aed9dc1563df> , <https://www.amazon.com/gp/product/B000002WTW> .

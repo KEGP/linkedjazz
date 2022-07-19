@@ -1,0 +1,167 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/cffe9798-1030-43bf-8e8d-7cc35825377a>
+        a                  :Band ;
+        rdfs:label         "Jelly‐Roll Morton’s Steamboat Four" ;
+        :hasMusicBrainzID  "cffe9798-1030-43bf-8e8d-7cc35825377a" ;
+        :hasName           "Jelly‐Roll Morton’s Steamboat Four" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cffe9798-1030-43bf-8e8d-7cc35825377a> .
+
+<http://localhost:8080/resource/kejazz/Artist/b9097e6b-26a9-4a39-a744-205b7907735f>
+        a                  :Band ;
+        rdfs:label         "Jelly‐Roll Morton’s Stomp Kings" ;
+        :hasMusicBrainzID  "b9097e6b-26a9-4a39-a744-205b7907735f" ;
+        :hasName           "Jelly‐Roll Morton’s Stomp Kings" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b9097e6b-26a9-4a39-a744-205b7907735f> .
+
+<http://localhost:8080/resource/kejazz/Artist/4847d4bd-39f6-4ec5-b689-ece647fedee9>
+        a                  :Band ;
+        rdfs:label         "Jelly-Roll Morton's Jazz Trio" ;
+        :hasMusicBrainzID  "4847d4bd-39f6-4ec5-b689-ece647fedee9" ;
+        :hasName           "Jelly-Roll Morton's Jazz Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/4847d4bd-39f6-4ec5-b689-ece647fedee9> .
+
+<http://localhost:8080/resource/kejazz/Artist/52e9e9d5-348e-4e25-a9ee-90daf87f9f1d>
+        a                  :Band ;
+        rdfs:label         "Jelly Roll Morton’s Red Hot Peppers" ;
+        :hasMusicBrainzID  "52e9e9d5-348e-4e25-a9ee-90daf87f9f1d" ;
+        :hasName           "Jelly Roll Morton’s Red Hot Peppers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/52e9e9d5-348e-4e25-a9ee-90daf87f9f1d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b9097e6b-26a9-4a39-a744-205b7907735f> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4847d4bd-39f6-4ec5-b689-ece647fedee9> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/e9d7754b-a181-4ace-9098-0df3fcfe7a2d>
+        a                  :Band ;
+        rdfs:label         "Jelly Roll Morton’s New Orleans Jazzmen" ;
+        :hasMusicBrainzID  "e9d7754b-a181-4ace-9098-0df3fcfe7a2d" ;
+        :hasName           "Jelly Roll Morton’s New Orleans Jazzmen" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e9d7754b-a181-4ace-9098-0df3fcfe7a2d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/acc44594-0442-4cdc-bf1d-5ed5a8194f62> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/52e9e9d5-348e-4e25-a9ee-90daf87f9f1d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/a8d91abf-82e6-4143-a2b8-8747e87e1927>
+        a                  :Band ;
+        rdfs:label         "Jelly‐Roll Morton’s Kings of Jazz" ;
+        :hasMusicBrainzID  "a8d91abf-82e6-4143-a2b8-8747e87e1927" ;
+        :hasName           "Jelly‐Roll Morton’s Kings of Jazz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a8d91abf-82e6-4143-a2b8-8747e87e1927> .
+
+<http://localhost:8080/resource/kejazz/Artist/c249d3b3-f245-4900-8931-634c0f540a0e>
+        a                  :Band ;
+        rdfs:label         "Jelly Roll Morton and His Orchestra" ;
+        :hasMusicBrainzID  "c249d3b3-f245-4900-8931-634c0f540a0e" ;
+        :hasName           "Jelly Roll Morton and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c249d3b3-f245-4900-8931-634c0f540a0e> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e9d7754b-a181-4ace-9098-0df3fcfe7a2d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/cac01ac7-4159-42fd-9f2b-c5a7a5624079>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/cac01ac7-4159-42fd-9f2b-c5a7a5624079>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "conductor position" ;
+        :hasMusicBrainzID  "cac01ac7-4159-42fd-9f2b-c5a7a5624079" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/cac01ac7-4159-42fd-9f2b-c5a7a5624079> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a9fd7908-7ca8-4163-99a9-c9b69008b697> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/a9fd7908-7ca8-4163-99a9-c9b69008b697>
+        a                  :Band ;
+        rdfs:label         "Jelly‐Roll Morton’s Jazz Band" ;
+        :hasMusicBrainzID  "a9fd7908-7ca8-4163-99a9-c9b69008b697" ;
+        :hasName           "Jelly‐Roll Morton’s Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a9fd7908-7ca8-4163-99a9-c9b69008b697> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e9d7754b-a181-4ace-9098-0df3fcfe7a2d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/44f75bee-a670-48eb-ad83-6ee3545aa735>
+        a                  :Band ;
+        rdfs:label         "Levee Serenaders" ;
+        :hasMusicBrainzID  "44f75bee-a670-48eb-ad83-6ee3545aa735" ;
+        :hasName           "Levee Serenaders" ;
+        owl:sameAs         <https://musicbrainz.org/artist/44f75bee-a670-48eb-ad83-6ee3545aa735> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c249d3b3-f245-4900-8931-634c0f540a0e> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a8d91abf-82e6-4143-a2b8-8747e87e1927> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/44f75bee-a670-48eb-ad83-6ee3545aa735> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cffe9798-1030-43bf-8e8d-7cc35825377a> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/acc44594-0442-4cdc-bf1d-5ed5a8194f62>
+        a                  :Band ;
+        rdfs:label         "Jelly‐Roll Morton’s Incomparables" ;
+        :hasMusicBrainzID  "acc44594-0442-4cdc-bf1d-5ed5a8194f62" ;
+        :hasName           "Jelly‐Roll Morton’s Incomparables" ;
+        owl:sameAs         <https://musicbrainz.org/artist/acc44594-0442-4cdc-bf1d-5ed5a8194f62> .

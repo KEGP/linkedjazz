@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/a8db791d-8fef-4c0d-9cd3-f8f05a4bf5f2>
+        a                           :Recording ;
+        rdfs:label                  "Isfahan" ;
+        :hasDurationInMilliseconds  "251000" ;
+        :hasISRC                    "USBJN0920087" ;
+        :hasMusicBrainzID           "a8db791d-8fef-4c0d-9cd3-f8f05a4bf5f2" ;
+        :hasTitle                   "Isfahan" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1966-12-20" ;
+                                      :hasIntervalStartDate  "1966-12-20"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/f1c9f9ca-d2a3-44a7-b57d-b3111a8d057f> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/a8db791d-8fef-4c0d-9cd3-f8f05a4bf5f2> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .

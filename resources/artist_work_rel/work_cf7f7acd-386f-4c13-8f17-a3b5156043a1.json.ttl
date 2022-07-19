@@ -1,0 +1,49 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1928" ;
+                     :hasIntervalStartDate  "1928"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/cf7f7acd-386f-4c13-8f17-a3b5156043a1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/6ccad4eb-9b74-4f22-ad32-2bff6f53184c> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/6ccad4eb-9b74-4f22-ad32-2bff6f53184c>
+        a                  :ArtistPerson ;
+        rdfs:label         "Byron Gay" ;
+        :hasMusicBrainzID  "6ccad4eb-9b74-4f22-ad32-2bff6f53184c" ;
+        :hasName           "Byron Gay" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6ccad4eb-9b74-4f22-ad32-2bff6f53184c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1928" ;
+                     :hasIntervalStartDate  "1928"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/cf7f7acd-386f-4c13-8f17-a3b5156043a1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2afad113-8190-4a07-be8b-c64901e0d2e2> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/2afad113-8190-4a07-be8b-c64901e0d2e2>
+        a                  :ArtistPerson ;
+        rdfs:label         "Marco H. Hellman" ;
+        :hasMusicBrainzID  "2afad113-8190-4a07-be8b-c64901e0d2e2" ;
+        :hasName           "Marco H. Hellman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2afad113-8190-4a07-be8b-c64901e0d2e2> .

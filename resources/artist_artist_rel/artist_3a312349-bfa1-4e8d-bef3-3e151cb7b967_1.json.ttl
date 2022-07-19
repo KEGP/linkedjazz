@@ -1,0 +1,63 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a760856-7bf1-4f65-a2d0-225e77085fcc> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6bf4f019-5ac1-4b48-80fe-e48823377419> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169>
+        a                  :Band ;
+        rdfs:label         "Clark Terry-Bob Brookmeyer Quintet" ;
+        :hasMusicBrainzID  "e4bf9581-c082-4cc6-b9bd-dd2efc3f6169" ;
+        :hasName           "Clark Terry-Bob Brookmeyer Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/fb04824c-5ed2-44c4-884e-8336c4c144d5> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/9d1b5faa-96b9-4061-b1e9-1fb9cd74ab66> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/0b4a1b81-a926-4c0f-9da1-12a1207a5640> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/80d610fe-7771-4226-aa9b-950944791698> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e4bf9581-c082-4cc6-b9bd-dd2efc3f6169> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

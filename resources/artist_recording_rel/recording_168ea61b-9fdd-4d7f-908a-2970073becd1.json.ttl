@@ -1,0 +1,177 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Eddie Lang" ;
+        :hasMusicBrainzID  "7c6e10c8-7896-4624-a46b-2f3b5784d2d6" ;
+        :hasName           "Eddie Lang" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/398f84b0-1c11-48f0-a043-fb7bf694d364> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a6154e35-aaca-4b82-82eb-3793cdecfadb> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/a6154e35-aaca-4b82-82eb-3793cdecfadb>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Bill Rank" ;
+        :hasMusicBrainzID  "a6154e35-aaca-4b82-82eb-3793cdecfadb" ;
+        :hasName           "Bill Rank" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a6154e35-aaca-4b82-82eb-3793cdecfadb> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Artist/398f84b0-1c11-48f0-a043-fb7bf694d364>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Chauncey Morehouse" ;
+        :hasMusicBrainzID  "398f84b0-1c11-48f0-a043-fb7bf694d364" ;
+        :hasName           "Chauncey Morehouse" ;
+        owl:sameAs         <https://musicbrainz.org/artist/398f84b0-1c11-48f0-a043-fb7bf694d364> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "guitar" ;
+        :hasMusicBrainzID  "63021302-86cd-4aee-80df-2270d54f4978" ;
+        :hasName           "guitar" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "trombone" ;
+        :hasMusicBrainzID  "f6100277-c7b8-4c8d-aa26-d8cd014b6761" ;
+        :hasName           "trombone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "clarinet" ;
+        :hasMusicBrainzID  "08028095-6dae-4fe0-9f34-284fde19f29b" ;
+        :hasName           "clarinet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/08028095-6dae-4fe0-9f34-284fde19f29b> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3b6956ed-37d2-4436-bf09-de901f0101e9> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "cornet" ;
+        :hasMusicBrainzID  "257dad59-02e6-47d9-958a-659843737827" ;
+        :hasName           "cornet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/257dad59-02e6-47d9-958a-659843737827> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/32286190-da0f-4a85-b3d6-09a84d7e2bbc> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/32286190-da0f-4a85-b3d6-09a84d7e2bbc>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Bix Beiderbecke" ;
+        :hasMusicBrainzID  "32286190-da0f-4a85-b3d6-09a84d7e2bbc" ;
+        :hasName           "Bix Beiderbecke" ;
+        owl:sameAs         <https://musicbrainz.org/artist/32286190-da0f-4a85-b3d6-09a84d7e2bbc> .
+
+<http://localhost:8080/resource/kejazz/Artist/3b6956ed-37d2-4436-bf09-de901f0101e9>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Jimmy Dorsey" ;
+        :hasMusicBrainzID  "3b6956ed-37d2-4436-bf09-de901f0101e9" ;
+        :hasName           "Jimmy Dorsey" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3b6956ed-37d2-4436-bf09-de901f0101e9> .
+
+<http://localhost:8080/resource/kejazz/Artist/714b9ee6-ff84-451f-a121-4d873859291c>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Frankie Trumbauer" ;
+        :hasMusicBrainzID  "714b9ee6-ff84-451f-a121-4d873859291c" ;
+        :hasName           "Frankie Trumbauer" ;
+        owl:sameAs         <https://musicbrainz.org/artist/714b9ee6-ff84-451f-a121-4d873859291c> .
+
+<http://localhost:8080/resource/kejazz/Artist/c803b5aa-af2f-406a-9e40-a80827ca20da>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Paul Madeira" ;
+        :hasMusicBrainzID  "c803b5aa-af2f-406a-9e40-a80827ca20da" ;
+        :hasName           "Paul Madeira" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c803b5aa-af2f-406a-9e40-a80827ca20da> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "tenor saxophone" ;
+        :hasMusicBrainzID  "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e" ;
+        :hasName           "tenor saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c803b5aa-af2f-406a-9e40-a80827ca20da> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-02-04" ;
+                     :hasIntervalStartDate  "1927-02-04"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/168ea61b-9fdd-4d7f-908a-2970073becd1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/714b9ee6-ff84-451f-a121-4d873859291c> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+] .

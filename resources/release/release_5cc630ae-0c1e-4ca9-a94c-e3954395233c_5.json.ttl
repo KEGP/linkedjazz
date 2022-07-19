@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a>
+        a                  :Band ;
+        rdfs:label         "Original Dixieland Jazz Band" ;
+        :hasMusicBrainzID  "6e3d6e70-2f11-4732-a789-4a9d608ef24a" ;
+        :hasName           "Original Dixieland Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> .
+
+<http://localhost:8080/resource/kejazz/Release/5cc630ae-0c1e-4ca9-a94c-e3954395233c>
+        a                      :Release ;
+        rdfs:label             "The 75th Anniversary" ;
+        :hasMusicBrainzID      "5cc630ae-0c1e-4ca9-a94c-e3954395233c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The 75th Anniversary" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://www.discogs.com/release/8260395> , <https://musicbrainz.org/release/5cc630ae-0c1e-4ca9-a94c-e3954395233c> .

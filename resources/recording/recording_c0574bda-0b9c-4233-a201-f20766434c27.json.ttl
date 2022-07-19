@@ -1,0 +1,37 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bessie Smith" ;
+        :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
+        :hasName           "Bessie Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> .
+
+<http://localhost:8080/resource/kejazz/Recording/c0574bda-0b9c-4233-a201-f20766434c27>
+        a                           :Recording ;
+        rdfs:label                  "St. Louis Blues" ;
+        :hasDurationInMilliseconds  "191000" ;
+        :hasMusicBrainzID           "c0574bda-0b9c-4233-a201-f20766434c27" ;
+        :hasTitle                   "St. Louis Blues" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/24f43923-00ab-49c3-a707-fcac8bb932f3> , <http://localhost:8080/resource/kejazz/Release/8f39f187-3e1c-48ce-93bc-7495f42aea74> , <http://localhost:8080/resource/kejazz/Release/2574c494-78f3-4f9b-806e-b80fa067d119> , <http://localhost:8080/resource/kejazz/Release/88ffeef3-3533-44eb-98ca-535aaed39421> , <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/7d37eafc-43cc-45ea-a3c1-510bea31b4a5> , <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> , <http://localhost:8080/resource/kejazz/Release/8c15709b-e72a-4347-b870-2385a7f1c334> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/63968769-a811-437f-b490-69c72b6c5f65> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1925-01-14" ;
+                                      :hasIntervalStartDate  "1925-01-14"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/a684800a-c0b0-3dda-ab78-d09f79ca7cd3> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/c0574bda-0b9c-4233-a201-f20766434c27> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .

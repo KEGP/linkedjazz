@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/e5967932-7e67-499f-bb6f-b161f5fcda14>
+        a                      :Release ;
+        rdfs:label             "Ken Burns Jazz: Definitive Lester Young" ;
+        :hasASIN               "B000050I3V" ;
+        :hasBarcode            "731454908221" ;
+        :hasMusicBrainzID      "e5967932-7e67-499f-bb6f-b161f5fcda14" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ken Burns Jazz: Definitive Lester Young" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/d613e4ae-093a-49a1-b06a-579480f7f7e8> ;
+        :releasedInDate        "2000-11-07" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000050I3V> , <https://musicbrainz.org/release/e5967932-7e67-499f-bb6f-b161f5fcda14> , <https://www.amazon.com/dp/B000050I3V> .
+
+<http://localhost:8080/resource/kejazz/Artist/d613e4ae-093a-49a1-b06a-579480f7f7e8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Lester Young" ;
+        :hasMusicBrainzID  "d613e4ae-093a-49a1-b06a-579480f7f7e8" ;
+        :hasName           "Lester Young" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d613e4ae-093a-49a1-b06a-579480f7f7e8> .

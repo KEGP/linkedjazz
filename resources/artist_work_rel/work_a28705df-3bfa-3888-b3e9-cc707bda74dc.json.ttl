@@ -1,0 +1,32 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75>
+        a                  :ArtistPerson ;
+        rdfs:label         "Scott Joplin" ;
+        :hasMusicBrainzID  "aec8a328-d2e8-4780-b2ea-318c7f8d6f75" ;
+        :hasName           "Scott Joplin" ;
+        owl:sameAs         <https://musicbrainz.org/artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1899" ;
+                     :hasIntervalStartDate  "1899"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/a28705df-3bfa-3888-b3e9-cc707bda74dc> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

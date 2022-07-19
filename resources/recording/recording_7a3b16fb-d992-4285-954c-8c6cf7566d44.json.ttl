@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Orchestra" ;
+        :hasMusicBrainzID  "067bf834-c35f-414f-8389-a77558669cc1" ;
+        :hasName           "Louis Armstrong & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/067bf834-c35f-414f-8389-a77558669cc1> .
+
+<http://localhost:8080/resource/kejazz/Recording/7a3b16fb-d992-4285-954c-8c6cf7566d44>
+        a                           :Recording ;
+        rdfs:label                  "Swing That Music" ;
+        :hasDurationInMilliseconds  "172160" ;
+        :hasISRC                    "USBJN0920020" ;
+        :hasMusicBrainzID           "7a3b16fb-d992-4285-954c-8c6cf7566d44" ;
+        :hasTitle                   "Swing That Music" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/5fb58de7-b3ad-46a9-84d7-b2c900a0bdfa> , <http://localhost:8080/resource/kejazz/Release/4aef5d25-12ae-4903-b3ea-926e844feaef> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1936-05-18" ;
+                                      :hasIntervalStartDate  "1936-05-18"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/ab31be36-18a0-48fc-9592-4784ec6c7da8> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/7a3b16fb-d992-4285-954c-8c6cf7566d44> .

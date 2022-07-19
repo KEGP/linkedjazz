@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bea5831a-fa7f-4316-9d71-754e390556b8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jimmie Lunceford" ;
+        :hasMusicBrainzID  "bea5831a-fa7f-4316-9d71-754e390556b8" ;
+        :hasName           "Jimmie Lunceford" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bea5831a-fa7f-4316-9d71-754e390556b8> .
+
+<http://localhost:8080/resource/kejazz/Release/0427bc6a-821e-4930-b1ab-dcdd462af425>
+        a                      :Release ;
+        rdfs:label             "Classic Jazz Archive: Jimmie Lunceford" ;
+        :hasASIN               "B0001NBJO2" ;
+        :hasBarcode            "4011222219992" ;
+        :hasMusicBrainzID      "0427bc6a-821e-4930-b1ab-dcdd462af425" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Classic Jazz Archive: Jimmie Lunceford" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/bea5831a-fa7f-4316-9d71-754e390556b8> ;
+        :releasedInDate        "2004" ;
+        owl:sameAs             <https://www.amazon.de/gp/product/B0001NBJO2> , <https://www.amazon.com/dp/B0001NBJO2> , <https://musicbrainz.org/release/0427bc6a-821e-4930-b1ab-dcdd462af425> , <https://www.discogs.com/release/3596587> .

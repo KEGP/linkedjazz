@@ -1,0 +1,34 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/338e7812-4f75-4996-b99d-b26683f16748>
+        a                           :Recording ;
+        rdfs:label                  "Four or Five Times" ;
+        :hasDurationInMilliseconds  "194000" ;
+        :hasMusicBrainzID           "338e7812-4f75-4996-b99d-b26683f16748" ;
+        :hasTitle                   "Four or Five Times" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/2ef70cc2-9f31-435d-8e2e-6df08608469e> , <http://localhost:8080/resource/kejazz/Release/8d9f1405-5a08-4511-8d0d-6875717c84b9> , <http://localhost:8080/resource/kejazz/Release/2c0765c1-e396-4933-a1a1-0d723ce4f3d9> , <http://localhost:8080/resource/kejazz/Release/bff930be-4a2c-4297-b5d8-d9a451f3c851> , <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> , <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/0cca56ba-1206-46a1-8a74-1bb683a451eb> , <http://localhost:8080/resource/kejazz/Release/b899c1e0-dfb7-458b-9d43-da453080a5f5> , <http://localhost:8080/resource/kejazz/Release/8579c08a-8479-481a-ae26-0a02a2be3476> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/7adbb16a-841c-499f-9a97-461f9db02aa1> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1929-05-16" ;
+                                      :hasIntervalStartDate  "1929-05-16"
+                                    ] ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1928-05-16" ;
+                                      :hasIntervalStartDate  "1928-05-16"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/cf7f7acd-386f-4c13-8f17-a3b5156043a1> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/338e7812-4f75-4996-b99d-b26683f16748> .
+
+<http://localhost:8080/resource/kejazz/Artist/7adbb16a-841c-499f-9a97-461f9db02aa1>
+        a                  :Band ;
+        rdfs:label         "Jimmie Noone’s Apex Club Orchestra" ;
+        :hasMusicBrainzID  "7adbb16a-841c-499f-9a97-461f9db02aa1" ;
+        :hasName           "Jimmie Noone’s Apex Club Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7adbb16a-841c-499f-9a97-461f9db02aa1> .

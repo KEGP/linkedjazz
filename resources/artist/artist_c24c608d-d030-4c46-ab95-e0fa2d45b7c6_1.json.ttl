@@ -1,0 +1,24 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Orchestra" ;
+        :hasAlias          "Louis Armstrong and His Orchestra" , "Louis Armstrong et son orchestre" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "067bf834-c35f-414f-8389-a77558669cc1" ;
+        :hasName           "Louis Armstrong & His Orchestra" ;
+        owl:sameAs         <https://www.wikidata.org/wiki/Q96146709> , <https://musicbrainz.org/artist/067bf834-c35f-414f-8389-a77558669cc1> , <https://www.discogs.com/artist/317860> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/b61ce24f-b703-4abd-af36-98c01586aee1>
+        a                      :Release ;
+        rdfs:label             "RCA Victor 80th Anniversary Sampler" ;
+        :hasASIN               "B000003G9D" ;
+        :hasMusicBrainzID      "b61ce24f-b703-4abd-af36-98c01586aee1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "RCA Victor 80th Anniversary Sampler" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1997-04-15" ;
+        owl:sameAs             <https://musicbrainz.org/release/b61ce24f-b703-4abd-af36-98c01586aee1> , <https://www.amazon.com/gp/product/B000003G9D> , <https://www.amazon.com/dp/B000003G9D> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Horace Silver" ;
+        :hasMusicBrainzID  "d185d986-ee96-4fd3-bd61-8c848a4765b6" ;
+        :hasName           "Horace Silver" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> .
+
+<http://localhost:8080/resource/kejazz/Release/9ad56baa-8590-47e9-a3d8-a3b60fbff8f2>
+        a                      :Release ;
+        rdfs:label             "Horace Silver and the Jazz Messengers" ;
+        :hasASIN               "B000005H46" ;
+        :hasBarcode            "724386447821" ;
+        :hasMusicBrainzID      "9ad56baa-8590-47e9-a3d8-a3b60fbff8f2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Horace Silver and the Jazz Messengers" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+        :releasedInDate        "2005-03-01" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000005H46> , <https://musicbrainz.org/release/9ad56baa-8590-47e9-a3d8-a3b60fbff8f2> , <https://www.discogs.com/release/1053363> , <https://www.amazon.com/dp/B000005H46> .

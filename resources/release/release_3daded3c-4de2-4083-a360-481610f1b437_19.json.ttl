@@ -1,0 +1,34 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stéphane Grappelli" ;
+        :hasMusicBrainzID  "bfc03211-a3a2-4700-8fa3-00968c02c5d0" ;
+        :hasName           "Stéphane Grappelli" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> .
+
+<http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Django Reinhardt" ;
+        :hasMusicBrainzID  "650bf385-6f6d-4992-a3b9-779d144920a4" ;
+        :hasName           "Django Reinhardt" ;
+        owl:sameAs         <https://musicbrainz.org/artist/650bf385-6f6d-4992-a3b9-779d144920a4> .
+
+<http://localhost:8080/resource/kejazz/Release/3daded3c-4de2-4083-a360-481610f1b437>
+        a                      :Release ;
+        rdfs:label             "The Quintessential Django Reinhardt & Stéphane Grappelli" ;
+        :hasASIN               "B00000616B" ;
+        :hasBarcode            "743625526721" ;
+        :hasMusicBrainzID      "3daded3c-4de2-4083-a360-481610f1b437" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Quintessential Django Reinhardt & Stéphane Grappelli" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> , <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :releasedInDate        "1998-05-19" ;
+        owl:sameAs             <https://musicbrainz.org/release/3daded3c-4de2-4083-a360-481610f1b437> , <https://www.amazon.com/dp/B00000616B> , <https://www.discogs.com/release/2995824> , <https://www.amazon.co.uk/gp/product/B00000616B> .

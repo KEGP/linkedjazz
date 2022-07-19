@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a>
+        a                  :Band ;
+        rdfs:label         "Original Dixieland Jazz Band" ;
+        :hasMusicBrainzID  "6e3d6e70-2f11-4732-a789-4a9d608ef24a" ;
+        :hasName           "Original Dixieland Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> .
+
+<http://localhost:8080/resource/kejazz/Release/a06149b6-1e45-4770-8737-78e694a7d34f>
+        a                      :Release ;
+        rdfs:label             "The First Jazz Recordings 1917–1921" ;
+        :hasASIN               "B000025YKU" ;
+        :hasBarcode            "8711458200936" ;
+        :hasMusicBrainzID      "a06149b6-1e45-4770-8737-78e694a7d34f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The First Jazz Recordings 1917–1921" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
+        :releasedInDate        "1998" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000025YKU> , <https://rateyourmusic.com/release/comp/original-dixieland-jazz-band/the-first-jazz-recordings-1917-1921.p/> , <https://musicbrainz.org/release/a06149b6-1e45-4770-8737-78e694a7d34f> , <https://www.amazon.com/dp/B000025YKU> , <https://www.discogs.com/release/1925744> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bessie Smith" ;
+        :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
+        :hasName           "Bessie Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> .
+
+<http://localhost:8080/resource/kejazz/Release/11ccf112-bb56-42d4-88cd-942ca8cf6639>
+        a                      :Release ;
+        rdfs:label             "The Complete Recordings, Volume 3" ;
+        :hasASIN               "B0000027LB" ;
+        :hasBarcode            "074644747423" ;
+        :hasMusicBrainzID      "11ccf112-bb56-42d4-88cd-942ca8cf6639" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Recordings, Volume 3" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://musicbrainz.org/release/11ccf112-bb56-42d4-88cd-942ca8cf6639> , <https://www.amazon.com/gp/product/B0000027LB> , <https://www.amazon.com/dp/B0000027LB> .

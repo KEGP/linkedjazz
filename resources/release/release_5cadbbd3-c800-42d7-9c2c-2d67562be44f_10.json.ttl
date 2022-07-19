@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/5cadbbd3-c800-42d7-9c2c-2d67562be44f>
+        a                      :Release ;
+        rdfs:label             "80th Birthday Celebration" ;
+        :hasMusicBrainzID      "5cadbbd3-c800-42d7-9c2c-2d67562be44f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "80th Birthday Celebration" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
+        :releasedInDate        "2002" ;
+        owl:sameAs             <https://www.discogs.com/release/833278> , <https://musicbrainz.org/release/5cadbbd3-c800-42d7-9c2c-2d67562be44f> .
+
+<http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9>
+        a                  :ArtistPerson ;
+        rdfs:label         "Milt Jackson" ;
+        :hasMusicBrainzID  "2e38e1de-2890-4620-8467-5b0bb4641cb9" ;
+        :hasName           "Milt Jackson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> .

@@ -1,0 +1,50 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/3553ba31-2a03-407d-8278-e8ba69b5d3bb> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/50e099f1-727e-4efe-9e3f-0a83035e9ec6> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/50e099f1-727e-4efe-9e3f-0a83035e9ec6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Emmett Sidney Dean" ;
+        :hasMusicBrainzID  "50e099f1-727e-4efe-9e3f-0a83035e9ec6" ;
+        :hasName           "Emmett Sidney Dean" ;
+        owl:sameAs         <https://musicbrainz.org/artist/50e099f1-727e-4efe-9e3f-0a83035e9ec6> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/3553ba31-2a03-407d-8278-e8ba69b5d3bb> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e853b76b-8f5c-45e2-8d8a-b85a6af0eab8> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+        a                  :RoleInWork ;
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+<http://localhost:8080/resource/kejazz/Artist/e853b76b-8f5c-45e2-8d8a-b85a6af0eab8>
+        a                  :ArtistPerson ;
+        rdfs:label         "James Warren Acuff" ;
+        :hasMusicBrainzID  "e853b76b-8f5c-45e2-8d8a-b85a6af0eab8" ;
+        :hasName           "James Warren Acuff" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e853b76b-8f5c-45e2-8d8a-b85a6af0eab8> .

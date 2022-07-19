@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca>
+        a                  :Band ;
+        rdfs:label         "The Boswell Sisters" ;
+        :hasMusicBrainzID  "41e2d679-43a3-4b9b-8469-ce748ad7b1ca" ;
+        :hasName           "The Boswell Sisters" ;
+        owl:sameAs         <https://musicbrainz.org/artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> .
+
+<http://localhost:8080/resource/kejazz/Recording/c191ada7-4d41-4c10-8d2c-5d9906b693aa>
+        a                           :Recording ;
+        rdfs:label                  "Everybody Loves My Baby" ;
+        :hasDurationInMilliseconds  "139373" ;
+        :hasISRC                    "USBJN0920017" ;
+        :hasMusicBrainzID           "c191ada7-4d41-4c10-8d2c-5d9906b693aa" ;
+        :hasTitle                   "Everybody Loves My Baby" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/e3ae4ca9-c460-4d48-a089-5767dc04ac35> , <http://localhost:8080/resource/kejazz/Release/b9b7fb60-1edf-4ac1-8aa4-80dcfeec1070> , <http://localhost:8080/resource/kejazz/Release/24e0963d-0714-4bca-91b1-8b1aa4946ece> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1932-02-24" ;
+                                      :hasIntervalStartDate  "1932-02-24"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/1ff8d6fe-2118-3a38-86af-ade7499ceec4> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/c191ada7-4d41-4c10-8d2c-5d9906b693aa> .

@@ -1,0 +1,24 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892>
+        a                  :Band ;
+        rdfs:label         "Fletcher Henderson and His Orchestra" ;
+        :hasAlias          "Fletcher Henderson's Orchestra" , "Fletcher Henderson & His Orchestra" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "6e6170a4-31c6-4cae-a3f9-f0db3b9f5892" ;
+        :hasName           "Fletcher Henderson and His Orchestra" ;
+        owl:sameAs         <https://www.imdb.com/company/co0135189/> , <https://www.wikidata.org/wiki/Q96157727> , <https://www.discogs.com/artist/317895> , <https://musicbrainz.org/artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892> , <https://www.allmusic.com/artist/mn0000186563> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

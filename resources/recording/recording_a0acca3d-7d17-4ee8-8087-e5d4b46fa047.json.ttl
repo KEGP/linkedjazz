@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/98735b08-414c-48f5-b2d5-d169ceedd2e8>
+        a                  :Band ;
+        rdfs:label         "Bud Powell Trio" ;
+        :hasMusicBrainzID  "98735b08-414c-48f5-b2d5-d169ceedd2e8" ;
+        :hasName           "Bud Powell Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/98735b08-414c-48f5-b2d5-d169ceedd2e8> .
+
+<http://localhost:8080/resource/kejazz/Recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047>
+        a                           :Recording ;
+        rdfs:label                  "Night in Tunisia" ;
+        :hasDurationInMilliseconds  "256760" ;
+        :hasMusicBrainzID           "a0acca3d-7d17-4ee8-8087-e5d4b46fa047" ;
+        :hasTitle                   "Night in Tunisia" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/b281c80d-8f7b-46f1-81d1-94fd1c51818c> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/98735b08-414c-48f5-b2d5-d169ceedd2e8> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1951-05-01" ;
+                                      :hasIntervalStartDate  "1951-05-01"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/a0acca3d-7d17-4ee8-8087-e5d4b46fa047> .

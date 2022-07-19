@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sonny Rollins" ;
+        :hasMusicBrainzID  "3b47247e-5b57-49b6-a0ed-bad80243802a" ;
+        :hasName           "Sonny Rollins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> .
+
+<http://localhost:8080/resource/kejazz/Release/a4f1b14a-b262-446a-a27d-4cce1f40b9b2>
+        a                      :Release ;
+        rdfs:label             "Plus 4" ;
+        :hasASIN               "B00006SFBH" ;
+        :hasBarcode            "821797200660" ;
+        :hasMusicBrainzID      "a4f1b14a-b262-446a-a27d-4cce1f40b9b2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Plus 4" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :releasedInDate        "2003" ;
+        owl:sameAs             <https://www.musik-sammler.de/media/687003/> , <https://musicbrainz.org/release/a4f1b14a-b262-446a-a27d-4cce1f40b9b2> , <https://www.discogs.com/release/1528735> , <https://www.amazon.com/dp/B00006SFBH> , <https://www.amazon.com/gp/product/B00006SFBH> .

@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/887bc584-e245-4feb-a7a1-add0e483dd21>
+        a                           :Recording ;
+        rdfs:label                  "Ko-Ko" ;
+        :hasDurationInMilliseconds  "164426" ;
+        :hasISRC                    "USBJN0920032" , "USLIC0601090" ;
+        :hasMusicBrainzID           "887bc584-e245-4feb-a7a1-add0e483dd21" ;
+        :hasTitle                   "Ko-Ko" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/3c74294a-cfd1-4ba2-9e12-b7f3986fead1> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/50856ca6-d2e3-4fdd-8647-21230423cba0> , <http://localhost:8080/resource/kejazz/Release/d02124e8-43b8-476c-a4f5-a44570cf4bca> , <http://localhost:8080/resource/kejazz/Release/b281c80d-8f7b-46f1-81d1-94fd1c51818c> , <http://localhost:8080/resource/kejazz/Release/0153f167-e2fa-4030-8cf9-d418f33fbf8b> , <http://localhost:8080/resource/kejazz/Release/acaece98-d355-4efa-8585-c481aa712c0c> , <http://localhost:8080/resource/kejazz/Release/edbdb9c0-4ea6-4091-8f05-bb2b2ec12e4f> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/bb8fe301-fe37-3341-b1be-2f8df34a5522> , <http://localhost:8080/resource/kejazz/Release/323a87a4-e415-40e5-b457-be741314e3fe> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1940-03-06" ;
+                                      :hasIntervalStartDate  "1940-03-06"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/99c729a1-7674-4444-a9cc-fdbf701d6893> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/887bc584-e245-4feb-a7a1-add0e483dd21> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .

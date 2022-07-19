@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .
+
+<http://localhost:8080/resource/kejazz/Release/dc4867ac-1781-4672-affb-88431e6e132f>
+        a                      :Release ;
+        rdfs:label             "Jazz Café: 40 Smooth Jazz Favourites" ;
+        :hasASIN               "B000065TJP" ;
+        :hasBarcode            "5014293222921" ;
+        :hasMusicBrainzID      "dc4867ac-1781-4672-affb-88431e6e132f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Café: 40 Smooth Jazz Favourites" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "2002" ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B000065TJP> , <https://musicbrainz.org/release/dc4867ac-1781-4672-affb-88431e6e132f> , <https://www.amazon.com/dp/B000065TJP> .

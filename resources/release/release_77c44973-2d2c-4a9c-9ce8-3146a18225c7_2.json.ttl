@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75>
+        a                  :ArtistPerson ;
+        rdfs:label         "Scott Joplin" ;
+        :hasMusicBrainzID  "aec8a328-d2e8-4780-b2ea-318c7f8d6f75" ;
+        :hasName           "Scott Joplin" ;
+        owl:sameAs         <https://musicbrainz.org/artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> .
+
+<http://localhost:8080/resource/kejazz/Release/77c44973-2d2c-4a9c-9ce8-3146a18225c7>
+        a                      :Release ;
+        rdfs:label             "Greatest Hits" ;
+        :hasBarcode            "90266084227" ;
+        :hasMusicBrainzID      "77c44973-2d2c-4a9c-9ce8-3146a18225c7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Greatest Hits" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> ;
+        :releasedInDate        "1991-09-06" ;
+        owl:sameAs             <https://www.discogs.com/release/1091550> , <https://musicbrainz.org/release/77c44973-2d2c-4a9c-9ce8-3146a18225c7> .

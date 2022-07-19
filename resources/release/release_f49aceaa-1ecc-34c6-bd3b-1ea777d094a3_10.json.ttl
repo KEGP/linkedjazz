@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/f49aceaa-1ecc-34c6-bd3b-1ea777d094a3>
+        a                      :Release ;
+        rdfs:label             "Metroland" ;
+        :hasASIN               "B000026OZ0" ;
+        :hasBarcode            "731453691223" ;
+        :hasMusicBrainzID      "f49aceaa-1ecc-34c6-bd3b-1ea777d094a3" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Metroland" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5> ;
+        :releasedInDate        "1998" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000026OZ0> , <https://musicbrainz.org/release/f49aceaa-1ecc-34c6-bd3b-1ea777d094a3> , <https://www.amazon.co.uk/gp/product/B000026OZ0> .
+
+<http://localhost:8080/resource/kejazz/Artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5>
+        a                  :ArtistPerson ;
+        rdfs:label         "Mark Knopfler" ;
+        :hasMusicBrainzID  "e49f69da-17d5-4c5c-bac0-dadcb0e588f5" ;
+        :hasName           "Mark Knopfler" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e49f69da-17d5-4c5c-bac0-dadcb0e588f5> .

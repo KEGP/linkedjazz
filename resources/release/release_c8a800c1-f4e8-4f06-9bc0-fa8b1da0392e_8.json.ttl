@@ -1,0 +1,24 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Woody Herman" ;
+        :hasMusicBrainzID  "73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0" ;
+        :hasName           "Woody Herman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0> .
+
+<http://localhost:8080/resource/kejazz/Release/c8a800c1-f4e8-4f06-9bc0-fa8b1da0392e>
+        a                      :Release ;
+        rdfs:label             "16 Great Hits" ;
+        :hasMusicBrainzID      "c8a800c1-f4e8-4f06-9bc0-fa8b1da0392e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "16 Great Hits" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0> ;
+        owl:sameAs             <https://musicbrainz.org/release/c8a800c1-f4e8-4f06-9bc0-fa8b1da0392e> .

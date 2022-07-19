@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jimmie Noone" ;
+        :hasMusicBrainzID  "12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a" ;
+        :hasName           "Jimmie Noone" ;
+        owl:sameAs         <https://musicbrainz.org/artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a> .
+
+<http://localhost:8080/resource/kejazz/Release/2c0765c1-e396-4933-a1a1-0d723ce4f3d9>
+        a                      :Release ;
+        rdfs:label             "Chicago Rhythm - Apex Blues - The Recordings of Jimmie Noone 1923-1943" ;
+        :hasBarcode            "788065902629" ;
+        :hasMusicBrainzID      "2c0765c1-e396-4933-a1a1-0d723ce4f3d9" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Chicago Rhythm - Apex Blues - The Recordings of Jimmie Noone 1923-1943" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a> ;
+        :releasedInDate        "2006" ;
+        owl:sameAs             <https://musicbrainz.org/release/2c0765c1-e396-4933-a1a1-0d723ce4f3d9> , <https://www.discogs.com/release/5327515> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Django Reinhardt" ;
+        :hasMusicBrainzID  "650bf385-6f6d-4992-a3b9-779d144920a4" ;
+        :hasName           "Django Reinhardt" ;
+        owl:sameAs         <https://musicbrainz.org/artist/650bf385-6f6d-4992-a3b9-779d144920a4> .
+
+<http://localhost:8080/resource/kejazz/Release/12805a2d-810f-4c92-8c13-3dcd7dd2e92f>
+        a                      :Release ;
+        rdfs:label             "A Portrait of Django Reinhardt" ;
+        :hasASIN               "B000024VU6" ;
+        :hasBarcode            "5014797204218" ;
+        :hasMusicBrainzID      "12805a2d-810f-4c92-8c13-3dcd7dd2e92f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "A Portrait of Django Reinhardt" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :releasedInDate        "1997" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000024VU6> , <https://www.amazon.de/gp/product/B000024VU6> , <https://musicbrainz.org/release/12805a2d-810f-4c92-8c13-3dcd7dd2e92f> .

@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a43270af-bc4a-4552-847e-617b11f38d7b>
+        a                  :Band ;
+        rdfs:label         "John Coltrane Quartet" ;
+        :hasMusicBrainzID  "a43270af-bc4a-4552-847e-617b11f38d7b" ;
+        :hasName           "John Coltrane Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a43270af-bc4a-4552-847e-617b11f38d7b> .
+
+<http://localhost:8080/resource/kejazz/Recording/09620053-4631-4c90-8050-326761f0168f>
+        a                           :Recording ;
+        rdfs:label                  "My Favorite Things, Part 1 (Single Version)" ;
+        :hasDurationInMilliseconds  "166000" ;
+        :hasISRC                    "USBJN0920077" ;
+        :hasMusicBrainzID           "09620053-4631-4c90-8050-326761f0168f" ;
+        :hasTitle                   "My Favorite Things, Part 1 (Single Version)" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/a43270af-bc4a-4552-847e-617b11f38d7b> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1960-10-21" ;
+                                      :hasIntervalStartDate  "1960-10-21"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/edf0bfbc-c9e4-3b7d-9765-e8b86d9febbc> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/09620053-4631-4c90-8050-326761f0168f> .

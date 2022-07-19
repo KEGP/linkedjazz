@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892>
+        a                  :Band ;
+        rdfs:label         "Fletcher Henderson and His Orchestra" ;
+        :hasMusicBrainzID  "6e6170a4-31c6-4cae-a3f9-f0db3b9f5892" ;
+        :hasName           "Fletcher Henderson and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892> .
+
+<http://localhost:8080/resource/kejazz/Release/3f2fd282-670e-4ff8-a91f-946b3939ad9a>
+        a                      :Release ;
+        rdfs:label             "The Chronological Classics: Fletcher Henderson and His Orchestra 1926-1927" ;
+        :hasASIN               "B00007GX61" ;
+        :hasBarcode            "3307517059727" ;
+        :hasMusicBrainzID      "3f2fd282-670e-4ff8-a91f-946b3939ad9a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Fletcher Henderson and His Orchestra 1926-1927" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892> ;
+        :releasedInDate        "1991" ;
+        owl:sameAs             <https://musicbrainz.org/release/3f2fd282-670e-4ff8-a91f-946b3939ad9a> , <https://www.amazon.fr/gp/product/B00007GX61> , <https://www.amazon.com/dp/B00007GX61> .

@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed>
+        a                  :ArtistPerson ;
+        rdfs:label         "Billie Holiday" ;
+        :hasMusicBrainzID  "d59c4cda-11d9-48db-8bfe-b557ee602aed" ;
+        :hasName           "Billie Holiday" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> .
+
+<http://localhost:8080/resource/kejazz/Release/a5f372e7-9afa-4a36-80e2-9c272372f577>
+        a                      :Release ;
+        rdfs:label             "1952-1955" ;
+        :hasBarcode            "8004883530892" ;
+        :hasMusicBrainzID      "a5f372e7-9afa-4a36-80e2-9c272372f577" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "1952-1955" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://musicbrainz.org/release/a5f372e7-9afa-4a36-80e2-9c272372f577> .

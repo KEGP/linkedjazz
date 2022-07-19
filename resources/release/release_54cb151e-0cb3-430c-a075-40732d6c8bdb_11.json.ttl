@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/54cb151e-0cb3-430c-a075-40732d6c8bdb>
+        a                      :Release ;
+        rdfs:label             "Ken Burns Jazz: The Story of America's Music" ;
+        :hasASIN               "B000050HVG" ;
+        :hasBarcode            "074646143223" ;
+        :hasMusicBrainzID      "54cb151e-0cb3-430c-a075-40732d6c8bdb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ken Burns Jazz: The Story of America's Music" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "2000-11-14" ;
+        owl:sameAs             <https://www.discogs.com/release/954861> , <https://www.amazon.com/gp/product/B000050HVG> , <https://www.amazon.com/dp/B000050HVG> , <https://musicbrainz.org/release/54cb151e-0cb3-430c-a075-40732d6c8bdb> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

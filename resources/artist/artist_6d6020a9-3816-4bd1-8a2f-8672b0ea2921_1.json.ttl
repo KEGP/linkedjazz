@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/0eeb01c2-6e31-46ad-96b8-319749f731d2>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Philadelphia" ;
+        :hasMusicBrainzID  "0eeb01c2-6e31-46ad-96b8-319749f731d2" ;
+        :hasName           "Philadelphia" ;
+        owl:sameAs         <https://musicbrainz.org/area/0eeb01c2-6e31-46ad-96b8-319749f731d2> .
+
+<http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed>
+        a                  :ArtistPerson ;
+        rdfs:label         "Billie Holiday" ;
+        :hasAlias          "Billie Holliday" , "Billie Holidy" , "Holiday, Billie" , "Bille Holiday" , "Billie Holliday With Lester Young" , "Billy Holiday" , "billie holiday and her orchestra" , "Lady Day" , "Billie Hoiliday" , "B. Holliday" , "Holiday, Billy" , "Eleanora Fagan Gough" , "Billy Holliday" , "Billie Holiday & Her Orchestra" , "ビリー・ホリデイ" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/0eeb01c2-6e31-46ad-96b8-319749f731d2> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Female" ;
+        :hasIPI            "00014281809" ;
+        :hasISNI           "0000000368571283" , "0000000110215599" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1959-07-17" ;
+                             :hasIntervalStartDate  "1915-04-07"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "d59c4cda-11d9-48db-8bfe-b557ee602aed" ;
+        :hasName           "Billie Holiday" ;
+        owl:sameAs         <https://itunes.apple.com/artist/id37299> , <https://www.imdb.com/name/nm0390507/> , <https://open.spotify.com/artist/1YzCsTRb22dQkh9lghPIrp> , <https://d-nb.info/gnd/118706454> , <https://secondhandsongs.com/artist/1496> , <https://www.wikidata.org/wiki/Q104358> , <https://nla.gov.au/nla.party-862795> , <https://musicbrainz.org/artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> , <https://rateyourmusic.com/artist/billie_holiday> , <https://isni.org/isni/0000000110215599> , <http://muzikum.eu/en/122-3857/billie-holiday/lyrics.html> , <https://ibdb.com/person.php?id=45383> , <https://www.facebook.com/BillieHoliday> , <https://twitter.com/billieholidayhq> , <https://www.discogs.com/artist/33589> , <https://isni.org/isni/0000000368571283> , <http://www.billieholiday.com/> , <https://myspace.com/billieholiday> , <https://www.bbc.co.uk/music/artists/d59c4cda-11d9-48db-8bfe-b557ee602aed> , <https://www.worldcat.org/identities/lccn-n50033023> , <http://rockhall.com/inductees/billie-holiday/bio/> , <http://viaf.org/viaf/14857262> , <http://www.billieholidaysongs.com/> , <https://listen.tidal.com/artist/584> , <https://www.musik-sammler.de/artist/billie-holiday/> , <http://id.loc.gov/authorities/names/n50033023> , <https://catalogue.bnf.fr/ark:/12148/cb12402944q> , <http://www.billieholiday.be/> , <https://soundcloud.com/billie-holiday-official> , <https://www.deezer.com/artist/1036> , <http://snaccooperative.org/ark:/99166/w6n87bns> , <https://openlibrary.org/works/OL1349619A> , <https://www.allmusic.com/artist/mn0000079016> , <https://www.last.fm/music/Billie+Holiday> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "New York" ;
+        :hasMusicBrainzID  "74e50e58-5deb-4b99-93a2-decbb365c07f" ;
+        :hasName           "New York" ;
+        owl:sameAs         <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

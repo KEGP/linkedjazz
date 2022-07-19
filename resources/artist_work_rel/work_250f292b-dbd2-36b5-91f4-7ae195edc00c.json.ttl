@@ -1,0 +1,49 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1924" ;
+                     :hasIntervalStartDate  "1924"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/250f292b-dbd2-36b5-91f4-7ae195edc00c> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5e645519-a175-4fe0-9a9b-eb9dc9f506b5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/5e645519-a175-4fe0-9a9b-eb9dc9f506b5>
+        a                  :ArtistPerson ;
+        rdfs:label         "Irving Berlin" ;
+        :hasMusicBrainzID  "5e645519-a175-4fe0-9a9b-eb9dc9f506b5" ;
+        :hasName           "Irving Berlin" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5e645519-a175-4fe0-9a9b-eb9dc9f506b5> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+        a                  :RoleInWork ;
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1924" ;
+                     :hasIntervalStartDate  "1924"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/250f292b-dbd2-36b5-91f4-7ae195edc00c> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5e645519-a175-4fe0-9a9b-eb9dc9f506b5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

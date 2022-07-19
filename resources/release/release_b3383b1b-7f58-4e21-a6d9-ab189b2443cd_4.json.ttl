@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Coltrane" ;
+        :hasMusicBrainzID  "b625448e-bf4a-41c3-a421-72ad46cdb831" ;
+        :hasName           "John Coltrane" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .
+
+<http://localhost:8080/resource/kejazz/Release/b3383b1b-7f58-4e21-a6d9-ab189b2443cd>
+        a                      :Release ;
+        rdfs:label             "The Best of John Coltrane" ;
+        :hasMusicBrainzID      "b3383b1b-7f58-4e21-a6d9-ab189b2443cd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Best of John Coltrane" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :releasedInDate        "1970" ;
+        owl:sameAs             <https://www.discogs.com/release/1153673> , <https://musicbrainz.org/release/b3383b1b-7f58-4e21-a6d9-ab189b2443cd> .

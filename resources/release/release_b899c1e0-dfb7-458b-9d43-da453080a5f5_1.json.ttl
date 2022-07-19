@@ -1,0 +1,33 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jimmie Noone" ;
+        :hasMusicBrainzID  "12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a" ;
+        :hasName           "Jimmie Noone" ;
+        owl:sameAs         <https://musicbrainz.org/artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a> .
+
+<http://localhost:8080/resource/kejazz/Release/b899c1e0-dfb7-458b-9d43-da453080a5f5>
+        a                      :Release ;
+        rdfs:label             "At The Apex Club Volume 1 (1928)" ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "b899c1e0-dfb7-458b-9d43-da453080a5f5" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "At The Apex Club Volume 1 (1928)" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/12fa70fe-cca1-4e4b-b9c1-adcc0643ce5a> , <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
+        :releasedInDate        "1967" ;
+        owl:sameAs             <https://musicbrainz.org/release/b899c1e0-dfb7-458b-9d43-da453080a5f5> , <https://www.discogs.com/release/2985638> .
+
+<http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052>
+        a                  :ArtistPerson ;
+        rdfs:label         "Earl Hines" ;
+        :hasMusicBrainzID  "5d7df598-bb80-4d73-a6f8-9ed1a4374052" ;
+        :hasName           "Earl Hines" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> .

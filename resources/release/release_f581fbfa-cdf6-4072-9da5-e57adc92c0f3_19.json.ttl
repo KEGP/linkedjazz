@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/f581fbfa-cdf6-4072-9da5-e57adc92c0f3>
+        a                      :Release ;
+        rdfs:label             "The Definitive Sonny Rollins on Prestige, Riverside, and Contemporary" ;
+        :hasASIN               "B003VSTBI0" ;
+        :hasBarcode            "888072323254" ;
+        :hasMusicBrainzID      "f581fbfa-cdf6-4072-9da5-e57adc92c0f3" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Definitive Sonny Rollins on Prestige, Riverside, and Contemporary" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :releasedInDate        "2010" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B003VSTBI0> , <https://musicbrainz.org/release/f581fbfa-cdf6-4072-9da5-e57adc92c0f3> , <https://www.amazon.com/dp/B003VSTBI0> , <https://www.allmusic.com/album/release/mr0003103334> .
+
+<http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sonny Rollins" ;
+        :hasMusicBrainzID  "3b47247e-5b57-49b6-a0ed-bad80243802a" ;
+        :hasName           "Sonny Rollins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> .

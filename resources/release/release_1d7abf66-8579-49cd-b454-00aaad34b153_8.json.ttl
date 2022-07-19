@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sidney Bechet" ;
+        :hasMusicBrainzID  "bf1b23ea-9b76-42cf-a5f6-4a691e81af5e" ;
+        :hasName           "Sidney Bechet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> .
+
+<http://localhost:8080/resource/kejazz/Release/1d7abf66-8579-49cd-b454-00aaad34b153>
+        a                      :Release ;
+        rdfs:label             "The Sidney Bechet Story" ;
+        :hasASIN               "B000059RI1" ;
+        :hasBarcode            "604988991826" ;
+        :hasMusicBrainzID      "1d7abf66-8579-49cd-b454-00aaad34b153" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Sidney Bechet Story" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :releasedInDate        "2001-02-19" ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B000059RI1> , <https://www.amazon.com/dp/B000059RI1> , <https://musicbrainz.org/release/1d7abf66-8579-49cd-b454-00aaad34b153> .

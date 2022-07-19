@@ -1,0 +1,43 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/42f22d70-f906-4fdf-9174-fe63df89ad59> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2437980f-513a-44fc-80f1-b90d9d7fcf8f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/2437980f-513a-44fc-80f1-b90d9d7fcf8f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bing Crosby" ;
+        :hasMusicBrainzID  "2437980f-513a-44fc-80f1-b90d9d7fcf8f" ;
+        :hasName           "Bing Crosby" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2437980f-513a-44fc-80f1-b90d9d7fcf8f> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+        a                  :RoleInWork ;
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+<http://localhost:8080/resource/kejazz/Artist/97864c47-cdfe-4d97-a118-d5d51d5353d4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Harry Barris" ;
+        :hasMusicBrainzID  "97864c47-cdfe-4d97-a118-d5d51d5353d4" ;
+        :hasName           "Harry Barris" ;
+        owl:sameAs         <https://musicbrainz.org/artist/97864c47-cdfe-4d97-a118-d5d51d5353d4> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/42f22d70-f906-4fdf-9174-fe63df89ad59> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/97864c47-cdfe-4d97-a118-d5d51d5353d4> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .

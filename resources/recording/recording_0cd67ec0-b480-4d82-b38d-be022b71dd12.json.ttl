@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/0cd67ec0-b480-4d82-b38d-be022b71dd12>
+        a                           :Recording ;
+        rdfs:label                  "Honeysuckle Rose" ;
+        :hasDurationInMilliseconds  "186000" ;
+        :hasISRC                    "USBJN0920030" ;
+        :hasMusicBrainzID           "0cd67ec0-b480-4d82-b38d-be022b71dd12" ;
+        :hasTitle                   "Honeysuckle Rose" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/a24744a8-f3cb-4dae-86f1-56eac7ea29d1> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/a2019e51-9ce1-4c14-98d0-25428761e9f0> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1939-11-29" ;
+                                      :hasIntervalStartDate  "1939-11-29"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/8cb1dec5-951d-3ade-9466-29e3269b0dec> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/0cd67ec0-b480-4d82-b38d-be022b71dd12> .
+
+<http://localhost:8080/resource/kejazz/Artist/a2019e51-9ce1-4c14-98d0-25428761e9f0>
+        a                  :Orchestra ;
+        rdfs:label         "Benny Goodman and His Orchestra" ;
+        :hasMusicBrainzID  "a2019e51-9ce1-4c14-98d0-25428761e9f0" ;
+        :hasName           "Benny Goodman and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a2019e51-9ce1-4c14-98d0-25428761e9f0> .

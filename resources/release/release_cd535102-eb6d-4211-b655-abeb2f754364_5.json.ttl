@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Cannonball Adderley" ;
+        :hasMusicBrainzID  "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8" ;
+        :hasName           "Cannonball Adderley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> .
+
+<http://localhost:8080/resource/kejazz/Release/cd535102-eb6d-4211-b655-abeb2f754364>
+        a                      :Release ;
+        rdfs:label             "If You're Willing (Summer Love version)" ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "cd535102-eb6d-4211-b655-abeb2f754364" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "If You're Willing (Summer Love version)" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+        :releasedInDate        "2015" ;
+        owl:sameAs             <https://musicbrainz.org/release/cd535102-eb6d-4211-b655-abeb2f754364> , <http://www.qobuz.com/gb-en/album/if-youre-willing-summer-love-version-cannonball-adderley/0645347928121> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/cc329387-6f27-40a2-b7ac-f8349f6b5971>
+        a                      :Release ;
+        rdfs:label             "Verve's Grammy Winners" ;
+        :hasASIN               "B0000046SK" ;
+        :hasBarcode            "731452148520" ;
+        :hasMusicBrainzID      "cc329387-6f27-40a2-b7ac-f8349f6b5971" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Verve's Grammy Winners" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1994-01-25" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B0000046SK> , <https://www.amazon.com/dp/B0000046SK> , <https://www.discogs.com/release/6282342> , <https://musicbrainz.org/release/cc329387-6f27-40a2-b7ac-f8349f6b5971> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

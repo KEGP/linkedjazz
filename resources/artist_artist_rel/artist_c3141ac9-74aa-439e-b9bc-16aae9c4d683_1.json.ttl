@@ -1,0 +1,62 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1974" ;
+                           :hasIntervalStartDate  "1952"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1955" ;
+                           :hasIntervalStartDate  "1952"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/48eaf8a1-6e44-488c-a91a-736867f1ba50> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/4f1dc71a-d679-4d5d-b590-a38456b1b48e> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba>
+        a                  :Band ;
+        rdfs:label         "The Modern Jazz Quartet" ;
+        :hasMusicBrainzID  "75472b2f-55ca-47bb-a192-5ac8601350ba" ;
+        :hasName           "The Modern Jazz Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/75472b2f-55ca-47bb-a192-5ac8601350ba> .

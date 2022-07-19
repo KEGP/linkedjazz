@@ -1,0 +1,40 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/3bb238a4-c2a4-44e5-9843-a63e71b17e83>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Indianapolis" ;
+        :hasMusicBrainzID  "3bb238a4-c2a4-44e5-9843-a63e71b17e83" ;
+        :hasName           "Indianapolis" ;
+        owl:sameAs         <https://musicbrainz.org/area/3bb238a4-c2a4-44e5-9843-a63e71b17e83> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07>
+        a                  :ArtistPerson ;
+        rdfs:label         "J.J. Johnson" ;
+        :hasAlias          "J.J.Johnson" , "Jay Jay Johnson" , "James Louis \"J. J.\" Johnson" , "JJ Johnson" , "J.J. Johnson" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/3bb238a4-c2a4-44e5-9843-a63e71b17e83> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/3bb238a4-c2a4-44e5-9843-a63e71b17e83> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00015415319" ;
+        :hasISNI           "0000000458907318" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "2001-02-04" ;
+                             :hasIntervalStartDate  "1924-01-22"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "33e50556-d4be-421b-a5d1-644bd536ec07" ;
+        :hasName           "J.J. Johnson" ;
+        owl:sameAs         <http://viaf.org/viaf/9137149296258380670007> , <https://www.wikidata.org/wiki/Q504915> , <https://d-nb.info/gnd/122060989> , <https://en.wikipedia.org/wiki/J._J._Johnson> , <http://snaccooperative.org/ark:/99166/w6m332cb> , <https://www.discogs.com/artist/251778> , <http://id.loc.gov/authorities/names/n84011598> , <https://www.worldcat.org/identities/lccn-n84011598> , <https://musicbrainz.org/artist/33e50556-d4be-421b-a5d1-644bd536ec07> , <https://www.imdb.com/name/nm0425266/> , <https://catalogue.bnf.fr/ark:/12148/cb138956805> , <https://www.allmusic.com/artist/mn0000119111> , <https://isni.org/isni/0000000458907318> .

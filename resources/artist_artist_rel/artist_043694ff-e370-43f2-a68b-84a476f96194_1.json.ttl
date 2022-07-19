@@ -1,0 +1,28 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/165a50d6-dc9f-4c76-96a5-052dd0dacf94>
+        a                  :Band ;
+        rdfs:label         "Bunk's Brass Band" ;
+        :hasMusicBrainzID  "165a50d6-dc9f-4c76-96a5-052dd0dacf94" ;
+        :hasName           "Bunk's Brass Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/165a50d6-dc9f-4c76-96a5-052dd0dacf94> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f8dd63f2-5325-456f-abff-d8b837e9bc74> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/165a50d6-dc9f-4c76-96a5-052dd0dacf94> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

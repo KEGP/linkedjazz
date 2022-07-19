@@ -1,0 +1,166 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "teacher" ;
+        :hasMusicBrainzID  "249fc24f-d573-4290-9d74-0547712d1f1e" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/249fc24f-d573-4290-9d74-0547712d1f1e> .
+
+<http://localhost:8080/resource/kejazz/Artist/ba1f3853-0357-4dce-aab2-cfbd509a19bb>
+        a                  :Band ;
+        rdfs:label         "Jimmy Johnson's Jazz Boys" ;
+        :hasMusicBrainzID  "ba1f3853-0357-4dce-aab2-cfbd509a19bb" ;
+        :hasName           "Jimmy Johnson's Jazz Boys" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ba1f3853-0357-4dce-aab2-cfbd509a19bb> .
+
+<http://localhost:8080/resource/kejazz/Artist/a2952eb9-b69e-4722-b636-f224c0dab7e4>
+        a                  :Band ;
+        rdfs:label         "James P. Johnson’s Blue Note Jazzmen" ;
+        :hasMusicBrainzID  "a2952eb9-b69e-4722-b636-f224c0dab7e4" ;
+        :hasName           "James P. Johnson’s Blue Note Jazzmen" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a2952eb9-b69e-4722-b636-f224c0dab7e4> .
+
+<http://localhost:8080/resource/kejazz/Artist/f826e76e-6d94-4703-9583-b5d33347295d>
+        a                  :Band ;
+        rdfs:label         "Louisiana Sugar Babes" ;
+        :hasMusicBrainzID  "f826e76e-6d94-4703-9583-b5d33347295d" ;
+        :hasName           "Louisiana Sugar Babes" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f826e76e-6d94-4703-9583-b5d33347295d> .
+
+<http://localhost:8080/resource/kejazz/Artist/689094e0-f00d-4b8c-9f20-b7ee866f9a6e>
+        a                  :Band ;
+        rdfs:label         "Jimmy Johnson and His Band" ;
+        :hasMusicBrainzID  "689094e0-f00d-4b8c-9f20-b7ee866f9a6e" ;
+        :hasName           "Jimmy Johnson and His Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/689094e0-f00d-4b8c-9f20-b7ee866f9a6e> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f1bae94f-6f17-414d-a968-16350f43691c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/ab666dde-bd85-4ac2-a209-165eaf4146a0>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f826e76e-6d94-4703-9583-b5d33347295d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/405dfdfa-856b-43b3-8c68-41a30f6abcea>
+        a                  :Band ;
+        rdfs:label         "James P. Johnson & His Orchestra" ;
+        :hasMusicBrainzID  "405dfdfa-856b-43b3-8c68-41a30f6abcea" ;
+        :hasName           "James P. Johnson & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/405dfdfa-856b-43b3-8c68-41a30f6abcea> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/689094e0-f00d-4b8c-9f20-b7ee866f9a6e> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/af045585-a586-4096-a15e-864f0ec5e9cc>
+        a                  :Band ;
+        rdfs:label         "Johnson's Jazzers" ;
+        :hasMusicBrainzID  "af045585-a586-4096-a15e-864f0ec5e9cc" ;
+        :hasName           "Johnson's Jazzers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/af045585-a586-4096-a15e-864f0ec5e9cc> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ba1f3853-0357-4dce-aab2-cfbd509a19bb> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/405dfdfa-856b-43b3-8c68-41a30f6abcea> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/ab666dde-bd85-4ac2-a209-165eaf4146a0>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "artistic director" ;
+        :hasMusicBrainzID  "ab666dde-bd85-4ac2-a209-165eaf4146a0" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/ab666dde-bd85-4ac2-a209-165eaf4146a0> .
+
+<http://localhost:8080/resource/kejazz/Artist/569fc5bf-bcb6-4bc5-9a00-bd0d258e34f1>
+        a                  :ArtistPerson ;
+        rdfs:label         "Fats Waller" ;
+        :hasMusicBrainzID  "569fc5bf-bcb6-4bc5-9a00-bd0d258e34f1" ;
+        :hasName           "Fats Waller" ;
+        owl:sameAs         <https://musicbrainz.org/artist/569fc5bf-bcb6-4bc5-9a00-bd0d258e34f1> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/569fc5bf-bcb6-4bc5-9a00-bd0d258e34f1> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93a0fc69-2262-4d99-97f1-ee33227b9c89> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a2952eb9-b69e-4722-b636-f224c0dab7e4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f1bae94f-6f17-414d-a968-16350f43691c>
+        a                  :Orchestra ;
+        rdfs:label         "James P. Johnson's New York Orchestra" ;
+        :hasMusicBrainzID  "f1bae94f-6f17-414d-a968-16350f43691c" ;
+        :hasName           "James P. Johnson's New York Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f1bae94f-6f17-414d-a968-16350f43691c> .
+
+<http://localhost:8080/resource/kejazz/Artist/a28424ee-c8e9-4143-8312-6e932d22192d>
+        a                  :Band ;
+        rdfs:label         "James P. Johnson's Harmony Eight" ;
+        :hasMusicBrainzID  "a28424ee-c8e9-4143-8312-6e932d22192d" ;
+        :hasName           "James P. Johnson's Harmony Eight" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a28424ee-c8e9-4143-8312-6e932d22192d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/af045585-a586-4096-a15e-864f0ec5e9cc> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a28424ee-c8e9-4143-8312-6e932d22192d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/93a0fc69-2262-4d99-97f1-ee33227b9c89>
+        a                  :Band ;
+        rdfs:label         "Perry Bradford’s Jazz Phools" ;
+        :hasMusicBrainzID  "93a0fc69-2262-4d99-97f1-ee33227b9c89" ;
+        :hasName           "Perry Bradford’s Jazz Phools" ;
+        owl:sameAs         <https://musicbrainz.org/artist/93a0fc69-2262-4d99-97f1-ee33227b9c89> .

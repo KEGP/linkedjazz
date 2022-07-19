@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/5ad7e19e-fe31-4c87-be61-ed0055849b72>
+        a                      :Release ;
+        rdfs:label             "Off the Record: The Complete 1923 Jazz Band Recordings" ;
+        :hasASIN               "B000K2VK8Y" ;
+        :hasBarcode            "777215111028" ;
+        :hasMusicBrainzID      "5ad7e19e-fe31-4c87-be61-ed0055849b72" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Off the Record: The Complete 1923 Jazz Band Recordings" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
+        :releasedInDate        "2006" ;
+        owl:sameAs             <https://musicbrainz.org/release/5ad7e19e-fe31-4c87-be61-ed0055849b72> , <https://www.amazon.com/gp/product/B000K2VK8Y> , <https://www.amazon.com/dp/B000K2VK8Y> .
+
+<http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f>
+        a                  :ArtistPerson ;
+        rdfs:label         "King Oliver" ;
+        :hasMusicBrainzID  "744fa1ae-051c-463c-957a-25a4ddc01c2f" ;
+        :hasName           "King Oliver" ;
+        owl:sameAs         <https://musicbrainz.org/artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> .

@@ -1,0 +1,323 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/20a72e06-2568-4637-a283-1f99f81e82bb> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fadcfecc-6ecf-4e5c-a43b-fa67a4defb5c> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "guitar" ;
+        :hasMusicBrainzID  "63021302-86cd-4aee-80df-2270d54f4978" ;
+        :hasName           "guitar" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/0d08464c-5d26-4766-9079-a8cb260259f2> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "trombone" ;
+        :hasMusicBrainzID  "f6100277-c7b8-4c8d-aa26-d8cd014b6761" ;
+        :hasName           "trombone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7d09015c-71a2-4e9c-bd3d-9ab9fd0c8c6a> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "double bass" ;
+        :hasMusicBrainzID  "7bd32b95-416f-4244-a98b-1311ec69c7db" ;
+        :hasName           "double bass" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/7bd32b95-416f-4244-a98b-1311ec69c7db> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fadcfecc-6ecf-4e5c-a43b-fa67a4defb5c> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "trumpet" ;
+        :hasMusicBrainzID  "1c8f9780-2f16-4891-b66d-bb7aa0820dbd" ;
+        :hasName           "trumpet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> .
+
+<http://localhost:8080/resource/kejazz/Artist/20a72e06-2568-4637-a283-1f99f81e82bb>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Buster Bailey" ;
+        :hasMusicBrainzID  "20a72e06-2568-4637-a283-1f99f81e82bb" ;
+        :hasName           "Buster Bailey" ;
+        owl:sameAs         <https://musicbrainz.org/artist/20a72e06-2568-4637-a283-1f99f81e82bb> .
+
+<http://localhost:8080/resource/kejazz/Artist/0d08464c-5d26-4766-9079-a8cb260259f2>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Elmer James" ;
+        :hasMusicBrainzID  "0d08464c-5d26-4766-9079-a8cb260259f2" ;
+        :hasName           "Elmer James" ;
+        owl:sameAs         <https://musicbrainz.org/artist/0d08464c-5d26-4766-9079-a8cb260259f2> .
+
+<http://localhost:8080/resource/kejazz/Artist/7fdcdee9-c9f8-4cc0-a4b4-ad96aa82fee2>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Henry “Red” Allen" ;
+        :hasMusicBrainzID  "7fdcdee9-c9f8-4cc0-a4b4-ad96aa82fee2" ;
+        :hasName           "Henry “Red” Allen" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7fdcdee9-c9f8-4cc0-a4b4-ad96aa82fee2> .
+
+<http://localhost:8080/resource/kejazz/Artist/eb3aae2b-3c87-4cc3-8f5c-a583bc6a4afb>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Irving Randolph" ;
+        :hasMusicBrainzID  "eb3aae2b-3c87-4cc3-8f5c-a583bc6a4afb" ;
+        :hasName           "Irving Randolph" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eb3aae2b-3c87-4cc3-8f5c-a583bc6a4afb> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7fdcdee9-c9f8-4cc0-a4b4-ad96aa82fee2> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7d09015c-71a2-4e9c-bd3d-9ab9fd0c8c6a> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/fadcfecc-6ecf-4e5c-a43b-fa67a4defb5c>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Hilton Jefferson" ;
+        :hasMusicBrainzID  "fadcfecc-6ecf-4e5c-a43b-fa67a4defb5c" ;
+        :hasName           "Hilton Jefferson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/fadcfecc-6ecf-4e5c-a43b-fa67a4defb5c> .
+
+<http://localhost:8080/resource/kejazz/Artist/f2a854fd-738d-4a18-9eb9-9c0ba0d41668>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Russell Smith" ;
+        :hasMusicBrainzID  "f2a854fd-738d-4a18-9eb9-9c0ba0d41668" ;
+        :hasName           "Russell Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f2a854fd-738d-4a18-9eb9-9c0ba0d41668> .
+
+<http://localhost:8080/resource/kejazz/Artist/d605b278-803b-4546-b318-268e3400a212>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Walter Johnson" ;
+        :hasMusicBrainzID  "d605b278-803b-4546-b318-268e3400a212" ;
+        :hasName           "Walter Johnson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d605b278-803b-4546-b318-268e3400a212> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "clarinet" ;
+        :hasMusicBrainzID  "08028095-6dae-4fe0-9f34-284fde19f29b" ;
+        :hasName           "clarinet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/08028095-6dae-4fe0-9f34-284fde19f29b> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/450caafb-6bd2-4c4a-8ca4-c1e4c86697f4> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/63021302-86cd-4aee-80df-2270d54f4978>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eb3aae2b-3c87-4cc3-8f5c-a583bc6a4afb> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/7d09015c-71a2-4e9c-bd3d-9ab9fd0c8c6a>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Russell Procope" ;
+        :hasMusicBrainzID  "7d09015c-71a2-4e9c-bd3d-9ab9fd0c8c6a" ;
+        :hasName           "Russell Procope" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7d09015c-71a2-4e9c-bd3d-9ab9fd0c8c6a> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/66ced4ad-192a-4d88-9530-7f4d90a093f3> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f2a854fd-738d-4a18-9eb9-9c0ba0d41668> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "alto saxophone" ;
+        :hasMusicBrainzID  "9c977091-b27a-4a0e-b54e-b5ab89420e22" ;
+        :hasName           "alto saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/463028f3-582b-455e-8d40-ffd04bf17089> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/16ad3a72-8d72-40a1-a66a-7f488d061f51> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/16ad3a72-8d72-40a1-a66a-7f488d061f51>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Keg Johnson" ;
+        :hasMusicBrainzID  "16ad3a72-8d72-40a1-a66a-7f488d061f51" ;
+        :hasName           "Keg Johnson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/16ad3a72-8d72-40a1-a66a-7f488d061f51> .
+
+<http://localhost:8080/resource/kejazz/Artist/450caafb-6bd2-4c4a-8ca4-c1e4c86697f4>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Lawrence Lucie" ;
+        :hasMusicBrainzID  "450caafb-6bd2-4c4a-8ca4-c1e4c86697f4" ;
+        :hasName           "Lawrence Lucie" ;
+        owl:sameAs         <https://musicbrainz.org/artist/450caafb-6bd2-4c4a-8ca4-c1e4c86697f4> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d605b278-803b-4546-b318-268e3400a212> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/66ced4ad-192a-4d88-9530-7f4d90a093f3>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Claude Jones" ;
+        :hasMusicBrainzID  "66ced4ad-192a-4d88-9530-7f4d90a093f3" ;
+        :hasName           "Claude Jones" ;
+        owl:sameAs         <https://musicbrainz.org/artist/66ced4ad-192a-4d88-9530-7f4d90a093f3> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-09-12" ;
+                     :hasIntervalStartDate  "1934-09-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/20a72e06-2568-4637-a283-1f99f81e82bb> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/e28c0b26-3bdb-45dc-b4f5-f309c7c35ec4>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Ben Webster" ;
+        :hasMusicBrainzID  "e28c0b26-3bdb-45dc-b4f5-f309c7c35ec4" ;
+        :hasName           "Ben Webster" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e28c0b26-3bdb-45dc-b4f5-f309c7c35ec4> .
+
+<http://localhost:8080/resource/kejazz/Artist/463028f3-582b-455e-8d40-ffd04bf17089>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Horace Henderson" ;
+        :hasMusicBrainzID  "463028f3-582b-455e-8d40-ffd04bf17089" ;
+        :hasName           "Horace Henderson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/463028f3-582b-455e-8d40-ffd04bf17089> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1934-12-09" ;
+                     :hasIntervalStartDate  "1934-12-09"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af10606-1aef-42d6-8f26-9ff66395eae1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e28c0b26-3bdb-45dc-b4f5-f309c7c35ec4> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "tenor saxophone" ;
+        :hasMusicBrainzID  "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e" ;
+        :hasName           "tenor saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/ef7382cf-d5b4-4923-8b9e-3c482ed84b5e> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .

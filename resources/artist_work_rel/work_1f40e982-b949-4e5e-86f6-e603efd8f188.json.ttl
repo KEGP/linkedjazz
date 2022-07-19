@@ -1,0 +1,50 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a9e79d89-f90b-4cef-943e-68151336a430>
+        a                  :ArtistPerson ;
+        rdfs:label         "Nat Adderley" ;
+        :hasMusicBrainzID  "a9e79d89-f90b-4cef-943e-68151336a430" ;
+        :hasName           "Nat Adderley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a9e79d89-f90b-4cef-943e-68151336a430> .
+
+<http://localhost:8080/resource/kejazz/Artist/fad74575-8a16-4c50-99a5-5d20fda0bd46>
+        a                  :ArtistPerson ;
+        rdfs:label         "Oscar Brown Jr." ;
+        :hasMusicBrainzID  "fad74575-8a16-4c50-99a5-5d20fda0bd46" ;
+        :hasName           "Oscar Brown Jr." ;
+        owl:sameAs         <https://musicbrainz.org/artist/fad74575-8a16-4c50-99a5-5d20fda0bd46> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a9e79d89-f90b-4cef-943e-68151336a430> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+        a                  :RoleInWork ;
+        rdfs:label         "lyricist" ;
+        :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
+        :hasName           "lyricist" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fad74575-8a16-4c50-99a5-5d20fda0bd46> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .

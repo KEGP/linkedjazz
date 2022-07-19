@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/32f14e27-38ac-4b2a-9baf-0fb7404407ca>
+        a                      :Release ;
+        rdfs:label             "The Rough Guide to Classic Jazz" ;
+        :hasASIN               "B000001I1G" ;
+        :hasBarcode            "605633101225" ;
+        :hasMusicBrainzID      "32f14e27-38ac-4b2a-9baf-0fb7404407ca" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Rough Guide to Classic Jazz" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1997-06-24" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000001I1G> , <https://www.amazon.co.uk/gp/product/B000001I1G> , <https://musicbrainz.org/release/32f14e27-38ac-4b2a-9baf-0fb7404407ca> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

@@ -1,0 +1,46 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1>
+        a                  :ArtistPerson ;
+        rdfs:label         "James P. Johnson" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/2391076e-8849-437c-b5cf-0b9c9c79b2c1> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/0993002c-8666-4857-b333-e35cd713ff8e> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00015416708" ;
+        :hasISNI           "000000008101480X" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1955-11-17" ;
+                             :hasIntervalStartDate  "1894-02-01"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "2a58b026-9659-4bfb-90c9-56c4ad9125f1" ;
+        :hasName           "James P. Johnson" ;
+        owl:sameAs         <https://catalogue.bnf.fr/ark:/12148/cb13895678m> , <http://www.songwritershalloffame.org/exhibits/C256> , <https://www.worldcat.org/identities/lccn-n81139253> , <https://www.allmusic.com/artist/mn0000142860> , <https://musicbrainz.org/artist/2a58b026-9659-4bfb-90c9-56c4ad9125f1> , <https://d-nb.info/gnd/128650370> , <https://isni.org/isni/000000008101480X> , <https://www.imdb.com/name/nm0425295/> , <https://openlibrary.org/works/OL4891180A> , <https://nla.gov.au/nla.party-1177066> , <http://viaf.org/viaf/22327647> , <https://commons.wikimedia.org/wiki/File:JPJ_CD2.gif> , <https://www.wikidata.org/wiki/Q550541> , <https://www.discogs.com/artist/313035> , <http://snaccooperative.org/ark:/99166/w6c54v4m> , <http://id.loc.gov/authorities/names/n81139253> , <https://ibdb.com/person.php?id=70381> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/0993002c-8666-4857-b333-e35cd713ff8e>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Jamaica" ;
+        :hasMusicBrainzID  "0993002c-8666-4857-b333-e35cd713ff8e" ;
+        :hasName           "Jamaica" ;
+        owl:sameAs         <https://musicbrainz.org/area/0993002c-8666-4857-b333-e35cd713ff8e> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/2391076e-8849-437c-b5cf-0b9c9c79b2c1>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "New Brunswick" ;
+        :hasMusicBrainzID  "2391076e-8849-437c-b5cf-0b9c9c79b2c1" ;
+        :hasName           "New Brunswick" ;
+        owl:sameAs         <https://musicbrainz.org/area/2391076e-8849-437c-b5cf-0b9c9c79b2c1> .

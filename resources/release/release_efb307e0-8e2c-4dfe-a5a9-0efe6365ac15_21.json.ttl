@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/efb307e0-8e2c-4dfe-a5a9-0efe6365ac15>
+        a                      :Release ;
+        rdfs:label             "The Complete RCA Victor Recordings" ;
+        :hasASIN               "B00005O6KK" ;
+        :hasBarcode            "090266868223" ;
+        :hasMusicBrainzID      "efb307e0-8e2c-4dfe-a5a9-0efe6365ac15" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete RCA Victor Recordings" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate        "2001-09-25" ;
+        owl:sameAs             <https://www.amazon.com/dp/B00005O6KK> , <https://www.amazon.com/gp/product/B00005O6KK> , <https://musicbrainz.org/release/efb307e0-8e2c-4dfe-a5a9-0efe6365ac15> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .

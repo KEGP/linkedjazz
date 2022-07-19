@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/400b30f5-c419-42ec-9ded-a48584c02335>
+        a                      :Release ;
+        rdfs:label             "An Hour With… Cannonball Adderly: A Collection of His Best Hits" ;
+        :hasMusicBrainzID      "400b30f5-c419-42ec-9ded-a48584c02335" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "An Hour With… Cannonball Adderly: A Collection of His Best Hits" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+        :releasedInDate        "2011-12-01" ;
+        owl:sameAs             <https://itunes.apple.com/us/album/id719010233> , <https://musicbrainz.org/release/400b30f5-c419-42ec-9ded-a48584c02335> .
+
+<http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Cannonball Adderley" ;
+        :hasMusicBrainzID  "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8" ;
+        :hasName           "Cannonball Adderley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> .

@@ -1,0 +1,37 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Dick Hyman" ;
+        :hasAlias          "Hyman, Dick" , "Dyck Hyman" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Male" ;
+        :hasISNI           "0000000114467603" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalStartDate  "1927-03-08"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "dab1ad75-3ea3-4071-91c4-7a66475599d4" ;
+        :hasName           "Dick Hyman" ;
+        owl:sameAs         <https://ibdb.com/person.php?id=80535> , <https://www.songkick.com/artists/198656> , <http://viaf.org/viaf/66652088> , <https://musicbrainz.org/artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> , <https://www.imdb.com/name/nm0405163/> , <https://www.discogs.com/artist/15443> , <https://www.allmusic.com/artist/mn0000211424> , <http://snaccooperative.org/ark:/99166/w6w9678r> , <http://id.loc.gov/authorities/names/n81072980> , <https://catalogue.bnf.fr/ark:/12148/cb13895446f> , <https://rateyourmusic.com/artist/dick_hyman> , <https://isni.org/isni/0000000114467603> , <https://www.wikidata.org/wiki/Q1209703> , <https://www.worldcat.org/identities/lccn-n81072980> , <https://d-nb.info/gnd/129577944> , <https://open.spotify.com/artist/5RRGjsMRTbm0kqvZcFplZT> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "New York" ;
+        :hasMusicBrainzID  "74e50e58-5deb-4b99-93a2-decbb365c07f" ;
+        :hasName           "New York" ;
+        owl:sameAs         <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/beb356f6-b8df-4e6b-b6eb-2da67a2de99e>
+        a                      :Release ;
+        rdfs:label             "The Classic Early Recordings in Chronological Order" ;
+        :hasASIN               "B00004S5WA" ;
+        :hasBarcode            "788065900120" ;
+        :hasMusicBrainzID      "beb356f6-b8df-4e6b-b6eb-2da67a2de99e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Classic Early Recordings in Chronological Order" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://musicbrainz.org/release/beb356f6-b8df-4e6b-b6eb-2da67a2de99e> , <https://www.amazon.com/dp/B00004S5WA> , <https://www.amazon.com/gp/product/B00004S5WA> , <https://www.amazon.co.uk/gp/product/B00004S5WA> .
+
+<http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Django Reinhardt" ;
+        :hasMusicBrainzID  "650bf385-6f6d-4992-a3b9-779d144920a4" ;
+        :hasName           "Django Reinhardt" ;
+        owl:sameAs         <https://musicbrainz.org/artist/650bf385-6f6d-4992-a3b9-779d144920a4> .

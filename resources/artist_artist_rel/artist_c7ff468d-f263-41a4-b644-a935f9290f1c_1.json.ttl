@@ -1,0 +1,84 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bec3f2e3-da8f-4f2c-9256-56c6f89d173d>
+        a                  :Band ;
+        rdfs:label         "Hank Mobley Quartet" ;
+        :hasMusicBrainzID  "bec3f2e3-da8f-4f2c-9256-56c6f89d173d" ;
+        :hasName           "Hank Mobley Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bec3f2e3-da8f-4f2c-9256-56c6f89d173d> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/e9ac5139-2da0-4f00-9ac2-c713e3813ff4>
+        a                  :Band ;
+        rdfs:label         "The Horace Silver Quintet" ;
+        :hasMusicBrainzID  "e9ac5139-2da0-4f00-9ac2-c713e3813ff4" ;
+        :hasName           "The Horace Silver Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e9ac5139-2da0-4f00-9ac2-c713e3813ff4> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/bec3f2e3-da8f-4f2c-9256-56c6f89d173d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/607d7275-2b92-49e5-a7ee-32f9cc29b076>
+        a                  :Band ;
+        rdfs:label         "Miles Davis All Stars" ;
+        :hasMusicBrainzID  "607d7275-2b92-49e5-a7ee-32f9cc29b076" ;
+        :hasName           "Miles Davis All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> .
+
+<http://localhost:8080/resource/kejazz/Artist/03606dee-b333-48fe-b9af-d671c837d40f>
+        a                  :Band ;
+        rdfs:label         "Miles Davis Quartet" ;
+        :hasMusicBrainzID  "03606dee-b333-48fe-b9af-d671c837d40f" ;
+        :hasName           "Miles Davis Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/03606dee-b333-48fe-b9af-d671c837d40f> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/03606dee-b333-48fe-b9af-d671c837d40f> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/8efa0fa8-d6f1-4be0-a702-67a2bf57c7ae>
+        a                  :Band ;
+        rdfs:label         "Horace Silver Sextet" ;
+        :hasMusicBrainzID  "8efa0fa8-d6f1-4be0-a702-67a2bf57c7ae" ;
+        :hasName           "Horace Silver Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8efa0fa8-d6f1-4be0-a702-67a2bf57c7ae> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e9ac5139-2da0-4f00-9ac2-c713e3813ff4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8efa0fa8-d6f1-4be0-a702-67a2bf57c7ae> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

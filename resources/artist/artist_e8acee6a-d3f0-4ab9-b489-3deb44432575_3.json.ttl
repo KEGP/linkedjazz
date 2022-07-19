@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stéphane Grappelli" ;
+        :hasAlias          "Stephane Grappelli" , "Stéphane Grappelly" , "Stephanie Grapelli" , "Stephanie Grappelli" , "Stephane Grapelli" , "S. Grapelly" , "Stephan Grapelli" , "Stepane Grappelli" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/dc10c22b-e510-4006-8b7f-fecb4f36436e> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/a1ee6337-71b1-4e89-9485-8983bf7a69b3> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00012552619" ;
+        :hasISNI           "0000000122811590" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1997-12-01" ;
+                             :hasIntervalStartDate  "1908-01-26"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/08310658-51eb-3801-80de-5a0739207115> ;
+        :hasMusicBrainzID  "bfc03211-a3a2-4700-8fa3-00968c02c5d0" ;
+        :hasName           "Stéphane Grappelli" ;
+        owl:sameAs         <http://viaf.org/viaf/66651889> , <https://rateyourmusic.com/artist/stephane_grappelli> , <http://id.loc.gov/authorities/names/n81023039> , <https://www.songkick.com/artists/537075> , <https://en.wikipedia.org/wiki/St%C3%A9phane_Grappelli> , <https://www.worldcat.org/identities/lccn-n81023039> , <https://itunes.apple.com/us/artist/id76841> , <https://isni.org/isni/0000000122811590> , <https://www.wikidata.org/wiki/Q206244> , <https://catalogue.bnf.fr/ark:/12148/cb13894669d> , <https://www.imdb.com/name/nm0335799/> , <https://www.deezer.com/artist/15323> , <https://open.spotify.com/artist/6AfbDYupHV5e6nse9W6tKG> , <http://snaccooperative.org/ark:/99166/w6gm8dk0> , <https://www.allmusic.com/artist/mn0000749504> , <https://d-nb.info/gnd/118962264> , <https://www.discogs.com/artist/267089> , <https://musicbrainz.org/artist/bfc03211-a3a2-4700-8fa3-00968c02c5d0> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/a1ee6337-71b1-4e89-9485-8983bf7a69b3>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Aubergenville" ;
+        :hasMusicBrainzID  "a1ee6337-71b1-4e89-9485-8983bf7a69b3" ;
+        :hasName           "Aubergenville" ;
+        owl:sameAs         <https://musicbrainz.org/area/a1ee6337-71b1-4e89-9485-8983bf7a69b3> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/08310658-51eb-3801-80de-5a0739207115>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "France" ;
+        :hasMusicBrainzID  "08310658-51eb-3801-80de-5a0739207115" ;
+        :hasName           "France" ;
+        owl:sameAs         <https://musicbrainz.org/area/08310658-51eb-3801-80de-5a0739207115> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/dc10c22b-e510-4006-8b7f-fecb4f36436e>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Paris" ;
+        :hasMusicBrainzID  "dc10c22b-e510-4006-8b7f-fecb4f36436e" ;
+        :hasName           "Paris" ;
+        owl:sameAs         <https://musicbrainz.org/area/dc10c22b-e510-4006-8b7f-fecb4f36436e> .

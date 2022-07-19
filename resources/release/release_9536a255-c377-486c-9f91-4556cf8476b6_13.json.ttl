@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+
+<http://localhost:8080/resource/kejazz/Release/9536a255-c377-486c-9f91-4556cf8476b6>
+        a                      :Release ;
+        rdfs:label             "The Chronological Classics: Thelonious Monk 1947-1948" ;
+        :hasASIN               "B00007GWYZ" ;
+        :hasBarcode            "3307517111821" ;
+        :hasMusicBrainzID      "9536a255-c377-486c-9f91-4556cf8476b6" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Thelonious Monk 1947-1948" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :releasedInDate        "2000" ;
+        owl:sameAs             <https://www.amazon.com/dp/B00007GWYZ> , <https://www.amazon.fr/gp/product/B00007GWYZ> , <https://musicbrainz.org/release/9536a255-c377-486c-9f91-4556cf8476b6> .

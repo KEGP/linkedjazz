@@ -1,0 +1,46 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/112c4e28-1a83-4687-8462-545a6a7204ba>
+        a                  :ArtistPerson ;
+        rdfs:label         "Percy Venable" ;
+        :hasMusicBrainzID  "112c4e28-1a83-4687-8462-545a6a7204ba" ;
+        :hasName           "Percy Venable" ;
+        owl:sameAs         <https://musicbrainz.org/artist/112c4e28-1a83-4687-8462-545a6a7204ba> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+        a                  :RoleInWork ;
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1926" ;
+                     :hasIntervalStartDate  "1926"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/112c4e28-1a83-4687-8462-545a6a7204ba> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .

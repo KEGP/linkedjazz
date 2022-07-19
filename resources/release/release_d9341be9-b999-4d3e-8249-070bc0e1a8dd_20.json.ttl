@@ -1,0 +1,39 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stan Getz" ;
+        :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
+        :hasName           "Stan Getz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> .
+
+<http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19>
+        a                  :ArtistPerson ;
+        rdfs:label         "Astrud Gilberto" ;
+        :hasMusicBrainzID  "8d08cabf-03a3-4f38-a815-8197a0984f19" ;
+        :hasName           "Astrud Gilberto" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8d08cabf-03a3-4f38-a815-8197a0984f19> .
+
+<http://localhost:8080/resource/kejazz/Release/d9341be9-b999-4d3e-8249-070bc0e1a8dd>
+        a                      :Release ;
+        rdfs:label             "Jazz Samba" ;
+        :hasMusicBrainzID      "d9341be9-b999-4d3e-8249-070bc0e1a8dd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Samba" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> , <http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19> ;
+        :releasedInDate        "1994" ;
+        owl:sameAs             <https://www.discogs.com/release/1480893> , <https://musicbrainz.org/release/d9341be9-b999-4d3e-8249-070bc0e1a8dd> .
+
+<http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14>
+        a                  :ArtistPerson ;
+        rdfs:label         "João Gilberto" ;
+        :hasMusicBrainzID  "286ec4c2-b5ca-4f85-b331-280a6d73dd14" ;
+        :hasName           "João Gilberto" ;
+        owl:sameAs         <https://musicbrainz.org/artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> .

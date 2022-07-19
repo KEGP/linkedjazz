@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317>
+        a                  :ArtistPerson ;
+        rdfs:label         "Count Basie" ;
+        :hasAlias          "Count Basie & Friends" , "Count Bassie" , "Count Basie Bunch" , "Willaim Basie" , "Count Basie & Guests" , "Basie" , "William Basie" , "Count Baise" , "The Count Basie Bunch" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/7ca27b3e-897e-4d01-8c73-36135bc96656> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/916266f7-b199-4a08-9b38-ab7024963db8> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00002259424" ;
+        :hasISNI           "0000000108964216" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1984-04-26" ;
+                             :hasIntervalStartDate  "1904-08-21"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "0dbd6300-efdc-420b-857e-895e18fad317" ;
+        :hasName           "Count Basie" ;
+        owl:sameAs         <http://muzikum.eu/en/122-7030/count-basie/lyrics.html> , <https://www.worldcat.org/identities/lccn-n81016968> , <http://snaccooperative.org/ark:/99166/w6125rrp> , <https://www.discogs.com/artist/145262> , <https://isni.org/isni/0000000108964216> , <https://www.wikidata.org/wiki/Q107008> , <http://viaf.org/viaf/46945530> , <https://rateyourmusic.com/artist/count_basie> , <https://www.imdb.com/name/nm0059831/> , <https://www.bbc.co.uk/music/artists/0dbd6300-efdc-420b-857e-895e18fad317> , <https://catalogue.bnf.fr/ark:/12148/cb138912118> , <http://id.loc.gov/authorities/names/n81016968> , <https://musicbrainz.org/artist/0dbd6300-efdc-420b-857e-895e18fad317> , <https://openlibrary.org/works/OL589938A> , <https://www.musik-sammler.de/artist/count-basie/> , <https://ibdb.com/person.php?id=89863> , <https://open.spotify.com/artist/2jFZlvIea42ZvcCw4OeEdA> , <https://www.deezer.com/artist/7306> , <https://d-nb.info/gnd/118821431> , <https://commons.wikimedia.org/wiki/File:Count_Basie_in_Rhythm_and_Blues_Revue.jpg> , <https://nla.gov.au/nla.party-910553> , <https://www.last.fm/music/Count+Basie> , <https://www.allmusic.com/artist/mn0000127044> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/916266f7-b199-4a08-9b38-ab7024963db8>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Hollywood" ;
+        :hasMusicBrainzID  "916266f7-b199-4a08-9b38-ab7024963db8" ;
+        :hasName           "Hollywood" ;
+        owl:sameAs         <https://musicbrainz.org/area/916266f7-b199-4a08-9b38-ab7024963db8> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/7ca27b3e-897e-4d01-8c73-36135bc96656>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Red Bank" ;
+        :hasMusicBrainzID  "7ca27b3e-897e-4d01-8c73-36135bc96656" ;
+        :hasName           "Red Bank" ;
+        owl:sameAs         <https://musicbrainz.org/area/7ca27b3e-897e-4d01-8c73-36135bc96656> .

@@ -1,0 +1,308 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
+
+<http://localhost:8080/resource/kejazz/Artist/b64da661-c3ed-4da7-b027-951590fd7ed8>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Sebastian New Cotton Club Orchestra" ;
+        :hasMusicBrainzID  "b64da661-c3ed-4da7-b027-951590fd7ed8" ;
+        :hasName           "Louis Armstrong & His Sebastian New Cotton Club Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b64da661-c3ed-4da7-b027-951590fd7ed8> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/457e47ec-c962-4210-82e8-4b528f2118bf> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93a0fc69-2262-4d99-97f1-ee33227b9c89> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "married" ;
+        :hasMusicBrainzID  "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cb621c8e-44aa-4d55-a345-68a46c8868e0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e5302297-db17-4f89-999a-80bb59ad3f07> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f617ed55-7691-41cc-9671-c04a29641125>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His All-Stars" ;
+        :hasMusicBrainzID  "f617ed55-7691-41cc-9671-c04a29641125" ;
+        :hasName           "Louis Armstrong & His All-Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f617ed55-7691-41cc-9671-c04a29641125> .
+
+<http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Seven" ;
+        :hasMusicBrainzID  "49905118-45d2-4b09-9643-a40b87d0ce42" ;
+        :hasName           "Louis Armstrong and His Hot Seven" ;
+        owl:sameAs         <https://musicbrainz.org/artist/49905118-45d2-4b09-9643-a40b87d0ce42> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b64da661-c3ed-4da7-b027-951590fd7ed8> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/93a0fc69-2262-4d99-97f1-ee33227b9c89>
+        a                  :Band ;
+        rdfs:label         "Perry Bradford’s Jazz Phools" ;
+        :hasMusicBrainzID  "93a0fc69-2262-4d99-97f1-ee33227b9c89" ;
+        :hasName           "Perry Bradford’s Jazz Phools" ;
+        owl:sameAs         <https://musicbrainz.org/artist/93a0fc69-2262-4d99-97f1-ee33227b9c89> .
+
+<http://localhost:8080/resource/kejazz/Artist/e5302297-db17-4f89-999a-80bb59ad3f07>
+        a                  :Band ;
+        rdfs:label         "Leonard Feather's Esquire All-Americans" ;
+        :hasMusicBrainzID  "e5302297-db17-4f89-999a-80bb59ad3f07" ;
+        :hasName           "Leonard Feather's Esquire All-Americans" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e5302297-db17-4f89-999a-80bb59ad3f07> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928-12-04" ;
+                           :hasIntervalStartDate  "1925-11-12"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928" ;
+                           :hasIntervalStartDate  "1927"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/fe11c6c9-2b02-4aaa-87eb-4ca2088b497c>
+        a                  :Band ;
+        rdfs:label         "Carroll Dickerson’s Savoyagers" ;
+        :hasMusicBrainzID  "fe11c6c9-2b02-4aaa-87eb-4ca2088b497c" ;
+        :hasName           "Carroll Dickerson’s Savoyagers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/fe11c6c9-2b02-4aaa-87eb-4ca2088b497c> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e062d48-0f1c-4226-8503-19a03fe9249a>
+        a                  :Band ;
+        rdfs:label         "Red Onion Jazz Babies" ;
+        :hasMusicBrainzID  "8e062d48-0f1c-4226-8503-19a03fe9249a" ;
+        :hasName           "Red Onion Jazz Babies" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e062d48-0f1c-4226-8503-19a03fe9249a> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Orchestra" ;
+        :hasMusicBrainzID  "067bf834-c35f-414f-8389-a77558669cc1" ;
+        :hasName           "Louis Armstrong & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/067bf834-c35f-414f-8389-a77558669cc1> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/38ef8662-b3fa-40fa-afea-9f34331f6f2d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/494ffd32-8a2b-468b-81f2-39deff0b73f6>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Dixieland Seven" ;
+        :hasMusicBrainzID  "494ffd32-8a2b-468b-81f2-39deff0b73f6" ;
+        :hasName           "Louis Armstrong & His Dixieland Seven" ;
+        owl:sameAs         <https://musicbrainz.org/artist/494ffd32-8a2b-468b-81f2-39deff0b73f6> .
+
+<http://localhost:8080/resource/kejazz/Artist/93c29938-9faa-49fb-b9cb-4cf0d5da56e0>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Savoy Ballroom Five" ;
+        :hasMusicBrainzID  "93c29938-9faa-49fb-b9cb-4cf0d5da56e0" ;
+        :hasName           "Louis Armstrong and His Savoy Ballroom Five" ;
+        owl:sameAs         <https://musicbrainz.org/artist/93c29938-9faa-49fb-b9cb-4cf0d5da56e0> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1931" ;
+                           :hasIntervalStartDate  "1924-02-04"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a6f6ee8-a9cd-4826-9749-d0fe48fb49f7> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/ed6a7891-ce70-4e08-9839-1f2f62270497>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "instrumental supporting musician" ;
+        :hasMusicBrainzID  "ed6a7891-ce70-4e08-9839-1f2f62270497" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/ed6a7891-ce70-4e08-9839-1f2f62270497> .
+
+<http://localhost:8080/resource/kejazz/Artist/457e47ec-c962-4210-82e8-4b528f2118bf>
+        a                  :Band ;
+        rdfs:label         "Lil's Hot Shots" ;
+        :hasMusicBrainzID  "457e47ec-c962-4210-82e8-4b528f2118bf" ;
+        :hasName           "Lil's Hot Shots" ;
+        owl:sameAs         <https://musicbrainz.org/artist/457e47ec-c962-4210-82e8-4b528f2118bf> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928" ;
+                           :hasIntervalStartDate  "1928"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/fe11c6c9-2b02-4aaa-87eb-4ca2088b497c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/43988650-3b03-4cd8-90ed-04d07a845971> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93c29938-9faa-49fb-b9cb-4cf0d5da56e0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0>
+        a                  :Band ;
+        rdfs:label         "King Oliver and His Creole Jazz Band" ;
+        :hasMusicBrainzID  "cd05eca7-ad38-456c-94c7-f17c9b15c5d0" ;
+        :hasName           "King Oliver and His Creole Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/38ef8662-b3fa-40fa-afea-9f34331f6f2d>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong Hot Four" ;
+        :hasMusicBrainzID  "38ef8662-b3fa-40fa-afea-9f34331f6f2d" ;
+        :hasName           "Louis Armstrong Hot Four" ;
+        owl:sameAs         <https://musicbrainz.org/artist/38ef8662-b3fa-40fa-afea-9f34331f6f2d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1925" ;
+                           :hasIntervalStartDate  "1924"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8e062d48-0f1c-4226-8503-19a03fe9249a> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalStartDate  "1947-08-13"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f617ed55-7691-41cc-9671-c04a29641125> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/494ffd32-8a2b-468b-81f2-39deff0b73f6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Five" ;
+        :hasMusicBrainzID  "cfedde14-91c5-46cb-b087-9f2da9bec194" ;
+        :hasName           "Louis Armstrong and His Hot Five" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cfedde14-91c5-46cb-b087-9f2da9bec194> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/2bf9bcc5-7f53-40b0-8f06-d4bdfbe74c0b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/cb621c8e-44aa-4d55-a345-68a46c8868e0>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Six" ;
+        :hasMusicBrainzID  "cb621c8e-44aa-4d55-a345-68a46c8868e0" ;
+        :hasName           "Louis Armstrong and His Hot Six" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cb621c8e-44aa-4d55-a345-68a46c8868e0> .
+
+<http://localhost:8080/resource/kejazz/Artist/2bf9bcc5-7f53-40b0-8f06-d4bdfbe74c0b>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong Jazz Four" ;
+        :hasMusicBrainzID  "2bf9bcc5-7f53-40b0-8f06-d4bdfbe74c0b" ;
+        :hasName           "Louis Armstrong Jazz Four" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2bf9bcc5-7f53-40b0-8f06-d4bdfbe74c0b> .
+
+<http://localhost:8080/resource/kejazz/Artist/a9dd6b5c-4c20-431b-a1f2-fee1905ab5e6>
+        a                  :Band ;
+        rdfs:label         "Jimmy Bertrand's Washboard Wizards" ;
+        :hasMusicBrainzID  "a9dd6b5c-4c20-431b-a1f2-fee1905ab5e6" ;
+        :hasName           "Jimmy Bertrand's Washboard Wizards" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a9dd6b5c-4c20-431b-a1f2-fee1905ab5e6> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a9dd6b5c-4c20-431b-a1f2-fee1905ab5e6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/ed6a7891-ce70-4e08-9839-1f2f62270497>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "teacher" ;
+        :hasMusicBrainzID  "249fc24f-d573-4290-9d74-0547712d1f1e" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/249fc24f-d573-4290-9d74-0547712d1f1e> .

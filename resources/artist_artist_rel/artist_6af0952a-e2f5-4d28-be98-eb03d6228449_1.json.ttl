@@ -1,0 +1,64 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1957" ;
+                           :hasIntervalStartDate  "1947"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6c1fe174-11fe-42b9-b92f-76056fca9819> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/23bdf915-67af-4089-b938-60efdaeab13f> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sarah Vaughan" ;
+        :hasMusicBrainzID  "351d8bdf-33a1-45e2-8c04-c85fad20da55" ;
+        :hasName           "Sarah Vaughan" ;
+        owl:sameAs         <https://musicbrainz.org/artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/88562a60-2550-48f0-8e8e-f54d95c7369a>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "supporting musician" ;
+        :hasMusicBrainzID  "88562a60-2550-48f0-8e8e-f54d95c7369a" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/88562a60-2550-48f0-8e8e-f54d95c7369a> .
+
+<http://localhost:8080/resource/kejazz/Artist/23bdf915-67af-4089-b938-60efdaeab13f>
+        a                  :Band ;
+        rdfs:label         "Sarah Vaughan and Her Trio" ;
+        :hasMusicBrainzID  "23bdf915-67af-4089-b938-60efdaeab13f" ;
+        :hasName           "Sarah Vaughan and Her Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/23bdf915-67af-4089-b938-60efdaeab13f> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/813b9af3-926a-4f1c-af23-f1547d0c15b2> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/88562a60-2550-48f0-8e8e-f54d95c7369a>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "married" ;
+        :hasMusicBrainzID  "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029> .

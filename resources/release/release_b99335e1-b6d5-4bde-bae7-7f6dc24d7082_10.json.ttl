@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/b99335e1-b6d5-4bde-bae7-7f6dc24d7082>
+        a                      :Release ;
+        rdfs:label             "The Night Is Blue" ;
+        :hasASIN               "B00002536Q" ;
+        :hasBarcode            "743216280025" ;
+        :hasMusicBrainzID      "b99335e1-b6d5-4bde-bae7-7f6dc24d7082" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Night Is Blue" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1998" ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B00002536Q> , <https://musicbrainz.org/release/b99335e1-b6d5-4bde-bae7-7f6dc24d7082> , <https://www.amazon.com/dp/B00002536Q> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

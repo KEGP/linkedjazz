@@ -1,0 +1,15 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/af00bf3b-8a1b-4042-9bed-ba2872596003>
+        a                  :Work ;
+        rdfs:label         "Big Butter and Egg Man" ;
+        :hasMusicBrainzID  "af00bf3b-8a1b-4042-9bed-ba2872596003" ;
+        :hasTitle          "Big Butter and Egg Man" ;
+        owl:sameAs         <https://www.wikidata.org/wiki/Q4905409> , <https://musicbrainz.org/work/af00bf3b-8a1b-4042-9bed-ba2872596003> .

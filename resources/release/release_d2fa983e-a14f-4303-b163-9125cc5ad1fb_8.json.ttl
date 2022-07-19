@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bea5831a-fa7f-4316-9d71-754e390556b8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jimmie Lunceford" ;
+        :hasMusicBrainzID  "bea5831a-fa7f-4316-9d71-754e390556b8" ;
+        :hasName           "Jimmie Lunceford" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bea5831a-fa7f-4316-9d71-754e390556b8> .
+
+<http://localhost:8080/resource/kejazz/Release/d2fa983e-a14f-4303-b163-9125cc5ad1fb>
+        a                      :Release ;
+        rdfs:label             "Jazz Greats, Volume 42: Jimmie Lunceford: Rhythm Is Our Business" ;
+        :hasASIN               "B001A8W7TS" ;
+        :hasMusicBrainzID      "d2fa983e-a14f-4303-b163-9125cc5ad1fb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Greats, Volume 42: Jimmie Lunceford: Rhythm Is Our Business" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/bea5831a-fa7f-4316-9d71-754e390556b8> ;
+        :releasedInDate        "1997" ;
+        owl:sameAs             <https://www.amazon.com/dp/B001A8W7TS> , <https://musicbrainz.org/release/d2fa983e-a14f-4303-b163-9125cc5ad1fb> , <https://www.amazon.co.uk/gp/product/B001A8W7TS> .

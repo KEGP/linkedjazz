@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/517cca8f-ab9a-4eee-92d1-1016907b3fc5>
+        a                           :Recording ;
+        rdfs:label                  "Moanin’" ;
+        :hasDurationInMilliseconds  "574280" ;
+        :hasISRC                    "USBN25800103" , "USBJN0920068" , "USBN20500344" ;
+        :hasMusicBrainzID           "517cca8f-ab9a-4eee-92d1-1016907b3fc5" ;
+        :hasTitle                   "Moanin’" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/99dad349-7a59-4250-8817-17d9a4ec1b5a> , <http://localhost:8080/resource/kejazz/Release/b3047ed8-1ae2-4d5c-ae4b-fa60dff158b7> , <http://localhost:8080/resource/kejazz/Release/f3ac8297-7ea2-3381-99c4-4ab9f7d76a8d> , <http://localhost:8080/resource/kejazz/Release/df6b42e7-dcb1-3851-9cd8-b79a71f105e3> , <http://localhost:8080/resource/kejazz/Release/e06273d0-e1f4-4ed3-839a-d7a7ebf9cdb3> , <http://localhost:8080/resource/kejazz/Release/2eae1e3d-5ca7-4d7f-9490-8383ce71ecd3> , <http://localhost:8080/resource/kejazz/Release/0a5bb19c-46c2-46cc-acfe-b80f2aaab1ef> , <http://localhost:8080/resource/kejazz/Release/9c2739e3-a074-4e0b-8664-6f0ace10448e> , <http://localhost:8080/resource/kejazz/Release/68cf83c9-3f68-4af2-9edd-37f22d5da600> , <http://localhost:8080/resource/kejazz/Release/9b282969-1fdb-4be3-8468-eef65cbd67f8> , <http://localhost:8080/resource/kejazz/Release/a2a9ba36-8a4b-4dbf-bdf3-e564c4d206ad> , <http://localhost:8080/resource/kejazz/Release/47fac086-fe91-448e-8aeb-fedc63896031> , <http://localhost:8080/resource/kejazz/Release/98255b0e-ce2c-4244-9381-9d74a96ac4f4> , <http://localhost:8080/resource/kejazz/Release/4a90b0ab-34f0-489e-95f8-abc46347e66b> , <http://localhost:8080/resource/kejazz/Release/46ac25b1-8567-4474-906c-f7a9e8ae02fd> , <http://localhost:8080/resource/kejazz/Release/b65652ea-cf00-458b-b5a4-6d096faf02f8> , <http://localhost:8080/resource/kejazz/Release/e5d3929c-a2f8-44f6-97f0-db16b07850b9> , <http://localhost:8080/resource/kejazz/Release/15f37466-9fb6-405a-8faa-cfbe868d04a7> , <http://localhost:8080/resource/kejazz/Release/7acc1923-7479-4e0d-82de-3900adc833ee> , <http://localhost:8080/resource/kejazz/Release/1955e0e6-f7c0-47bf-9337-3b807eca8c57> , <http://localhost:8080/resource/kejazz/Release/36180112-1c19-4832-8ac8-4fc2ecb1601e> , <http://localhost:8080/resource/kejazz/Release/4d90c378-13ac-421f-ad91-928067b24e7a> , <http://localhost:8080/resource/kejazz/Release/6c00a736-c49e-4a26-967d-dbcbdb2008e0> , <http://localhost:8080/resource/kejazz/Release/4247f0a7-259a-4e72-aacc-75a794da4d90> , <http://localhost:8080/resource/kejazz/Release/20612287-9849-473d-b20b-c5f49f8f34a0> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1958-10-30" ;
+                                      :hasIntervalStartDate  "1958-10-30"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/70ec453d-4d78-39ce-98e0-70e0d47a2fef> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/517cca8f-ab9a-4eee-92d1-1016907b3fc5> .
+
+<http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee>
+        a                  :Band ;
+        rdfs:label         "Art Blakey & The Jazz Messengers" ;
+        :hasMusicBrainzID  "209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee" ;
+        :hasName           "Art Blakey & The Jazz Messengers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> .

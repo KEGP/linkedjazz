@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/a8e7debf-b9e1-4818-888e-c2e4ca025829>
+        a                      :Release ;
+        rdfs:label             "Body and Soul / Fine Dinner" ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "a8e7debf-b9e1-4818-888e-c2e4ca025829" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Body and Soul / Fine Dinner" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/4d618227-66bd-41cf-925a-b8b8464d90bc> ;
+        :releasedInDate        "1940" ;
+        owl:sameAs             <https://musicbrainz.org/release/a8e7debf-b9e1-4818-888e-c2e4ca025829> , <https://www.discogs.com/release/6759565> .
+
+<http://localhost:8080/resource/kejazz/Artist/4d618227-66bd-41cf-925a-b8b8464d90bc>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins and His Orchestra" ;
+        :hasMusicBrainzID  "4d618227-66bd-41cf-925a-b8b8464d90bc" ;
+        :hasName           "Coleman Hawkins and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/4d618227-66bd-41cf-925a-b8b8464d90bc> .

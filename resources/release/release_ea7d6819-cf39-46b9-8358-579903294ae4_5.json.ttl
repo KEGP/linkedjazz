@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/58234c8b-954e-4617-9c7e-4a8712f41a23>
+        a                  :ArtistPerson ;
+        rdfs:label         "Roy Eldridge" ;
+        :hasMusicBrainzID  "58234c8b-954e-4617-9c7e-4a8712f41a23" ;
+        :hasName           "Roy Eldridge" ;
+        owl:sameAs         <https://musicbrainz.org/artist/58234c8b-954e-4617-9c7e-4a8712f41a23> .
+
+<http://localhost:8080/resource/kejazz/Release/ea7d6819-cf39-46b9-8358-579903294ae4>
+        a                      :Release ;
+        rdfs:label             "Little Jazz Trumpet Giant" ;
+        :hasASIN               "B0001ZXOLG" ;
+        :hasBarcode            "805520020695" ;
+        :hasMusicBrainzID      "ea7d6819-cf39-46b9-8358-579903294ae4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Little Jazz Trumpet Giant" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/58234c8b-954e-4617-9c7e-4a8712f41a23> ;
+        :releasedInDate        "2004-04-26" ;
+        owl:sameAs             <https://musicbrainz.org/release/ea7d6819-cf39-46b9-8358-579903294ae4> , <https://www.amazon.co.uk/gp/product/B0001ZXOLG> , <https://www.amazon.com/dp/B0001ZXOLG> .

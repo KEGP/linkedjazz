@@ -1,0 +1,46 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/0eeb01c2-6e31-46ad-96b8-319749f731d2>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Philadelphia" ;
+        :hasMusicBrainzID  "0eeb01c2-6e31-46ad-96b8-319749f731d2" ;
+        :hasName           "Philadelphia" ;
+        owl:sameAs         <https://musicbrainz.org/area/0eeb01c2-6e31-46ad-96b8-319749f731d2> .
+
+<http://localhost:8080/resource/kejazz/Artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Eddie Lang" ;
+        :hasAlias          "Blind Willie Dunn" , "Salvatore Massaro" , "Ed Lang" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/0eeb01c2-6e31-46ad-96b8-319749f731d2> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Male" ;
+        :hasISNI           "0000000063093524" , "0000000368411570" , "0000000368411589" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1933-03-26" ;
+                             :hasIntervalStartDate  "1902-10-25"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "7c6e10c8-7896-4624-a46b-2f3b5784d2d6" ;
+        :hasName           "Eddie Lang" ;
+        owl:sameAs         <http://eddielang.com/> , <https://www.worldcat.org/identities/lccn-n82026858> , <https://nla.gov.au/nla.party-1037395> , <https://musicbrainz.org/artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6> , <https://d-nb.info/gnd/122298144> , <https://www.imdb.com/name/nm0485734/> , <http://eddielang.com/el_home.html> , <https://isni.org/isni/0000000368411589> , <http://snaccooperative.org/ark:/99166/w6sq9wr7> , <https://isni.org/isni/0000000368411570> , <https://www.allmusic.com/artist/mn0000141096> , <https://www.discogs.com/artist/1066758> , <http://viaf.org/viaf/27252284> , <https://www.discogs.com/artist/301357> , <https://catalogue.bnf.fr/ark:/12148/cb138963185> , <https://en.wikipedia.org/wiki/Eddie_Lang> , <http://www.redhotjazz.com/lang.html> , <https://isni.org/isni/0000000063093524> , <https://www.wikidata.org/wiki/Q338957> , <http://id.loc.gov/authorities/names/n82026858> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "New York" ;
+        :hasMusicBrainzID  "74e50e58-5deb-4b99-93a2-decbb365c07f" ;
+        :hasName           "New York" ;
+        owl:sameAs         <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

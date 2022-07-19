@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+
+<http://localhost:8080/resource/kejazz/Release/84c56d64-c1b7-42c2-b416-08d322f208f3>
+        a                      :Release ;
+        rdfs:label             "The Complete Genius" ;
+        :hasMusicBrainzID      "84c56d64-c1b7-42c2-b416-08d322f208f3" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Genius" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :releasedInDate        "1976" ;
+        owl:sameAs             <https://www.discogs.com/release/2590648> , <https://musicbrainz.org/release/84c56d64-c1b7-42c2-b416-08d322f208f3> .

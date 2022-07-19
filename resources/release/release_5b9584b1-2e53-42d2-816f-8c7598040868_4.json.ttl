@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Orchestra" ;
+        :hasMusicBrainzID  "067bf834-c35f-414f-8389-a77558669cc1" ;
+        :hasName           "Louis Armstrong & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/067bf834-c35f-414f-8389-a77558669cc1> .
+
+<http://localhost:8080/resource/kejazz/Release/5b9584b1-2e53-42d2-816f-8c7598040868>
+        a                      :Release ;
+        rdfs:label             "Laughin' Louie (1932-1933)" ;
+        :hasBarcode            "035629040427" ;
+        :hasMusicBrainzID      "5b9584b1-2e53-42d2-816f-8c7598040868" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Laughin' Louie (1932-1933)" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
+        :releasedInDate        "1989" ;
+        owl:sameAs             <https://musicbrainz.org/release/5b9584b1-2e53-42d2-816f-8c7598040868> .

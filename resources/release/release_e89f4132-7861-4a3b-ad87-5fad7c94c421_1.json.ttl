@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920>
+        a                  :Band ;
+        rdfs:label         "Jimmie Lunceford and His Orchestra" ;
+        :hasMusicBrainzID  "1f814c85-9602-4235-946b-ea1b2d1f3920" ;
+        :hasName           "Jimmie Lunceford and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1f814c85-9602-4235-946b-ea1b2d1f3920> .
+
+<http://localhost:8080/resource/kejazz/Release/e89f4132-7861-4a3b-ad87-5fad7c94c421>
+        a                      :Release ;
+        rdfs:label             "The Chronological Classics: Jimmie Lunceford and His Orchestra 1937-1939" ;
+        :hasASIN               "B00007GX4C" ;
+        :hasBarcode            "3307517052025" ;
+        :hasMusicBrainzID      "e89f4132-7861-4a3b-ad87-5fad7c94c421" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Jimmie Lunceford and His Orchestra 1937-1939" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
+        :releasedInDate        "1990" ;
+        owl:sameAs             <https://www.amazon.com/dp/B00007GX4C> , <https://www.amazon.fr/gp/product/B00007GX4C> , <https://musicbrainz.org/release/e89f4132-7861-4a3b-ad87-5fad7c94c421> .

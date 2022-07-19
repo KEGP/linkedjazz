@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065>
+        a                  :ArtistPerson ;
+        rdfs:label         "Chet Baker" ;
+        :hasMusicBrainzID  "1ba1d493-7114-45e2-b163-a36d49a0c065" ;
+        :hasName           "Chet Baker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1ba1d493-7114-45e2-b163-a36d49a0c065> .
+
+<http://localhost:8080/resource/kejazz/Release/026943cc-72a5-43d8-b373-dec4bf37adfa>
+        a                      :Release ;
+        rdfs:label             "Irresistible You" ;
+        :hasASIN               "B000PFU65O" ;
+        :hasBarcode            "4029758813829" ;
+        :hasMusicBrainzID      "026943cc-72a5-43d8-b373-dec4bf37adfa" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Irresistible You" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+        :releasedInDate        "2007" ;
+        owl:sameAs             <https://www.discogs.com/release/7235621> , <https://www.amazon.com/dp/B000PFU65O> , <https://musicbrainz.org/release/026943cc-72a5-43d8-b373-dec4bf37adfa> , <https://www.amazon.de/gp/product/B000PFU65O> , <http://d-nb.info/359437710> , <https://www.musik-sammler.de/media/415104/> .

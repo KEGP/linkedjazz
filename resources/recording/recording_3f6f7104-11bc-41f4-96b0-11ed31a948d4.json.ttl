@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jelly Roll Morton" ;
+        :hasMusicBrainzID  "3d094919-071f-4070-95dc-e1f350e4a5f3" ;
+        :hasName           "Jelly Roll Morton" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3d094919-071f-4070-95dc-e1f350e4a5f3> .
+
+<http://localhost:8080/resource/kejazz/Recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4>
+        a                           :Recording ;
+        rdfs:label                  "King Porter Stomp" ;
+        :hasDurationInMilliseconds  "177000" ;
+        :hasMusicBrainzID           "3f6f7104-11bc-41f4-96b0-11ed31a948d4" ;
+        :hasTitle                   "King Porter Stomp" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> , <http://localhost:8080/resource/kejazz/Release/268f554a-3c9d-4475-ab31-c2ed2c52ebe0> , <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1923-07-17" ;
+                                      :hasIntervalStartDate  "1923-07-17"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/028fce1d-d787-3501-a6ad-cc572786abe1> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/3f6f7104-11bc-41f4-96b0-11ed31a948d4> .

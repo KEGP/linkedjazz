@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317>
+        a                  :ArtistPerson ;
+        rdfs:label         "Count Basie" ;
+        :hasMusicBrainzID  "0dbd6300-efdc-420b-857e-895e18fad317" ;
+        :hasName           "Count Basie" ;
+        owl:sameAs         <https://musicbrainz.org/artist/0dbd6300-efdc-420b-857e-895e18fad317> .
+
+<http://localhost:8080/resource/kejazz/Release/5f0bc008-0073-415a-9cfa-ea3caa1366c7>
+        a                      :Release ;
+        rdfs:label             "Ken Burns Jazz: Definitive Count Basie" ;
+        :hasASIN               "B000050I3L" ;
+        :hasBarcode            "731454909020" ;
+        :hasMusicBrainzID      "5f0bc008-0073-415a-9cfa-ea3caa1366c7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ken Burns Jazz: Definitive Count Basie" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317> ;
+        :releasedInDate        "2000-11-07" ;
+        owl:sameAs             <https://www.discogs.com/release/3379126> , <https://www.amazon.com/gp/product/B000050I3L> , <https://www.amazon.com/dp/B000050I3L> , <https://musicbrainz.org/release/5f0bc008-0073-415a-9cfa-ea3caa1366c7> .

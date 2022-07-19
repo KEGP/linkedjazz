@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/538d079e-736c-4ba9-b1db-62e87ae41807>
+        a                      :Release ;
+        rdfs:label             "Essential: Masters of Jazz" ;
+        :hasASIN               "B00000IY5Z" ;
+        :hasBarcode            "5026643300074" ;
+        :hasMusicBrainzID      "538d079e-736c-4ba9-b1db-62e87ae41807" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Essential: Masters of Jazz" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/17cf2413-99c1-441d-ba92-700e811daf56> ;
+        :releasedInDate        "1998" ;
+        owl:sameAs             <https://musicbrainz.org/release/538d079e-736c-4ba9-b1db-62e87ae41807> , <https://www.amazon.co.uk/gp/product/B00000IY5Z> , <https://www.amazon.com/dp/B00000IY5Z> , <https://www.discogs.com/release/3379256> .
+
+<http://localhost:8080/resource/kejazz/Artist/17cf2413-99c1-441d-ba92-700e811daf56>
+        a                  :ArtistPerson ;
+        rdfs:label         "Lionel Hampton" ;
+        :hasMusicBrainzID  "17cf2413-99c1-441d-ba92-700e811daf56" ;
+        :hasName           "Lionel Hampton" ;
+        owl:sameAs         <https://musicbrainz.org/artist/17cf2413-99c1-441d-ba92-700e811daf56> .

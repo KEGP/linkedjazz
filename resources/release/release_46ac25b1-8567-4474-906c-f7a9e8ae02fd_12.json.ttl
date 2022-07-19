@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .
+
+<http://localhost:8080/resource/kejazz/Release/46ac25b1-8567-4474-906c-f7a9e8ae02fd>
+        a                      :Release ;
+        rdfs:label             "Jazz on a Summer’s Day" ;
+        :hasASIN               "B00002481I" ;
+        :hasBarcode            "5017615110821" ;
+        :hasMusicBrainzID      "46ac25b1-8567-4474-906c-f7a9e8ae02fd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz on a Summer’s Day" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B00002481I> , <https://www.amazon.com/dp/B00002481I> , <https://musicbrainz.org/release/46ac25b1-8567-4474-906c-f7a9e8ae02fd> .

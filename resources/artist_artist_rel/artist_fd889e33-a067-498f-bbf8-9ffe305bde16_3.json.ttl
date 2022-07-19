@@ -1,0 +1,111 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "teacher" ;
+        :hasMusicBrainzID  "249fc24f-d573-4290-9d74-0547712d1f1e" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/249fc24f-d573-4290-9d74-0547712d1f1e> .
+
+<http://localhost:8080/resource/kejazz/Artist/b7062bd8-07ca-4d39-b755-98968dbe0735>
+        a                  :ArtistPerson ;
+        rdfs:label         "Paulo Jobim" ;
+        :hasMusicBrainzID  "b7062bd8-07ca-4d39-b755-98968dbe0735" ;
+        :hasName           "Paulo Jobim" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b7062bd8-07ca-4d39-b755-98968dbe0735> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/552fb15e-d3c7-4afd-b33e-ef5988a298e9> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d7841814-3163-46bf-9884-c073a371fcbd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalStartDate  "1986-04-30"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/59fcee05-9e41-418f-a89d-ca2090379c93> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/385eb71c-c509-4ba2-b69d-57814e8cc19e> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Antônio Carlos Jobim" ;
+        :hasMusicBrainzID  "7a8dbe84-f4c0-4457-bfa3-edced1f8cde0" ;
+        :hasName           "Antônio Carlos Jobim" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/03c63f8e-1035-46d4-91f6-671a55c6c3f9> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/385eb71c-c509-4ba2-b69d-57814e8cc19e>
+        a                  :ArtistPerson ;
+        rdfs:label         "Maria Luiza Jobim" ;
+        :hasMusicBrainzID  "385eb71c-c509-4ba2-b69d-57814e8cc19e" ;
+        :hasName           "Maria Luiza Jobim" ;
+        owl:sameAs         <https://musicbrainz.org/artist/385eb71c-c509-4ba2-b69d-57814e8cc19e> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b7062bd8-07ca-4d39-b755-98968dbe0735> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "married" ;
+        :hasMusicBrainzID  "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029> .
+
+<http://localhost:8080/resource/kejazz/Artist/552fb15e-d3c7-4afd-b33e-ef5988a298e9>
+        a                  :Band ;
+        rdfs:label         "Tom Jobim e Orquestra" ;
+        :hasMusicBrainzID  "552fb15e-d3c7-4afd-b33e-ef5988a298e9" ;
+        :hasName           "Tom Jobim e Orquestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/552fb15e-d3c7-4afd-b33e-ef5988a298e9> .
+
+<http://localhost:8080/resource/kejazz/Artist/d7841814-3163-46bf-9884-c073a371fcbd>
+        a                  :ArtistPerson ;
+        rdfs:label         "Elizabeth Jobim" ;
+        :hasMusicBrainzID  "d7841814-3163-46bf-9884-c073a371fcbd" ;
+        :hasName           "Elizabeth Jobim" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d7841814-3163-46bf-9884-c073a371fcbd> .

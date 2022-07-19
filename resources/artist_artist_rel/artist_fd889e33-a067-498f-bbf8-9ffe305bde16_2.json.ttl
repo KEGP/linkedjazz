@@ -1,0 +1,88 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1732933d-b55f-4acd-9e5a-cf15b6522240> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/75c09861-6857-4ec0-9729-84eefde7fc86>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/75c09861-6857-4ec0-9729-84eefde7fc86>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "collaboration" ;
+        :hasMusicBrainzID  "75c09861-6857-4ec0-9729-84eefde7fc86" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/75c09861-6857-4ec0-9729-84eefde7fc86> .
+
+<http://localhost:8080/resource/kejazz/Artist/8777a849-fb4e-4430-9918-170f619c5286>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bebel Gilberto" ;
+        :hasMusicBrainzID  "8777a849-fb4e-4430-9918-170f619c5286" ;
+        :hasName           "Bebel Gilberto" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8777a849-fb4e-4430-9918-170f619c5286> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1964" ;
+                           :hasIntervalStartDate  "1959"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/1732933d-b55f-4acd-9e5a-cf15b6522240>
+        a                  :Band ;
+        rdfs:label         "João Gilberto Trio" ;
+        :hasMusicBrainzID  "1732933d-b55f-4acd-9e5a-cf15b6522240" ;
+        :hasName           "João Gilberto Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1732933d-b55f-4acd-9e5a-cf15b6522240> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1971" ;
+                           :hasIntervalStartDate  "1965-04"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b72a2a9b-e783-473d-9d80-403876c685cd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "married" ;
+        :hasMusicBrainzID  "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029> .
+
+<http://localhost:8080/resource/kejazz/Artist/b72a2a9b-e783-473d-9d80-403876c685cd>
+        a                  :ArtistPerson ;
+        rdfs:label         "Miúcha" ;
+        :hasMusicBrainzID  "b72a2a9b-e783-473d-9d80-403876c685cd" ;
+        :hasName           "Miúcha" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b72a2a9b-e783-473d-9d80-403876c685cd> .
+
+<http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19>
+        a                  :ArtistPerson ;
+        rdfs:label         "Astrud Gilberto" ;
+        :hasMusicBrainzID  "8d08cabf-03a3-4f38-a815-8197a0984f19" ;
+        :hasName           "Astrud Gilberto" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8d08cabf-03a3-4f38-a815-8197a0984f19> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8777a849-fb4e-4430-9918-170f619c5286> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .

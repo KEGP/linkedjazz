@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19>
+        a                  :ArtistPerson ;
+        rdfs:label         "Astrud Gilberto" ;
+        :hasMusicBrainzID  "8d08cabf-03a3-4f38-a815-8197a0984f19" ;
+        :hasName           "Astrud Gilberto" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8d08cabf-03a3-4f38-a815-8197a0984f19> .
+
+<http://localhost:8080/resource/kejazz/Release/b86bd910-ef90-4e59-b217-50a02e31e9ac>
+        a                      :Release ;
+        rdfs:label             "Compact Jazz: Astrud Gilberto" ;
+        :hasASIN               "B00000472W" ;
+        :hasBarcode            "042283136922" ;
+        :hasMusicBrainzID      "b86bd910-ef90-4e59-b217-50a02e31e9ac" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Compact Jazz: Astrud Gilberto" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8d08cabf-03a3-4f38-a815-8197a0984f19> ;
+        :releasedInDate        "1987" ;
+        owl:sameAs             <https://musicbrainz.org/release/b86bd910-ef90-4e59-b217-50a02e31e9ac> , <https://www.amazon.com/gp/product/B00000472W> , <https://www.amazon.com/dp/B00000472W> , <https://www.discogs.com/release/1350573> .

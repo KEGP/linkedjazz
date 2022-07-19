@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/922315eb-9bc4-4b1a-bcd6-944f75aa007e>
+        a                      :Release ;
+        rdfs:label             "The Complete Prestige Recordings" ;
+        :hasASIN               "B000000ZC5" ;
+        :hasBarcode            "025218440721" ;
+        :hasMusicBrainzID      "922315eb-9bc4-4b1a-bcd6-944f75aa007e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Prestige Recordings" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :releasedInDate        "1992-06-02" ;
+        owl:sameAs             <https://www.discogs.com/release/2071207> , <https://www.amazon.com/gp/product/B000000ZC5> , <https://www.amazon.com/dp/B000000ZC5> , <https://musicbrainz.org/release/922315eb-9bc4-4b1a-bcd6-944f75aa007e> .
+
+<http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sonny Rollins" ;
+        :hasMusicBrainzID  "3b47247e-5b57-49b6-a0ed-bad80243802a" ;
+        :hasName           "Sonny Rollins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> .

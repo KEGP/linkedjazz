@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+
+<http://localhost:8080/resource/kejazz/Release/26608240-8ad4-44d1-8209-a0adcc3a363a>
+        a                      :Release ;
+        rdfs:label             "Ken Burns Jazz: Thelonious Monk" ;
+        :hasASIN               "B000050HVW" ;
+        :hasBarcode            "074646144923" ;
+        :hasMusicBrainzID      "26608240-8ad4-44d1-8209-a0adcc3a363a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ken Burns Jazz: Thelonious Monk" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        :releasedInDate        "2000-11-07" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000050HVW> , <https://www.amazon.com/gp/product/B000050HVW> , <https://musicbrainz.org/release/26608240-8ad4-44d1-8209-a0adcc3a363a> .

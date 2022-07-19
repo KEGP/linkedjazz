@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Coleman Hawkins" ;
+        :hasMusicBrainzID  "5c8cb181-38fe-4300-8153-650b2ed0258f" ;
+        :hasName           "Coleman Hawkins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5c8cb181-38fe-4300-8153-650b2ed0258f> .
+
+<http://localhost:8080/resource/kejazz/Release/53f2f69a-51f2-4e4b-8169-9dcb23911a0b>
+        a                      :Release ;
+        rdfs:label             "Picasso" ;
+        :hasMusicBrainzID      "53f2f69a-51f2-4e4b-8169-9dcb23911a0b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Picasso" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+        :releasedInDate        "2001" ;
+        owl:sameAs             <https://www.discogs.com/release/5137407> , <https://musicbrainz.org/release/53f2f69a-51f2-4e4b-8169-9dcb23911a0b> .

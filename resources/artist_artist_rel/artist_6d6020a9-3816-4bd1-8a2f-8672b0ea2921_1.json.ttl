@@ -1,0 +1,75 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/cc474f1b-1220-4e23-b0ef-73e81890df69>
+        a                  :Band ;
+        rdfs:label         "Billie Holiday and Her Orchestra" ;
+        :hasMusicBrainzID  "cc474f1b-1220-4e23-b0ef-73e81890df69" ;
+        :hasName           "Billie Holiday and Her Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cc474f1b-1220-4e23-b0ef-73e81890df69> .
+
+<http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed>
+        a                  :ArtistPerson ;
+        rdfs:label         "Billie Holiday" ;
+        :hasMusicBrainzID  "d59c4cda-11d9-48db-8bfe-b557ee602aed" ;
+        :hasName           "Billie Holiday" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1b72fd7d-6956-4cb1-929c-08cf4a921cf4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/88562a60-2550-48f0-8e8e-f54d95c7369a>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "supporting musician" ;
+        :hasMusicBrainzID  "88562a60-2550-48f0-8e8e-f54d95c7369a" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/88562a60-2550-48f0-8e8e-f54d95c7369a> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+<http://localhost:8080/resource/kejazz/Artist/1b72fd7d-6956-4cb1-929c-08cf4a921cf4>
+        a                  :Band ;
+        rdfs:label         "Billie Holiday and Her Band" ;
+        :hasMusicBrainzID  "1b72fd7d-6956-4cb1-929c-08cf4a921cf4" ;
+        :hasName           "Billie Holiday and Her Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1b72fd7d-6956-4cb1-929c-08cf4a921cf4> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ff0a1e7d-9d29-45f7-9f34-aabd85e7eabf> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1102cfab-aebd-4187-9a4a-75c16f276be1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/88562a60-2550-48f0-8e8e-f54d95c7369a>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cc474f1b-1220-4e23-b0ef-73e81890df69> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

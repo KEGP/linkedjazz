@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/e23612fb-6dd6-4d5c-b638-2611bfc8c48a>
+        a                  :Band ;
+        rdfs:label         "Cherry Poppin’ Daddies" ;
+        :hasMusicBrainzID  "e23612fb-6dd6-4d5c-b638-2611bfc8c48a" ;
+        :hasName           "Cherry Poppin’ Daddies" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e23612fb-6dd6-4d5c-b638-2611bfc8c48a> .
+
+<http://localhost:8080/resource/kejazz/Release/1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd>
+        a                      :Release ;
+        rdfs:label             "Zoot Suit Riot" ;
+        :hasBarcode            "0601215325621" ;
+        :hasMusicBrainzID      "1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Zoot Suit Riot" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/e23612fb-6dd6-4d5c-b638-2611bfc8c48a> ;
+        :releasedInDate        "1997" ;
+        owl:sameAs             <https://www.discogs.com/release/742456> , <https://musicbrainz.org/release/1dba9d63-6962-49c2-8dcd-ff1ca1e48dcd> .

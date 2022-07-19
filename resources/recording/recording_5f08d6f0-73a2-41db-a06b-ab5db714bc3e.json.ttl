@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/9d67b4ef-cd78-4202-a379-78324d66c4bc>
+        a                  :Band ;
+        rdfs:label         "Frankie Trumbauer and His Orchestra" ;
+        :hasMusicBrainzID  "9d67b4ef-cd78-4202-a379-78324d66c4bc" ;
+        :hasName           "Frankie Trumbauer and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9d67b4ef-cd78-4202-a379-78324d66c4bc> .
+
+<http://localhost:8080/resource/kejazz/Recording/5f08d6f0-73a2-41db-a06b-ab5db714bc3e>
+        a                           :Recording ;
+        rdfs:label                  "Riverboat Shuffle" ;
+        :hasDurationInMilliseconds  "191000" ;
+        :hasMusicBrainzID           "5f08d6f0-73a2-41db-a06b-ab5db714bc3e" ;
+        :hasTitle                   "Riverboat Shuffle" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/9d67b4ef-cd78-4202-a379-78324d66c4bc> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1927-05-09" ;
+                                      :hasIntervalStartDate  "1927-05-09"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/a7c44ae4-f9b9-449e-82f1-9eec98f3101c> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/5f08d6f0-73a2-41db-a06b-ab5db714bc3e> .

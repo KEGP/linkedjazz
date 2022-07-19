@@ -1,0 +1,33 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Five" ;
+        :hasMusicBrainzID  "cfedde14-91c5-46cb-b087-9f2da9bec194" ;
+        :hasName           "Louis Armstrong and His Hot Five" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cfedde14-91c5-46cb-b087-9f2da9bec194> .
+
+<http://localhost:8080/resource/kejazz/Release/2e1a8b75-0dca-45ed-ab9e-8882d8e337a4>
+        a                      :Release ;
+        rdfs:label             "West End Blues 1926 - 1928" ;
+        :hasBarcode            "8004883560103" ;
+        :hasMusicBrainzID      "2e1a8b75-0dca-45ed-ab9e-8882d8e337a4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "West End Blues 1926 - 1928" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> , <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
+        :releasedInDate        "1991" ;
+        owl:sameAs             <https://musicbrainz.org/release/2e1a8b75-0dca-45ed-ab9e-8882d8e337a4> , <https://www.discogs.com/release/11843125> .
+
+<http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Seven" ;
+        :hasMusicBrainzID  "49905118-45d2-4b09-9643-a40b87d0ce42" ;
+        :hasName           "Louis Armstrong and His Hot Seven" ;
+        owl:sameAs         <https://musicbrainz.org/artist/49905118-45d2-4b09-9643-a40b87d0ce42> .

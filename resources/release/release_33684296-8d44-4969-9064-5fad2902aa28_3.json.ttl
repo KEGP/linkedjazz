@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb>
+        a                  :Band ;
+        rdfs:label         "Quintette du Hot Club de France" ;
+        :hasMusicBrainzID  "ee55e4e8-807d-49b1-8470-d1c0898ed7cb" ;
+        :hasName           "Quintette du Hot Club de France" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> .
+
+<http://localhost:8080/resource/kejazz/Release/33684296-8d44-4969-9064-5fad2902aa28>
+        a                      :Release ;
+        rdfs:label             "Jazz Archives, Volume 32: Django Reinhardt & le Quintette du Hot Club de France 1934/1937" ;
+        :hasASIN               "B00004US78" ;
+        :hasBarcode            "3540131575222" ;
+        :hasMusicBrainzID      "33684296-8d44-4969-9064-5fad2902aa28" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Archives, Volume 32: Django Reinhardt & le Quintette du Hot Club de France 1934/1937" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> ;
+        :releasedInDate        "1991" ;
+        owl:sameAs             <https://www.discogs.com/release/4057471> , <https://www.amazon.com/dp/B00004US78> , <https://www.amazon.fr/gp/product/B00004US78> , <https://musicbrainz.org/release/33684296-8d44-4969-9064-5fad2902aa28> .

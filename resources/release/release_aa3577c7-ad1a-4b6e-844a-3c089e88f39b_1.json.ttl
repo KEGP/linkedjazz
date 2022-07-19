@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/aa3577c7-ad1a-4b6e-844a-3c089e88f39b>
+        a                      :Release ;
+        rdfs:label             "In a Mellotone" ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "aa3577c7-ad1a-4b6e-844a-3c089e88f39b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "In a Mellotone" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :releasedInDate        "1956" ;
+        owl:sameAs             <https://www.discogs.com/release/4133609> , <https://musicbrainz.org/release/aa3577c7-ad1a-4b6e-844a-3c089e88f39b> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .
