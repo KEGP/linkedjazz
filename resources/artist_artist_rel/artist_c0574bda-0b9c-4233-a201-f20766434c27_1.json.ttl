@@ -10,7 +10,7 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/72cdf1c4-610a-4622-b5f4-1d7cf4fbc8a8> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4dff7933-1b8c-4df8-af07-ca305d44f44a> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -20,12 +20,26 @@
         :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
         owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1580fb50-5ba8-4f41-8e8a-f1788cd5f411> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/72cdf1c4-610a-4622-b5f4-1d7cf4fbc8a8>
         a                  :Band ;
         rdfs:label         "Bessie Smith & Her Down Home Trio" ;
         :hasMusicBrainzID  "72cdf1c4-610a-4622-b5f4-1d7cf4fbc8a8" ;
         :hasName           "Bessie Smith & Her Down Home Trio" ;
         owl:sameAs         <https://musicbrainz.org/artist/72cdf1c4-610a-4622-b5f4-1d7cf4fbc8a8> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/72cdf1c4-610a-4622-b5f4-1d7cf4fbc8a8> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/4dff7933-1b8c-4df8-af07-ca305d44f44a>
         a                  :Band ;
@@ -40,23 +54,9 @@
         :hasMusicBrainzID  "b42b7966-b904-449e-b8f9-8c7297b863d0" ;
         owl:sameAs         <https://musicbrainz.org/relationship/b42b7966-b904-449e-b8f9-8c7297b863d0> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4dff7933-1b8c-4df8-af07-ca305d44f44a> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
         a                  :ArtistPerson ;
         rdfs:label         "Bessie Smith" ;
         :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
         :hasName           "Bessie Smith" ;
         owl:sameAs         <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1580fb50-5ba8-4f41-8e8a-f1788cd5f411> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
-] .

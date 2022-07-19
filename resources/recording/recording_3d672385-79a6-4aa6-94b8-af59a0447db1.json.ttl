@@ -7,6 +7,13 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003>
+        a                  :Band ;
+        rdfs:label         "The Benny Goodman Sextet" ;
+        :hasMusicBrainzID  "82eb0cc2-84be-44b2-8b5d-543e3a1a4003" ;
+        :hasName           "The Benny Goodman Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> .
+
 <http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1>
         a                           :Recording ;
         rdfs:label                  "Breakfast Feud (composite)" ;
@@ -21,13 +28,6 @@
                                     ] ;
         dul:realizes                <http://localhost:8080/resource/kejazz/Work/7793f9a0-958c-4adc-9e31-db946e21d382> ;
         owl:sameAs                  <https://musicbrainz.org/recording/3d672385-79a6-4aa6-94b8-af59a0447db1> .
-
-<http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003>
-        a                  :Band ;
-        rdfs:label         "The Benny Goodman Sextet" ;
-        :hasMusicBrainzID  "82eb0cc2-84be-44b2-8b5d-543e3a1a4003" ;
-        :hasName           "The Benny Goodman Sextet" ;
-        owl:sameAs         <https://musicbrainz.org/artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> .
 
 <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13>
         a                  :ArtistPerson ;

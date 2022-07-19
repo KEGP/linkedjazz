@@ -7,6 +7,13 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Gil Evans" ;
+        :hasMusicBrainzID  "83b1d510-c4ae-485b-91bf-c69b63044dd6" ;
+        :hasName           "Gil Evans" ;
+        owl:sameAs         <https://musicbrainz.org/artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> .
+
 <http://localhost:8080/resource/kejazz/Artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a>
         a                  :ArtistPerson ;
         rdfs:label         "Miles Davis" ;
@@ -29,10 +36,3 @@
                                     ] ;
         dul:realizes                <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
         owl:sameAs                  <https://musicbrainz.org/recording/9708585c-b508-4357-b3f4-4a5c0b0af44f> .
-
-<http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6>
-        a                  :ArtistPerson ;
-        rdfs:label         "Gil Evans" ;
-        :hasMusicBrainzID  "83b1d510-c4ae-485b-91bf-c69b63044dd6" ;
-        :hasName           "Gil Evans" ;
-        owl:sameAs         <https://musicbrainz.org/artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> .

@@ -7,6 +7,13 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/74a470d3-22da-4720-99f2-e704a569a4ef> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
         rdfs:label         "composer" ;
@@ -20,10 +27,3 @@
         :hasMusicBrainzID  "3af06bc4-68ad-4cae-bb7a-7eeeb45e411f" ;
         :hasName           "Duke Ellington" ;
         owl:sameAs         <https://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/74a470d3-22da-4720-99f2-e704a569a4ef> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .

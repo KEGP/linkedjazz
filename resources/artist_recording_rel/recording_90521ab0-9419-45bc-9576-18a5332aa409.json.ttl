@@ -32,13 +32,6 @@
         :hasName           "piano" ;
         owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
-        rdf:type           :MusicalInstrument ;
-        rdfs:label         "alto saxophone" ;
-        :hasMusicBrainzID  "9c977091-b27a-4a0e-b54e-b5ab89420e22" ;
-        :hasName           "alto saxophone" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> .
-
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
                      :hasIntervalEndDate    "1976-08-02" ;
@@ -48,6 +41,13 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/4e5f99db-d181-4317-9124-602b776f5306> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
 ] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "alto saxophone" ;
+        :hasMusicBrainzID  "9c977091-b27a-4a0e-b54e-b5ab89420e22" ;
+        :hasName           "alto saxophone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/9c977091-b27a-4a0e-b54e-b5ab89420e22> .
 
 <http://localhost:8080/resource/kejazz/Artist/4e5f99db-d181-4317-9124-602b776f5306>
         rdf:type           :ArtistPerson ;

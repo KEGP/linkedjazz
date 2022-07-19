@@ -7,12 +7,12 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/f8e0d620-1b66-31da-ade7-d5e438d24bc1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
 
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
@@ -21,9 +21,9 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
-<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
-        a                  :ArtistPerson ;
-        rdfs:label         "Thelonious Monk" ;
-        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
-        :hasName           "Thelonious Monk" ;
-        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/f8e0d620-1b66-31da-ade7-d5e438d24bc1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

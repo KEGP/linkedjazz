@@ -14,13 +14,6 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/9134e915-d22a-4f43-a591-ebd8e0eb7390> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/b90f9d24-9971-4706-8025-465423c8c6e3>
         a                  :Band ;
         rdfs:label         "Dizzy Gillespie – Stan Getz Sextet" ;
@@ -34,13 +27,6 @@
         :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
         owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b90f9d24-9971-4706-8025-465423c8c6e3> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/9134e915-d22a-4f43-a591-ebd8e0eb7390>
         a                  :Orchestra ;
         rdfs:label         "Stan Kenton and His Orchestra" ;
@@ -51,7 +37,7 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/28170926-2260-49ef-8c0a-37e29f9437af> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b90f9d24-9971-4706-8025-465423c8c6e3> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -61,6 +47,13 @@
         :hasMusicBrainzID  "28170926-2260-49ef-8c0a-37e29f9437af" ;
         :hasName           "Stan Getz Quintet" ;
         owl:sameAs         <https://musicbrainz.org/artist/28170926-2260-49ef-8c0a-37e29f9437af> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6d55baf9-875e-4a62-8829-a3ba629ea8cd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/6d55baf9-875e-4a62-8829-a3ba629ea8cd>
         a                  :Band ;
@@ -72,7 +65,14 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6d55baf9-875e-4a62-8829-a3ba629ea8cd> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/28170926-2260-49ef-8c0a-37e29f9437af> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/9134e915-d22a-4f43-a591-ebd8e0eb7390> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 

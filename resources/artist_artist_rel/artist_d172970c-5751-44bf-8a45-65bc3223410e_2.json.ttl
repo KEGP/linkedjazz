@@ -21,23 +21,6 @@
         :hasName           "Earl Hines Quartet" ;
         owl:sameAs         <https://musicbrainz.org/artist/81050130-8139-4db2-b960-b49485f5d7c0> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/47f92138-70a5-40f0-9dda-7767b618f407> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1951-12" ;
-                           :hasIntervalStartDate  "1948-02"
-                         ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f617ed55-7691-41cc-9671-c04a29641125> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "member of band" ;
@@ -52,9 +35,12 @@
         owl:sameAs         <https://musicbrainz.org/artist/cfedde14-91c5-46cb-b087-9f2da9bec194> .
 
 [ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1951-12" ;
+                           :hasIntervalStartDate  "1948-02"
+                         ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93c29938-9faa-49fb-b9cb-4cf0d5da56e0> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f617ed55-7691-41cc-9671-c04a29641125> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -72,6 +58,20 @@
         :hasName           "Sidney Bechet Trio" ;
         owl:sameAs         <https://musicbrainz.org/artist/54e5332a-8c4d-4fa0-9abd-7c5bba612c04> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/fcdbb825-c791-40fc-befe-a52a37e5bff9> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/54e5332a-8c4d-4fa0-9abd-7c5bba612c04> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/47f92138-70a5-40f0-9dda-7767b618f407>
         a                  :Band ;
         rdfs:label         "Earl Hines and His Orchestra" ;
@@ -80,16 +80,26 @@
         owl:sameAs         <https://musicbrainz.org/artist/47f92138-70a5-40f0-9dda-7767b618f407> .
 
 [ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928" ;
+                           :hasIntervalStartDate  "1927"
+                         ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/81050130-8139-4db2-b960-b49485f5d7c0> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/fcdbb825-c791-40fc-befe-a52a37e5bff9> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93c29938-9faa-49fb-b9cb-4cf0d5da56e0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/47f92138-70a5-40f0-9dda-7767b618f407> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -110,15 +120,12 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1928" ;
-                           :hasIntervalStartDate  "1927"
-                         ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
+<http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Seven" ;
+        :hasMusicBrainzID  "49905118-45d2-4b09-9643-a40b87d0ce42" ;
+        :hasName           "Louis Armstrong and His Hot Seven" ;
+        owl:sameAs         <https://musicbrainz.org/artist/49905118-45d2-4b09-9643-a40b87d0ce42> .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a                      dul:TimeInterval ;
@@ -130,13 +137,6 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
-<http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42>
-        a                  :Band ;
-        rdfs:label         "Louis Armstrong and His Hot Seven" ;
-        :hasMusicBrainzID  "49905118-45d2-4b09-9643-a40b87d0ce42" ;
-        :hasName           "Louis Armstrong and His Hot Seven" ;
-        owl:sameAs         <https://musicbrainz.org/artist/49905118-45d2-4b09-9643-a40b87d0ce42> .
-
 <http://localhost:8080/resource/kejazz/Artist/fcdbb825-c791-40fc-befe-a52a37e5bff9>
         a                  :Band ;
         rdfs:label         "Sidney Bechet and His New Orleans Feetwarmers" ;
@@ -147,6 +147,6 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/54e5332a-8c4d-4fa0-9abd-7c5bba612c04> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/81050130-8139-4db2-b960-b49485f5d7c0> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .

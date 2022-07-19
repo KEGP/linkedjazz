@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/7736d65c-76a0-47d6-af07-c78bd24e766e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
         rdfs:label         "composer" ;
@@ -27,3 +20,10 @@
         :hasMusicBrainzID  "28f6d494-d44b-4bd3-aed9-1d4909875ca1" ;
         :hasName           "Oscar Pettiford" ;
         owl:sameAs         <https://musicbrainz.org/artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/7736d65c-76a0-47d6-af07-c78bd24e766e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/28f6d494-d44b-4bd3-aed9-1d4909875ca1> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

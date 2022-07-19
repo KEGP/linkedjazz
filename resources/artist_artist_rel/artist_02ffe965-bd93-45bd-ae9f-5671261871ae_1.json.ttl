@@ -10,7 +10,7 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/383e1902-c204-4cb9-a6b1-16089e8216a1> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/89124c60-c9f5-482e-a219-4b0f561d605c> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
 ] .
 
@@ -48,13 +48,6 @@
         :hasName           "Wes Montgomery Quartet" ;
         owl:sameAs         <https://musicbrainz.org/artist/b366d594-dc8f-481a-9994-ecf7f4207e9d> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/90459508-a7b3-459e-b7ef-d5c0ae74fd17>
         a                  :Band ;
         rdfs:label         "The Montgomery Brothers" ;
@@ -65,22 +58,8 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/89124c60-c9f5-482e-a219-4b0f561d605c> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/383e1902-c204-4cb9-a6b1-16089e8216a1> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b366d594-dc8f-481a-9994-ecf7f4207e9d> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/90459508-a7b3-459e-b7ef-d5c0ae74fd17> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/383e1902-c204-4cb9-a6b1-16089e8216a1>
@@ -90,6 +69,13 @@
         :hasName           "Buddy Montgomery" ;
         owl:sameAs         <https://musicbrainz.org/artist/383e1902-c204-4cb9-a6b1-16089e8216a1> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee>
         a                  :Band ;
         rdfs:label         "Wes Montgomery Trio" ;
@@ -97,8 +83,22 @@
         :hasName           "Wes Montgomery Trio" ;
         owl:sameAs         <https://musicbrainz.org/artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/90459508-a7b3-459e-b7ef-d5c0ae74fd17> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "sibling" ;
         :hasMusicBrainzID  "b42b7966-b904-449e-b8f9-8c7297b863d0" ;
         owl:sameAs         <https://musicbrainz.org/relationship/b42b7966-b904-449e-b8f9-8c7297b863d0> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b366d594-dc8f-481a-9994-ecf7f4207e9d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

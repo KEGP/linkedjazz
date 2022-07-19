@@ -7,26 +7,19 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
-] .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/79dcf09e-2290-4740-9edc-907f82420160> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
-] .
-
 <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
         a                  :RoleInWork ;
         rdfs:label         "writer" ;
         :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
         :hasName           "writer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f>
         a                  :ArtistPerson ;
@@ -38,7 +31,7 @@
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bce1a608-9541-4392-9837-23f972013343> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/79dcf09e-2290-4740-9edc-907f82420160> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
 ] .
 
@@ -48,6 +41,13 @@
         :hasMusicBrainzID  "2382bcb9-0f05-492e-b10c-2d6067a1955c" ;
         :hasName           "Eddie Condon" ;
         owl:sameAs         <https://musicbrainz.org/artist/2382bcb9-0f05-492e-b10c-2d6067a1955c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/48e4e405-6faf-4690-9751-d935874d27f1> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bce1a608-9541-4392-9837-23f972013343> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
 
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;

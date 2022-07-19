@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1b04fc0f-b43c-4baa-8376-dcbe289def32> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/1af24726-5b1f-4b07-826e-5351723f504b>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/e495811a-f10c-4596-8b5e-7c0f3fc6f5db>
         a                  :Band ;
         rdfs:label         "Dizzy Gillespie Jazzmen" ;
@@ -35,18 +28,25 @@
         :hasName           "Charlie Parker Quintet" ;
         owl:sameAs         <https://musicbrainz.org/artist/e02d4f5a-8bcf-4fd3-8410-57c680389748> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/31cfcb82-0173-4995-b472-eb7400af17e1> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1b04fc0f-b43c-4baa-8376-dcbe289def32> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/1af24726-5b1f-4b07-826e-5351723f504b>
+] .
+
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/a6f62641-2f58-470e-b02b-88d7b984dc9f>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "tribute" ;
         :hasMusicBrainzID  "a6f62641-2f58-470e-b02b-88d7b984dc9f" ;
         owl:sameAs         <https://musicbrainz.org/relationship/a6f62641-2f58-470e-b02b-88d7b984dc9f> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a94f0e68-6a5a-4a39-928d-5910e482d95c> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
 
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/1af24726-5b1f-4b07-826e-5351723f504b>
         a                  :RelationBetweenArtistsType ;
@@ -67,20 +67,6 @@
         :hasMusicBrainzID  "83bb8401-71b5-4d70-8b4b-aba03a7de22e" ;
         :hasName           "Jay McShann & His Orchestra" ;
         owl:sameAs         <https://musicbrainz.org/artist/83bb8401-71b5-4d70-8b4b-aba03a7de22e> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e02d4f5a-8bcf-4fd3-8410-57c680389748> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6e81c4d7-ba13-4cbc-8d8f-dd694931679c> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/75c09861-6857-4ec0-9729-84eefde7fc86>
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/17df697d-197e-4a20-85a1-e09438305f5c>
         a                  :Band ;
@@ -106,7 +92,14 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/83bb8401-71b5-4d70-8b4b-aba03a7de22e> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/636c40f9-864f-46eb-9b91-7e643a8e0a61> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -120,27 +113,6 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/31cfcb82-0173-4995-b472-eb7400af17e1> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6e82deec-98ef-4844-abff-6c0336acad6b> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/a6f62641-2f58-470e-b02b-88d7b984dc9f>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e495811a-f10c-4596-8b5e-7c0f3fc6f5db> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -148,7 +120,21 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/636c40f9-864f-46eb-9b91-7e643a8e0a61> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/430dfeae-b5d7-4d36-a8a2-e9f0a8f025be> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/83bb8401-71b5-4d70-8b4b-aba03a7de22e> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a94f0e68-6a5a-4a39-928d-5910e482d95c> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -159,12 +145,26 @@
         :hasName           "Miles Davis All Stars" ;
         owl:sameAs         <https://musicbrainz.org/artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e02d4f5a-8bcf-4fd3-8410-57c680389748> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/636c40f9-864f-46eb-9b91-7e643a8e0a61>
         a                  :Band ;
         rdfs:label         "Red Norvo & His Selected Sextet" ;
         :hasMusicBrainzID  "636c40f9-864f-46eb-9b91-7e643a8e0a61" ;
         :hasName           "Red Norvo & His Selected Sextet" ;
         owl:sameAs         <https://musicbrainz.org/artist/636c40f9-864f-46eb-9b91-7e643a8e0a61> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8d63d8f8-e743-48af-b45e-5d9639edcd1b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
         a                  :RelationBetweenArtistsType ;
@@ -181,7 +181,14 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/430dfeae-b5d7-4d36-a8a2-e9f0a8f025be> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6e81c4d7-ba13-4cbc-8d8f-dd694931679c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/75c09861-6857-4ec0-9729-84eefde7fc86>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/17df697d-197e-4a20-85a1-e09438305f5c> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -206,13 +213,6 @@
         :hasName           "The Quintet" ;
         owl:sameAs         <https://musicbrainz.org/artist/6e81c4d7-ba13-4cbc-8d8f-dd694931679c> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8d63d8f8-e743-48af-b45e-5d9639edcd1b> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/4fda3c6b-18a2-4a44-8de1-6174824409fb>
         a                  :Band ;
         rdfs:label         "Charlie Parker’s Re‐Boppers" ;
@@ -223,7 +223,7 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/17df697d-197e-4a20-85a1-e09438305f5c> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4fda3c6b-18a2-4a44-8de1-6174824409fb> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -236,7 +236,7 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4fda3c6b-18a2-4a44-8de1-6174824409fb> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6e82deec-98ef-4844-abff-6c0336acad6b> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/a6f62641-2f58-470e-b02b-88d7b984dc9f>
 ] .

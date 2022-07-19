@@ -14,6 +14,13 @@
         :hasName           "Herschel Evans" ;
         owl:sameAs         <https://musicbrainz.org/artist/43046cc6-6a0b-42ef-9524-1b8ae5930127> .
 
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
 [ a                :ArtistContributionToWork ;
   :atTime          [ a                      dul:TimeInterval ;
                      :hasIntervalEndDate    "1938" ;
@@ -23,10 +30,3 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/43046cc6-6a0b-42ef-9524-1b8ae5930127> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        a                  :RoleInWork ;
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .

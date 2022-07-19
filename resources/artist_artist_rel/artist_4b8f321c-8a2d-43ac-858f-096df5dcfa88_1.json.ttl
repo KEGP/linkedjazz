@@ -14,16 +14,6 @@
         owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
 
 [ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1938" ;
-                           :hasIntervalStartDate  "1938"
-                         ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d78563f2-d1d7-4dde-a2a3-e648312c2586> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/052324df-f4d8-4f3d-8d13-88dca9037205> ;
@@ -36,6 +26,16 @@
         :hasMusicBrainzID  "052324df-f4d8-4f3d-8d13-88dca9037205" ;
         :hasName           "Edmond Hall Celeste Quartet" ;
         owl:sameAs         <https://musicbrainz.org/artist/052324df-f4d8-4f3d-8d13-88dca9037205> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1938" ;
+                           :hasIntervalStartDate  "1938"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d78563f2-d1d7-4dde-a2a3-e648312c2586> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/d78563f2-d1d7-4dde-a2a3-e648312c2586>
         a                  :Band ;

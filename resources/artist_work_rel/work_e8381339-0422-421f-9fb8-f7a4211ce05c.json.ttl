@@ -14,16 +14,16 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/e8381339-0422-421f-9fb8-f7a4211ce05c> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9>
         a                  :ArtistPerson ;
         rdfs:label         "Milt Jackson" ;
         :hasMusicBrainzID  "2e38e1de-2890-4620-8467-5b0bb4641cb9" ;
         :hasName           "Milt Jackson" ;
         owl:sameAs         <https://musicbrainz.org/artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/e8381339-0422-421f-9fb8-f7a4211ce05c> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

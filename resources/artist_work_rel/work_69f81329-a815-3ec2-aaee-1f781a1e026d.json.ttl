@@ -14,19 +14,19 @@
         :hasName           "Vinicius de Moraes" ;
         owl:sameAs         <https://musicbrainz.org/artist/1c01cf84-07c7-408a-b5a8-7dae0b1312fc> .
 
-<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        a                  :RoleInWork ;
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
 <http://localhost:8080/resource/kejazz/Artist/4b68c65a-8cb5-4c03-bb58-c1b1cf5eced1>
         a                  :ArtistPerson ;
@@ -35,26 +35,19 @@
         :hasName           "Norman Gimbel" ;
         owl:sameAs         <https://musicbrainz.org/artist/4b68c65a-8cb5-4c03-bb58-c1b1cf5eced1> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1c01cf84-07c7-408a-b5a8-7dae0b1312fc> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/4b68c65a-8cb5-4c03-bb58-c1b1cf5eced1> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/da6c5d8a-ce13-474d-9375-61feb29039a5>
-] .
-
 <http://localhost:8080/resource/kejazz/RoleInWork/da6c5d8a-ce13-474d-9375-61feb29039a5>
         a                  :RoleInWork ;
         rdfs:label         "translator" ;
         :hasMusicBrainzID  "da6c5d8a-ce13-474d-9375-61feb29039a5" ;
         :hasName           "translator" ;
         owl:sameAs         <https://musicbrainz.org/relationship/da6c5d8a-ce13-474d-9375-61feb29039a5> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1c01cf84-07c7-408a-b5a8-7dae0b1312fc> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0>
         a                  :ArtistPerson ;
@@ -69,3 +62,10 @@
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
         :hasName           "lyricist" ;
         owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/69f81329-a815-3ec2-aaee-1f781a1e026d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/4b68c65a-8cb5-4c03-bb58-c1b1cf5eced1> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/da6c5d8a-ce13-474d-9375-61feb29039a5>
+] .

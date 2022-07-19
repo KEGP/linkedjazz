@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/8933f057-99f8-4aa9-9f2d-3872ac54a37e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/249f83c8-b05f-4963-83dd-af1e2cf27fac> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/6d2a6a98-cddf-489a-80dc-b03b873368b8>
         a                  :ArtistPerson ;
         rdfs:label         "Bennie Moten" ;
@@ -39,5 +32,12 @@
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/8933f057-99f8-4aa9-9f2d-3872ac54a37e> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/6d2a6a98-cddf-489a-80dc-b03b873368b8> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/8933f057-99f8-4aa9-9f2d-3872ac54a37e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/249f83c8-b05f-4963-83dd-af1e2cf27fac> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .

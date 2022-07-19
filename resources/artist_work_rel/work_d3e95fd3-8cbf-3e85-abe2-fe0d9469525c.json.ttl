@@ -14,16 +14,16 @@
         :hasName           "Herbie Hancock" ;
         owl:sameAs         <https://musicbrainz.org/artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd> .
 
-<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        a                  :RoleInWork ;
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/d3e95fd3-8cbf-3e85-abe2-fe0d9469525c> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/27613b78-1b9d-4ec3-9db5-fa0743465fdd> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .

@@ -8,6 +8,13 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
+<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "drums (drum set)" ;
+        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
+        :hasName           "drums (drum set)" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
+
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
                      :hasIntervalEndDate    "1947-10-28" ;
@@ -18,29 +25,12 @@
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
 ] .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
-        rdf:type           :MusicalInstrument ;
-        rdfs:label         "drums (drum set)" ;
-        :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
-        :hasName           "drums (drum set)" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
-
 <http://localhost:8080/resource/kejazz/Artist/0b6aea55-d855-4a33-ae08-b0280dd28684>
         rdf:type           :ArtistPerson ;
         rdfs:label         "Max Roach" ;
         :hasMusicBrainzID  "0b6aea55-d855-4a33-ae08-b0280dd28684" ;
         :hasName           "Max Roach" ;
         owl:sameAs         <https://musicbrainz.org/artist/0b6aea55-d855-4a33-ae08-b0280dd28684> .
-
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type               dul:TimeInterval ;
-                     :hasIntervalEndDate    "1947-10-28" ;
-                     :hasIntervalStartDate  "1947-10-28"
-                   ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6e8c9071-6cf0-4592-b13f-693cae9b6669> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/18288a13-0259-4a44-a9dc-558229fbfdd2> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
-] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
         rdf:type           :MusicalInstrument ;
@@ -62,8 +52,8 @@
                      :hasIntervalStartDate  "1947-10-28"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/6e8c9071-6cf0-4592-b13f-693cae9b6669> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7d606f44-a90c-4c1e-909d-37e57681a3cf> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/18288a13-0259-4a44-a9dc-558229fbfdd2> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/7d606f44-a90c-4c1e-909d-37e57681a3cf>
@@ -72,6 +62,13 @@
         :hasMusicBrainzID  "7d606f44-a90c-4c1e-909d-37e57681a3cf" ;
         :hasName           "Tommy Potter" ;
         owl:sameAs         <https://musicbrainz.org/artist/7d606f44-a90c-4c1e-909d-37e57681a3cf> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "trumpet" ;
+        :hasMusicBrainzID  "1c8f9780-2f16-4891-b66d-bb7aa0820dbd" ;
+        :hasName           "trumpet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> .
 
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
@@ -90,12 +87,15 @@
         :hasName           "Charlie Parker" ;
         owl:sameAs         <https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312> .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
-        rdf:type           :MusicalInstrument ;
-        rdfs:label         "trumpet" ;
-        :hasMusicBrainzID  "1c8f9780-2f16-4891-b66d-bb7aa0820dbd" ;
-        :hasName           "trumpet" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd> .
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1947-10-28" ;
+                     :hasIntervalStartDate  "1947-10-28"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6e8c9071-6cf0-4592-b13f-693cae9b6669> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7d606f44-a90c-4c1e-909d-37e57681a3cf> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/9c977091-b27a-4a0e-b54e-b5ab89420e22>
         rdf:type           :MusicalInstrument ;

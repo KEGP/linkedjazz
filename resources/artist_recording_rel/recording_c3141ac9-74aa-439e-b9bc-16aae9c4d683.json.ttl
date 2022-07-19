@@ -15,7 +15,7 @@
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/6505f98c-f698-4406-8bf4-8ca43d05c36f>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/f0707f1d-55e1-46b6-8a9c-05d508e09a73>
@@ -45,8 +45,8 @@
                      :hasIntervalStartDate  "1954-12-23"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/48eaf8a1-6e44-488c-a91a-736867f1ba50> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787>
 ] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
@@ -63,18 +63,18 @@
         :hasName           "Percy Heath" ;
         owl:sameAs         <https://musicbrainz.org/artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> .
 
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f0707f1d-55e1-46b6-8a9c-05d508e09a73>
-] .
-
 <http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787>
         rdf:type           :MusicalInstrument ;
         rdfs:label         "vibraphone" ;
         :hasMusicBrainzID  "799af440-c0e7-4d8f-83d5-ecfee8b25787" ;
         :hasName           "vibraphone" ;
         owl:sameAs         <https://musicbrainz.org/instrument/799af440-c0e7-4d8f-83d5-ecfee8b25787> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/f0707f1d-55e1-46b6-8a9c-05d508e09a73>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/2b2a46f1-45af-4fd7-b213-86bdbf0a9662>
         rdf:type           :ArtistPerson ;
@@ -89,8 +89,8 @@
                      :hasIntervalStartDate  "1954-12-23"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
 ] .
 
 [ rdf:type         :ArtistPerformanceInRecording ;
@@ -99,14 +99,8 @@
                      :hasIntervalStartDate  "1954-12-23"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/534362cd-66ed-45a8-9cba-b847dbf75b6f> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/6505f98c-f698-4406-8bf4-8ca43d05c36f>
-] .
-
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2b2a46f1-45af-4fd7-b213-86bdbf0a9662>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
 ] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/6505f98c-f698-4406-8bf4-8ca43d05c36f>
@@ -122,16 +116,15 @@
                      :hasIntervalStartDate  "1954-12-23"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/799af440-c0e7-4d8f-83d5-ecfee8b25787>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/48eaf8a1-6e44-488c-a91a-736867f1ba50> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
 ] .
 
-<http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5>
-        rdf:type           :ArtistPerson ;
-        rdfs:label         "John Lewis" ;
-        :hasMusicBrainzID  "be347fef-e406-4c1b-8698-669d71b68bc5" ;
-        :hasName           "John Lewis" ;
-        owl:sameAs         <https://musicbrainz.org/artist/be347fef-e406-4c1b-8698-669d71b68bc5> .
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/4336ca2a-7173-4030-a7ce-5a87fb56d174> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2b2a46f1-45af-4fd7-b213-86bdbf0a9662>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/2e38e1de-2890-4620-8467-5b0bb4641cb9>
         rdf:type           :ArtistPerson ;
@@ -139,6 +132,13 @@
         :hasMusicBrainzID  "2e38e1de-2890-4620-8467-5b0bb4641cb9" ;
         :hasName           "Milt Jackson" ;
         owl:sameAs         <https://musicbrainz.org/artist/2e38e1de-2890-4620-8467-5b0bb4641cb9> .
+
+<http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "John Lewis" ;
+        :hasMusicBrainzID  "be347fef-e406-4c1b-8698-669d71b68bc5" ;
+        :hasName           "John Lewis" ;
+        owl:sameAs         <https://musicbrainz.org/artist/be347fef-e406-4c1b-8698-669d71b68bc5> .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
         rdf:type           :MusicalInstrument ;

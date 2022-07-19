@@ -9,37 +9,10 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a3a726c-2fa7-4ec3-ae15-5dce6b1590bc> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/258c295b-bae6-433b-955b-b590fe4a571d> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-        a                  :RelationBetweenArtistsType ;
-        rdfs:label         "member of band" ;
-        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
-
-<http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0>
-        a                  :Band ;
-        rdfs:label         "King Oliver and His Creole Jazz Band" ;
-        :hasMusicBrainzID  "cd05eca7-ad38-456c-94c7-f17c9b15c5d0" ;
-        :hasName           "King Oliver and His Creole Jazz Band" ;
-        owl:sameAs         <https://musicbrainz.org/artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a                      dul:TimeInterval ;
@@ -50,9 +23,15 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/66fc5e06-25be-4070-8812-aac282a347eb> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/258c295b-bae6-433b-955b-b590fe4a571d> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -66,6 +45,27 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2a3a726c-2fa7-4ec3-ae15-5dce6b1590bc> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0>
+        a                  :Band ;
+        rdfs:label         "King Oliver and His Creole Jazz Band" ;
+        :hasMusicBrainzID  "cd05eca7-ad38-456c-94c7-f17c9b15c5d0" ;
+        :hasName           "King Oliver and His Creole Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
@@ -73,7 +73,7 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/66fc5e06-25be-4070-8812-aac282a347eb> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .

@@ -10,13 +10,6 @@
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/73b71d3b-388a-3b5b-8f19-33f96ee15f8d> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/73b71d3b-388a-3b5b-8f19-33f96ee15f8d> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
@@ -27,6 +20,13 @@
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/73b71d3b-388a-3b5b-8f19-33f96ee15f8d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312>
         a                  :ArtistPerson ;

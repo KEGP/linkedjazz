@@ -7,20 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/ad318e8e-09e5-3fb7-930d-9f8a3de8e65a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/ad318e8e-09e5-3fb7-930d-9f8a3de8e65a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
         rdfs:label         "composer" ;
@@ -35,9 +21,23 @@
         :hasName           "Duke Ellington" ;
         owl:sameAs         <https://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> .
 
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/ad318e8e-09e5-3fb7-930d-9f8a3de8e65a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
 <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
         a                  :RoleInWork ;
         rdfs:label         "lyricist" ;
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
         :hasName           "lyricist" ;
         owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/ad318e8e-09e5-3fb7-930d-9f8a3de8e65a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

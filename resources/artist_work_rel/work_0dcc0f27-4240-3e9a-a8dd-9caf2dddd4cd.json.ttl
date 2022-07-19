@@ -10,8 +10,8 @@
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/0dcc0f27-4240-3e9a-a8dd-9caf2dddd4cd> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/25cf5731-bed9-4604-97a4-8b9655de1a30> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
@@ -28,13 +28,6 @@
         :hasName           "Benny Carter" ;
         owl:sameAs         <https://musicbrainz.org/artist/25cf5731-bed9-4604-97a4-8b9655de1a30> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/0dcc0f27-4240-3e9a-a8dd-9caf2dddd4cd> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/3fed4b6e-ecbf-432e-93f5-2ae4b49f2a1d>
         a                  :ArtistPerson ;
         rdfs:label         "Spencer Williams" ;
@@ -48,3 +41,10 @@
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
         :hasName           "lyricist" ;
         owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/0dcc0f27-4240-3e9a-a8dd-9caf2dddd4cd> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/25cf5731-bed9-4604-97a4-8b9655de1a30> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

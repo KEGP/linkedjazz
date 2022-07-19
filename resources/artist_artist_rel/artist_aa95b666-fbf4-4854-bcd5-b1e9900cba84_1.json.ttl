@@ -26,19 +26,19 @@
         :hasMusicBrainzID  "249fc24f-d573-4290-9d74-0547712d1f1e" ;
         owl:sameAs         <https://musicbrainz.org/relationship/249fc24f-d573-4290-9d74-0547712d1f1e> .
 
-<http://localhost:8080/resource/kejazz/Artist/88003f59-44ba-4841-a404-12d70804a077>
-        a                  :ArtistPerson ;
-        rdfs:label         "William Russo" ;
-        :hasMusicBrainzID  "88003f59-44ba-4841-a404-12d70804a077" ;
-        :hasName           "William Russo" ;
-        owl:sameAs         <https://musicbrainz.org/artist/88003f59-44ba-4841-a404-12d70804a077> .
-
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6532800a-a00f-424e-8328-36c7c1c864cc> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/88003f59-44ba-4841-a404-12d70804a077> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
 ] .
+
+<http://localhost:8080/resource/kejazz/Artist/88003f59-44ba-4841-a404-12d70804a077>
+        a                  :ArtistPerson ;
+        rdfs:label         "William Russo" ;
+        :hasMusicBrainzID  "88003f59-44ba-4841-a404-12d70804a077" ;
+        :hasName           "William Russo" ;
+        owl:sameAs         <https://musicbrainz.org/artist/88003f59-44ba-4841-a404-12d70804a077> .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;

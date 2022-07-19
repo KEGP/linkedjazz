@@ -14,16 +14,16 @@
         :hasName           "Jelly Roll Morton" ;
         owl:sameAs         <https://musicbrainz.org/artist/3d094919-071f-4070-95dc-e1f350e4a5f3> .
 
-<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        a                  :RoleInWork ;
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/097a47db-97fe-3c26-beee-0a2fd0a3fa08> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .

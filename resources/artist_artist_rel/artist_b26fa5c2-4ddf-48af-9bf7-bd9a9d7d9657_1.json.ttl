@@ -7,15 +7,9 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-        a                  :RelationBetweenArtistsType ;
-        rdfs:label         "member of band" ;
-        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
-
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/b482412e-4ca7-4adf-95e3-3cd2270862e7> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/216b558a-3909-4ea5-9364-7c7c1f9e965d> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -27,23 +21,15 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/055cdea1-dd8b-41f4-a8a7-d709db843e5c> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-<http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920>
-        a                  :Band ;
-        rdfs:label         "Jimmie Lunceford and His Orchestra" ;
-        :hasMusicBrainzID  "1f814c85-9602-4235-946b-ea1b2d1f3920" ;
-        :hasName           "Jimmie Lunceford and His Orchestra" ;
-        owl:sameAs         <https://musicbrainz.org/artist/1f814c85-9602-4235-946b-ea1b2d1f3920> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/912bf536-ed32-460c-b345-18981809780b> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -57,14 +43,28 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/cfef76c3-0c99-456d-b7e4-b892897ea1a1> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/b482412e-4ca7-4adf-95e3-3cd2270862e7> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/216b558a-3909-4ea5-9364-7c7c1f9e965d> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/912bf536-ed32-460c-b345-18981809780b> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920>
+        a                  :Band ;
+        rdfs:label         "Jimmie Lunceford and His Orchestra" ;
+        :hasMusicBrainzID  "1f814c85-9602-4235-946b-ea1b2d1f3920" ;
+        :hasName           "Jimmie Lunceford and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1f814c85-9602-4235-946b-ea1b2d1f3920> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/cfef76c3-0c99-456d-b7e4-b892897ea1a1> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .

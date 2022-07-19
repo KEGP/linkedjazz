@@ -14,6 +14,13 @@
         :hasName           "Con Conrad" ;
         owl:sameAs         <https://musicbrainz.org/artist/e0d5ee4b-14af-42bc-8fd2-8a1ed84a592a> .
 
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5f2ffed7-6e8f-45b2-8a48-30fe87b50595> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/5f2ffed7-6e8f-45b2-8a48-30fe87b50595>
         a                  :ArtistPerson ;
         rdfs:label         "J. Russel Robinson" ;
@@ -21,19 +28,19 @@
         :hasName           "J. Russel Robinson" ;
         owl:sameAs         <https://musicbrainz.org/artist/5f2ffed7-6e8f-45b2-8a48-30fe87b50595> .
 
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a1fc8ae-c8a3-4750-a26e-8faeed80140c> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
         rdfs:label         "composer" ;
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/7a1fc8ae-c8a3-4750-a26e-8faeed80140c>
         a                  :ArtistPerson ;
@@ -45,8 +52,8 @@
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e0d5ee4b-14af-42bc-8fd2-8a1ed84a592a> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff>
@@ -55,13 +62,6 @@
         :hasMusicBrainzID  "c0eea86f-4f42-4439-a2d4-3a50fa5241ff" ;
         :hasName           "Joe Young" ;
         owl:sameAs         <https://musicbrainz.org/artist/c0eea86f-4f42-4439-a2d4-3a50fa5241ff> .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a1fc8ae-c8a3-4750-a26e-8faeed80140c> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
 
 <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
         a                  :RoleInWork ;
@@ -73,6 +73,6 @@
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/91a3d077-d8eb-4b99-bc8f-705854180a62> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/5f2ffed7-6e8f-45b2-8a48-30fe87b50595> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e0d5ee4b-14af-42bc-8fd2-8a1ed84a592a> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .

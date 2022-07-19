@@ -15,6 +15,13 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/981b9396-fca8-4297-8d97-4421467eab6d> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c42dea7-552b-4cea-9a4d-fa6e6c2138ae> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
@@ -33,10 +40,3 @@
         :hasMusicBrainzID  "41e2d679-43a3-4b9b-8469-ce748ad7b1ca" ;
         :hasName           "The Boswell Sisters" ;
         owl:sameAs         <https://musicbrainz.org/artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/981b9396-fca8-4297-8d97-4421467eab6d> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .

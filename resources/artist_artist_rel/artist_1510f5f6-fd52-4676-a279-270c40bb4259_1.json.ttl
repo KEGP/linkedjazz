@@ -10,24 +10,14 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b3efcf41-d753-4a6a-b4f2-62e7580b1d9a> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/2c0f3197-b906-4d44-98d2-99d20db45506> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ae0e951d-fa75-431b-8494-815ff3414246> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1959-09" ;
-                           :hasIntervalStartDate  "1958-09"
-                         ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f137837b-fa55-48d1-8c85-f13961b3ac77> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b3efcf41-d753-4a6a-b4f2-62e7580b1d9a> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -44,48 +34,6 @@
         :hasName           "Cannonball Adderley" ;
         owl:sameAs         <https://musicbrainz.org/artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> .
 
-<http://localhost:8080/resource/kejazz/Artist/19a4c591-7a8d-4792-b465-6955346be1df>
-        a                  :Band ;
-        rdfs:label         "The Cannonball Adderley Quintet" ;
-        :hasMusicBrainzID  "19a4c591-7a8d-4792-b465-6955346be1df" ;
-        :hasName           "The Cannonball Adderley Quintet" ;
-        owl:sameAs         <https://musicbrainz.org/artist/19a4c591-7a8d-4792-b465-6955346be1df> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/19a4c591-7a8d-4792-b465-6955346be1df> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-<http://localhost:8080/resource/kejazz/Artist/93be8f4b-f0d2-464d-aea0-3ddfc7c4456b>
-        a                  :Band ;
-        rdfs:label         "Cannonball Adderley Sextet" ;
-        :hasMusicBrainzID  "93be8f4b-f0d2-464d-aea0-3ddfc7c4456b" ;
-        :hasName           "Cannonball Adderley Sextet" ;
-        owl:sameAs         <https://musicbrainz.org/artist/93be8f4b-f0d2-464d-aea0-3ddfc7c4456b> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d0bbc1e1-4324-41b2-8e64-99dedf1e34a7> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/2c0f3197-b906-4d44-98d2-99d20db45506> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-<http://localhost:8080/resource/kejazz/Artist/d0bbc1e1-4324-41b2-8e64-99dedf1e34a7>
-        a                  :Band ;
-        rdfs:label         "Cannonball Adderley Quartet" ;
-        :hasMusicBrainzID  "d0bbc1e1-4324-41b2-8e64-99dedf1e34a7" ;
-        :hasName           "Cannonball Adderley Quartet" ;
-        owl:sameAs         <https://musicbrainz.org/artist/d0bbc1e1-4324-41b2-8e64-99dedf1e34a7> .
-
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a                      dul:TimeInterval ;
                            :hasIntervalEndDate    "1975-08-08" ;
@@ -96,10 +44,31 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
 ] .
 
+<http://localhost:8080/resource/kejazz/Artist/19a4c591-7a8d-4792-b465-6955346be1df>
+        a                  :Band ;
+        rdfs:label         "The Cannonball Adderley Quintet" ;
+        :hasMusicBrainzID  "19a4c591-7a8d-4792-b465-6955346be1df" ;
+        :hasName           "The Cannonball Adderley Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/19a4c591-7a8d-4792-b465-6955346be1df> .
+
+<http://localhost:8080/resource/kejazz/Artist/93be8f4b-f0d2-464d-aea0-3ddfc7c4456b>
+        a                  :Band ;
+        rdfs:label         "Cannonball Adderley Sextet" ;
+        :hasMusicBrainzID  "93be8f4b-f0d2-464d-aea0-3ddfc7c4456b" ;
+        :hasName           "Cannonball Adderley Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/93be8f4b-f0d2-464d-aea0-3ddfc7c4456b> .
+
+<http://localhost:8080/resource/kejazz/Artist/d0bbc1e1-4324-41b2-8e64-99dedf1e34a7>
+        a                  :Band ;
+        rdfs:label         "Cannonball Adderley Quartet" ;
+        :hasMusicBrainzID  "d0bbc1e1-4324-41b2-8e64-99dedf1e34a7" ;
+        :hasName           "Cannonball Adderley Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d0bbc1e1-4324-41b2-8e64-99dedf1e34a7> .
+
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93be8f4b-f0d2-464d-aea0-3ddfc7c4456b> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/19a4c591-7a8d-4792-b465-6955346be1df> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
@@ -116,11 +85,28 @@
         :hasName           "Kenny Dorham Septet" ;
         owl:sameAs         <https://musicbrainz.org/artist/2c0f3197-b906-4d44-98d2-99d20db45506> .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1959-09" ;
+                           :hasIntervalStartDate  "1958-09"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f137837b-fa55-48d1-8c85-f13961b3ac77> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "is person" ;
         :hasMusicBrainzID  "dd9886f2-1dfe-4270-97db-283f6839a666" ;
         owl:sameAs         <https://musicbrainz.org/relationship/dd9886f2-1dfe-4270-97db-283f6839a666> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d0bbc1e1-4324-41b2-8e64-99dedf1e34a7> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/b3efcf41-d753-4a6a-b4f2-62e7580b1d9a>
         a                  :Band ;
@@ -128,6 +114,20 @@
         :hasMusicBrainzID  "b3efcf41-d753-4a6a-b4f2-62e7580b1d9a" ;
         :hasName           "Cannonball Adderley All-Stars" ;
         owl:sameAs         <https://musicbrainz.org/artist/b3efcf41-d753-4a6a-b4f2-62e7580b1d9a> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93be8f4b-f0d2-464d-aea0-3ddfc7c4456b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ae0e951d-fa75-431b-8494-815ff3414246> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/f137837b-fa55-48d1-8c85-f13961b3ac77>
         a                  :Band ;

@@ -38,6 +38,13 @@
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
 ] .
 
+<http://localhost:8080/resource/kejazz/RoleInWork/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
+        a                  :RoleInWork ;
+        rdfs:label         "arranger" ;
+        :hasMusicBrainzID  "d3fd781c-5894-47e2-8c12-86cc0e2c8d08" ;
+        :hasName           "arranger" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> .
+
 [ a                :ArtistContributionToWork ;
   :atTime          [ a                      dul:TimeInterval ;
                      :hasIntervalEndDate    "1928" ;
@@ -47,10 +54,3 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/744fa1ae-051c-463c-957a-25a4ddc01c2f> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
-
-<http://localhost:8080/resource/kejazz/RoleInWork/d3fd781c-5894-47e2-8c12-86cc0e2c8d08>
-        a                  :RoleInWork ;
-        rdfs:label         "arranger" ;
-        :hasMusicBrainzID  "d3fd781c-5894-47e2-8c12-86cc0e2c8d08" ;
-        :hasName           "arranger" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08> .

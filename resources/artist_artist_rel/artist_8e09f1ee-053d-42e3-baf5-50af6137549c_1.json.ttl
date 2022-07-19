@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f560eccb-fa98-46a8-9290-93ff6f89b16c> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/0f50f321-039e-405f-87d7-88c039f73abd> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "member of band" ;
@@ -26,6 +19,13 @@
         :hasMusicBrainzID  "0f50f321-039e-405f-87d7-88c039f73abd" ;
         :hasName           "Red Nichols and His Five Pennies" ;
         owl:sameAs         <https://musicbrainz.org/artist/0f50f321-039e-405f-87d7-88c039f73abd> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f560eccb-fa98-46a8-9290-93ff6f89b16c> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/0f50f321-039e-405f-87d7-88c039f73abd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;

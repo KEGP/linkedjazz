@@ -7,16 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1988-03-22" ;
-                           :hasIntervalStartDate  "1962"
-                         ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f0cc911a-0208-47bb-8cd5-fbe70d610c84> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
-] .
-
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "member of band" ;
@@ -30,13 +20,6 @@
         :hasName           "The Gil Evans Orchestra" ;
         owl:sameAs         <https://musicbrainz.org/artist/2bcad36b-fd68-49b1-826e-d16e404c7e1b> .
 
-<http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6>
-        a                  :ArtistPerson ;
-        rdfs:label         "Gil Evans" ;
-        :hasMusicBrainzID  "83b1d510-c4ae-485b-91bf-c69b63044dd6" ;
-        :hasName           "Gil Evans" ;
-        owl:sameAs         <https://musicbrainz.org/artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> .
-
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
@@ -44,11 +27,35 @@
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
 ] .
 
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1988-03-22" ;
+                           :hasIntervalStartDate  "1962"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f0cc911a-0208-47bb-8cd5-fbe70d610c84> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Gil Evans" ;
+        :hasMusicBrainzID  "83b1d510-c4ae-485b-91bf-c69b63044dd6" ;
+        :hasName           "Gil Evans" ;
+        owl:sameAs         <https://musicbrainz.org/artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> .
+
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "parent" ;
         :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
         owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/2bcad36b-fd68-49b1-826e-d16e404c7e1b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
 
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
         a                  :RelationBetweenArtistsType ;
@@ -62,10 +69,3 @@
         :hasMusicBrainzID  "8d296b89-226e-493f-b26e-433812ceff88" ;
         :hasName           "Noah Evans" ;
         owl:sameAs         <https://musicbrainz.org/artist/8d296b89-226e-493f-b26e-433812ceff88> .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/83b1d510-c4ae-485b-91bf-c69b63044dd6> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/2bcad36b-fd68-49b1-826e-d16e404c7e1b> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .

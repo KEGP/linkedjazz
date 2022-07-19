@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/67ec74fe-0e96-4e3d-96a7-66f3736e0ac5> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/67ec74fe-0e96-4e3d-96a7-66f3736e0ac5>
         a                  :ArtistPerson ;
         rdfs:label         "Frank Paparelli" ;
@@ -32,6 +25,13 @@
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/aa7d6c10-c7a8-3eb5-b4b7-4de6a05d904e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/67ec74fe-0e96-4e3d-96a7-66f3736e0ac5> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
 

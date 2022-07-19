@@ -7,19 +7,19 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/82953e0d-464a-4fb8-80fc-78dbf8b49b1b>
         a                  :ArtistPerson ;
         rdfs:label         "DuBose Heyward" ;
         :hasMusicBrainzID  "82953e0d-464a-4fb8-80fc-78dbf8b49b1b" ;
         :hasName           "DuBose Heyward" ;
         owl:sameAs         <https://musicbrainz.org/artist/82953e0d-464a-4fb8-80fc-78dbf8b49b1b> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
 
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
@@ -28,17 +28,10 @@
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
-<http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158>
-        a                  :ArtistPerson ;
-        rdfs:label         "George Gershwin" ;
-        :hasMusicBrainzID  "65744963-191a-44ef-a3c7-b693a808a158" ;
-        :hasName           "George Gershwin" ;
-        owl:sameAs         <https://musicbrainz.org/artist/65744963-191a-44ef-a3c7-b693a808a158> .
-
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/82953e0d-464a-4fb8-80fc-78dbf8b49b1b> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bf23ae35-d26d-4180-b7da-7fc9841b2cd9> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .
 
@@ -49,12 +42,12 @@
         :hasName           "Ira Gershwin" ;
         owl:sameAs         <https://musicbrainz.org/artist/509086c2-9cc8-4e77-89e9-322e34240ffc> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/509086c2-9cc8-4e77-89e9-322e34240ffc> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .
+<http://localhost:8080/resource/kejazz/Artist/65744963-191a-44ef-a3c7-b693a808a158>
+        a                  :ArtistPerson ;
+        rdfs:label         "George Gershwin" ;
+        :hasMusicBrainzID  "65744963-191a-44ef-a3c7-b693a808a158" ;
+        :hasName           "George Gershwin" ;
+        owl:sameAs         <https://musicbrainz.org/artist/65744963-191a-44ef-a3c7-b693a808a158> .
 
 <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
         a                  :RoleInWork ;
@@ -62,6 +55,13 @@
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
         :hasName           "lyricist" ;
         owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/509086c2-9cc8-4e77-89e9-322e34240ffc> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
 
 <http://localhost:8080/resource/kejazz/Artist/bf23ae35-d26d-4180-b7da-7fc9841b2cd9>
         a                  :ArtistPerson ;
@@ -73,6 +73,6 @@
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/986359d8-34ff-3fe2-84fe-155b5f167975> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/bf23ae35-d26d-4180-b7da-7fc9841b2cd9> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/82953e0d-464a-4fb8-80fc-78dbf8b49b1b> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
 ] .

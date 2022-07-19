@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/6a36f73c-3fc5-35ff-8275-4514a6887091> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
         rdfs:label         "composer" ;
@@ -27,3 +20,10 @@
         :hasMusicBrainzID  "3b47247e-5b57-49b6-a0ed-bad80243802a" ;
         :hasName           "Sonny Rollins" ;
         owl:sameAs         <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/6a36f73c-3fc5-35ff-8275-4514a6887091> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

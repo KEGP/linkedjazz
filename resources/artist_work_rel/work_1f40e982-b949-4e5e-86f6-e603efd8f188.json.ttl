@@ -21,6 +21,13 @@
         :hasName           "Oscar Brown Jr." ;
         owl:sameAs         <https://musicbrainz.org/artist/fad74575-8a16-4c50-99a5-5d20fda0bd46> .
 
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fad74575-8a16-4c50-99a5-5d20fda0bd46> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
+] .
+
 <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
         a                  :RoleInWork ;
         rdfs:label         "composer" ;
@@ -41,10 +48,3 @@
         :hasMusicBrainzID  "3e48faba-ec01-47fd-8e89-30e81161661c" ;
         :hasName           "lyricist" ;
         owl:sameAs         <https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c> .
-
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/fad74575-8a16-4c50-99a5-5d20fda0bd46> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/3e48faba-ec01-47fd-8e89-30e81161661c>
-] .

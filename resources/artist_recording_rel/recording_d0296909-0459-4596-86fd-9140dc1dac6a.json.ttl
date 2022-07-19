@@ -8,25 +8,12 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type  dul:TimeInterval ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d1ad5947-d4e1-48de-af5d-8879aaa7ca01>
-] .
-
 <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
         rdf:type           :MusicalInstrument ;
         rdfs:label         "drums (drum set)" ;
         :hasMusicBrainzID  "12092505-6ee1-46af-a15a-b5b468b6b155" ;
         :hasName           "drums (drum set)" ;
         owl:sameAs         <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155> .
-
-<http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065>
-        rdf:type           :ArtistPerson ;
-        rdfs:label         "Chet Baker" ;
-        :hasMusicBrainzID  "1ba1d493-7114-45e2-b163-a36d49a0c065" ;
-        :hasName           "Chet Baker" ;
-        owl:sameAs         <https://musicbrainz.org/artist/1ba1d493-7114-45e2-b163-a36d49a0c065> .
 
 <http://localhost:8080/resource/kejazz/Artist/699067a0-ae8c-45fc-82c1-6227d91f9bb4>
         rdf:type           :ArtistPerson ;
@@ -35,32 +22,12 @@
         :hasName           "Chico Hamilton" ;
         owl:sameAs         <https://musicbrainz.org/artist/699067a0-ae8c-45fc-82c1-6227d91f9bb4> .
 
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type               dul:TimeInterval ;
-                     :hasIntervalEndDate    "1952-10-16" ;
-                     :hasIntervalStartDate  "1952-10-15"
-                   ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/128eac4c-1724-4ea6-a7c9-c348e89235e1> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
-] .
-
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type               dul:TimeInterval ;
-                     :hasIntervalEndDate    "1952-10-16" ;
-                     :hasIntervalStartDate  "1952-10-15"
-                   ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/68f19808-1f7b-46d4-bd1d-71aaf0f6b267> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/d3a04358-70f8-4c43-b722-c3cf6cc218ae>
-] .
-
-<http://localhost:8080/resource/kejazz/Artist/d1ad5947-d4e1-48de-af5d-8879aaa7ca01>
+<http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065>
         rdf:type           :ArtistPerson ;
-        rdfs:label         "Stan Ross" ;
-        :hasMusicBrainzID  "d1ad5947-d4e1-48de-af5d-8879aaa7ca01" ;
-        :hasName           "Stan Ross" ;
-        owl:sameAs         <https://musicbrainz.org/artist/d1ad5947-d4e1-48de-af5d-8879aaa7ca01> .
+        rdfs:label         "Chet Baker" ;
+        :hasMusicBrainzID  "1ba1d493-7114-45e2-b163-a36d49a0c065" ;
+        :hasName           "Chet Baker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1ba1d493-7114-45e2-b163-a36d49a0c065> .
 
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
@@ -71,6 +38,13 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>
 ] .
+
+<http://localhost:8080/resource/kejazz/Artist/d1ad5947-d4e1-48de-af5d-8879aaa7ca01>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Stan Ross" ;
+        :hasMusicBrainzID  "d1ad5947-d4e1-48de-af5d-8879aaa7ca01" ;
+        :hasName           "Stan Ross" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d1ad5947-d4e1-48de-af5d-8879aaa7ca01> .
 
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
@@ -103,6 +77,39 @@
         :hasName           "bass" ;
         owl:sameAs         <https://musicbrainz.org/instrument/6505f98c-f698-4406-8bf4-8ca43d05c36f> .
 
+<http://localhost:8080/resource/kejazz/Artist/128eac4c-1724-4ea6-a7c9-c348e89235e1>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Bob Whitlock" ;
+        :hasMusicBrainzID  "128eac4c-1724-4ea6-a7c9-c348e89235e1" ;
+        :hasName           "Bob Whitlock" ;
+        owl:sameAs         <https://musicbrainz.org/artist/128eac4c-1724-4ea6-a7c9-c348e89235e1> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type  dul:TimeInterval ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d1ad5947-d4e1-48de-af5d-8879aaa7ca01>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1952-10-16" ;
+                     :hasIntervalStartDate  "1952-10-15"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/128eac4c-1724-4ea6-a7c9-c348e89235e1> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1952-10-16" ;
+                     :hasIntervalStartDate  "1952-10-15"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/d0296909-0459-4596-86fd-9140dc1dac6a> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/68f19808-1f7b-46d4-bd1d-71aaf0f6b267> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/d3a04358-70f8-4c43-b722-c3cf6cc218ae>
+] .
+
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
                      :hasIntervalEndDate    "1952-10-16" ;
@@ -112,13 +119,6 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/128eac4c-1724-4ea6-a7c9-c348e89235e1> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/6505f98c-f698-4406-8bf4-8ca43d05c36f>
 ] .
-
-<http://localhost:8080/resource/kejazz/Artist/128eac4c-1724-4ea6-a7c9-c348e89235e1>
-        rdf:type           :ArtistPerson ;
-        rdfs:label         "Bob Whitlock" ;
-        :hasMusicBrainzID  "128eac4c-1724-4ea6-a7c9-c348e89235e1" ;
-        :hasName           "Bob Whitlock" ;
-        owl:sameAs         <https://musicbrainz.org/artist/128eac4c-1724-4ea6-a7c9-c348e89235e1> .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
         rdf:type           :MusicalInstrument ;

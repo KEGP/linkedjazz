@@ -7,18 +7,18 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/53a329bb-ed63-42d0-aaaa-e33e5d2cb474> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
 <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
         a                  :RelationBetweenArtistsType ;
         rdfs:label         "member of band" ;
         :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
         owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197>
+        a                  :Band ;
+        rdfs:label         "Dexter Gordon Quartet" ;
+        :hasMusicBrainzID  "ce822195-459f-4d74-a4ae-d9e0ceacc197" ;
+        :hasName           "Dexter Gordon Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> .
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
@@ -29,14 +29,14 @@
 
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/90d5159c-3eb3-420d-8299-d4dd050ea0f5> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/53a329bb-ed63-42d0-aaaa-e33e5d2cb474> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
 
-<http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197>
-        a                  :Band ;
-        rdfs:label         "Dexter Gordon Quartet" ;
-        :hasMusicBrainzID  "ce822195-459f-4d74-a4ae-d9e0ceacc197" ;
-        :hasName           "Dexter Gordon Quartet" ;
-        owl:sameAs         <https://musicbrainz.org/artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> .
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/90d5159c-3eb3-420d-8299-d4dd050ea0f5> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

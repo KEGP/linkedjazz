@@ -7,13 +7,6 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-[ a                :ArtistContributionToWork ;
-  :atTime          [ a  dul:TimeInterval ] ;
-  :forWork         <http://localhost:8080/resource/kejazz/Work/09a5aad2-2c02-4315-8bfb-29351cdde2e3> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8dddb806-0971-4968-ac1d-68340402cd94> ;
-  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-] .
-
 <http://localhost:8080/resource/kejazz/Artist/8dddb806-0971-4968-ac1d-68340402cd94>
         a                  :ArtistPerson ;
         rdfs:label         "Cleo Henry" ;
@@ -41,3 +34,10 @@
         :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
         :hasName           "composer" ;
         owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/09a5aad2-2c02-4315-8bfb-29351cdde2e3> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/8dddb806-0971-4968-ac1d-68340402cd94> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

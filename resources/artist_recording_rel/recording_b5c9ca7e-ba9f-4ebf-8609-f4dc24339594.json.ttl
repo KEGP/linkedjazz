@@ -52,8 +52,18 @@
                      :hasIntervalStartDate  "1947-06-12"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/53a329bb-ed63-42d0-aaaa-e33e5d2cb474> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/90d5159c-3eb3-420d-8299-d4dd050ea0f5> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1947-06-12" ;
+                     :hasIntervalStartDate  "1947-06-12"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/60c34576-6819-4e75-9fa7-a734ef2ecd87> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
 ] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
@@ -69,8 +79,8 @@
                      :hasIntervalStartDate  "1947-06-12"
                    ] ;
   :forRecording    <http://localhost:8080/resource/kejazz/Recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/90d5159c-3eb3-420d-8299-d4dd050ea0f5> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/12092505-6ee1-46af-a15a-b5b468b6b155>
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/53a329bb-ed63-42d0-aaaa-e33e5d2cb474> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
 ] .
 
 <http://localhost:8080/resource/kejazz/Artist/60c34576-6819-4e75-9fa7-a734ef2ecd87>
@@ -79,16 +89,6 @@
         :hasMusicBrainzID  "60c34576-6819-4e75-9fa7-a734ef2ecd87" ;
         :hasName           "Red Callender" ;
         owl:sameAs         <https://musicbrainz.org/artist/60c34576-6819-4e75-9fa7-a734ef2ecd87> .
-
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type               dul:TimeInterval ;
-                     :hasIntervalEndDate    "1947-06-12" ;
-                     :hasIntervalStartDate  "1947-06-12"
-                   ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/b5c9ca7e-ba9f-4ebf-8609-f4dc24339594> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/60c34576-6819-4e75-9fa7-a734ef2ecd87> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/7bd32b95-416f-4244-a98b-1311ec69c7db>
-] .
 
 <http://localhost:8080/resource/kejazz/Artist/90d5159c-3eb3-420d-8299-d4dd050ea0f5>
         rdf:type           :ArtistPerson ;

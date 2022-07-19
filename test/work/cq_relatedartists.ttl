@@ -3,7 +3,7 @@
 @prefix kejazz: <http://localhost:8080/ontology/kejazz/> .
 
 ex:cq_relatedartists.ttl a owlunit:CompetencyQuestionVerification ;
- 	owlunit:hasCompetencyQuestion "Is the work known by some alias?" ;
+ 	owlunit:hasCompetencyQuestion "TBD" ;
  	owlunit:hasSPARQLUnitTest " PREFIX owlunit: <https://w3id.org/OWLunit/ontology/> PREFIX kejazz: <http://localhost:8080/ontology/kejazz/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?artistName ?roleName WHERE { BIND (<http://localhost:8080/resource/kejazz/Work/028fce1d-d787-3501-a6ad-cc572786abe1> as ?work) . ?contribution kejazz:forWork ?work ; kejazz:includesArtist ?artist . ?artist kejazz:hasName ?artistName . ?contribution kejazz:involvesRole ?role. ?role kejazz:hasName ?roleName . } " ;
 	owlunit:hasInputData <http://localhost:8080/sparql/db/query> ;
 	owlunit:hasInputTestDataCategory owlunit:SPARQLendpoint ;

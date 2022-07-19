@@ -15,6 +15,16 @@
         :hasName           "Johnny Dodds" ;
         owl:sameAs         <https://musicbrainz.org/artist/66fc5e06-25be-4070-8812-aac282a347eb> .
 
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-12-09" ;
+                     :hasIntervalStartDate  "1927-12-09"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ed5453e8-2013-49c2-a427-c9eb96bc0730> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+] .
+
 <http://localhost:8080/resource/kejazz/Artist/2a6f6ee8-a9cd-4826-9749-d0fe48fb49f7>
         rdf:type           :ArtistPerson ;
         rdfs:label         "Lil Hardin Armstrong" ;
@@ -36,20 +46,6 @@
         :hasName           "piano" ;
         owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
-        rdf:type           :MusicalInstrument ;
-        rdfs:label         "trombone" ;
-        :hasMusicBrainzID  "f6100277-c7b8-4c8d-aa26-d8cd014b6761" ;
-        :hasName           "trombone" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
-
-<http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
-        rdf:type           :MusicalInstrument ;
-        rdfs:label         "clarinet" ;
-        :hasMusicBrainzID  "08028095-6dae-4fe0-9f34-284fde19f29b" ;
-        :hasName           "clarinet" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/08028095-6dae-4fe0-9f34-284fde19f29b> .
-
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
                      :hasIntervalEndDate    "1927-12-09" ;
@@ -59,6 +55,13 @@
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2a6f6ee8-a9cd-4826-9749-d0fe48fb49f7> ;
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
 ] .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "trombone" ;
+        :hasMusicBrainzID  "f6100277-c7b8-4c8d-aa26-d8cd014b6761" ;
+        :hasName           "trombone" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761> .
 
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
@@ -70,39 +73,12 @@
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/f6100277-c7b8-4c8d-aa26-d8cd014b6761>
 ] .
 
-<http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+<http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
         rdf:type           :MusicalInstrument ;
-        rdfs:label         "cornet" ;
-        :hasMusicBrainzID  "257dad59-02e6-47d9-958a-659843737827" ;
-        :hasName           "cornet" ;
-        owl:sameAs         <https://musicbrainz.org/instrument/257dad59-02e6-47d9-958a-659843737827> .
-
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type               dul:TimeInterval ;
-                     :hasIntervalEndDate    "1927-12-09" ;
-                     :hasIntervalStartDate  "1927-12-09"
-                   ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ed5453e8-2013-49c2-a427-c9eb96bc0730> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/6bf88fc7-a235-4d95-a910-a4ce4a4853c6>
-] .
-
-[ rdf:type         :ArtistPerformanceInRecording ;
-  :atTime          [ rdf:type               dul:TimeInterval ;
-                     :hasIntervalEndDate    "1927-12-09" ;
-                     :hasIntervalStartDate  "1927-12-09"
-                   ] ;
-  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ed5453e8-2013-49c2-a427-c9eb96bc0730> ;
-  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
-  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
-] .
-
-<http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91>
-        rdf:type           :ArtistPerson ;
-        rdfs:label         "Johnny St. Cyr" ;
-        :hasMusicBrainzID  "7a281c93-adc9-4426-9331-f5e870162f91" ;
-        :hasName           "Johnny St. Cyr" ;
-        owl:sameAs         <https://musicbrainz.org/artist/7a281c93-adc9-4426-9331-f5e870162f91> .
+        rdfs:label         "clarinet" ;
+        :hasMusicBrainzID  "08028095-6dae-4fe0-9f34-284fde19f29b" ;
+        :hasName           "clarinet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/08028095-6dae-4fe0-9f34-284fde19f29b> .
 
 [ rdf:type         :ArtistPerformanceInRecording ;
   :atTime          [ rdf:type               dul:TimeInterval ;
@@ -114,12 +90,36 @@
   :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/08028095-6dae-4fe0-9f34-284fde19f29b>
 ] .
 
+<http://localhost:8080/resource/kejazz/MusicalInstrument/257dad59-02e6-47d9-958a-659843737827>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "cornet" ;
+        :hasMusicBrainzID  "257dad59-02e6-47d9-958a-659843737827" ;
+        :hasName           "cornet" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/257dad59-02e6-47d9-958a-659843737827> .
+
+<http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Johnny St. Cyr" ;
+        :hasMusicBrainzID  "7a281c93-adc9-4426-9331-f5e870162f91" ;
+        :hasName           "Johnny St. Cyr" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7a281c93-adc9-4426-9331-f5e870162f91> .
+
 <http://localhost:8080/resource/kejazz/Artist/d2cf1ea2-0dce-45ab-8fb4-5c4c81713b54>
         rdf:type           :ArtistPerson ;
         rdfs:label         "Kid Ory" ;
         :hasMusicBrainzID  "d2cf1ea2-0dce-45ab-8fb4-5c4c81713b54" ;
         :hasName           "Kid Ory" ;
         owl:sameAs         <https://musicbrainz.org/artist/d2cf1ea2-0dce-45ab-8fb4-5c4c81713b54> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1927-12-09" ;
+                     :hasIntervalStartDate  "1927-12-09"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/ed5453e8-2013-49c2-a427-c9eb96bc0730> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/6bf88fc7-a235-4d95-a910-a4ce4a4853c6>
+] .
 
 <http://localhost:8080/resource/kejazz/MusicalInstrument/6bf88fc7-a235-4d95-a910-a4ce4a4853c6>
         rdf:type           :MusicalInstrument ;

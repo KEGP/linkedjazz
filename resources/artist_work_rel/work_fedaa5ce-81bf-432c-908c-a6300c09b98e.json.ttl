@@ -7,19 +7,19 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
-<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
-        a                  :RoleInWork ;
-        rdfs:label         "composer" ;
-        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
-        :hasName           "composer" ;
-        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
-
 [ a                :ArtistContributionToWork ;
   :atTime          [ a  dul:TimeInterval ] ;
   :forWork         <http://localhost:8080/resource/kejazz/Work/fedaa5ce-81bf-432c-908c-a6300c09b98e> ;
   :includesArtist  <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> ;
   :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
 ] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
 
 <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339>
         a                  :ArtistPerson ;

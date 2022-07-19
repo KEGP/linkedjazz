@@ -8,11 +8,8 @@
 @prefix xyz:  <http://sparql.xyz/facade-x/data/> .
 
 [ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1928" ;
-                           :hasIntervalStartDate  "1927"
-                         ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91> ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a67b42cc-1dc6-482f-9998-086af20be905> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -26,23 +23,6 @@
 [ a                      :RelationBetweenArtists ;
   :atTime                [ a  dul:TimeInterval ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/b46e6ef5-0620-44a0-88e2-a2badb2ab203> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/b42869bb-c0ad-42ca-bc4a-c2a9501f8505> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a                      dul:TimeInterval ;
-                           :hasIntervalEndDate    "1928" ;
-                           :hasIntervalStartDate  "1927"
-                         ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5fae9c18-a94f-424e-99e0-2b4cc7be991e> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -72,7 +52,34 @@
                            :hasIntervalEndDate    "1928" ;
                            :hasIntervalStartDate  "1927"
                          ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928" ;
+                           :hasIntervalStartDate  "1927"
+                         ] ;
   :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/66fc5e06-25be-4070-8812-aac282a347eb> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1928" ;
+                           :hasIntervalStartDate  "1927"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/7a281c93-adc9-4426-9331-f5e870162f91> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/b42869bb-c0ad-42ca-bc4a-c2a9501f8505> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
@@ -89,14 +96,7 @@
                            :hasIntervalEndDate    "1928" ;
                            :hasIntervalStartDate  "1927"
                          ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> ;
-  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
-  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
-] .
-
-[ a                      :RelationBetweenArtists ;
-  :atTime                [ a  dul:TimeInterval ] ;
-  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/a67b42cc-1dc6-482f-9998-086af20be905> ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5fae9c18-a94f-424e-99e0-2b4cc7be991e> ;
   :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> ;
   dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
 ] .
