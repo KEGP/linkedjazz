@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/ef49a738-323e-410d-9c4b-32f326e09661>
+        a                      :Release ;
+        rdfs:label             "The Majestic Years" ;
+        :hasASIN               "B00002739B" ;
+        :hasBarcode            "5022810154129" ;
+        :hasMusicBrainzID      "ef49a738-323e-410d-9c4b-32f326e09661" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Majestic Years" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate        "1996-05-01" ;
+        owl:sameAs             <https://www.amazon.com/dp/B00002739B> , <https://www.amazon.co.uk/gp/product/B00002739B> , <https://musicbrainz.org/release/ef49a738-323e-410d-9c4b-32f326e09661> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .

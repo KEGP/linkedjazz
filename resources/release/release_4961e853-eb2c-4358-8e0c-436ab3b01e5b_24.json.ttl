@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/4961e853-eb2c-4358-8e0c-436ab3b01e5b>
+        a                      :Release ;
+        rdfs:label             "A Man Called Trane" ;
+        :hasMusicBrainzID      "4961e853-eb2c-4358-8e0c-436ab3b01e5b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "A Man Called Trane" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :releasedInDate        "2008" ;
+        owl:sameAs             <https://www.discogs.com/release/4233662> , <https://musicbrainz.org/release/4961e853-eb2c-4358-8e0c-436ab3b01e5b> .
+
+<http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Coltrane" ;
+        :hasMusicBrainzID  "b625448e-bf4a-41c3-a421-72ad46cdb831" ;
+        :hasName           "John Coltrane" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .

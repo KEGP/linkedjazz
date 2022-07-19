@@ -1,0 +1,32 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Five" ;
+        :hasMusicBrainzID  "cfedde14-91c5-46cb-b087-9f2da9bec194" ;
+        :hasName           "Louis Armstrong and His Hot Five" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cfedde14-91c5-46cb-b087-9f2da9bec194> .
+
+<http://localhost:8080/resource/kejazz/Release/b42fffb2-6c48-4f5d-820e-1cbd36fa2ce1>
+        a                      :Release ;
+        rdfs:label             "Potato Head Blues / Put 'em Down Blues" ;
+        :hasMusicBrainzID      "b42fffb2-6c48-4f5d-820e-1cbd36fa2ce1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Potato Head Blues / Put 'em Down Blues" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42> , <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+        :releasedInDate        "1927-10" ;
+        owl:sameAs             <https://musicbrainz.org/release/b42fffb2-6c48-4f5d-820e-1cbd36fa2ce1> , <https://www.discogs.com/release/14476218> .
+
+<http://localhost:8080/resource/kejazz/Artist/49905118-45d2-4b09-9643-a40b87d0ce42>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Seven" ;
+        :hasMusicBrainzID  "49905118-45d2-4b09-9643-a40b87d0ce42" ;
+        :hasName           "Louis Armstrong and His Hot Seven" ;
+        owl:sameAs         <https://musicbrainz.org/artist/49905118-45d2-4b09-9643-a40b87d0ce42> .

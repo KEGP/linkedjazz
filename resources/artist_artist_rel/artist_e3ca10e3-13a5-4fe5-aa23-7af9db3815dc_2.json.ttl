@@ -1,0 +1,160 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a94f0e68-6a5a-4a39-928d-5910e482d95c>
+        a                  :Band ;
+        rdfs:label         "Charlie Parker Sextet" ;
+        :hasMusicBrainzID  "a94f0e68-6a5a-4a39-928d-5910e482d95c" ;
+        :hasName           "Charlie Parker Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a94f0e68-6a5a-4a39-928d-5910e482d95c> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/5b86bf0c-d4f9-4529-a258-5384865a7195> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/609c63b7-abed-42f0-b23d-a7f7c3c4eba9> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/9d106197-1f1a-488c-8ca5-a3e5f1c87fb0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/dfbe1dfb-5d43-4ca0-b412-2db63c0c0093>
+        a                  :Band ;
+        rdfs:label         "J. J. Johnson Sextet" ;
+        :hasMusicBrainzID  "dfbe1dfb-5d43-4ca0-b412-2db63c0c0093" ;
+        :hasName           "J. J. Johnson Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dfbe1dfb-5d43-4ca0-b412-2db63c0c0093> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a94f0e68-6a5a-4a39-928d-5910e482d95c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6b3b80ee-42cf-43b9-8f1e-9b23400426f1> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/16d2b8e6-8930-4c9e-856f-e6d096479350>
+        a                  :Band ;
+        rdfs:label         "The Miles Davis Nonet" ;
+        :hasMusicBrainzID  "16d2b8e6-8930-4c9e-856f-e6d096479350" ;
+        :hasName           "The Miles Davis Nonet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/16d2b8e6-8930-4c9e-856f-e6d096479350> .
+
+<http://localhost:8080/resource/kejazz/Artist/609c63b7-abed-42f0-b23d-a7f7c3c4eba9>
+        a                  :Band ;
+        rdfs:label         "J. J. Johnson and His Orchestra" ;
+        :hasMusicBrainzID  "609c63b7-abed-42f0-b23d-a7f7c3c4eba9" ;
+        :hasName           "J. J. Johnson and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/609c63b7-abed-42f0-b23d-a7f7c3c4eba9> .
+
+<http://localhost:8080/resource/kejazz/Artist/607d7275-2b92-49e5-a7ee-32f9cc29b076>
+        a                  :Band ;
+        rdfs:label         "Miles Davis All Stars" ;
+        :hasMusicBrainzID  "607d7275-2b92-49e5-a7ee-32f9cc29b076" ;
+        :hasName           "Miles Davis All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> .
+
+<http://localhost:8080/resource/kejazz/Artist/bef1290e-c8f4-4cd8-a002-6d2cf8efaa4e>
+        a                  :Band ;
+        rdfs:label         "The J.J. Johnson Quintet" ;
+        :hasMusicBrainzID  "bef1290e-c8f4-4cd8-a002-6d2cf8efaa4e" ;
+        :hasName           "The J.J. Johnson Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bef1290e-c8f4-4cd8-a002-6d2cf8efaa4e> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dfbe1dfb-5d43-4ca0-b412-2db63c0c0093> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/bef1290e-c8f4-4cd8-a002-6d2cf8efaa4e> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/607d7275-2b92-49e5-a7ee-32f9cc29b076> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+<http://localhost:8080/resource/kejazz/Artist/5b86bf0c-d4f9-4529-a258-5384865a7195>
+        a                  :ArtistPerson ;
+        rdfs:label         "Kevin Johnson" ;
+        :hasMusicBrainzID  "5b86bf0c-d4f9-4529-a258-5384865a7195" ;
+        :hasName           "Kevin Johnson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5b86bf0c-d4f9-4529-a258-5384865a7195> .
+
+<http://localhost:8080/resource/kejazz/Artist/9d106197-1f1a-488c-8ca5-a3e5f1c87fb0>
+        a                  :Band ;
+        rdfs:label         "Jay and Kai Quintet" ;
+        :hasMusicBrainzID  "9d106197-1f1a-488c-8ca5-a3e5f1c87fb0" ;
+        :hasName           "Jay and Kai Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9d106197-1f1a-488c-8ca5-a3e5f1c87fb0> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/06c6bd70-4e6d-47ed-be61-2c60e77f2627> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/6b3b80ee-42cf-43b9-8f1e-9b23400426f1>
+        a                  :Band ;
+        rdfs:label         "J.J. Johnson Quartet" ;
+        :hasMusicBrainzID  "6b3b80ee-42cf-43b9-8f1e-9b23400426f1" ;
+        :hasName           "J.J. Johnson Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6b3b80ee-42cf-43b9-8f1e-9b23400426f1> .
+
+<http://localhost:8080/resource/kejazz/Artist/06c6bd70-4e6d-47ed-be61-2c60e77f2627>
+        a                  :Band ;
+        rdfs:label         "Jay and Kai" ;
+        :hasMusicBrainzID  "06c6bd70-4e6d-47ed-be61-2c60e77f2627" ;
+        :hasName           "Jay and Kai" ;
+        owl:sameAs         <https://musicbrainz.org/artist/06c6bd70-4e6d-47ed-be61-2c60e77f2627> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/16d2b8e6-8930-4c9e-856f-e6d096479350> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

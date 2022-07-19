@@ -1,0 +1,166 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a418fc3c-ea4a-4d5b-aa86-5e612a1f5563>
+        a                  :Band ;
+        rdfs:label         "Summit Reunion" ;
+        :hasMusicBrainzID  "a418fc3c-ea4a-4d5b-aa86-5e612a1f5563" ;
+        :hasName           "Summit Reunion" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a418fc3c-ea4a-4d5b-aa86-5e612a1f5563> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b4535b28-39ba-4b4e-ade6-9366d470cfc0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d0b12e43-1e25-4f01-95eb-8290945db6a7> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/eed56c0e-cb7e-4c1f-9f54-35f5147fce0f>
+        a                  :Band ;
+        rdfs:label         "Zoot Sims Quartet" ;
+        :hasMusicBrainzID  "eed56c0e-cb7e-4c1f-9f54-35f5147fce0f" ;
+        :hasName           "Zoot Sims Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eed56c0e-cb7e-4c1f-9f54-35f5147fce0f> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e5625a54-8ab1-4341-ac20-25e09864d6db> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/b4535b28-39ba-4b4e-ade6-9366d470cfc0>
+        a                  :Band ;
+        rdfs:label         "Kalua Beach Boys" ;
+        :hasMusicBrainzID  "b4535b28-39ba-4b4e-ade6-9366d470cfc0" ;
+        :hasName           "Kalua Beach Boys" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b4535b28-39ba-4b4e-ade6-9366d470cfc0> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/eed56c0e-cb7e-4c1f-9f54-35f5147fce0f> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/d59f174f-22a4-4622-a6ef-6dfc152646c4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Rod Gregory" ;
+        :hasMusicBrainzID  "d59f174f-22a4-4622-a6ef-6dfc152646c4" ;
+        :hasName           "Rod Gregory" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d59f174f-22a4-4622-a6ef-6dfc152646c4> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d59f174f-22a4-4622-a6ef-6dfc152646c4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/ce0e8d45-542c-4dd6-b837-2d1822647d68>
+        a                  :Band ;
+        rdfs:label         "Dick Hyman & His Orchestra" ;
+        :hasMusicBrainzID  "ce0e8d45-542c-4dd6-b837-2d1822647d68" ;
+        :hasName           "Dick Hyman & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ce0e8d45-542c-4dd6-b837-2d1822647d68> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/36b5a390-889d-4565-bf6c-8c1ed5f286d6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/92058046-f30f-40c7-b12b-e29b3e3daedc>
+        a                  :Band ;
+        rdfs:label         "Roy Eldridge Quintet" ;
+        :hasMusicBrainzID  "92058046-f30f-40c7-b12b-e29b3e3daedc" ;
+        :hasName           "Roy Eldridge Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/92058046-f30f-40c7-b12b-e29b3e3daedc> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ce0e8d45-542c-4dd6-b837-2d1822647d68> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/92058046-f30f-40c7-b12b-e29b3e3daedc> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/6513380f-8c66-49fa-8f16-63756c37c69d>
+        a                  :ArtistPerson ;
+        rdfs:label         "Judy Hyman" ;
+        :hasMusicBrainzID  "6513380f-8c66-49fa-8f16-63756c37c69d" ;
+        :hasName           "Judy Hyman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6513380f-8c66-49fa-8f16-63756c37c69d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6513380f-8c66-49fa-8f16-63756c37c69d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/e5625a54-8ab1-4341-ac20-25e09864d6db>
+        a                  :Band ;
+        rdfs:label         "Soprano Summit" ;
+        :hasMusicBrainzID  "e5625a54-8ab1-4341-ac20-25e09864d6db" ;
+        :hasName           "Soprano Summit" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e5625a54-8ab1-4341-ac20-25e09864d6db> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/dd9886f2-1dfe-4270-97db-283f6839a666>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "is person" ;
+        :hasMusicBrainzID  "dd9886f2-1dfe-4270-97db-283f6839a666" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/dd9886f2-1dfe-4270-97db-283f6839a666> .
+
+<http://localhost:8080/resource/kejazz/Artist/d0b12e43-1e25-4f01-95eb-8290945db6a7>
+        a                  :ArtistPerson ;
+        rdfs:label         "Richard Wayne" ;
+        :hasMusicBrainzID  "d0b12e43-1e25-4f01-95eb-8290945db6a7" ;
+        :hasName           "Richard Wayne" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d0b12e43-1e25-4f01-95eb-8290945db6a7> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a418fc3c-ea4a-4d5b-aa86-5e612a1f5563> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/36b5a390-889d-4565-bf6c-8c1ed5f286d6>
+        a                  :Band ;
+        rdfs:label         "The Dick Hyman Trio" ;
+        :hasMusicBrainzID  "36b5a390-889d-4565-bf6c-8c1ed5f286d6" ;
+        :hasName           "The Dick Hyman Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/36b5a390-889d-4565-bf6c-8c1ed5f286d6> .

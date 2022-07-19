@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Miles Davis" ;
+        :hasAlias          "Miles Favis" , "Miles Dewey Davis III." , "Майлз Дейвис" , "Miles Davies" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/39e1719e-2604-4b59-b698-dab7caf85b33> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/dbacf2e3-7e3e-4cee-8804-999b109285fa> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00007619785" ;
+        :hasISNI           "000000012144707X" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1991-09-28" ;
+                             :hasIntervalStartDate  "1926-05-26"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "561d854a-6a28-4aa7-8c99-323e6ce46c2a" ;
+        :hasName           "Miles Davis" ;
+        owl:sameAs         <https://www.last.fm/music/Miles+Davis> , <http://all-blues.de/music/missing.htm> , <https://www.worldcat.org/identities/lccn-n50035608> , <https://itunes.apple.com/us/artist/id44984> , <https://www.discogs.com/artist/23755> , <https://commons.wikimedia.org/wiki/File:Miles_Davis_by_Palumbo.jpg> , <http://musicmoz.org/Bands_and_Artists/D/Davis,_Miles/> , <http://www.45worlds.com/tape/artist/miles-davis> , <https://en.wikipedia.org/wiki/Miles_Davis_discography> , <https://d-nb.info/gnd/118524046> , <https://twitter.com/milesdavis> , <https://rateyourmusic.com/artist/miles_davis> , <https://listen.tidal.com/artist/55> , <https://www.youtube.com/channel/UCIev2PktTH5mI-QlGmbUkiw> , <http://www.milesdavis.com/> , <http://viaf.org/viaf/97762193> , <http://www.45cat.com/artist/miles-davis> , <https://catalogue.bnf.fr/ark:/12148/cb13893030g> , <https://www.wikidata.org/wiki/Q93341> , <https://myspace.com/milesdavis> , <http://www.45worlds.com/vinyl/artist/miles-davis> , <https://www.youtube.com/channel/UC1ZS17c0DlqUjsXZK3K_bgA> , <https://vgmdb.net/artist/27058> , <https://musicbrainz.org/artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a> , <https://www.muziekweb.nl/Link/M00000286446/> , <http://www.45worlds.com/cdalbum/artist/miles-davis> , <https://www.facebook.com/MilesDavis> , <https://www.bbc.co.uk/music/artists/561d854a-6a28-4aa7-8c99-323e6ce46c2a> , <https://www.deezer.com/artist/1910> , <https://secondhandsongs.com/artist/106> , <https://www.songkick.com/artists/564879> , <https://openlibrary.org/works/OL4359245A> , <https://www.youtube.com/user/MilesDavisVEVO> , <http://www.45worlds.com/live/artist/miles-davis> , <http://snaccooperative.org/ark:/99166/w68k7wq0> , <https://genius.com/artists/Miles-davis> , <http://id.loc.gov/authorities/names/n50035608> , <https://www.allmusic.com/artist/mn0000423829> , <http://www.45worlds.com/78rpm/artist/miles-davis> , <https://www.instagram.com/milesdavis/> , <http://www.plosin.com/milesahead/> , <http://www.kind-of-blue.de/> , <https://isni.org/isni/000000012144707X> , <https://www.imdb.com/name/nm0002537/> , <https://open.spotify.com/artist/0kbYTNQb4Pb1rPbbaF0pT4> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/dbacf2e3-7e3e-4cee-8804-999b109285fa>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Santa Monica" ;
+        :hasMusicBrainzID  "dbacf2e3-7e3e-4cee-8804-999b109285fa" ;
+        :hasName           "Santa Monica" ;
+        owl:sameAs         <https://musicbrainz.org/area/dbacf2e3-7e3e-4cee-8804-999b109285fa> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/39e1719e-2604-4b59-b698-dab7caf85b33>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Alton" ;
+        :hasMusicBrainzID  "39e1719e-2604-4b59-b698-dab7caf85b33" ;
+        :hasName           "Alton" ;
+        owl:sameAs         <https://musicbrainz.org/area/39e1719e-2604-4b59-b698-dab7caf85b33> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

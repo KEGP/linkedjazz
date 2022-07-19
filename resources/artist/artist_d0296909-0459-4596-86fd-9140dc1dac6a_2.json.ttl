@@ -1,0 +1,46 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065>
+        a                  :ArtistPerson ;
+        rdfs:label         "Chet Baker" ;
+        :hasAlias          "Chey Baker" , "Chet" , "Baker Chet" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/54b31981-343a-4b4f-b4a6-a0d1f1cf95b1> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/e8e317a1-268c-4e46-9db1-f10af959ffca> ;
+        :hasGender         "Male" ;
+        :hasISNI           "000000009310882X" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1988-05-13" ;
+                             :hasIntervalStartDate  "1929-12-23"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "1ba1d493-7114-45e2-b163-a36d49a0c065" ;
+        :hasName           "Chet Baker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1ba1d493-7114-45e2-b163-a36d49a0c065> , <http://viaf.org/viaf/100254423> , <https://www.last.fm/music/Chet+Baker> , <http://chetbakertribute.com/> , <https://www.bbc.co.uk/music/artists/1ba1d493-7114-45e2-b163-a36d49a0c065> , <https://www.musik-sammler.de/artist/chet-baker/> , <http://muzikum.eu/en/122-3761/chet-baker/lyrics.html> , <https://open.spotify.com/artist/3rxeQlsv0Sc2nyYaZ5W71T> , <http://d-nb.info/gnd/119006332> , <https://isni.org/isni/000000009310882X> , <http://www.chetbaker.net/> , <https://www.allmusic.com/artist/mn0000094210> , <https://www.whosampled.com/Chet-Baker/> , <https://www.wikidata.org/wiki/Q2274> , <https://www.youtube.com/channel/UCVNfRXuaWVILL9giCEg0rQg> , <https://catalogue.bnf.fr/ark:/12148/cb13891071k> , <https://www.discogs.com/artist/31617> , <https://rateyourmusic.com/artist/chet_baker> , <https://www.worldcat.org/identities/lccn-n83-174966> , <https://www.imdb.com/name/nm0048329/> , <http://www.45cat.com/artist/chet-baker> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/e8e317a1-268c-4e46-9db1-f10af959ffca>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Amsterdam" ;
+        :hasMusicBrainzID  "e8e317a1-268c-4e46-9db1-f10af959ffca" ;
+        :hasName           "Amsterdam" ;
+        owl:sameAs         <https://musicbrainz.org/area/e8e317a1-268c-4e46-9db1-f10af959ffca> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/54b31981-343a-4b4f-b4a6-a0d1f1cf95b1>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Yale" ;
+        :hasMusicBrainzID  "54b31981-343a-4b4f-b4a6-a0d1f1cf95b1" ;
+        :hasName           "Yale" ;
+        owl:sameAs         <https://musicbrainz.org/area/54b31981-343a-4b4f-b4a6-a0d1f1cf95b1> .

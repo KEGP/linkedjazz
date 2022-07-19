@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Coleman Hawkins" ;
+        :hasMusicBrainzID  "5c8cb181-38fe-4300-8153-650b2ed0258f" ;
+        :hasName           "Coleman Hawkins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5c8cb181-38fe-4300-8153-650b2ed0258f> .
+
+<http://localhost:8080/resource/kejazz/Release/398a36c5-edfb-4fed-83e9-013ee2543350>
+        a                      :Release ;
+        rdfs:label             "The Chronological Classics: Coleman Hawkins 1939-1940" ;
+        :hasASIN               "B00007GX6M" ;
+        :hasBarcode            "3307517063427" ;
+        :hasMusicBrainzID      "398a36c5-edfb-4fed-83e9-013ee2543350" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Coleman Hawkins 1939-1940" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://musicbrainz.org/release/398a36c5-edfb-4fed-83e9-013ee2543350> , <https://www.discogs.com/release/9077895> , <https://www.amazon.fr/gp/product/B00007GX6M> , <https://www.amazon.com/dp/B00007GX6M> .

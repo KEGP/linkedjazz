@@ -1,0 +1,38 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499>
+        a                  :ArtistPerson ;
+        rdfs:label         "Ella Fitzgerald" ;
+        :hasMusicBrainzID  "54799c0e-eb45-4eea-996d-c4d71a63c499" ;
+        :hasName           "Ella Fitzgerald" ;
+        owl:sameAs         <https://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499> .
+
+<http://localhost:8080/resource/kejazz/Recording/96cd1df4-1a44-4996-98a5-8449796b2598>
+        a                           :Recording ;
+        rdfs:label                  "Cotton Tail" ;
+        :hasDurationInMilliseconds  "221000" ;
+        :hasISRC                    "USBJN0920080" ;
+        :hasMusicBrainzID           "96cd1df4-1a44-4996-98a5-8449796b2598" ;
+        :hasTitle                   "Cotton Tail" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> , <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1965-10-19" ;
+                                      :hasIntervalStartDate  "1965-10-19"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/ad318e8e-09e5-3fb7-930d-9f8a3de8e65a> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/96cd1df4-1a44-4996-98a5-8449796b2598> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .

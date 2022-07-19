@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/a2019e51-9ce1-4c14-98d0-25428761e9f0>
+        a                  :Orchestra ;
+        rdfs:label         "Benny Goodman and His Orchestra" ;
+        :hasAlias          "Benny Goodman's Orchestra" , "Benny Goodman and His Orchrestra" , "Benny Goodmann & His Orchestra" , "Benny Goodman and His Music Hall Orchestra" , "Jess Stacy & Benny Goodman and his Orchestra" , "Benny Goodman and His Orchestra 2" , "Benny Goodman Orchestra" , "Benny Goodman & His Orchestra" ;
+        :hasISNI           "0000000106709596" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "a2019e51-9ce1-4c14-98d0-25428761e9f0" ;
+        :hasName           "Benny Goodman and His Orchestra" ;
+        owl:sameAs         <https://www.imdb.com/company/co0065770/> , <https://isni.org/isni/0000000106709596> , <https://musicbrainz.org/artist/a2019e51-9ce1-4c14-98d0-25428761e9f0> , <https://www.discogs.com/artist/374400> , <https://www.imdb.com/name/nm1244714/> , <https://www.allmusic.com/artist/mn0000591425> , <https://www.deezer.com/artist/151796> , <https://www.wikidata.org/wiki/Q28488159> .

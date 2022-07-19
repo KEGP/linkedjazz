@@ -1,0 +1,32 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/9092ac82-6f06-427a-8a8e-d949dc4ebf35>
+        a                  :ArtistPerson ;
+        rdfs:label         "Luis Russell" ;
+        :hasMusicBrainzID  "9092ac82-6f06-427a-8a8e-d949dc4ebf35" ;
+        :hasName           "Luis Russell" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9092ac82-6f06-427a-8a8e-d949dc4ebf35> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
+
+<http://localhost:8080/resource/kejazz/Release/5fb58de7-b3ad-46a9-84d7-b2c900a0bdfa>
+        a                  :Release ;
+        rdfs:label         "Louis Armstrong & Luis Russell 1929 - 1940" ;
+        :hasBarcode        "743625509427" ;
+        :hasMusicBrainzID  "5fb58de7-b3ad-46a9-84d7-b2c900a0bdfa" ;
+        :hasTitle          "Louis Armstrong & Luis Russell 1929 - 1940" ;
+        :isCreditedTo      <http://localhost:8080/resource/kejazz/Artist/9092ac82-6f06-427a-8a8e-d949dc4ebf35> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate    "1992" ;
+        owl:sameAs         <https://musicbrainz.org/release/5fb58de7-b3ad-46a9-84d7-b2c900a0bdfa> , <https://www.discogs.com/release/8676836> .

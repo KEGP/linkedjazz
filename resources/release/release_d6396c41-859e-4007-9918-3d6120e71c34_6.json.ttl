@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a>
+        a                  :Band ;
+        rdfs:label         "Original Dixieland Jazz Band" ;
+        :hasMusicBrainzID  "6e3d6e70-2f11-4732-a789-4a9d608ef24a" ;
+        :hasName           "Original Dixieland Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> .
+
+<http://localhost:8080/resource/kejazz/Release/d6396c41-859e-4007-9918-3d6120e71c34>
+        a                      :Release ;
+        rdfs:label             "The Complete Original Dixieland Jazz Band (1917–1936)" ;
+        :hasASIN               "B000002WTQ" ;
+        :hasBarcode            "078636660820" ;
+        :hasMusicBrainzID      "d6396c41-859e-4007-9918-3d6120e71c34" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Original Dixieland Jazz Band (1917–1936)" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
+        :releasedInDate        "1992" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000002WTQ> , <https://musicbrainz.org/release/d6396c41-859e-4007-9918-3d6120e71c34> , <https://www.cduniverse.com/productinfo.asp?pid=1111630&style=music> , <https://www.amazon.com/gp/product/B000002WTQ> .

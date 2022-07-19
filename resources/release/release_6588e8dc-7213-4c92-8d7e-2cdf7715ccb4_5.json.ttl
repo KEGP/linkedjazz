@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/6588e8dc-7213-4c92-8d7e-2cdf7715ccb4>
+        a                      :Release ;
+        rdfs:label             "The History of Jazz: New Orleans Joys" ;
+        :hasBarcode            "8711539580018" ;
+        :hasMusicBrainzID      "6588e8dc-7213-4c92-8d7e-2cdf7715ccb4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The History of Jazz: New Orleans Joys" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1994" ;
+        owl:sameAs             <https://musicbrainz.org/release/6588e8dc-7213-4c92-8d7e-2cdf7715ccb4> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

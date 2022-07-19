@@ -1,0 +1,16 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/7e7a3dbd-7aeb-4d23-a648-e302afd4bb10>
+        a                  :Band ;
+        rdfs:label         "Sidney Bechet’s Blue Note Jazzmen" ;
+        :hasAlias          "Sidney Bechet and his Blue Note Jazz Men" , "Sidney Bechet And His Blue Note Jazzmen" , "Sidney Bechet & His Blue Note Jazzmen" ;
+        :hasMusicBrainzID  "7e7a3dbd-7aeb-4d23-a648-e302afd4bb10" ;
+        :hasName           "Sidney Bechet’s Blue Note Jazzmen" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7e7a3dbd-7aeb-4d23-a648-e302afd4bb10> .

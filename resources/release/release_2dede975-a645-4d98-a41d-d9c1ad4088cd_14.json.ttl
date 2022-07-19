@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/2dede975-a645-4d98-a41d-d9c1ad4088cd>
+        a                      :Release ;
+        rdfs:label             "L’Histoire du jazz vocal - The Story of Vocal Jazz: 1911–1940" ;
+        :hasASIN               "B00042Z9BY" ;
+        :hasBarcode            "794881750122" ;
+        :hasMusicBrainzID      "2dede975-a645-4d98-a41d-d9c1ad4088cd" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "L’Histoire du jazz vocal - The Story of Vocal Jazz: 1911–1940" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "2004-10-20" ;
+        owl:sameAs             <https://www.discogs.com/release/441424> , <https://musicbrainz.org/release/2dede975-a645-4d98-a41d-d9c1ad4088cd> , <https://www.amazon.com/dp/B00042Z9BY> , <https://www.amazon.fr/gp/product/B00042Z9BY> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

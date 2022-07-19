@@ -1,0 +1,104 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/383e1902-c204-4cb9-a6b1-16089e8216a1> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4bbbf6eb-a979-4b24-8b63-5d452c89115b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/89124c60-c9f5-482e-a219-4b0f561d605c>
+        a                  :ArtistPerson ;
+        rdfs:label         "Monk Montgomery" ;
+        :hasMusicBrainzID  "89124c60-c9f5-482e-a219-4b0f561d605c" ;
+        :hasName           "Monk Montgomery" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89124c60-c9f5-482e-a219-4b0f561d605c> .
+
+<http://localhost:8080/resource/kejazz/Artist/4bbbf6eb-a979-4b24-8b63-5d452c89115b>
+        a                  :Band ;
+        rdfs:label         "Wes Montgomery Quintet" ;
+        :hasMusicBrainzID  "4bbbf6eb-a979-4b24-8b63-5d452c89115b" ;
+        :hasName           "Wes Montgomery Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/4bbbf6eb-a979-4b24-8b63-5d452c89115b> .
+
+<http://localhost:8080/resource/kejazz/Artist/b366d594-dc8f-481a-9994-ecf7f4207e9d>
+        a                  :Band ;
+        rdfs:label         "Wes Montgomery Quartet" ;
+        :hasMusicBrainzID  "b366d594-dc8f-481a-9994-ecf7f4207e9d" ;
+        :hasName           "Wes Montgomery Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b366d594-dc8f-481a-9994-ecf7f4207e9d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/90459508-a7b3-459e-b7ef-d5c0ae74fd17>
+        a                  :Band ;
+        rdfs:label         "The Montgomery Brothers" ;
+        :hasMusicBrainzID  "90459508-a7b3-459e-b7ef-d5c0ae74fd17" ;
+        :hasName           "The Montgomery Brothers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/90459508-a7b3-459e-b7ef-d5c0ae74fd17> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/89124c60-c9f5-482e-a219-4b0f561d605c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b366d594-dc8f-481a-9994-ecf7f4207e9d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/663f8232-8c46-4851-803f-a91d31593b14> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/90459508-a7b3-459e-b7ef-d5c0ae74fd17> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/383e1902-c204-4cb9-a6b1-16089e8216a1>
+        a                  :ArtistPerson ;
+        rdfs:label         "Buddy Montgomery" ;
+        :hasMusicBrainzID  "383e1902-c204-4cb9-a6b1-16089e8216a1" ;
+        :hasName           "Buddy Montgomery" ;
+        owl:sameAs         <https://musicbrainz.org/artist/383e1902-c204-4cb9-a6b1-16089e8216a1> .
+
+<http://localhost:8080/resource/kejazz/Artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee>
+        a                  :Band ;
+        rdfs:label         "Wes Montgomery Trio" ;
+        :hasMusicBrainzID  "739d421f-1f7a-4dd8-b56e-fb4fb7634aee" ;
+        :hasName           "Wes Montgomery Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/739d421f-1f7a-4dd8-b56e-fb4fb7634aee> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b42b7966-b904-449e-b8f9-8c7297b863d0>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "sibling" ;
+        :hasMusicBrainzID  "b42b7966-b904-449e-b8f9-8c7297b863d0" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b42b7966-b904-449e-b8f9-8c7297b863d0> .

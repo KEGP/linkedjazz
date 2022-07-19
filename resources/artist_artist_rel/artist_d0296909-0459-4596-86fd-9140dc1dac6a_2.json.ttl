@@ -1,0 +1,217 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/54119910-5a34-4ad2-8da0-f7aebe5f5e92> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/a6f62641-2f58-470e-b02b-88d7b984dc9f>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/da35c976-59c2-4452-b869-083a39139ed2> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/621e7a7c-726c-4eef-9eab-436dc7e37a7b>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Quintet" ;
+        :hasMusicBrainzID  "621e7a7c-726c-4eef-9eab-436dc7e37a7b" ;
+        :hasName           "Chet Baker Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/621e7a7c-726c-4eef-9eab-436dc7e37a7b> .
+
+<http://localhost:8080/resource/kejazz/Artist/78b711d1-43d7-464c-a110-490a8041fcf7>
+        a                  :Band ;
+        rdfs:label         "Gerry Mulligan Quartet" ;
+        :hasMusicBrainzID  "78b711d1-43d7-464c-a110-490a8041fcf7" ;
+        :hasName           "Gerry Mulligan Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/78b711d1-43d7-464c-a110-490a8041fcf7> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/a6f62641-2f58-470e-b02b-88d7b984dc9f>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "tribute" ;
+        :hasMusicBrainzID  "a6f62641-2f58-470e-b02b-88d7b984dc9f" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a6f62641-2f58-470e-b02b-88d7b984dc9f> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/efc99722-cfb7-4619-bb8d-d3563322e030> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ce8e50a4-9713-4339-a803-6d731b8aa818> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/3a13b29b-c68c-443f-8662-02949503ad49>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Septet" ;
+        :hasMusicBrainzID  "3a13b29b-c68c-443f-8662-02949503ad49" ;
+        :hasName           "Chet Baker Septet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3a13b29b-c68c-443f-8662-02949503ad49> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/fd3927ba-fd51-4fa9-bcc2-e83637896fe8>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "involved with" ;
+        :hasMusicBrainzID  "fd3927ba-fd51-4fa9-bcc2-e83637896fe8" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/fd3927ba-fd51-4fa9-bcc2-e83637896fe8> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/3a13b29b-c68c-443f-8662-02949503ad49> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/621e7a7c-726c-4eef-9eab-436dc7e37a7b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/58f9c836-30a1-4330-9274-e2dd5bc75008> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/87045a47-d1db-460f-b082-26e1d2449827> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f0415b73-933d-4b1d-9f19-69b835d4b28c>
+        a                  :Band ;
+        rdfs:label         "Chet Baker & Crew" ;
+        :hasMusicBrainzID  "f0415b73-933d-4b1d-9f19-69b835d4b28c" ;
+        :hasName           "Chet Baker & Crew" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f0415b73-933d-4b1d-9f19-69b835d4b28c> .
+
+<http://localhost:8080/resource/kejazz/Artist/45d8fb4a-1e6e-4d52-8e2d-dce54e4618b6>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Sextet" ;
+        :hasMusicBrainzID  "45d8fb4a-1e6e-4d52-8e2d-dce54e4618b6" ;
+        :hasName           "Chet Baker Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/45d8fb4a-1e6e-4d52-8e2d-dce54e4618b6> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b4620585-0aa7-4d10-b520-f3b6a123df40> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/58f9c836-30a1-4330-9274-e2dd5bc75008>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Quartet" ;
+        :hasMusicBrainzID  "58f9c836-30a1-4330-9274-e2dd5bc75008" ;
+        :hasName           "Chet Baker Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/58f9c836-30a1-4330-9274-e2dd5bc75008> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c443d5bb-9e80-415d-81ff-a56c5c27c664> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalStartDate  "1973"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/997b978c-062e-4e64-8e2e-83c5b928c8fe> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/fd3927ba-fd51-4fa9-bcc2-e83637896fe8>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/87045a47-d1db-460f-b082-26e1d2449827>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Ensemble" ;
+        :hasMusicBrainzID  "87045a47-d1db-460f-b082-26e1d2449827" ;
+        :hasName           "Chet Baker Ensemble" ;
+        owl:sameAs         <https://musicbrainz.org/artist/87045a47-d1db-460f-b082-26e1d2449827> .
+
+<http://localhost:8080/resource/kejazz/Artist/c443d5bb-9e80-415d-81ff-a56c5c27c664>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Big Band" ;
+        :hasMusicBrainzID  "c443d5bb-9e80-415d-81ff-a56c5c27c664" ;
+        :hasName           "Chet Baker Big Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c443d5bb-9e80-415d-81ff-a56c5c27c664> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/45d8fb4a-1e6e-4d52-8e2d-dce54e4618b6> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/efc99722-cfb7-4619-bb8d-d3563322e030>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Trio" ;
+        :hasMusicBrainzID  "efc99722-cfb7-4619-bb8d-d3563322e030" ;
+        :hasName           "Chet Baker Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/efc99722-cfb7-4619-bb8d-d3563322e030> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f0415b73-933d-4b1d-9f19-69b835d4b28c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/b4620585-0aa7-4d10-b520-f3b6a123df40>
+        a                  :Band ;
+        rdfs:label         "Chet Baker Octet" ;
+        :hasMusicBrainzID  "b4620585-0aa7-4d10-b520-f3b6a123df40" ;
+        :hasName           "Chet Baker Octet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b4620585-0aa7-4d10-b520-f3b6a123df40> .
+
+<http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065>
+        a                  :ArtistPerson ;
+        rdfs:label         "Chet Baker" ;
+        :hasMusicBrainzID  "1ba1d493-7114-45e2-b163-a36d49a0c065" ;
+        :hasName           "Chet Baker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1ba1d493-7114-45e2-b163-a36d49a0c065> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/1ba1d493-7114-45e2-b163-a36d49a0c065> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/78b711d1-43d7-464c-a110-490a8041fcf7> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/da35c976-59c2-4452-b869-083a39139ed2>
+        a                  :Band ;
+        rdfs:label         "The Chet Baker & Art Pepper Sextet" ;
+        :hasMusicBrainzID  "da35c976-59c2-4452-b869-083a39139ed2" ;
+        :hasName           "The Chet Baker & Art Pepper Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/da35c976-59c2-4452-b869-083a39139ed2> .
+
+<http://localhost:8080/resource/kejazz/Artist/ce8e50a4-9713-4339-a803-6d731b8aa818>
+        a                  :Band ;
+        rdfs:label         "Sixth Army Band" ;
+        :hasMusicBrainzID  "ce8e50a4-9713-4339-a803-6d731b8aa818" ;
+        :hasName           "Sixth Army Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ce8e50a4-9713-4339-a803-6d731b8aa818> .

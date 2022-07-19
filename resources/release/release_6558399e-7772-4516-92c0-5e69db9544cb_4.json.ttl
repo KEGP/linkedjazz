@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/6558399e-7772-4516-92c0-5e69db9544cb>
+        a                      :Release ;
+        rdfs:label             "1924-1938" ;
+        :hasASIN               "B00000DAJU" ;
+        :hasBarcode            "8004883531790" ;
+        :hasMusicBrainzID      "6558399e-7772-4516-92c0-5e69db9544cb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "1924-1938" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> ;
+        :releasedInDate        "1995" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B00000DAJU> , <https://musicbrainz.org/release/6558399e-7772-4516-92c0-5e69db9544cb> , <https://www.amazon.com/dp/B00000DAJU> , <https://www.discogs.com/release/8145952> .
+
+<http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839>
+        a                  :ArtistPerson ;
+        rdfs:label         "Fletcher Henderson" ;
+        :hasMusicBrainzID  "f47d1c94-c3e3-4c84-a42a-6c33e0032839" ;
+        :hasName           "Fletcher Henderson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> .

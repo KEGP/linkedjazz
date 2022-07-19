@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55>
+        a                  :ArtistPerson ;
+        rdfs:label         "Tito Puente" ;
+        :hasAlias          "Tito Puente y son Orquestra" , "Tito Puento" , "Ernesto Antonio Puente" , "Puente Tito" , "Tito Puente and his orchestra" , "Tito Puente and his Latin Jazz Ensemble & Orchestra" , "PUENTE, Tito" , "Tito Puente & His Orchestra" , "Tito Puentes" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/7e037c94-d999-4611-a8fd-56e8770f2e3c> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00025027420" ;
+        :hasISNI           "0000000114383258" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "2000-06-01" ;
+                             :hasIntervalStartDate  "1923-04-20"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "f19ad155-d809-4770-ab8d-7579467d9f55" ;
+        :hasName           "Tito Puente" ;
+        owl:sameAs         <https://itunes.apple.com/us/artist/id105119> , <https://www.whosampled.com/Tito-Puente/> , <https://www.wikidata.org/wiki/Q317122> , <https://isni.org/isni/0000000114383258> , <https://www.bbc.co.uk/music/artists/f19ad155-d809-4770-ab8d-7579467d9f55> , <https://www.imdb.com/name/nm0005328/> , <https://www.discogs.com/artist/19594> , <https://www.facebook.com/TitoPuente> , <http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=10157> , <https://www.last.fm/music/Tito+Puente> , <https://www.allmusic.com/artist/mn0000607283> , <https://musicbrainz.org/artist/f19ad155-d809-4770-ab8d-7579467d9f55> , <https://www.deezer.com/artist/8661> , <http://viaf.org/viaf/14959344> , <https://open.spotify.com/artist/6SPpCqM8gOzrtICAxN5NuX> , <https://rateyourmusic.com/artist/tito_puente> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/7e037c94-d999-4611-a8fd-56e8770f2e3c>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Harlem" ;
+        :hasMusicBrainzID  "7e037c94-d999-4611-a8fd-56e8770f2e3c" ;
+        :hasName           "Harlem" ;
+        owl:sameAs         <https://musicbrainz.org/area/7e037c94-d999-4611-a8fd-56e8770f2e3c> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "New York" ;
+        :hasMusicBrainzID  "74e50e58-5deb-4b99-93a2-decbb365c07f" ;
+        :hasName           "New York" ;
+        owl:sameAs         <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

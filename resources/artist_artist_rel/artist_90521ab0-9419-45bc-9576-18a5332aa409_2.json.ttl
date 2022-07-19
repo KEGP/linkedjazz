@@ -1,0 +1,42 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/0f755f18-7e49-4884-96a4-7a7ba599f92c>
+        a                  :Band ;
+        rdfs:label         "The Muhal Richard Abrams Orchestra" ;
+        :hasMusicBrainzID  "0f755f18-7e49-4884-96a4-7a7ba599f92c" ;
+        :hasName           "The Muhal Richard Abrams Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/0f755f18-7e49-4884-96a4-7a7ba599f92c> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/0f755f18-7e49-4884-96a4-7a7ba599f92c> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f5ae01dc-1a72-4fd1-887d-2606317f015d>
+        a                  :Band ;
+        rdfs:label         "Muhal Richard Abrams Octet" ;
+        :hasMusicBrainzID  "f5ae01dc-1a72-4fd1-887d-2606317f015d" ;
+        :hasName           "Muhal Richard Abrams Octet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f5ae01dc-1a72-4fd1-887d-2606317f015d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/ecf3392e-bd72-46a8-ac59-2bf7b774c7a7> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f5ae01dc-1a72-4fd1-887d-2606317f015d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

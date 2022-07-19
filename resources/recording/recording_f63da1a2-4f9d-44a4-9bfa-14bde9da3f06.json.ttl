@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/960e9f20-61bc-4b33-a142-481a64566f64>
+        a                  :Band ;
+        rdfs:label         "Count Basie Octet" ;
+        :hasMusicBrainzID  "960e9f20-61bc-4b33-a142-481a64566f64" ;
+        :hasName           "Count Basie Octet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/960e9f20-61bc-4b33-a142-481a64566f64> .
+
+<http://localhost:8080/resource/kejazz/Recording/f63da1a2-4f9d-44a4-9bfa-14bde9da3f06>
+        a                           :Recording ;
+        rdfs:label                  "The Golden Bullet" ;
+        :hasDurationInMilliseconds  "150000" ;
+        :hasISRC                    "USBJN0920051" ;
+        :hasMusicBrainzID           "f63da1a2-4f9d-44a4-9bfa-14bde9da3f06" ;
+        :hasTitle                   "The Golden Bullet" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/960e9f20-61bc-4b33-a142-481a64566f64> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1950-05-16" ;
+                                      :hasIntervalStartDate  "1950-05-16"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/ce1d6de6-784c-47ad-91aa-61cec778d142> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/f63da1a2-4f9d-44a4-9bfa-14bde9da3f06> .

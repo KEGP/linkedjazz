@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/33f1db3f-fd5d-4992-a16b-bbd43c195b88>
+        a                      :Release ;
+        rdfs:label             "The Complete Masters 1941–1954" ;
+        :hasASIN               "B005NNJKPA" ;
+        :hasBarcode            "600753361238" ;
+        :hasMusicBrainzID      "33f1db3f-fd5d-4992-a16b-bbd43c195b88" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Masters 1941–1954" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+        :releasedInDate        "2011-11-21" ;
+        owl:sameAs             <https://www.amazon.fr/gp/product/B005NNJKPA> , <https://www.amazon.com/dp/B005NNJKPA> , <https://musicbrainz.org/release/33f1db3f-fd5d-4992-a16b-bbd43c195b88> , <https://www.discogs.com/release/3954486> .
+
+<http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Parker" ;
+        :hasMusicBrainzID  "c7356af9-9ea6-4a78-a55b-c73775716312" ;
+        :hasName           "Charlie Parker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312> .

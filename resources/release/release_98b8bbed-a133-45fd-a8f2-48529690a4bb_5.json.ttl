@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Horace Silver" ;
+        :hasMusicBrainzID  "d185d986-ee96-4fd3-bd61-8c848a4765b6" ;
+        :hasName           "Horace Silver" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> .
+
+<http://localhost:8080/resource/kejazz/Release/98b8bbed-a133-45fd-a8f2-48529690a4bb>
+        a                      :Release ;
+        rdfs:label             "Seven Classic Albums" ;
+        :hasBarcode            "5036408138323" ;
+        :hasMusicBrainzID      "98b8bbed-a133-45fd-a8f2-48529690a4bb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Seven Classic Albums" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> ;
+        :releasedInDate        "2013" ;
+        owl:sameAs             <https://musicbrainz.org/release/98b8bbed-a133-45fd-a8f2-48529690a4bb> .

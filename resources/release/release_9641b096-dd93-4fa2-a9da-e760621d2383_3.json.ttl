@@ -1,0 +1,40 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stan Getz" ;
+        :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
+        :hasName           "Stan Getz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> .
+
+<http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Antônio Carlos Jobim" ;
+        :hasMusicBrainzID  "7a8dbe84-f4c0-4457-bfa3-edced1f8cde0" ;
+        :hasName           "Antônio Carlos Jobim" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> .
+
+<http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14>
+        a                  :ArtistPerson ;
+        rdfs:label         "João Gilberto" ;
+        :hasMusicBrainzID  "286ec4c2-b5ca-4f85-b331-280a6d73dd14" ;
+        :hasName           "João Gilberto" ;
+        owl:sameAs         <https://musicbrainz.org/artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> .
+
+<http://localhost:8080/resource/kejazz/Release/9641b096-dd93-4fa2-a9da-e760621d2383>
+        a                      :Release ;
+        rdfs:label             "Getz/Gilberto" ;
+        :hasBarcode            "042281004827" ;
+        :hasMusicBrainzID      "9641b096-dd93-4fa2-a9da-e760621d2383" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Getz/Gilberto" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/7a8dbe84-f4c0-4457-bfa3-edced1f8cde0> , <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/286ec4c2-b5ca-4f85-b331-280a6d73dd14> ;
+        :releasedInDate        "1984" ;
+        owl:sameAs             <https://musicbrainz.org/release/9641b096-dd93-4fa2-a9da-e760621d2383> .

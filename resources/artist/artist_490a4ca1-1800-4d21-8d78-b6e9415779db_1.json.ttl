@@ -1,0 +1,28 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb>
+        a                   :Band ;
+        rdfs:label          "Quintette du Hot Club de France" ;
+        :hasActivityPeriod  [ a                      dul:TimeInterval ;
+                              :hasIntervalEndDate    "1948" ;
+                              :hasIntervalStartDate  "1934"
+                            ] ;
+        :hasAlias           "Django Reinhardt & The Quintet of the Hot Club of France With Stephane Grappelli" , "Django Reinhardt And The Hot Club De France" , "Stéphane Grappelli and His Hot Four" , "Django Reinhardt & Quintet of the Hot Club of France" , "Quintette of the Hot Club of France" , "Stéphane Grappelli & His Hot Four" , "Quintett Du Hot Club De France" , "Stefane Grappelli & His Hot Four" , "Django Reinhardt, Stéphane Grappelli & Quintette du Hot Club de France" , "Quntett Du Hot Club De France" , "Quinteto del Hot Club de Francia" , "The Quintet of the Hot Club of France" , "Quintett Du ot Club De France" , "Quintet of the Hot Club of France" , "Django Reinhardt & Quintette du Hot Club de France" , "Django Reinhardt & The Quintet of the Hot Club of France" , "Django Reinhardt et le Quintet du Hot Club de France" ;
+        :hasMainArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/08310658-51eb-3801-80de-5a0739207115> ;
+        :hasMusicBrainzID   "ee55e4e8-807d-49b1-8470-d1c0898ed7cb" ;
+        :hasName            "Quintette du Hot Club de France" ;
+        owl:sameAs          <https://www.wikidata.org/wiki/Q1421784> , <https://www.discogs.com/artist/686735> , <https://www.discogs.com/artist/355185> , <https://musicbrainz.org/artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/08310658-51eb-3801-80de-5a0739207115>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "France" ;
+        :hasMusicBrainzID  "08310658-51eb-3801-80de-5a0739207115" ;
+        :hasName           "France" ;
+        owl:sameAs         <https://musicbrainz.org/area/08310658-51eb-3801-80de-5a0739207115> .

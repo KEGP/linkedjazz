@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/db377a9b-1169-4d80-b1b6-25f7d96c54d7>
+        a                      :Release ;
+        rdfs:label             "A Studio Chronicle, 1940 - 1948" ;
+        :hasASIN               "B0000AJ5SR" ;
+        :hasBarcode            "788065901523" ;
+        :hasMusicBrainzID      "db377a9b-1169-4d80-b1b6-25f7d96c54d7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "A Studio Chronicle, 1940 - 1948" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+        :releasedInDate        "2003-09-23" ;
+        owl:sameAs             <https://musicbrainz.org/release/db377a9b-1169-4d80-b1b6-25f7d96c54d7> , <https://www.amazon.com/gp/product/B0000AJ5SR> , <https://www.amazon.com/dp/B0000AJ5SR> .
+
+<http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Parker" ;
+        :hasMusicBrainzID  "c7356af9-9ea6-4a78-a55b-c73775716312" ;
+        :hasName           "Charlie Parker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312> .

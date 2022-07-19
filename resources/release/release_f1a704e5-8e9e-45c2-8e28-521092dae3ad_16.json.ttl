@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stan Getz" ;
+        :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
+        :hasName           "Stan Getz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> .
+
+<http://localhost:8080/resource/kejazz/Release/f1a704e5-8e9e-45c2-8e28-521092dae3ad>
+        a                      :Release ;
+        rdfs:label             "Verve Jazz Masters 8" ;
+        :hasASIN               "B0000046RH" ;
+        :hasBarcode            "731451982323" ;
+        :hasMusicBrainzID      "f1a704e5-8e9e-45c2-8e28-521092dae3ad" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Verve Jazz Masters 8" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+        :releasedInDate        "1994-03-22" ;
+        owl:sameAs             <https://musicbrainz.org/release/f1a704e5-8e9e-45c2-8e28-521092dae3ad> , <https://www.amazon.com/dp/B0000046RH> , <https://www.amazon.com/gp/product/B0000046RH> .

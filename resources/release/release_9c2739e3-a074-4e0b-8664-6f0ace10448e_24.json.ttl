@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/9c2739e3-a074-4e0b-8664-6f0ace10448e>
+        a                      :Release ;
+        rdfs:label             "Blakey's Best" ;
+        :hasASIN               "B00004YZW3" ;
+        :hasMusicBrainzID      "9c2739e3-a074-4e0b-8664-6f0ace10448e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Blakey's Best" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :releasedInDate        "2000" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B00004YZW3> , <https://musicbrainz.org/release/9c2739e3-a074-4e0b-8664-6f0ace10448e> , <https://www.amazon.com/dp/B00004YZW3> .
+
+<http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee>
+        a                  :Band ;
+        rdfs:label         "Art Blakey & The Jazz Messengers" ;
+        :hasMusicBrainzID  "209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee" ;
+        :hasName           "Art Blakey & The Jazz Messengers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> .

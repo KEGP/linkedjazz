@@ -1,0 +1,42 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/815fc2fe-4ec7-4a9a-995a-3a7f5d64eb17>
+        a                  :Band ;
+        rdfs:label         "The Benny Goodman Trio" ;
+        :hasMusicBrainzID  "815fc2fe-4ec7-4a9a-995a-3a7f5d64eb17" ;
+        :hasName           "The Benny Goodman Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/815fc2fe-4ec7-4a9a-995a-3a7f5d64eb17> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/b09ae88f-4156-4caa-b129-1cacb5e1632e> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/815fc2fe-4ec7-4a9a-995a-3a7f5d64eb17> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/fb23b49b-f964-46d0-a089-ae5e39956321> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/815fc2fe-4ec7-4a9a-995a-3a7f5d64eb17> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/815fc2fe-4ec7-4a9a-995a-3a7f5d64eb17> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0>
+        a                  :Band ;
+        rdfs:label         "King Oliver and His Creole Jazz Band" ;
+        :hasMusicBrainzID  "cd05eca7-ad38-456c-94c7-f17c9b15c5d0" ;
+        :hasName           "King Oliver and His Creole Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> .
+
+<http://localhost:8080/resource/kejazz/Recording/8fecd84b-8d9e-43c7-865e-4e3e93292260>
+        a                           :Recording ;
+        rdfs:label                  "Dippermouth Blues" ;
+        :hasDurationInMilliseconds  "148840" ;
+        :hasISRC                    "DEU240800207" , "USBJN0920004" ;
+        :hasMusicBrainzID           "8fecd84b-8d9e-43c7-865e-4e3e93292260" ;
+        :hasTitle                   "Dippermouth Blues" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/ff831dc1-41b0-41f9-9d2e-2b39d5d7a522> , <http://localhost:8080/resource/kejazz/Release/fd6cf288-755c-4b02-86e4-76026e1fac26> , <http://localhost:8080/resource/kejazz/Release/aa520485-8641-45fc-aadd-83d1e5e8f736> , <http://localhost:8080/resource/kejazz/Release/ac989b56-4d7f-49f8-a7a1-db905de8e7a0> , <http://localhost:8080/resource/kejazz/Release/ac16de88-7cfa-4b0b-b171-1ff03936137e> , <http://localhost:8080/resource/kejazz/Release/7de17478-dd69-4d3e-815f-624b8880a2d2> , <http://localhost:8080/resource/kejazz/Release/5ad7e19e-fe31-4c87-be61-ed0055849b72> , <http://localhost:8080/resource/kejazz/Release/4aefac09-8aad-46f4-bb62-a9b0878666f9> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/299ee593-1ed2-47a0-abed-ed8ad31d8b44> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/cd05eca7-ad38-456c-94c7-f17c9b15c5d0> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1923-04-06" ;
+                                      :hasIntervalStartDate  "1923-04-06"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/b555862e-abbc-3022-8699-4aeee2688891> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/8fecd84b-8d9e-43c7-865e-4e3e93292260> .

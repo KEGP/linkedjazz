@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/260ce435-e5dc-4949-ae16-e31ef6f26ddb>
+        a                      :Release ;
+        rdfs:label             "Greatest Hits" ;
+        :hasASIN               "B000003G2C" ;
+        :hasBarcode            "0090266848621" ;
+        :hasMusicBrainzID      "260ce435-e5dc-4949-ae16-e31ef6f26ddb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Greatest Hits" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate        "1996" ;
+        owl:sameAs             <https://www.discogs.com/release/4705834> , <https://musicbrainz.org/release/260ce435-e5dc-4949-ae16-e31ef6f26ddb> , <https://rateyourmusic.com/release/comp/louis_armstrong/greatest_hits_f4.p/> , <https://www.amazon.com/dp/B000003G2C> , <https://www.amazon.com/gp/product/B000003G2C> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .

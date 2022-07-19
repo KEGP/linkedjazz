@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Teddy Wilson" ;
+        :hasMusicBrainzID  "2e89725a-ac85-414c-b3b2-70f0a82fae9a" ;
+        :hasName           "Teddy Wilson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a> .
+
+<http://localhost:8080/resource/kejazz/Release/60ac576d-cac6-4abf-871a-b3ddb653273c>
+        a                      :Release ;
+        rdfs:label             "The Quintessence: New York - Chicago 1933-1950" ;
+        :hasMusicBrainzID      "60ac576d-cac6-4abf-871a-b3ddb653273c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Quintessence: New York - Chicago 1933-1950" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/2e89725a-ac85-414c-b3b2-70f0a82fae9a> ;
+        :releasedInDate        "2003" ;
+        owl:sameAs             <https://www.discogs.com/release/850449> , <https://musicbrainz.org/release/60ac576d-cac6-4abf-871a-b3ddb653273c> .

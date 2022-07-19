@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/6405064f-df32-4a0a-bf5e-bd8348ff3d84>
+        a                      :Release ;
+        rdfs:label             "Sensation!" ;
+        :hasASIN               "B000001HFD" ;
+        :hasBarcode            "743625502329" ;
+        :hasMusicBrainzID      "6405064f-df32-4a0a-bf5e-bd8348ff3d84" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Sensation!" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> ;
+        :releasedInDate        "1983" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000001HFD> , <https://musicbrainz.org/release/6405064f-df32-4a0a-bf5e-bd8348ff3d84> , <https://www.amazon.co.uk/gp/product/B000001HFD> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a>
+        a                  :Band ;
+        rdfs:label         "Original Dixieland Jazz Band" ;
+        :hasMusicBrainzID  "6e3d6e70-2f11-4732-a789-4a9d608ef24a" ;
+        :hasName           "Original Dixieland Jazz Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6e3d6e70-2f11-4732-a789-4a9d608ef24a> .

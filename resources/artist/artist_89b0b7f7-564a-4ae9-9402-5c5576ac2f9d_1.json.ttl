@@ -1,0 +1,24 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/265af63b-5913-42ea-80be-850993f21859>
+        a                  :Band ;
+        rdfs:label         "Count Basie and The Kansas City Seven" ;
+        :hasAlias          "Count Basie's Kansas City Seven" , "Count Basie & the Kansas City Seven" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "265af63b-5913-42ea-80be-850993f21859" ;
+        :hasName           "Count Basie and The Kansas City Seven" ;
+        owl:sameAs         <https://www.discogs.com/artist/317874> , <https://musicbrainz.org/artist/265af63b-5913-42ea-80be-850993f21859> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .

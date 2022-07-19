@@ -1,0 +1,32 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/2d23fa8e-9643-4e06-8547-72a0dc46b798>
+        a                      :Release ;
+        rdfs:label             "The Louis Armstrong Story, Volume III: Louis Armstrong and Earl Hines" ;
+        :hasMusicBrainzID      "2d23fa8e-9643-4e06-8547-72a0dc46b798" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Louis Armstrong Story, Volume III: Louis Armstrong and Earl Hines" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> , <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate        "1951" ;
+        owl:sameAs             <https://musicbrainz.org/release/2d23fa8e-9643-4e06-8547-72a0dc46b798> , <https://www.discogs.com/release/3372012> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
+
+<http://localhost:8080/resource/kejazz/Artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052>
+        a                  :ArtistPerson ;
+        rdfs:label         "Earl Hines" ;
+        :hasMusicBrainzID  "5d7df598-bb80-4d73-a6f8-9ed1a4374052" ;
+        :hasName           "Earl Hines" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5d7df598-bb80-4d73-a6f8-9ed1a4374052> .

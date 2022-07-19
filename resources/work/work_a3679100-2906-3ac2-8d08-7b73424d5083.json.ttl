@@ -1,0 +1,17 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/a3679100-2906-3ac2-8d08-7b73424d5083>
+        a                  :Work ;
+        rdfs:label         "Struttin’ With Some Barbecue" ;
+        :hasAlias          "Strutting With Some Barbecue" , "Struttin' With Some Barbeque" ;
+        :hasISWC           "T-070.138.112-5" ;
+        :hasMusicBrainzID  "a3679100-2906-3ac2-8d08-7b73424d5083" ;
+        :hasTitle          "Struttin’ With Some Barbecue" ;
+        owl:sameAs         <https://musicbrainz.org/work/a3679100-2906-3ac2-8d08-7b73424d5083> .

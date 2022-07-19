@@ -1,0 +1,378 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/c9e59b41-a6ef-436b-b80a-f595347f87a9>
+        a                  :Band ;
+        rdfs:label         "Jack Purvis and His Orchestra" ;
+        :hasMusicBrainzID  "c9e59b41-a6ef-436b-b80a-f595347f87a9" ;
+        :hasName           "Jack Purvis and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c9e59b41-a6ef-436b-b80a-f595347f87a9> .
+
+<http://localhost:8080/resource/kejazz/Artist/3dd03315-36f7-4c37-8244-a9f9f6d990e2>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins’ All American Four" ;
+        :hasMusicBrainzID  "3dd03315-36f7-4c37-8244-a9f9f6d990e2" ;
+        :hasName           "Coleman Hawkins’ All American Four" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3dd03315-36f7-4c37-8244-a9f9f6d990e2> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/9ec34d3f-d3fd-4c05-93df-900472d30a62> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/51fe321e-5ad0-4dd1-a5c3-3e773688cdf8>
+        a                  :Band ;
+        rdfs:label         "Thelonious Monk Septet" ;
+        :hasMusicBrainzID  "51fe321e-5ad0-4dd1-a5c3-3e773688cdf8" ;
+        :hasName           "Thelonious Monk Septet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/51fe321e-5ad0-4dd1-a5c3-3e773688cdf8> .
+
+<http://localhost:8080/resource/kejazz/Artist/2b991c03-2419-4bc5-a861-ee548725e881>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins Quartet" ;
+        :hasMusicBrainzID  "2b991c03-2419-4bc5-a861-ee548725e881" ;
+        :hasName           "Coleman Hawkins Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2b991c03-2419-4bc5-a861-ee548725e881> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/16f74a5b-bb94-4025-93e4-ca56ece9f947> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/a33419ce-40d2-4431-9e5e-0ae0918df0dd>
+        a                  :Band ;
+        rdfs:label         "Mamie Smith and Her Jazz Hounds" ;
+        :hasMusicBrainzID  "a33419ce-40d2-4431-9e5e-0ae0918df0dd" ;
+        :hasName           "Mamie Smith and Her Jazz Hounds" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a33419ce-40d2-4431-9e5e-0ae0918df0dd> .
+
+<http://localhost:8080/resource/kejazz/Artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892>
+        a                  :Band ;
+        rdfs:label         "Fletcher Henderson and His Orchestra" ;
+        :hasMusicBrainzID  "6e6170a4-31c6-4cae-a3f9-f0db3b9f5892" ;
+        :hasName           "Fletcher Henderson and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892> .
+
+<http://localhost:8080/resource/kejazz/Artist/c75b5671-935f-4f20-959f-bb23980a890e>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins and His Sax Ensemble" ;
+        :hasMusicBrainzID  "c75b5671-935f-4f20-959f-bb23980a890e" ;
+        :hasName           "Coleman Hawkins and His Sax Ensemble" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c75b5671-935f-4f20-959f-bb23980a890e> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/2b991c03-2419-4bc5-a861-ee548725e881> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a342fddf-154c-4d6f-9f50-f1f56966828d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/4e4ba2d2-46d5-46ae-b9ba-a650c3ea89a8>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins’ 52nd Street All Stars" ;
+        :hasMusicBrainzID  "4e4ba2d2-46d5-46ae-b9ba-a650c3ea89a8" ;
+        :hasName           "Coleman Hawkins’ 52nd Street All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/4e4ba2d2-46d5-46ae-b9ba-a650c3ea89a8> .
+
+<http://localhost:8080/resource/kejazz/Artist/8b24d647-f57d-486c-b945-0fe8847f962d>
+        a                  :Band ;
+        rdfs:label         "Esquire All-American Award Winners" ;
+        :hasMusicBrainzID  "8b24d647-f57d-486c-b945-0fe8847f962d" ;
+        :hasName           "Esquire All-American Award Winners" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8b24d647-f57d-486c-b945-0fe8847f962d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/8b24d647-f57d-486c-b945-0fe8847f962d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d>
+        a                  :Band ;
+        rdfs:label         "The Chocolate Dandies" ;
+        :hasMusicBrainzID  "f0cc5e2e-a2b3-4e38-b641-4dabe32c136d" ;
+        :hasName           "The Chocolate Dandies" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d> .
+
+<http://localhost:8080/resource/kejazz/Artist/16f74a5b-bb94-4025-93e4-ca56ece9f947>
+        a                  :Band ;
+        rdfs:label         "McKinney’s Cotton Pickers" ;
+        :hasMusicBrainzID  "16f74a5b-bb94-4025-93e4-ca56ece9f947" ;
+        :hasName           "McKinney’s Cotton Pickers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/16f74a5b-bb94-4025-93e4-ca56ece9f947> .
+
+<http://localhost:8080/resource/kejazz/Artist/b921b793-c924-4c29-93af-39ed7e1f9f12>
+        a                  :Band ;
+        rdfs:label         "The Capitol Jazzmen" ;
+        :hasMusicBrainzID  "b921b793-c924-4c29-93af-39ed7e1f9f12" ;
+        :hasName           "The Capitol Jazzmen" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b921b793-c924-4c29-93af-39ed7e1f9f12> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/69d24317-1d5f-4c4b-8f76-d61ea2808f4f> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/91d9051e-3a6d-4254-9149-7fd72125700b>
+        a                  :Band ;
+        rdfs:label         "Cozy Cole All Stars" ;
+        :hasMusicBrainzID  "91d9051e-3a6d-4254-9149-7fd72125700b" ;
+        :hasName           "Cozy Cole All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/91d9051e-3a6d-4254-9149-7fd72125700b> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/eff3a96c-ac14-4e9e-a812-f95be0d62ca3> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/701275bf-1d03-4b11-ac99-65b8b2b2a037>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins’ Swing Four" ;
+        :hasMusicBrainzID  "701275bf-1d03-4b11-ac99-65b8b2b2a037" ;
+        :hasName           "Coleman Hawkins’ Swing Four" ;
+        owl:sameAs         <https://musicbrainz.org/artist/701275bf-1d03-4b11-ac99-65b8b2b2a037> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a33419ce-40d2-4431-9e5e-0ae0918df0dd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c75b5671-935f-4f20-959f-bb23980a890e> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/9ec34d3f-d3fd-4c05-93df-900472d30a62>
+        a                  :Band ;
+        rdfs:label         "Henry Allen - Coleman Hawkins and Their Orchestra" ;
+        :hasMusicBrainzID  "9ec34d3f-d3fd-4c05-93df-900472d30a62" ;
+        :hasName           "Henry Allen - Coleman Hawkins and Their Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9ec34d3f-d3fd-4c05-93df-900472d30a62> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c9e59b41-a6ef-436b-b80a-f595347f87a9> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f3d4060d-af2b-47de-b72e-7bccbcc93e01> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/3dd03315-36f7-4c37-8244-a9f9f6d990e2> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/6e6170a4-31c6-4cae-a3f9-f0db3b9f5892> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/51fe321e-5ad0-4dd1-a5c3-3e773688cdf8> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b921b793-c924-4c29-93af-39ed7e1f9f12> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/eff3a96c-ac14-4e9e-a812-f95be0d62ca3>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins Septet" ;
+        :hasMusicBrainzID  "eff3a96c-ac14-4e9e-a812-f95be0d62ca3" ;
+        :hasName           "Coleman Hawkins Septet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eff3a96c-ac14-4e9e-a812-f95be0d62ca3> .
+
+<http://localhost:8080/resource/kejazz/Artist/e0da639b-0bfb-4ac3-b128-5eb46dfe0b9a>
+        a                  :Band ;
+        rdfs:label         "Lionel Hampton and His Orchestra" ;
+        :hasMusicBrainzID  "e0da639b-0bfb-4ac3-b128-5eb46dfe0b9a" ;
+        :hasName           "Lionel Hampton and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e0da639b-0bfb-4ac3-b128-5eb46dfe0b9a> .
+
+<http://localhost:8080/resource/kejazz/Artist/69d24317-1d5f-4c4b-8f76-d61ea2808f4f>
+        a                  :Band ;
+        rdfs:label         "Mound City Blue Blowers" ;
+        :hasMusicBrainzID  "69d24317-1d5f-4c4b-8f76-d61ea2808f4f" ;
+        :hasName           "Mound City Blue Blowers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/69d24317-1d5f-4c4b-8f76-d61ea2808f4f> .
+
+<http://localhost:8080/resource/kejazz/Artist/fcfd6dd1-84cf-4a16-863d-7350eadc7523>
+        a                  :Band ;
+        rdfs:label         "Charlie Shavers’ All American Five" ;
+        :hasMusicBrainzID  "fcfd6dd1-84cf-4a16-863d-7350eadc7523" ;
+        :hasName           "Charlie Shavers’ All American Five" ;
+        owl:sameAs         <https://musicbrainz.org/artist/fcfd6dd1-84cf-4a16-863d-7350eadc7523> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/93a7ed83-4497-4e38-bedf-d4d57b4eba1d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/f3d4060d-af2b-47de-b72e-7bccbcc93e01>
+        a                  :Band ;
+        rdfs:label         "The Dixie Stompers" ;
+        :hasMusicBrainzID  "f3d4060d-af2b-47de-b72e-7bccbcc93e01" ;
+        :hasName           "The Dixie Stompers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f3d4060d-af2b-47de-b72e-7bccbcc93e01> .
+
+<http://localhost:8080/resource/kejazz/Artist/5d5e9bc9-5ded-40c3-b29c-01de0f8309b2>
+        a                  :Band ;
+        rdfs:label         "Benny Carter and His Orchestra" ;
+        :hasMusicBrainzID  "5d5e9bc9-5ded-40c3-b29c-01de0f8309b2" ;
+        :hasName           "Benny Carter and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5d5e9bc9-5ded-40c3-b29c-01de0f8309b2> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/5d5e9bc9-5ded-40c3-b29c-01de0f8309b2> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/bd414bf2-f546-417d-ba28-fb34fa0b5901>
+        a                  :Band ;
+        rdfs:label         "Spike Hughes and His Negro Orchestra" ;
+        :hasMusicBrainzID  "bd414bf2-f546-417d-ba28-fb34fa0b5901" ;
+        :hasName           "Spike Hughes and His Negro Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bd414bf2-f546-417d-ba28-fb34fa0b5901> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/4e4ba2d2-46d5-46ae-b9ba-a650c3ea89a8> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/a342fddf-154c-4d6f-9f50-f1f56966828d>
+        a                  :Band ;
+        rdfs:label         "Metronome All-Stars Band" ;
+        :hasMusicBrainzID  "a342fddf-154c-4d6f-9f50-f1f56966828d" ;
+        :hasName           "Metronome All-Stars Band" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a342fddf-154c-4d6f-9f50-f1f56966828d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/91d9051e-3a6d-4254-9149-7fd72125700b> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e0da639b-0bfb-4ac3-b128-5eb46dfe0b9a> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/c9f5e8cf-881b-4bd8-8aa9-8481a3fb8773>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins Quintet" ;
+        :hasMusicBrainzID  "c9f5e8cf-881b-4bd8-8aa9-8481a3fb8773" ;
+        :hasName           "Coleman Hawkins Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c9f5e8cf-881b-4bd8-8aa9-8481a3fb8773> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/bd414bf2-f546-417d-ba28-fb34fa0b5901> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/93a7ed83-4497-4e38-bedf-d4d57b4eba1d>
+        a                  :Band ;
+        rdfs:label         "The Prestige All Stars" ;
+        :hasMusicBrainzID  "93a7ed83-4497-4e38-bedf-d4d57b4eba1d" ;
+        :hasName           "The Prestige All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/93a7ed83-4497-4e38-bedf-d4d57b4eba1d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/701275bf-1d03-4b11-ac99-65b8b2b2a037> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c9f5e8cf-881b-4bd8-8aa9-8481a3fb8773> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/fcfd6dd1-84cf-4a16-863d-7350eadc7523> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/9e0bec6b-086b-4492-9cb2-497e426ebe90> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/9e0bec6b-086b-4492-9cb2-497e426ebe90>
+        a                  :Band ;
+        rdfs:label         "Michel Warlop et son orchestre" ;
+        :hasMusicBrainzID  "9e0bec6b-086b-4492-9cb2-497e426ebe90" ;
+        :hasName           "Michel Warlop et son orchestre" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9e0bec6b-086b-4492-9cb2-497e426ebe90> .

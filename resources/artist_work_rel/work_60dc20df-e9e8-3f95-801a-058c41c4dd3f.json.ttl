@@ -1,0 +1,43 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/60dc20df-e9e8-3f95-801a-058c41c4dd3f> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+<http://localhost:8080/resource/kejazz/Artist/7006fd35-11e6-4e77-b82c-c752d1febb25>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bubber Miley" ;
+        :hasMusicBrainzID  "7006fd35-11e6-4e77-b82c-c752d1febb25" ;
+        :hasName           "Bubber Miley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7006fd35-11e6-4e77-b82c-c752d1febb25> .
+
+<http://localhost:8080/resource/kejazz/Artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Duke Ellington" ;
+        :hasMusicBrainzID  "3af06bc4-68ad-4cae-bb7a-7eeeb45e411f" ;
+        :hasName           "Duke Ellington" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/60dc20df-e9e8-3f95-801a-058c41c4dd3f> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7006fd35-11e6-4e77-b82c-c752d1febb25> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

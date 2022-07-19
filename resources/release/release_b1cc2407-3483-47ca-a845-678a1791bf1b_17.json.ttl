@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/b1cc2407-3483-47ca-a845-678a1791bf1b>
+        a                      :Release ;
+        rdfs:label             "\"Satchmo\": Ambassador of Jazz" ;
+        :hasASIN               "B0057D87DC" ;
+        :hasBarcode            "0600753336557" ;
+        :hasMusicBrainzID      "b1cc2407-3483-47ca-a845-678a1791bf1b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "\"Satchmo\": Ambassador of Jazz" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate        "2011-08-09" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B0057D87DC> , <https://musicbrainz.org/release/b1cc2407-3483-47ca-a845-678a1791bf1b> , <https://www.amazon.com/dp/B0057D87DC> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/50856ca6-d2e3-4fdd-8647-21230423cba0>
+        a                      :Release ;
+        rdfs:label             "The Blanton-Webster Band" ;
+        :hasASIN               "B000003EO4" ;
+        :hasBarcode            "078635565928" ;
+        :hasMusicBrainzID      "50856ca6-d2e3-4fdd-8647-21230423cba0" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Blanton-Webster Band" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        :releasedInDate        "1993" ;
+        owl:sameAs             <https://www.amazon.com/gp/product/B000003EO4> , <https://www.amazon.com/dp/B000003EO4> , <https://musicbrainz.org/release/50856ca6-d2e3-4fdd-8647-21230423cba0> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .

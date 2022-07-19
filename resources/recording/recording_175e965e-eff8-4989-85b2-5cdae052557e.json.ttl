@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/175e965e-eff8-4989-85b2-5cdae052557e>
+        a                           :Recording ;
+        rdfs:label                  "Organ Grinder’s Swing" ;
+        :hasDurationInMilliseconds  "159733" ;
+        :hasMusicBrainzID           "175e965e-eff8-4989-85b2-5cdae052557e" ;
+        :hasTitle                   "Organ Grinder’s Swing" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/e0bd60f4-415a-49c8-9a03-28239e345c1a> , <http://localhost:8080/resource/kejazz/Release/0427bc6a-821e-4930-b1ab-dcdd462af425> , <http://localhost:8080/resource/kejazz/Release/c2c4818a-a8ed-4f2f-a0a4-5abec1b9db67> , <http://localhost:8080/resource/kejazz/Release/39c7832d-8de5-4b01-9c47-bb6a49487c56> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/870e6d68-a9c6-4c3f-a536-a0b11e48ec30> , <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> , <http://localhost:8080/resource/kejazz/Release/886603f5-07fb-4dd5-99b9-53cccd0c838a> , <http://localhost:8080/resource/kejazz/Release/20e48502-fe32-4870-bd95-1ec91a8b7c67> , <http://localhost:8080/resource/kejazz/Release/9216fe1a-e4f4-4e02-a707-c51c249598d4> , <http://localhost:8080/resource/kejazz/Release/4233ecbe-1120-49d8-ba8b-a7f42f360e75> , <http://localhost:8080/resource/kejazz/Release/d2fa983e-a14f-4303-b163-9125cc5ad1fb> , <http://localhost:8080/resource/kejazz/Release/32ade904-5eba-4d8e-bbf5-249051cffc41> , <http://localhost:8080/resource/kejazz/Release/0e5a0b1c-3959-4761-a1ec-3f216eaa6be2> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1936-08-31" ;
+                                      :hasIntervalStartDate  "1936-08-31"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/406a8439-131f-4f28-b471-561cdababf6e> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/175e965e-eff8-4989-85b2-5cdae052557e> .
+
+<http://localhost:8080/resource/kejazz/Artist/1f814c85-9602-4235-946b-ea1b2d1f3920>
+        a                  :Band ;
+        rdfs:label         "Jimmie Lunceford and His Orchestra" ;
+        :hasMusicBrainzID  "1f814c85-9602-4235-946b-ea1b2d1f3920" ;
+        :hasName           "Jimmie Lunceford and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1f814c85-9602-4235-946b-ea1b2d1f3920> .

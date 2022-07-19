@@ -1,0 +1,16 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/7cfc78fc-a6c7-3772-a8d6-09aa2d86da59>
+        a                  :Work ;
+        rdfs:label         "Dead Man Blues" ;
+        :hasISWC           "T-926.368.869-3" ;
+        :hasMusicBrainzID  "7cfc78fc-a6c7-3772-a8d6-09aa2d86da59" ;
+        :hasTitle          "Dead Man Blues" ;
+        owl:sameAs         <https://musicbrainz.org/work/7cfc78fc-a6c7-3772-a8d6-09aa2d86da59> .

@@ -1,0 +1,70 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/10d388ea-bf93-46c2-93e6-01952ed41b02> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/10d388ea-bf93-46c2-93e6-01952ed41b02>
+        a                  :Band ;
+        rdfs:label         "Dexter Gordon Quintet" ;
+        :hasMusicBrainzID  "10d388ea-bf93-46c2-93e6-01952ed41b02" ;
+        :hasName           "Dexter Gordon Quintet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/10d388ea-bf93-46c2-93e6-01952ed41b02> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/c7546284-4954-4fd0-9dd5-c08c1d911e73> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/db98d3f8-1c74-423c-a0b8-6dd27de2663d>
+        a                  :Band ;
+        rdfs:label         "Dexter Gordon and His Boys" ;
+        :hasMusicBrainzID  "db98d3f8-1c74-423c-a0b8-6dd27de2663d" ;
+        :hasName           "Dexter Gordon and His Boys" ;
+        owl:sameAs         <https://musicbrainz.org/artist/db98d3f8-1c74-423c-a0b8-6dd27de2663d> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/db98d3f8-1c74-423c-a0b8-6dd27de2663d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197>
+        a                  :Band ;
+        rdfs:label         "Dexter Gordon Quartet" ;
+        :hasMusicBrainzID  "ce822195-459f-4d74-a4ae-d9e0ceacc197" ;
+        :hasName           "Dexter Gordon Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> .
+
+<http://localhost:8080/resource/kejazz/Artist/c7546284-4954-4fd0-9dd5-c08c1d911e73>
+        a                  :Band ;
+        rdfs:label         "The Dexter Gordon & Slide Hampton Sextet" ;
+        :hasMusicBrainzID  "c7546284-4954-4fd0-9dd5-c08c1d911e73" ;
+        :hasName           "The Dexter Gordon & Slide Hampton Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c7546284-4954-4fd0-9dd5-c08c1d911e73> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ce822195-459f-4d74-a4ae-d9e0ceacc197> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

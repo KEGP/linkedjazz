@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sidney Bechet" ;
+        :hasMusicBrainzID  "bf1b23ea-9b76-42cf-a5f6-4a691e81af5e" ;
+        :hasName           "Sidney Bechet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> .
+
+<http://localhost:8080/resource/kejazz/Release/d35ff2f5-cf28-43b8-8275-9c069d2ef27d>
+        a                      :Release ;
+        rdfs:label             "The Complete American Masters 1931-1953" ;
+        :hasBarcode            "600753361672" ;
+        :hasMusicBrainzID      "d35ff2f5-cf28-43b8-8275-9c069d2ef27d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete American Masters 1931-1953" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :releasedInDate        "2011-11-21" ;
+        owl:sameAs             <http://www.jazzmasters.fr/en/album/sidney-2/> , <https://musicbrainz.org/release/d35ff2f5-cf28-43b8-8275-9c069d2ef27d> .

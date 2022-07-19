@@ -1,0 +1,33 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/05c8847c-c7be-406d-96b7-616ea70b15f4>
+        a                      :Release ;
+        rdfs:label             "Ugetsu" ;
+        :hasBarcode            "025218609029" ;
+        :hasMusicBrainzID      "05c8847c-c7be-406d-96b7-616ea70b15f4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Ugetsu" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> , <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :releasedInDate        "2006-06-06" ;
+        owl:sameAs             <https://www.deezer.com/album/104398> , <https://musicbrainz.org/release/05c8847c-c7be-406d-96b7-616ea70b15f4> .
+
+<http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Art Blakey" ;
+        :hasMusicBrainzID  "601e7466-eaf5-4a91-9909-ffd770b7e04a" ;
+        :hasName           "Art Blakey" ;
+        owl:sameAs         <https://musicbrainz.org/artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> .
+
+<http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee>
+        a                  :Band ;
+        rdfs:label         "Art Blakey & The Jazz Messengers" ;
+        :hasMusicBrainzID  "209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee" ;
+        :hasName           "Art Blakey & The Jazz Messengers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> .

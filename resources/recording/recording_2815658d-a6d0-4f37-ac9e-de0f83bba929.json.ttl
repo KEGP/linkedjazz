@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339>
+        a                  :ArtistPerson ;
+        rdfs:label         "Dexter Gordon" ;
+        :hasMusicBrainzID  "cc1588e1-5ba3-45a6-b80c-b31035c89339" ;
+        :hasName           "Dexter Gordon" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> .
+
+<http://localhost:8080/resource/kejazz/Recording/2815658d-a6d0-4f37-ac9e-de0f83bba929>
+        a                           :Recording ;
+        rdfs:label                  "Dexter Rides Again" ;
+        :hasDurationInMilliseconds  "197000" ;
+        :hasISRC                    "USBJN0920040" ;
+        :hasMusicBrainzID           "2815658d-a6d0-4f37-ac9e-de0f83bba929" ;
+        :hasTitle                   "Dexter Rides Again" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/cc1588e1-5ba3-45a6-b80c-b31035c89339> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1946-01-26" ;
+                                      :hasIntervalStartDate  "1946-01-26"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/fedaa5ce-81bf-432c-908c-a6300c09b98e> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/2815658d-a6d0-4f37-ac9e-de0f83bba929> .

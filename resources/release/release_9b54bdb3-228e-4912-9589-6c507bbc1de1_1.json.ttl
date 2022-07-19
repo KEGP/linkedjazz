@@ -1,0 +1,33 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed>
+        a                  :ArtistPerson ;
+        rdfs:label         "Billie Holiday" ;
+        :hasMusicBrainzID  "d59c4cda-11d9-48db-8bfe-b557ee602aed" ;
+        :hasName           "Billie Holiday" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> .
+
+<http://localhost:8080/resource/kejazz/Release/9b54bdb3-228e-4912-9589-6c507bbc1de1>
+        a                      :Release ;
+        rdfs:label             "Lady Day & Prez 1937-1941" ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "9b54bdb3-228e-4912-9589-6c507bbc1de1" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Lady Day & Prez 1937-1941" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/d613e4ae-093a-49a1-b06a-579480f7f7e8> , <http://localhost:8080/resource/kejazz/Artist/d59c4cda-11d9-48db-8bfe-b557ee602aed> ;
+        :releasedInDate        "1987" ;
+        owl:sameAs             <https://www.discogs.com/release/9929161> , <https://musicbrainz.org/release/9b54bdb3-228e-4912-9589-6c507bbc1de1> .
+
+<http://localhost:8080/resource/kejazz/Artist/d613e4ae-093a-49a1-b06a-579480f7f7e8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Lester Young" ;
+        :hasMusicBrainzID  "d613e4ae-093a-49a1-b06a-579480f7f7e8" ;
+        :hasName           "Lester Young" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d613e4ae-093a-49a1-b06a-579480f7f7e8> .

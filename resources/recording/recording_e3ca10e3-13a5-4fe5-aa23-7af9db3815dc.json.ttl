@@ -1,0 +1,38 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stan Getz" ;
+        :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
+        :hasName           "Stan Getz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> .
+
+<http://localhost:8080/resource/kejazz/Recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc>
+        a                           :Recording ;
+        rdfs:label                  "Blues in the Closet" ;
+        :hasDurationInMilliseconds  "545000" ;
+        :hasISRC                    "USBJN0920065" ;
+        :hasMusicBrainzID           "e3ca10e3-13a5-4fe5-aa23-7af9db3815dc" ;
+        :hasTitle                   "Blues in the Closet" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> , <http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1957-10-19" ;
+                                      :hasIntervalStartDate  "1957-10-19"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/7736d65c-76a0-47d6-af07-c78bd24e766e> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/e3ca10e3-13a5-4fe5-aa23-7af9db3815dc> .
+
+<http://localhost:8080/resource/kejazz/Artist/33e50556-d4be-421b-a5d1-644bd536ec07>
+        a                  :ArtistPerson ;
+        rdfs:label         "J.J. Johnson" ;
+        :hasMusicBrainzID  "33e50556-d4be-421b-a5d1-644bd536ec07" ;
+        :hasName           "J.J. Johnson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/33e50556-d4be-421b-a5d1-644bd536ec07> .

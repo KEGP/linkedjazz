@@ -1,0 +1,24 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/95bba0fb-1665-41c1-9939-4a6830dbff5a>
+        a                  :Release ;
+        rdfs:label         "Masters of jazz. vol. 1 traditional jazz classics" ;
+        :hasMusicBrainzID  "95bba0fb-1665-41c1-9939-4a6830dbff5a" ;
+        :hasTitle          "Masters of jazz. vol. 1 traditional jazz classics" ;
+        :isCreditedTo      <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate    "1996" ;
+        owl:sameAs         <https://search.clevnet.org/client/en_US/hu-main/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:627344/one> , <https://musicbrainz.org/release/95bba0fb-1665-41c1-9939-4a6830dbff5a> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

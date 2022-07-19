@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca>
+        a                  :Band ;
+        rdfs:label         "The Boswell Sisters" ;
+        :hasMusicBrainzID  "41e2d679-43a3-4b9b-8469-ce748ad7b1ca" ;
+        :hasName           "The Boswell Sisters" ;
+        owl:sameAs         <https://musicbrainz.org/artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> .
+
+<http://localhost:8080/resource/kejazz/Release/e3ae4ca9-c460-4d48-a089-5767dc04ac35>
+        a                      :Release ;
+        rdfs:label             "The Boswell Sisters Collection" ;
+        :hasBarcode            "717101860821" ;
+        :hasMusicBrainzID      "e3ae4ca9-c460-4d48-a089-5767dc04ac35" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Boswell Sisters Collection" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/41e2d679-43a3-4b9b-8469-ce748ad7b1ca> ;
+        :releasedInDate        "2010" ;
+        owl:sameAs             <https://www.discogs.com/release/14985533> , <https://musicbrainz.org/release/e3ae4ca9-c460-4d48-a089-5767dc04ac35> .

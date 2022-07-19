@@ -1,0 +1,23 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d>
+        a                  :Band ;
+        rdfs:label         "The Chocolate Dandies" ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "f0cc5e2e-a2b3-4e38-b641-4dabe32c136d" ;
+        :hasName           "The Chocolate Dandies" ;
+        owl:sameAs         <https://en.wikipedia.org/wiki/The_Chocolate_Dandies> , <https://www.wikidata.org/wiki/Q1075629> , <https://www.discogs.com/artist/317901> , <https://musicbrainz.org/artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d> .

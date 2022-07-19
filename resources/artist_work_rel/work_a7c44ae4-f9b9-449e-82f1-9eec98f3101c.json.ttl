@@ -1,0 +1,43 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/a7c44ae4-f9b9-449e-82f1-9eec98f3101c> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/75f6fe4b-8a7a-4f3c-9232-e6a00ac37491> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+        a                  :RoleInWork ;
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/a7c44ae4-f9b9-449e-82f1-9eec98f3101c> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/75f6fe4b-8a7a-4f3c-9232-e6a00ac37491>
+        a                  :ArtistPerson ;
+        rdfs:label         "Hoagy Carmichael" ;
+        :hasMusicBrainzID  "75f6fe4b-8a7a-4f3c-9232-e6a00ac37491" ;
+        :hasName           "Hoagy Carmichael" ;
+        owl:sameAs         <https://musicbrainz.org/artist/75f6fe4b-8a7a-4f3c-9232-e6a00ac37491> .
+
+<http://localhost:8080/resource/kejazz/Artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce>
+        a                  :ArtistPerson ;
+        rdfs:label         "Irving Mills" ;
+        :hasMusicBrainzID  "2a2bf494-ac80-4ac9-901f-1ef2fece51ce" ;
+        :hasName           "Irving Mills" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2a2bf494-ac80-4ac9-901f-1ef2fece51ce> .

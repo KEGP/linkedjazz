@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/7d7ebc5c-7f5b-41f7-a2c2-35b19871c107>
+        a                  :Release ;
+        rdfs:label         "A Study in Frustration: The Fletcher Henderson Story" ;
+        :hasBarcode        "8436559465212" ;
+        :hasMusicBrainzID  "7d7ebc5c-7f5b-41f7-a2c2-35b19871c107" ;
+        :hasTitle          "A Study in Frustration: The Fletcher Henderson Story" ;
+        :isCreditedTo      <http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> ;
+        :releasedInDate    "2018" ;
+        owl:sameAs         <https://musicbrainz.org/release/7d7ebc5c-7f5b-41f7-a2c2-35b19871c107> .
+
+<http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839>
+        a                  :ArtistPerson ;
+        rdfs:label         "Fletcher Henderson" ;
+        :hasMusicBrainzID  "f47d1c94-c3e3-4c84-a42a-6c33e0032839" ;
+        :hasName           "Fletcher Henderson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> .

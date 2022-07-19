@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/6532800a-a00f-424e-8328-36c7c1c864cc>
+        a                  :ArtistPerson ;
+        rdfs:label         "Lennie Tristano" ;
+        :hasAlias          "Leonard Joseph Tristano" , "Lenny Tristano" , "Lenni Tristano" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/29a709d8-0320-493e-8d0c-f2c386662b7f> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/431a085b-9f4c-4fbb-82de-2ca7ce735da8> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00031063237" , "00085636252" ;
+        :hasISNI           "0000000055137136" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1978-11-18" ;
+                             :hasIntervalStartDate  "1919-03-19"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "6532800a-a00f-424e-8328-36c7c1c864cc" ;
+        :hasName           "Lennie Tristano" ;
+        owl:sameAs         <https://d-nb.info/gnd/131500139> , <https://www.bbc.co.uk/music/artists/6532800a-a00f-424e-8328-36c7c1c864cc> , <http://snaccooperative.org/ark:/99166/w6fr2cpq> , <http://www.lennietristano.com/> , <https://www.allmusic.com/artist/mn0000242966> , <https://www.wikidata.org/wiki/Q586994> , <https://isni.org/isni/0000000055137136> , <https://www.worldcat.org/identities/lccn-n82025136> , <http://viaf.org/viaf/24788641> , <https://musicbrainz.org/artist/6532800a-a00f-424e-8328-36c7c1c864cc> , <https://commons.wikimedia.org/wiki/File:Lennie_Tristano_1947_(Gottlieb).jpg> , <https://www.last.fm/music/Lennie%20Tristano> , <http://id.loc.gov/authorities/names/n82025136> , <https://catalogue.bnf.fr/ark:/12148/cb13900567s> , <https://rateyourmusic.com/artist/lennie_tristano> , <https://www.discogs.com/artist/259086> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/431a085b-9f4c-4fbb-82de-2ca7ce735da8>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Queens" ;
+        :hasMusicBrainzID  "431a085b-9f4c-4fbb-82de-2ca7ce735da8" ;
+        :hasName           "Queens" ;
+        owl:sameAs         <https://musicbrainz.org/area/431a085b-9f4c-4fbb-82de-2ca7ce735da8> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/29a709d8-0320-493e-8d0c-f2c386662b7f>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Chicago" ;
+        :hasMusicBrainzID  "29a709d8-0320-493e-8d0c-f2c386662b7f" ;
+        :hasName           "Chicago" ;
+        owl:sameAs         <https://musicbrainz.org/area/29a709d8-0320-493e-8d0c-f2c386662b7f> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Coltrane" ;
+        :hasMusicBrainzID  "b625448e-bf4a-41c3-a421-72ad46cdb831" ;
+        :hasName           "John Coltrane" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .
+
+<http://localhost:8080/resource/kejazz/Release/b1214263-1d92-4e77-b24c-18fe260d7a2d>
+        a                      :Release ;
+        rdfs:label             "The Heavyweight Champion: The Complete Atlantic Recordings" ;
+        :hasASIN               "B0000033K2" ;
+        :hasBarcode            "081227198428" ;
+        :hasMusicBrainzID      "b1214263-1d92-4e77-b24c-18fe260d7a2d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Heavyweight Champion: The Complete Atlantic Recordings" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :releasedInDate        "1995-08-15" ;
+        owl:sameAs             <https://www.amazon.com/dp/B0000033K2> , <https://musicbrainz.org/release/b1214263-1d92-4e77-b24c-18fe260d7a2d> , <https://www.amazon.com/gp/product/B0000033K2> , <https://www.allmusic.com/album/release/mr0001332155> .

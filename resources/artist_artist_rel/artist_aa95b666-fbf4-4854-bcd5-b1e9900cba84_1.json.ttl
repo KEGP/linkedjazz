@@ -1,0 +1,48 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/844728e5-e1f3-438e-82cf-c3b6b2755a35>
+        a                  :Band ;
+        rdfs:label         "Lennie Tristano Trio" ;
+        :hasMusicBrainzID  "844728e5-e1f3-438e-82cf-c3b6b2755a35" ;
+        :hasName           "Lennie Tristano Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/844728e5-e1f3-438e-82cf-c3b6b2755a35> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "teacher" ;
+        :hasMusicBrainzID  "249fc24f-d573-4290-9d74-0547712d1f1e" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/249fc24f-d573-4290-9d74-0547712d1f1e> .
+
+<http://localhost:8080/resource/kejazz/Artist/88003f59-44ba-4841-a404-12d70804a077>
+        a                  :ArtistPerson ;
+        rdfs:label         "William Russo" ;
+        :hasMusicBrainzID  "88003f59-44ba-4841-a404-12d70804a077" ;
+        :hasName           "William Russo" ;
+        owl:sameAs         <https://musicbrainz.org/artist/88003f59-44ba-4841-a404-12d70804a077> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6532800a-a00f-424e-8328-36c7c1c864cc> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/88003f59-44ba-4841-a404-12d70804a077> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/6532800a-a00f-424e-8328-36c7c1c864cc> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/844728e5-e1f3-438e-82cf-c3b6b2755a35> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3>
+        a                  :ArtistPerson ;
+        rdfs:label         "Jelly Roll Morton" ;
+        :hasMusicBrainzID  "3d094919-071f-4070-95dc-e1f350e4a5f3" ;
+        :hasName           "Jelly Roll Morton" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3d094919-071f-4070-95dc-e1f350e4a5f3> .
+
+<http://localhost:8080/resource/kejazz/Release/411478ab-a323-47d7-81f0-5a30cbbfc46b>
+        a                      :Release ;
+        rdfs:label             "Greatest Hits" ;
+        :hasASIN               "B000003G33" ;
+        :hasBarcode            "090266850020" ;
+        :hasMusicBrainzID      "411478ab-a323-47d7-81f0-5a30cbbfc46b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Greatest Hits" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/3d094919-071f-4070-95dc-e1f350e4a5f3> ;
+        :releasedInDate        "1996" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000003G33> , <https://www.amazon.com/gp/product/B000003G33> , <https://musicbrainz.org/release/411478ab-a323-47d7-81f0-5a30cbbfc46b> .

@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/732b70c1-f4ed-4f4a-bdd7-2bc9184a002e>
+        a                      :Release ;
+        rdfs:label             "Jazz Greats, Volume 31: Fletcher Henderson: Wrappin' It Up" ;
+        :hasASIN               "B001I1YZGA" ;
+        :hasMusicBrainzID      "732b70c1-f4ed-4f4a-bdd7-2bc9184a002e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Greats, Volume 31: Fletcher Henderson: Wrappin' It Up" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> ;
+        :releasedInDate        "1997" ;
+        owl:sameAs             <https://www.discogs.com/release/8679760> , <https://musicbrainz.org/release/732b70c1-f4ed-4f4a-bdd7-2bc9184a002e> , <https://www.amazon.com/dp/B001I1YZGA> , <https://www.amazon.co.uk/gp/product/B001I1YZGA> .
+
+<http://localhost:8080/resource/kejazz/Artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839>
+        a                  :ArtistPerson ;
+        rdfs:label         "Fletcher Henderson" ;
+        :hasMusicBrainzID  "f47d1c94-c3e3-4c84-a42a-6c33e0032839" ;
+        :hasName           "Fletcher Henderson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f47d1c94-c3e3-4c84-a42a-6c33e0032839> .

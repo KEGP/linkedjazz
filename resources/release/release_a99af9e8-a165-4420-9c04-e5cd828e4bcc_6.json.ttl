@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sidney Bechet" ;
+        :hasMusicBrainzID  "bf1b23ea-9b76-42cf-a5f6-4a691e81af5e" ;
+        :hasName           "Sidney Bechet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> .
+
+<http://localhost:8080/resource/kejazz/Release/a99af9e8-a165-4420-9c04-e5cd828e4bcc>
+        a                      :Release ;
+        rdfs:label             "Summertime: 1932-1940" ;
+        :hasASIN               "B00000G1RU" ;
+        :hasMusicBrainzID      "a99af9e8-a165-4420-9c04-e5cd828e4bcc" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Summertime: 1932-1940" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :releasedInDate        "1999" ;
+        owl:sameAs             <https://www.amazon.com/dp/B00000G1RU> , <https://musicbrainz.org/release/a99af9e8-a165-4420-9c04-e5cd828e4bcc> , <https://www.amazon.com/gp/product/B00000G1RU> .

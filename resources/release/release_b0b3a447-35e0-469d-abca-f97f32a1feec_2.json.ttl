@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb>
+        a                  :Band ;
+        rdfs:label         "Quintette du Hot Club de France" ;
+        :hasMusicBrainzID  "ee55e4e8-807d-49b1-8470-d1c0898ed7cb" ;
+        :hasName           "Quintette du Hot Club de France" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> .
+
+<http://localhost:8080/resource/kejazz/Release/b0b3a447-35e0-469d-abca-f97f32a1feec>
+        a                      :Release ;
+        rdfs:label             "Quintette Du Hot Club De France" ;
+        :hasBarcode            "3072666000707" ;
+        :hasMusicBrainzID      "b0b3a447-35e0-469d-abca-f97f32a1feec" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Quintette Du Hot Club De France" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/ee55e4e8-807d-49b1-8470-d1c0898ed7cb> ;
+        :releasedInDate        "1985" ;
+        owl:sameAs             <https://musicbrainz.org/release/b0b3a447-35e0-469d-abca-f97f32a1feec> .

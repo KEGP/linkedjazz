@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/d9747359-db30-43f9-82cd-0d9566114658>
+        a                           :Recording ;
+        rdfs:label                  "Dinah" ;
+        :hasDurationInMilliseconds  "190000" ;
+        :hasISRC                    "USBJN0920019" ;
+        :hasMusicBrainzID           "d9747359-db30-43f9-82cd-0d9566114658" ;
+        :hasTitle                   "Dinah" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1935-06-24" ;
+                                      :hasIntervalStartDate  "1935-06-24"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/7f3a3551-4c29-30a4-af3c-bd379042c6d7> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/d9747359-db30-43f9-82cd-0d9566114658> .
+
+<http://localhost:8080/resource/kejazz/Artist/dee95bdd-55a3-48af-8735-1c61baee5089>
+        a                  :Band ;
+        rdfs:label         "Fats Waller and His Rhythm" ;
+        :hasMusicBrainzID  "dee95bdd-55a3-48af-8735-1c61baee5089" ;
+        :hasName           "Fats Waller and His Rhythm" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dee95bdd-55a3-48af-8735-1c61baee5089> .

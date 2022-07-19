@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/de6cd145-7a74-4e4b-86ac-4094433b849f>
+        a                           :Recording ;
+        rdfs:label                  "You'd Be So Nice to Come Home To" ;
+        :hasDurationInMilliseconds  "168840" ;
+        :hasMusicBrainzID           "de6cd145-7a74-4e4b-86ac-4094433b849f" ;
+        :hasTitle                   "You'd Be So Nice to Come Home To" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1964-07-28" ;
+                                      :hasIntervalStartDate  "1964-07-28"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/dca3d1eb-0365-37fd-97de-6126d682fab2> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/de6cd145-7a74-4e4b-86ac-4094433b849f> .
+
+<http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499>
+        a                  :ArtistPerson ;
+        rdfs:label         "Ella Fitzgerald" ;
+        :hasMusicBrainzID  "54799c0e-eb45-4eea-996d-c4d71a63c499" ;
+        :hasName           "Ella Fitzgerald" ;
+        owl:sameAs         <https://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499> .

@@ -1,0 +1,45 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1938" ;
+                           :hasIntervalStartDate  "1938"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/d78563f2-d1d7-4dde-a2a3-e648312c2586> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/abb415f3-a991-4fa7-b47a-674ab86fe060> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/052324df-f4d8-4f3d-8d13-88dca9037205> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/052324df-f4d8-4f3d-8d13-88dca9037205>
+        a                  :Band ;
+        rdfs:label         "Edmond Hall Celeste Quartet" ;
+        :hasMusicBrainzID  "052324df-f4d8-4f3d-8d13-88dca9037205" ;
+        :hasName           "Edmond Hall Celeste Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/052324df-f4d8-4f3d-8d13-88dca9037205> .
+
+<http://localhost:8080/resource/kejazz/Artist/d78563f2-d1d7-4dde-a2a3-e648312c2586>
+        a                  :Band ;
+        rdfs:label         "The Boogie Woogie Trio" ;
+        :hasMusicBrainzID  "d78563f2-d1d7-4dde-a2a3-e648312c2586" ;
+        :hasName           "The Boogie Woogie Trio" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d78563f2-d1d7-4dde-a2a3-e648312c2586> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/61947bfa-5e34-44e9-b2fa-845fc082a367>
+        a                   :Band ;
+        rdfs:label          "The George Shearing Quintet" ;
+        :hasActivityPeriod  [ a                      dul:TimeInterval ;
+                              :hasIntervalStartDate  "1949"
+                            ] ;
+        :hasAlias           "The George Shearing Quintet wi" , "George Shearing Quintet" , "The George Shearing Qunitet" ;
+        :hasMainArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID   "61947bfa-5e34-44e9-b2fa-845fc082a367" ;
+        :hasName            "The George Shearing Quintet" ;
+        owl:sameAs          <https://musicbrainz.org/artist/61947bfa-5e34-44e9-b2fa-845fc082a367> , <https://open.spotify.com/artist/2VwXDNTx79rnIfFJSxv1sw> , <https://www.discogs.com/artist/320803> .

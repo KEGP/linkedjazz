@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stan Getz" ;
+        :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
+        :hasName           "Stan Getz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> .
+
+<http://localhost:8080/resource/kejazz/Release/220de3c7-8b69-4536-8477-0b67ccc95ff0>
+        a                      :Release ;
+        rdfs:label             "Jazz Portrait - The Cool Mr. Getz" ;
+        :hasBarcode            "4010427200415" ;
+        :hasMusicBrainzID      "220de3c7-8b69-4536-8477-0b67ccc95ff0" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Portrait - The Cool Mr. Getz" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+        owl:sameAs             <https://musicbrainz.org/release/220de3c7-8b69-4536-8477-0b67ccc95ff0> .

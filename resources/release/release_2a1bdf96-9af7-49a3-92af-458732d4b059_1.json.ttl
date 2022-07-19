@@ -1,0 +1,34 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Dick Hyman" ;
+        :hasMusicBrainzID  "dab1ad75-3ea3-4071-91c4-7a66475599d4" ;
+        :hasName           "Dick Hyman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> .
+
+<http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75>
+        a                  :ArtistPerson ;
+        rdfs:label         "Scott Joplin" ;
+        :hasMusicBrainzID  "aec8a328-d2e8-4780-b2ea-318c7f8d6f75" ;
+        :hasName           "Scott Joplin" ;
+        owl:sameAs         <https://musicbrainz.org/artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> .
+
+<http://localhost:8080/resource/kejazz/Release/2a1bdf96-9af7-49a3-92af-458732d4b059>
+        a                      :Release ;
+        rdfs:label             "Piano Works: 1899–1904" ;
+        :hasASIN               "B000003ESR" ;
+        :hasBarcode            "078635799323" ;
+        :hasMusicBrainzID      "2a1bdf96-9af7-49a3-92af-458732d4b059" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Piano Works: 1899–1904" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/dab1ad75-3ea3-4071-91c4-7a66475599d4> , <http://localhost:8080/resource/kejazz/Artist/aec8a328-d2e8-4780-b2ea-318c7f8d6f75> ;
+        :releasedInDate        "1988" ;
+        owl:sameAs             <https://www.discogs.com/release/8042280> , <https://www.amazon.com/gp/product/B000003ESR> , <https://www.amazon.com/dp/B000003ESR> , <https://musicbrainz.org/release/2a1bdf96-9af7-49a3-92af-458732d4b059> .

@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba>
+        a                  :Band ;
+        rdfs:label         "The Modern Jazz Quartet" ;
+        :hasMusicBrainzID  "75472b2f-55ca-47bb-a192-5ac8601350ba" ;
+        :hasName           "The Modern Jazz Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/75472b2f-55ca-47bb-a192-5ac8601350ba> .
+
+<http://localhost:8080/resource/kejazz/Release/00587597-326a-4994-a87f-ad8969b4e52a>
+        a                      :Release ;
+        rdfs:label             "Django" ;
+        :hasBarcode            "0035628564429" ;
+        :hasMusicBrainzID      "00587597-326a-4994-a87f-ad8969b4e52a" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Django" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/75472b2f-55ca-47bb-a192-5ac8601350ba> ;
+        owl:sameAs             <https://musicbrainz.org/release/00587597-326a-4994-a87f-ad8969b4e52a> .

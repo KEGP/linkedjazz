@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+
+<http://localhost:8080/resource/kejazz/Recording/c4267824-c699-4c45-a06f-441a0b1fc7b9>
+        a                           :Recording ;
+        rdfs:label                  "Bags' Groove" ;
+        :hasDurationInMilliseconds  "171706" ;
+        :hasMusicBrainzID           "c4267824-c699-4c45-a06f-441a0b1fc7b9" ;
+        :hasTitle                   "Bags' Groove" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/9129c7c7-ff50-44e4-8a23-7ca9123ccfce> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1954-12-24" ;
+                                      :hasIntervalStartDate  "1954-12-24"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/e8381339-0422-421f-9fb8-f7a4211ce05c> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/c4267824-c699-4c45-a06f-441a0b1fc7b9> .

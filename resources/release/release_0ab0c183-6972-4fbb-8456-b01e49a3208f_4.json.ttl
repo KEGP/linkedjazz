@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8>
+        a                  :ArtistPerson ;
+        rdfs:label         "Cannonball Adderley" ;
+        :hasMusicBrainzID  "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8" ;
+        :hasName           "Cannonball Adderley" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> .
+
+<http://localhost:8080/resource/kejazz/Release/0ab0c183-6972-4fbb-8456-b01e49a3208f>
+        a                      :Release ;
+        rdfs:label             "Eight Classic Albums" ;
+        :hasASIN               "B014I3M25U" ;
+        :hasBarcode            "5036408124623" ;
+        :hasMusicBrainzID      "0ab0c183-6972-4fbb-8456-b01e49a3208f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Eight Classic Albums" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8> ;
+        :releasedInDate        "2012" ;
+        owl:sameAs             <https://www.amazon.co.uk/gp/product/B014I3M25U> , <https://musicbrainz.org/release/0ab0c183-6972-4fbb-8456-b01e49a3208f> , <https://www.amazon.com/dp/B014I3M25U> , <https://www.discogs.com/release/3244193> .

@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499>
+        a                  :ArtistPerson ;
+        rdfs:label         "Ella Fitzgerald" ;
+        :hasMusicBrainzID  "54799c0e-eb45-4eea-996d-c4d71a63c499" ;
+        :hasName           "Ella Fitzgerald" ;
+        owl:sameAs         <https://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499> .
+
+<http://localhost:8080/resource/kejazz/Release/f7bfd771-202f-41e9-bd78-bb18c1163b3b>
+        a                      :Release ;
+        rdfs:label             "Six Classic Albums, Volume 3" ;
+        :hasASIN               "B00IROICFQ" ;
+        :hasBarcode            "5036408162328" ;
+        :hasMusicBrainzID      "f7bfd771-202f-41e9-bd78-bb18c1163b3b" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Six Classic Albums, Volume 3" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :releasedInDate        "2014-05-16" ;
+        owl:sameAs             <https://www.amazon.de/gp/product/B00IROICFQ> , <https://musicbrainz.org/release/f7bfd771-202f-41e9-bd78-bb18c1163b3b> , <https://www.jpc.de/jpcng/jazz/detail/-/art/six-classic-albums-vol-3/hnum/4179742> , <https://www.amazon.com/dp/B00IROICFQ> .

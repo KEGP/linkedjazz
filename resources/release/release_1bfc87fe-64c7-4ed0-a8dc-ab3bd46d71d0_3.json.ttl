@@ -1,0 +1,33 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Horace Silver" ;
+        :hasMusicBrainzID  "d185d986-ee96-4fd3-bd61-8c848a4765b6" ;
+        :hasName           "Horace Silver" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> .
+
+<http://localhost:8080/resource/kejazz/Release/1bfc87fe-64c7-4ed0-a8dc-ab3bd46d71d0>
+        a                      :Release ;
+        rdfs:label             "Horace Silver and the Jazz Messengers" ;
+        :hasBarcode            "724387533929" ;
+        :hasMusicBrainzID      "1bfc87fe-64c7-4ed0-a8dc-ab3bd46d71d0" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Horace Silver and the Jazz Messengers" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/d185d986-ee96-4fd3-bd61-8c848a4765b6> , <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :releasedInDate        "2005" ;
+        owl:sameAs             <https://www.discogs.com/release/1053363> , <https://musicbrainz.org/release/1bfc87fe-64c7-4ed0-a8dc-ab3bd46d71d0> .
+
+<http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee>
+        a                  :Band ;
+        rdfs:label         "Art Blakey & The Jazz Messengers" ;
+        :hasMusicBrainzID  "209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee" ;
+        :hasName           "Art Blakey & The Jazz Messengers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> .

@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/f712230f-9df9-4a88-9ee6-02cfc2eb4eb6>
+        a                           :Recording ;
+        rdfs:label                  "One O'Clock Jump" ;
+        :hasDurationInMilliseconds  "183893" ;
+        :hasISRC                    "USBJN0920024" ;
+        :hasMusicBrainzID           "f712230f-9df9-4a88-9ee6-02cfc2eb4eb6" ;
+        :hasTitle                   "One O'Clock Jump" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/66787546-ae42-4ac2-9f14-6fe358a7a466> , <http://localhost:8080/resource/kejazz/Release/39d4233f-a8f9-4b47-b9b6-932869f46b04> , <http://localhost:8080/resource/kejazz/Release/2ce44225-865f-4f48-a751-e9a37beeebbb> , <http://localhost:8080/resource/kejazz/Release/50daba83-0e63-4b93-ada1-af876b4c0e17> , <http://localhost:8080/resource/kejazz/Release/c2023007-0764-4d39-9bf3-2ba5fd579904> , <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/95f902ff-583e-416b-b67d-1f0f0f0c32e0> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1937-07-07" ;
+                                      :hasIntervalStartDate  "1937-07-07"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/54642bfe-8ec3-348c-90a1-05c0c3765d9b> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/f712230f-9df9-4a88-9ee6-02cfc2eb4eb6> .
+
+<http://localhost:8080/resource/kejazz/Artist/1a0c3cd4-0161-4f68-a0fd-f45983179944>
+        a                  :Band ;
+        rdfs:label         "Count Basie & His Orchestra" ;
+        :hasMusicBrainzID  "1a0c3cd4-0161-4f68-a0fd-f45983179944" ;
+        :hasName           "Count Basie & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/1a0c3cd4-0161-4f68-a0fd-f45983179944> .

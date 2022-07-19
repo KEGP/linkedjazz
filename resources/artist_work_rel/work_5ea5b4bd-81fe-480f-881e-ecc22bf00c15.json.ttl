@@ -1,0 +1,43 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+        a                  :RoleInWork ;
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/5ea5b4bd-81fe-480f-881e-ecc22bf00c15> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/dbfd61ef-fce1-4803-9f18-7bfdd3996508> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Eddie Lang" ;
+        :hasMusicBrainzID  "7c6e10c8-7896-4624-a46b-2f3b5784d2d6" ;
+        :hasName           "Eddie Lang" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/5ea5b4bd-81fe-480f-881e-ecc22bf00c15> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/7c6e10c8-7896-4624-a46b-2f3b5784d2d6> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/dbfd61ef-fce1-4803-9f18-7bfdd3996508>
+        a                  :ArtistPerson ;
+        rdfs:label         "Lonnie Johnson" ;
+        :hasMusicBrainzID  "dbfd61ef-fce1-4803-9f18-7bfdd3996508" ;
+        :hasName           "Lonnie Johnson" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dbfd61ef-fce1-4803-9f18-7bfdd3996508> .

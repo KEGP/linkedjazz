@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Woody Herman" ;
+        :hasMusicBrainzID  "73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0" ;
+        :hasName           "Woody Herman" ;
+        owl:sameAs         <https://musicbrainz.org/artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0> .
+
+<http://localhost:8080/resource/kejazz/Release/59f3da5d-fe25-414a-9249-7d04f821a891>
+        a                      :Release ;
+        rdfs:label             "22 top tracks" ;
+        :hasBarcode            "8003278440259" ;
+        :hasMusicBrainzID      "59f3da5d-fe25-414a-9249-7d04f821a891" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "22 top tracks" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/73bb2ece-7ef7-4ee9-b3a0-bffe0b481bb0> ;
+        :releasedInDate        "1990" ;
+        owl:sameAs             <https://musicbrainz.org/release/59f3da5d-fe25-414a-9249-7d04f821a891> .

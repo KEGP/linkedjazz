@@ -1,0 +1,48 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/99783a18-88cf-4bcb-aa7e-6e3809bc7a5e>
+        a                      :Release ;
+        rdfs:label             "The Ultimate Jazz Archive, Set 24: Swing to Bebop, Modern Jazz" ;
+        :hasASIN               "B000B7I3W4" ;
+        :hasBarcode            "4011222228000" ;
+        :hasMusicBrainzID      "99783a18-88cf-4bcb-aa7e-6e3809bc7a5e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Ultimate Jazz Archive, Set 24: Swing to Bebop, Modern Jazz" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> , <http://localhost:8080/resource/kejazz/Artist/6532800a-a00f-424e-8328-36c7c1c864cc> , <http://localhost:8080/resource/kejazz/Artist/defbbe54-02dd-4df1-a5b7-31724ff02133> , <http://localhost:8080/resource/kejazz/Artist/d2a135f4-bb6b-4fb6-a09b-115e740b7fe0> ;
+        :releasedInDate        "2005-08-29" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000B7I3W4> , <https://musicbrainz.org/release/99783a18-88cf-4bcb-aa7e-6e3809bc7a5e> , <https://www.amazon.de/gp/product/B000B7I3W4> , <https://www.discogs.com/release/533633> .
+
+<http://localhost:8080/resource/kejazz/Artist/8e8c7417-c905-46b1-b42a-5260b4274ed4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Thelonious Monk" ;
+        :hasMusicBrainzID  "8e8c7417-c905-46b1-b42a-5260b4274ed4" ;
+        :hasName           "Thelonious Monk" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8e8c7417-c905-46b1-b42a-5260b4274ed4> .
+
+<http://localhost:8080/resource/kejazz/Artist/6532800a-a00f-424e-8328-36c7c1c864cc>
+        a                  :ArtistPerson ;
+        rdfs:label         "Lennie Tristano" ;
+        :hasMusicBrainzID  "6532800a-a00f-424e-8328-36c7c1c864cc" ;
+        :hasName           "Lennie Tristano" ;
+        owl:sameAs         <https://musicbrainz.org/artist/6532800a-a00f-424e-8328-36c7c1c864cc> .
+
+<http://localhost:8080/resource/kejazz/Artist/d2a135f4-bb6b-4fb6-a09b-115e740b7fe0>
+        a                  :ArtistPerson ;
+        rdfs:label         "Fats Navarro" ;
+        :hasMusicBrainzID  "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0" ;
+        :hasName           "Fats Navarro" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d2a135f4-bb6b-4fb6-a09b-115e740b7fe0> .
+
+<http://localhost:8080/resource/kejazz/Artist/defbbe54-02dd-4df1-a5b7-31724ff02133>
+        a                  :ArtistPerson ;
+        rdfs:label         "Eddie “Lockjaw” Davis" ;
+        :hasMusicBrainzID  "defbbe54-02dd-4df1-a5b7-31724ff02133" ;
+        :hasName           "Eddie “Lockjaw” Davis" ;
+        owl:sameAs         <https://musicbrainz.org/artist/defbbe54-02dd-4df1-a5b7-31724ff02133> .

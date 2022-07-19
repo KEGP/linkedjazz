@@ -1,0 +1,48 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/81e26fc9-ddb5-42cf-9b31-2e0f55bf6342>
+        a                  :ArtistPerson ;
+        rdfs:label         "Pee Wee Russell" ;
+        :hasMusicBrainzID  "81e26fc9-ddb5-42cf-9b31-2e0f55bf6342" ;
+        :hasName           "Pee Wee Russell" ;
+        owl:sameAs         <https://musicbrainz.org/artist/81e26fc9-ddb5-42cf-9b31-2e0f55bf6342> .
+
+<http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sidney Bechet" ;
+        :hasMusicBrainzID  "bf1b23ea-9b76-42cf-a5f6-4a691e81af5e" ;
+        :hasName           "Sidney Bechet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> .
+
+<http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Mezz Mezzrow" ;
+        :hasMusicBrainzID  "a3aea435-d1fb-45ca-b38d-411335d4717f" ;
+        :hasName           "Mezz Mezzrow" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a3aea435-d1fb-45ca-b38d-411335d4717f> .
+
+<http://localhost:8080/resource/kejazz/Artist/fef8ae6b-b1c9-4412-a627-1958ea222289>
+        a                  :Band ;
+        rdfs:label         "Washboard Rhythm Kings" ;
+        :hasMusicBrainzID  "fef8ae6b-b1c9-4412-a627-1958ea222289" ;
+        :hasName           "Washboard Rhythm Kings" ;
+        owl:sameAs         <https://musicbrainz.org/artist/fef8ae6b-b1c9-4412-a627-1958ea222289> .
+
+<http://localhost:8080/resource/kejazz/Release/3b698204-6d4b-4dd1-b0a7-1cd0c0b1f08f>
+        a                      :Release ;
+        rdfs:label             "The Ultimate Jazz Archive, Set 06: Classic Jazz, Ragtime, Dixieland" ;
+        :hasASIN               "B000B7I3W4" ;
+        :hasBarcode            "4011222228000" ;
+        :hasMusicBrainzID      "3b698204-6d4b-4dd1-b0a7-1cd0c0b1f08f" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Ultimate Jazz Archive, Set 06: Classic Jazz, Ragtime, Dixieland" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/81e26fc9-ddb5-42cf-9b31-2e0f55bf6342> , <http://localhost:8080/resource/kejazz/Artist/a3aea435-d1fb-45ca-b38d-411335d4717f> , <http://localhost:8080/resource/kejazz/Artist/fef8ae6b-b1c9-4412-a627-1958ea222289> , <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+        :releasedInDate        "2005-08-29" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000B7I3W4> , <https://musicbrainz.org/release/3b698204-6d4b-4dd1-b0a7-1cd0c0b1f08f> , <https://www.amazon.de/gp/product/B000B7I3W4> , <https://www.discogs.com/release/533607> .

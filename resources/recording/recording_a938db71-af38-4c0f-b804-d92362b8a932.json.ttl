@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/a938db71-af38-4c0f-b804-d92362b8a932>
+        a                           :Recording ;
+        rdfs:label                  "Blues for Alice" ;
+        :hasDurationInMilliseconds  "169000" ;
+        :hasMusicBrainzID           "a938db71-af38-4c0f-b804-d92362b8a932" ;
+        :hasTitle                   "Blues for Alice" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/33691b4d-0614-4f9f-836c-9b83f43d4b48> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1951" ;
+                                      :hasIntervalStartDate  "1951"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/1b2a870f-bbeb-449e-8847-4e30974f4840> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/a938db71-af38-4c0f-b804-d92362b8a932> .
+
+<http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Parker" ;
+        :hasMusicBrainzID  "c7356af9-9ea6-4a78-a55b-c73775716312" ;
+        :hasName           "Charlie Parker" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312> .

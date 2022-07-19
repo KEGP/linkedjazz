@@ -1,0 +1,32 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Lewis" ;
+        :hasMusicBrainzID  "be347fef-e406-4c1b-8698-669d71b68bc5" ;
+        :hasName           "John Lewis" ;
+        owl:sameAs         <https://musicbrainz.org/artist/be347fef-e406-4c1b-8698-669d71b68bc5> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+        a                  :RoleInWork ;
+        rdfs:label         "composer" ;
+        :hasMusicBrainzID  "d59d99ea-23d4-4a80-b066-edca32ee158f" ;
+        :hasName           "composer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a                      dul:TimeInterval ;
+                     :hasIntervalEndDate    "1954" ;
+                     :hasIntervalStartDate  "1954"
+                   ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/f50915eb-71d9-3b93-9338-3dd71d37cb9e> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/be347fef-e406-4c1b-8698-669d71b68bc5> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/d59d99ea-23d4-4a80-b066-edca32ee158f>
+] .

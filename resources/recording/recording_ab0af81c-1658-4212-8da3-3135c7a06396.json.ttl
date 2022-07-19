@@ -1,0 +1,34 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/2da07c52-8d96-42c3-9498-16955f1b65e1>
+        a                           :Recording ;
+        rdfs:label                  "Blue Serge" ;
+        :hasDurationInMilliseconds  "204000" ;
+        :hasMusicBrainzID           "2da07c52-8d96-42c3-9498-16955f1b65e1" ;
+        :hasTitle                   "Blue Serge" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/bb8fe301-fe37-3341-b1be-2f8df34a5522> , <http://localhost:8080/resource/kejazz/Release/50856ca6-d2e3-4fdd-8647-21230423cba0> , <http://localhost:8080/resource/kejazz/Release/d02124e8-43b8-476c-a4f5-a44570cf4bca> , <http://localhost:8080/resource/kejazz/Release/0153f167-e2fa-4030-8cf9-d418f33fbf8b> , <http://localhost:8080/resource/kejazz/Release/9c09e81d-7868-4690-b042-d379941150af> , <http://localhost:8080/resource/kejazz/Release/b281c80d-8f7b-46f1-81d1-94fd1c51818c> , <http://localhost:8080/resource/kejazz/Release/aa3577c7-ad1a-4b6e-844a-3c089e88f39b> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1941-02-15" ;
+                                      :hasIntervalStartDate  "1941-02-15"
+                                    ] ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1940-02-15" ;
+                                      :hasIntervalStartDate  "1940-02-15"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/9f655d03-d286-3830-a6e6-4ebaf57a2495> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/2da07c52-8d96-42c3-9498-16955f1b65e1> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .

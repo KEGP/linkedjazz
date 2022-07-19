@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/2b991c03-2419-4bc5-a861-ee548725e881>
+        a                  :Band ;
+        rdfs:label         "Coleman Hawkins Quartet" ;
+        :hasMusicBrainzID  "2b991c03-2419-4bc5-a861-ee548725e881" ;
+        :hasName           "Coleman Hawkins Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/2b991c03-2419-4bc5-a861-ee548725e881> .
+
+<http://localhost:8080/resource/kejazz/Recording/4bca287b-305f-42f8-8a7b-c0bd58e884ce>
+        a                           :Recording ;
+        rdfs:label                  "The Man I Love" ;
+        :hasDurationInMilliseconds  "308760" ;
+        :hasMusicBrainzID           "4bca287b-305f-42f8-8a7b-c0bd58e884ce" ;
+        :hasTitle                   "The Man I Love" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/2b991c03-2419-4bc5-a861-ee548725e881> ;
+        dul:hasTimeInterval         [ a  dul:TimeInterval ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/5168781f-9979-495a-85ea-f1bf511de240> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/4bca287b-305f-42f8-8a7b-c0bd58e884ce> .

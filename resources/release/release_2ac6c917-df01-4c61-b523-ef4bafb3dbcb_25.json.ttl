@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/2ac6c917-df01-4c61-b523-ef4bafb3dbcb>
+        a                      :Release ;
+        rdfs:label             "Jazz in the Charts 014 (1932–1933)" ;
+        :hasASIN               "B000JBXNDQ" ;
+        :hasBarcode            "4011222237132" ;
+        :hasMusicBrainzID      "2ac6c917-df01-4c61-b523-ef4bafb3dbcb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz in the Charts 014 (1932–1933)" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "2006" ;
+        owl:sameAs             <https://www.amazon.de/gp/product/B000JBXNDQ> , <https://www.amazon.com/dp/B000JBXNDQ> , <https://musicbrainz.org/release/2ac6c917-df01-4c61-b523-ef4bafb3dbcb> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

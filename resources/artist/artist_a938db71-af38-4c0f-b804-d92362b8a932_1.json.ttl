@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/c1fc21db-40e9-47f5-af93-f3ebe6581113>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Kansas City" ;
+        :hasMusicBrainzID  "c1fc21db-40e9-47f5-af93-f3ebe6581113" ;
+        :hasName           "Kansas City" ;
+        owl:sameAs         <https://musicbrainz.org/area/c1fc21db-40e9-47f5-af93-f3ebe6581113> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/c7356af9-9ea6-4a78-a55b-c73775716312>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Parker" ;
+        :hasAlias          "Charley Parker" , "Charles Christopher Parker, Jr" , "Charlier Parker with Strings" , "Charlie \"Chan\" Parker" , "Charles Parker" , "Charlie Parker Jam Session" , "Charlie Parker and Strings" , "Bird" , "Charlie Parker And The Jazz All-Stars" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/c1fc21db-40e9-47f5-af93-f3ebe6581113> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00023505323" , "00039934450" ;
+        :hasISNI           "0000000368633974" , "0000000120955806" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1955-03-12" ;
+                             :hasIntervalStartDate  "1920-08-29"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "c7356af9-9ea6-4a78-a55b-c73775716312" ;
+        :hasName           "Charlie Parker" ;
+        owl:sameAs         <https://secondhandsongs.com/artist/138> , <http://viaf.org/viaf/10034216> , <http://id.loc.gov/authorities/names/n50050327> , <http://www.birdlives.co.uk/> , <https://www.deezer.com/artist/2692> , <https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312> , <http://www.kyushu-ns.ac.jp/~allan/Documents/CP_M.html> , <https://www.wikidata.org/wiki/Q103767> , <https://open.spotify.com/artist/4Ww5mwS7BWYjoZTUIrMHfC> , <https://d-nb.info/gnd/118739328> , <https://commons.wikimedia.org/wiki/File:Charlie_Parker,_Tommy_Potter,_Miles_Davis,_Max_Roach_(Gottlieb_06941).jpg> , <https://www.discogs.com/artist/75617> , <https://catalogue.bnf.fr/ark:/12148/cb13898247z> , <https://isni.org/isni/0000000368633974> , <https://www.imdb.com/name/nm0662127/> , <http://www.jazzdisco.org/bird/> , <https://isni.org/isni/0000000120955806> , <http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=1426&pt=Charlie%20Parker> , <https://www.allmusic.com/artist/mn0000211758> , <https://www.last.fm/music/Charlie+Parker> , <https://openlibrary.org/works/OL4918032A> , <https://nla.gov.au/nla.party-911160> , <https://rateyourmusic.com/artist/charlie_parker> , <https://www.bbc.co.uk/music/artists/c7356af9-9ea6-4a78-a55b-c73775716312> , <https://www.musik-sammler.de/artist/charlie-parker/> , <https://itunes.apple.com/artist/id284786497> , <http://www.jazzdisco.org/charlie-parker/discography/> , <http://snaccooperative.org/ark:/99166/w67086vq> , <https://www.worldcat.org/identities/lccn-n50050327> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/74e50e58-5deb-4b99-93a2-decbb365c07f>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "New York" ;
+        :hasMusicBrainzID  "74e50e58-5deb-4b99-93a2-decbb365c07f" ;
+        :hasName           "New York" ;
+        owl:sameAs         <https://musicbrainz.org/area/74e50e58-5deb-4b99-93a2-decbb365c07f> .

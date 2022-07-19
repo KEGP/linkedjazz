@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32>
+        a                  :ArtistPerson ;
+        rdfs:label         "Stan Getz" ;
+        :hasMusicBrainzID  "8f2422ab-0ec6-4c92-80c4-afe9622fab32" ;
+        :hasName           "Stan Getz" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> .
+
+<http://localhost:8080/resource/kejazz/Release/b03d2a8b-0720-4000-b65d-6fa8fee707e0>
+        a                      :Release ;
+        rdfs:label             "The Essential Stan Getz" ;
+        :hasASIN               "B000001DZZ" ;
+        :hasBarcode            "731451717123" ;
+        :hasMusicBrainzID      "b03d2a8b-0720-4000-b65d-6fa8fee707e0" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Essential Stan Getz" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8f2422ab-0ec6-4c92-80c4-afe9622fab32> ;
+        :releasedInDate        "1992-11-03" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000001DZZ> , <https://www.amazon.com/gp/product/B000001DZZ> , <https://musicbrainz.org/release/b03d2a8b-0720-4000-b65d-6fa8fee707e0> .

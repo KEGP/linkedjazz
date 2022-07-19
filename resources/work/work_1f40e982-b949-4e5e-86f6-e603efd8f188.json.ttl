@@ -1,0 +1,16 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/1f40e982-b949-4e5e-86f6-e603efd8f188>
+        a                  :Work ;
+        rdfs:label         "Work Song" ;
+        :hasISWC           "T-700.081.856-6" ;
+        :hasMusicBrainzID  "1f40e982-b949-4e5e-86f6-e603efd8f188" ;
+        :hasTitle          "Work Song" ;
+        owl:sameAs         <https://www.wikidata.org/wiki/Q79349690> , <https://secondhandsongs.com/work/70794> , <https://musicbrainz.org/work/1f40e982-b949-4e5e-86f6-e603efd8f188> .

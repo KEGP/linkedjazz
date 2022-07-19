@@ -1,0 +1,38 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f>
+        a                  :ArtistPerson ;
+        rdfs:label         "Coleman Hawkins" ;
+        :hasMusicBrainzID  "5c8cb181-38fe-4300-8153-650b2ed0258f" ;
+        :hasName           "Coleman Hawkins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5c8cb181-38fe-4300-8153-650b2ed0258f> .
+
+<http://localhost:8080/resource/kejazz/Artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d>
+        a                  :Band ;
+        rdfs:label         "The Chocolate Dandies" ;
+        :hasMusicBrainzID  "f0cc5e2e-a2b3-4e38-b641-4dabe32c136d" ;
+        :hasName           "The Chocolate Dandies" ;
+        owl:sameAs         <https://musicbrainz.org/artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d> .
+
+<http://localhost:8080/resource/kejazz/Recording/677eae4f-50da-4ffa-b361-973a80e64680>
+        a                           :Recording ;
+        rdfs:label                  "I Can't Believe That You're in Love With Me" ;
+        :hasDurationInMilliseconds  "255000" ;
+        :hasISRC                    "USBJN0920034" ;
+        :hasMusicBrainzID           "677eae4f-50da-4ffa-b361-973a80e64680" ;
+        :hasTitle                   "I Can't Believe That You're in Love With Me" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> , <http://localhost:8080/resource/kejazz/Release/07cf5691-d05e-4cf3-9e83-a010f8f55f68> , <http://localhost:8080/resource/kejazz/Release/97dfcafb-be05-4d3c-ac91-3648cca79dc2> , <http://localhost:8080/resource/kejazz/Release/ea7d6819-cf39-46b9-8358-579903294ae4> , <http://localhost:8080/resource/kejazz/Release/53f2f69a-51f2-4e4b-8169-9dcb23911a0b> , <http://localhost:8080/resource/kejazz/Release/1bd81943-6a3c-4f6a-91eb-df83c2cce2a9> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/5c8cb181-38fe-4300-8153-650b2ed0258f> , <http://localhost:8080/resource/kejazz/Artist/f0cc5e2e-a2b3-4e38-b641-4dabe32c136d> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1940-05-25" ;
+                                      :hasIntervalStartDate  "1940-05-25"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/c950d847-df02-4b0c-a512-74fd8e17a015> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/677eae4f-50da-4ffa-b361-973a80e64680> .

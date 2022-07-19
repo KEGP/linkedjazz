@@ -1,0 +1,78 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+<http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499>
+        a                  :ArtistPerson ;
+        rdfs:label         "Ella Fitzgerald" ;
+        :hasMusicBrainzID  "54799c0e-eb45-4eea-996d-c4d71a63c499" ;
+        :hasName           "Ella Fitzgerald" ;
+        owl:sameAs         <https://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/77cbe0ae-0c27-464e-9633-ddeac6ef55c2> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/88562a60-2550-48f0-8e8e-f54d95c7369a>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/e67a956b-b7cd-4deb-b41e-461e976cd191>
+        a                  :Band ;
+        rdfs:label         "Ella Fitzgerald and Her Famous Orchestra" ;
+        :hasMusicBrainzID  "e67a956b-b7cd-4deb-b41e-461e976cd191" ;
+        :hasName           "Ella Fitzgerald and Her Famous Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e67a956b-b7cd-4deb-b41e-461e976cd191> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/88562a60-2550-48f0-8e8e-f54d95c7369a>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "supporting musician" ;
+        :hasMusicBrainzID  "88562a60-2550-48f0-8e8e-f54d95c7369a" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/88562a60-2550-48f0-8e8e-f54d95c7369a> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1953-08-28" ;
+                           :hasIntervalStartDate  "1947-12-10"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/5f41ef01-6d56-4198-b026-21f97977dfdd>
+        a                  :Band ;
+        rdfs:label         "Ella Fitzgerald and Her Savoy Eight" ;
+        :hasMusicBrainzID  "5f41ef01-6d56-4198-b026-21f97977dfdd" ;
+        :hasName           "Ella Fitzgerald and Her Savoy Eight" ;
+        owl:sameAs         <https://musicbrainz.org/artist/5f41ef01-6d56-4198-b026-21f97977dfdd> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/5f41ef01-6d56-4198-b026-21f97977dfdd> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "married" ;
+        :hasMusicBrainzID  "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/b2bf7a5d-2da6-4742-baf4-e38d8a7ad029> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/e67a956b-b7cd-4deb-b41e-461e976cd191> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

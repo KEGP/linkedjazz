@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/4c32c017-89bf-4e26-8d3d-04b206d2a299>
+        a                      :Release ;
+        rdfs:label             "The Chronological Classics: Dizzy Gillespie 1945–1946" ;
+        :hasASIN               "B00007GXFD" ;
+        :hasBarcode            "3307517093523" ;
+        :hasMusicBrainzID      "4c32c017-89bf-4e26-8d3d-04b206d2a299" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Chronological Classics: Dizzy Gillespie 1945–1946" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> ;
+        :releasedInDate        "1997" ;
+        owl:sameAs             <https://www.amazon.com/dp/B00007GXFD> , <https://www.amazon.fr/gp/product/B00007GXFD> , <https://musicbrainz.org/release/4c32c017-89bf-4e26-8d3d-04b206d2a299> , <https://www.discogs.com/release/3717415> .
+
+<http://localhost:8080/resource/kejazz/Artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5>
+        a                  :ArtistPerson ;
+        rdfs:label         "Dizzy Gillespie" ;
+        :hasMusicBrainzID  "e9ba8ccb-505f-4e5c-b909-65998d0d35b5" ;
+        :hasName           "Dizzy Gillespie" ;
+        owl:sameAs         <https://musicbrainz.org/artist/e9ba8ccb-505f-4e5c-b909-65998d0d35b5> .

@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/63968769-a811-437f-b490-69c72b6c5f65>
+        a                      :Release ;
+        rdfs:label             "The Ultimate Collection" ;
+        :hasBarcode            "5014293612326" ;
+        :hasMusicBrainzID      "63968769-a811-437f-b490-69c72b6c5f65" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Ultimate Collection" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+        :releasedInDate        "1998" ;
+        owl:sameAs             <https://musicbrainz.org/release/63968769-a811-437f-b490-69c72b6c5f65> .
+
+<http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bessie Smith" ;
+        :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
+        :hasName           "Bessie Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> .

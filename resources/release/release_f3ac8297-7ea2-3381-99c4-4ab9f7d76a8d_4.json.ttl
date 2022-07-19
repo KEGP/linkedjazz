@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/f3ac8297-7ea2-3381-99c4-4ab9f7d76a8d>
+        a                      :Release ;
+        rdfs:label             "Moanin'" ;
+        :hasASIN               "B000005H4X" ;
+        :hasBarcode            "077774651622" ;
+        :hasMusicBrainzID      "f3ac8297-7ea2-3381-99c4-4ab9f7d76a8d" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Moanin'" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> ;
+        :releasedInDate        "1987" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000005H4X> , <https://www.amazon.com/gp/product/B000005H4X> , <https://www.discogs.com/release/455732> , <https://musicbrainz.org/release/f3ac8297-7ea2-3381-99c4-4ab9f7d76a8d> .
+
+<http://localhost:8080/resource/kejazz/Artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee>
+        a                  :Band ;
+        rdfs:label         "Art Blakey & The Jazz Messengers" ;
+        :hasMusicBrainzID  "209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee" ;
+        :hasName           "Art Blakey & The Jazz Messengers" ;
+        owl:sameAs         <https://musicbrainz.org/artist/209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee> .

@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6>
+        a                  :ArtistPerson ;
+        rdfs:label         "Louis Armstrong" ;
+        :hasMusicBrainzID  "eea8a864-fcda-4602-9569-38ab446decd6" ;
+        :hasName           "Louis Armstrong" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6> .
+
+<http://localhost:8080/resource/kejazz/Release/9d708392-a322-4d23-97d1-4c11d598f7e5>
+        a                      :Release ;
+        rdfs:label             "Giants of Jazz: Louis Armstrong" ;
+        :hasMusicBrainzID      "9d708392-a322-4d23-97d1-4c11d598f7e5" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Giants of Jazz: Louis Armstrong" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/eea8a864-fcda-4602-9569-38ab446decd6> ;
+        :releasedInDate        "1980" ;
+        owl:sameAs             <https://www.discogs.com/release/1799130> , <https://musicbrainz.org/release/9d708392-a322-4d23-97d1-4c11d598f7e5> .

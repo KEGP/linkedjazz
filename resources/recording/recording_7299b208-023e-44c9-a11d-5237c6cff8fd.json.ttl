@@ -1,0 +1,44 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003>
+        a                  :Band ;
+        rdfs:label         "The Benny Goodman Sextet" ;
+        :hasMusicBrainzID  "82eb0cc2-84be-44b2-8b5d-543e3a1a4003" ;
+        :hasName           "The Benny Goodman Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> .
+
+<http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317>
+        a                  :ArtistPerson ;
+        rdfs:label         "Count Basie" ;
+        :hasMusicBrainzID  "0dbd6300-efdc-420b-857e-895e18fad317" ;
+        :hasName           "Count Basie" ;
+        owl:sameAs         <https://musicbrainz.org/artist/0dbd6300-efdc-420b-857e-895e18fad317> .
+
+<http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Christian" ;
+        :hasMusicBrainzID  "98607588-f641-4d2b-b10b-03152c8dbc13" ;
+        :hasName           "Charlie Christian" ;
+        owl:sameAs         <https://musicbrainz.org/artist/98607588-f641-4d2b-b10b-03152c8dbc13> .
+
+<http://localhost:8080/resource/kejazz/Recording/7299b208-023e-44c9-a11d-5237c6cff8fd>
+        a                           :Recording ;
+        rdfs:label                  "I Found a New Baby" ;
+        :hasDurationInMilliseconds  "177840" ;
+        :hasMusicBrainzID           "7299b208-023e-44c9-a11d-5237c6cff8fd" ;
+        :hasTitle                   "I Found a New Baby" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> , <http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> , <http://localhost:8080/resource/kejazz/Artist/0dbd6300-efdc-420b-857e-895e18fad317> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1941-01-15" ;
+                                      :hasIntervalStartDate  "1941-01-15"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/88b0de3e-9343-31f5-a3d2-a5f07c2189c8> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/7299b208-023e-44c9-a11d-5237c6cff8fd> .

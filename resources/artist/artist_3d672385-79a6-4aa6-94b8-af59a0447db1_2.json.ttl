@@ -1,0 +1,47 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/a8c1d0e2-0837-454c-afa9-4190b3fe4d92>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Staten Island" ;
+        :hasMusicBrainzID  "a8c1d0e2-0837-454c-afa9-4190b3fe4d92" ;
+        :hasName           "Staten Island" ;
+        owl:sameAs         <https://musicbrainz.org/area/a8c1d0e2-0837-454c-afa9-4190b3fe4d92> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/3922931c-8690-40e8-9ca9-d8d08759928c>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "Bonham" ;
+        :hasMusicBrainzID  "3922931c-8690-40e8-9ca9-d8d08759928c" ;
+        :hasName           "Bonham" ;
+        owl:sameAs         <https://musicbrainz.org/area/3922931c-8690-40e8-9ca9-d8d08759928c> .
+
+<http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98>
+        a                  :ArtistActivityArea ;
+        rdfs:label         "United States" ;
+        :hasMusicBrainzID  "489ce91b-6658-3307-9877-795b68554c98" ;
+        :hasName           "United States" ;
+        owl:sameAs         <https://musicbrainz.org/area/489ce91b-6658-3307-9877-795b68554c98> .
+
+<http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Christian" ;
+        :hasAlias          "Charles Christian" , "Charlie Christan" , "Christian" ;
+        :hasBeginArea      <http://localhost:8080/resource/kejazz/ArtistActivityArea/3922931c-8690-40e8-9ca9-d8d08759928c> ;
+        :hasEndArea        <http://localhost:8080/resource/kejazz/ArtistActivityArea/a8c1d0e2-0837-454c-afa9-4190b3fe4d92> ;
+        :hasGender         "Male" ;
+        :hasIPI            "00238787029" ;
+        :hasISNI           "0000000073570822" ;
+        :hasLifeSpan       [ a                      dul:TimeInterval ;
+                             :hasIntervalEndDate    "1942-03-02" ;
+                             :hasIntervalStartDate  "1916-07-29"
+                           ] ;
+        :hasMainArea       <http://localhost:8080/resource/kejazz/ArtistActivityArea/489ce91b-6658-3307-9877-795b68554c98> ;
+        :hasMusicBrainzID  "98607588-f641-4d2b-b10b-03152c8dbc13" ;
+        :hasName           "Charlie Christian" ;
+        owl:sameAs         <https://musicbrainz.org/artist/98607588-f641-4d2b-b10b-03152c8dbc13> , <https://www.worldcat.org/identities/lccn-n81097888> , <https://d-nb.info/gnd/130618195> , <https://www.discogs.com/artist/312997> , <https://www.wikidata.org/wiki/Q356490> , <https://www.allmusic.com/artist/mn0000805930> , <https://nla.gov.au/nla.party-1144390> , <http://id.loc.gov/authorities/names/n81097888> , <https://rateyourmusic.com/artist/charlie_christian> , <https://www.bbc.co.uk/music/artists/98607588-f641-4d2b-b10b-03152c8dbc13> , <http://home.elp.rr.com/valdes/sologrph.htm> , <https://catalogue.bnf.fr/ark:/12148/cb13892482k> , <http://rockhall.com/inductees/charlie-christian/bio/> , <http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=13720918> , <http://viaf.org/viaf/5117159> , <https://isni.org/isni/0000000073570822> , <https://en.wikipedia.org/wiki/Charlie_Christian> , <https://www.imdb.com/name/nm1490070/> , <https://www.last.fm/music/Charlie%20Christian> , <https://commons.wikimedia.org/wiki/File:Charlie_Christian.jpg> .

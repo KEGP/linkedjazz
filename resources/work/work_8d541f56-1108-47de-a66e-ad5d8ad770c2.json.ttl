@@ -1,0 +1,15 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Work/8d541f56-1108-47de-a66e-ad5d8ad770c2>
+        a                  :Work ;
+        rdfs:label         "Livery Stable Blues" ;
+        :hasMusicBrainzID  "8d541f56-1108-47de-a66e-ad5d8ad770c2" ;
+        :hasTitle          "Livery Stable Blues" ;
+        owl:sameAs         <https://en.wikipedia.org/wiki/Livery_Stable_Blues> , <https://www.wikidata.org/wiki/Q4347917> , <https://musicbrainz.org/work/8d541f56-1108-47de-a66e-ad5d8ad770c2> .

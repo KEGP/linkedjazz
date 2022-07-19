@@ -1,0 +1,58 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1960-10-19" ;
+                     :hasIntervalStartDate  "1960-10-19"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af0952a-e2f5-4d28-be98-eb03d6228449> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Sarah Vaughan" ;
+        :hasMusicBrainzID  "351d8bdf-33a1-45e2-8c04-c85fad20da55" ;
+        :hasName           "Sarah Vaughan" ;
+        owl:sameAs         <https://musicbrainz.org/artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> .
+
+<http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+        rdf:type           :MusicalInstrument ;
+        rdfs:label         "piano" ;
+        :hasMusicBrainzID  "b3eac5f9-7859-4416-ac39-7154e2e8d348" ;
+        :hasName           "piano" ;
+        owl:sameAs         <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348> .
+
+<http://localhost:8080/resource/kejazz/Artist/d0fd2d09-eda7-45e2-b7da-beee70c5e271>
+        rdf:type           :ArtistPerson ;
+        rdfs:label         "Jimmy Jones" ;
+        :hasMusicBrainzID  "d0fd2d09-eda7-45e2-b7da-beee70c5e271" ;
+        :hasName           "Jimmy Jones" ;
+        owl:sameAs         <https://musicbrainz.org/artist/d0fd2d09-eda7-45e2-b7da-beee70c5e271> .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1960-10-19" ;
+                     :hasIntervalStartDate  "1960-10-19"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af0952a-e2f5-4d28-be98-eb03d6228449> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d0fd2d09-eda7-45e2-b7da-beee70c5e271> ;
+  :withInstrument  <http://localhost:8080/resource/kejazz/MusicalInstrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>
+] .
+
+[ rdf:type         :ArtistPerformanceInRecording ;
+  :atTime          [ rdf:type               dul:TimeInterval ;
+                     :hasIntervalEndDate    "1960-10-19" ;
+                     :hasIntervalStartDate  "1960-10-19"
+                   ] ;
+  :forRecording    <http://localhost:8080/resource/kejazz/Recording/6af0952a-e2f5-4d28-be98-eb03d6228449> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/d0fd2d09-eda7-45e2-b7da-beee70c5e271>
+] .

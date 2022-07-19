@@ -1,0 +1,29 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+[ a                :ArtistContributionToWork ;
+  :atTime          [ a  dul:TimeInterval ] ;
+  :forWork         <http://localhost:8080/resource/kejazz/Work/d0887fa2-320d-44f8-aa9a-d6e07e638b4d> ;
+  :includesArtist  <http://localhost:8080/resource/kejazz/Artist/68f19808-1f7b-46d4-bd1d-71aaf0f6b267> ;
+  :involvesRole    <http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/68f19808-1f7b-46d4-bd1d-71aaf0f6b267>
+        a                  :ArtistPerson ;
+        rdfs:label         "Gerry Mulligan" ;
+        :hasMusicBrainzID  "68f19808-1f7b-46d4-bd1d-71aaf0f6b267" ;
+        :hasName           "Gerry Mulligan" ;
+        owl:sameAs         <https://musicbrainz.org/artist/68f19808-1f7b-46d4-bd1d-71aaf0f6b267> .
+
+<http://localhost:8080/resource/kejazz/RoleInWork/a255bca1-b157-4518-9108-7b147dc3fc68>
+        a                  :RoleInWork ;
+        rdfs:label         "writer" ;
+        :hasMusicBrainzID  "a255bca1-b157-4518-9108-7b147dc3fc68" ;
+        :hasName           "writer" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68> .

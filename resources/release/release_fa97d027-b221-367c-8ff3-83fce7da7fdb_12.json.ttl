@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/fa97d027-b221-367c-8ff3-83fce7da7fdb>
+        a                      :Release ;
+        rdfs:label             "Saxophone Colossus" ;
+        :hasBarcode            "4988002366576" ;
+        :hasMusicBrainzID      "fa97d027-b221-367c-8ff3-83fce7da7fdb" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Saxophone Colossus" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a> ;
+        :releasedInDate        "1998-05-21" ;
+        owl:sameAs             <https://musicbrainz.org/release/fa97d027-b221-367c-8ff3-83fce7da7fdb> , <https://www.discogs.com/release/3035556> .
+
+<http://localhost:8080/resource/kejazz/Artist/3b47247e-5b57-49b6-a0ed-bad80243802a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sonny Rollins" ;
+        :hasMusicBrainzID  "3b47247e-5b57-49b6-a0ed-bad80243802a" ;
+        :hasName           "Sonny Rollins" ;
+        owl:sameAs         <https://musicbrainz.org/artist/3b47247e-5b57-49b6-a0ed-bad80243802a> .

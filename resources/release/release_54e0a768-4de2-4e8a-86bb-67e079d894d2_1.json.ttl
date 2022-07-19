@@ -1,0 +1,25 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong and His Hot Five" ;
+        :hasMusicBrainzID  "cfedde14-91c5-46cb-b087-9f2da9bec194" ;
+        :hasName           "Louis Armstrong and His Hot Five" ;
+        owl:sameAs         <https://musicbrainz.org/artist/cfedde14-91c5-46cb-b087-9f2da9bec194> .
+
+<http://localhost:8080/resource/kejazz/Release/54e0a768-4de2-4e8a-86bb-67e079d894d2>
+        a                      :Release ;
+        rdfs:label             "West End Blues / Fireworks" ;
+        :hasMusicBrainzID      "54e0a768-4de2-4e8a-86bb-67e079d894d2" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "West End Blues / Fireworks" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/cfedde14-91c5-46cb-b087-9f2da9bec194> ;
+        :releasedInDate        "1928-07" ;
+        owl:sameAs             <https://musicbrainz.org/release/54e0a768-4de2-4e8a-86bb-67e079d894d2> .

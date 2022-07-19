@@ -1,0 +1,59 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003>
+        a                  :Band ;
+        rdfs:label         "The Benny Goodman Sextet" ;
+        :hasMusicBrainzID  "82eb0cc2-84be-44b2-8b5d-543e3a1a4003" ;
+        :hasName           "The Benny Goodman Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/052324df-f4d8-4f3d-8d13-88dca9037205> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/a2019e51-9ce1-4c14-98d0-25428761e9f0> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/a2019e51-9ce1-4c14-98d0-25428761e9f0>
+        a                  :Orchestra ;
+        rdfs:label         "Benny Goodman and His Orchestra" ;
+        :hasMusicBrainzID  "a2019e51-9ce1-4c14-98d0-25428761e9f0" ;
+        :hasName           "Benny Goodman and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/a2019e51-9ce1-4c14-98d0-25428761e9f0> .
+
+<http://localhost:8080/resource/kejazz/Artist/052324df-f4d8-4f3d-8d13-88dca9037205>
+        a                  :Band ;
+        rdfs:label         "Edmond Hall Celeste Quartet" ;
+        :hasMusicBrainzID  "052324df-f4d8-4f3d-8d13-88dca9037205" ;
+        :hasName           "Edmond Hall Celeste Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/052324df-f4d8-4f3d-8d13-88dca9037205> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a                      dul:TimeInterval ;
+                           :hasIntervalEndDate    "1941" ;
+                           :hasIntervalStartDate  "1939"
+                         ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

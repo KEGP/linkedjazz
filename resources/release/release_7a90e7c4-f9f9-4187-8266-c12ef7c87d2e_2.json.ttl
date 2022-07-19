@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/7a90e7c4-f9f9-4187-8266-c12ef7c87d2e>
+        a                      :Release ;
+        rdfs:label             "The Complete Pacific Jazz and Capitol Recordings of the Original Gerry Mulligan Quartet and Tentette With Chet Baker" ;
+        :hasBarcode            "" ;
+        :hasMusicBrainzID      "7a90e7c4-f9f9-4187-8266-c12ef7c87d2e" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Complete Pacific Jazz and Capitol Recordings of the Original Gerry Mulligan Quartet and Tentette With Chet Baker" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/78b711d1-43d7-464c-a110-490a8041fcf7> ;
+        :releasedInDate        "1989" ;
+        owl:sameAs             <https://www.discogs.com/release/5409743> , <https://musicbrainz.org/release/7a90e7c4-f9f9-4187-8266-c12ef7c87d2e> .
+
+<http://localhost:8080/resource/kejazz/Artist/78b711d1-43d7-464c-a110-490a8041fcf7>
+        a                  :Band ;
+        rdfs:label         "Gerry Mulligan Quartet" ;
+        :hasMusicBrainzID  "78b711d1-43d7-464c-a110-490a8041fcf7" ;
+        :hasName           "Gerry Mulligan Quartet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/78b711d1-43d7-464c-a110-490a8041fcf7> .

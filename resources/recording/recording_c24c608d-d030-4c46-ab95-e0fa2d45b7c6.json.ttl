@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1>
+        a                  :Band ;
+        rdfs:label         "Louis Armstrong & His Orchestra" ;
+        :hasMusicBrainzID  "067bf834-c35f-414f-8389-a77558669cc1" ;
+        :hasName           "Louis Armstrong & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/067bf834-c35f-414f-8389-a77558669cc1> .
+
+<http://localhost:8080/resource/kejazz/Recording/c24c608d-d030-4c46-ab95-e0fa2d45b7c6>
+        a                           :Recording ;
+        rdfs:label                  "I Gotta Right to Sing the Blues" ;
+        :hasDurationInMilliseconds  "183000" ;
+        :hasMusicBrainzID           "c24c608d-d030-4c46-ab95-e0fa2d45b7c6" ;
+        :hasTitle                   "I Gotta Right to Sing the Blues" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/96923a1c-4922-44f6-9ff5-328d44ba1d94> , <http://localhost:8080/resource/kejazz/Release/1404372b-c181-49b9-aaa2-963210f78f7c> , <http://localhost:8080/resource/kejazz/Release/9a9bdb3a-661b-4115-8b7a-26d0371797cb> , <http://localhost:8080/resource/kejazz/Release/b5d9ed23-8bae-34ea-8816-45b65849c0cd> , <http://localhost:8080/resource/kejazz/Release/b7e1cbca-832f-4c20-9d3a-d2bc97ba1835> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/a32b57a6-fe7f-4d7f-a488-c5a529db0d4d> , <http://localhost:8080/resource/kejazz/Release/6548d71b-3aa5-4ef2-b5c0-cbd4cfa04efc> , <http://localhost:8080/resource/kejazz/Release/772ea1bc-6322-4802-b9f6-7c24a95ee588> , <http://localhost:8080/resource/kejazz/Release/85bdc09e-d145-4508-928b-8981f589d2bb> , <http://localhost:8080/resource/kejazz/Release/260ce435-e5dc-4949-ae16-e31ef6f26ddb> , <http://localhost:8080/resource/kejazz/Release/79025850-fef2-4cc7-84f7-0b3623603d26> , <http://localhost:8080/resource/kejazz/Release/eff4618d-a8fb-4340-8009-c8a737d854e2> , <http://localhost:8080/resource/kejazz/Release/e8b03d4f-ed81-4f87-9a4d-93c361df2baf> , <http://localhost:8080/resource/kejazz/Release/2ac6c917-df01-4c61-b523-ef4bafb3dbcb> , <http://localhost:8080/resource/kejazz/Release/6341dbec-47dc-46c3-b151-e1fd937f455a> , <http://localhost:8080/resource/kejazz/Release/dc5923ed-1d6e-46c6-ba16-89799e319c12> , <http://localhost:8080/resource/kejazz/Release/efb307e0-8e2c-4dfe-a5a9-0efe6365ac15> , <http://localhost:8080/resource/kejazz/Release/8fae87ce-d0ab-4cf2-8d89-6ad66514fef8> , <http://localhost:8080/resource/kejazz/Release/f5ee8c3c-e083-4a8a-aa29-b10189c863a0> , <http://localhost:8080/resource/kejazz/Release/57714f5a-30d4-41c8-9113-436c3b22610d> , <http://localhost:8080/resource/kejazz/Release/12815468-1ecc-47ac-8186-28663d4c812d> , <http://localhost:8080/resource/kejazz/Release/5c9fcb6d-01a8-4075-884b-85014807f261> , <http://localhost:8080/resource/kejazz/Release/5b9584b1-2e53-42d2-816f-8c7598040868> , <http://localhost:8080/resource/kejazz/Release/7708cf3c-d785-4d59-b868-2f93ac1decd3> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/067bf834-c35f-414f-8389-a77558669cc1> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1933-01-26" ;
+                                      :hasIntervalStartDate  "1933-01-26"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/caa62b20-cc23-3e34-b04f-46a535d855fd> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/c24c608d-d030-4c46-ab95-e0fa2d45b7c6> .

@@ -1,0 +1,33 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/8ecae52e-9c89-4b61-99d8-ac11abc26771>
+        a                  :ArtistPerson ;
+        rdfs:label         "Chick Webb" ;
+        :hasMusicBrainzID  "8ecae52e-9c89-4b61-99d8-ac11abc26771" ;
+        :hasName           "Chick Webb" ;
+        owl:sameAs         <https://musicbrainz.org/artist/8ecae52e-9c89-4b61-99d8-ac11abc26771> .
+
+<http://localhost:8080/resource/kejazz/Release/04a66bb5-e693-48a2-b5ec-95c0e60965b4>
+        a                      :Release ;
+        rdfs:label             "Swingsation: Ella Fitzgerald With Chick Webb" ;
+        :hasBarcode            "00602577175916" ;
+        :hasMusicBrainzID      "04a66bb5-e693-48a2-b5ec-95c0e60965b4" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Swingsation: Ella Fitzgerald With Chick Webb" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/8ecae52e-9c89-4b61-99d8-ac11abc26771> , <http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499> ;
+        :releasedInDate        "2018-11-23" ;
+        owl:sameAs             <https://open.spotify.com/album/0Zfy1k6lqrz7Ob5pbSeATa> , <https://itunes.apple.com/us/album/id1442734663> , <https://www.deezer.com/album/79090322> , <https://musicbrainz.org/release/04a66bb5-e693-48a2-b5ec-95c0e60965b4> .
+
+<http://localhost:8080/resource/kejazz/Artist/54799c0e-eb45-4eea-996d-c4d71a63c499>
+        a                  :ArtistPerson ;
+        rdfs:label         "Ella Fitzgerald" ;
+        :hasMusicBrainzID  "54799c0e-eb45-4eea-996d-c4d71a63c499" ;
+        :hasName           "Ella Fitzgerald" ;
+        owl:sameAs         <https://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499> .

@@ -1,0 +1,31 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/6af0952a-e2f5-4d28-be98-eb03d6228449>
+        a                           :Recording ;
+        rdfs:label                  "Wrap Your Troubles in Dreams" ;
+        :hasDurationInMilliseconds  "154000" ;
+        :hasISRC                    "USBJN0920076" ;
+        :hasMusicBrainzID           "6af0952a-e2f5-4d28-be98-eb03d6228449" ;
+        :hasTitle                   "Wrap Your Troubles in Dreams" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/cfe54ee2-81b1-4942-b0f4-d977d8f15b29> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1960-10-19" ;
+                                      :hasIntervalStartDate  "1960-10-19"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/177be3d6-14bf-3e12-87af-c1d7457b5c59> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/6af0952a-e2f5-4d28-be98-eb03d6228449> .
+
+<http://localhost:8080/resource/kejazz/Artist/351d8bdf-33a1-45e2-8c04-c85fad20da55>
+        a                  :ArtistPerson ;
+        rdfs:label         "Sarah Vaughan" ;
+        :hasMusicBrainzID  "351d8bdf-33a1-45e2-8c04-c85fad20da55" ;
+        :hasName           "Sarah Vaughan" ;
+        owl:sameAs         <https://musicbrainz.org/artist/351d8bdf-33a1-45e2-8c04-c85fad20da55> .

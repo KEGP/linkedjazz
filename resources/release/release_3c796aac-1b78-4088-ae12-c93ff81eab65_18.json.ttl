@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043>
+        a                  :ArtistPerson ;
+        rdfs:label         "Bessie Smith" ;
+        :hasMusicBrainzID  "ffa28768-ecda-42c6-ac49-6ce5c7d33043" ;
+        :hasName           "Bessie Smith" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> .
+
+<http://localhost:8080/resource/kejazz/Release/3c796aac-1b78-4088-ae12-c93ff81eab65>
+        a                      :Release ;
+        rdfs:label             "The Rough Guide to Blues Legends: Bessie Smith" ;
+        :hasASIN               "B005GMRVFY" ;
+        :hasBarcode            "605633126426" ;
+        :hasMusicBrainzID      "3c796aac-1b78-4088-ae12-c93ff81eab65" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "The Rough Guide to Blues Legends: Bessie Smith" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/ffa28768-ecda-42c6-ac49-6ce5c7d33043> ;
+        :releasedInDate        "2011-09-26" ;
+        owl:sameAs             <https://www.discogs.com/release/3988497> , <https://www.amazon.com/dp/B005GMRVFY> , <https://www.amazon.co.uk/gp/product/B005GMRVFY> , <https://musicbrainz.org/release/3c796aac-1b78-4088-ae12-c93ff81eab65> .

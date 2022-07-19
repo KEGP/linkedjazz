@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/58e5f80d-a7ca-4c70-a66b-806c23444ca7>
+        a                      :Release ;
+        rdfs:label             "Giant Steps" ;
+        :hasBarcode            "603497893379" ;
+        :hasMusicBrainzID      "58e5f80d-a7ca-4c70-a66b-806c23444ca7" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Giant Steps" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :releasedInDate        "1998-01-01" ;
+        owl:sameAs             <https://musicbrainz.org/release/58e5f80d-a7ca-4c70-a66b-806c23444ca7> , <https://itunes.apple.com/us/album/id962195355> .
+
+<http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Coltrane" ;
+        :hasMusicBrainzID  "b625448e-bf4a-41c3-a421-72ad46cdb831" ;
+        :hasName           "John Coltrane" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .

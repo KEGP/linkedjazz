@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/d10394d4-e645-3896-8396-412ba59be618>
+        a                      :Release ;
+        rdfs:label             "Giant Steps" ;
+        :hasASIN               "B000IJ7IVC" ;
+        :hasBarcode            "4943674067060" ;
+        :hasMusicBrainzID      "d10394d4-e645-3896-8396-412ba59be618" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Giant Steps" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831> ;
+        :releasedInDate        "2006-12-04" ;
+        owl:sameAs             <https://www.amazon.co.jp/gp/product/B000IJ7IVC> , <https://www.amazon.com/dp/B000IJ7IVC> , <https://musicbrainz.org/release/d10394d4-e645-3896-8396-412ba59be618> , <https://www.discogs.com/release/889334> .
+
+<http://localhost:8080/resource/kejazz/Artist/b625448e-bf4a-41c3-a421-72ad46cdb831>
+        a                  :ArtistPerson ;
+        rdfs:label         "John Coltrane" ;
+        :hasMusicBrainzID  "b625448e-bf4a-41c3-a421-72ad46cdb831" ;
+        :hasName           "John Coltrane" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831> .

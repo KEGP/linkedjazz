@@ -1,0 +1,28 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/bf1b23ea-9b76-42cf-a5f6-4a691e81af5e> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/7e7a3dbd-7aeb-4d23-a648-e302afd4bb10> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/7e7a3dbd-7aeb-4d23-a648-e302afd4bb10>
+        a                  :Band ;
+        rdfs:label         "Sidney Bechet’s Blue Note Jazzmen" ;
+        :hasMusicBrainzID  "7e7a3dbd-7aeb-4d23-a648-e302afd4bb10" ;
+        :hasName           "Sidney Bechet’s Blue Note Jazzmen" ;
+        owl:sameAs         <https://musicbrainz.org/artist/7e7a3dbd-7aeb-4d23-a648-e302afd4bb10> .

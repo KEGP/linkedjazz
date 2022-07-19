@@ -1,0 +1,30 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/480098d7-8d65-4b1d-a415-71bc647ae6d8>
+        a                           :Recording ;
+        rdfs:label                  "Diminuendo in Blue and Crescendo in Blue" ;
+        :hasDurationInMilliseconds  "362106" ;
+        :hasMusicBrainzID           "480098d7-8d65-4b1d-a415-71bc647ae6d8" ;
+        :hasTitle                   "Diminuendo in Blue and Crescendo in Blue" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> , <http://localhost:8080/resource/kejazz/Release/b281c80d-8f7b-46f1-81d1-94fd1c51818c> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1937-09-20" ;
+                                      :hasIntervalStartDate  "1937-09-20"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/74a470d3-22da-4720-99f2-e704a569a4ef> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/480098d7-8d65-4b1d-a415-71bc647ae6d8> .
+
+<http://localhost:8080/resource/kejazz/Artist/c01557ad-d41e-4316-a285-605769e2ab3b>
+        a                  :Orchestra ;
+        rdfs:label         "Duke Ellington & His Orchestra" ;
+        :hasMusicBrainzID  "c01557ad-d41e-4316-a285-605769e2ab3b" ;
+        :hasName           "Duke Ellington & His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/c01557ad-d41e-4316-a285-605769e2ab3b> .

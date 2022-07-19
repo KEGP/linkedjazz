@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/44ace3c5-fadf-4502-9d9a-19e4d197675c>
+        a                      :Release ;
+        rdfs:label             "Roots of Rock n’ Roll, Vol. 1: 1927‐1938" ;
+        :hasBarcode            "3448960235129" ;
+        :hasMusicBrainzID      "44ace3c5-fadf-4502-9d9a-19e4d197675c" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Roots of Rock n’ Roll, Vol. 1: 1927‐1938" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377> ;
+        :releasedInDate        "1996" ;
+        owl:sameAs             <https://www.discogs.com/release/8861938> , <https://musicbrainz.org/release/44ace3c5-fadf-4502-9d9a-19e4d197675c> , <https://www.fremeaux.com/index.php?page=shop.product_details&category_id=81&flypage=shop.flypage&product_id=316&option=com_virtuemart> .
+
+<http://localhost:8080/resource/kejazz/Artist/89ad4ac3-39f7-470e-963a-56509c546377>
+        a                  :ArtistGroup ;
+        rdfs:label         "Various Artists" ;
+        :hasMusicBrainzID  "89ad4ac3-39f7-470e-963a-56509c546377" ;
+        :hasName           "Various Artists" ;
+        owl:sameAs         <https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377> .

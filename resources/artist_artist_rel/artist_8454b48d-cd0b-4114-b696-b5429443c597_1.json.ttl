@@ -1,0 +1,158 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "teacher" ;
+        :hasMusicBrainzID  "249fc24f-d573-4290-9d74-0547712d1f1e" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/249fc24f-d573-4290-9d74-0547712d1f1e> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "member of band" ;
+        :hasMusicBrainzID  "5be4c609-9afa-4ea0-910b-12ffb71e3821" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/5be4c609-9afa-4ea0-910b-12ffb71e3821> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/08a9d08d-f295-4205-bd62-9406fcc3c8a4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/cac01ac7-4159-42fd-9f2b-c5a7a5624079>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/08a9d08d-f295-4205-bd62-9406fcc3c8a4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/138cf657-9b4d-4b36-87a2-01b9341aa161>
+        a                  :Band ;
+        rdfs:label         "The Latin All Stars" ;
+        :hasMusicBrainzID  "138cf657-9b4d-4b36-87a2-01b9341aa161" ;
+        :hasName           "The Latin All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/138cf657-9b4d-4b36-87a2-01b9341aa161> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/b4308fe2-5bac-43c7-b1ff-e16fddacd7d7> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/249fc24f-d573-4290-9d74-0547712d1f1e>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/eef17334-44ba-41e2-938c-33a44cb51f8d>
+        a                  :ArtistPerson ;
+        rdfs:label         "Richie Puente" ;
+        :hasMusicBrainzID  "eef17334-44ba-41e2-938c-33a44cb51f8d" ;
+        :hasName           "Richie Puente" ;
+        owl:sameAs         <https://musicbrainz.org/artist/eef17334-44ba-41e2-938c-33a44cb51f8d> .
+
+<http://localhost:8080/resource/kejazz/Artist/9c64fab1-dc98-4bf6-ac45-5cb9ad1ad015>
+        a                  :Band ;
+        rdfs:label         "The Latin Crossings" ;
+        :hasMusicBrainzID  "9c64fab1-dc98-4bf6-ac45-5cb9ad1ad015" ;
+        :hasName           "The Latin Crossings" ;
+        owl:sameAs         <https://musicbrainz.org/artist/9c64fab1-dc98-4bf6-ac45-5cb9ad1ad015> .
+
+<http://localhost:8080/resource/kejazz/Artist/b4308fe2-5bac-43c7-b1ff-e16fddacd7d7>
+        a                  :ArtistPerson ;
+        rdfs:label         "ウィリー・ナガサキ" ;
+        :hasMusicBrainzID  "b4308fe2-5bac-43c7-b1ff-e16fddacd7d7" ;
+        :hasName           "ウィリー・ナガサキ" ;
+        owl:sameAs         <https://musicbrainz.org/artist/b4308fe2-5bac-43c7-b1ff-e16fddacd7d7> .
+
+<http://localhost:8080/resource/kejazz/Artist/0828884e-2ee6-4315-9dba-62172933a245>
+        a                  :ArtistPerson ;
+        rdfs:label         "Tito Puente, Jr." ;
+        :hasMusicBrainzID  "0828884e-2ee6-4315-9dba-62172933a245" ;
+        :hasName           "Tito Puente, Jr." ;
+        owl:sameAs         <https://musicbrainz.org/artist/0828884e-2ee6-4315-9dba-62172933a245> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/138cf657-9b4d-4b36-87a2-01b9341aa161> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/cac01ac7-4159-42fd-9f2b-c5a7a5624079>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "conductor position" ;
+        :hasMusicBrainzID  "cac01ac7-4159-42fd-9f2b-c5a7a5624079" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/cac01ac7-4159-42fd-9f2b-c5a7a5624079> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/dd599b91-e814-4fd5-95cd-2b99f372dbb1> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+<http://localhost:8080/resource/kejazz/Artist/ddfa90be-8c12-44e9-9755-d34c3add88f4>
+        a                  :Band ;
+        rdfs:label         "Tito Puente's Golden Latin Jazz All Stars" ;
+        :hasMusicBrainzID  "ddfa90be-8c12-44e9-9755-d34c3add88f4" ;
+        :hasName           "Tito Puente's Golden Latin Jazz All Stars" ;
+        owl:sameAs         <https://musicbrainz.org/artist/ddfa90be-8c12-44e9-9755-d34c3add88f4> .
+
+<http://localhost:8080/resource/kejazz/Artist/dd599b91-e814-4fd5-95cd-2b99f372dbb1>
+        a                  :Band ;
+        rdfs:label         "Tito Puente and His Latin Ensemble" ;
+        :hasMusicBrainzID  "dd599b91-e814-4fd5-95cd-2b99f372dbb1" ;
+        :hasName           "Tito Puente and His Latin Ensemble" ;
+        owl:sameAs         <https://musicbrainz.org/artist/dd599b91-e814-4fd5-95cd-2b99f372dbb1> .
+
+<http://localhost:8080/resource/kejazz/Artist/08a9d08d-f295-4205-bd62-9406fcc3c8a4>
+        a                  :Orchestra ;
+        rdfs:label         "Tito Puente and His Orchestra" ;
+        :hasMusicBrainzID  "08a9d08d-f295-4205-bd62-9406fcc3c8a4" ;
+        :hasName           "Tito Puente and His Orchestra" ;
+        owl:sameAs         <https://musicbrainz.org/artist/08a9d08d-f295-4205-bd62-9406fcc3c8a4> .
+
+<http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+        a                  :RelationBetweenArtistsType ;
+        rdfs:label         "parent" ;
+        :hasMusicBrainzID  "9421ca84-934f-49fe-9e66-dea242430406" ;
+        owl:sameAs         <https://musicbrainz.org/relationship/9421ca84-934f-49fe-9e66-dea242430406> .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ddfa90be-8c12-44e9-9755-d34c3add88f4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/cac01ac7-4159-42fd-9f2b-c5a7a5624079>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/eef17334-44ba-41e2-938c-33a44cb51f8d> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/9c64fab1-dc98-4bf6-ac45-5cb9ad1ad015> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/0828884e-2ee6-4315-9dba-62172933a245> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/9421ca84-934f-49fe-9e66-dea242430406>
+] .
+
+[ a                      :RelationBetweenArtists ;
+  :atTime                [ a  dul:TimeInterval ] ;
+  :includesSourceArtist  <http://localhost:8080/resource/kejazz/Artist/f19ad155-d809-4770-ab8d-7579467d9f55> ;
+  :includesTargetArtist  <http://localhost:8080/resource/kejazz/Artist/ddfa90be-8c12-44e9-9755-d34c3add88f4> ;
+  dul:satisfies          <http://localhost:8080/resource/kejazz/RelationBetweenArtistsType/5be4c609-9afa-4ea0-910b-12ffb71e3821>
+] .

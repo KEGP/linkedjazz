@@ -1,0 +1,37 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Recording/3d672385-79a6-4aa6-94b8-af59a0447db1>
+        a                           :Recording ;
+        rdfs:label                  "Breakfast Feud (composite)" ;
+        :hasDurationInMilliseconds  "138466" ;
+        :hasMusicBrainzID           "3d672385-79a6-4aa6-94b8-af59a0447db1" ;
+        :hasTitle                   "Breakfast Feud (composite)" ;
+        :includedInRelease          <http://localhost:8080/resource/kejazz/Release/ca17a712-782a-42e2-bf73-a1a3fd540e35> , <http://localhost:8080/resource/kejazz/Release/a90eeed6-dc07-4173-938c-49e63142f299> ;
+        :isCreditedTo               <http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> , <http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13> ;
+        dul:hasTimeInterval         [ a                      dul:TimeInterval ;
+                                      :hasIntervalEndDate    "1940-12-19" ;
+                                      :hasIntervalStartDate  "1940-12-19"
+                                    ] ;
+        dul:realizes                <http://localhost:8080/resource/kejazz/Work/7793f9a0-958c-4adc-9e31-db946e21d382> ;
+        owl:sameAs                  <https://musicbrainz.org/recording/3d672385-79a6-4aa6-94b8-af59a0447db1> .
+
+<http://localhost:8080/resource/kejazz/Artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003>
+        a                  :Band ;
+        rdfs:label         "The Benny Goodman Sextet" ;
+        :hasMusicBrainzID  "82eb0cc2-84be-44b2-8b5d-543e3a1a4003" ;
+        :hasName           "The Benny Goodman Sextet" ;
+        owl:sameAs         <https://musicbrainz.org/artist/82eb0cc2-84be-44b2-8b5d-543e3a1a4003> .
+
+<http://localhost:8080/resource/kejazz/Artist/98607588-f641-4d2b-b10b-03152c8dbc13>
+        a                  :ArtistPerson ;
+        rdfs:label         "Charlie Christian" ;
+        :hasMusicBrainzID  "98607588-f641-4d2b-b10b-03152c8dbc13" ;
+        :hasName           "Charlie Christian" ;
+        owl:sameAs         <https://musicbrainz.org/artist/98607588-f641-4d2b-b10b-03152c8dbc13> .

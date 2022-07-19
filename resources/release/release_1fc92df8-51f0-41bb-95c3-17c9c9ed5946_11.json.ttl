@@ -1,0 +1,27 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Release/1fc92df8-51f0-41bb-95c3-17c9c9ed5946>
+        a                      :Release ;
+        rdfs:label             "Swing de Paris" ;
+        :hasASIN               "B000025G8J" ;
+        :hasBarcode            "082333253223" ;
+        :hasMusicBrainzID      "1fc92df8-51f0-41bb-95c3-17c9c9ed5946" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Swing de Paris" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4> ;
+        :releasedInDate        "1995" ;
+        owl:sameAs             <https://www.amazon.com/dp/B000025G8J> , <https://musicbrainz.org/release/1fc92df8-51f0-41bb-95c3-17c9c9ed5946> , <https://www.amazon.de/gp/product/B000025G8J> .
+
+<http://localhost:8080/resource/kejazz/Artist/650bf385-6f6d-4992-a3b9-779d144920a4>
+        a                  :ArtistPerson ;
+        rdfs:label         "Django Reinhardt" ;
+        :hasMusicBrainzID  "650bf385-6f6d-4992-a3b9-779d144920a4" ;
+        :hasName           "Django Reinhardt" ;
+        owl:sameAs         <https://musicbrainz.org/artist/650bf385-6f6d-4992-a3b9-779d144920a4> .

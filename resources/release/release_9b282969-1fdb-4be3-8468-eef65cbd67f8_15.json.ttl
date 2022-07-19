@@ -1,0 +1,26 @@
+@prefix :     <http://localhost:8080/ontology/kejazz/> .
+@prefix dul:  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:  <http://localhost:8080/resource/kejazz/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+<http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a>
+        a                  :ArtistPerson ;
+        rdfs:label         "Art Blakey" ;
+        :hasMusicBrainzID  "601e7466-eaf5-4a91-9909-ffd770b7e04a" ;
+        :hasName           "Art Blakey" ;
+        owl:sameAs         <https://musicbrainz.org/artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> .
+
+<http://localhost:8080/resource/kejazz/Release/9b282969-1fdb-4be3-8468-eef65cbd67f8>
+        a                      :Release ;
+        rdfs:label             "Jazz Profile" ;
+        :hasBarcode            "724385489921" ;
+        :hasMusicBrainzID      "9b282969-1fdb-4be3-8468-eef65cbd67f8" ;
+        :hasOfficialityStatus  "Official" ;
+        :hasTitle              "Jazz Profile" ;
+        :isCreditedTo          <http://localhost:8080/resource/kejazz/Artist/601e7466-eaf5-4a91-9909-ffd770b7e04a> ;
+        :releasedInDate        "1997" ;
+        owl:sameAs             <https://www.discogs.com/release/4698226> , <https://musicbrainz.org/release/9b282969-1fdb-4be3-8468-eef65cbd67f8> .
