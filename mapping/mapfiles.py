@@ -4,6 +4,12 @@ from glob import glob
 import os
 import subprocess
 
+def safe_open_w(path):
+    ''' Open "path" for writing, creating any parent directories as needed.
+    '''
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    return open(path, 'w')
+
 parser = argparse.ArgumentParser()
 parser.add_argument("query", help="Path to the sparql query where files will be mapped.")
 parser.add_argument("input_directory", help="Input directory containing the file that will be mapped to a query.")
@@ -31,8 +37,11 @@ for file in tqdm(files):
       # We want to skip this release file because it's a duplicate!
       continue
 
-  outpath = os.path.join(args.output_directory, f"{args.outprefix}_{file}.ttl")
+  if (args.outprefix != ""):
+    outpath = os.path.join(args.output_directory, f"{args.outprefix}_{file}.ttl")
+  else:
+    outpath = os.path.join(args.output_directory, f"{file}.ttl")
 
-  with open(outpath, "w") as outfile:
+  with safe_open_w(outpath) as outfile:
     process = f"java -jar {sparqlanything_path} -q {args.query} -v {args.template_name}={filepath} -f {format} > {outpath}"
     subprocess.run(process.split(), stdout=outfile, stderr=subprocess.DEVNULL, stdin=subprocess.DEVNULL)
