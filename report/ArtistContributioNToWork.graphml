@@ -13,7 +13,7 @@
   <key attr.name="description" attr.type="string" for="edge" id="d9"/>
   <key for="edge" id="d10" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
-    <data key="d0"/>
+    <data key="d0" xml:space="preserve"/>
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
@@ -31,7 +31,7 @@
           <y:Geometry height="44.0" width="104.89426676432305" x="-252.75734972243663" y="-529.164209640548"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.5" x="4.197133382161496" xml:space="preserve" y="10.578125">:RoleInWork</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.5" x="4.197133382161525" xml:space="preserve" y="10.578125">:RoleInWork</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -96,23 +96,7 @@
       <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="109.83814238566555" width="416.65696630434786" x="-707.5512864678146" y="-881.2264724573822"/>
-          <y:Fill color="#CCFFFF" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.0" x="4.0" xml:space="preserve" y="7.619392385665606">:forWork SubPropertyOf dul:includesObject
-:includesArtist SubPropertyOf dul:includesAgent
-:involvesRole SubPropertyOf dul:isSettingFor
-:atTime SubPropertyOf dul:includesTime
-:hasArtistRoleInWork SubPropertyOf dul:hasRole</y:NodeLabel>
-        </y:UMLNoteNode>
-      </data>
-    </node>
-    <node id="n8">
-      <data key="d4" xml:space="preserve"/>
-      <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
-      <data key="d6">
-        <y:UMLNoteNode>
-          <y:Geometry height="150.2981041814537" width="372.05495563659474" x="-222.67607482016876" y="-408.6474390673882"/>
+          <y:Geometry height="150.2981041814537" width="372.05495563659474" x="161.8080994590747" y="-881.2264724573822"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="117.0625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="314.1171875" x="4.0" xml:space="preserve" y="29.23560418145371">PROPERTY CHAIN (Coparticipation)
@@ -121,6 +105,22 @@ inverse (:includesArtist) o :involvesRole
 
 :hasRoleInWork
     SubPropertyOf dul:coparticipatesWith</y:NodeLabel>
+        </y:UMLNoteNode>
+      </data>
+    </node>
+    <node id="n8">
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[UMLNote]]></data>
+      <data key="d6">
+        <y:UMLNoteNode>
+          <y:Geometry height="109.83814238566555" width="416.65696630434786" x="-707.5512864678146" y="-881.2264724573822"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="bl" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.0" x="4.0" xml:space="preserve" y="7.619392385665606">:forWork SubPropertyOf dul:includesObject
+:includesArtist SubPropertyOf dul:includesAgent
+:involvesRole SubPropertyOf dul:isSettingFor
+:atTime SubPropertyOf dul:includesTime
+:hasArtistRoleInWork SubPropertyOf dul:hasRole</y:NodeLabel>
         </y:UMLNoteNode>
       </data>
     </node>
@@ -157,7 +157,7 @@ inverse (:includesArtist) o :involvesRole
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e3" source="n0" target="n7">
+    <edge id="e3" source="n0" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-100.22049005107488" sy="-22.004274406453305" tx="208.30205576168527" ty="24.269861498966407"/>
@@ -182,7 +182,6 @@ inverse (:includesArtist) o :involvesRole
       </data>
     </edge>
     <edge id="e5" source="n5" target="n1">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="39.119901434408405" sy="22.045389617650073" tx="-41.774363898043106" ty="21.98138876981824">
@@ -208,7 +207,6 @@ inverse (:includesArtist) o :involvesRole
       </data>
     </edge>
     <edge id="e7" source="n0" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
