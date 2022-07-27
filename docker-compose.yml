@@ -83,10 +83,12 @@ services:
             - lode
             - webvowl
             - sparqlanything
+            - fuseki
         networks:
             - network
         volumes:
             - .docker/nginx.proxy.conf:/etc/nginx/nginx.conf
+            - .docker/index.html:/index.html
 
 
 networks:
