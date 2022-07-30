@@ -15,7 +15,7 @@
      docker-compose up
      ```
 
-  3. open your favorite web browser and explore the following endpoints:
+  3. open your favorite web browser at <http://localhost:8080> to explore the following endpoints:
 
      | Endpoint | Description | Link |
      | ------------- | ------------- | --- |
