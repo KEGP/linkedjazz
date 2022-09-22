@@ -1,4 +1,4 @@
-@prefix : <http://localhost:8080/ontology/chord-annotations#> .
+@prefix : <http://localhost:8080/ontology/chord-annotations/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix mto: <http://localhost:8080/ontology/mto.owl#> .
@@ -10,9 +10,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix kejazz: <http://localhost:8080/ontology/kejazz#> .
-@base <http://localhost:8080/ontology/chord-annotations#> .
+@base <http://localhost:8080/ontology/chord-annotations/> .
 
-<http://localhost:8080/ontology/chord-annotations#> rdf:type owl:Ontology ;
+<http://localhost:8080/ontology/chord-annotations/> rdf:type owl:Ontology ;
                                                      owl:imports <http://localhost:8080/ontology/mto#> ,
                                                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
                                                      rdfs:comment "The following ontology models the musical structure of a tune, by taking into account human made annotations of chords." ;
@@ -22,7 +22,7 @@
 #    Object Properties
 #################################################################
 
-###  http://localhost:8080/ontology/chord-annotations#characterizedBy
+###  http://localhost:8080/ontology/chord-annotations/characterizedBy
 :characterizedBy rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf dul:hasQuality ;
                  rdf:type owl:FunctionalProperty ;
@@ -34,7 +34,7 @@
                             "cratterizzata da"@it .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasBar
+###  http://localhost:8080/ontology/chord-annotations/hasBar
 :hasBar rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf dul:hasMember ;
         rdf:type owl:FunctionalProperty ,
@@ -47,7 +47,7 @@
                    "has bar"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasChord
+###  http://localhost:8080/ontology/chord-annotations/hasChord
 :hasChord rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf dul:hasMember ;
           rdfs:domain :Bar ;
@@ -58,7 +58,7 @@
                      "has chord"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasInstrument
+###  http://localhost:8080/ontology/chord-annotations/hasInstrument
 :hasInstrument rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Section ;
@@ -69,7 +69,7 @@
                           "has main musical instrument"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasKey
+###  http://localhost:8080/ontology/chord-annotations/hasKey
 :hasKey rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf dul:hasQuality ;
         rdf:type owl:FunctionalProperty ;
@@ -81,7 +81,7 @@
                    "has key"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasRoot
+###  http://localhost:8080/ontology/chord-annotations/hasRoot
 :hasRoot rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf dul:hasQuality ;
          rdf:type owl:FunctionalProperty ;
@@ -93,7 +93,7 @@
                     "has key note"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasSection
+###  http://localhost:8080/ontology/chord-annotations/hasSection
 :hasSection rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf dul:hasMember ;
             rdf:type owl:InverseFunctionalProperty ;
@@ -105,7 +105,7 @@
                        "has section"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#hasTimeSignature
+###  http://localhost:8080/ontology/chord-annotations/hasTimeSignature
 :hasTimeSignature rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf dul:hasQuality ;
                   rdf:type owl:FunctionalProperty ;
@@ -117,7 +117,7 @@
                              "has time signature"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#madeOfProgression
+###  http://localhost:8080/ontology/chord-annotations/madeOfProgression
 :madeOfProgression rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf dul:hasMember ;
                    rdf:type owl:FunctionalProperty ,
@@ -130,7 +130,7 @@
                               "made of progression"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#nextAnnotation
+###  http://localhost:8080/ontology/chord-annotations/nextAnnotation
 :nextAnnotation rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf dul:directlyFollows ;
                 rdf:type owl:FunctionalProperty ,
@@ -144,7 +144,7 @@
                            "prossima annotazione"@it .
 
 
-###  http://localhost:8080/ontology/chord-annotations#ofHarmonicQuality
+###  http://localhost:8080/ontology/chord-annotations/ofHarmonicQuality
 :ofHarmonicQuality rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf dul:hasQuality ;
                    rdf:type owl:FunctionalProperty ;
@@ -160,7 +160,7 @@
                               "has key quality"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#tunedTo
+###  http://localhost:8080/ontology/chord-annotations/tunedTo
 :tunedTo rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf dul:hasQuality ;
          rdf:type owl:FunctionalProperty ;
@@ -176,7 +176,7 @@
 #    Data properties
 #################################################################
 
-###  http://localhost:8080/ontology/chord-annotations#hasName
+###  http://localhost:8080/ontology/chord-annotations/hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf dul:hasDataValue ;
          rdfs:domain :Section ;
@@ -185,7 +185,7 @@
          rdfs:label "has name"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#isFirst
+###  http://localhost:8080/ontology/chord-annotations/isFirst
 :isFirst rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf dul:hasDataValue ;
          rdfs:domain :Annotation ;
@@ -198,7 +198,7 @@
 #    Classes
 #################################################################
 
-###  http://localhost:8080/ontology/chord-annotations#Annotation
+###  http://localhost:8080/ontology/chord-annotations/Annotation
 :Annotation rdf:type owl:Class ;
             rdfs:subClassOf dul:Description ,
                             [ rdf:type owl:Restriction ;
@@ -212,7 +212,7 @@
                        "Musical annotation"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Bar
+###  http://localhost:8080/ontology/chord-annotations/Bar
 :Bar rdf:type owl:Class ;
      rdfs:subClassOf :Annotation ,
                      dul:Collection ;
@@ -223,7 +223,7 @@
                 "Misura"@it .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Chord
+###  http://localhost:8080/ontology/chord-annotations/Chord
 :Chord rdf:type owl:Class ;
        owl:equivalentClass <http://localhost:8080/ontology/mto#Chord> ;
        rdfs:subClassOf :Annotation ,
@@ -234,7 +234,7 @@
                   "Chord"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Key
+###  http://localhost:8080/ontology/chord-annotations/Key
 :Key rdf:type owl:Class ;
      rdfs:subClassOf dul:Region ,
                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -258,7 +258,7 @@
                 "Tonalità"@it .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Pattern
+###  http://localhost:8080/ontology/chord-annotations/Pattern
 :Pattern rdf:type owl:Class ;
          rdfs:subClassOf dul:InformationObject ;
          rdfs:comment "Forma di una sezione, ossia la metrica con cui la struttura armonica si ripete (es. AABA, AABB)."@it ,
@@ -267,7 +267,7 @@
                     "Pattern"@en .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Progression
+###  http://localhost:8080/ontology/chord-annotations/Progression
 :Progression rdf:type owl:Class ;
              owl:equivalentClass <http://localhost:8080/ontology/mto#HarmonicProgression> ;
              rdfs:subClassOf :Annotation ,
@@ -278,7 +278,7 @@
                         "Progressione"@it .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Section
+###  http://localhost:8080/ontology/chord-annotations/Section
 :Section rdf:type owl:Class ;
          rdfs:subClassOf dul:InformationRealization ,
                          [ rdf:type owl:Restriction ;
@@ -297,7 +297,7 @@
                     "Sezione"@it .
 
 
-###  http://localhost:8080/ontology/chord-annotations#Sheet
+###  http://localhost:8080/ontology/chord-annotations/Sheet
 :Sheet rdf:type owl:Class ;
        rdfs:subClassOf dul:Collection ,
                        [ rdf:type owl:Restriction ;

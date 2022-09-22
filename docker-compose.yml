@@ -71,7 +71,17 @@ services:
         restart: always
         networks:
             - network
-    
+
+    app:
+        container_name: app
+        image: app
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile.app
+        restart: always
+        networks:
+            - network
+
     proxy:
         container_name: proxy
         image: nginx
@@ -84,12 +94,12 @@ services:
             - webvowl
             - sparqlanything
             - fuseki
+            - app
         networks:
             - network
         volumes:
             - .docker/nginx.proxy.conf:/etc/nginx/nginx.conf
             - .docker/index.html:/index.html
-
 
 networks:
   network:
