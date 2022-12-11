@@ -1,4 +1,5 @@
 # Linked Jazz project
+This repository contains a project realized as part of the _Knowledge Engineering course_ exam of the [Master's degree in Artificial Intelligence, University of Bologna](https://corsi.unibo.it/2cycle/artificial-intelligence).
 
 ## How to run it
 
@@ -25,3 +26,11 @@
      | [SPARQL.Anything](https://github.com/SPARQL-Anything/sparql.anything) | _human readable representation of the entities in our dataset_ | <http://localhost:8080/sparqlanything/sparql> (remember to replace `/sparql.anything` with `sparql.anything` in the text field placed at the top of the page) |
 
   4. the ontology source files in `RDF/XML` format are available, respectively, at <http://localhost:8080/ontology/kejazz> and at <http://localhost:8080/ontology/chord-annotations>.
+
+## Group members
+
+|  Reg No.  |  Name     |  Surname  |     Email                              |    Username      |
+| :-------: | :-------: | :-------: | :------------------------------------: | :--------------: |
+|  -  | Nicolas  | Lazzari   | `nicolas.lazzari2@studio.unibo.it`     | [_n28div_](https://github.com/n28div) |
+|  -  | Marco     | Buiani    | `marco.buiani@studio.unibo.it`         | [_buoi_](https://github.com/buoi) |
+|  984854  | Simone    | Persiani  | `simone.persiani2@studio.unibo.it`     | [_iosonopersia_](https://github.com/iosonopersia) |
